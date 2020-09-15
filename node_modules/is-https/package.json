@@ -1,0 +1,20 @@
+{
+  "name": "is-https",
+  "version": "2.0.2",
+  "description": "Check if the given request is HTTPS",
+  "repository": "nuxt-contrib/is-https",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "bili src/index.ts --minimal",
+    "release": "yarn build && standard-version && npm publish && git push --follow-tags"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.6",
+    "bili": "^4.10.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "standard-version": "^8.0.0",
+    "typescript": "^3.9.3"
+  }
+}

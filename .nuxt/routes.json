@@ -1,0 +1,194 @@
+[
+  {
+    "name": "index___de",
+    "path": "/de",
+    "component": "/home/bob/Projects/blank/pages/index.vue",
+    "chunkName": "pages/index",
+    "url": "/",
+    "_name": "_1dc06dc0"
+  },
+  {
+    "name": "index___fr",
+    "path": "/fr",
+    "component": "/home/bob/Projects/blank/pages/index.vue",
+    "chunkName": "pages/index",
+    "url": "/",
+    "_name": "_1dc06dc0"
+  },
+  {
+    "name": "guidelines___en",
+    "path": "/guidelines",
+    "component": "/home/bob/Projects/blank/pages/guidelines.vue",
+    "chunkName": "pages/guidelines",
+    "url": "/guidelines",
+    "_name": "_f1a434b6"
+  },
+  {
+    "name": "index___id",
+    "path": "/id",
+    "component": "/home/bob/Projects/blank/pages/index.vue",
+    "chunkName": "pages/index",
+    "url": "/",
+    "_name": "_1dc06dc0"
+  },
+  {
+    "name": "partners___en",
+    "path": "/partners",
+    "component": "/home/bob/Projects/blank/pages/partners.vue",
+    "chunkName": "pages/partners",
+    "url": "/partners",
+    "_name": "_48511166"
+  },
+  {
+    "name": "privacy_policy___en",
+    "path": "/privacy_policy",
+    "component": "/home/bob/Projects/blank/pages/privacy_policy.vue",
+    "chunkName": "pages/privacy_policy",
+    "url": "/privacy_policy",
+    "_name": "_766221eb"
+  },
+  {
+    "name": "index___pt",
+    "path": "/pt",
+    "component": "/home/bob/Projects/blank/pages/index.vue",
+    "chunkName": "pages/index",
+    "url": "/",
+    "_name": "_1dc06dc0"
+  },
+  {
+    "name": "index___zh",
+    "path": "/zh",
+    "component": "/home/bob/Projects/blank/pages/index.vue",
+    "chunkName": "pages/index",
+    "url": "/",
+    "_name": "_1dc06dc0"
+  },
+  {
+    "name": "guidelines___de",
+    "path": "/de/guidelines",
+    "component": "/home/bob/Projects/blank/pages/guidelines.vue",
+    "chunkName": "pages/guidelines",
+    "url": "/guidelines",
+    "_name": "_f1a434b6"
+  },
+  {
+    "name": "partners___de",
+    "path": "/de/partners",
+    "component": "/home/bob/Projects/blank/pages/partners.vue",
+    "chunkName": "pages/partners",
+    "url": "/partners",
+    "_name": "_48511166"
+  },
+  {
+    "name": "privacy_policy___de",
+    "path": "/de/privacy_policy",
+    "component": "/home/bob/Projects/blank/pages/privacy_policy.vue",
+    "chunkName": "pages/privacy_policy",
+    "url": "/privacy_policy",
+    "_name": "_766221eb"
+  },
+  {
+    "name": "guidelines___fr",
+    "path": "/fr/guidelines",
+    "component": "/home/bob/Projects/blank/pages/guidelines.vue",
+    "chunkName": "pages/guidelines",
+    "url": "/guidelines",
+    "_name": "_f1a434b6"
+  },
+  {
+    "name": "partners___fr",
+    "path": "/fr/partners",
+    "component": "/home/bob/Projects/blank/pages/partners.vue",
+    "chunkName": "pages/partners",
+    "url": "/partners",
+    "_name": "_48511166"
+  },
+  {
+    "name": "privacy_policy___fr",
+    "path": "/fr/privacy_policy",
+    "component": "/home/bob/Projects/blank/pages/privacy_policy.vue",
+    "chunkName": "pages/privacy_policy",
+    "url": "/privacy_policy",
+    "_name": "_766221eb"
+  },
+  {
+    "name": "guidelines___id",
+    "path": "/id/guidelines",
+    "component": "/home/bob/Projects/blank/pages/guidelines.vue",
+    "chunkName": "pages/guidelines",
+    "url": "/guidelines",
+    "_name": "_f1a434b6"
+  },
+  {
+    "name": "partners___id",
+    "path": "/id/partners",
+    "component": "/home/bob/Projects/blank/pages/partners.vue",
+    "chunkName": "pages/partners",
+    "url": "/partners",
+    "_name": "_48511166"
+  },
+  {
+    "name": "privacy_policy___id",
+    "path": "/id/privacy_policy",
+    "component": "/home/bob/Projects/blank/pages/privacy_policy.vue",
+    "chunkName": "pages/privacy_policy",
+    "url": "/privacy_policy",
+    "_name": "_766221eb"
+  },
+  {
+    "name": "guidelines___pt",
+    "path": "/pt/guidelines",
+    "component": "/home/bob/Projects/blank/pages/guidelines.vue",
+    "chunkName": "pages/guidelines",
+    "url": "/guidelines",
+    "_name": "_f1a434b6"
+  },
+  {
+    "name": "partners___pt",
+    "path": "/pt/partners",
+    "component": "/home/bob/Projects/blank/pages/partners.vue",
+    "chunkName": "pages/partners",
+    "url": "/partners",
+    "_name": "_48511166"
+  },
+  {
+    "name": "privacy_policy___pt",
+    "path": "/pt/privacy_policy",
+    "component": "/home/bob/Projects/blank/pages/privacy_policy.vue",
+    "chunkName": "pages/privacy_policy",
+    "url": "/privacy_policy",
+    "_name": "_766221eb"
+  },
+  {
+    "name": "guidelines___zh",
+    "path": "/zh/guidelines",
+    "component": "/home/bob/Projects/blank/pages/guidelines.vue",
+    "chunkName": "pages/guidelines",
+    "url": "/guidelines",
+    "_name": "_f1a434b6"
+  },
+  {
+    "name": "partners___zh",
+    "path": "/zh/partners",
+    "component": "/home/bob/Projects/blank/pages/partners.vue",
+    "chunkName": "pages/partners",
+    "url": "/partners",
+    "_name": "_48511166"
+  },
+  {
+    "name": "privacy_policy___zh",
+    "path": "/zh/privacy_policy",
+    "component": "/home/bob/Projects/blank/pages/privacy_policy.vue",
+    "chunkName": "pages/privacy_policy",
+    "url": "/privacy_policy",
+    "_name": "_766221eb"
+  },
+  {
+    "name": "index___en",
+    "path": "/",
+    "component": "/home/bob/Projects/blank/pages/index.vue",
+    "chunkName": "pages/index",
+    "url": "/",
+    "_name": "_1dc06dc0"
+  }
+]
