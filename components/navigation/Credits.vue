@@ -31,12 +31,12 @@
         <nuxt-link :to="localePath('privacy_policy')" class="blue--text"
           >Privacy Policy</nuxt-link
         >&nbsp;-&nbsp;
-        <nuxt-link :to="localePath('partners')" class="blue--text">{{
-          $t('common.partners.title')
+        <nuxt-link :to="localePath('who')" class="blue--text">{{
+          $t('common.who.title')
         }}</nuxt-link
         >&nbsp;-&nbsp;
-        <nuxt-link :to="localePath('guidelines')" class="blue--text">{{
-          $t('common.guidelines.title')
+        <nuxt-link :to="localePath('contest')" class="blue--text">{{
+          $t('common.contest.title')
         }}</nuxt-link
         >&nbsp;-&nbsp;
         <a
@@ -85,9 +85,9 @@
           >. <br />Based on a work at
           <a
             xmlns:dct="http://purl.org/dc/terms/"
-            href="https://github.com/WPRN/website"
+            href="https://github.com/IEA-Paris/Positive-Future"
             rel="dct:source"
-            >https://github.com/IEAA_Paris/positive_future</a
+            >https://github.com/IEA-Paris/Positive-Future</a
           >
           By Antoine Cordelois.
         </span>

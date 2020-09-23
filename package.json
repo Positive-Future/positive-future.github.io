@@ -6,14 +6,14 @@
   "author": "Antoine Cordelois",
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build && nuxt generate",
+    "build": "nuxt generate",
     "start": "nuxt start",
     "analyze": "nuxt build --analyze",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "yarn lint:js",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "deploy-test": "nuxt build && nuxt generate && aws s3 cp dist s3://dev.wprn.org --recursive"
+    "deploy-test": "nuxt generate && aws s3 cp dist s3://positive-future.org --recursive"
   },
   "dependencies": {
     "nuxt": "^2.14.0",
@@ -47,10 +47,5 @@
     "prettier": "^2.0.5",
     "vue-jest": "^3.0.4",
     "webpack-graphql-loader": "^1.0.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lintfix"
-    }
   }
 }

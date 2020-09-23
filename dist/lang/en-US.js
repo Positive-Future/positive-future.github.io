@@ -2,119 +2,127 @@ export default () => {
   return new Promise(function (resolve) {
     resolve({
       common: {
-        moto: 'Making a bright tomorrow from today',
-        categories: {
-          call: 'Call for proposals',
+        more: 'See more',
+        index: {
+          facebook: 'Visit our Facebook page',
+          twitter: 'Follow us on Twitter',
+          title: 'Positive Future',
+          subtitle: 'Implementing and promoting visions of a desirable future',
+          paragraph1:
+            "To build a different world together, a common vision is essential, which can only be achieved through concrete projects. While there are many representations of dystopian futures, there is also a large body of research and prospective work drawing alternatives for tomorrow's world. ",
+          link1: 'The Paris Institute for Advanced Study',
+          link2: ' the 2100 Fondation',
+          and: ' and ',
+          link3: 'the Institute for Futures Studies ',
+          paragraph2:
+            'are launching the first Positive Future competition in order to encourage, on this positive basis, the elaboration and dissemination of mobilizing imaginaries that convincingly and realistically describe a liveable and desirable world. These are not utopian futures, but possible futures, the advent of which is based on scientifically, technically, socially and politically proven scenarios.',
+          paragraph3:
+            'Open to all and international in scope, this competition aims to stimulate alternative and hopeful discourses for the horizon of the century. ',
+          paragraph4: 'The theme of the first edition of the ',
+          link4: 'contest',
+          paragraph5: ' is "The city in 2100".',
         },
-        title: 'International prize « Positive future »',
-        subtitle: '1st edition',
-        name: '« The city in 2100 »',
-        paragraph1:
-          'Climate change and pollution, the acceleration of the digital revolution, an aging population, social tensions and pandemics are forcing us to review our models of society and start thinking today about the "world to come". To do this, we need to be able to draw on visions of desirable futures that can mobilize energies to bring about positive change.',
-        paragraph2:
-          'The "Positive Future" Prize launched by the Paris Institute for Advanced Study in partnership with the 2100 Foundation and the Swedish Institute for Futures Studies was designed to stimulate alternative and hopeful discourses on the horizon of the century. Open to all, this prize encourages interdisciplinary exchanges and collaboration between the most diverse participants (communicators, artists, entrepreneurs, foresight specialists, researchers, students, ordinary citizens, etc.). Committed to action, it aims to propose, validate and disseminate positive visions of the future by giving them international visibility.',
-        paragraph3:
-          'In 2021, the first edition of the competition will focus on the theme "the city in 2100": this topic invites us to rethink our lifestyles and urban spaces for the century ahead. What links to territories and rural spaces? Sustainable and livable cities will serve as a backdrop for the works submitted to the competition. Candidates must propose a story that articulates a credible and original vision of cities in 2100. ',
-        paragraph4:
-          'Prizes will be awarded to the best fictional works in the following four categories: ',
-        list1: 'Newspaper articles',
-        list2: 'Short stories or scenarios  ',
-        list3: 'Videos or short films ',
-        list4: 'Comics ',
-        paragraph5:
-          'The winners in each category will receive support for the dissemination and promotion of their project.',
-        paragraph6:
-          'A Grand Prize of 10.000€ will be awarded to the best proposal in all categories.',
-        paragraph7:
-          'In order to help the candidates to build realistic visions, an International Scientific Advisory Board will put at their disposal a database of foresight resources in the form of a website. A series of online conferences-workshops on the theme will also allow them to exchange with the best experts in the field.',
-        paragraph8: 'You want to participate?',
-        paragraph9: 'Have a look at our ',
         error_with_status: 'An error occurred on server',
         404: 'This page could not be found.',
         '404_subtitle':
           'You can either stay and chill here, or go back to the beginning.',
-        guidelines: {
-          title: 'Submission Guidelines',
+        back: 'Back to homepage',
+        error_without_status: 'An error occurred on the server',
+        privacy_policy: {
+          text:
+            'Positive-Future website’s purpose is to offer a place to think about a brighter future. <br />By registering their project on the Positive-Future website, contributorsauthorize the Positive-Future to publish online the data collected, exceptfor their personal contact details (e-mail address). <br />E-mail addresses of contribuors or referents will never be disclosed onlinenor transferred or sold to any third party. They will be used only:<br /><ul><li>to redirect potential contact requests to contributors through the Positive-Future servers;</li><li>by the Positive-Future team to contact contributors to enable their uploads, facilitate their collaborations and occasionally regarding evolutions of Positive-Future;</li><li>by Positive-Future referents to request edits through WPRN servers  </li></ul>In compliance with the EU General Data Protection Regulation, you can exertyour right to access, correct or oppose the use of your data by contacting<a href="mailto:info@positive-future.org">info@positive-future.org</a>.',
+          title: 'Politique de confidentialité',
+        },
+        contest: {
+          title: 'Competition',
+          theme: {
+            title: 'Theme: the city in 2100',
+            content:
+              'This theme invites us to rethink our lifestyles and urban spaces. What would the sustainable and livable city of tomorrow look like? What links to territories and rural spaces? Participants will be asked to propose a story articulating a credible and original vision of cities in 2100.',
+          },
           who: {
-            title: 'Who can participate?',
+            title: 'Who ?',
             content1:
-              'The competition is open to all, regardless of nationality, age or profession.',
+              'The contest is open to all, regardless of nationality, age or profession.',
             content2: 'Proposals can be made individually or in groups.',
           },
-          what: {
-            title: 'Which works to present?',
+          when: {
+            title: 'When ?',
             content1:
-              '<div class="text-decoration-underline">Newspaper articles:</div> : maximum 10,000 signs (including spaces), with the possibility of including illustrations.',
+              'Official launch of the call for proposals: November 2020',
             content2:
-              '<div class="text-decoration-underline">Short stories or scenarios</div> : maximum 20,000 characters (including spaces)',
+              'Deadline for registering for the competition: March 2021',
+            content3: 'Deadline for the submission of proposals: May 2021',
+            content4: 'Awards ceremony: September 2021',
+          },
+          what: {
+            title: 'How ?',
+            content: 'Stories can be presented in the following formats:',
+            content1:
+              '<span class="text-decoration-underline">Newspaper articles</span> : maximum 10,000 characters (including spaces), with the possibility of including illustrations.',
+            content2:
+              '<span class="text-decoration-underline">News or scenarios</span> : maximum 20,000 characters (including spaces)',
             content3:
-              '<div class="text-decoration-underline">Videos or short films</div> : maximum 10 minutes',
+              '<span class="text-decoration-underline">Videos or short films</span> : maximum 10 minutes',
             content4:
-              '<div class="text-decoration-underline">Comics</div> : maximum 20 pages',
+              '<span class="text-decoration-underline">Comics</span> : maximum 15 pages',
+          },
+          reward: {
+            title: 'Awards',
+            content1:
+              'Prizes will be awarded to the best fictional works in each of the four categories. ',
+            content2:
+              'A grand prize of 10,000 euros will be awarded to the best proposal accross all categories.',
           },
           criterions: {
-            title: 'Evaluation and selection criteria',
+            title: 'Evaluation and selection criteria ',
             content1:
-              '<b>Originality</b>, as well as the <b>desirability</b> and <b>realism</b> of the proposed vision of "the city in 2100" will be the main selection criteria. ',
+              '<b>Originality</b> as well as the <b>desirability</b> and <b>realism</b> of the proposed vision of "the city in 2100" will be the main selection criteria.',
             content2:
-              "The <b>quality</b> of the narrative and the proposal's ability to  <b>generate commitment</b> and <b>provide directly actionable perspectives</b> will also be considered.",
+              "The <b>quality</b> of the narrative and the proposal's ability to <b>generate commitment</b> and to provide directly <b>actionable perspectives</b> will also be considered.",
+          },
+          resources: {
+            title: 'Resources',
+            content1: 'A set of ',
+            link: 'resources',
+            content2:
+              'is made available to candidates to assist them in their reflection. ',
           },
           jury: {
             title: 'Jury',
             content:
               'The jury will be composed of a panel of foresight specialists and personalities from science, industry, the arts, media and politics.',
           },
-          calendar: {
-            title: 'Calendrier',
-            content1: 'Launch of the call: September 2020',
-            content2: 'Deadline to apply to the competition: March 2021',
-            content3: 'Deadline for submission of proposals: May 2021',
-            content4: 'Award ceremony in Paris: September 2021',
-          },
         },
-        partners: {
-          title: 'Partners',
+        resources: {
+          title: 'Ressources',
+          content:
+            'A <b>resource base</b> (reference studies, videos, articles, etc.), focusing on work that can form the basis of a positive and sustainable approach for the future, will be put online shortly.',
+        },
+        who: {
+          title: 'Who are we?',
           iea: {
             name: 'Paris Institute for Advanced Study',
             description:
-              'The Paris Institute for Advanced Study is an independent research center in the humanities and social sciences aiming at fostering interdisciplinary research and experimenting new formats of intersectoral collaborations',
-            url: 'www.paris-iea.fr ',
+              'The Paris Institute for Advanced Study is an independent research center in the humanities and social sciences aiming at fostering interdisciplinary research and experimenting new formats of intersectoral collaborations. It invites high-level international researchers for fellowships in residence in Paris, organizes scientific events, and sets up spaces for reflection and exchange involving academics, citizens, political decision-makers and businesses.',
           },
           fundation: {
             name: 'Fondation 2100',
             description:
-              'The 2100 foundation’s goal is to support the development of scholarly foresight activities, through prizes, the funding of research projects and the creation of research chairs.',
+              "The 2100 Foundation, under the aegis of the Fondation ParisTech, aims to promote the long-term forescasting of human societies. It extends the work begun nearly forty years ago under the direction of Thierry Gaudin by the Centre de Prospective et d'Évaluation of the French Ministry for Research and then by the Prospective 2100 NGO. Today, it fosters foresight efforts through a thesis prize awarded with a circle of academics, a competition on positive futures in partnership with the Paris Institute for Advanced Study, and an international project on global foresight (updating the 2100, Narrative of the Next Century report, published in 1990).",
             url: 'https://2100.org',
           },
           iff: {
             name: 'Institute for Futures Studies',
             description:
-              'The Institute for Futures Studies is a Swedish independent research foundation that promotes future perspectives in research and public debate. ',
+              'The Institute for Futures Studies is a Swedish independent research foundation that promotes future perspectives in research and public debate.',
             url: 'https://www.iffs.se/en/',
           },
         },
-        back: 'Back to the main page',
         contact_us: 'Contact us',
-        error_without_status: 'An error occurred on the server',
-        contact_title: 'Free Project Quote',
-        contact_subtitle:
-          'Do you have any questions? Are you ready to reduce cost and create new revenue? Or you simply want to say hi? Drop us a message.',
-        form_name: 'What is your name? *',
-        form_email: 'What it your email? *',
-        form_phone: 'What is your phone number?',
-        form_company: 'What is your company?',
-        form_message: 'Write your message here',
-        form_terms: 'I have read and accept the Terms of',
-        form_privacy: 'Service & Privacy Policy *',
-        form_send: 'Send Message',
-        privacy_policy: {
-          text:
-            'Positive-Future website’s purpose is to offer a place to think about a brighter future. <br />By registering their project on the Positive-Future website, contributorsauthorize the Positive-Future to publish online the data collected, exceptfor their personal contact details (e-mail address). <br />E-mail addresses of contribuors or referents will never be disclosed onlinenor transferred or sold to any third party. They will be used only:<br /><ul><li>to redirect potential contact requests to contributors through the Positive-Future servers;</li><li>by the Positive-Future team to contact contributors to enable their uploads, facilitate their collaborations and occasionally regarding evolutions of Positive-Future;</li><li>by Positive-Future referents to request edits through WPRN servers  </li></ul>In compliance with the EU General Data Protection Regulation, you can exertyour right to access, correct or oppose the use of your data by contacting <a href="mailto:info@positive-future.org">info@positive-future.org</a>.',
-          title: 'Privacy Policy',
-        },
+        maintained: 'This website is maintained by',
+        seeCredits: 'Credits',
         accept: 'Accept',
-        maintained: 'This website is maintained by ',
-        seeCredits: 'See full credits',
         en: 'English',
         fr: 'French',
       },

@@ -1,11 +1,11 @@
 [
   {
-    "name": "index___de",
-    "path": "/de",
-    "component": "/home/bob/Projects/blank/pages/index.vue",
-    "chunkName": "pages/index",
-    "url": "/",
-    "_name": "_1dc06dc0"
+    "name": "contest___en",
+    "path": "/contest",
+    "component": "/home/bob/Projects/blank/pages/contest.vue",
+    "chunkName": "pages/contest",
+    "url": "/contest",
+    "_name": "_08890ee2"
   },
   {
     "name": "index___fr",
@@ -16,30 +16,6 @@
     "_name": "_1dc06dc0"
   },
   {
-    "name": "guidelines___en",
-    "path": "/guidelines",
-    "component": "/home/bob/Projects/blank/pages/guidelines.vue",
-    "chunkName": "pages/guidelines",
-    "url": "/guidelines",
-    "_name": "_f1a434b6"
-  },
-  {
-    "name": "index___id",
-    "path": "/id",
-    "component": "/home/bob/Projects/blank/pages/index.vue",
-    "chunkName": "pages/index",
-    "url": "/",
-    "_name": "_1dc06dc0"
-  },
-  {
-    "name": "partners___en",
-    "path": "/partners",
-    "component": "/home/bob/Projects/blank/pages/partners.vue",
-    "chunkName": "pages/partners",
-    "url": "/partners",
-    "_name": "_48511166"
-  },
-  {
     "name": "privacy_policy___en",
     "path": "/privacy_policy",
     "component": "/home/bob/Projects/blank/pages/privacy_policy.vue",
@@ -48,60 +24,28 @@
     "_name": "_766221eb"
   },
   {
-    "name": "index___pt",
-    "path": "/pt",
-    "component": "/home/bob/Projects/blank/pages/index.vue",
-    "chunkName": "pages/index",
-    "url": "/",
-    "_name": "_1dc06dc0"
+    "name": "resources___en",
+    "path": "/resources",
+    "component": "/home/bob/Projects/blank/pages/resources.vue",
+    "chunkName": "pages/resources",
+    "url": "/resources",
+    "_name": "_de1b9c1a"
   },
   {
-    "name": "index___zh",
-    "path": "/zh",
-    "component": "/home/bob/Projects/blank/pages/index.vue",
-    "chunkName": "pages/index",
-    "url": "/",
-    "_name": "_1dc06dc0"
+    "name": "who___en",
+    "path": "/who",
+    "component": "/home/bob/Projects/blank/pages/who.vue",
+    "chunkName": "pages/who",
+    "url": "/who",
+    "_name": "_12c94b8c"
   },
   {
-    "name": "guidelines___de",
-    "path": "/de/guidelines",
-    "component": "/home/bob/Projects/blank/pages/guidelines.vue",
-    "chunkName": "pages/guidelines",
-    "url": "/guidelines",
-    "_name": "_f1a434b6"
-  },
-  {
-    "name": "partners___de",
-    "path": "/de/partners",
-    "component": "/home/bob/Projects/blank/pages/partners.vue",
-    "chunkName": "pages/partners",
-    "url": "/partners",
-    "_name": "_48511166"
-  },
-  {
-    "name": "privacy_policy___de",
-    "path": "/de/privacy_policy",
-    "component": "/home/bob/Projects/blank/pages/privacy_policy.vue",
-    "chunkName": "pages/privacy_policy",
-    "url": "/privacy_policy",
-    "_name": "_766221eb"
-  },
-  {
-    "name": "guidelines___fr",
-    "path": "/fr/guidelines",
-    "component": "/home/bob/Projects/blank/pages/guidelines.vue",
-    "chunkName": "pages/guidelines",
-    "url": "/guidelines",
-    "_name": "_f1a434b6"
-  },
-  {
-    "name": "partners___fr",
-    "path": "/fr/partners",
-    "component": "/home/bob/Projects/blank/pages/partners.vue",
-    "chunkName": "pages/partners",
-    "url": "/partners",
-    "_name": "_48511166"
+    "name": "contest___fr",
+    "path": "/fr/contest",
+    "component": "/home/bob/Projects/blank/pages/contest.vue",
+    "chunkName": "pages/contest",
+    "url": "/contest",
+    "_name": "_08890ee2"
   },
   {
     "name": "privacy_policy___fr",
@@ -112,76 +56,20 @@
     "_name": "_766221eb"
   },
   {
-    "name": "guidelines___id",
-    "path": "/id/guidelines",
-    "component": "/home/bob/Projects/blank/pages/guidelines.vue",
-    "chunkName": "pages/guidelines",
-    "url": "/guidelines",
-    "_name": "_f1a434b6"
+    "name": "resources___fr",
+    "path": "/fr/resources",
+    "component": "/home/bob/Projects/blank/pages/resources.vue",
+    "chunkName": "pages/resources",
+    "url": "/resources",
+    "_name": "_de1b9c1a"
   },
   {
-    "name": "partners___id",
-    "path": "/id/partners",
-    "component": "/home/bob/Projects/blank/pages/partners.vue",
-    "chunkName": "pages/partners",
-    "url": "/partners",
-    "_name": "_48511166"
-  },
-  {
-    "name": "privacy_policy___id",
-    "path": "/id/privacy_policy",
-    "component": "/home/bob/Projects/blank/pages/privacy_policy.vue",
-    "chunkName": "pages/privacy_policy",
-    "url": "/privacy_policy",
-    "_name": "_766221eb"
-  },
-  {
-    "name": "guidelines___pt",
-    "path": "/pt/guidelines",
-    "component": "/home/bob/Projects/blank/pages/guidelines.vue",
-    "chunkName": "pages/guidelines",
-    "url": "/guidelines",
-    "_name": "_f1a434b6"
-  },
-  {
-    "name": "partners___pt",
-    "path": "/pt/partners",
-    "component": "/home/bob/Projects/blank/pages/partners.vue",
-    "chunkName": "pages/partners",
-    "url": "/partners",
-    "_name": "_48511166"
-  },
-  {
-    "name": "privacy_policy___pt",
-    "path": "/pt/privacy_policy",
-    "component": "/home/bob/Projects/blank/pages/privacy_policy.vue",
-    "chunkName": "pages/privacy_policy",
-    "url": "/privacy_policy",
-    "_name": "_766221eb"
-  },
-  {
-    "name": "guidelines___zh",
-    "path": "/zh/guidelines",
-    "component": "/home/bob/Projects/blank/pages/guidelines.vue",
-    "chunkName": "pages/guidelines",
-    "url": "/guidelines",
-    "_name": "_f1a434b6"
-  },
-  {
-    "name": "partners___zh",
-    "path": "/zh/partners",
-    "component": "/home/bob/Projects/blank/pages/partners.vue",
-    "chunkName": "pages/partners",
-    "url": "/partners",
-    "_name": "_48511166"
-  },
-  {
-    "name": "privacy_policy___zh",
-    "path": "/zh/privacy_policy",
-    "component": "/home/bob/Projects/blank/pages/privacy_policy.vue",
-    "chunkName": "pages/privacy_policy",
-    "url": "/privacy_policy",
-    "_name": "_766221eb"
+    "name": "who___fr",
+    "path": "/fr/who",
+    "component": "/home/bob/Projects/blank/pages/who.vue",
+    "chunkName": "pages/who",
+    "url": "/who",
+    "_name": "_12c94b8c"
   },
   {
     "name": "index___en",

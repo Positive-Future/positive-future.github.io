@@ -1,118 +1,49 @@
 <template>
-  <v-footer
-    class="justify-center"
-    :class="{ 'pb-4': $vuetify.breakpoint.smAndDown }"
-    style="z-index: 2"
-  >
-    <div
-      class="title font-weight-light text-center align-end"
-      :class="{ 'grey--text text--lighten-1': $vuetify.theme.isDark }"
-      style="z-index: 2"
-    >
-      <div class="d-flex align-center justify-center">
-        <!--   <v-icon :color="$vuetify.theme.isDark ? 'white' : 'secondary'">
-          mdi-moon-waning-crescent
-        </v-icon>
+  <v-footer style="z-index: 2">
+    <v-row align="center" no-gutters justify="center">
+      <v-col xs="12" sm="11" md="9" lg="9" xl="8" class="text-center">
+        <a
+          class="black--text"
+          style="text-decoration: none; cursor: pointer"
+          href="mailto:info@positive-future.org"
+          >{{ $t('common.contact_us') }}</a
+        >&nbsp;-&nbsp;
+        <a
+          class="black--text"
+          style="text-decoration: none"
+          @click="showCredits = true"
+        >
+          {{ $t('common.seeCredits') }}</a
+        >
+        <br />
         <v-tooltip top>
           <template v-slot:activator="{ on }">
-            <v-switch
-              v-model="$vuetify.theme.isDark"
-              class="mt-0 pa-0 inline-flex"
-              :false-value="true"
-              :true-value="false"
-              hide-details
-              style="max-width: 104px; line-height: 36px"
-              v-on="on"
-              @change="storeTheme()"
-            />
-          </template>
-          <span
-            v-html="
-              $vuetify.theme.isDark
-                ? 'Toggle the light mode'
-                : 'Toggle the dark mode'
-            "
-          />
-        </v-tooltip>
-        <v-icon :color="$vuetify.theme.isDark ? 'white' : 'secondary'">
-          mdi-brightness-5
-        </v-icon>
-        <v-divider vertical class="ml-2" /> -->
-        <v-tooltip v-for="(item, index) in socialIcons" :key="index" top>
-          <template v-slot:activator="{ on }">
-            <v-btn text icon class="d-inline-flex" v-on="on">
+            <v-btn text icon v-on="on">
               <a
-                :href="item.url"
+                href="http://creativecommons.org/licenses/by-sa/4.0/"
                 target="_blank"
                 rel="noopener noreferrer"
                 style="text-decoration: none"
               >
                 <v-icon :color="$vuetify.theme.isDark ? 'white' : 'secondary'"
-                  >mdi-{{ item.icon }}</v-icon
+                  >mdi-creative-commons</v-icon
                 >
               </a>
             </v-btn>
           </template>
-          <span>{{ item.text }}</span>
+          <span>This website is licenced under Creative Commons</span>
         </v-tooltip>
-      </div>
-      <v-tooltip top>
-        <template v-slot:activator="{ on }">
-          <v-btn text icon v-on="on">
-            <a
-              href="http://creativecommons.org/licenses/by-sa/4.0/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style="text-decoration: none"
-            >
-              <v-icon :color="$vuetify.theme.isDark ? 'white' : 'secondary'"
-                >mdi-creative-commons</v-icon
-              >
-            </a>
-          </v-btn>
-        </template>
-        <span>This website is licenced under Creative Commons</span>
-      </v-tooltip>
-      <span class="body-2">
         {{ new Date().getFullYear() }} - {{ $t('common.maintained') }}
         <a
-          class="blue--text"
           href="https://www.paris-iea.fr/en"
           target="_blank"
           rel="noopener noreferrer"
+          style="text-decoration: none"
           >IAS Paris</a
         >.
-        <br />
-        <a
-          style="text-decoration: underline"
-          class="blue--text"
-          @click="showCredits = true"
-        >
-          {{ $t('common.seeCredits') }}</a
-        >
-
-        &nbsp;-&nbsp;
-        <nuxt-link :to="localePath('privacy_policy')" class="blue--text">
-          {{ $t('common.privacy_policy.title') }}</nuxt-link
-        >&nbsp;-&nbsp;
-        <nuxt-link :to="localePath('partners')" class="blue--text">{{
-          $t('common.partners.title')
-        }}</nuxt-link
-        >&nbsp;-&nbsp;
-        <nuxt-link :to="localePath('guidelines')" class="blue--text">{{
-          $t('common.guidelines.title')
-        }}</nuxt-link
-        >&nbsp;-&nbsp;
-        <a
-          class="blue--text"
-          style="text-decoration: underline; cursor: pointer"
-          href="mailto:info@positive-future.org"
-          >{{ $t('common.contact_us') }}</a
-        >
-      </span>
-
-      <Credits :credits="showCredits" @close-credits="showCredits = false" />
-    </div>
+      </v-col>
+    </v-row>
+    <Credits :credits="showCredits" @close-credits="showCredits = false" />
   </v-footer>
 </template>
 

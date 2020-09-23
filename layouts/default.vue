@@ -1,25 +1,9 @@
 <template>
   <v-app v-scroll="onScroll">
     <v-main>
-      <div id="language-picker">
-        <v-select
-          :value="$i18n.locale"
-          hide-details
-          :items="languages"
-          dense
-          outlined
-          @change="$i18n.setLocale($event)"
-        >
-          <template v-slot:selection="{ item }">
-            <v-img :src="item.flagSrc" width="30" height="20"> </v-img>
-          </template>
-
-          <template v-slot:item="{ item }">
-            <v-img :src="item.flagSrc" width="30" height="20"> </v-img>&nbsp;
-            {{ item.text }}
-          </template>
-        </v-select>
-      </div>
+      <v-btn id="menu_btn" large icon @click.stop="drawer = !drawer">
+        <v-icon large color="black">mdi-menu</v-icon>
+      </v-btn>
       <Particles />
       <v-row align="center" no-gutters justify="center">
         <v-col xs="12" sm="11" md="9" lg="9" xl="8" class="ma-3">
@@ -31,6 +15,70 @@
           </v-card>
         </v-col>
       </v-row>
+      <v-navigation-drawer
+        v-model="drawer"
+        fixed
+        temporary
+        right
+        class="text-right"
+        color="rgb(217, 217, 217)"
+        overlay-color="white"
+      >
+        <div class="d-flex flex-row-reverse">
+          <v-tooltip left>
+            <template v-slot:activator="{ on }">
+              <v-btn class="ma-3" large icon @click="drawer = false" v-on="on">
+                <v-icon color="black">mdi-close</v-icon>
+              </v-btn>
+            </template>
+            <span>Close the menu</span>
+          </v-tooltip>
+        </div>
+        <v-list>
+          <v-list-item link :to="localePath('/contest')">
+            <v-list-item-content>
+              <v-list-item-title class="text-h5">
+                {{ $t('common.contest.title') }}</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item link :to="localePath('/who')">
+            <v-list-item-content>
+              <v-list-item-title class="text-h5">
+                {{ $t('common.who.title') }}</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item link :to="localePath('/resources')">
+            <v-list-item-content>
+              <v-list-item-title class="text-h5">
+                {{ $t('common.resources.title') }}</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+        <v-divider></v-divider>
+        <div id="language-picker">
+          <v-select
+            :value="$i18n.locale"
+            hide-details
+            :items="languages"
+            dense
+            dark
+            outlined
+            @change="$i18n.setLocale($event)"
+          >
+            <template v-slot:selection="{ item }">
+              <v-img :src="item.flagSrc" width="30" height="20"> </v-img>
+            </template>
+
+            <template v-slot:item="{ item }">
+              <v-img :src="item.flagSrc" width="30" height="20"> </v-img>&nbsp;
+              {{ item.text }}
+            </template>
+          </v-select>
+        </div>
+      </v-navigation-drawer>
     </v-main>
     <Footer />
     <v-fab-transition>
@@ -54,6 +102,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      drawer: false,
+    }
+  },
   computed: {
     languages() {
       return [
@@ -75,9 +128,6 @@ export default {
     onScroll(e) {
       this.$store.commit('setOffsetTop', e.target.scrollingElement.scrollTop)
     },
-    log(item) {
-      console.log(item)
-    },
   },
 }
 </script>
@@ -87,12 +137,20 @@ export default {
   max-height: 15vh;
   z-index: 2;
 }
-#language-picker {
+#menu_btn {
   position: fixed;
+  z-index: 3;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+#language-picker {
   z-index: 3;
   width: 80px;
   margin-top: 10px;
   margin-left: 10px;
+  float: right;
+  background-color: black;
 }
 #content {
   z-index: 2;

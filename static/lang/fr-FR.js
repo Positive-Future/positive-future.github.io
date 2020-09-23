@@ -2,66 +2,64 @@ export default () => {
   return new Promise(function (resolve) {
     resolve({
       common: {
-        moto: 'Faire de demain un jour meilleur',
-        categories: {
-          call: 'APPEL À CANDIDATURES',
+        more: 'Voir plus',
+        index: {
+          facebook: 'Visitez notre page Facebook',
+          twitter: 'Suivez nous sur Twitter',
+          title: 'Concours Positive Future',
+          subtitle: "Réaliser et promouvoir des visions d'un avenir désirable",
+
+          name: '« La ville en 2100 »',
+          paragraph1:
+            'Pour construire ensemble un monde différent, l’adhésion à une vision commune est essentielle et passe par l’intermédiaire de projets concrets. Alors que les représentations de futurs dystopiques sont nombreuses, il existe en parallèle beaucoup de travaux de recherche et de prospective dessinant des alternatives au monde de demain.',
+          link1: 'L’Institut d’études avancées de Paris',
+          link2: ' la Fondation 2100',
+          and: ' et ',
+          link3: 'l’Institut for Future Studies ',
+          paragraph2:
+            'lancent le premier concours Positive Future afin de susciter, sur cette base positive, l’élaboration et la diffusion d’imaginaires mobilisateurs décrivant de façon convaincante et réaliste un monde vivable et désirable. Il s’agit ici non pas de futurs utopistes, mais bien de futurs possibles, dont l’avènement repose sur des scénarios avérés scientifiquement, techniquement, socialement et politiquement.',
+          paragraph3:
+            'Ouvert à tous et de portée internationale, ce concours a pour objectif de stimuler des discours alternatifs et porteurs d’espoir à l’horizon du siècle. ',
+          paragraph4: 'Le thème de la première édition du ',
+          link4: 'concours',
+          paragraph5: ' est « La ville en 2100 ».',
         },
-        title: 'Prix international « Positive future »',
-        subtitle: '1ère édition ',
-        name: '« La ville en 2100 »',
-        paragraph1:
-          'Dérèglement climatique et pollutions, accélération de la révolution numérique, vieillissement de la population, tensions sociales et pandémies nous obligent à revoir nos modèles de société et à penser dès aujourd’hui « le monde d’après ». Pour ce faire, il est nécessaire de pouvoir s’appuyer sur des visions de futurs désirables susceptibles de mobiliser les énergies pour provoquer des changements positifs.',
-        paragraph2:
-          'Le Prix « Positive Future » lancé par l’Institut d’Études Avancées de Paris en partenariat avec la Fondation 2100 et l’Institute for Futures Studies suédois a été conçu dans le but de stimuler des discours alternatifs et porteurs d’espoir à l’horizon du siècle. Ouvert à tous, ce prix favorise les échanges interdisciplinaires et la collaboration entre participants les plus divers (communicants, artistes, entrepreneurs, prospectivistes, chercheurs, étudiants, simples citoyens…). Engagé pour l’action, il vise à proposer, valider et diffuser des visions positives de l’avenir en leur procurant une visibilité internationale.',
-        paragraph3:
-          'En 2021, la première édition du concours a pour thème « la ville en 2100 » : ce sujet invite à repenser nos modes de vie et nos espaces urbains à l’horizon du siècle. Quels liens aux territoires et aux espaces ruraux ? Les villes durables et agréables à vivre serviront de toile de fond aux œuvres présentées au concours. Les candidats devront proposer un récit articulant une vision à la fois crédible et originale des villes en 2100. ',
-        paragraph4:
-          'Les prix décernés récompenseront les meilleures œuvres fictionnelles dans les quatre catégories suivantes : ',
-        list1: 'Articles de journal',
-        list2: 'Nouvelles ou scénarios',
-        list3: 'Vidéos ou courts-métrages',
-        list4: 'Bandes dessinées',
-        paragraph5:
-          'Les lauréat.e.s de chaque catégorie recevront une aide pour la diffusion et la valorisation de leur projet.',
-        paragraph6:
-          'Un Grand Prix de 10.000€ sera décerné à la meilleure proposition toutes catégories confondues.',
-        paragraph7:
-          'Afin d’aider les candidat.e.s à bâtir des visions réalistes, un Conseil scientifique international mettra à leur disposition une base de ressources de prospective, constituée sous forme de site web. Une série de conférences-ateliers en ligne sur le thème leur permettra également d’échanger avec les meilleurs experts du domaine.',
-        paragraph8: 'Vous souhaitez participez?',
-        paragraph9: 'Consultez nos ',
         error_with_status: 'An error occurred on server',
         404: 'This page could not be found.',
         '404_subtitle':
           'You can either stay and chill here, or go back to the beginning.',
         back: "Retour à l'accueil",
         error_without_status: 'An error occurred on the server',
-        contact_title: 'Free Project Quote',
-        contact_subtitle:
-          'Do you have any questions? Are you ready to reduce cost and create new revenue? Or you simply want to say hi? Drop us a message.',
         privacy_policy: {
           text:
             'Positive-Future website’s purpose is to offer a place to think about a brighter future. <br />By registering their project on the Positive-Future website, contributorsauthorize the Positive-Future to publish online the data collected, exceptfor their personal contact details (e-mail address). <br />E-mail addresses of contribuors or referents will never be disclosed onlinenor transferred or sold to any third party. They will be used only:<br /><ul><li>to redirect potential contact requests to contributors through the Positive-Future servers;</li><li>by the Positive-Future team to contact contributors to enable their uploads, facilitate their collaborations and occasionally regarding evolutions of Positive-Future;</li><li>by Positive-Future referents to request edits through WPRN servers  </li></ul>In compliance with the EU General Data Protection Regulation, you can exertyour right to access, correct or oppose the use of your data by contacting<a href="mailto:info@positive-future.org">info@positive-future.org</a>.',
           title: 'Politique de confidentialité',
         },
-        form_name: 'What is your name? *',
-        form_email: 'What it your email? *',
-        form_phone: 'What is your phone number?',
-        form_company: 'What is your company?',
-        form_message: 'Write your message here',
-        form_terms: 'I have read and accept the Terms of',
-        form_privacy: 'Service & Privacy Policy *',
-        form_send: 'Send Message',
-        guidelines: {
-          title: 'Règles de participation',
+        contest: {
+          title: 'Concours',
+          theme: {
+            title: 'Thème: la ville en 2100',
+            content:
+              'Ce thème invite à repenser nos modes de vie et nos espaces urbains pour cette première édition. Quel serait le visage de la ville durable et agréable à vivre de demain ? Quels liens aux territoires et aux espaces ruraux ? Les participants devront proposer un récit articulant une vision à la fois crédible et originale des villes en 2100.',
+          },
           who: {
-            title: 'Qui peut participer ?',
+            title: 'Qui ?',
             content1:
               'Le concours est ouvert à toutes et à tous, quels que soient la nationalité, l’âge ou la profession.',
             content2:
-              'Les propositions peuvent être réalisés individuellement ou en groupe.',
+              'Les propositions peuvent être réalisées individuellement ou en groupe.',
+          },
+          when: {
+            title: 'Quand ?',
+            content1: 'Lancement de l’appel : Septembre 2020',
+            content2: 'Date limite d’inscription au concours : Mars 2021',
+            content3: 'Date limite de dépôt des propositions : Mai 2021',
+            content4: 'Remise des prix à Paris : Septembre 2021',
           },
           what: {
-            title: 'Quelles œuvres présenter ?',
+            title: 'Comment ?',
+            content:
+              'Les récits peuvent se présenter sous les formats suivants :',
             content1:
               '<span class="text-decoration-underline">Articles de journal</span> : maximum 10.000 signes (espaces compris), avec la possibilité d’intégrer des illustrations',
             content2:
@@ -69,7 +67,14 @@ export default () => {
             content3:
               '<span class="text-decoration-underline">Vidéos ou courts-métrages</span> : maximum 10 minutes',
             content4:
-              '<span class="text-decoration-underline">Bandes dessinées</span> : maximum 20 pages',
+              '<span class="text-decoration-underline">Bandes dessinées</span> : maximum 15 pages',
+          },
+          reward: {
+            title: 'Prix',
+            content1:
+              'Des prix seront décernés aux meilleures œuvres fictionnelles dans les quatre catégories. ',
+            content2:
+              'Un grand prix de 10 000 euros sera décerné à la meilleure proposition toutes catégories confondues. ',
           },
           criterions: {
             title: 'Critères d’évaluation et de sélection',
@@ -78,37 +83,42 @@ export default () => {
             content2:
               'La <b>qualité</b> du récit et la capacité de la proposition à <b>susciter l’adhésion</b> et de donner des <b>pistes d’action</b> directement exploitables seront également prises en compte.',
           },
+          resources: {
+            title: 'Ressources',
+            content1: 'Un ensemble de ',
+            link: 'ressources',
+            content2:
+              'est mis à disposition des candidats pour les aider à nourrir leur réflexion.',
+          },
           jury: {
             title: 'Jury',
             content:
               'Le jury sera composé d’un panel de prospectivistes et de personnalités de la science, de l’industrie, des arts, des médias et de la politique.',
           },
-          calendar: {
-            title: 'Calendrier',
-            content1: 'Lancement de l’appel : Septembre 2020',
-            content2: 'Date limite d’inscription au concours : Mars 2021',
-            content3: 'Date limite de dépôt des propositions : Mai 2021',
-            content4: 'Remise des prix à Paris : Septembre 2021',
-          },
         },
-        partners: {
-          title: 'Partenaires',
+        resources: {
+          title: 'Ressources',
+          content:
+            'Une <b>base de ressources</b> (études de référence, vidéos, articles, etc.), mettant l’accent sur les travaux pouvant fonder une approche positive et durable de l’avenir, sera mise en ligne prochainement.',
+        },
+        who: {
+          title: 'Qui sommes nous?',
           iea: {
             name: 'Paris Institute for Advanced Study',
             description:
-              "L'Institut d'études avancées de Paris est un centre de recherche indépendant en sciences humaines et sociales qui vise à favoriser la recherche interdisciplinaire et à expérimenter de nouveaux formats de collaborations intersectorielles",
+              "L'Institut d'études avancées de Paris est un centre de recherche indépendant en sciences humaines et sociales qui vise à favoriser la recherche interdisciplinaire et à expérimenter de nouveaux formats de collaborations intersectorielles. Pour ce faire, il invite en résidence des chercheurs internationaux de haut niveau, organise des événements scientifiques, et met en place des espaces de réflexion",
             url: 'www.paris-iea.fr ',
           },
           fundation: {
             name: 'Fondation 2100',
             description:
-              'La Fondation 2100 a pour vocation de soutenir le développement d’activités universitaires en prospective par l’attribution de prix de thèses, le financement de bourses de thèses sur des thématiques prioritaires et la création de chaires.',
+              'La Fondation 2100, sous égide de la Fondation ParisTech, a vocation à promouvoir la prospective de long terme des sociétés humaines. Elle prolonge les travaux entamés il y a près de quarante ans sous la direction de Thierry Gaudin par le Centre de Prospective et d’Évaluation du Ministère de la Recherche puis par l’association Prospective 2100. Aujourd’hui, elle anime les efforts de prospective par un prix de thèses décerné avec un cercle d\'académiciens, un concours sur les futurs positifs en partenariat avec l’Institut d’Études Avancées de Paris, et un projet international de prospective mondiale (revisitant le rapport "2100, Récit du prochain siècle" publié en 1990).',
             url: 'https://2100.org',
           },
           iff: {
             name: 'Institute for Futures Studies',
             description:
-              "L'Institute for Futures Studies est une fondation de recherche suédoise indépendante qui promeut les perspectives d'avenir dans la recherche et le débat public",
+              "L'Institute for Futures Studies est une fondation de recherche suédoise indépendante qui promeut les perspectives d'avenir dans la recherche et le débat public.",
             url: 'https://www.iffs.se/en/',
           },
         },
