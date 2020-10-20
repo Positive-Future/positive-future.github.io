@@ -14,11 +14,12 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_plugin_7a818f68 from 'nuxt_plugin_plugin_7a818f68' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_workbox_6af6641a from 'nuxt_plugin_workbox_6af6641a' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_nuxticons_2d19f18a from 'nuxt_plugin_nuxticons_2d19f18a' // Source: ./nuxt-icons.js (mode: 'all')
 import nuxt_plugin_plugin_c1f3a4f4 from 'nuxt_plugin_plugin_c1f3a4f4' // Source: ./vuetify/plugin.js (mode: 'all')
 import nuxt_plugin_pluginrouting_bf52f4f0 from 'nuxt_plugin_pluginrouting_bf52f4f0' // Source: ./nuxt-i18n/plugin.routing.js (mode: 'all')
 import nuxt_plugin_pluginmain_779392e7 from 'nuxt_plugin_pluginmain_779392e7' // Source: ./nuxt-i18n/plugin.main.js (mode: 'all')
+import nuxt_plugin_workbox_6af6641a from 'nuxt_plugin_workbox_6af6641a' // Source: ./workbox.js (mode: 'client')
+import nuxt_plugin_meta_f17e33c0 from 'nuxt_plugin_meta_f17e33c0' // Source: ./pwa/meta.js (mode: 'all')
+import nuxt_plugin_icons_4fd8260f from 'nuxt_plugin_icons_4fd8260f' // Source: ./pwa/icons.js (mode: 'all')
 import nuxt_plugin_i18nconfig_ad306bc6 from 'nuxt_plugin_i18nconfig_ad306bc6' // Source: ../plugins/i18n-config.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -46,6 +47,13 @@ Vue.component('NChild', NuxtChild)
 // Component: <Nuxt>
 Vue.component(Nuxt.name, Nuxt)
 
+Object.defineProperty(Vue.prototype, '$nuxt', {
+  get() {
+    return this.$root.$options.$nuxt
+  },
+  configurable: true
+})
+
 Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n-head-ssr","tagIDKeyName":"hid"})
 
 const defaultTransition = {"name":"page","mode":"out-in","appear":true,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
@@ -69,7 +77,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"htmlAttrs":{"dir":"ltr","lang":"fa"},"titleTemplate":"Positive Future","title":"Positive Future","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Climate change and pollution, the acceleration of the digital revolution, an aging population, social tensions and pandemics are forcing us to review our models of society and start thinking today about the \"world to come\". To do this, we need to be able to draw on visions of desirable futures that can mobilize energies to bring about positive change."},{"property":"author","content":undefined},{"property":"og:site_name","content":undefined},{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"website"},{"property":"twitter:site","content":undefined},{"property":"twitter:domain","content":undefined},{"property":"twitter:creator","content":undefined},{"property":"twitter:card","content":"summary"},{"property":"twitter:image:src","content":"\u002Fimages\u002Flogo.png"},{"property":"og:url","content":undefined},{"property":"og:title","content":undefined},{"property":"og:description","content":undefined},{"name":"twitter:site","content":undefined},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:image","content":undefined},{"property":"og:image","content":undefined},{"property":"og:image:width","content":"1200"},{"property":"og:image:height","content":"630"},{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"apple-touch-icon","sizes":"57x57","href":"\u002Fapple-icon-57x57.png"},{"rel":"apple-touch-icon","sizes":"60x60","href":"\u002Fapple-icon-60x60.png"},{"rel":"apple-touch-icon","sizes":"72x72","href":"\u002Fapple-icon-72x72.png"},{"rel":"apple-touch-icon","sizes":"76x76","href":"\u002Fapple-icon-76x76.png"},{"rel":"apple-touch-icon","sizes":"114x114","href":"\u002Fapple-icon-114x114.png"},{"rel":"apple-touch-icon","sizes":"120x120","href":"\u002Fapple-icon-120x120.png"},{"rel":"apple-touch-icon","sizes":"144x144","href":"\u002Fapple-icon-144x144.png"},{"rel":"apple-touch-icon","sizes":"152x152","href":"\u002Fapple-icon-152x152.png"},{"rel":"apple-touch-icon","sizes":"180x180","href":"\u002Fapple-icon-180x180.png"},{"rel":"icon","type":"image\u002Fpng","sizes":"192x192","href":"\u002Fandroid-icon-192x192.png"},{"rel":"icon","type":"image\u002Fpng","sizes":"32x32","href":"\u002Ffavicon-32x32.png"},{"rel":"icon","type":"image\u002Fpng","sizes":"96x96","href":"\u002Ffavicon-96x96.png"},{"rel":"icon","type":"image\u002Fpng","sizes":"16x16","href":"\u002Ffavicon-16x16.png"},{"rel":"manifest","href":"\u002Fmanifest.json"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"Positive Future"},{"hid":"author","name":"author","content":"Antoine Cordelois"},{"hid":"theme-color","name":"theme-color","content":"#00c2cb"}],"link":[{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.c1a19e70.json"},{"rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64x64.b69e4f.png"},{"rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512x512.b69e4f.png","sizes":"512x512"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"style":[],"script":[]},
+    head: {"htmlAttrs":{"dir":"ltr","lang":"fa"},"titleTemplate":"Positive Future","title":"Positive Future","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Climate change and pollution, the acceleration of the digital revolution, an aging population, social tensions and pandemics are forcing us to review our models of society and start thinking today about the \"world to come\". To do this, we need to be able to draw on visions of desirable futures that can mobilize energies to bring about positive change."},{"property":"author","content":undefined},{"property":"og:site_name","content":undefined},{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"website"},{"property":"twitter:site","content":undefined},{"property":"twitter:domain","content":undefined},{"property":"twitter:creator","content":undefined},{"property":"twitter:card","content":"summary"},{"property":"twitter:image:src","content":"\u002Fimages\u002Flogo.png"},{"property":"og:url","content":undefined},{"property":"og:title","content":undefined},{"property":"og:description","content":undefined},{"name":"twitter:site","content":undefined},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:image","content":undefined},{"property":"og:image","content":undefined},{"property":"og:image:width","content":"1200"},{"property":"og:image:height","content":"630"},{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"apple-touch-icon","sizes":"57x57","href":"\u002Fapple-icon-57x57.png"},{"rel":"apple-touch-icon","sizes":"60x60","href":"\u002Fapple-icon-60x60.png"},{"rel":"apple-touch-icon","sizes":"72x72","href":"\u002Fapple-icon-72x72.png"},{"rel":"apple-touch-icon","sizes":"76x76","href":"\u002Fapple-icon-76x76.png"},{"rel":"apple-touch-icon","sizes":"114x114","href":"\u002Fapple-icon-114x114.png"},{"rel":"apple-touch-icon","sizes":"120x120","href":"\u002Fapple-icon-120x120.png"},{"rel":"apple-touch-icon","sizes":"144x144","href":"\u002Fapple-icon-144x144.png"},{"rel":"apple-touch-icon","sizes":"152x152","href":"\u002Fapple-icon-152x152.png"},{"rel":"apple-touch-icon","sizes":"180x180","href":"\u002Fapple-icon-180x180.png"},{"rel":"icon","type":"image\u002Fpng","sizes":"192x192","href":"\u002Fandroid-icon-192x192.png"},{"rel":"icon","type":"image\u002Fpng","sizes":"32x32","href":"\u002Ffavicon-32x32.png"},{"rel":"icon","type":"image\u002Fpng","sizes":"96x96","href":"\u002Ffavicon-96x96.png"},{"rel":"icon","type":"image\u002Fpng","sizes":"16x16","href":"\u002Ffavicon-16x16.png"},{"rel":"manifest","href":"\u002Fmanifest.json"},{"hid":"charset","charset":"utf-8"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"author","name":"author","content":"Antoine Cordelois"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:description","name":"og:description","property":"og:description","content":"Public initiative to publish and share in one single place the list of all research initiatives and surveys about the current pandemic of Covid-19 coronavirus."}],"link":[{"rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64x64.b69e4f.png"},{"rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512x512.b69e4f.png","sizes":"512x512"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.c8e75d3a.json","hid":"manifest"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"style":[],"script":[]},
 
     store,
     router,
@@ -202,14 +210,6 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_plugin_7a818f68(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_workbox_6af6641a === 'function') {
-    await nuxt_plugin_workbox_6af6641a(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_nuxticons_2d19f18a === 'function') {
-    await nuxt_plugin_nuxticons_2d19f18a(app.context, inject)
-  }
-
   if (typeof nuxt_plugin_plugin_c1f3a4f4 === 'function') {
     await nuxt_plugin_plugin_c1f3a4f4(app.context, inject)
   }
@@ -220,6 +220,18 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_pluginmain_779392e7 === 'function') {
     await nuxt_plugin_pluginmain_779392e7(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_workbox_6af6641a === 'function') {
+    await nuxt_plugin_workbox_6af6641a(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_meta_f17e33c0 === 'function') {
+    await nuxt_plugin_meta_f17e33c0(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_icons_4fd8260f === 'function') {
+    await nuxt_plugin_icons_4fd8260f(app.context, inject)
   }
 
   if (typeof nuxt_plugin_i18nconfig_ad306bc6 === 'function') {

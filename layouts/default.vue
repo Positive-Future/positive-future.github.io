@@ -1,6 +1,25 @@
 <template>
   <v-app v-scroll="onScroll">
     <v-main>
+      <div id="language-picker">
+        <v-select
+          :value="$i18n.locale"
+          hide-details
+          :items="languages"
+          dense
+          outlined
+          @change="$i18n.setLocale($event)"
+        >
+          <template v-slot:selection="{ item }">
+            {{ item.text.substring(0, 2).toUpperCase() }}
+          </template>
+
+          <template v-slot:item="{ item }">
+            <v-img :src="item.flagSrc" width="30" height="20"> </v-img>&nbsp;
+            {{ item.text }}
+          </template>
+        </v-select>
+      </div>
       <v-btn id="menu_btn" large icon @click.stop="drawer = !drawer">
         <v-icon large color="black">mdi-menu</v-icon>
       </v-btn>
@@ -57,27 +76,6 @@
             </v-list-item-content>
           </v-list-item>
         </v-list>
-        <v-divider></v-divider>
-        <div id="language-picker">
-          <v-select
-            :value="$i18n.locale"
-            hide-details
-            :items="languages"
-            dense
-            dark
-            outlined
-            @change="$i18n.setLocale($event)"
-          >
-            <template v-slot:selection="{ item }">
-              <v-img :src="item.flagSrc" width="30" height="20"> </v-img>
-            </template>
-
-            <template v-slot:item="{ item }">
-              <v-img :src="item.flagSrc" width="30" height="20"> </v-img>&nbsp;
-              {{ item.text }}
-            </template>
-          </v-select>
-        </div>
       </v-navigation-drawer>
     </v-main>
     <Footer />
@@ -145,12 +143,13 @@ export default {
   margin-right: 10px;
 }
 #language-picker {
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 3;
   width: 80px;
   margin-top: 10px;
   margin-left: 10px;
-  float: right;
-  background-color: black;
 }
 #content {
   z-index: 2;

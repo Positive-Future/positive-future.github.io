@@ -58,7 +58,7 @@
               width="100"
             >
               <v-img
-                src="/who/2100.jpg"
+                src="/who/2100.png"
                 contain
                 :width="$vuetify.breakpoint.mdAndUp ? '100' : '75'"
                 height="60"

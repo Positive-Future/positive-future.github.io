@@ -13,7 +13,7 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "yarn lint:js",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "deploy-test": "nuxt generate && aws s3 cp dist s3://positive-future.org --recursive"
+    "deploy-test": "nuxt build && nuxt generate && aws s3 cp dist s3://positive-future.org --recursive"
   },
   "dependencies": {
     "nuxt": "^2.14.0",

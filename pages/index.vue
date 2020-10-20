@@ -14,7 +14,7 @@
           <template v-slot:activator="{ on }">
             <v-btn text icon class="d-inline-flex" v-on="on">
               <a
-                href="item.url"
+                href="https://www.facebook.com/FuturPositif"
                 target="_blank"
                 rel="noopener noreferrer"
                 style="text-decoration: none"
@@ -31,7 +31,7 @@
           <template v-slot:activator="{ on }">
             <v-btn text icon class="d-inline-flex" v-on="on">
               <a
-                href="item.url"
+                href="https://twitter.com/FuturPositif"
                 target="_blank"
                 rel="noopener noreferrer"
                 style="text-decoration: none"

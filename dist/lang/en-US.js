@@ -9,7 +9,7 @@ export default () => {
           title: 'Positive Future',
           subtitle: 'Implementing and promoting visions of a desirable future',
           paragraph1:
-            "To build a different world together, a common vision is essential, which can only be achieved through concrete projects. While there are many representations of dystopian futures, there is also a large body of research and prospective work drawing alternatives for tomorrow's world. ",
+            "To build a different world together, a common vision is essential, which can only be achieved through concrete projects. While there are many representations of dystopian futures, there is also a large body of research and prospective work drawing positive alternatives for tomorrow's world. ",
           link1: 'The Paris Institute for Advanced Study',
           link2: ' the 2100 Fondation',
           and: ' and ',
@@ -38,7 +38,7 @@ export default () => {
           theme: {
             title: 'Theme: the city in 2100',
             content:
-              'This theme invites us to rethink our lifestyles and urban spaces. What would the sustainable and livable city of tomorrow look like? What links to territories and rural spaces? Participants will be asked to propose a story articulating a credible and original vision of cities in 2100.',
+              'This theme invites us to rethink our lifestyles and urban spaces. What would the sustainable and livable city of tomorrow look like? What links to territories and rural spaces? Participants will be asked to propose a background for their story articulating a credible and original vision of cities in 2100.',
           },
           who: {
             title: 'Who ?',
@@ -77,7 +77,7 @@ export default () => {
           criterions: {
             title: 'Evaluation and selection criteria ',
             content1:
-              '<b>Originality</b> as well as the <b>desirability</b> and <b>realism</b> of the proposed vision of "the city in 2100" will be the main selection criteria.',
+              '<b>Originality</b> of the story as well as the <b>desirability</b> and <b>realism</b> of the proposed vision of "the city in 2100" will be the main selection criteria.',
             content2:
               "The <b>quality</b> of the narrative and the proposal's ability to <b>generate commitment</b> and to provide directly <b>actionable perspectives</b> will also be considered.",
           },
@@ -115,13 +115,15 @@ export default () => {
           iff: {
             name: 'Institute for Futures Studies',
             description:
-              'The Institute for Futures Studies is a Swedish independent research foundation that promotes future perspectives in research and public debate.',
+              'The institute has two tasks, one of which is to conduct future studies, to promote a future-oriented perspective in Swedish research, and to use and develop appropriate theory and methodology. Our research is guided by research programs, and the current program includes research on climate change, new technologies, prejudices that govern our actions, who will make what decisions, and the well-being of our young. The researchers at the institute mainly conduct research in this program. Our second mission is to stimulate an open and broad discussion about possibilities and threats to future social development. We do this by organizing seminars, publishing reports and communicating research via newsletters, Facebook, Twitter and our site, but also by our researchers participating in debates, visiting politicians, government agencies and companies, and sharing their knowledge through public media.',
             url: 'https://www.iffs.se/en/',
           },
         },
         contact_us: 'Contact us',
         maintained: 'This website is maintained by',
+        maintainer: 'IAS Paris',
         seeCredits: 'Credits',
+        subscribe: 'Subscribe to the newsletter',
         accept: 'Accept',
         en: 'English',
         fr: 'French',

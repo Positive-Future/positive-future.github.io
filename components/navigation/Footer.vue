@@ -11,6 +11,13 @@
         <a
           class="black--text"
           style="text-decoration: none"
+          href="http://eepurl.com/hgbB6f"
+        >
+          {{ $t('common.subscribe') }}</a
+        >&nbsp;-&nbsp;
+        <a
+          class="black--text"
+          style="text-decoration: none"
           @click="showCredits = true"
         >
           {{ $t('common.seeCredits') }}</a
@@ -39,7 +46,7 @@
           target="_blank"
           rel="noopener noreferrer"
           style="text-decoration: none"
-          >IAS Paris</a
+          >{{ $t('common.maintainer') }}</a
         >.
       </v-col>
     </v-row>

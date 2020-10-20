@@ -11,7 +11,7 @@ export default () => {
 
           name: '« La ville en 2100 »',
           paragraph1:
-            'Pour construire ensemble un monde différent, l’adhésion à une vision commune est essentielle et passe par l’intermédiaire de projets concrets. Alors que les représentations de futurs dystopiques sont nombreuses, il existe en parallèle beaucoup de travaux de recherche et de prospective dessinant des alternatives au monde de demain.',
+            'Pour construire ensemble un monde différent, l’adhésion à une vision commune est essentielle et passe par l’intermédiaire de projets concrets. Alors que les représentations de futurs dystopiques sont nombreuses, il existe en parallèle beaucoup de travaux de recherche et de prospective dessinant des alternatives positives pour le monde de demain.',
           link1: 'L’Institut d’études avancées de Paris',
           link2: ' la Fondation 2100',
           and: ' et ',
@@ -40,7 +40,7 @@ export default () => {
           theme: {
             title: 'Thème: la ville en 2100',
             content:
-              'Ce thème invite à repenser nos modes de vie et nos espaces urbains pour cette première édition. Quel serait le visage de la ville durable et agréable à vivre de demain ? Quels liens aux territoires et aux espaces ruraux ? Les participants devront proposer un récit articulant une vision à la fois crédible et originale des villes en 2100.',
+              'Ce thème invite à repenser nos modes de vie et nos espaces urbains pour cette première édition. Quel serait le visage de la ville durable et agréable à vivre de demain ? Quels liens aux territoires et aux espaces ruraux ? Les participants devront proposer un récit montrant en arrière-plan une vision à la fois crédible et originale des villes en 2100.',
           },
           who: {
             title: 'Qui ?',
@@ -79,7 +79,7 @@ export default () => {
           criterions: {
             title: 'Critères d’évaluation et de sélection',
             content1:
-              '<b>L’originalité</b> ainsi que le caractère <b>désirable</b> et <b>réaliste</b> de la vision proposée de « la ville en 2100 » seront les principaux critères de sélection. ',
+              '<b>L’originalité</b> du récit ainsi que le caractère <b>désirable</b> et <b>réaliste</b> de la vision proposée de « la ville en 2100 » seront les principaux critères de sélection. ',
             content2:
               'La <b>qualité</b> du récit et la capacité de la proposition à <b>susciter l’adhésion</b> et de donner des <b>pistes d’action</b> directement exploitables seront également prises en compte.',
           },
@@ -118,13 +118,15 @@ export default () => {
           iff: {
             name: 'Institute for Futures Studies',
             description:
-              "L'Institute for Futures Studies est une fondation de recherche suédoise indépendante qui promeut les perspectives d'avenir dans la recherche et le débat public.",
+              "L'institut a deux tâches, dont l'une consiste à mener des études prospectives, à promouvoir une perspective orientée vers l'avenir dans la recherche suédoise, et à utiliser et développer une théorie et une méthodologie appropriées. Nos recherches sont guidées par des programmes de recherche, et le programme actuel comprend des recherches sur le changement climatique, les nouvelles technologies, les préjugés qui régissent nos actions, qui prendra quelles décisions, et le bien-être de nos jeunes. Les chercheurs de l'institut mènent principalement des recherches dans le cadre de ce programme. Notre deuxième mission est de stimuler une discussion ouverte et large sur les possibilités et les menaces qui pèsent sur le développement social futur. Nous le faisons en organisant des séminaires, en publiant des rapports et en communiquant les résultats de nos recherches par le biais de bulletins d'information, de Facebook, de Twitter et de notre site, mais aussi en faisant participer nos chercheurs à des débats, en rendant visite à des politiciens, des organismes gouvernementaux et des entreprises, et en partageant leurs connaissances par le biais des médias publics.",
             url: 'https://www.iffs.se/en/',
           },
         },
         contact_us: 'Contactez nous',
         maintained: 'Ce site est géré par ',
+        maintainer: "L'IEA de Paris",
         seeCredits: 'Crédits',
+        subscribe: "S'inscrire à la newsletter'",
         accept: 'Accept',
         en: 'Anglais',
         fr: 'Français',
