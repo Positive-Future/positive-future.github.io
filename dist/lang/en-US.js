@@ -105,6 +105,7 @@ export default () => {
             name: 'Paris Institute for Advanced Study',
             description:
               'The Paris Institute for Advanced Study is an independent research center in the humanities and social sciences aiming at fostering interdisciplinary research and experimenting new formats of intersectoral collaborations. It invites high-level international researchers for fellowships in residence in Paris, organizes scientific events, and sets up spaces for reflection and exchange involving academics, citizens, political decision-makers and businesses.',
+            url: 'https://www.paris-iea.fr/en/',
           },
           fundation: {
             name: 'Fondation 2100',
@@ -121,7 +122,7 @@ export default () => {
         },
         contact_us: 'Contact us',
         maintained: 'This website is maintained by',
-        maintainer: 'IAS Paris',
+        maintainer: 'Paris IAS',
         seeCredits: 'Credits',
         subscribe: 'Subscribe to the newsletter',
         accept: 'Accept',

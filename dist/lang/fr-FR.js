@@ -107,7 +107,7 @@ export default () => {
             name: 'Paris Institute for Advanced Study',
             description:
               "L'Institut d'études avancées de Paris est un centre de recherche indépendant en sciences humaines et sociales qui vise à favoriser la recherche interdisciplinaire et à expérimenter de nouveaux formats de collaborations intersectorielles. Pour ce faire, il invite en résidence des chercheurs internationaux de haut niveau, organise des événements scientifiques, et met en place des espaces de réflexion",
-            url: 'www.paris-iea.fr ',
+            url: 'https://www.paris-iea.fr/fr/',
           },
           fundation: {
             name: 'Fondation 2100',
@@ -126,7 +126,7 @@ export default () => {
         maintained: 'Ce site est géré par ',
         maintainer: "L'IEA de Paris",
         seeCredits: 'Crédits',
-        subscribe: "S'inscrire à la newsletter'",
+        subscribe: "S'inscrire à la newsletter",
         accept: 'Accept',
         en: 'Anglais',
         fr: 'Français',

@@ -42,7 +42,7 @@
         </v-tooltip>
         {{ new Date().getFullYear() }} - {{ $t('common.maintained') }}
         <a
-          href="https://www.paris-iea.fr/en"
+          :href="$t('common.who.iea.url')"
           target="_blank"
           rel="noopener noreferrer"
           style="text-decoration: none"
