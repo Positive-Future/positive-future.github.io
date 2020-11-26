@@ -4,9 +4,7 @@
 *.log
 npm-debug.log
 yarn-debug.log
-frontend/yarn-debug.log
 yarn-error.log
-frontend/yarn-error.log
 
 # Runtime data
 pids
@@ -36,7 +34,9 @@ bower_components
 build/Release
 
 # Dependency directories
+node_modules/*
 node_modules/
+.node_modules/
 jspm_packages/
 
 # TypeScript v1 declaration files
@@ -68,6 +68,7 @@ typings/
 
 # nuxt.js build output
 .nuxt
+.nuxt/
 
 # vuepress build output
 .vuepress/dist
@@ -92,7 +93,7 @@ sw.*
 assets/aws-exports.js
 
 # Generated with gomplate
-**/frontend/*.config.js
+*.config.js
 **/test/env.json
 
 # Lambda zip files
@@ -109,11 +110,11 @@ referent/backend/functions/**/lib/
 backend.tf
 
 # Build dirs
+dist
 dist/
 /dist/
 .*_dist/
 .*_dist_build/
-
 # Yarn
 .yarn/
 

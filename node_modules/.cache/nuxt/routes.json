@@ -2,81 +2,81 @@
   {
     "name": "contest___en",
     "path": "/contest",
-    "component": "/home/bob/Projects/blank/pages/contest.vue",
+    "component": "C:\\\\Users\\\\bob\\\\Documents\\\\GitHub\\\\Positive-Future\\\\pages\\\\contest.vue",
     "chunkName": "pages/contest",
     "url": "/contest",
-    "_name": "_08890ee2"
+    "_name": "_55fb2804"
   },
   {
     "name": "index___fr",
     "path": "/fr",
-    "component": "/home/bob/Projects/blank/pages/index.vue",
+    "component": "C:\\\\Users\\\\bob\\\\Documents\\\\GitHub\\\\Positive-Future\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
     "url": "/",
-    "_name": "_1dc06dc0"
+    "_name": "_a1748588"
   },
   {
     "name": "privacy_policy___en",
     "path": "/privacy_policy",
-    "component": "/home/bob/Projects/blank/pages/privacy_policy.vue",
+    "component": "C:\\\\Users\\\\bob\\\\Documents\\\\GitHub\\\\Positive-Future\\\\pages\\\\privacy_policy.vue",
     "chunkName": "pages/privacy_policy",
     "url": "/privacy_policy",
-    "_name": "_766221eb"
+    "_name": "_ec91e562"
   },
   {
     "name": "resources___en",
     "path": "/resources",
-    "component": "/home/bob/Projects/blank/pages/resources.vue",
+    "component": "C:\\\\Users\\\\bob\\\\Documents\\\\GitHub\\\\Positive-Future\\\\pages\\\\resources.vue",
     "chunkName": "pages/resources",
     "url": "/resources",
-    "_name": "_de1b9c1a"
+    "_name": "_2488b80f"
   },
   {
     "name": "who___en",
     "path": "/who",
-    "component": "/home/bob/Projects/blank/pages/who.vue",
+    "component": "C:\\\\Users\\\\bob\\\\Documents\\\\GitHub\\\\Positive-Future\\\\pages\\\\who.vue",
     "chunkName": "pages/who",
     "url": "/who",
-    "_name": "_12c94b8c"
+    "_name": "_ba54d2b0"
   },
   {
     "name": "contest___fr",
     "path": "/fr/contest",
-    "component": "/home/bob/Projects/blank/pages/contest.vue",
+    "component": "C:\\\\Users\\\\bob\\\\Documents\\\\GitHub\\\\Positive-Future\\\\pages\\\\contest.vue",
     "chunkName": "pages/contest",
     "url": "/contest",
-    "_name": "_08890ee2"
+    "_name": "_55fb2804"
   },
   {
     "name": "privacy_policy___fr",
     "path": "/fr/privacy_policy",
-    "component": "/home/bob/Projects/blank/pages/privacy_policy.vue",
+    "component": "C:\\\\Users\\\\bob\\\\Documents\\\\GitHub\\\\Positive-Future\\\\pages\\\\privacy_policy.vue",
     "chunkName": "pages/privacy_policy",
     "url": "/privacy_policy",
-    "_name": "_766221eb"
+    "_name": "_ec91e562"
   },
   {
     "name": "resources___fr",
     "path": "/fr/resources",
-    "component": "/home/bob/Projects/blank/pages/resources.vue",
+    "component": "C:\\\\Users\\\\bob\\\\Documents\\\\GitHub\\\\Positive-Future\\\\pages\\\\resources.vue",
     "chunkName": "pages/resources",
     "url": "/resources",
-    "_name": "_de1b9c1a"
+    "_name": "_2488b80f"
   },
   {
     "name": "who___fr",
     "path": "/fr/who",
-    "component": "/home/bob/Projects/blank/pages/who.vue",
+    "component": "C:\\\\Users\\\\bob\\\\Documents\\\\GitHub\\\\Positive-Future\\\\pages\\\\who.vue",
     "chunkName": "pages/who",
     "url": "/who",
-    "_name": "_12c94b8c"
+    "_name": "_ba54d2b0"
   },
   {
     "name": "index___en",
     "path": "/",
-    "component": "/home/bob/Projects/blank/pages/index.vue",
+    "component": "C:\\\\Users\\\\bob\\\\Documents\\\\GitHub\\\\Positive-Future\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
     "url": "/",
-    "_name": "_1dc06dc0"
+    "_name": "_a1748588"
   }
 ]
