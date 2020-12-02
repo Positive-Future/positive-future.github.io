@@ -16,7 +16,7 @@ export default () => {
           and: ' et ',
           link2: ' la Fondation 2100',
           and2: ' en partenariat avec ',
-          link3: 'l’Institute for Future Studies ',
+          link3: 'l’Institute for Futures Studies ',
           paragraph2:
             'lancent le premier concours Positive Future afin de susciter, sur cette base positive, l’élaboration et la diffusion d’imaginaires mobilisateurs décrivant de façon convaincante et réaliste un monde vivable et désirable. Il s’agit ici non pas de futurs utopistes, mais bien de futurs possibles, dont l’avènement repose sur des scénarios avérés scientifiquement, techniquement, socialement et politiquement.',
           paragraph3:
