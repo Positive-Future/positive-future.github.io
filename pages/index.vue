@@ -1,49 +1,13 @@
 <template>
   <v-card-text class="pa-sm-12">
     <v-row no-gutters>
-      <v-col cols="11">
+      <v-col cols="12">
         <div class="text-h2 my-3">
           {{ $t('common.index.title') }}
         </div>
         <div class="text-h5 my-3">
           {{ $t('common.index.subtitle') }}
         </div>
-      </v-col>
-      <v-col cols="1" align="right" class="align-center">
-        <v-tooltip top>
-          <template v-slot:activator="{ on }">
-            <v-btn text icon class="d-inline-flex" v-on="on">
-              <a
-                href="https://www.facebook.com/FuturPositif"
-                target="_blank"
-                rel="noopener noreferrer"
-                style="text-decoration: none"
-              >
-                <v-icon x-large dark color="rgb(26, 71, 137)"
-                  >mdi-facebook</v-icon
-                >
-              </a>
-            </v-btn>
-          </template>
-          <span>{{ $t('common.index.facebook') }}</span>
-        </v-tooltip>
-        <v-tooltip top>
-          <template v-slot:activator="{ on }">
-            <v-btn text icon class="d-inline-flex" v-on="on">
-              <a
-                href="https://twitter.com/FuturPositif"
-                target="_blank"
-                rel="noopener noreferrer"
-                style="text-decoration: none"
-              >
-                <v-icon x-large dark color="rgb(63, 198, 238)"
-                  >mdi-twitter</v-icon
-                >
-              </a>
-            </v-btn>
-          </template>
-          <span>{{ $t('common.index.twitter') }}</span>
-        </v-tooltip>
       </v-col>
     </v-row>
 
