@@ -6,16 +6,17 @@ export default () => {
         index: {
           facebook: 'Visitez notre page Facebook',
           twitter: 'Suivez nous sur Twitter',
-          title: 'Concours Positive Future',
+          title: 'Positive Future',
           subtitle: "Réaliser et promouvoir des visions d'un avenir désirable",
 
           name: '« La ville en 2100 »',
           paragraph1:
             'Pour construire ensemble un monde différent, l’adhésion à une vision commune est essentielle et passe par l’intermédiaire de projets concrets. Alors que les représentations de futurs dystopiques sont nombreuses, il existe en parallèle beaucoup de travaux de recherche et de prospective dessinant des alternatives positives pour le monde de demain.',
           link1: 'L’Institut d’études avancées de Paris',
-          link2: ' la Fondation 2100',
           and: ' et ',
-          link3: 'l’Institut for Future Studies ',
+          link2: ' la Fondation 2100',
+          and2: ' en partenariat avec ',
+          link3: 'l’Institute for Future Studies ',
           paragraph2:
             'lancent le premier concours Positive Future afin de susciter, sur cette base positive, l’élaboration et la diffusion d’imaginaires mobilisateurs décrivant de façon convaincante et réaliste un monde vivable et désirable. Il s’agit ici non pas de futurs utopistes, mais bien de futurs possibles, dont l’avènement repose sur des scénarios avérés scientifiquement, techniquement, socialement et politiquement.',
           paragraph3:
@@ -104,9 +105,9 @@ export default () => {
         who: {
           title: 'Qui sommes nous?',
           iea: {
-            name: 'Paris Institute for Advanced Study',
+            name: "L'Institut d'études avancées de Paris",
             description:
-              "L'Institut d'études avancées de Paris est un centre de recherche indépendant en sciences humaines et sociales qui vise à favoriser la recherche interdisciplinaire et à expérimenter de nouveaux formats de collaborations intersectorielles. Pour ce faire, il invite en résidence des chercheurs internationaux de haut niveau, organise des événements scientifiques, et met en place des espaces de réflexion",
+              "L'Institut d'études avancées de Paris est un centre de recherche indépendant en sciences humaines et sociales qui vise à favoriser la recherche interdisciplinaire et à expérimenter de nouveaux formats de collaborations intersectorielles. Pour ce faire, il invite en résidence des chercheurs internationaux de haut niveau, organise des événements scientifiques, et met en place des espaces de réflexion et d’échanges associant universitaires, citoyens, décideurs politiques et industriels.",
             url: 'https://www.paris-iea.fr/fr/',
           },
           fundation: {

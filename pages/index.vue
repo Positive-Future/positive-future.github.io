@@ -68,11 +68,13 @@
       {{ $t('common.index.paragraph3') }}
     </p>
     <p>
-      {{ $t('common.index.paragraph4') }}
-      <nuxt-link :to="localePath('/contest')">{{
-        $t('common.index.link4')
-      }}</nuxt-link
-      >&nbsp;{{ $t('common.index.paragraph5') }}
+      <b
+        >{{ $t('common.index.paragraph4') }}
+        <nuxt-link :to="localePath('/contest')">{{
+          $t('common.index.link4')
+        }}</nuxt-link
+        >&nbsp;{{ $t('common.index.paragraph5') }}</b
+      >
     </p>
     <v-row>
       <v-col cols="12" md="4" class="pa-3">

@@ -11,15 +11,16 @@ export default () => {
           paragraph1:
             "To build a different world together, a common vision is essential, which can only be achieved through concrete projects. While there are many representations of dystopian futures, there is also a large body of research and prospective work drawing positive alternatives for tomorrow's world. ",
           link1: 'The Paris Institute for Advanced Study',
-          link2: ' the 2100 Fondation',
           and: ' and ',
-          link3: 'the Institute for Futures Studies ',
+          link2: ' the 2100 Fondation',
+          and2: ' in partnership with',
+          link3: ' the Institute for Futures Studies ',
           paragraph2:
             'are launching the first Positive Future competition in order to encourage, on this positive basis, the elaboration and dissemination of mobilizing imaginaries that convincingly and realistically describe a liveable and desirable world. These are not utopian futures, but possible futures, the advent of which is based on scientifically, technically, socially and politically proven scenarios.',
           paragraph3:
             'Open to all and international in scope, this competition aims to stimulate alternative and hopeful discourses for the horizon of the century. ',
           paragraph4: 'The theme of the first edition of the ',
-          link4: 'contest',
+          link4: 'competition',
           paragraph5: ' is "The city in 2100".',
         },
         error_with_status: 'An error occurred on server',
@@ -43,7 +44,7 @@ export default () => {
           who: {
             title: 'Who ?',
             content1:
-              'The contest is open to all, regardless of nationality, age or profession.',
+              'The competition is open to all, regardless of nationality, age or profession.',
             content2: 'Proposals can be made individually or in groups.',
           },
           when: {
