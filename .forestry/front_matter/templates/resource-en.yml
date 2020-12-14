@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Resource EN
 hide_body: true
 fields:
@@ -40,3 +37,20 @@ fields:
   config:
     maxSize: 8
   label: File
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: icon
+  type: text
+  config:
+    required: false
+  label: Icon
+  default: mdi-file
+  description: Pick your icon from <a href="https://materialdesignicons.com/" title="https://materialdesignicons.com/"
+    target="_blank">https://materialdesignicons.com/</a>
