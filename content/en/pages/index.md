@@ -1,6 +1,6 @@
 ---
-title: "Positive Future"
-subtitle: "Réaliser et promouvoir des visions d'un avenir désirable"
+title: Positive Future
+subtitle: Réaliser et promouvoir des visions d'un avenir désirable
 ---
 
 To build a different world together, a common vision is essential, which can only be achieved through concrete projects. While there are many representations of dystopian futures, there is also a large body of research and prospective work drawing positive alternatives for tomorrow's world.

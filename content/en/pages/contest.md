@@ -1,9 +1,13 @@
 ---
-title: "Competition"
-theme: 
-    title: "Theme: the city in 2100"
-    text: This theme invites us to rethink our lifestyles and urban spaces. What would the sustainable and livable city of tomorrow look like? What links to territories and rural spaces? Participants will be asked to propose a background for their story articulating a credible and original vision of cities in 2100.
+title: Competition
+theme:
+  title: 'Theme: the city in 2100'
+  text: This theme invites us to rethink our lifestyles and urban spaces. What would
+    the sustainable and livable city of tomorrow look like? What links to territories
+    and rural spaces? Participants will be asked to propose a background for their
+    story articulating a credible and original vision of cities in 2100.
 ---
+
 ## Who ?
 The competition is open to all, regardless of nationality, age or profession.
 

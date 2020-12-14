@@ -1,10 +1,14 @@
 ---
-title: "Concours"
-theme: 
-    title: "Thème: la ville en 2100"
-    text: "Ce thème invite à repenser nos modes de vie et nos espaces urbains pour cette première édition. Quel serait le visage de la ville durable et agréable à vivre de demain ? Quels liens aux territoires et aux espaces ruraux ? Les participants devront proposer un récit montrant en arrière-plan une vision à la fois crédible et originale des villes en 2100."
-    
+title: Concours
+theme:
+  title: 'Thème: la ville en 2100'
+  text: Ce thème invite à repenser nos modes de vie et nos espaces urbains pour cette
+    première édition. Quel serait le visage de la ville durable et agréable à vivre
+    de demain ? Quels liens aux territoires et aux espaces ruraux ? Les participants
+    devront proposer un récit montrant en arrière-plan une vision à la fois crédible
+    et originale des villes en 2100.
 ---
+
 ## Qui ?
 Le concours est ouvert à toutes et à tous, quels que soient la nationalité, l’âge ou la profession.
 
