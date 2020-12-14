@@ -1,5 +1,5 @@
 ---
-title: Who are we?
+title: Qui sommes nous?
 partners:
   fundation:
     logo: "/who/2100.png"
@@ -43,6 +43,6 @@ partners:
       et en partageant leurs connaissances par le biais des médias publics.
     title: Institute for Futures Studies
     url: https://www.iffs.se/en/
----
 
+---
 test
