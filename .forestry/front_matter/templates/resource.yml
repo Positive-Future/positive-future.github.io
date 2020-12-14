@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Resource
 hide_body: false
 fields:
@@ -21,3 +18,4 @@ fields:
   type: tag_list
   default: []
   label: Type of document
+---
