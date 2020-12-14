@@ -17,12 +17,12 @@
     <p>
       <nuxt-link :to="localePath('/who')">{{
         $t('common.index.link1')
-      }}</nuxt-link
-      >,
-      <nuxt-link :to="localePath('/who')">{{
-        $t('common.index.link2')
       }}</nuxt-link>
       {{ $t('common.index.and') }}
+      <nuxt-link :to="localePath('/who')">{{
+        $t('common.index.link2')
+      }}</nuxt-link
+      >{{ $t('common.index.and2') }}
       <nuxt-link :to="localePath('/who')">{{
         $t('common.index.link3')
       }}</nuxt-link>
@@ -40,6 +40,7 @@
         >&nbsp;{{ $t('common.index.paragraph5') }}</b
       >
     </p>
+    <!-- 
     <v-row>
       <v-col cols="12" md="4" class="pa-3">
         <v-hover v-slot:default="{ hover }">
@@ -113,7 +114,7 @@
           </v-card>
         </v-hover>
       </v-col>
-    </v-row>
+    </v-row> -->
   </v-card-text>
 </template>
 

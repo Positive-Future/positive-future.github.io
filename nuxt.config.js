@@ -163,6 +163,7 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
+    '@nuxt/content',
     [
       'nuxt-i18n',
       {

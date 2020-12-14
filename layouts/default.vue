@@ -1,39 +1,18 @@
 <template>
   <v-app v-scroll="onScroll">
     <v-main>
-      <div id="language-picker">
-        <v-select
-          :value="$i18n.locale"
-          hide-details
-          :items="languages"
-          dense
-          outlined
-          @change="$i18n.setLocale($event)"
-        >
-          <template v-slot:selection="{ item }">
-            {{ item.text.substring(0, 2).toUpperCase() }}
-          </template>
-
-          <template v-slot:item="{ item }">
-            <v-img :src="item.flagSrc" width="30" height="20"> </v-img>&nbsp;
-            {{ item.text }}
-          </template>
-        </v-select>
-      </div>
-      <v-btn id="menu_btn" large icon @click.stop="drawer = !drawer">
+      <TopBar v-if="$vuetify.breakpoint.mdAndUp" />
+      <LanguagePicker></LanguagePicker>
+      <v-btn
+        v-if="$vuetify.breakpoint.smAndDown"
+        id="menu_btn"
+        large
+        icon
+        @click.stop="drawer = !drawer"
+      >
         <v-icon large color="black">mdi-menu</v-icon>
       </v-btn>
       <Particles />
-      <v-row align="center" no-gutters justify="center">
-        <v-col xs="12" sm="11" md="9" lg="9" xl="8" class="ma-3">
-          <nuxt-link :to="localePath('index')">
-            <v-img src="/logo.svg" class="logo my-12" contain></v-img>
-          </nuxt-link>
-          <v-card id="content" class="mx-auto" max-width="1000">
-            <nuxt />
-          </v-card>
-        </v-col>
-      </v-row>
       <v-navigation-drawer
         v-model="drawer"
         fixed
@@ -77,6 +56,20 @@
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
+
+      <v-row align="center" no-gutters justify="center">
+        <nuxt-link
+          v-if="$vuetify.breakpoint.smAndDown"
+          :to="localePath('index')"
+        >
+          <v-img src="/logo.svg" class="logo my-12" contain></v-img>
+        </nuxt-link>
+        <v-col xs="12" sm="11" md="9" lg="9" xl="8" class="ma-3">
+          <v-card id="content" class="mx-auto" max-width="1000">
+            <nuxt />
+          </v-card>
+        </v-col>
+      </v-row>
     </v-main>
     <Footer />
     <v-fab-transition>

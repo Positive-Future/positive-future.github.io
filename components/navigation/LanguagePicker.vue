@@ -1,57 +1,41 @@
 <template>
-  <v-menu offset-y>
-    <template v-slot:activator="{ on: menu }">
-      <v-tooltip bottom>
-        <template v-slot:activator="{ on: tooltip }">
-          <v-btn icon v-on="{ ...tooltip, ...menu }">
-            <img v-if="currentLanguageIcon" :src="currentLanguageIcon" />
-            <v-icon v-else>mdi-earth</v-icon>
-          </v-btn>
-        </template>
-        <span>Switch Language</span>
-      </v-tooltip>
-    </template>
-    <v-list>
-      <v-list-item
-        v-for="language in languages"
-        :key="language.id"
-        @click="changeLanguage(language.id)"
-      >
-        <v-list-item-avatar tile size="24">
-          <v-img :src="language.flagSrc"></v-img>
-        </v-list-item-avatar>
-        <v-list-item-title>{{ language.title }}</v-list-item-title>
-      </v-list-item>
-    </v-list>
-  </v-menu>
+  <div v-if="$vuetify.breakpoint.smAndDown" id="language-picker">
+    <v-select
+      :value="$i18n.locale"
+      hide-details
+      :items="languages"
+      dense
+      outlined
+      @change="$i18n.setLocale($event)"
+    >
+      <template v-slot:selection="{ item }">
+        {{ item.text.substring(0, 2).toUpperCase() }}
+      </template>
+
+      <template v-slot:item="{ item }">
+        <v-img :src="item.flagSrc" width="30" height="20"> </v-img>&nbsp;
+        {{ item.text }}
+      </template>
+    </v-select>
+  </div>
 </template>
 
 <script>
 export default {
-  props: {
-    languages: {
-      type: Array,
-      required: true,
-    },
-    currentLanguage: {
-      type: String,
-      required: false,
-      default: null,
-    },
-  },
   computed: {
-    currentLanguageIcon() {
-      if (!this.currentLanguage || !this.currentLanguage) {
-        return null
-      }
-      return this.languages.filter((x) => x.id === this.currentLanguage)[0]
-        .flagSrc
-    },
-  },
-  methods: {
-    changeLanguage(id) {
-      this.$router.push(this.switchLocalePath(id))
-      this.$emit('languageChanged', id)
+    languages() {
+      return [
+        {
+          value: 'en',
+          text: this.$t('common.en'),
+          flagSrc: 'https://cdn.vuetifyjs.com/images/flags/us.png',
+        },
+        {
+          value: 'fr',
+          text: this.$t('common.fr'),
+          flagSrc: 'https://cdn.vuetifyjs.com/images/flags/fr.png',
+        },
+      ]
     },
   },
 }
