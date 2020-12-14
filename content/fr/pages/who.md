@@ -43,6 +43,6 @@ partners:
       et en partageant leurs connaissances par le biais des médias publics.
     title: Institute for Futures Studies
     url: https://www.iffs.se/en/
-
 ---
+
 test
