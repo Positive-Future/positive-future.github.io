@@ -1,11 +1,7 @@
 ---
-label: Resource
+label: Resource FR
 hide_body: false
 fields:
-- name: category
-  type: tag_list
-  default: []
-  label: Category
 - name: issues_and_challenges
   type: tag_list
   default: []
@@ -14,9 +10,32 @@ fields:
   type: tag_list
   default: []
   label: Perspectives and approaches
-- name: type_of_document
-  type: tag_list
+- name: category
+  type: select
   default: []
+  config:
+    required: false
+    options:
+    - Imagine a far away future ...
+    - Stimulate your creativity
+    - Face our challenges today
+    - Think of your ideal city
+    - Stay positive
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+- name: type_of_document
+  type: select
+  default: ''
+  config:
+    required: true
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: Type of document
----
-
