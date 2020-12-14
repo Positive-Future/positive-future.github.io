@@ -59,4 +59,6 @@ fields:
     schema:
       format: markdown
   label: Description
+pages:
+- content/fr/resources/first dociment.md
 ---
