@@ -51,7 +51,7 @@
 <script>
 export default {
   async asyncData({ app, $content }) {
-    const who = await $content(app.i18n.locale + '/who').fetch()
+    const who = await $content(app.i18n.locale + '/pages/who').fetch()
 
     return {
       who,
