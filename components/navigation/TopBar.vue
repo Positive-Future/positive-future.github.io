@@ -6,23 +6,20 @@
       </v-avatar>
     </nuxt-link>
     <v-spacer />
-    <v-tabs
-      v-if="$vuetify.breakpoint.mdAndUp"
-      style="max-width: 600px"
-      right
-      optional
-    >
-      <v-tab nuxt :to="localePath('/contest')">
-        {{ $t('common.contest.title') }}
-      </v-tab>
-      <v-tab nuxt :to="localePath('/who')">
-        {{ $t('common.who.title') }}
-      </v-tab>
-      <v-tab nuxt :to="localePath('/resources')">{{
-        $t('common.resources.title')
-      }}</v-tab>
-    </v-tabs>
-
+    <template v-if="$vuetify.breakpoint.mdAndUp">
+      <v-tabs style="max-width: 600px" right optional>
+        <v-tab nuxt :to="localePath('/contest')">
+          {{ $t('common.contest.title') }}
+        </v-tab>
+        <v-tab nuxt :to="localePath('/resources')">{{
+          $t('common.resources.title')
+        }}</v-tab>
+        <v-tab nuxt :to="localePath('/who')">
+          {{ $t('common.who.title') }}
+        </v-tab>
+      </v-tabs>
+      <LanguagePicker></LanguagePicker>
+    </template>
     <v-btn
       v-show="$vuetify.breakpoint.smAndDown"
       icon

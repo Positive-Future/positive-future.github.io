@@ -2,7 +2,7 @@
   <v-app v-scroll="onScroll">
     <v-main>
       <TopBar v-if="$vuetify.breakpoint.mdAndUp" />
-      <LanguagePicker></LanguagePicker>
+      <LanguagePicker v-if="$vuetify.breakpoint.smAndDown"></LanguagePicker>
       <v-btn
         v-if="$vuetify.breakpoint.smAndDown"
         id="menu_btn"

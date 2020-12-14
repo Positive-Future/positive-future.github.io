@@ -1,5 +1,5 @@
 <template>
-  <div v-if="$vuetify.breakpoint.smAndDown" id="language-picker">
+  <div id="language-picker" style="max-width: 80px">
     <v-select
       :value="$i18n.locale"
       hide-details

@@ -1,28 +1,28 @@
 <template>
   <div>
-    <h2 class="text-h3 font-weight-bold pt-6 text-uppercase text-center">
+    <h2 class="text-h2 pt-6 text-uppercase text-center">
       <BackButton></BackButton>
-      {{ $t('common.who.title') }}
+      {{ who.title }}
     </h2>
     <v-responsive class="mx-auto my-6" width="56">
       <v-divider class="mb-1" />
       <v-divider />
     </v-responsive>
     <v-expansion-panels v-model="expanded" multiple accordion>
-      <v-expansion-panel>
+      <v-expansion-panel v-for="(item, index) in who.partners" :key="index">
         <v-expansion-panel-header class="pa-1">
           <v-item v-slot:default="{}">
             <a
-              :href="$t('common.who.iea.url')"
+              :href="item.url"
               target="_blank"
               rel="noopener noreferrer"
-              :title="$t('common.who.iea.name')"
+              :title="item.title"
               style="background-color: white; flex: 0 1 auto"
               class="pa-2 ma-1"
               width="100"
             >
               <v-img
-                src="/who/iea.png"
+                :src="item.logo"
                 contain
                 :width="$vuetify.breakpoint.mdAndUp ? '100' : '75'"
                 height="60"
@@ -31,88 +31,16 @@
             </a>
           </v-item>
           <div class="title pa-3">
-            {{ $t('common.who.iea.name') }}
+            {{ item.title }}
           </div>
         </v-expansion-panel-header>
         <v-expansion-panel-content class="pa-3">
-          {{ $t('common.who.iea.description') }}
+          {{ item.text }}
           <a
-            :href="$t('common.who.iea.url')"
+            :href="item.url"
             target="_blank"
             rel="noopener noreferrer"
-            :title="$t('common.who.iea.name')"
-            >{{ $t('common.more') }}</a
-          >
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-      <v-expansion-panel>
-        <v-expansion-panel-header class="pa-1">
-          <v-item v-slot:default="{}">
-            <a
-              :href="$t('common.who.fundation.url')"
-              target="_blank"
-              rel="noopener noreferrer"
-              :title="$t('common.who.fundation.name')"
-              style="background-color: white; flex: 0 1 auto"
-              class="pa-2 ma-1"
-              width="100"
-            >
-              <v-img
-                src="/who/2100.png"
-                contain
-                :width="$vuetify.breakpoint.mdAndUp ? '100' : '75'"
-                height="60"
-                class="text-right pa-2"
-              />
-            </a>
-          </v-item>
-          <div class="title pa-3">
-            {{ $t('common.who.fundation.name') }}
-          </div>
-        </v-expansion-panel-header>
-        <v-expansion-panel-content class="pa-3">
-          {{ $t('common.who.fundation.description') }}
-          <a
-            :href="$t('common.who.fundation.url')"
-            target="_blank"
-            rel="noopener noreferrer"
-            :title="$t('common.who.fundation.name')"
-            >{{ $t('common.more') }}</a
-          >
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-      <v-expansion-panel>
-        <v-expansion-panel-header class="pa-1">
-          <v-item v-slot:default="{}">
-            <a
-              :href="$t('common.who.iff.url')"
-              target="_blank"
-              rel="noopener noreferrer"
-              :title="$t('common.who.iff.name')"
-              style="background-color: white; flex: 0 1 auto"
-              class="pa-2 ma-1"
-              width="100"
-            >
-              <v-img
-                src="/who/iffs.png"
-                contain
-                :width="$vuetify.breakpoint.mdAndUp ? '100' : '75'"
-                height="60"
-                class="text-right pa-2"
-              />
-            </a>
-          </v-item>
-          <div class="title pa-3">
-            {{ $t('common.who.iff.name') }}
-          </div>
-        </v-expansion-panel-header>
-        <v-expansion-panel-content class="pa-3">
-          {{ $t('common.who.iff.description') }}
-          <a
-            :href="$t('common.who.iff.url')"
-            target="_blank"
-            rel="noopener noreferrer"
-            :title="$t('common.who.iff.name')"
+            :title="item.title"
             >{{ $t('common.more') }}</a
           >
         </v-expansion-panel-content>
@@ -122,6 +50,13 @@
 </template>
 <script>
 export default {
+  async asyncData({ app, $content }) {
+    const who = await $content(app.i18n.locale + '/who').fetch()
+
+    return {
+      who,
+    }
+  },
   data() {
     return {
       expanded: [0, 1, 2, 3, 4],

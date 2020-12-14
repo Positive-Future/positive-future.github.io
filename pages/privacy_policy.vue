@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-h2 font-weight-bold pt-6 text-uppercase text-center">
+    <h2 class="text-h2 pt-6 text-uppercase text-center">
       <BackButton></BackButton>
       {{ $t('common.privacy_policy.title') }}
     </h2>

@@ -1,18 +1,27 @@
 <template>
   <div>
-    <h2 class="text-h3 font-weight-bold pt-6 text-uppercase text-center">
+    <h2 class="text-h2 pt-6 text-uppercase text-center">
       <BackButton></BackButton>
-      {{ $t('common.resources.title') }}
+      {{ resources.title }}
     </h2>
     <v-responsive class="mx-auto my-6" width="56">
       <v-divider class="mb-1" />
       <v-divider />
     </v-responsive>
-    <p class="pa-8" v-html="$t('common.resources.content')"></p>
+    <nuxt-content :document="resources" class="pa-3" />
   </div>
 </template>
 <script>
 export default {
+  async asyncData({ app, $content }) {
+    const resources = await $content(
+      app.i18n.locale + '/pages/resources'
+    ).fetch()
+
+    return {
+      resources,
+    }
+  },
   data() {
     return {}
   },
