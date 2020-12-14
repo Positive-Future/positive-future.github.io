@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Resource FR
 hide_body: true
 fields:
@@ -35,3 +32,30 @@ fields:
   type: tag_list
   default: []
   label: Issues and challenges
+- name: icon
+  type: text
+  config:
+    required: false
+  label: Icon
+  description: <a href="https://materialdesignicons.com/" title="https://materialdesignicons.com/"
+    target="_blank">https://materialdesignicons.com/</a>
+  default: file
+- name: file
+  type: file
+  config:
+    maxSize: 64
+  label: File
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
