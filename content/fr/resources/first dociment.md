@@ -7,5 +7,5 @@ icon: file
 file: "/memorandum7-2.pdf"
 url: ''
 description: This is my premier post en français
-
 ---
+
