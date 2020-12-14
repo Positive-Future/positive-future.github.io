@@ -1,7 +1,20 @@
 ---
----
-
----
 label: Resource
 hide_body: false
-fields: []
+fields:
+- name: category
+  type: tag_list
+  default: []
+  label: Category
+- name: issues_and_challenges
+  type: tag_list
+  default: []
+  label: Issues and challenges
+- name: perspectives_and_approaches
+  type: tag_list
+  default: []
+  label: Perspectives and approaches
+- name: type_of_document
+  type: tag_list
+  default: []
+  label: Type of document
