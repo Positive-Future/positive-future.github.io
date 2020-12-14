@@ -1,16 +1,19 @@
 ---
----
-
----
 label: Resource FR
 hide_body: true
 fields:
 - name: category
   type: select
-  default: ''
+  default: Stimulez votre créativité
   config:
-    required: true
-    options: []
+    required: false
+    options:
+    - Stimulez votre créativité
+    - Affronter les défis d'aujourd'hui
+    - Une vision de la ville idéale
+    - Restons positifs
+    - Apprendre du passé
+    - Imaginons un futur lointain
     source:
       type: simple
       section: 
