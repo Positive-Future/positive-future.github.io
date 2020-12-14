@@ -1,7 +1,39 @@
 ---
----
-
----
 label: Resource EN
 hide_body: true
-fields: []
+fields:
+- name: category
+  type: select
+  default: Imagine a far away future ...
+  config:
+    required: true
+    options:
+    - Imagine a far away future ...
+    - Stimulate your creativity
+    - Face our challenges today
+    - Think of your ideal city
+    - Stay positive
+    - Learn from the past
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+- name: type_of_document
+  type: tag_list
+  default: []
+  label: Type of document
+- name: perspectives_and_approaches
+  type: tag_list
+  default: []
+  label: Perspectives and approaches
+- name: issues_and_challenges
+  type: tag_list
+  default: []
+  label: Issues and challenges
+- name: file
+  type: file
+  config:
+    maxSize: 8
+  label: File
