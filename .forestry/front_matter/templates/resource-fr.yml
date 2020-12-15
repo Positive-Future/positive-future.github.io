@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Resource FR
 hide_body: true
 fields:
@@ -78,3 +75,13 @@ fields:
       file: 
       path: 
   label: Doc language
+- name: author
+  type: text
+  config:
+    required: true
+  label: Author
+- name: name
+  type: text
+  config:
+    required: true
+  label: name
