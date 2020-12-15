@@ -1,3 +1,4 @@
+---
 label: Resource EN
 hide_body: true
 fields:
@@ -19,7 +20,7 @@ fields:
       file: 
       path: 
   label: Category
-- name: type_of_document
+- name: type
   type: tag_list
   default: []
   label: Type of document
@@ -53,7 +54,7 @@ fields:
   default: mdi-file
   description: Pick your icon from <a href="https://materialdesignicons.com/" title="https://materialdesignicons.com/"
     target="_blank">https://materialdesignicons.com/</a>
-- name: doc_language
+- name: lang
   type: select
   default: []
   config:
