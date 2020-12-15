@@ -22,7 +22,7 @@
               width="100"
             >
               <v-img
-                :src="item.logo"
+                :src="$router.options.base + item.logo"
                 contain
                 :width="$vuetify.breakpoint.mdAndUp ? '100' : '75'"
                 height="60"
