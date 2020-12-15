@@ -80,5 +80,3 @@ fields:
   config:
     required: true
   label: Author
----
-

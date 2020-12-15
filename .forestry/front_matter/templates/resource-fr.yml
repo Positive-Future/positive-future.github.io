@@ -2,6 +2,25 @@
 label: Resource FR
 hide_body: true
 fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+- name: author
+  type: text
+  config:
+    required: true
+  label: Author
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
 - name: category
   type: select
   default: Stimulez votre créativité
@@ -50,15 +69,6 @@ fields:
   config:
     required: false
   label: URL
-- name: description
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Description
 - name: lang
   type: select
   default: []
@@ -75,17 +85,3 @@ fields:
       file: 
       path: 
   label: Doc language
-- name: author
-  type: text
-  config:
-    required: true
-  label: Author
-- name: name
-  type: text
-  config:
-    required: true
-  label: Name
-pages:
-- content/fr/San Francisco, la première ville zéro déchet.md
----
-
