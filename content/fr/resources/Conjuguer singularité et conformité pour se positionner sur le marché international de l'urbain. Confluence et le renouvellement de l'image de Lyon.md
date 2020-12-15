@@ -27,7 +27,7 @@ description: Pour attirer les investisseurs pour lesquels elles sont en concurre
   participent à la formuler, s’oppose celle de ceux qui sont exclus de cette image
   et dont la présence est in fine indésirable dans ce secteur de Lyon et, par extension,
   dans tout son centre-ville.
-file: ''
+file: "/Positive-Future/memorandum7-2.pdf"
 url: ''
----
 
+---
