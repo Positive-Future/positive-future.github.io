@@ -1,14 +1,10 @@
 version: 2.1
 jobs:
   build:
-    working_directory: ~/repo
-    filters:
-      branches:
-        only:
-          - master
+    working_directory: ~/repo    
     docker:
       - image: circleci/node:10.16.3
-    steps:
+    steps:   
       - checkout
       - run:
           name: update-npm
@@ -23,6 +19,7 @@ jobs:
           paths:
             - ./node_modules
       - run:
+    
           name: build-project
           command: npm run generate:gh-pages
       - run:
