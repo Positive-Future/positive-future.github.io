@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Resource FR
 hide_body: true
 fields:
@@ -27,11 +24,11 @@ fields:
   type: tag_list
   default: []
   label: Type of document
-- name: perspectives_and_approaches
+- name: perspectives
   type: tag_list
   default: []
   label: Perspectives and approaches
-- name: issues_and_challenges
+- name: issues
   type: tag_list
   default: []
   label: Issues and challenges
