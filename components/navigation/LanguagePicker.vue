@@ -4,8 +4,9 @@
       :value="$i18n.locale"
       hide-details
       :items="languages"
-      filled
-      transparent
+      outlined
+      flat
+      text
       @change="$i18n.setLocale($event)"
     >
       <template v-slot:selection="{ item }">

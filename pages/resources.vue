@@ -114,7 +114,13 @@
         <v-row>
           <v-col v-for="item in props.items" :key="item.name" cols="12">
             <v-card>
-              <v-list-item three-line link :to="item.url">
+              <v-list-item
+                three-line
+                link
+                :href="item.url"
+                :to="item.file"
+                :target="item.url && item.url.length ? '_blank' : 'self'"
+              >
                 <v-list-item-content>
                   <div class="overline mb-4">
                     {{ item.category }}
@@ -135,6 +141,9 @@
               <v-divider></v-divider>
               <v-card-text>
                 <p>{{ item.description }}</p>
+                <ChipsContainer
+                  :items="[...item.type, ...item.issues, ...item.perspectives]"
+                />
               </v-card-text>
             </v-card>
           </v-col>
