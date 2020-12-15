@@ -1,6 +1,7 @@
 ---
 category: Face our challenges today
-type: []
+type:
+- gerg
 perspectives:
 - testerge
 issues: []
