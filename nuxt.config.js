@@ -1,8 +1,16 @@
 // TODO: Ensure everything is minified/ugligied
 import colors from 'vuetify/es5/util/colors'
 import languages from './static/lang/languages'
-
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/positive-future/',
+        },
+      }
+    : {}
 export default {
+  ...routerBase,
   /*
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
