@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Resource FR
 hide_body: true
 fields:
@@ -23,7 +20,7 @@ fields:
       file: 
       path: 
   label: Category
-- name: type_of_document
+- name: type
   type: tag_list
   default: []
   label: Type of document
@@ -62,7 +59,7 @@ fields:
     schema:
       format: markdown
   label: Description
-- name: doc_language
+- name: lang
   type: select
   default: []
   config:
