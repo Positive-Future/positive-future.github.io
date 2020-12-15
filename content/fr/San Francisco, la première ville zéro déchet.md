@@ -11,5 +11,5 @@ description: 'Pour atteindre son objectif, la ville mise sur deux stratégies : 
   des nouvelles technologies de tri ainsi que des mesures financières incitatives.'
 author: National Géographic
 name: San Francisco, la première ville zéro déchet
-
 ---
+
