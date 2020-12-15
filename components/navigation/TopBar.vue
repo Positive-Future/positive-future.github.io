@@ -2,7 +2,7 @@
   <v-app-bar :dense="$vuetify.breakpoint.smAndDown" app fixed>
     <nuxt-link class="mx-0 px-0 d-flex" :to="localePath('index')">
       <v-avatar class="mr-2" tile>
-        <v-img contain src="/logo.svg" />
+        <v-img contain nuxt src="/logo.svg" />
       </v-avatar>
     </nuxt-link>
     <v-spacer />
