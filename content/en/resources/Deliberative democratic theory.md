@@ -1,7 +1,9 @@
 ---
 category: Face our challenges today
-type: []
-perspectives: []
+type:
+- gerg
+perspectives:
+- testerge
 issues: []
 icon: mdi-file
 lang: EN
