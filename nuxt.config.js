@@ -7,13 +7,13 @@ const routerBase =
         router: {
           base: '/Positive-Future/',
         },
-        static: {
-          prefix: '/Positive-Future/',
-        },
       }
     : {}
 export default {
   ...routerBase,
+  static: {
+    prefix: '/Positive-Future/',
+  },
   /*
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
