@@ -7,6 +7,9 @@ const routerBase =
         router: {
           base: '/Positive-Future/',
         },
+        static: {
+          prefix: '/Positive-Future/',
+        },
       }
     : {}
 export default {
