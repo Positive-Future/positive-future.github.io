@@ -96,6 +96,5 @@ dist/
 .yarn/
 
 #Npm
-package-lock.json
 yarn.lock
 

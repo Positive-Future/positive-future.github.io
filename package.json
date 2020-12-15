@@ -49,5 +49,18 @@
     "prettier": "^2.0.5",
     "vue-jest": "^3.0.4",
     "webpack-graphql-loader": "^1.0.2"
-  }
+  },
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IEA-Paris/Positive-Future.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IEA-Paris/Positive-Future/issues"
+  },
+  "homepage": "https://github.com/IEA-Paris/Positive-Future#readme"
 }
