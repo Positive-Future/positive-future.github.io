@@ -1,10 +1,26 @@
 ---
----
-
----
 label: Resource EN
 hide_body: true
 fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+- name: author
+  type: text
+  config:
+    required: true
+  label: Author
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
 - name: category
   type: select
   default: Imagine a far away future ...
@@ -40,15 +56,6 @@ fields:
   config:
     maxSize: 8
   label: File
-- name: description
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Description
 - name: icon
   type: text
   config:
@@ -73,13 +80,3 @@ fields:
       file: 
       path: 
   label: Doc Language
-- name: name
-  type: text
-  config:
-    required: true
-  label: Name
-- name: author
-  type: text
-  config:
-    required: true
-  label: Author
