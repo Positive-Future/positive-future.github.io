@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Resource FR
 hide_body: true
 fields:
@@ -62,5 +59,21 @@ fields:
     schema:
       format: markdown
   label: Description
+- name: doc_language
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - FR
+    - EN
+    - ES
+    - DE
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Doc language
 pages:
 - content/fr/resources/first dociment.md
