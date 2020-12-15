@@ -130,6 +130,15 @@ export default () => {
         en: 'English',
         fr: 'French',
       },
+
+      resources: {
+        languages: {
+          fr: 'French',
+          en: 'English',
+          de: 'German',
+          es: 'Spanish',
+        },
+      },
       starter: {
         header_language: 'language',
         header_theme: 'theme mode',

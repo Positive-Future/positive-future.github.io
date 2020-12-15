@@ -21,8 +21,8 @@
       <template v-else>
         An error happened while loading this page. <br />You can try again and
         refresh this page or
-        <nuxt-link to="/#contact-us"> contact WPRN </nuxt-link> to report this
-        error.
+        <a href="mailto:info@positive-future.org">contact us</a>
+        to report this error.
       </template>
     </v-overlay>
   </v-app>
