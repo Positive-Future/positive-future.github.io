@@ -80,3 +80,5 @@ fields:
       file: 
       path: 
   label: Doc Language
+pages:
+- content/en/resources/Deliberative democratic theory.md
