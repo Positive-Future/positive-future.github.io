@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Resource FR
 hide_body: true
 fields:
@@ -90,3 +87,4 @@ fields:
   label: Name
 pages:
 - content/fr/San Francisco, la première ville zéro déchet.md
+---

@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Resource EN
 hide_body: true
 fields:
@@ -83,3 +80,4 @@ fields:
   config:
     required: true
   label: Author
+---

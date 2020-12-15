@@ -39,12 +39,65 @@
       >
     </v-row>
     <v-data-iterator
-      row
-      wrap
+      v-if="browsing"
       :items="items"
-      rows-per-page-items="rowsPerPageItems"
-      pagination.sync="pagination"
+      :items-per-page.sync="itemsPerPage"
+      :page="page"
+      :search="search"
+      :sort-by="sortBy.toLowerCase()"
+      :sort-desc="sortDesc"
+      hide-default-footer
     >
+      <template v-slot:header>
+        <v-toolbar class="mb-1">
+          <v-text-field
+            v-model="search"
+            clearable
+            multiple
+            outlined
+            class="mx-1"
+            hide-details
+            prepend-inner-icon="mdi-magnify"
+            label="Search"
+          ></v-text-field>
+          <v-select
+            v-model="category"
+            outlined
+            multiple
+            class="mx-1"
+            hide-details
+            :items="categories.map((item) => item.name)"
+            label="Category"
+          ></v-select>
+          <v-select
+            v-model="type"
+            outlined
+            multiple
+            class="mx-1"
+            hide-details
+            :items="types"
+            label="Type"
+          ></v-select>
+          <v-select
+            v-model="perspective"
+            outlined
+            class="mx-1"
+            multiple
+            hide-details
+            :items="perspectives"
+            label="Perspectives and approaches"
+          ></v-select>
+          <v-select
+            v-model="issue"
+            outlined
+            class="mx-1"
+            multiple
+            hide-details
+            :items="issues"
+            label="Issues and challenges"
+          ></v-select>
+        </v-toolbar>
+      </template>
     </v-data-iterator>
   </div>
 </template>
@@ -55,16 +108,28 @@ export default {
       app.i18n.locale + '/pages/resources'
     ).fetch()
     const items = await $content(app.i18n.locale + '/resources').fetch()
+    const types = new Set(this.items.map((item) => item.types))
+    const issues = new Set(this.items.map((item) => item.issues))
+    const perspectives = new Set(this.items.map((item) => item.perspectives))
     console.log('items: ', items)
     return {
+      types,
+      issues,
+      perspectives,
       resources,
       items,
-      rowsPerPageItems: [10, 20, 50, 100],
     }
   },
   data() {
     return {
-      pagination: 1,
+      browsing: true,
+      itemsPerPageArray: [10, 20, 50, 100],
+      search: '',
+      filter: {},
+      sortDesc: false,
+      page: 1,
+      itemsPerPage: 4,
+      sortBy: 'name',
     }
   },
   computed: {
