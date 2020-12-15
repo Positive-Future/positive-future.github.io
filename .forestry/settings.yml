@@ -15,9 +15,9 @@ sections:
   create: documents
   match: "**/*"
 upload_dir: static
-public_path: ''
+public_path: "/Positive-Future"
 front_matter_path: "/Positive-Future"
-use_front_matter_path: true
+use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_output_directory: dist
