@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Resource FR
 hide_body: true
 fields:
@@ -78,5 +75,3 @@ fields:
       file: 
       path: 
   label: Doc language
-pages:
-- content/fr/resources/first dociment.md
