@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Resource FR
 hide_body: true
 fields:
@@ -87,4 +84,4 @@ fields:
   type: text
   config:
     required: true
-  label: name
+  label: Name
