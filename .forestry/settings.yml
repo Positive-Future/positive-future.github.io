@@ -9,6 +9,8 @@ sections:
   label: Resources
   create: all
   match: "**/*"
+  templates:
+  - resource-fr
 - type: directory
   path: content/en
   label: EN
