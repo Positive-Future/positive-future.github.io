@@ -28,12 +28,12 @@ export default {
       return [
         {
           value: 'en',
-          text: this.$t('common.en'),
+          text: this.$t('misc.languages.en'),
           flagSrc: 'https://cdn.vuetifyjs.com/images/flags/us.png',
         },
         {
           value: 'fr',
-          text: this.$t('common.fr'),
+          text: this.$t('misc.languages.fr'),
           flagSrc: 'https://cdn.vuetifyjs.com/images/flags/fr.png',
         },
       ]

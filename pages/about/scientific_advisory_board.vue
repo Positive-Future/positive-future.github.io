@@ -1,14 +1,14 @@
 <template>
   <div>
     <h2 class="text-h2 pt-6 text-uppercase text-center">
-      {{ who.title }}
+      {{ sab.title }}
     </h2>
     <v-responsive class="mx-auto my-6" width="56">
       <v-divider class="mb-1" />
       <v-divider />
     </v-responsive>
     <v-expansion-panels v-model="expanded" multiple accordion>
-      <v-expansion-panel v-for="(item, index) in who.partners" :key="index">
+      <v-expansion-panel v-for="(item, index) in sab.partners" :key="index">
         <v-expansion-panel-header class="pa-1">
           <v-item v-slot:default="{}">
             <a
@@ -40,7 +40,7 @@
             target="_blank"
             rel="noopener noreferrer"
             :title="item.title"
-            >{{ $t('common.more') }}</a
+            >{{ $t('misc.ui.more') }}</a
           >
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -50,10 +50,10 @@
 <script>
 export default {
   async asyncData({ app, $content }) {
-    const who = await $content(app.i18n.locale + '/pages/who').fetch()
+    const sab = await $content(app.i18n.locale + '/pages/sab').fetch()
 
     return {
-      who,
+      sab,
     }
   },
   data() {

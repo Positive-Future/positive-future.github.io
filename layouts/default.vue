@@ -36,21 +36,21 @@
           <v-list-item link :to="localePath('/contest')">
             <v-list-item-content>
               <v-list-item-title class="text-h5">
-                {{ $t('common.contest.title') }}</v-list-item-title
+                {{ $t('navigation.contest') }}</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
           <v-list-item link :to="localePath('/who')">
             <v-list-item-content>
               <v-list-item-title class="text-h5">
-                {{ $t('common.who.title') }}</v-list-item-title
+                {{ $t('navigation.who') }}</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
           <v-list-item link :to="localePath('/resources')">
             <v-list-item-content>
               <v-list-item-title class="text-h5">
-                {{ $t('common.resources.title') }}</v-list-item-title
+                {{ $t('navigation.resources') }}</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
@@ -67,7 +67,7 @@
           </nuxt-link>
         </v-col>
         <v-col xs="12" sm="11" md="9" lg="9" xl="8" class="ma-3">
-          <v-card id="content" class="mx-auto" max-width="1000">
+          <v-card id="content" class="mx-auto" max-width="1200">
             <nuxt />
           </v-card>
         </v-col>
@@ -100,22 +100,7 @@ export default {
       drawer: false,
     }
   },
-  computed: {
-    languages() {
-      return [
-        {
-          value: 'en',
-          text: this.$t('common.en'),
-          flagSrc: 'https://cdn.vuetifyjs.com/images/flags/us.png',
-        },
-        {
-          value: 'fr',
-          text: this.$t('common.fr'),
-          flagSrc: 'https://cdn.vuetifyjs.com/images/flags/fr.png',
-        },
-      ]
-    },
-  },
+  computed: {},
   created() {},
   methods: {
     onScroll(e) {

@@ -6,21 +6,21 @@
           class="black--text"
           style="text-decoration: none; cursor: pointer"
           href="mailto:info@positive-future.org"
-          >{{ $t('common.contact_us') }}</a
+          >{{ $t('misc.ui.contact_us') }}</a
         >&nbsp;-&nbsp;
         <a
           class="black--text"
           style="text-decoration: none"
           href="http://eepurl.com/hgbB6f"
         >
-          {{ $t('common.subscribe') }}</a
+          {{ $t('misc.ui.subscribe') }}</a
         >&nbsp;-&nbsp;
         <a
           class="black--text"
           style="text-decoration: none"
           @click="showCredits = true"
         >
-          {{ $t('common.seeCredits') }}</a
+          {{ $t('misc.ui.seeCredits') }}</a
         >
         <br />
         <v-tooltip top>
@@ -40,13 +40,13 @@
           </template>
           <span>This website is licenced under Creative Commons</span>
         </v-tooltip>
-        {{ new Date().getFullYear() }} - {{ $t('common.maintained') }}
+        {{ new Date().getFullYear() }} - {{ $t('misc.ui.maintained') }}
         <a
-          :href="$t('common.who.iea.url')"
+          :href="$t('misc.ui.who.iea.url')"
           target="_blank"
           rel="noopener noreferrer"
           style="text-decoration: none"
-          >{{ $t('common.maintainer') }}</a
+          >{{ $t('misc.ui.maintainer') }}</a
         >.
       </v-col>
     </v-row>

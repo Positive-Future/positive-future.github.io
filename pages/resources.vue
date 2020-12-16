@@ -24,15 +24,18 @@
             height="100%"
             @click="filters.category = item.name"
           >
-            <v-avatar color="#00c2cb" size="88">
-              <v-icon dark large> mdi-{{ item.icon }} </v-icon>
+            <v-avatar color="#00c2cb" size="44">
+              <v-icon dark> mdi-{{ item.icon }} </v-icon>
             </v-avatar>
             <v-card-title
               class="justify-center font-weight-black text-uppercase"
               style="word-break: normal"
             >
-              {{ item.name }}
+              {{ $t('resources.categories.' + item.name) }}
             </v-card-title>
+            <v-card-text class="text-left"
+              >{{ $t('resources.categoriesTexts.' + item.name) }}
+            </v-card-text>
           </v-card>
         </v-hover></v-col
       >
@@ -63,7 +66,14 @@
               outlined
               multiple
               hide-details
-              :items="categories.map((item) => item.name)"
+              :items="
+                categories.map((item) => {
+                  return {
+                    text: $t('resources.categories.' + item.name),
+                    value: item,
+                  }
+                })
+              "
               label="Category"
             ></v-select
           ></v-col>
@@ -73,7 +83,14 @@
               outlined
               multiple
               hide-details
-              :items="types"
+              :items="
+                types.map((item) => {
+                  return {
+                    text: $t('resources.types.' + item),
+                    value: item,
+                  }
+                })
+              "
               label="Type"
             ></v-select
           ></v-col>
@@ -83,7 +100,14 @@
               outlined
               multiple
               hide-details
-              :items="perspectives"
+              :items="
+                perspectives.map((item) => {
+                  return {
+                    text: $t('resources.perspectives.' + item),
+                    value: item,
+                  }
+                })
+              "
               label="Perspectives and approaches"
             ></v-select
           ></v-col>
@@ -93,7 +117,14 @@
               outlined
               multiple
               hide-details
-              :items="issues"
+              :items="
+                issues.map((item) => {
+                  return {
+                    text: $t('resources.issues.' + item),
+                    value: item,
+                  }
+                })
+              "
               label="Issues and challenges"
             ></v-select
           ></v-col>
@@ -103,11 +134,24 @@
               outlined
               multiple
               hide-details
-              :items="languages"
+              :items="
+                languages.map((item) => {
+                  return {
+                    text: $t('resources.languages.' + item.toLowercase()),
+                    value: item,
+                  }
+                })
+              "
               label="Languages"
             ></v-select
           ></v-col>
         </v-row>
+      </template>
+      <template v-slot:no-results class="ml-6"
+        ><div class="ml-6">{{$t('resources.noResultsTex}t')}</div>
+      </template>
+      <template v-slot:no-data class="ml-6"
+        ><div class="ml-6">{{ $t('resources.noDataText') }}</div>
       </template>
       <template v-slot:default="props">
         <v-row class="mx-3">
@@ -156,9 +200,10 @@ export default {
     const resources = await $content(
       app.i18n.locale + '/pages/resources'
     ).fetch()
-    const items = await $content(app.i18n.locale + '/resources').fetch()
+    const items = await $content('/resources').fetch()
     console.log('items: ', items)
     const types = [...new Set(...items.map((item) => item.types))]
+    const languages = [...new Set(...items.map((item) => item.lang))]
     console.log('types: ', types)
     const issues = [...new Set(...items.map((item) => item.issues))]
     console.log('issues: ', issues)
@@ -167,6 +212,7 @@ export default {
     return {
       types,
       issues,
+      languages,
       perspectives,
       resources,
       items,
@@ -181,6 +227,17 @@ export default {
       page: 1,
       itemsPerPage: 4,
       sortBy: 'name',
+      categories: [
+        { name: 'imagine_a_far_away_future', icon: 'head-cog' },
+        { name: 'stimulate_your_creativity', icon: 'creation' },
+        { name: 'stay_positive', icon: 'arm-flex' },
+        { name: 'think_of_our_ideal_city', icon: 'city' },
+        {
+          name: 'face_our_challenges_today',
+          icon: 'white-balance-sunny',
+        },
+        { name: 'learn_from_the_past', icon: 'rewind' },
+      ],
       filters: {
         search: '',
         category: false,
@@ -191,78 +248,7 @@ export default {
       },
     }
   },
-  computed: {
-    languages() {
-      return [
-        {
-          text: this.$t('resources.languages.en'),
-          value: 'EN',
-        },
-        {
-          text: this.$t('resources.languages.fr'),
-          value: 'FR',
-        },
-        {
-          text: this.$t('resources.languages.de'),
-          value: 'DE',
-        },
-        {
-          text: this.$t('resources.languages.es'),
-          value: 'ES',
-        },
-      ]
-    },
-    categories() {
-      return [
-        {
-          name:
-            this.$i18n.locale === 'en'
-              ? 'Imagine a far away future ...'
-              : 'Imaginons un futur lointain',
-          description: 'Description',
-          icon: 'head-cog',
-        },
-        {
-          name:
-            this.$i18n.locale === 'en'
-              ? 'Stimulate your creativity'
-              : 'Stimulez votre créativité',
-          description: 'Description',
-          icon: 'creation',
-        },
-        {
-          name:
-            this.$i18n.locale === 'en'
-              ? 'Face our challenges today'
-              : "Affronter les défis d'aujourd'hui",
-          description: 'Description',
-          icon: 'arm-flex',
-        },
-        {
-          name:
-            this.$i18n.locale === 'en'
-              ? 'Think of your ideal city'
-              : 'Une vision de la ville idéale',
-          description: 'Description',
-          icon: 'city',
-        },
-        {
-          name:
-            this.$i18n.locale === 'en' ? 'Stay positive' : 'Restons positifs',
-          description: 'Description',
-          icon: 'white-balance-sunny',
-        },
-        {
-          name:
-            this.$i18n.locale === 'en'
-              ? 'Learn from the past'
-              : 'Apprendre du passé',
-          description: 'Description',
-          icon: 'rewind',
-        },
-      ]
-    },
-  },
+  computed: {},
   watch: {
     filters: {
       deep: true,
@@ -274,6 +260,20 @@ export default {
     },
   },
   mounted() {},
-  methods: {},
+  methods: {
+    filterSet(of) {
+      console.log('of: ', of)
+      console.log('of: ', typeof of)
+      return this[of].map((key) => {
+        console.log('key: ', key)
+        const path = 'resources.' + of + '.' + key.value.toLowerCase()
+        console.log('path: ', path)
+        return {
+          text: this.$t("'" + path + "'"),
+          value: key,
+        }
+      })
+    },
+  },
 }
 </script>

@@ -7,16 +7,36 @@
     </nuxt-link>
     <v-spacer />
     <template v-if="$vuetify.breakpoint.mdAndUp">
-      <v-tabs style="max-width: 600px" right optional>
+      <v-tabs style="max-width: 600px" right optional color="#00c2cb">
         <v-tab nuxt :to="localePath('/contest')">
-          {{ $t('common.contest.title') }}
+          {{ $t('navigation.contest') }}
         </v-tab>
         <v-tab nuxt :to="localePath('/resources')">{{
-          $t('common.resources.title')
+          $t('navigation.resources')
         }}</v-tab>
-        <v-tab nuxt :to="localePath('/who')">
-          {{ $t('common.who.title') }}
-        </v-tab>
+        <v-menu left bottom offset-y>
+          <template v-slot:activator="{ on, attrs }">
+            <v-tab v-bind="attrs" v-on="on">
+              {{ $t('navigation.about') }} <v-icon>mdi-chevron-down</v-icon>
+            </v-tab>
+          </template>
+
+          <v-list>
+            <v-list-item nuxt :to="localePath('/about/who')">
+              <v-list-item-title>
+                {{ $t('navigation.who') }}
+              </v-list-item-title>
+            </v-list-item>
+            <v-list-item
+              nuxt
+              :to="localePath('/about/scientific_advisory_board')"
+            >
+              <v-list-item-title>
+                {{ $t('navigation.sab') }}
+              </v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
       </v-tabs>
       <LanguagePicker></LanguagePicker>
     </template>

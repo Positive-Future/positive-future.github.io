@@ -32,11 +32,11 @@
           >Privacy Policy</nuxt-link
         >&nbsp;-&nbsp;
         <nuxt-link :to="localePath('who')" class="blue--text">{{
-          $t('common.who.title')
+          $t('navigation.who')
         }}</nuxt-link
         >&nbsp;-&nbsp;
         <nuxt-link :to="localePath('contest')" class="blue--text">{{
-          $t('common.contest.title')
+          $t('navigation.contest')
         }}</nuxt-link
         >&nbsp;-&nbsp;
         <a
