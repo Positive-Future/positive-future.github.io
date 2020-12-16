@@ -37,12 +37,12 @@ fields:
   config:
     required: false
     options:
-    - Stimulez votre créativité
-    - Affronter les défis d'aujourd'hui
-    - Une vision de la ville idéale
-    - Restons positifs
-    - Apprendre du passé
-    - Imaginons un futur lointain
+    - imagine_a_far_away_future
+    - stimulate_your_creativity
+    - stay_positive
+    - think_of_our_ideal_city
+    - face_our_challenges_today
+    - learn_from_the_past
     source:
       type: simple
       section: 
@@ -157,3 +157,5 @@ fields:
       file: 
       path: 
   label: Doc language
+pages:
+- content/resources/San Francisco, la première ville zéro déchet.md
