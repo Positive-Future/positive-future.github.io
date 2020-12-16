@@ -73,7 +73,7 @@ export default () => {
           work: 'Emploi, travail',
         },
         languages: {
-          fr: 'Français',
+          FR: 'Français',
           en: 'Anglais',
           de: 'Allemand',
           es: 'Espagnol',

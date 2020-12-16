@@ -76,7 +76,7 @@ export default () => {
       },
       misc: {
         languages: {
-          fr: 'French',
+          FR: 'French',
           en: 'English',
           de: 'German',
           es: 'Spanish',

@@ -2,22 +2,14 @@
   <div>
     <div class="ma-n1">
       <v-chip
-        v-for="(item, index) in itemsToShow"
+        v-for="(item, index) in items"
         :key="index"
         class="ma-1"
-        :label="label"
         outlined
+        :color="filters && filters.includes(item) ? 'primary' : 'default'"
       >
-        {{ item }}
+        {{ $t('resources.' + relatedKey + '.' + item) }}
       </v-chip>
-      <v-btn
-        v-if="items.length > 5"
-        color="grey"
-        small
-        text
-        @click="showMore = !showMore"
-        >{{ !showMore ? `(show ${items.length - 5} more)` : `(show less)` }}
-      </v-btn>
     </div>
   </div>
 </template>
@@ -33,20 +25,20 @@ export default {
       type: Boolean,
       default: true,
     },
+    relatedKey: {
+      type: String,
+      default: 'true',
+    },
+    filters: {
+      type: Array,
+      required: false,
+    },
   },
 
   data: () => ({
     showMore: false,
   }),
 
-  computed: {
-    itemsToShow() {
-      if (this.showMore) {
-        return this.items
-      } else {
-        return this.items.slice(0, 5)
-      }
-    },
-  },
+  computed: {},
 }
 </script>

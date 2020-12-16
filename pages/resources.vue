@@ -22,7 +22,7 @@
             flat
             :elevation="hover ? 12 : 2"
             height="100%"
-            @click="filters.category = item.name"
+            @click="filters.category = [item.name]"
           >
             <v-avatar color="#00c2cb" size="44">
               <v-icon dark> mdi-{{ item.icon }} </v-icon>
@@ -70,7 +70,7 @@
                 categories.map((item) => {
                   return {
                     text: $t('resources.categories.' + item.name),
-                    value: item,
+                    value: item.name,
                   }
                 })
               "
@@ -137,7 +137,7 @@
               :items="
                 languages.map((item) => {
                   return {
-                    text: $t('resources.languages.' + item.toLowercase()),
+                    text: $t('resources.languages.' + item),
                     value: item,
                   }
                 })
@@ -171,6 +171,20 @@
                     {{ item.name }}
                   </v-list-item-title>
                   <v-list-item-subtitle>
+                    <v-img
+                      :src="
+                        item.lang === 'EN'
+                          ? 'https://cdn.vuetifyjs.com/images/flags/us.png'
+                          : 'https://cdn.vuetifyjs.com/images/flags/fr.png'
+                      "
+                      width="30"
+                      height="20"
+                      class="d-inline-block"
+                    >
+                    </v-img>
+                    <v-chip class="ma-1" label outlined>
+                      {{ $t('resources.types.' + item.type) }}
+                    </v-chip>
                     {{ item.author }}</v-list-item-subtitle
                   >
                 </v-list-item-content>
@@ -182,9 +196,19 @@
 
               <v-divider></v-divider>
               <v-card-text>
-                <p>{{ item.description }}</p>
+                <p>
+                  {{ item['description_' + $i18n.locale.toLowerCase()] }}
+                </p>
+
                 <ChipsContainer
-                  :items="[...item.type, ...item.issues, ...item.perspectives]"
+                  :filters="filters.perspective"
+                  related-key="perspectives"
+                  :items="item.perspectives"
+                />
+                <ChipsContainer
+                  related-key="issues"
+                  :items="item.issues"
+                  :filters="filters.issue"
                 />
               </v-card-text>
             </v-card>
@@ -202,8 +226,8 @@ export default {
     ).fetch()
     const items = await $content('/resources').fetch()
     console.log('items: ', items)
-    const types = [...new Set(...items.map((item) => item.types))]
-    const languages = [...new Set(...items.map((item) => item.lang))]
+    const types = [...new Set(items.map((item) => item.types))]
+    const languages = [...new Set(items.map((item) => item.lang))]
     console.log('types: ', types)
     const issues = [...new Set(...items.map((item) => item.issues))]
     console.log('issues: ', issues)
@@ -260,20 +284,6 @@ export default {
     },
   },
   mounted() {},
-  methods: {
-    filterSet(of) {
-      console.log('of: ', of)
-      console.log('of: ', typeof of)
-      return this[of].map((key) => {
-        console.log('key: ', key)
-        const path = 'resources.' + of + '.' + key.value.toLowerCase()
-        console.log('path: ', path)
-        return {
-          text: this.$t("'" + path + "'"),
-          value: key,
-        }
-      })
-    },
-  },
+  methods: {},
 }
 </script>

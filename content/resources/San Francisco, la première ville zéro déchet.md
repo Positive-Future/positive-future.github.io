@@ -4,7 +4,7 @@ type: Article
 lang: FR
 name: San Francisco, la première ville zéro déchet
 author: National Geographic
-description: 'To achieve its objective, the city adopted two strategies: promote new
+description_en: 'To achieve its objective, the city adopted two strategies: promote new
   triage technologies and incentives financial policies.'
 description_fr: 'Pour atteindre son objectif, la ville mise sur deux stratégies :
   lancer des nouvelles technologies de tri ainsi que des mesures financières incitatives.'
