@@ -214,7 +214,6 @@ export default {
          sendHitTask: true
        }
   }, */
-
   /*
    ** PWA module configuration
    ** https://pwa.nuxtjs.org/setup#configuration

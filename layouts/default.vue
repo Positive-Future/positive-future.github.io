@@ -58,12 +58,14 @@
       </v-navigation-drawer>
 
       <v-row align="center" no-gutters justify="center">
-        <nuxt-link
-          v-if="$vuetify.breakpoint.smAndDown"
-          :to="localePath('index')"
-        >
-          <v-img src="/logo.svg" class="logo my-12" contain></v-img>
-        </nuxt-link>
+        <v-col cols="12" class="ma-3">
+          <nuxt-link
+            v-if="$vuetify.breakpoint.smAndDown"
+            :to="localePath('index')"
+          >
+            <v-img src="/logo.svg" class="logo my-12" contain></v-img>
+          </nuxt-link>
+        </v-col>
         <v-col xs="12" sm="11" md="9" lg="9" xl="8" class="ma-3">
           <v-card id="content" class="mx-auto" max-width="1000">
             <nuxt />
