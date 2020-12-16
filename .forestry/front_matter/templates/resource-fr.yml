@@ -89,6 +89,16 @@ fields:
       file: 
       path: 
   label: Perspectives and approaches
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 'false'
+    display_utc: false
+    export_format: MM/DD/YYYY
 - name: file
   type: file
   config:
