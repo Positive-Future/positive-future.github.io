@@ -1,6 +1,7 @@
 ---
-label: Resource FR
+label: Resource
 hide_body: true
+display_field: name
 fields:
 - name: name
   type: text
@@ -20,7 +21,16 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Description
+  label: Description_EN
+- name: description_fr
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description_FR
 - name: category
   type: select
   default: Stimulez votre créativité
@@ -40,25 +50,45 @@ fields:
       path: 
   label: Category
 - name: type
-  type: tag_list
+  type: select
   default: []
-  label: Type of document
-- name: perspectives
-  type: tag_list
-  default: []
-  label: Perspectives and approaches
-- name: issues
-  type: tag_list
-  default: []
-  label: Issues and challenges
-- name: icon
-  type: text
   config:
     required: false
-  label: Icon
-  description: <a href="https://materialdesignicons.com/" title="https://materialdesignicons.com/"
-    target="_blank">https://materialdesignicons.com/</a>
-  default: file
+    options:
+    - Article
+    - Book
+    - Video and film
+    - Photo
+    source:
+      type: simple
+      section: resources
+      file: 
+      path: 
+  label: Type
+- name: issues
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Issues and Challenges
+- name: perspectives
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Perspectives and approaches
 - name: file
   type: file
   config:
