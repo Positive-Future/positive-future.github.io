@@ -85,5 +85,3 @@ fields:
   config:
     required: false
   label: url
-pages:
-- content/en/resources/Deliberative democratic theory.md
