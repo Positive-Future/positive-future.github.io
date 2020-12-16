@@ -57,8 +57,9 @@ fields:
     options:
     - Article
     - Book
-    - Video and film
     - Photo
+    - Video
+    - Drawing
     source:
       type: simple
       section: resources
@@ -66,29 +67,70 @@ fields:
       path: 
   label: Type
 - name: issues
-  type: select
-  default: []
+  type: list
   config:
-    required: false
-    options: []
+    use_select: true
+    min: 
+    max: 
     source:
       type: simple
-      section: 
-      file: 
-      path: 
-  label: Issues and Challenges
+    options:
+    - agriculture_forestry_fishing
+    - architecture
+    - clothing
+    - democracy_participation
+    - culture
+    - economy_trade
+    - education
+    - environment
+    - food
+    - energy
+    - government_local_and_national
+    - health
+    - housing
+    - imigration
+    - information_communications
+    - law_justice
+    - leisure
+    - public_administration
+    - public_space
+    - sciences_technologies
+    - security_police
+    - social_services
+    - sport
+    - tourism
+    - transport
+    - urban_spatial_planning
+    - work
+  label: Issues and challenges
 - name: perspectives
-  type: select
-  default: []
+  type: list
   config:
-    required: false
-    options: []
+    use_select: true
+    min: 1
+    max: 6
     source:
       type: simple
-      section: 
-      file: 
-      path: 
+    options:
+    - foresight_studies
+    - case_studies
+    - data_and_trends
+    - magazine
+    - opinions
+    - policy
+    - risk_management
+    - science_fiction
   label: Perspectives and approaches
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 'false'
+    display_utc: false
+    export_format: MM/DD/YYYY
 - name: file
   type: file
   config:
