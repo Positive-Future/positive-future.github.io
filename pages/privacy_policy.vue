@@ -1,7 +1,6 @@
 <template>
   <div>
     <h2 class="text-h2 pt-6 text-uppercase text-center">
-      <BackButton></BackButton>
       {{ $t('common.privacy_policy.title') }}
     </h2>
     <v-responsive class="mx-auto my-6" width="56">

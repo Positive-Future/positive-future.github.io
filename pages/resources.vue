@@ -1,7 +1,6 @@
 <template>
   <div>
     <h2 class="text-h2 pt-6 text-uppercase text-center">
-      <BackButton></BackButton>
       {{ resources.title }}
     </h2>
     <v-responsive class="mx-auto my-6" width="56">
@@ -9,7 +8,7 @@
       <v-divider />
     </v-responsive>
     <nuxt-content :document="resources" class="pa-3" />
-    <v-row v-if="!browsing">
+    <v-row v-if="!browsing" class="mx-3">
       <v-col
         v-for="(item, index) in categories"
         :key="index"
@@ -46,7 +45,7 @@
       :search="filters.search"
     >
       <template v-slot:header>
-        <v-row>
+        <v-row class="mx-3">
           <v-col cols="12" sm="6" md="4"
             ><v-text-field
               v-model="filters.search"
@@ -111,16 +110,15 @@
         </v-row>
       </template>
       <template v-slot:default="props">
-        <v-row>
+        <v-row class="mx-3">
           <v-col v-for="item in props.items" :key="item.name" cols="12">
-            <v-card>
-              <v-list-item
-                three-line
-                link
-                :href="item.url"
-                :to="item.file"
-                :target="item.url && item.url.length ? '_blank' : 'self'"
-              >
+            <v-card
+              link
+              :href="item.url"
+              :to="item.file"
+              :target="item.url && item.url.length ? '_blank' : 'self'"
+            >
+              <v-list-item three-line>
                 <v-list-item-content>
                   <div class="overline mb-4">
                     {{ item.category }}
