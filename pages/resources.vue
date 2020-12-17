@@ -177,9 +177,6 @@
                       class="d-inline-block"
                     >
                     </v-img>
-                    <v-chip class="ma-1" label outlined>
-                      {{ $t('resources.types.' + item.type) }}
-                    </v-chip>
                     {{ item.author }}</v-list-item-subtitle
                   >
                 </v-list-item-content>
