@@ -23,7 +23,7 @@ sections:
   create: documents
   match: "**/*"
 upload_dir: static
-public_path: "/Positive-Future"
+public_path: ''
 front_matter_path: "/Positive-Future"
 use_front_matter_path: false
 file_template: ":filename:"
