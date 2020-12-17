@@ -10,6 +10,7 @@ description_fr: Intéressant sur les innovations urbaines à Singapour, en mati�
   logement, gestion de l’eau, construction sur la mer, mobilité, place de la nature...
   A consulter à partir de la page 31
 issues:
+- urban_spatial_planning
 - transport
 - environment
 - housing
