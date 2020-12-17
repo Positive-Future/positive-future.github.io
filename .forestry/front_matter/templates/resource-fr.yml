@@ -40,9 +40,9 @@ fields:
     - imagine_a_far_away_future
     - stimulate_your_creativity
     - stay_positive
-    - think_of_our_ideal_city
     - face_our_challenges_today
     - learn_from_the_past
+    - think_of_your_ideal_city
     source:
       type: simple
       section: 
