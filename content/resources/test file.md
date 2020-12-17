@@ -11,7 +11,7 @@ issues:
 perspectives:
 - case_studies
 date: 
-file: "/Positive-Future/memorandum7-2.pdf"
+file: "/memorandum7-2.pdf"
 url: ''
 
 ---
