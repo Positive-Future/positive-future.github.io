@@ -42,7 +42,7 @@
     </v-row>
     <v-data-iterator
       v-else
-      :items="items"
+      :items="filteredItems"
       :items-per-page.sync="itemsPerPage"
       :page="page"
       :search="filters.search"
@@ -96,7 +96,7 @@
           ></v-col>
           <v-col cols="12" sm="6" md="4">
             <v-select
-              v-model="filters.perspective"
+              v-model="filters.perspectives"
               outlined
               multiple
               hide-details
@@ -113,7 +113,7 @@
           ></v-col>
           <v-col cols="12" sm="6" md="4">
             <v-select
-              v-model="filters.issue"
+              v-model="filters.issues"
               outlined
               multiple
               hide-details
@@ -148,7 +148,7 @@
         </v-row>
       </template>
       <template v-slot:no-results class="ml-6"
-        ><div class="ml-6">{{$t('resources.noResultsTex}t')}</div>
+        ><div class="ml-6">{{ $t('resources.noResultsText') }}</div>
       </template>
       <template v-slot:no-data class="ml-6"
         ><div class="ml-6">{{ $t('resources.noDataText') }}</div>
@@ -165,7 +165,7 @@
               <v-list-item three-line>
                 <v-list-item-content>
                   <div class="overline mb-4">
-                    {{ item.category }}
+                    {{ $t('resources.categories.' + item.category) }}
                   </div>
                   <v-list-item-title class="headline mb-1">
                     {{ item.name }}
@@ -190,7 +190,9 @@
                 </v-list-item-content>
 
                 <v-list-item-avatar>
-                  <v-icon>mdi-{{ item.icon }}</v-icon></v-list-item-avatar
+                  <v-icon
+                    >mdi-{{ icons[item.type] }}</v-icon
+                  ></v-list-item-avatar
                 >
               </v-list-item>
 
@@ -203,11 +205,11 @@
                 <ChipsContainer
                   :filters="filters.perspective"
                   related-key="perspectives"
-                  :items="item.perspectives.sort()"
+                  :items="item.perspectives"
                 />
                 <ChipsContainer
                   related-key="issues"
-                  :items="item.issues.sort()"
+                  :items="item.issues"
                   :filters="filters.issue"
                 />
               </v-card-text>
@@ -221,11 +223,10 @@
 <script>
 export default {
   async asyncData({ app, $content }) {
-    console.log('app: ', app)
     const resources = await $content(
       app.i18n.locale + '/pages/resources'
     ).fetch()
-    const items = await $content('resources').where().fetch()
+    const items = await $content('resources').fetch()
     const types = [...new Set(items.map((item) => item.type))].sort()
     const languages = [...new Set(items.map((item) => item.lang))].sort()
     const issues = [...new Set(...items.map((item) => item.issues))].sort()
@@ -244,7 +245,15 @@ export default {
   },
   data() {
     return {
+      icons: {
+        Article: 'typewritter',
+        Book: 'book-open-variant',
+        Drawing: 'draw',
+        Picture: 'image',
+        Video: 'video-box',
+      },
       browsing: false,
+      filteredItems: this.items,
       itemsPerPageArray: [10, 20, 50, 100],
       filter: {},
       sortDesc: false,
@@ -263,8 +272,8 @@ export default {
         { name: 'learn_from_the_past', icon: 'rewind' },
       ],
       filters: {
-        search: '',
         category: false,
+        search: '',
         type: [],
         issues: [],
         perspectives: [],
@@ -277,20 +286,30 @@ export default {
     filters: {
       deep: true,
       immediate: true,
-      async handler(v) {
-        console.log('v: ', v)
+      handler(v) {
+        if (v.category?.length) this.browsing = true
         const query = {}
-        Object.keys(v).map((filter) => {
-          console.log('filter: ', filter)
-          if (v[filter]?.length) {
-            console.log('filter length: ', filter)
-            query[filter] = { $in: v[filter] }
-          }
+        Object.keys(v).map((key) => {
+          if (v[key]?.length) query[key] = v[key]
         })
         console.log('query: ', query)
-
-        if (v.category?.length) this.browsing = true
-        this.items = await this.$content('resources').where(query).fetch()
+        this.$router.push({ query })
+        this.filteredItems = this.items.filter((item) => {
+          return (
+            (!this.filters.type?.length ||
+              this.filters.type.includes(item.type)) &&
+            (!this.filters.issues?.length ||
+              this.filters.issues.some((el) => item.issues.includes(el))) &&
+            (!this.filters.perspectives?.length ||
+              this.filters.perspectives.some((el) =>
+                item.perspectives.includes(el)
+              )) &&
+            (!this.filters.lang?.length ||
+              this.filters.lang.includes(item.lang)) &&
+            (!this.filters.category?.length ||
+              this.filters.category.includes(item.category))
+          )
+        })
       },
     },
   },
