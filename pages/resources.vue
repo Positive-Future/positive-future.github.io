@@ -156,12 +156,7 @@
       <template v-slot:default="props">
         <v-row class="mx-3">
           <v-col v-for="item in props.items" :key="item.name" cols="12">
-            <v-card
-              link
-              :href="item.url"
-              :to="item.file"
-              :target="item.url && item.url.length ? '_blank' : 'self'"
-            >
+            <v-card link :href="item.url" :to="item.file" target="'_blank'">
               <v-list-item three-line>
                 <v-list-item-content>
                   <div class="overline mb-4">
