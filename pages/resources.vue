@@ -224,7 +224,7 @@ export default {
     const resources = await $content(
       app.i18n.locale + '/pages/resources'
     ).fetch()
-    const items = await $content('/resources').fetch()
+    const items = await $content('resources').fetch()
     console.log('items: ', items)
     const types = [...new Set(items.map((item) => item.types))]
     const languages = [...new Set(items.map((item) => item.lang))]
@@ -255,7 +255,7 @@ export default {
         { name: 'imagine_a_far_away_future', icon: 'head-cog' },
         { name: 'stimulate_your_creativity', icon: 'creation' },
         { name: 'stay_positive', icon: 'arm-flex' },
-        { name: 'think_of_our_ideal_city', icon: 'city' },
+        { name: 'think_of_your_ideal_city', icon: 'city' },
         {
           name: 'face_our_challenges_today',
           icon: 'white-balance-sunny',

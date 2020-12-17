@@ -9,7 +9,7 @@ export default () => {
           imagine_a_far_away_future: 'Imagine a far away future',
           stimulate_your_creativity: 'Stimulate your creativity',
           stay_positive: 'Stay positive',
-          think_of_our_ideal_city: 'Think of our ideal city',
+          think_of_your_ideal_city: 'Think of our ideal city',
           face_our_challenges_today: 'Face our challenges today',
           learn_from_the_past: 'Learn from the past',
         },
@@ -20,7 +20,7 @@ export default () => {
             'Many people have tried to depict the future in artistic pieces (science fiction novels, drawings…). Some may be unrealistic or extreme... Allow yourself a glimpse into other worlds before you create your own universe.',
           stay_positive:
             'Too much literature and cinema today gives a bleak, dystopic view of the future. How can you turn this into something more positive? \nHuman beings have the capacity to cope, resist, and find solutions – whether it is at the individual, community or global level',
-          think_of_our_ideal_city:
+          think_of_your_ideal_city:
             'How would you like future cities to be like? Will they be high-tech megacities, or will there be a return to smaller size cities? \nWill cities look very different from an esthetic or material point of view? What would be an ideal city for human relationships and communities? ',
           face_our_challenges_today:
             'Our society today faces many challenges, which will impact the lives of future generations. This impact, which you will show in your proposal, will be a reflection of your realistic assessment of such issues as well as our ability to cope with them. ',
@@ -76,7 +76,7 @@ export default () => {
       },
       misc: {
         languages: {
-          FR: 'French',
+          fr: 'French',
           en: 'English',
           de: 'German',
           es: 'Spanish',
@@ -97,7 +97,7 @@ export default () => {
       },
       navigation: {
         about: 'About us',
-        contest: 'Concours',
+        contest: 'Contest',
         resources: 'Food for thought',
         sab: 'Scientific Advisory Board',
         jury: 'Jury',

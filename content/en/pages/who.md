@@ -2,7 +2,7 @@
 title: Who are we?
 partners:
   fundation:
-    logo: "/who/2100.png"
+    logo: /who/2100.png
     text: The 2100 Foundation, under the aegis of the Fondation ParisTech, aims to
       promote the long-term forescasting of human societies. It extends the work begun
       nearly forty years ago under the direction of Thierry Gaudin by the Centre de
@@ -15,7 +15,7 @@ partners:
     title: Fondation 2100
     url: https://2100.org
   ias:
-    logo: "/who/iea.png"
+    logo: /who/iea.png
     text: The Paris Institute for Advanced Study is an independent research center
       in the humanities and social sciences aiming at fostering interdisciplinary
       research and experimenting new formats of intersectoral collaborations. It invites
@@ -25,7 +25,7 @@ partners:
     title: Paris Institute for Advanced Study
     url: https://www.paris-iea.fr/en/
   iff:
-    logo: "/who/iffs.png"
+    logo: /who/iffs.png
     text: The institute has two tasks, one of which is to conduct future studies,
       to promote a future-oriented perspective in Swedish research, and to use and
       develop appropriate theory and methodology. Our research is guided by research

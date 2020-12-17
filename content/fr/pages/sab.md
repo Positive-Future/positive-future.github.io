@@ -1,48 +1,48 @@
 ---
-title: Conseil scientifique
-partners:
-  fundation:
-    logo: "who/2100.png"
-    text: La Fondation 2100, sous égide de la Fondation ParisTech, a vocation à promouvoir
-      la prospective de long terme des sociétés humaines. Elle prolonge les travaux
-      entamés il y a près de quarante ans sous la direction de Thierry Gaudin par
-      le Centre de Prospective et d’Évaluation du Ministère de la Recherche puis par
-      l’association Prospective 2100. Aujourd’hui, elle anime les efforts de prospective
-      par un prix de thèses décerné avec un cercle d'académiciens, un concours sur
-      les futurs positifs en partenariat avec l’Institut d’Études Avancées de Paris,
-      et un projet international de prospective mondiale (revisitant le rapport 2100,
-      Récit du prochain siècle publié en 1990).
-    title: Fondation 2100
-    url: https://2100.org
-  ias:
-    logo: "who/iea.png"
-    text: L'Institut d'études avancées de Paris est un centre de recherche indépendant
-      en sciences humaines et sociales qui vise à favoriser la recherche interdisciplinaire
-      et à expérimenter de nouveaux formats de collaborations intersectorielles. Pour
-      ce faire, il invite en résidence des chercheurs internationaux de haut niveau,
-      organise des événements scientifiques, et met en place des espaces de réflexion
-      et d’échanges associant universitaires, citoyens, décideurs politiques et industriels.
-    title: L'Institut d'études avancées de Paris
-    url: https://www.paris-iea.fr/fr/
-  iff:
-    logo: "who/iffs.png"
-    text: L'institut a deux tâches, dont l'une consiste à mener des études prospectives,
-      à promouvoir une perspective orientée vers l'avenir dans la recherche suédoise,
-      et à utiliser et développer une théorie et une méthodologie appropriées. Nos
-      recherches sont guidées par des programmes de recherche, et le programme actuel
-      comprend des recherches sur le changement climatique, les nouvelles technologies,
-      les préjugés qui régissent nos actions, qui prendra quelles décisions, et le
-      bien-être de nos jeunes. Les chercheurs de l'institut mènent principalement
-      des recherches dans le cadre de ce programme. Notre deuxième mission est de
-      stimuler une discussion ouverte et large sur les possibilités et les menaces
-      qui pèsent sur le développement social futur. Nous le faisons en organisant
-      des séminaires, en publiant des rapports et en communiquant les résultats de
-      nos recherches par le biais de bulletins d'information, de Facebook, de Twitter
-      et de notre site, mais aussi en faisant participer nos chercheurs à des débats,
-      en rendant visite à des politiciens, des organismes gouvernementaux et des entreprises,
-      et en partageant leurs connaissances par le biais des médias publics.
-    title: Institute for Futures Studies
-    url: https://www.iffs.se/en/
+title: Scientific Advisory Board
+members:
+  1:
+    firstname: Georges
+    lastname: Amar
+    bio: Prospectiviste et consultant en mobilité, il est chercheur associé de la chaire Théorie et Méthodes de la Conception innovante de l'Ecole des Mines ParisTech. Il fut directeur de l’unité « prospective et conception innovante » de la RATP. Il a notamment publié Aimer le futur (2013) et Homo Mobilis (2016).  
+  2:
+    firstname: Célia
+    lastname: Blauel
+    bio: Adjointe à la Maire de Paris en charge de la Seine, de la Prospective Paris 2030 et de la Résilience.
+  3: 
+    firstname: Anne
+    lastname: Charreyron Perchet
+    bio: Chargée de mission « ville intelligente » au Commissariat général au développement durable
+  4: 
+    firstname: Célia
+    lastname: Blauel
+    bio: Ingénieur Général des Mines honoraire, président fondateur de Prospective 2100, association internationale ayant pour objectif de préparer des programmes planétaires pour le 21e siècle, il a fondé et dirigé le Centre de prospective et d’évaluation (CPE) du ministère de la Recherche et de la technologie. Il a réalisé des dossiers de prospective pour la Commission européenne, la Banque mondiale, l’OCDE, etc. Il a notamment publié en 1993  2100, récit du prochain siècle.
+  5: 
+    firstname: Fabienne
+    lastname: Goux-Baudiment
+    bio: PDG de la SAS proGective —centre d’étude, de recherche et de conseil en prospective. Prospectiviste de formation (sociologue) et de métier, elle a présidé la World Futures Studies Federation et la Société Française de Prospective. Elle s’intéresse en particulier à l’anticipation (deep thinking), l’innovation de rupture, la ‘Grande Transition’ et le désilotage décisionnel. Elle est professeure associée en prospective à l'Institut des Sciences et des Techniques de l'Ingénieur d'Angers et chercheuse.  
+  6: 
+    firstname: Jean
+    lastname: Haëntjens
+    bio: Economiste et urbaniste, il est consultant en stratégies et prospective urbaines (Urbatopie). Il intervient auprès de collectivités locales, d'institutions publiques et d'entreprises. Il exerçait auparavant des responsabilités opérationnelles dans les domaines de l'urbanisme, de l'aménagement et du développement territorial. Depuis Le pouvoir des villes (2008), j'ai publié de nombreux livres et articles sur les thèmes des stratégies urbaines, de l'éco-urbanisme et de la smart city. 
+  7: 
+    firstname: Bettina
+    lastname: Laville
+    bio: Conseillère d’État honoraire, docteur en lettres, lauréate de Sciences Po et ancienne élève de l’ENA, Bettina Laville est présidente et fondatrice du Comité 21, directrice de rédaction de la Revue transdisciplinaire Vraiment Durable et membre du comité scientifique de l’IMT. Elle fut responsable de la préparation des conférences de Rio, Kyoto et Johannesburg. Elle a créé le Festival du film de l’environnement en 1982 et est cofondatrice du Festival des Nouvelles Explorations depuis 2016. Enseignante à Science Po pendant 10 ans, elle est notamment l’auteur de L’adaptation au changement climatique, une question de sociétés publié en 2017 avec le CNRS.
+  8:
+    firstname: Frédéric
+    lastname: Lefèvre
+    bio: Architecte, enseignant à l'Ecole Nationale d'Architecture Paris Val-de-Seine, il a mené des études au sein du groupe « Société, prospective et architecture ».
+  9:
+    firstname: Helga
+    lastname: Nowotny
+    bio: Sociologue,  titulaire de la chaire de philosophie et de recherche scientifique de l’École polytechnique fédérale de Zurich de 1998 à 2002. Elle a notamment présidé le comité des sciences sociales de la Fondation européenne de la science, ainsi que le Conseil européen de la recherche (ERC).
+  10:
+    firstname: Jean-François
+    lastname: Soupizet
+    bio: Docteur en économie, Conseiller scientifique de Futuribles international, Jean-François Soupizet est consultant en développement international et stratégies numériques. Il a consacré sa carrière aux technologies de l’information et de la communication (TIC) dans le contexte du développement.
+  11:
+    firstname: Jacques
+    lastname: Theys 
+    bio: Enseignant à l’École des hautes études en sciences sociales, Il est vice-président de la Société Française de Prospective et du Plan Bleu Méditerranéen. Jacques Theys a notamment été responsable de la prospective au ministère du Développement durable et directeur scientifique de l’Institut français de l’environnement (IFEN). Il s'intéresse aux thématiques de l'environnement et du développement durable - dans leur relation avec la société et la démocratie - du local au global , du passé le plus lointain au futur le plus éloigné. Il a notamment publié Repenser les villes dans la société post carbone.
 ---
-
-test

@@ -8,7 +8,7 @@ export default () => {
           imagine_a_far_away_future: 'Imaginer un futur lointain',
           stimulate_your_creativity: 'Stimuler votre créativité',
           stay_positive: 'Rester positifs',
-          think_of_our_ideal_city: 'Penser la ville idéale',
+          think_of_your_ideal_city: 'Penser la ville idéale',
           face_our_challenges_today: 'Faire face aux défis actuels',
           learn_from_the_past: 'Apprendre du passé',
         },
@@ -19,7 +19,7 @@ export default () => {
             "De nombreuses personnes ont essayé de dépeindre l'avenir dans des œuvres artistiques (romans de science-fiction, dessins...). Certains peuvent être irréalistes ou extrêmes... Permettez-vous d'entrevoir d'autres mondes avant de créer votre propre univers.",
           stay_positive:
             "Trop de littérature et de cinéma aujourd'hui donne une vision sombre et dystopique de l'avenir. Comment pouvez-vous transformer cela en quelque chose de plus positif ? \nLes êtres humains ont la capacité de faire face, de résister et de trouver des solutions - que ce soit au niveau individuel, communautaire ou mondial",
-          think_of_our_ideal_city:
+          think_of_your_ideal_city:
             "Comment aimeriez-vous que les futures villes soient ? Seront-elles des mégalopoles de haute technologie ou y aura-t-il un retour à des villes de plus petite taille ? \n Les villes seront-elles très différentes d'un point de vue esthétique ou matériel ? Quelle serait la ville idéale pour les relations humaines et les communautés ?",
           face_our_challenges_today:
             "Notre société est aujourd'hui confrontée à de nombreux défis, qui auront un impact sur la vie des générations futures. Cet impact, que vous montrerez dans votre proposition, sera le reflet de votre évaluation réaliste de ces questions ainsi que de notre capacité à y faire face.",

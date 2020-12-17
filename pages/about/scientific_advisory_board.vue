@@ -7,50 +7,21 @@
       <v-divider class="mb-1" />
       <v-divider />
     </v-responsive>
-    <v-expansion-panels v-model="expanded" multiple accordion>
-      <v-expansion-panel v-for="(item, index) in sab.partners" :key="index">
-        <v-expansion-panel-header class="pa-1">
-          <v-item v-slot:default="{}">
-            <a
-              :href="item.url"
-              target="_blank"
-              rel="noopener noreferrer"
-              :title="item.title"
-              style="background-color: white; flex: 0 1 auto"
-              class="pa-2 ma-1"
-              width="100"
-            >
-              <v-img
-                :src="$router.options.base + item.logo"
-                contain
-                :width="$vuetify.breakpoint.mdAndUp ? '100' : '75'"
-                height="60"
-                class="text-right pa-2"
-              />
-            </a>
-          </v-item>
-          <div class="title pa-3">
-            {{ item.title }}
-          </div>
-        </v-expansion-panel-header>
-        <v-expansion-panel-content class="pa-3">
-          {{ item.text }}
-          <a
-            :href="item.url"
-            target="_blank"
-            rel="noopener noreferrer"
-            :title="item.title"
-            >{{ $t('misc.ui.more') }}</a
-          >
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-    </v-expansion-panels>
+    <v-card v-for="(item, index) in sab.members" :key="index">
+      <v-card-title>
+        {{ item.firstname + ' ' + item.lastname }}
+      </v-card-title>
+      <v-card-text>
+        {{ item.bio }}
+      </v-card-text>
+    </v-card>
   </div>
 </template>
 <script>
 export default {
   async asyncData({ app, $content }) {
     const sab = await $content(app.i18n.locale + '/pages/sab').fetch()
+    console.log('sab: ', sab)
 
     return {
       sab,
