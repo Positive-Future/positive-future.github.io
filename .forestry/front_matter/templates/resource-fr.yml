@@ -130,7 +130,7 @@ fields:
     date_format: 
     time_format: 'false'
     display_utc: false
-    export_format: MM/DD/YYYY
+    export_format: ''
 - name: file
   type: file
   config:
