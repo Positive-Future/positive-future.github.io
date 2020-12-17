@@ -4,7 +4,8 @@ type: Book
 lang: FR
 name: 'Singapour : à la conquête d’un territoire contraint'
 author: Alice Dalaut
-description_en: ''
+description_en: Interesting on urban innovations in Singapore, in housing, water management,
+  building on the sea, mobility, nature's place... To be consulted from page 31
 description_fr: Intéressant sur les innovations urbaines à Singapour, en matière de
   logement, gestion de l’eau, construction sur la mer, mobilité, place de la nature...
   A consulter à partir de la page 31
@@ -13,6 +14,7 @@ issues:
 - environment
 - housing
 perspectives:
+- foresight_studies
 - case_studies
 date: 
 file: ''
