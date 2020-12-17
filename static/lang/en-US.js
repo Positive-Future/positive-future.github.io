@@ -59,7 +59,7 @@ export default () => {
           health: 'Health',
           housing: 'Housing',
           imigration: 'Imigration',
-          information_communication: 'Information & communications',
+          information_communications: 'Information & communications',
           law_justice: 'Law, justice',
           leisure: 'Leisure',
           public_administration: 'Public administration',

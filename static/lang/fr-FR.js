@@ -58,7 +58,7 @@ export default () => {
           health: 'Santé, médecine',
           housing: 'Logement',
           imigration: 'Immigration',
-          information_communication: 'Information & Communications',
+          information_communications: 'Information & Communications',
           law_justice: 'Droit, justice',
           leisure: 'Loisirs',
           public_administration: 'Administration publique',
@@ -72,17 +72,13 @@ export default () => {
           urban_spatial_planning: 'Urbanisme, territoire',
           work: 'Emploi, travail',
         },
-        languages: {
-          FR: 'Français',
-          en: 'Anglais',
-          de: 'Allemand',
-          es: 'Espagnol',
-        },
       },
       misc: {
         languages: {
           fr: 'Français',
           en: 'Anglais',
+          de: 'Allemand',
+          es: 'Espagnol',
         },
         social: {
           facebook: 'Visitez notre page Facebook',

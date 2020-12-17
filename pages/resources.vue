@@ -137,7 +137,7 @@
               :items="
                 languages.map((item) => {
                   return {
-                    text: $t('resources.languages.' + item),
+                    text: $t('misc.languages.' + item.toLowerCase()),
                     value: item,
                   }
                 })
@@ -225,14 +225,11 @@ export default {
       app.i18n.locale + '/pages/resources'
     ).fetch()
     const items = await $content('resources').fetch()
-    console.log('items: ', items)
-    const types = [...new Set(items.map((item) => item.types))]
+    const types = [...new Set(items.map((item) => item.type))]
     const languages = [...new Set(items.map((item) => item.lang))]
-    console.log('types: ', types)
     const issues = [...new Set(...items.map((item) => item.issues))]
-    console.log('issues: ', issues)
     const perspectives = [...new Set(...items.map((item) => item.perspectives))]
-    console.log('perspectives: ', perspectives)
+
     return {
       types,
       issues,
@@ -279,7 +276,6 @@ export default {
       immediate: true,
       handler(v) {
         if (v.category?.length) this.browsing = true
-        console.log('v: ', v)
       },
     },
   },

@@ -5,8 +5,8 @@
         v-for="(item, index) in items"
         :key="index"
         class="ma-1"
-        outlined
-        :color="filters && filters.includes(item) ? 'primary' : 'default'"
+        color="relatedKey === 'issues'?'primary':'secondary'"
+        :outlined="filters && filters.includes(item)"
       >
         {{ $t('resources.' + relatedKey + '.' + item) }}
       </v-chip>
