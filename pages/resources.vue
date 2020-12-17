@@ -203,11 +203,11 @@
                 <ChipsContainer
                   :filters="filters.perspective"
                   related-key="perspectives"
-                  :items="item.perspectives"
+                  :items="item.perspectives.sort()"
                 />
                 <ChipsContainer
                   related-key="issues"
-                  :items="item.issues"
+                  :items="item.issues.sort()"
                   :filters="filters.issue"
                 />
               </v-card-text>
@@ -221,14 +221,17 @@
 <script>
 export default {
   async asyncData({ app, $content }) {
+    console.log('app: ', app)
     const resources = await $content(
       app.i18n.locale + '/pages/resources'
     ).fetch()
-    const items = await $content('resources').fetch()
-    const types = [...new Set(items.map((item) => item.type))]
-    const languages = [...new Set(items.map((item) => item.lang))]
-    const issues = [...new Set(...items.map((item) => item.issues))]
-    const perspectives = [...new Set(...items.map((item) => item.perspectives))]
+    const items = await $content('resources').where().fetch()
+    const types = [...new Set(items.map((item) => item.type))].sort()
+    const languages = [...new Set(items.map((item) => item.lang))].sort()
+    const issues = [...new Set(...items.map((item) => item.issues))].sort()
+    const perspectives = [
+      ...new Set(...items.map((item) => item.perspectives)),
+    ].sort()
 
     return {
       types,
@@ -274,8 +277,20 @@ export default {
     filters: {
       deep: true,
       immediate: true,
-      handler(v) {
+      async handler(v) {
+        console.log('v: ', v)
+        const query = {}
+        Object.keys(v).map((filter) => {
+          console.log('filter: ', filter)
+          if (v[filter]?.length) {
+            console.log('filter length: ', filter)
+            query[filter] = { $in: v[filter] }
+          }
+        })
+        console.log('query: ', query)
+
         if (v.category?.length) this.browsing = true
+        this.items = await this.$content('resources').where(query).fetch()
       },
     },
   },

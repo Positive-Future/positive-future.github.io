@@ -97,7 +97,7 @@ export default () => {
       },
       navigation: {
         about: 'About us',
-        contest: 'Contest',
+        contest: 'Competition',
         resources: 'Food for thought',
         sab: 'Scientific Advisory Board',
         jury: 'Jury',
