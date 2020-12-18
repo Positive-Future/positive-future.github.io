@@ -116,16 +116,6 @@ fields:
     - risk_management
     - science_fiction
   label: Perspectives and approaches
-- name: date
-  type: datetime
-  label: Date
-  description: ''
-  config:
-    required: false
-    date_format: 
-    time_format: 'false'
-    display_utc: false
-    export_format: ''
 - name: file
   type: file
   config:
@@ -152,6 +142,11 @@ fields:
       file: 
       path: 
   label: Doc language
+- name: date
+  type: text
+  config:
+    required: false
+  label: Date
 pages:
 - content/resources/San Francisco, la première ville zéro déchet.md
 - 'content/resources/Singapour : à la conquête d’un territoire contraint.md'
