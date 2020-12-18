@@ -36,7 +36,7 @@ fields:
   config:
     use_select: true
     min: 1
-    max: 1
+    max: 
     source:
       type: simple
     options:
