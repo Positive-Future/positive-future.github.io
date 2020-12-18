@@ -8,44 +8,54 @@
       <v-divider />
     </v-responsive>
     <nuxt-content :document="resources" class="pa-3" />
-    <v-row v-if="!browsing" class="mx-3">
-      <v-col
-        v-for="(item, index) in categories"
-        :key="index"
-        cols="12"
-        sm="6"
-        md="4"
-      >
-        <v-hover v-slot:default="{ hover }">
-          <v-card
-            class="pa-6 text-center"
-            flat
-            :elevation="hover ? 12 : 2"
-            height="100%"
-            @click="filters.category = [item.name]"
-          >
-            <v-avatar color="#00c2cb" size="44">
-              <v-icon dark> mdi-{{ item.icon }} </v-icon>
-            </v-avatar>
-            <v-card-title
-              class="justify-center font-weight-black text-uppercase"
-              style="word-break: normal"
+    <v-expand-transition v-if="!browsing">
+      <v-row class="mx-3">
+        <v-col
+          v-for="(item, index) in categories"
+          :key="index"
+          cols="12"
+          sm="6"
+          md="4"
+        >
+          <v-hover v-slot:default="{ hover }">
+            <v-card
+              class="pa-2 text-center"
+              flat
+              :elevation="hover ? 12 : 2"
+              height="100%"
+              @click="filters.category = [item.name]"
             >
-              {{ $t('resources.categories.' + item.name) }}
-            </v-card-title>
-            <v-card-text class="text-left"
-              >{{ $t('resources.categoriesTexts.' + item.name) }}
-            </v-card-text>
-          </v-card>
-        </v-hover></v-col
-      >
-    </v-row>
+              <v-avatar color="#00c2cb" size="44">
+                <v-icon dark> mdi-{{ item.icon }} </v-icon>
+              </v-avatar>
+              <v-card-title
+                class="justify-center font-weight-black text-uppercase"
+                style="word-break: normal"
+              >
+                {{ $t('resources.categories.' + item.name) }}
+              </v-card-title>
+              <v-card-text
+                class="text-left"
+                v-html="$t('resources.categoriesTexts.' + item.name)"
+              >
+              </v-card-text>
+            </v-card>
+          </v-hover>
+        </v-col>
+        <v-col cols="12">
+          <div class="ma-6 text-center headline">
+            {{ $t('resources.filterAlternativeText') }}
+          </div>
+        </v-col>
+      </v-row>
+    </v-expand-transition>
+
     <v-data-iterator
-      v-else
       :items="filteredItems"
       :items-per-page.sync="itemsPerPage"
       :page="page"
       :search="filters.search"
+      :hide-default-footer="!browsing"
     >
       <template v-slot:header>
         <v-row class="mx-3">
@@ -57,7 +67,7 @@
               outlined
               hide-details
               prepend-inner-icon="mdi-magnify"
-              label="Search"
+              :label="$t('resources.filters.search')"
             ></v-text-field
           ></v-col>
           <v-col cols="12" sm="6" md="4">
@@ -74,7 +84,7 @@
                   }
                 })
               "
-              label="Category"
+              :label="$t('resources.filters.category')"
             ></v-select
           ></v-col>
           <v-col cols="12" sm="6" md="4">
@@ -91,7 +101,7 @@
                   }
                 })
               "
-              label="Type"
+              :label="$t('resources.filters.type')"
             ></v-select
           ></v-col>
           <v-col cols="12" sm="6" md="4">
@@ -108,7 +118,7 @@
                   }
                 })
               "
-              label="Perspectives and approaches"
+              :label="$t('resources.filters.perspectives')"
             ></v-select
           ></v-col>
           <v-col cols="12" sm="6" md="4">
@@ -125,7 +135,7 @@
                   }
                 })
               "
-              label="Issues and challenges"
+              :label="$t('resources.filters.issues')"
             ></v-select
           ></v-col>
           <v-col cols="12" sm="6" md="4">
@@ -142,18 +152,18 @@
                   }
                 })
               "
-              label="Languages"
+              :label="$t('resources.filters.lang')"
             ></v-select
           ></v-col>
         </v-row>
       </template>
-      <template v-slot:no-results class="ml-6"
+      <template v-if="browsing" v-slot:no-results class="ml-6"
         ><div class="ml-6">{{ $t('resources.noResultsText') }}</div>
       </template>
-      <template v-slot:no-data class="ml-6"
+      <template v-if="browsing" v-slot:no-data class="ml-6"
         ><div class="ml-6">{{ $t('resources.noDataText') }}</div>
       </template>
-      <template v-slot:default="props">
+      <template v-if="browsing" v-slot:default="props">
         <v-row class="mx-3">
           <v-col v-for="item in props.items" :key="item.name" cols="12">
             <v-card link :href="item.url" :to="item.file" target="'_blank'">
@@ -165,27 +175,46 @@
                   <v-list-item-title class="headline mb-1">
                     {{ item.name }}
                   </v-list-item-title>
-                  <v-list-item-subtitle>
-                    <v-img
-                      :src="
-                        item.lang === 'EN'
-                          ? 'https://cdn.vuetifyjs.com/images/flags/us.png'
-                          : 'https://cdn.vuetifyjs.com/images/flags/fr.png'
-                      "
-                      width="30"
-                      height="20"
-                      class="d-inline-block"
-                    >
-                    </v-img>
+                  <v-list-item-subtitle
+                    class="d-inline-flex align-center justify-start"
+                  >
+                    <v-tooltip bottom>
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-img
+                          class="mr-3"
+                          :src="
+                            item.lang === 'EN'
+                              ? 'https://cdn.vuetifyjs.com/images/flags/us.png'
+                              : 'https://cdn.vuetifyjs.com/images/flags/fr.png'
+                          "
+                          max-width="30"
+                          height="20"
+                          v-bind="attrs"
+                          v-on="on"
+                        >
+                        </v-img>
+                      </template>
+                      <span>{{
+                        $t('resources.thisDocumentLangIs') +
+                        ' ' +
+                        $t('misc.languages.' + item.lang.toLowerCase())
+                      }}</span>
+                    </v-tooltip>
+
                     {{ item.author }}</v-list-item-subtitle
                   >
                 </v-list-item-content>
 
                 <v-list-item-avatar>
-                  <v-icon
-                    >mdi-{{ icons[item.type] }}</v-icon
-                  ></v-list-item-avatar
-                >
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-icon v-bind="attrs" v-on="on">
+                        mdi-{{ icons[item.type] }}
+                      </v-icon>
+                    </template>
+                    <span>{{ $t('resources.types.' + item.type) }}</span>
+                  </v-tooltip>
+                </v-list-item-avatar>
               </v-list-item>
 
               <v-divider></v-divider>
@@ -195,14 +224,14 @@
                 </p>
 
                 <ChipsContainer
-                  :filters="filters.perspective"
+                  :filters="filters.perspectives"
                   related-key="perspectives"
                   :items="item.perspectives"
                 />
                 <ChipsContainer
                   related-key="issues"
                   :items="item.issues"
-                  :filters="filters.issue"
+                  :filters="filters.issues"
                 />
               </v-card-text>
             </v-card>
@@ -238,7 +267,7 @@ export default {
   data() {
     return {
       icons: {
-        Article: 'typewritter',
+        Article: 'typewriter',
         Book: 'book-open-variant',
         Drawing: 'draw',
         Picture: 'image',
@@ -279,10 +308,12 @@ export default {
       deep: true,
       immediate: true,
       handler(v) {
-        if (v.category?.length) this.browsing = true
         const query = {}
         Object.keys(v).map((key) => {
-          if (v[key]?.length) query[key] = v[key]
+          if (v[key]?.length) {
+            query[key] = v[key]
+            this.browsing = true
+          }
         })
         console.log('query: ', query)
         this.$router.push({ query })

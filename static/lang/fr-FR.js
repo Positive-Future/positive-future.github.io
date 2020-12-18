@@ -4,6 +4,17 @@ export default () => {
       resources: {
         noDataText: 'Aucune ressource disponible',
         noResultsText: 'Aucune ressource ne correspond à votre recherche',
+        thisDocumentLangIs: 'Cette ressource est en',
+        filterAlternativeText:
+          'Les ressources peuvent aussi être explorées à partir des filtres suivants:',
+        filters: {
+          search: 'Rechercher une ressource',
+          category: 'Catégorie',
+          type: 'Type',
+          perspectives: 'Perspectives and approches',
+          issues: 'Défis et problématiques',
+          lang: 'Langue',
+        },
         categories: {
           imagine_a_far_away_future: 'Imaginer un futur lointain',
           stimulate_your_creativity: 'Stimuler votre créativité',
@@ -14,13 +25,13 @@ export default () => {
         },
         categoriesTexts: {
           imagine_a_far_away_future:
-            "Horizon 2100... c'est-à-dire à quelques générations d'ici. \nImaginez votre vie quotidienne dans la version 2100, ou comment vos petits-enfants pourraient vivre.  \nLe même genre de drame humain pourrait encore se produire à chaque niveau individuel... Mais qu'est-ce qui aura changé par rapport à maintenant ?",
+            "Horizon 2100... c'est-à-dire à quelques générations d'ici. <br>Imaginez votre vie quotidienne dans la version 2100, ou comment vos petits-enfants pourraient vivre.  <br>Le même genre de drame humain pourrait encore se produire à chaque niveau individuel... Mais qu'est-ce qui aura changé par rapport à maintenant ?",
           stimulate_your_creativity:
             "De nombreuses personnes ont essayé de dépeindre l'avenir dans des œuvres artistiques (romans de science-fiction, dessins...). Certains peuvent être irréalistes ou extrêmes... Permettez-vous d'entrevoir d'autres mondes avant de créer votre propre univers.",
           stay_positive:
-            "Trop de littérature et de cinéma aujourd'hui donne une vision sombre et dystopique de l'avenir. Comment pouvez-vous transformer cela en quelque chose de plus positif ? \nLes êtres humains ont la capacité de faire face, de résister et de trouver des solutions - que ce soit au niveau individuel, communautaire ou mondial",
+            "Trop de littérature et de cinéma aujourd'hui donne une vision sombre et dystopique de l'avenir. Comment pouvez-vous transformer cela en quelque chose de plus positif ? <br>Les êtres humains ont la capacité de faire face, de résister et de trouver des solutions - que ce soit au niveau individuel, communautaire ou mondial.",
           think_of_your_ideal_city:
-            "Comment aimeriez-vous que les futures villes soient ? Seront-elles des mégalopoles de haute technologie ou y aura-t-il un retour à des villes de plus petite taille ? \n Les villes seront-elles très différentes d'un point de vue esthétique ou matériel ? Quelle serait la ville idéale pour les relations humaines et les communautés ?",
+            "Comment aimeriez-vous que les futures villes soient ? Seront-elles des mégalopoles de haute technologie ou y aura-t-il un retour à des villes de plus petite taille ? <br> Les villes seront-elles très différentes d'un point de vue esthétique ou matériel ? Quelle serait la ville idéale pour les relations humaines et les communautés ?",
           face_our_challenges_today:
             "Notre société est aujourd'hui confrontée à de nombreux défis, qui auront un impact sur la vie des générations futures. Cet impact, que vous montrerez dans votre proposition, sera le reflet de votre évaluation réaliste de ces questions ainsi que de notre capacité à y faire face.",
           learn_from_the_past:

@@ -4,7 +4,16 @@ export default () => {
       resources: {
         noDataText: 'No resource available',
         noResultsText: 'No resource match your search',
-
+        filterAlternativeText:
+          'Resources can also be explored with the following filters:',
+        filters: {
+          search: 'Search a resource',
+          category: 'Category',
+          type: 'Type',
+          perspectives: 'Perspectives and approaches',
+          issues: 'Issues and challenges',
+          lang: 'Language',
+        },
         categories: {
           imagine_a_far_away_future: 'Imagine a far away future',
           stimulate_your_creativity: 'Stimulate your creativity',
@@ -19,7 +28,7 @@ export default () => {
           stimulate_your_creativity:
             'Many people have tried to depict the future in artistic pieces (science fiction novels, drawings…). Some may be unrealistic or extreme... Allow yourself a glimpse into other worlds before you create your own universe.',
           stay_positive:
-            'Too much literature and cinema today gives a bleak, dystopic view of the future. How can you turn this into something more positive? \nHuman beings have the capacity to cope, resist, and find solutions – whether it is at the individual, community or global level',
+            'Too much literature and cinema today gives a bleak, dystopic view of the future. How can you turn this into something more positive? \nHuman beings have the capacity to cope, resist, and find solutions – whether it is at the individual, community or global level.',
           think_of_your_ideal_city:
             'How would you like future cities to be like? Will they be high-tech megacities, or will there be a return to smaller size cities? \nWill cities look very different from an esthetic or material point of view? What would be an ideal city for human relationships and communities? ',
           face_our_challenges_today:
