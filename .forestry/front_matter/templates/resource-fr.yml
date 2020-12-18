@@ -32,22 +32,19 @@ fields:
       format: markdown
   label: Description_FR
 - name: category
-  type: select
-  default: Stimulez votre créativité
+  type: list
   config:
-    required: false
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: simple
     options:
     - imagine_a_far_away_future
     - stimulate_your_creativity
     - stay_positive
-    - face_our_challenges_today
+    - face_your_challenges_today
     - learn_from_the_past
-    - think_of_your_ideal_city
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
   label: Category
 - name: type
   type: select
