@@ -46,6 +46,21 @@ fields:
     - face_your_challenges_today
     - learn_from_the_past
   label: Category
+- name: type
+  type: list
+  config:
+    use_select: true
+    min: 1
+    max: 
+    source:
+      type: simple
+    options:
+    - Article
+    - Book
+    - Photo
+    - Video
+    - Drawing
+  label: Type
 - name: issues
   type: list
   config:
@@ -137,21 +152,6 @@ fields:
       file: 
       path: 
   label: Doc language
-- name: type
-  type: list
-  config:
-    use_select: true
-    min: 1
-    max: 
-    source:
-      type: simple
-    options:
-    - Article
-    - Book
-    - Photo
-    - Video
-    - Drawing
-  label: Type
 pages:
 - content/resources/San Francisco, la première ville zéro déchet.md
 - 'content/resources/Singapour : à la conquête d’un territoire contraint.md'
