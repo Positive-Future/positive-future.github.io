@@ -1,6 +1,6 @@
 ---
 lang: FR
-name: ATLAS PROSPECTIF DE LA PLANÈTE ROBOMOBILE
+name: Atlas prospectif de la planète robomobile
 author: Li, Y., Antonialli, F., Rouillard, D., & et al.
 description_en: ''
 description_fr: Récits d’anticipation sur la mobilté
