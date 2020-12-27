@@ -3,7 +3,7 @@ lang: FR
 name: Une exploration des écosystèmes de lieux hybrides
 author: 'Albarède, M., Déri, C., & Marcou, T. '
 description_en: ''
-description_fr: ''
+description_fr: lieux hybrides et innovations
 category:
 - face_your_challenges_today
 type:
