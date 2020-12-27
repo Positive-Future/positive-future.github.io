@@ -1,6 +1,6 @@
 ---
 lang: FR
-name: Cahier SoftPlace – Une exploration des écosystèmes de lieux hybrides
+name: Une exploration des écosystèmes de lieux hybrides
 author: 'Albarède, M., Déri, C., & Marcou, T. '
 description_en: ''
 description_fr: ''
