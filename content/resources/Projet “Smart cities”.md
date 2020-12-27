@@ -1,6 +1,6 @@
 ---
 lang: FR
-name: Projet “Smart cities.”
+name: Projet “Smart cities”
 author: La Fabrique de la cité
 description_en: ''
 description_fr: ''
