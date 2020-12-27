@@ -15,7 +15,7 @@ issues:
 - urban_spatial_planning
 perspectives:
 - opinions
-date: ''
+date: December 8, 2020
 file: ''
 url: http://immersion-revue.fr/citybuilder/
 
