@@ -1,0 +1,19 @@
+---
+lang: FR
+name: 'La vie robomobile #005'
+author: Ministère de la transition écologique
+description_en: ''
+description_fr: 'Presente une petite video sur une vie robomobile imaginaire '
+category:
+- imagine_a_far_away_future
+type:
+- Video
+issues:
+- transport
+perspectives:
+- opinions
+date: ''
+file: ''
+url: https://www.mobilite-intelligente.com/politiques-publiques/vie-robomobile/la-lettre/N005
+
+---
