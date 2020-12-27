@@ -12,7 +12,7 @@ issues:
 - transport
 perspectives:
 - opinions
-date: ''
+date: Juillet 2020
 file: ''
 url: https://www.mobilite-intelligente.com/politiques-publiques/vie-robomobile/la-lettre/N005
 
