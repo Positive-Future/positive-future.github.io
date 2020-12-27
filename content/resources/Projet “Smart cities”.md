@@ -1,0 +1,19 @@
+---
+lang: FR
+name: Projet “Smart cities.”
+author: La Fabrique de la cité
+description_en: ''
+description_fr: ''
+category:
+- face_your_challenges_today
+type:
+- Article
+issues:
+- sciences_technologies
+perspectives:
+- data_and_trends
+date: "2020"
+file: ''
+url: https://www.lafabriquedelacite.com/projets/smart-cities/
+
+---
