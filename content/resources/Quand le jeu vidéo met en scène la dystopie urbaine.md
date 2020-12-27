@@ -9,7 +9,7 @@ description_fr: 'Les mondes dystopiques dans les jeux vidéos. Font apparaitre l
 category:
 - imagine_a_far_away_future
 type:
-- Video
+- Article
 issues:
 - government_local_and_national
 perspectives:
