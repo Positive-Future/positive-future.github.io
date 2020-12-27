@@ -1,6 +1,6 @@
 ---
 lang: EN
-name: Diplôme 2019 | Strate, école de design. (n.d.)
+name: Diplôme 2019 - Strate, école de design. (n.d.)
 author: Olivia Flouty
 description_en: Interesting installation in Pont de Neuilly metro, which interacts
   with the running metro, the emotional state of the users, shows a reflection of
