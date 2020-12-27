@@ -14,6 +14,7 @@ type:
 issues:
 - urban_spatial_planning
 perspectives:
+- magazine
 - opinions
 date: December 8, 2020
 file: ''
