@@ -2,10 +2,9 @@
 lang: FR
 name: 'Door to door: Future of the vehicle future of the city'
 author: Rouillard, D., & Guiheux, A.
-description_en: ''
-description_fr: Document très illustré qui imagine la ville du future réorganisée
-  autour de l’usage intensif dans tous les aspects de la vie de véhicules écologiques
-  communicants
+description_en: 'Environmentally friendly vehicles equipped with embedded digital
+  communication can transform architecture and the city. '
+description_fr: ''
 category:
 - imagine_a_far_away_future
 - stimulate_your_creativity
