@@ -1,6 +1,6 @@
 ---
 lang: ''
-name: 'L’urbanisme, l’architecture et le jeu vidéo. Géographie et Cultures, 109. '
+name: 'L’urbanisme, l’architecture et le jeu vidéo. '
 author: Prévot, M., & Buyck, J.
 description_en: ''
 description_fr: Série d’articles qui peut donner aux jeunes l’envie d’aller voir des
