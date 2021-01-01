@@ -1,6 +1,6 @@
 ---
 lang: FR
-name: 'Conférence : « Génie de la bande dessinée, de Töpffer à Emil Ferris »'
+name: "« Génie de la bande dessinée, de Töpffer à Emil Ferris »"
 author: Benoît Peeters
 description_en: ''
 description_fr: Impératif pour ceux qui se lanceront dans la BD
