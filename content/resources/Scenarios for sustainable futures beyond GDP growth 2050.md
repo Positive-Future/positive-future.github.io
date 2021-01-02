@@ -11,7 +11,10 @@ category:
 - imagine_a_far_away_future
 type:
 - Article
-issues: []
+issues:
+- democracy_participation
+- environment
+- energy
 perspectives:
 - case_studies
 - foresight_studies
