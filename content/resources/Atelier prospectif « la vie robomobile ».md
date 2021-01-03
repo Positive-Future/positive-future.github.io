@@ -1,7 +1,7 @@
 ---
 lang: FR
-name: Atelier prospectif « la vie robomobile »
-author: Ministère de la transition écologique
+name: Grand livrable la vie robomobile 2018
+author: Louis Fernique
 description_en: ''
 description_fr: 'Atelier prospectif : la vie robomobile. Intéressant. Stimule l’imagination
   sur un futur qui pourrait ne pas être si lointain qu’on le pense (à 10 ans, dans
