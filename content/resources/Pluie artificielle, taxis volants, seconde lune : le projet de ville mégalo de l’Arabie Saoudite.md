@@ -4,7 +4,11 @@ name: 'Pluie artificielle, taxis volants, seconde lune : le projet de ville még
   de l’Arabie Saoudite'
 author: Lila Meghraoua
 description_en: ''
-description_fr: ''
+description_fr: 'Version ultratechnologique et démesurée de la cité du futur. Projet
+  ambitieux mais qui fourmille de contradictions : Neom entend être une ville durable
+  mais avec une plage qui brille la nuit, une ville où il fera bon vivre puisque chaque
+  citoyen sera surveillé, et une ville où il fera bon travailler puisque tout un tas
+  de start-up et d’entreprises technologiques se seront implantées sur place.'
 category:
 - face_your_challenges_today
 type:
