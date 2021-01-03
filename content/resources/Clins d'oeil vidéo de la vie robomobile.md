@@ -3,7 +3,7 @@ lang: FR
 name: Clins d'oeil vidéo de la vie robomobile
 author: Cerema & Ministère des Transports
 description_en: ''
-description_fr: ''
+description_fr: 'Atelier prospectif « la vie robomobile » '
 category:
 - face_your_challenges_today
 - imagine_a_far_away_future
