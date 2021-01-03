@@ -2,10 +2,10 @@
 lang: FR
 name: 3 scénarios pour un Paris 0 carbone
 author: Leonard (Vinci), Shell, & OCDE
-description_en: ''
-description_fr: Trois scénarios sur les trente prochaines années de la métropole parisienne.
-  Reste très superficiel, sans pistes concrètes pour imaginer la ville du futur. Mais
-  présente les enjeux à court terme pour développer le plan climat
+description_en: Vaut la lecture en se centrant sur les résumés (points clés)
+description_fr: '3 scenarios pour un Paris zéro carbone à horizon 2050. Scénarios
+  centrés sur la transition écologique avec une approche assez convenue des questions
+  de gouvernance. Présente les enjeux à court terme pour développer le plan climat.  '
 category:
 - face_your_challenges_today
 type:
