@@ -1,7 +1,7 @@
 ---
 lang: FR
 name: Le futur des espaces publics
-author: la fabrique de la cite
+author: la fabrique de la cité
 description_en: ''
 description_fr: Le futur des espaces publics
 category:
