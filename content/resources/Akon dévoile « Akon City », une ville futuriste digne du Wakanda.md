@@ -3,8 +3,9 @@ lang: FR
 name: Akon dévoile « Akon City », une ville futuriste digne du Wakanda
 author: Sacha Montagut
 description_en: ''
-description_fr: ''
+description_fr: Délirant
 category:
+- stimulate_your_creativity
 - imagine_a_far_away_future
 type:
 - Article
