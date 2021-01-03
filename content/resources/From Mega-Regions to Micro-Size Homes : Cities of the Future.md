@@ -2,8 +2,9 @@
 lang: EN
 name: 'From Mega-Regions to Micro-Size Homes : Cities of the Future'
 author: 'Treat, J. '
-description_en: ''
-description_fr: ''
+description_en: Visions très techno centrées sur les villes du futur. Illustrations
+  graphiques.
+description_fr: 'Techno-centered perspective on future cities. Graphic illustrations. '
 category:
 - face_your_challenges_today
 - imagine_a_far_away_future
