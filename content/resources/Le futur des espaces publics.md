@@ -1,7 +1,7 @@
 ---
 lang: FR
 name: Le futur des espaces publics
-author: la fabrique de la cité
+author: Chloë VOISIN-BORMUTH
 description_en: ''
 description_fr: Le futur des espaces publics
 category:
