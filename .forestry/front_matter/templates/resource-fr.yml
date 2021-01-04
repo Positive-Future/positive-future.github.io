@@ -43,9 +43,9 @@ fields:
     - imagine_a_far_away_future
     - stimulate_your_creativity
     - stay_positive
-    - face_your_challenges_today
     - learn_from_the_past
     - think_of_your_ideal_city
+    - face_our_challenges_today
   label: Category
 - name: type
   type: list
