@@ -45,6 +45,7 @@ fields:
     - stay_positive
     - face_your_challenges_today
     - learn_from_the_past
+    - think_of_your_ideal_city
   label: Category
 - name: type
   type: list
