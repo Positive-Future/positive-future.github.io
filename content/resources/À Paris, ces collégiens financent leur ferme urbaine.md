@@ -6,7 +6,7 @@ description_en: ''
 description_fr: ''
 category:
 - stimulate_your_creativity
-- face_your_challenges_today
+- face_our_challenges_today
 - stay_positive
 type:
 - Article

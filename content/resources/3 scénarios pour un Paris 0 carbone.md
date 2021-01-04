@@ -7,7 +7,7 @@ description_fr: '3 scenarios pour un Paris zéro carbone à horizon 2050. Scéna
   centrés sur la transition écologique avec une approche assez convenue des questions
   de gouvernance. Présente les enjeux à court terme pour développer le plan climat.  '
 category:
-- face_your_challenges_today
+- face_our_challenges_today
 type:
 - Article
 issues:

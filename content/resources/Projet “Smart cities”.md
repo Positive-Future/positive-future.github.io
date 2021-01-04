@@ -5,7 +5,7 @@ author: La Fabrique de la cité
 description_en: ''
 description_fr: Introduction sur les différentes approches de la « smart city »
 category:
-- face_your_challenges_today
+- face_our_challenges_today
 type:
 - Article
 issues:

@@ -11,7 +11,7 @@ description_fr: 'Comment des projets de ville du futur s''insèrent dans les cul
   sera surveillé, et une ville où il fera bon travailler puisque tout un tas de start-up
   et d’entreprises technologiques se seront implantées sur place.'
 category:
-- face_your_challenges_today
+- face_our_challenges_today
 type:
 - Article
 issues:

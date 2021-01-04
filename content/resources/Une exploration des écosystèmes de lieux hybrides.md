@@ -6,7 +6,7 @@ description_en: ''
 description_fr: 'Réflexion sur deux tendances: l’émergence de nouveaux lieux plus
   hybrides et partagés et la dématérialisation croissante de services'
 category:
-- face_your_challenges_today
+- face_our_challenges_today
 type:
 - Article
 issues:

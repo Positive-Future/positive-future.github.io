@@ -5,7 +5,7 @@ author: 'Albarède, M., Déri, C., & Marcou, T. '
 description_en: ''
 description_fr: Lieux plateformes, hybrides et agiles
 category:
-- face_your_challenges_today
+- face_our_challenges_today
 type:
 - Book
 issues:

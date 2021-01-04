@@ -5,7 +5,7 @@ author: Cerema & Ministère des Transports
 description_en: ''
 description_fr: 'Atelier prospectif « la vie robomobile » '
 category:
-- face_your_challenges_today
+- face_our_challenges_today
 - imagine_a_far_away_future
 type:
 - Video

@@ -5,7 +5,7 @@ author: Chloë VOISIN-BORMUTH
 description_en: ''
 description_fr: Le futur des espaces publics
 category:
-- face_your_challenges_today
+- face_our_challenges_today
 - learn_from_the_past
 type:
 - Article

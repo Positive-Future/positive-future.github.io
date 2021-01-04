@@ -6,7 +6,7 @@ description_en: ''
 description_fr: Important pour aborder l’ensemble des facteurs (institutions, qualité
   de vie, infrastructures, etc) qui font la valeur d’un territoire (appliqué aux départements)
 category:
-- face_your_challenges_today
+- face_our_challenges_today
 type:
 - Article
 issues:

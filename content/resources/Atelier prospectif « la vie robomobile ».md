@@ -7,7 +7,7 @@ description_fr: 'Atelier prospectif : la vie robomobile. Intéressant. Stimule l
   sur un futur qui pourrait ne pas être si lointain qu’on le pense (à 10 ans, dans
   certaines villes en pointe ?)'
 category:
-- face_your_challenges_today
+- face_our_challenges_today
 type:
 - Article
 issues:

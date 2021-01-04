@@ -6,7 +6,7 @@ description_en: ''
 description_fr: 'La ville post carbone sera-t-elle inclusive ? Bon argumentaire sur
   la nécessité de cohérence dans la conception des villes '
 category:
-- face_your_challenges_today
+- face_our_challenges_today
 - imagine_a_far_away_future
 type:
 - Article

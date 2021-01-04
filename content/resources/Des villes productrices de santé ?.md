@@ -5,7 +5,7 @@ author: Voisin-Bormuth, C.
 description_en: ''
 description_fr: 'Comment créer des villes “productrices de santé »? '
 category:
-- face_your_challenges_today
+- face_our_challenges_today
 type:
 - Article
 issues:

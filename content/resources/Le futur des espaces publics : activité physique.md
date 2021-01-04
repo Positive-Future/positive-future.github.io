@@ -5,7 +5,7 @@ author: Henriquez, L., Sena, N., Voisin-Bormuth, C., & Wright, H.
 description_en: ''
 description_fr: Informatif. Donne accès à diverses contributions et illustrations
 category:
-- face_your_challenges_today
+- face_our_challenges_today
 type:
 - Article
 issues:

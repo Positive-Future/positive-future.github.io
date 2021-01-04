@@ -6,7 +6,7 @@ description_en: ''
 description_fr: Intéressant, montre le lien avec la culture coréenne
 category:
 - learn_from_the_past
-- face_your_challenges_today
+- face_our_challenges_today
 type:
 - Article
 - Book

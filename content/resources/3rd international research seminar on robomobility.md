@@ -6,7 +6,7 @@ description_en: Links to sessions on transport planning, sociotechnical issues, 
   governance. Interesting paper on ridesplitting.
 description_fr: ''
 category:
-- face_your_challenges_today
+- face_our_challenges_today
 type:
 - Video
 issues:
