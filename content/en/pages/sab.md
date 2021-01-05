@@ -29,13 +29,12 @@ members:
   '5':
     firstname: Fabienne
     lastname: Goux-Baudiment
-    bio: CEO of proGective SAS -center of study, research and consulting in foresight.
-      A futurist by training (sociologist) and by profession, she has chaired the
-      World Futures Studies Federation and the Société Française de Prospective. She
-      is particularly interested in deep thinking, disruptive innovation, the 'Great
-      Transition' and decisional desilotage. She is an associate professor in foresight
-      at the Institut des Sciences et des Techniques de l'Ingénieur d'Angers and a
-      researcher.
+    bio: Doctor in Human and Social Foresight (HSS), she founded proGective - a study,
+      research and consultancy center in foresight in 1995, chaired the World Futures
+      Studies Federation and the French Society for Foresight and held the chair of
+      Foresight, Innovation and Intangible Capital at Polytech Angers as associate
+      professor. An international speaker, her research, after the “Great Transition”,
+      is now focused on the X.0 development model
   '6':
     firstname: Jean
     lastname: Haëntjens
