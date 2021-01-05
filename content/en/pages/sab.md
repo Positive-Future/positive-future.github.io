@@ -15,8 +15,8 @@ members:
   '3':
     firstname: Anne
     lastname: Charreyron Perchet
-    bio: \"Smart City\" Project Manager at the French General Commission for Sustainable
-      Development (Commissariat général au développement durable).
+    bio: '"Smart City" Project Manager at the French General Commission for Sustainable
+      Development (Commissariat général au développement durable).'
   '4':
     firstname: Thierry
     lastname: Gaudin
