@@ -38,12 +38,12 @@ members:
   '6':
     firstname: Jean
     lastname: Haëntjens
-    bio: Economist and urban planner, he is a consultant in urban strategies and prospective
+    bio: Economist and urban planner, he is a consultant in urban strategies and foresight
       (Urbatopie). He works with local authorities, public institutions and companies.
-      He previously held operational responsibilities in the fields of urban planning,
-      planning and territorial development. Since The Power of Cities (2008), I have
-      published numerous books and articles on the themes of urban strategies, eco-urbanism
-      and the smart city.
+      He previously held operational responsibilities in the fields of urban planning
+      and territorial development. Since The Power of Cities (2008), he has published
+      books and articles on the themes of urban strategies, eco-urbanism and the smart
+      city.
   '7':
     firstname: Bettina
     lastname: Laville
