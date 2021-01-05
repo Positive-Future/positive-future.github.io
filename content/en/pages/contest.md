@@ -19,7 +19,6 @@ Proposals can be made individually or in groups.
 ## When ?
 
 * Official launch of the call for proposals: November 2020
-* Deadline for registering for the competition: March 2021
 * Deadline for the submission of proposals: May 2021
 * Awards ceremony: September 2021
 
