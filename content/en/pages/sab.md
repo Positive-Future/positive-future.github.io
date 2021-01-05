@@ -63,10 +63,11 @@ members:
   '9':
     firstname: Helga
     lastname: Nowotny
-    bio: Sociologist, holder of the Chair of Philosophy and Scientific Research at
-      the Swiss Federal Institute of Technology Zurich from 1998 to 2002. Among other
-      things, she chaired the Social Sciences Committee of the European Science Foundation
-      and the European Research Council (ERC).
+    bio: 'Emeritus Professor at ETH Zurich in Social Studies of Science and Technology,
+      (STS), and former President of the European Research Council, ERC. Her publications
+      include An Orderly Mess (CEU 2017) and The Cunning of Uncertainty (Polity, 2015).
+      Her next book, In AI We Trust. Power, illusion and control of predictive algorithms,
+      will be published by Polity in 2021. '
   '10':
     firstname: Jean-François
     lastname: Soupizet
