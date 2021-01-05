@@ -11,8 +11,7 @@ members:
   '2':
     firstname: Célia
     lastname: Blauel
-    bio: Deputy Mayor of Paris in charge of the Seine, Prospective Paris 2030 and
-      Resilience.
+    bio: Deputy Mayor of Paris in charge of the Seine, Paris 2030 foresight, and Resilience.
   '3':
     firstname: Anne
     lastname: Charreyron Perchet
