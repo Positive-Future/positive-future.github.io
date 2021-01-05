@@ -59,7 +59,7 @@ members:
     firstname: Frédéric
     lastname: Lefèvre
     bio: Architect, teacher at the Ecole Nationale d'Architecture Paris Val-de-Seine,
-      he conducted studies within the group "Society, prospective and architecture".
+      he conducted studies within the group "Society, foresight and architecture".
   '9':
     firstname: Helga
     lastname: Nowotny
