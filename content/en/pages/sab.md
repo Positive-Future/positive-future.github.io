@@ -18,16 +18,14 @@ members:
     bio: \"Smart City\" Project Manager at the French General Commission for Sustainable
       Development (Commissariat général au développement durable).
   '4':
-    firstname: Célia
-    lastname: Blauel
+    firstname: Thierry
+    lastname: Gaudin
     bio: Honorary Ingénieur Général des Mines, founding president of Prospective 2100,
       an international association whose objective is to prepare planetary programs
       for the 21st century, he founded and directed the Centre de prospective et d'évaluation
-      (CPE) of the Ministry of Research and Technology. He has carried out foresight
-      studies for the European Commission, the World Bank, the OECD, etc. He has also
-      worked on foresight issues for the European Commission, the World Bank, the
-      OECD, etc. In particular, he published 2100, a tale of the next century, in
-      1993.
+      (CPE) of the French Ministry of Research and Technology. He has carried out
+      foresight studies for the European Commission, the World Bank, the OECD, etc.
+      He published 2100, a tale of the next century, in 1993.
   '5':
     firstname: Fabienne
     lastname: Goux-Baudiment
