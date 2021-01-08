@@ -2,7 +2,9 @@
 lang: FR
 name: Grand livrable la vie robomobile 2018
 author: Louis Fernique
-description_en: ''
+description_en: 'Atelier prospectif : la vie robomobile. Intéressant. Stimule l’imagination
+  sur un futur qui pourrait ne pas être si lointain qu’on le pense (à 10 ans, dans
+  certaines villes en pointe ?)'
 description_fr: 'Atelier prospectif : la vie robomobile. Intéressant. Stimule l’imagination
   sur un futur qui pourrait ne pas être si lointain qu’on le pense (à 10 ans, dans
   certaines villes en pointe ?)'
