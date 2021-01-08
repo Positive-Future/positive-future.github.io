@@ -2,7 +2,9 @@
 lang: FR
 name: Xiongan, la ville nouvelle de Xi Jinping, sort de terre
 author: Frédéric Lemaître
-description_en: ''
+description_en: Projets de villes du futur en cours ou en projet. Inclure les quatre
+  exemples (même les plus fous) car ils montrent comment des projets de ville du futur
+  s'insèrent dans les cultures
 description_fr: Projets de villes du futur en cours ou en projet. Inclure les quatre
   exemples (même les plus fous) car ils montrent comment des projets de ville du futur
   s'insèrent dans les cultures
