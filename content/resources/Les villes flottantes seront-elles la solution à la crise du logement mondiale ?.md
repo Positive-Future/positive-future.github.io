@@ -2,7 +2,8 @@
 lang: FR
 name: Les villes flottantes seront-elles la solution à la crise du logement mondiale?
 author: 'Revkin, A. '
-description_en: ''
+description_en: Article illustré assez court sur les idées et projets de villes flottantes,
+  qui renvoie à des sources diverses pour approfondir
 description_fr: Article illustré assez court sur les idées et projets de villes flottantes,
   qui renvoie à des sources diverses pour approfondir
 category:
