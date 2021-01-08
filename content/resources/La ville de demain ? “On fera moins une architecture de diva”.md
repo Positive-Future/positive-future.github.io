@@ -2,10 +2,12 @@
 lang: FR
 name: La ville de demain ? “On fera moins une architecture de diva”
 author: Pauline Vallée
-description_en: ''
+description_en: L'architecte Maud Cabet, impliquée dans le Grand Paris, repense la
+  ville en période de crise. Espaces extérieurs partagés, services partagés, lumière
+  naturelle, végétal...
 description_fr: L'architecte Maud Cabet, impliquée dans le Grand Paris, repense la
   ville en période de crise. Espaces extérieurs partagés, services partagés, lumière
-  naturelle, végétal..
+  naturelle, végétal...
 category:
 - stay_positive
 type:
