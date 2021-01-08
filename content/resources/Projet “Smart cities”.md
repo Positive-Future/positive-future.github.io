@@ -2,7 +2,7 @@
 lang: FR
 name: Projet “Smart cities”
 author: La Fabrique de la cité
-description_en: ''
+description_en: Introduction sur les différentes approches de la « smart city »
 description_fr: Introduction sur les différentes approches de la « smart city »
 category:
 - face_our_challenges_today
