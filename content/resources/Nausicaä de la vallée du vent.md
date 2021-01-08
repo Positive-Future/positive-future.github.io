@@ -2,7 +2,7 @@
 lang: FR
 name: Nausicaä de la vallée du vent
 author: 'Miyazaki, H. '
-description_en: ''
+description_en: Exemple de BD culte
 description_fr: Exemple de BD culte
 category:
 - stimulate_your_creativity
