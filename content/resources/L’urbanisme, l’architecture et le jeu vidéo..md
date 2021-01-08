@@ -2,7 +2,8 @@
 lang: ''
 name: 'L’urbanisme, l’architecture et le jeu vidéo. '
 author: Prévot, M., & Buyck, J.
-description_en: ''
+description_en: Série d’articles qui peut donner aux jeunes l’envie d’aller voir des
+  jeux vidéos sur la ville
 description_fr: Série d’articles qui peut donner aux jeunes l’envie d’aller voir des
   jeux vidéos sur la ville
 category:
