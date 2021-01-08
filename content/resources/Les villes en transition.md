@@ -2,7 +2,10 @@
 lang: FR
 name: Les villes en transition
 author: Dominique GAUZIN-MÜLLER
-description_en: ''
+description_en: Conférence de 2018 d’une architecte-chercheure. Elle aborde la transition
+  écologique des villes à travers les questions de l’étalement urbain, l’individualisation
+  de l’habitat collectif, les habitats participatifs, les modes de déplacement, l’énergie,
+  les bienfaits du végétal, la gestion des déchets et les écoquartiers
 description_fr: Conférence de 2018 d’une architecte-chercheure. Elle aborde la transition
   écologique des villes à travers les questions de l’étalement urbain, l’individualisation
   de l’habitat collectif, les habitats participatifs, les modes de déplacement, l’énergie,
