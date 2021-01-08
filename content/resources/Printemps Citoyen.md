@@ -2,9 +2,8 @@
 lang: FR
 name: Printemps Citoyen
 author: 'Boumahdi, R. '
-description_en: ''
-description_fr: Intéressant dans la mesure où ce film ouvre sur l’avenir de la démocratie–
-  Film d’1h20
+description_en: Film d’1h20 qui ouvre sur l’avenir de la démocratie
+description_fr: Film d’1h20 qui ouvre sur l’avenir de la démocratie
 category:
 - stimulate_your_creativity
 - stay_positive
