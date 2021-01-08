@@ -2,7 +2,10 @@
 lang: FR
 name: Quatre scénarios pour la ville du futur
 author: Haegel, M.
-description_en: ''
+description_en: 'Quatre scénarios de la ville du futur. Utile pour visionner les effets
+  du numérique.  Services numériques ; Généralisation de la contribution citoyenne
+  ; Refus des plateformes et de l’ubérisation ; Omniprésence des algorithmes. Pas
+  de lien vers les sources malheureusement '
 description_fr: 'Quatre scénarios de la ville du futur. Utile pour visionner les effets
   du numérique.  Services numériques ; Généralisation de la contribution citoyenne
   ; Refus des plateformes et de l’ubérisation ; Omniprésence des algorithmes. Pas
