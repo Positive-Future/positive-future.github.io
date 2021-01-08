@@ -2,7 +2,7 @@
 lang: FR
 name: 'Le futur des espaces publics : activité physique'
 author: Henriquez, L., Sena, N., Voisin-Bormuth, C., & Wright, H.
-description_en: ''
+description_en: Informatif. Donne accès à diverses contributions et illustrations
 description_fr: Informatif. Donne accès à diverses contributions et illustrations
 category:
 - face_our_challenges_today
