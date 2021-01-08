@@ -2,7 +2,7 @@
 lang: FR
 name: Une exploration des écosystèmes de lieux hybrides
 author: 'Albarède, M., Déri, C., & Marcou, T. '
-description_en: ''
+description_en: Lieux plateformes, hybrides et agiles
 description_fr: Lieux plateformes, hybrides et agiles
 category:
 - face_our_challenges_today
