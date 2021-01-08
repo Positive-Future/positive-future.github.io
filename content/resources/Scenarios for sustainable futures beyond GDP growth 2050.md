@@ -6,7 +6,8 @@ author: Svenfelt, Å., Alfredsson, E. C., Bradley, K., Fauré, E., Finnveden, G.
   K., Stigson, P., Aretun, Å., Buhr, K., Hagbert, P., & Öhlund, E.
 description_en: 'Compares 4 scenarios of sustainable development in Sweden. Quite
   theoretical but gives some insight on foresight. '
-description_fr: ''
+description_fr: 'Compares 4 scenarios of sustainable development in Sweden. Quite
+  theoretical but gives some insight on foresight. '
 category:
 - imagine_a_far_away_future
 type:
