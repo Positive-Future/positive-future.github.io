@@ -2,7 +2,7 @@
 lang: FR
 name: 'Interview Vincent Callebaut : des villes en symbiose avec les océans'
 author: Brut Media
-description_en: ''
+description_en: Un architecte designer imagine une ville océanique
 description_fr: Un architecte designer imagine une ville océanique
 category:
 - imagine_a_far_away_future
