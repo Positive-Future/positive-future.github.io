@@ -11,7 +11,6 @@ description_fr: 'Présentation de cas d’études sur les évolutions récentes 
 category:
 - stay_positive
 type:
-- Book
 - Article
 issues:
 - government_local_and_national
