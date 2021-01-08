@@ -2,7 +2,8 @@
 lang: FR
 name: Indice territoires
 author: Institut de l’économie positive
-description_en: ''
+description_en: Important pour aborder l’ensemble des facteurs (institutions, qualité
+  de vie, infrastructures, etc) qui font la valeur d’un territoire (appliqué aux départements)
 description_fr: Important pour aborder l’ensemble des facteurs (institutions, qualité
   de vie, infrastructures, etc) qui font la valeur d’un territoire (appliqué aux départements)
 category:
