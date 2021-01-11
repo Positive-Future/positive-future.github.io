@@ -8,13 +8,18 @@ description_en: Utopique, mais stimule l’imagination – et permet d’envisag
 description_fr: Utopique, mais stimule l’imagination – et permet d’envisager la transformation
   de quartiers que l’on connait
 category:
+- think_of_your_ideal_city
+- imagine_a_far_away_future
 - stimulate_your_creativity
 type:
-- Article
+- Drawing
 - Photo
 issues:
+- environment
+- urban_spatial_planning
 - architecture
 perspectives:
+- case_studies
 - opinions
 date: ''
 file: ''
