@@ -5,10 +5,13 @@ author: Ministère de la transition écologique
 description_en: 'Horizon 2050. Présente une petite video sur une vie robomobile imaginaire '
 description_fr: 'Horizon 2050. Présente une petite video sur une vie robomobile imaginaire '
 category:
+- stimulate_your_creativity
 - imagine_a_far_away_future
 type:
 - Video
 issues:
+- housing
+- environment
 - transport
 perspectives:
 - opinions
