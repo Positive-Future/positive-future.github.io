@@ -8,10 +8,12 @@ description_fr: 'Bon argumentaire sur la nécessité de cohérence dans la conce
   des villes '
 category:
 - face_our_challenges_today
-- imagine_a_far_away_future
 type:
 - Article
 issues:
+- democracy_participation
+- government_local_and_national
+- environment
 - public_administration
 - energy
 perspectives:
