@@ -2,18 +2,20 @@
 lang: FR
 name: Comment Séoul est devenue la ville du futur
 author: Pablo Maillé
-description_en: ''
-description_fr: Intéressant, montre le lien avec la culture coréenne
+description_en: Intéressant, montre le lien avec la culture l'histoire en Corée
+description_fr: Intéressant, montre le lien avec la culture l'histoire en Corée
 category:
+- stay_positive
+- think_of_your_ideal_city
 - learn_from_the_past
-- face_our_challenges_today
 type:
-- Article
-- Book
 - Article
 issues:
 - urban_spatial_planning
+- housing
+- democracy_participation
 perspectives:
+- policy
 - case_studies
 date: '08/11/2018'
 file: ''
