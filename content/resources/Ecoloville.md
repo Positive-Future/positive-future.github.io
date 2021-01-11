@@ -7,7 +7,8 @@ description_en: 'Présentation de livre sur une cité du futur durable (brumisat
 description_fr: 'Présentation de livre sur une cité du futur durable (brumisateurs
   géants, quartiers autogérés, carburants végétaux etc). '
 category:
-- imagine_a_far_away_future
+- face_our_challenges_today
+- stay_positive
 - stimulate_your_creativity
 type:
 - Book
