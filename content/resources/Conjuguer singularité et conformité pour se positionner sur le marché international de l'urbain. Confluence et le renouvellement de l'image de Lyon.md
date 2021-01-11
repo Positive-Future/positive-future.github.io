@@ -22,7 +22,7 @@ issues:
 - urban_spatial_planning
 perspectives:
 - case_studies
-date: "2019"
+date: 03/07/2018
 file: ''
 url: https://journals.openedition.org/confins/14614#quotation
 
