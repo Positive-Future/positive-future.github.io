@@ -17,6 +17,7 @@ issues:
 - sciences_technologies
 - government_local_and_national
 perspectives:
+- policy
 - magazine
 - case_studies
 date: ''
