@@ -19,7 +19,7 @@ Les propositions peuvent être réalisées individuellement ou en groupe.
 
 ## Quand ?
 
-* Lancement de l’appel : Septembre 2020
+* Lancement de l’appel : Janvier 2020
 * Date limite de dépôt des propositions : Mai 2021
 * Remise des prix à Paris : Septembre 2021
 
