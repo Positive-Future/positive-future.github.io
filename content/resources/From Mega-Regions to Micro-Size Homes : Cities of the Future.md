@@ -1,7 +1,7 @@
 ---
 lang: EN
 name: 'From Mega-Regions to Micro-Size Homes : Cities of the Future'
-author: 'Treat, J. '
+author: Treat, J. (National Geographic)
 description_en: 'Techno-centered perspective on future cities. Graphic illustrations. '
 description_fr: 'Techno-centered perspective on future cities. Graphic illustrations. '
 category:
