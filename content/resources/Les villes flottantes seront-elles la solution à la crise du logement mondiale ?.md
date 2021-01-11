@@ -7,14 +7,17 @@ description_en: Article illustré assez court sur les idées et projets de ville
 description_fr: Article illustré assez court sur les idées et projets de villes flottantes,
   qui renvoie à des sources diverses pour approfondir
 category:
+- think_of_your_ideal_city
 - stimulate_your_creativity
 - imagine_a_far_away_future
 type:
 - Article
-issues: []
+issues:
+- urban_spatial_planning
+- environment
 perspectives:
 - policy
-- case_studies
+- foresight_studies
 date: "2019"
 file: ''
 url: https://www.nationalgeographic.fr/environnement/les-villes-flottantes-seront-elles-la-solution-la-crise-du-logement-mondiale
