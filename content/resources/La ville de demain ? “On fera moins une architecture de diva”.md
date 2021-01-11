@@ -16,7 +16,6 @@ issues:
 - urban_spatial_planning
 perspectives:
 - opinions
-- foresight_studies
 date: 17/11/2020
 file: ''
 url: https://www.wedemain.fr/ma-maison-demain/la-ville-de-demain-on-fera-moins-une-architecture-de-diva/
