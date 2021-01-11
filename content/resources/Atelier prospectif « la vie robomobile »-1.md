@@ -11,8 +11,9 @@ description_fr: Atelier prospectif «La vie robomobile» initié par le Ministè
   qui pourrait ne pas être si lointain qu’on le pense (à 10 ans, dans certaines villes
   en pointe ?)
 category:
+- stimulate_your_creativity
 - think_of_your_ideal_city
-- imagine_a_far_away_future
+- think_of_your_ideal_city
 type:
 - Book
 issues:
