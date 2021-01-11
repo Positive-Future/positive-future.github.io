@@ -9,12 +9,18 @@ description_fr: 'Les mondes dystopiques dans les jeux vidéos. Font apparaitre l
   futurs que nous redoutons: smarcity devenue folle; multinationale toute puissante
   modifiant à sa guise l’apparence de la ville; résistance contre ces systèmes totalitaires.'
 category:
+- stimulate_your_creativity
 - imagine_a_far_away_future
 type:
 - Article
 issues:
+- security_police
+- sciences_technologies
+- economy_trade
+- architecture
 - government_local_and_national
 perspectives:
+- foresight_studies
 - science_fiction
 date: 12 avril 2017
 file: ''
