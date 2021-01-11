@@ -9,6 +9,7 @@ description_fr: Projets de villes du futur en cours ou en projet. Inclure les qu
   exemples (même les plus fous) car ils montrent comment des projets de ville du futur
   s'insèrent dans les cultures
 category:
+- think_of_your_ideal_city
 - imagine_a_far_away_future
 type:
 - Article
