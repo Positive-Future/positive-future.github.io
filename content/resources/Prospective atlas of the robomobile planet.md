@@ -11,12 +11,15 @@ description_fr: This book is published by the Robomobile Life Workshop. Initiate
   21 stories on robomobility, futuristic types of mobility embedded in the city. Also
   available in French.
 category:
+- imagine_a_far_away_future
+- think_of_your_ideal_city
 - stimulate_your_creativity
 type:
 - Book
 issues:
 - transport
 perspectives:
+- foresight_studies
 - science_fiction
 date: "2017"
 file: ''
