@@ -11,7 +11,6 @@ type:
 issues:
 - public_space
 - urban_spatial_planning
-- democracy_participation
 perspectives:
 - data_and_trends
 - policy
