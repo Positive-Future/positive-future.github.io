@@ -18,8 +18,8 @@ Proposals can be made individually or in groups.
 
 ## When ?
 
-* Official launch of the call for proposals: November 2020
-* Deadline for the submission of proposals: May 2021
+* Official launch of the call for proposals: January 2020
+* Deadline for the submission of proposals: May 31, 2021
 * Awards ceremony: September 2021
 
 ***
