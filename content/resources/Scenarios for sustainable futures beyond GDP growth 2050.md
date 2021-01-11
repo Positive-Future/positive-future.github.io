@@ -9,17 +9,21 @@ description_en: 'Compares 4 scenarios of sustainable development in Sweden. Quit
 description_fr: 'Compares 4 scenarios of sustainable development in Sweden. Quite
   theoretical but gives some insight on foresight. '
 category:
+- face_our_challenges_today
+- learn_from_the_past
 - imagine_a_far_away_future
 type:
 - Article
 issues:
-- democracy_participation
 - environment
+- economy_trade
+- democracy_participation
 - energy
 perspectives:
-- case_studies
-- foresight_studies
 - data_and_trends
+- case_studies
+- policy
+- foresight_studies
 date: August 2019
 file: ''
 url: https://doi.org/10.1016/j.futures.2019.05.001
