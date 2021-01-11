@@ -9,8 +9,13 @@ category:
 type:
 - Article
 issues:
+- democracy_participation
+- information_communications
+- government_local_and_national
 - sciences_technologies
 perspectives:
+- policy
+- foresight_studies
 - data_and_trends
 date: "2020"
 file: ''
