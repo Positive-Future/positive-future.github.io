@@ -9,13 +9,15 @@ description_fr: Ce que les jeux informatiques peuvent apporter à la conception 
   projets urbains. Section 2.3 et conclusion (ville contemporaine sans limite/sensation
   d’immersion ; ville danger et non refuge)
 category:
+- think_of_your_ideal_city
 - stimulate_your_creativity
 type:
 - Article
 issues:
+- housing
+- architecture
 - urban_spatial_planning
 perspectives:
-- foresight_studies
 - data_and_trends
 - opinions
 date: "2017"
