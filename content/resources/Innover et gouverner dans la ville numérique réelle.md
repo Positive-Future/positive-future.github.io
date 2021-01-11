@@ -13,7 +13,6 @@ category:
 type:
 - Article
 issues:
-- public_administration
 - sciences_technologies
 - government_local_and_national
 perspectives:
