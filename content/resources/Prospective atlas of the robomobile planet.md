@@ -1,11 +1,15 @@
 ---
 lang: EN
 name: Prospective atlas of the robomobile planet
-author: Li, Y., Antonialli, F., Rouillard, D., & et al. (2020)
-description_en: Twenty-one stories on robomobility, futuristic types of mobility embedded
-  in the city
-description_fr: Twenty-one stories on robomobility, futuristic types of mobility embedded
-  in the city
+author: 'Li, Y., Antonialli, F., Rouillard, D., & et al. '
+description_en: This book is published by the Robomobile Life Workshop. Initiated
+  by the French Ministry for Ecological and Solidary Transition in 2017. It includes
+  21 stories on robomobility, futuristic types of mobility embedded in the city. Also
+  available in French.
+description_fr: This book is published by the Robomobile Life Workshop. Initiated
+  by the French Ministry for Ecological and Solidary Transition in 2017. It includes
+  21 stories on robomobility, futuristic types of mobility embedded in the city. Also
+  available in French.
 category:
 - stimulate_your_creativity
 type:
@@ -14,8 +18,8 @@ issues:
 - transport
 perspectives:
 - science_fiction
-date: ''
+date: "2017"
 file: ''
-url: https://www.mobilite-intelligente.com/politiques-publiques/vie-robomobile/atlas-planete-robomobile
+url: https://www.mobilite-intelligente.com/sites/mobilite/files/fichiers/2020/06/PP_ATLAS_ROBOMOBILE_EN_v2_0.pdf
 
 ---
