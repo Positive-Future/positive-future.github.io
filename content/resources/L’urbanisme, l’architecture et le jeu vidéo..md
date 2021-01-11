@@ -1,5 +1,5 @@
 ---
-lang: ''
+lang: FR
 name: 'L’urbanisme, l’architecture et le jeu vidéo. '
 author: Prévot, M., & Buyck, J.
 description_en: Série d’articles qui peut donner aux jeunes l’envie d’aller voir des
@@ -15,7 +15,6 @@ issues:
 - architecture
 perspectives:
 - opinions
-- foresight_studies
 - science_fiction
 date: "2019"
 file: ''
