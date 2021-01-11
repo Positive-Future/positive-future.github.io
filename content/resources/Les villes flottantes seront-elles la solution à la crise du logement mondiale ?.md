@@ -7,9 +7,9 @@ description_en: Article illustré assez court sur les idées et projets de ville
 description_fr: Article illustré assez court sur les idées et projets de villes flottantes,
   qui renvoie à des sources diverses pour approfondir
 category:
-- think_of_your_ideal_city
 - stimulate_your_creativity
 - imagine_a_far_away_future
+- think_of_your_ideal_city
 type:
 - Article
 issues:
