@@ -11,15 +11,20 @@ description_fr: Conférence de 2018 d’une architecte-chercheure. Elle aborde l
   de l’habitat collectif, les habitats participatifs, les modes de déplacement, l’énergie,
   les bienfaits du végétal, la gestion des déchets et les écoquartiers
 category:
+- think_of_your_ideal_city
 - face_our_challenges_today
 - stay_positive
 type:
 - Video
 issues:
+- energy
+- housing
 - transport
 - environment
 - urban_spatial_planning
 perspectives:
+- policy
+- foresight_studies
 - opinions
 date: '08/10/2018'
 file: ''
