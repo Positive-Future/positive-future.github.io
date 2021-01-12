@@ -11,6 +11,7 @@ description_fr: 'Quatre scénarios de la ville du futur. Utile pour visionner le
   ; Refus des plateformes et de l’ubérisation ; Omniprésence des algorithmes. Pas
   de lien vers les sources malheureusement '
 category:
+- imagine_a_far_away_future
 - face_our_challenges_today
 type:
 - Article
