@@ -13,7 +13,6 @@ description_fr: '3 scenarios pour un Paris zéro carbone à horizon 2050. Scéna
 category:
 - face_our_challenges_today
 type:
-- Book
 - Article
 issues:
 - government_local_and_national
