@@ -2,14 +2,20 @@
 lang: FR
 name: Akon dévoile « Akon City », une ville futuriste digne du Wakanda
 author: Sacha Montagut
-description_en: ''
-description_fr: Délirant
+description_en: 'Projet de construction d’une ville intelligente futuriste à une centaine
+  de km de Dakar, sur la petite côte du Sénégal, dont l’économie sera basée uniquement
+  sur sa monnaie virtuelle : l’Akoin. Délirant'
+description_fr: 'Projet de construction d’une ville intelligente futuriste à une centaine
+  de km de Dakar, sur la petite côte du Sénégal, dont l’économie sera basée uniquement
+  sur sa monnaie virtuelle : l’Akoin. Délirant'
 category:
 - stimulate_your_creativity
 - imagine_a_far_away_future
 type:
 - Article
 issues:
+- energy
+- leisure
 - urban_spatial_planning
 perspectives:
 - case_studies
