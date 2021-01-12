@@ -13,13 +13,16 @@ description_fr: '3 scenarios pour un Paris zéro carbone à horizon 2050. Scéna
 category:
 - face_our_challenges_today
 type:
+- Book
 - Article
 issues:
+- government_local_and_national
+- energy
 - environment
 perspectives:
+- foresight_studies
 - case_studies
 - policy
-- foresight_studies
 date: 18/11/2020
 file: ''
 url: https://leonard.vinci.com/%E2%80%AFmetropole-de-paris%E2%80%AF-atteindre-la-neutralite-carbone-dici-2050%E2%80%AF%E2%80%AF-3-scenarios-pour-un-paris-0-carbone/
