@@ -25,6 +25,7 @@ issues:
 - housing
 - urban_spatial_planning
 perspectives:
+- science_fiction
 - opinions
 date: December 8, 2020
 file: ''
