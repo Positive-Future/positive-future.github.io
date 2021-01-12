@@ -2,10 +2,10 @@
 lang: FR
 name: 3 scénarios pour un Paris 0 carbone
 author: Leonard (Vinci), Shell, & OCDE
-description_en: 3 scenarios pour un Paris zéro carbone à horizon 2050. Scénarios centrés
-  sur la transition écologique avec une approche assez convenue des questions de gouvernance.
-  Présente les enjeux à court terme pour développer le plan climat. Vaut la lecture
-  en se centrant sur les résumés (points clés)
+description_en: '3 scenarios pour un Paris zéro carbone à horizon 2050. Scénarios
+  centrés sur la transition écologique avec une approche assez convenue des questions
+  de gouvernance. Présente les enjeux à court terme pour développer le plan climat.
+  Vaut la lecture en se centrant sur les résumés (points clés). '
 description_fr: '3 scenarios pour un Paris zéro carbone à horizon 2050. Scénarios
   centrés sur la transition écologique avec une approche assez convenue des questions
   de gouvernance. Présente les enjeux à court terme pour développer le plan climat.
@@ -13,6 +13,8 @@ description_fr: '3 scenarios pour un Paris zéro carbone à horizon 2050. Scéna
 category:
 - face_our_challenges_today
 type:
+- Video
+- Book
 - Article
 issues:
 - government_local_and_national
