@@ -2,10 +2,10 @@
 lang: FR
 name: Quand le jeu vidéo met en scène la dystopie urbaine
 author: Usbek & Rica
-description_en: 'Les mondes dystopiques dans les jeux vidéos. Font apparaitre les
+description_en: 'Les mondes dystopiques dans les jeux vidéos. Font apparaître les
   futurs que nous redoutons: smartcity devenue folle; multinationale toute puissante
   modifiant à sa guise l’apparence de la ville; résistance contre ces systèmes totalitaires.'
-description_fr: 'Les mondes dystopiques dans les jeux vidéos. Font apparaitre les
+description_fr: 'Les mondes dystopiques dans les jeux vidéos. Font apparaître les
   futurs que nous redoutons: smartcity devenue folle; multinationale toute puissante
   modifiant à sa guise l’apparence de la ville; résistance contre ces systèmes totalitaires.'
 category:
