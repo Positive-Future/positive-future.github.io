@@ -2,8 +2,12 @@
 lang: FR
 name: À Paris, ces collégiens financent leur ferme urbaine
 author: Pouyat, A.
-description_en: ''
-description_fr: ''
+description_en: Les collèges se lancent dans l’agriculture urbaine. Projet avec l'association
+  de végétalisation Veni Verdi. Exploitation agricole servant à la fois d’outil pédagogique
+  et d’espace de formation.
+description_fr: Les collèges se lancent dans l’agriculture urbaine. Projet avec l'association
+  de végétalisation Veni Verdi. Exploitation agricole servant à la fois d’outil pédagogique
+  et d’espace de formation.
 category:
 - stimulate_your_creativity
 - face_our_challenges_today
@@ -11,7 +15,6 @@ category:
 type:
 - Article
 issues:
-- urban_spatial_planning
 - education
 - agriculture_forestry_fishing
 perspectives:
