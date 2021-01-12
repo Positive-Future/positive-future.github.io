@@ -5,6 +5,7 @@ author: La Fabrique de la cité
 description_en: Introduction sur les différentes approches de la « smart city »
 description_fr: Introduction sur les différentes approches de la « smart city »
 category:
+- think_of_your_ideal_city
 - face_our_challenges_today
 type:
 - Article
@@ -16,8 +17,7 @@ issues:
 perspectives:
 - policy
 - foresight_studies
-- data_and_trends
-date: "2020"
+date: ''
 file: ''
 url: https://www.lafabriquedelacite.com/projets/smart-cities/
 
