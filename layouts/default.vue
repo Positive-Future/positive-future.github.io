@@ -65,18 +65,9 @@
             <v-img src="/logo.svg" class="logo my-12" contain></v-img>
           </nuxt-link>
         </v-col>
-        <template v-if="$route.name === 'index___' + $i18n.locale">
-          <v-col cols="12">
-            <nuxt />
-          </v-col>
-        </template>
-        <template v-else>
-          <v-col xs="12" sm="11" md="9" lg="9" xl="8" class="ma-3">
-            <v-card id="content" class="mx-auto" max-width="1200" flat>
-              <nuxt />
-            </v-card>
-          </v-col>
-        </template>
+        <v-col cols="12">
+          <nuxt />
+        </v-col>
       </v-row>
     </v-main>
     <Footer />

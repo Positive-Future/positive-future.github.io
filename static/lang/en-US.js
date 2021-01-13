@@ -103,8 +103,12 @@ export default () => {
           maintainer: 'Paris IAS',
           seeCredits: 'Credits',
           subscribe: 'Subscribe to the newsletter',
+          subscribe2:
+            'Subscribe to the newsletter and stay in touch with every update!',
           accept: 'Accept',
           more: 'See more',
+          news_intro:
+            'Events, jury announcements, read all the news about Positive Future.',
         },
       },
       navigation: {

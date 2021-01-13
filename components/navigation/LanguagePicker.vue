@@ -4,14 +4,14 @@
       <v-btn
         outlined
         :color="$i18n.locale === 'en' ? 'primary' : 'grey darken-2'"
-        @click="$i18n.setLocale('en')"
+        @click="switchLang('en')"
       >
         EN
       </v-btn>
       <v-btn
         outlined
         :color="$i18n.locale === 'fr' ? 'primary' : 'grey darken-2'"
-        @click="$i18n.setLocale('fr')"
+        @click="switchLang('fr')"
       >
         FR
       </v-btn>
@@ -35,6 +35,30 @@ export default {
           flagSrc: 'https://cdn.vuetifyjs.com/images/flags/fr.png',
         },
       ]
+    },
+  },
+  methods: {
+    async switchLang(lang) {
+      try {
+        if (lang !== this.$i18n.locale) {
+          console.log('this.$route: ', this.$route)
+          console.log('this.$route.param?.slug: ', this.$route.params?.slug)
+          if (this.$route.params?.slug) {
+            const post = await this.$content(
+              this.$i18n.locale + '/news',
+              this.$route.params.slug
+            ).fetch()
+            console.log('post: ', post)
+
+            this.$router.push({
+              params: { slug: post[lang] },
+            })
+          }
+          this.$i18n.setLocale(lang)
+        }
+      } catch (error) {
+        console.log('error: ', error)
+      }
     },
   },
 }

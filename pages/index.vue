@@ -10,12 +10,12 @@
         </v-col>
       </v-row>
     </section>
-    <section style="margin-top: -110px">
-      <v-row justify="center">
+    <section style="margin-top: -90px">
+      <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
-          <v-row>
+          <v-row no-gutters>
             <v-col cols="12" sm="6">
-              <v-card max-width="80%" color="#ffe2a0" class="pa-6" flat>
+              <v-card max-width="80%" color="#bfaa78" class="pa-6" flat>
                 {{ $t('misc.ui.theme') }}
                 <h1>
                   {{ index.theme }}
@@ -55,12 +55,8 @@
             hide-delimiter-background
             show-arrows-on-hover
           >
-            <v-carousel-item v-for="(slide, i) in slides" :key="i">
-              <v-sheet :color="colors[i]" height="100%">
-                <v-row class="fill-height" align="center" justify="center">
-                  <div class="display-3">{{ slide }} Slide</div>
-                </v-row>
-              </v-sheet>
+            <v-carousel-item v-for="(item, i) in featured" :key="i">
+              <NewsItem :item="item"></NewsItem>
             </v-carousel-item>
           </v-carousel>
         </v-col>
@@ -71,13 +67,20 @@
 
 <script>
 export default {
-  components: {},
   async asyncData({ app, $content }) {
     const index = await $content(app.i18n.locale + '/pages/index').fetch()
     const dates = await $content(app.i18n.locale + '/pages/dates').fetch()
+    const featured = await $content(app.i18n.locale + '/news')
+      .where({ featured: true })
+      .where({ draft: false })
+      .sortBy('createdAt')
+      .limit(3)
+      .fetch()
+    console.log('featured: ', featured)
     return {
       index,
       dates,
+      featured,
     }
   },
   data() {
@@ -85,6 +88,10 @@ export default {
       colors: ['indigo', 'red lighten-1', 'deep-purple accent-4'],
       slides: ['First', 'Second', 'Third'],
     }
+  },
+  mounted() {
+    console.log(this.$route)
+    console.log(this.$router)
   },
 }
 </script>

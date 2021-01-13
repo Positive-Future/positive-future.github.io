@@ -104,8 +104,12 @@ export default () => {
           maintainer: "L'IEA de Paris",
           seeCredits: 'Crédits',
           subscribe: "S'inscrire à la newsletter",
+          subscribe2:
+            'Inscrivez-vous à la newsletter et restez informé de toutes les actualités du concours !',
           accept: 'Accepter',
           more: 'Voir plus',
+          news_intro:
+            "Evénements, annonce du Jury, retrouvez toute l'actualité de Positive Future.",
         },
       },
       navigation: {
