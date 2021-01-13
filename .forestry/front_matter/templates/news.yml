@@ -51,8 +51,17 @@ fields:
   config: {}
   template: news-content-fr
   label: FR CONTENT
+  showOnly:
+    field: en/fr
+    value: true
 - name: en_content
   type: include
   config: {}
   template: news-content-en
   label: EN Content
+  showOnly:
+    field: en/fr
+    value: false
+- name: en/fr
+  type: boolean
+  label: EN/FR
