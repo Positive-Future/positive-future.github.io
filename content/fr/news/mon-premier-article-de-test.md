@@ -7,7 +7,9 @@ categories:
 - event
 featured: true
 image: "/android-icon-192x192.png"
-
+background_color: ''
+eng: ''
+fr: ''
 ---
 J'avais pas mal de choses à dire mais .....
 
