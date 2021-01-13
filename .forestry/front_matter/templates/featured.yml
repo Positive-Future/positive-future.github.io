@@ -1,0 +1,28 @@
+---
+label: Featured
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: subtitle
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
