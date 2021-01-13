@@ -1,7 +1,7 @@
 ---
 draft: false
 created: 2021-01-13T14:37:00Z
-eng: []
+eng: content/en/news/my-second-article.md
 fr: []
 title: Second article,
 subtitle: " incommensurément mieux que le premier"
