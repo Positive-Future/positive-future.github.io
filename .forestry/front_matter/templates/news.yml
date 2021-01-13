@@ -1,4 +1,24 @@
 ---
 label: News
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+- name: created
+  type: datetime
+  label: created
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
