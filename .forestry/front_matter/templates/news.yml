@@ -44,7 +44,7 @@ fields:
     color_format: Hex
   description: Color used for the featured thumbnail background, wether we have an
     image or not.
-- name: eng
+- name: en
   type: select
   default: []
   config:
