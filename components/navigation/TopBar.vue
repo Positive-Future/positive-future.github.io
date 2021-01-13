@@ -1,45 +1,121 @@
 <template>
-  <v-app-bar :dense="$vuetify.breakpoint.smAndDown" app fixed>
-    <nuxt-link class="mx-0 px-0 d-flex" :to="localePath('index')">
-      <v-avatar class="mr-2" tile>
-        <v-img contain nuxt :src="$router.options.base + '/logo.svg'" />
-      </v-avatar>
-    </nuxt-link>
-    <v-spacer />
-    <template v-if="$vuetify.breakpoint.mdAndUp">
-      <v-tabs style="max-width: 600px" right optional color="#00c2cb">
-        <v-tab nuxt :to="localePath('/contest')">
-          {{ $t('navigation.contest') }}
-        </v-tab>
-        <v-tab nuxt :to="localePath('/resources')">{{
-          $t('navigation.resources')
-        }}</v-tab>
-        <v-menu left bottom offset-y>
-          <template v-slot:activator="{ on, attrs }">
-            <v-tab v-bind="attrs" v-on="on">
-              {{ $t('navigation.about') }} <v-icon>mdi-chevron-down</v-icon>
-            </v-tab>
-          </template>
+  <v-app-bar
+    :dense="$vuetify.breakpoint.smAndDown"
+    app
+    fixed
+    height="104"
+    color="white"
+    class="pt-1"
+  >
+    <v-container fluid class="pt-0">
+      <v-row no-gutters justify="space-around">
+        <v-col xs="12" sm="11" md="12" lg="7" xl="6">
+          <v-row no-gutters class="align-center">
+            <v-col>
+              <nuxt-link :to="localePath('index')">
+                <!--             <v-img nuxt :src="$router.options.base + '/logo.svg'" /> -->
+                <v-img nuxt src="/logo.svg" height="90px" width="90px" />
+              </nuxt-link>
+            </v-col>
+            <v-col align="right" cols="auto">
+              <v-row>
+                <v-col class="d-inline-flex flex-row-reverse align-center">
+                  <LanguagePicker></LanguagePicker>
+                  <v-tooltip
+                    v-for="(item, index) in socialIcons"
+                    :key="index"
+                    bottom
+                  >
+                    <template v-slot:activator="{ on }">
+                      <v-btn
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        :href="item.url"
+                        fab
+                        x-small
+                        depressed
+                        color="grey"
+                        class="mx-1"
+                        v-on="on"
+                      >
+                        <v-icon color="white">mdi-{{ item.icon }} </v-icon>
+                      </v-btn>
+                    </template>
+                    <span>{{ item.text }}</span>
+                  </v-tooltip>
+                </v-col>
+              </v-row>
+              <v-row no-gutters>
+                <v-col>
+                  <template v-if="$vuetify.breakpoint.mdAndUp">
+                    <v-tabs right color="#00c2cb">
+                      <v-menu left bottom offset-y>
+                        <template v-slot:activator="{ on, attrs }">
+                          <v-tab v-bind="attrs" to="/contest" v-on="on">
+                            {{ $t('navigation.contest') }}
+                            <v-icon>mdi-chevron-down</v-icon>
+                          </v-tab>
+                        </template>
 
-          <v-list>
-            <v-list-item nuxt :to="localePath('/about/who')">
-              <v-list-item-title>
-                {{ $t('navigation.who') }}
-              </v-list-item-title>
-            </v-list-item>
-            <v-list-item
-              nuxt
-              :to="localePath('/about/scientific_advisory_board')"
-            >
-              <v-list-item-title>
-                {{ $t('navigation.sab') }}
-              </v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-      </v-tabs>
-      <LanguagePicker></LanguagePicker>
-    </template>
+                        <v-list>
+                          <v-list-item nuxt :to="localePath('/contest/rules')">
+                            <v-list-item-title>
+                              {{ $t('navigation.rules') }}
+                            </v-list-item-title>
+                          </v-list-item>
+                          <v-list-item nuxt :to="localePath('/contest/tips')">
+                            <v-list-item-title>
+                              {{ $t('navigation.tips') }}
+                            </v-list-item-title>
+                          </v-list-item>
+                          <v-list-item nuxt :to="localePath('/contest/jury')">
+                            <v-list-item-title>
+                              {{ $t('navigation.jury') }}
+                            </v-list-item-title>
+                          </v-list-item>
+                        </v-list>
+                      </v-menu>
+
+                      <v-tab nuxt :to="localePath('/resources')">{{
+                        $t('navigation.resources')
+                      }}</v-tab>
+                      <v-tab nuxt :to="localePath('/news')">
+                        {{ $t('navigation.news') }}
+                      </v-tab>
+                      <v-menu left bottom offset-y>
+                        <template v-slot:activator="{ on, attrs }">
+                          <v-tab to="/" v-bind="attrs" v-on="on">
+                            {{ $t('navigation.about') }}
+                            <v-icon>mdi-chevron-down</v-icon>
+                          </v-tab>
+                        </template>
+
+                        <v-list>
+                          <v-list-item nuxt :to="localePath('/about/who')">
+                            <v-list-item-title>
+                              {{ $t('navigation.who') }}
+                            </v-list-item-title>
+                          </v-list-item>
+                          <v-list-item
+                            nuxt
+                            :to="localePath('/about/scientific_advisory_board')"
+                          >
+                            <v-list-item-title>
+                              {{ $t('navigation.sab') }}
+                            </v-list-item-title>
+                          </v-list-item>
+                        </v-list>
+                      </v-menu>
+                    </v-tabs>
+                  </template>
+                </v-col>
+              </v-row>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
+
     <v-btn
       v-show="$vuetify.breakpoint.smAndDown"
       icon
@@ -53,7 +129,37 @@
 <script>
 export default {
   props: {},
-  computed: {},
+  data() {
+    return {}
+  },
+  computed: {
+    socialIcons() {
+      console.log('COMPUTED SOCIAL ICONS')
+      return [
+        {
+          url:
+            'https://www.linkedin.com/company/wprn-world-pandemic-research-network/',
+          text: this.$t('misc.social.instagram'),
+          icon: 'instagram',
+        },
+        {
+          url: 'https://github.com/WPRN/website',
+          text: this.$t('misc.social.youtube'),
+          icon: 'youtube',
+        },
+        {
+          url: 'https://twitter.com/WPRN_org',
+          text: this.$t('misc.social.twitter'),
+          icon: 'twitter',
+        },
+        {
+          url: 'https://www.facebook.com/WPRN.org/',
+          text: this.$t('misc.social.facebook'),
+          icon: 'facebook',
+        },
+      ]
+    },
+  },
   mounted() {},
   methods: {},
 }

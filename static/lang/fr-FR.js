@@ -94,8 +94,11 @@ export default () => {
         social: {
           facebook: 'Visitez notre page Facebook',
           twitter: 'Suivez nous sur Twitter',
+          youtube: 'Découvrez notre chaîne Youtube',
+          instagram: 'Notre page Instagram',
         },
         ui: {
+          theme: 'Thème',
           contact_us: 'Contactez nous',
           maintained: 'Ce site est géré par ',
           maintainer: "L'IEA de Paris",
@@ -110,9 +113,12 @@ export default () => {
         contest: 'Concours',
         resources: 'Matière à penser',
         sab: 'Conseil Scientifique',
+        news: 'Actualités',
         jury: 'Jury',
         who: 'Qui sommes nous?',
         privacy_policy: 'Politique de confidentialité',
+        rules: 'Modalités',
+        tips: 'Conseils',
       },
     })
   })

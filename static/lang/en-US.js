@@ -93,8 +93,11 @@ export default () => {
         social: {
           facebook: 'Visit our Facebook page',
           twitter: 'Follow us on Twitter',
+          youtube: 'Discover our Youtube channel',
+          instagram: 'Our Instagram page',
         },
         ui: {
+          theme: 'Theme',
           contact_us: 'Contact us',
           maintained: 'This website is maintained by',
           maintainer: 'Paris IAS',
@@ -109,9 +112,12 @@ export default () => {
         contest: 'Competition',
         resources: 'Food for thought',
         sab: 'Scientific Advisory Board',
+        news: 'News',
         jury: 'Jury',
         who: 'Who are we?',
         privacy_policy: 'Privacy Policy',
+        rules: 'Rules',
+        tips: 'Tips',
       },
     })
   })

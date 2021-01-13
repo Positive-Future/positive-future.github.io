@@ -1,23 +1,21 @@
 <template>
-  <div id="language-picker" style="max-width: 80px">
-    <v-select
-      :value="$i18n.locale"
-      hide-details
-      :items="languages"
-      outlined
-      flat
-      text
-      @change="$i18n.setLocale($event)"
-    >
-      <template v-slot:selection="{ item }">
-        {{ item.text.substring(0, 2).toUpperCase() }}
-      </template>
-
-      <template v-slot:item="{ item }">
-        <v-img :src="item.flagSrc" width="30" height="20"> </v-img>&nbsp;
-        {{ item.text }}
-      </template>
-    </v-select>
+  <div>
+    <v-btn-toggle v-model="$i18n.locale" class="ml-6" tile dense>
+      <v-btn
+        outlined
+        :color="$i18n.locale === 'en' ? 'primary' : 'grey darken-2'"
+        @click="$i18n.setLocale('en')"
+      >
+        EN
+      </v-btn>
+      <v-btn
+        outlined
+        :color="$i18n.locale === 'fr' ? 'primary' : 'grey darken-2'"
+        @click="$i18n.setLocale('fr')"
+      >
+        FR
+      </v-btn>
+    </v-btn-toggle>
   </div>
 </template>
 

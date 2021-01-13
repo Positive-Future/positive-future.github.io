@@ -12,7 +12,6 @@
       >
         <v-icon large color="black">mdi-menu</v-icon>
       </v-btn>
-      <Particles />
       <v-navigation-drawer
         v-model="drawer"
         fixed
@@ -58,7 +57,7 @@
       </v-navigation-drawer>
 
       <v-row align="center" no-gutters justify="center">
-        <v-col cols="12" class="ma-3">
+        <v-col cols="12">
           <nuxt-link
             v-if="$vuetify.breakpoint.smAndDown"
             :to="localePath('index')"
@@ -66,11 +65,18 @@
             <v-img src="/logo.svg" class="logo my-12" contain></v-img>
           </nuxt-link>
         </v-col>
-        <v-col xs="12" sm="11" md="9" lg="9" xl="8" class="ma-3">
-          <v-card id="content" class="mx-auto" max-width="1200">
+        <template v-if="$route.name === 'index___' + $i18n.locale">
+          <v-col cols="12">
             <nuxt />
-          </v-card>
-        </v-col>
+          </v-col>
+        </template>
+        <template v-else>
+          <v-col xs="12" sm="11" md="9" lg="9" xl="8" class="ma-3">
+            <v-card id="content" class="mx-auto" max-width="1200" flat>
+              <nuxt />
+            </v-card>
+          </v-col>
+        </template>
       </v-row>
     </v-main>
     <Footer />

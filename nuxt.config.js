@@ -257,7 +257,7 @@ export default {
       dark: false,
       themes: {
         light: {
-          primary: '#1976D2',
+          primary: '#00c2cb',
           secondary: '#424242',
           accent: '#82B1FF',
           error: '#FF5252',
@@ -290,7 +290,7 @@ export default {
    */
   webfontloader: {
     google: {
-      families: ['Poiret One:800'],
+      families: ['Lato:400,700', 'Poppins:800'],
     },
   },
   /*
