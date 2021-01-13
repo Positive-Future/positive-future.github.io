@@ -65,7 +65,8 @@ fields:
       section: en
       file: 
       path: 
-  label: English version
+  label: 'English version '
+  description: Only if it is a FR news
 - name: fr
   type: select
   default: []
@@ -78,5 +79,6 @@ fields:
       file: 
       path: 
   label: French version
+  description: Only if it is an EN news
 pages:
 - content/en/news/my-first-test-article.md
