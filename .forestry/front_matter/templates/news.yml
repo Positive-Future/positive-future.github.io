@@ -46,3 +46,5 @@ fields:
   config:
     maxSize: 64
   label: image
+pages:
+- content/en/news/my-first-test-article.md
