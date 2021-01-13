@@ -54,17 +54,29 @@ fields:
     color_format: Hex
   description: Color used for the featured thumbnail background, wether we have an
     image or not.
-- name: counterpart_title
+- name: eng
   type: select
   default: []
   config:
     required: false
     options: []
     source:
-      type: news
+      type: pages
       section: en
       file: 
       path: 
-  label: Counterpart title
+  label: English version
+- name: fr
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: fr
+      file: 
+      path: 
+  label: French version
 pages:
 - content/en/news/my-first-test-article.md
