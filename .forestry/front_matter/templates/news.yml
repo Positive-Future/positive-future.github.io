@@ -82,3 +82,4 @@ fields:
   description: Only if it is an EN news
 pages:
 - content/en/news/my-first-test-article.md
+- content/fr/news/mon-premier-article-de-test.md
