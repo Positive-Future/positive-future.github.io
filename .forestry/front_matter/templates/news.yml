@@ -61,7 +61,7 @@ fields:
     required: false
     options: []
     source:
-      type: pages
+      type: news
       section: en
       file: 
       path: 
