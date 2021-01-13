@@ -46,5 +46,17 @@ fields:
   config:
     maxSize: 64
   label: image
+- name: content
+  type: blocks
+  label: Content
+  template_types:
+  - news-content-en
+  - news-content-fr
+  config:
+    min: 
+    max: 
+- name: fr/en
+  type: boolean
+  label: FR/EN
 pages:
 - content/en/news/my-first-test-article.md
