@@ -221,7 +221,7 @@ export default {
   pwa: {
     manifest: {
       name: process.env.NAME,
-      lang: 'fa',
+      lang: 'en',
     },
   },
 
@@ -299,7 +299,7 @@ export default {
    */
   robots: {
     UserAgent: '*',
-    Disallow: '/',
+    Disallow: '',
   },
   /*
    ** Page Layout transition

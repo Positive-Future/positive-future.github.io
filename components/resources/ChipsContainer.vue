@@ -6,7 +6,7 @@
         :key="index"
         class="ma-1"
         color="relatedKey === 'issues'?'primary':'secondary'"
-        :outlined="filters && filters.includes(item)"
+        :outlined="!(filters && filters.includes(item))"
       >
         {{ $t('resources.' + relatedKey + '.' + item) }}
       </v-chip>

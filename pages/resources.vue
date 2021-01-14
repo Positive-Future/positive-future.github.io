@@ -3,10 +3,10 @@
     <section style="background-color: #fff1d0">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="my-6">
+          <h1 class="my-3">
             {{ resources.title }}
           </h1>
-          <nuxt-content :document="resources" class="pa-3" />
+          <nuxt-content :document="resources" class="px-3 pb-3" />
         </v-col>
       </v-row>
     </section>
@@ -28,7 +28,9 @@
               @click="filters.category = [item.name]"
             >
               <v-avatar color="#00c2cb" size="44">
-                <v-icon dark> mdi-{{ item.icon }} </v-icon>
+                <v-icon dark>
+                  mdi-{{ Array.isArray(item.icon) ? item.icon[0] : item.icon }}
+                </v-icon>
               </v-avatar>
               <v-card-title
                 class="justify-center font-weight-black text-uppercase"
@@ -172,7 +174,18 @@
               <v-list-item three-line>
                 <v-list-item-content>
                   <div class="overline mb-4">
-                    {{ $t('resources.categories.' + item.category) }}
+                    <v-chip
+                      v-for="(item, index) in item.category"
+                      :key="index"
+                      class="mx-1"
+                      x-small
+                      label
+                      :outlined="
+                        !(filters.category && filters.category.includes(item))
+                      "
+                    >
+                      {{ $t('resources.categories.' + item) }}
+                    </v-chip>
                   </div>
                   <v-list-item-title class="headline mb-1">
                     {{ item.name }}
@@ -253,9 +266,9 @@ export default {
     const types = [...new Set(items.map((item) => item.type).flat())].sort()
     console.log('types: ', types)
     const languages = [...new Set(items.map((item) => item.lang))].sort()
-    const issues = [...new Set(...items.map((item) => item.issues))].sort()
+    const issues = [...new Set(items.map((item) => item.issues).flat())].sort()
     const perspectives = [
-      ...new Set(...items.map((item) => item.perspectives)),
+      ...new Set(items.map((item) => item.perspectives).flat()),
     ].sort()
 
     return {
@@ -270,8 +283,8 @@ export default {
   data() {
     return {
       icons: {
-        Article: 'typewriter',
-        Book: 'book-open-variant',
+        Article: 'file-document-edit-outline',
+        Book: 'book-open-page-variant',
         Drawing: 'draw',
         Picture: 'image',
         Video: 'video-box',
@@ -323,7 +336,7 @@ export default {
         this.filteredItems = this.items.filter((item) => {
           return (
             (!this.filters.type?.length ||
-              this.filters.type.includes(item.type)) &&
+              this.filters.type.some((el) => item.type.includes(el))) &&
             (!this.filters.issues?.length ||
               this.filters.issues.some((el) => item.issues.includes(el))) &&
             (!this.filters.perspectives?.length ||
@@ -333,7 +346,7 @@ export default {
             (!this.filters.lang?.length ||
               this.filters.lang.includes(item.lang)) &&
             (!this.filters.category?.length ||
-              this.filters.category.includes(item.category))
+              this.filters.category.some((el) => item.category.includes(el)))
           )
         })
       },

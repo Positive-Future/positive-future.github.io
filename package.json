@@ -22,7 +22,7 @@
     "nuxt": "^2.14.0",
     "nuxt-i18n": "^6.15.1",
     "nuxt-webfontloader": "^1.1.0",
-    "particles.js": "^2.0.0"
+    "date-fns": "^2.16.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",

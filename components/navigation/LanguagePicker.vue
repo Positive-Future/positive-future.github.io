@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-btn-toggle
+    <!--  <v-btn-toggle
       v-if="$route.params.slug"
       v-model="$i18n.locale"
       class="ml-6"
@@ -25,8 +25,14 @@
       >
         FR
       </v-btn>
-    </v-btn-toggle>
-    <v-btn-toggle v-else v-model="$i18n.locale" class="ml-6" tile dense>
+    </v-btn-toggle> -->
+    <v-btn-toggle
+      v-if="!$route.params.slug"
+      v-model="$i18n.locale"
+      class="ml-6"
+      tile
+      dense
+    >
       <v-btn
         outlined
         :color="$i18n.locale === 'en' ? 'primary' : 'grey darken-2'"
@@ -69,7 +75,7 @@ export default {
     },
   },
   async updated() {
-    if (this.$route.params?.slug) {
+    /*   if (this.$route.params?.slug) {
       const alterlang = this.$i18n.locale === 'en' ? 'fr' : 'en'
       console.log('alterlang: ', alterlang)
       const post = await this.$content(
@@ -86,7 +92,7 @@ export default {
       const path = alterPost[0].path
       console.log('path: ', path)
       this.alter = path
-    }
+    } */
   },
   methods: {
     async link() {},

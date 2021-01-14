@@ -41,7 +41,7 @@ export default () => {
           Article: 'Articles',
           Book: 'Livres',
           Drawing: 'Dessins, peintures',
-          Picture: 'Photos',
+          Photo: 'Photos',
           Video: 'Vidéos et films',
         },
         perspectives: {
