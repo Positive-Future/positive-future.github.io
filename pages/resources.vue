@@ -1,13 +1,15 @@
 <template>
   <div>
-    <h2 class="text-h2 pt-6 text-uppercase text-center">
-      {{ resources.title }}
-    </h2>
-    <v-responsive class="mx-auto my-6" width="56">
-      <v-divider class="mb-1" />
-      <v-divider />
-    </v-responsive>
-    <nuxt-content :document="resources" class="pa-3" />
+    <section style="background-color: #fff1d0">
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6">
+          <h1 class="my-6">
+            {{ resources.title }}
+          </h1>
+          <nuxt-content :document="resources" class="pa-3" />
+        </v-col>
+      </v-row>
+    </section>
     <v-expand-transition v-if="!browsing">
       <v-row class="mx-3">
         <v-col
@@ -248,7 +250,8 @@ export default {
       app.i18n.locale + '/pages/resources'
     ).fetch()
     const items = await $content('resources').fetch()
-    const types = [...new Set(items.map((item) => item.type))].sort()
+    const types = [...new Set(items.map((item) => item.type).flat())].sort()
+    console.log('types: ', types)
     const languages = [...new Set(items.map((item) => item.lang))].sort()
     const issues = [...new Set(...items.map((item) => item.issues))].sort()
     const perspectives = [

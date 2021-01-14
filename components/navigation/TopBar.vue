@@ -51,7 +51,7 @@
                     <v-tabs right color="#00c2cb">
                       <v-menu left bottom offset-y>
                         <template v-slot:activator="{ on, attrs }">
-                          <v-tab v-bind="attrs" to="/contest" v-on="on">
+                          <v-tab v-bind="attrs" v-on="on">
                             {{ $t('navigation.contest') }}
                             <v-icon>mdi-chevron-down</v-icon>
                           </v-tab>
@@ -84,16 +84,19 @@
                       </v-tab>
                       <v-menu left bottom offset-y>
                         <template v-slot:activator="{ on, attrs }">
-                          <v-tab to="/" v-bind="attrs" v-on="on">
+                          <v-tab v-bind="attrs" v-on="on">
                             {{ $t('navigation.about') }}
                             <v-icon>mdi-chevron-down</v-icon>
                           </v-tab>
                         </template>
 
                         <v-list>
-                          <v-list-item nuxt :to="localePath('/about/who')">
+                          <v-list-item
+                            nuxt
+                            :to="localePath('/about/organizers')"
+                          >
                             <v-list-item-title>
-                              {{ $t('navigation.who') }}
+                              {{ $t('navigation.organizers') }}
                             </v-list-item-title>
                           </v-list-item>
                           <v-list-item

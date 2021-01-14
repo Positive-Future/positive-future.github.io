@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="text-h2 pt-6 text-uppercase text-center">
-      {{ who.title }}
+      {{ organizers.title }}
     </h2>
     <v-responsive class="mx-auto my-6" width="56">
       <v-divider class="mb-1" />
@@ -50,16 +50,16 @@
 <script>
 export default {
   async asyncData({ app, $content }) {
-    const who = await $content(app.i18n.locale + '/pages/who').fetch()
+    const organizers = await $content(
+      app.i18n.locale + '/pages/organizers'
+    ).fetch()
 
     return {
-      who,
+      organizers,
     }
   },
   data() {
-    return {
-      expanded: [0, 1, 2, 3, 4],
-    }
+    return {}
   },
   mounted() {},
   methods: {},

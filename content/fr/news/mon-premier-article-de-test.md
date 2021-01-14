@@ -1,7 +1,7 @@
 ---
 draft: false
 created: 2021-01-13T14:34:25Z
-eng: content/en/news/my-first-test-article.md
+en: content/en/news/my-first-test-article.md
 fr: []
 title: Mon premier article de test
 subtitle: Et pis c'est tout

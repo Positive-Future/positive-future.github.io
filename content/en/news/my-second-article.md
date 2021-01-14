@@ -1,7 +1,7 @@
 ---
 draft: false
 created: 2021-01-13T14:38:55Z
-eng: []
+en: []
 fr: content/fr/news/second-article.md
 title: My second article
 subtitle: So much better than the first!

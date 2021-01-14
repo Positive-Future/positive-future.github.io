@@ -7,7 +7,7 @@ categories:
 featured: true
 image: "/android-icon-192x192.png"
 background_color: ''
-eng: ''
+en: ''
 fr: content/fr/news/mon-premier-article-de-test.md
 
 ---

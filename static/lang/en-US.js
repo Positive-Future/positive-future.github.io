@@ -109,6 +109,9 @@ export default () => {
           more: 'See more',
           news_intro:
             'Events, jury announcements, read all the news about Positive Future.',
+          download_rules: 'Download the contest rules!',
+          download_tips: 'Download the contest tips!',
+          award: 'Award',
         },
       },
       navigation: {
@@ -118,7 +121,7 @@ export default () => {
         sab: 'Scientific Advisory Board',
         news: 'News',
         jury: 'Jury',
-        who: 'Who are we?',
+        organizers: 'Organizers',
         privacy_policy: 'Privacy Policy',
         rules: 'Rules',
         tips: 'Tips',

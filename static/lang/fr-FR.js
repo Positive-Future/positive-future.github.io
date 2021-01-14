@@ -110,6 +110,9 @@ export default () => {
           more: 'Voir plus',
           news_intro:
             "Evénements, annonce du Jury, retrouvez toute l'actualité de Positive Future.",
+          download_rules: 'Télécharger le règlement du concours',
+          download_tips: 'Télécharger tous les conseils !',
+          award: 'Prix',
         },
       },
       navigation: {
@@ -119,7 +122,7 @@ export default () => {
         sab: 'Conseil Scientifique',
         news: 'Actualités',
         jury: 'Jury',
-        who: 'Qui sommes nous?',
+        organizers: 'Organisateurs',
         privacy_policy: 'Politique de confidentialité',
         rules: 'Modalités',
         tips: 'Conseils',
