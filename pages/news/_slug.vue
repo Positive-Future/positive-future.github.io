@@ -1,6 +1,24 @@
 <template>
   <v-row justify="center">
     <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
+      <v-breadcrumbs
+        :items="[
+          {
+            text: $t('navigation.news'),
+            disabled: false,
+            href: localePath('/news'),
+          },
+          {
+            text: post.title,
+            disabled: true,
+            href: 'breadcrumbs_link_1',
+          },
+        ]"
+      >
+        <template v-slot:divider>
+          <v-icon>mdi-chevron-right</v-icon>
+        </template>
+      </v-breadcrumbs>
       <v-card>
         <v-card-title
           ><h1>
@@ -32,5 +50,9 @@ export default {
     app.alter = path */
     return { post }
   },
+  data() {
+    return {}
+  },
+  created() {},
 }
 </script>
