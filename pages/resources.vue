@@ -28,9 +28,7 @@
               @click="filters.category = [item.name]"
             >
               <v-avatar color="#00c2cb" size="44">
-                <v-icon dark>
-                  mdi-{{ Array.isArray(item.icon) ? item.icon[0] : item.icon }}
-                </v-icon>
+                <v-icon dark> mdi-{{ item.icon }} </v-icon>
               </v-avatar>
               <v-card-title
                 class="justify-center font-weight-black text-uppercase"
@@ -224,7 +222,7 @@
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
                       <v-icon v-bind="attrs" v-on="on">
-                        mdi-{{ icons[item.type] }}
+                        mdi-{{ icons[item.type[0]] }}
                       </v-icon>
                     </template>
                     <span>{{ $t('resources.types.' + item.type) }}</span>
@@ -285,7 +283,7 @@ export default {
       icons: {
         Article: 'file-document-edit-outline',
         Book: 'book-open-page-variant',
-        Drawing: 'draw',
+        Photos: 'draw',
         Picture: 'image',
         Video: 'video-box',
       },
