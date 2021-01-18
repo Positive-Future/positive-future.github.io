@@ -1,5 +1,5 @@
 ---
-title: Scientific Advisory Board
+title: Conseil scientifique
 members:
   '1':
     firstname: Georges
@@ -90,5 +90,6 @@ members:
       durable - dans leur relation avec la société et la démocratie - du local au
       global , du passé le plus lointain au futur le plus éloigné. Il a notamment
       publié Repenser les villes dans la société post carbone.
-
+      
 ---
+Le Conseil scientifique propose des ressources fiables pour alimenter la réflexion des participants sur l'élaboration de leur projet. Il participera également à la première sélection des lauréats et lauréates.

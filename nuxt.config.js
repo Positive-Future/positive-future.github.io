@@ -244,7 +244,7 @@ export default {
    */
   loading: {
     color: '#00c2cb',
-    height: '5px',
+    height: '4px',
   },
   /*
    ** vuetify module configuration

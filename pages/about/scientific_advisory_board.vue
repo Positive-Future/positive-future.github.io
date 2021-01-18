@@ -1,20 +1,29 @@
 <template>
   <div>
-    <h2 class="text-h2 pt-6 text-uppercase text-center">
-      {{ sab.title }}
-    </h2>
-    <v-responsive class="mx-auto my-6" width="56">
-      <v-divider class="mb-1" />
-      <v-divider />
-    </v-responsive>
-    <v-card v-for="(item, index) in sab.members" :key="index">
-      <v-card-title>
-        {{ item.firstname + ' ' + item.lastname }}
-      </v-card-title>
-      <v-card-text>
-        {{ item.bio }}
-      </v-card-text>
-    </v-card>
+    <section style="background-color: #fff1d0">
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6">
+          <h1 class="my-3">
+            {{ sab.title }}
+          </h1>
+          <nuxt-content :document="sab" class="pb-3 ml-n6 pl-0" />
+        </v-col>
+      </v-row>
+    </section>
+    <section>
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6">
+          <template v-for="(item, index) in sab.members">
+            <div :key="index" class="my-4">
+              <span class="name px-1">
+                {{ item.firstname + ' ' + item.lastname }}
+              </span>
+              <p>{{ item.bio }}</p>
+            </div>
+          </template>
+        </v-col>
+      </v-row>
+    </section>
   </div>
 </template>
 <script>
@@ -36,3 +45,9 @@ export default {
   methods: {},
 }
 </script>
+<style>
+.name {
+  background-color: black;
+  color: white;
+}
+</style>

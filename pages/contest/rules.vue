@@ -3,15 +3,19 @@
     <section style="background-color: #fff1d0; padding-bottom: 80px">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          {{ $t('misc.ui.theme') }}
-          <h1 class="mt-6">
+          <p class="mt-12">
+            {{ $t('misc.ui.theme') }}
+          </p>
+          <h1 class="">
             {{ index.theme }}
           </h1>
-          {{ contest.intro }}
+          <p>
+            {{ contest.intro }}
+          </p>
         </v-col>
       </v-row>
     </section>
-    <section style="margin-top: -90px">
+    <section style="margin-top: -60px">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-row>

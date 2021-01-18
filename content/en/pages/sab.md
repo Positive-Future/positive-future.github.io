@@ -86,5 +86,6 @@ members:
       with society and democracy - from the local to the global, from the most distant
       past to the most distant future. In particular, he has published Rethinking
       Cities in the Post-Carbon Society.
-
+      
 ---
+The scientific advisory board offers reliable resources to help participants to build their project. They will also be involved in the first selection of awarded projects.

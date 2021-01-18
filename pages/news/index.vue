@@ -3,28 +3,36 @@
     <section style="background-color: #fff1d0; padding-bottom: 80px">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="mt-6">
+          <h1 class="my-6">
             {{ $t('navigation.news') }}
           </h1>
-          {{ $t('misc.ui.news_intro') }}
+          <p>
+            {{ $t('misc.ui.news_intro') }}
+          </p>
         </v-col>
       </v-row>
     </section>
-    <section style="margin-top: -90px">
+    <section style="margin-top: -60px">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-row>
             <v-col cols="12" sm="8">
-              <v-sheet color="#bfaa78" class="pa-3" flat>
+              <v-card
+                color="#bfaa78"
+                class="pa-3"
+                flat
+                href="http://eepurl.com/hgbB6f"
+                target="_blank"
+              >
                 <v-row>
-                  <v-col cols="3" align="right">
+                  <v-col cols="2" align="right">
                     <v-icon x-large class="rotate-24 mr-3" color="black"
                       >mdi-email</v-icon
                     >
                   </v-col>
                   <v-col cols="9"> {{ $t('misc.ui.subscribe2') }}</v-col>
                 </v-row>
-              </v-sheet>
+              </v-card>
             </v-col>
           </v-row>
           <v-row>

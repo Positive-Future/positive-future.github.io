@@ -113,6 +113,8 @@ export default () => {
           download_rules: 'Télécharger le règlement du concours',
           download_tips: 'Télécharger tous les conseils !',
           award: 'Prix',
+          with_the_support_of: 'Avec le soutien de',
+          thisDocumentLangIs: 'Ce document est en ',
         },
       },
       navigation: {

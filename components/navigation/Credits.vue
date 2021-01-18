@@ -31,8 +31,8 @@
         <nuxt-link :to="localePath('privacy_policy')" class="blue--text"
           >Privacy Policy</nuxt-link
         >&nbsp;-&nbsp;
-        <nuxt-link :to="localePath('who')" class="blue--text">{{
-          $t('navigation.who')
+        <nuxt-link :to="localePath('organizers')" class="blue--text">{{
+          $t('navigation.organizers')
         }}</nuxt-link
         >&nbsp;-&nbsp;
         <nuxt-link :to="localePath('contest')" class="blue--text">{{

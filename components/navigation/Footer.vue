@@ -42,7 +42,6 @@
         </v-tooltip>
         {{ new Date().getFullYear() }} - {{ $t('misc.ui.maintained') }}
         <a
-          :href="$t('misc.ui.who.iea.url')"
           target="_blank"
           rel="noopener noreferrer"
           style="text-decoration: none"

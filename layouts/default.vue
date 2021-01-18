@@ -39,10 +39,10 @@
               >
             </v-list-item-content>
           </v-list-item>
-          <v-list-item link :to="localePath('/who')">
+          <v-list-item link :to="localePath('/organizers')">
             <v-list-item-content>
               <v-list-item-title class="text-h5">
-                {{ $t('navigation.who') }}</v-list-item-title
+                {{ $t('navigation.organizers') }}</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
@@ -65,7 +65,7 @@
             <v-img src="/logo.svg" class="logo my-12" contain></v-img>
           </nuxt-link>
         </v-col>
-        <v-col cols="12">
+        <v-col cols="12" class="mt-2">
           <nuxt />
         </v-col>
       </v-row>

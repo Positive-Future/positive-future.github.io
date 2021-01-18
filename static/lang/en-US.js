@@ -112,6 +112,8 @@ export default () => {
           download_rules: 'Download the contest rules!',
           download_tips: 'Download the contest tips!',
           award: 'Award',
+          with_the_support_of: 'With the support of',
+          thisDocumentLangIs: 'this document language is ',
         },
       },
       navigation: {

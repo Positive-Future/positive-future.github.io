@@ -1,50 +1,69 @@
 <template>
   <div>
-    <h2 class="text-h2 pt-6 text-uppercase text-center">
-      {{ organizers.title }}
-    </h2>
-    <v-responsive class="mx-auto my-6" width="56">
-      <v-divider class="mb-1" />
-      <v-divider />
-    </v-responsive>
-    <v-expansion-panels v-model="expanded" multiple accordion>
-      <v-expansion-panel v-for="(item, index) in who.partners" :key="index">
-        <v-expansion-panel-header class="pa-1">
-          <v-item v-slot:default="{}">
+    <section style="background-color: #fff1d0">
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6">
+          <v-row>
+            <v-col cols="12" md="8">
+              <h1 class="mt-6">
+                {{ organizers.ias.title }}
+              </h1>
+              <p>
+                {{ organizers.ias.text }}
+                <a
+                  :href="organizers.ias.url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  :title="organizers.ias.title"
+                  >{{ $t('misc.ui.more') }}</a
+                >
+              </p>
+              <h1 class="mt-8 mb-4">
+                {{ organizers.fundation.title }}
+              </h1>
+              <p>
+                {{ organizers.fundation.text }}
+                <a
+                  :href="organizers.fundation.url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  :title="organizers.fundation.title"
+                  >{{ $t('misc.ui.more') }}</a
+                >
+              </p>
+            </v-col>
+            <v-col v-if="$vuetify.breakpoint.mdAndUp" md="4">
+              <div class="d-flex flex-column">
+                <div class="line align-stretch"></div>
+                <div class="logo_container rounded-circle">
+                  <v-img :src="organizers.ias.logo" class="logo"></v-img>
+                </div>
+              </div>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+    </section>
+    <section>
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6">
+          <p class="mt-10 mb-0">{{ $t('misc.ui.with_the_support_of') }}</p>
+          <h1 class="mb-4">
+            {{ organizers.iff.title }}
+          </h1>
+          <p class="mb-3">
+            {{ organizers.iff.text }}
             <a
-              :href="item.url"
+              :href="organizers.iff.url"
               target="_blank"
               rel="noopener noreferrer"
-              :title="item.title"
-              style="background-color: white; flex: 0 1 auto"
-              class="pa-2 ma-1"
-              width="100"
+              :title="organizers.iff.title"
+              >{{ $t('misc.ui.more') }}</a
             >
-              <v-img
-                :src="$router.options.base + item.logo"
-                contain
-                :width="$vuetify.breakpoint.mdAndUp ? '100' : '75'"
-                height="60"
-                class="text-right pa-2"
-              />
-            </a>
-          </v-item>
-          <div class="title pa-3">
-            {{ item.title }}
-          </div>
-        </v-expansion-panel-header>
-        <v-expansion-panel-content class="pa-3">
-          {{ item.text }}
-          <a
-            :href="item.url"
-            target="_blank"
-            rel="noopener noreferrer"
-            :title="item.title"
-            >{{ $t('misc.ui.more') }}</a
-          >
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-    </v-expansion-panels>
+          </p>
+        </v-col>
+      </v-row>
+    </section>
   </div>
 </template>
 <script>
@@ -65,3 +84,23 @@ export default {
   methods: {},
 }
 </script>
+<style lang="scss">
+.logo_container {
+  background-color: white;
+  height: 130px;
+  width: 130px;
+  padding: 15px;
+  align-items: center;
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+}
+.line {
+  flex: 1 1 1;
+  width: 2px;
+  margin: 6px 0;
+  background: blue;
+  height: 50%;
+}
+</style>

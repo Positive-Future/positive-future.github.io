@@ -1,20 +1,13 @@
 <template>
-  <v-app-bar
-    :dense="$vuetify.breakpoint.smAndDown"
-    app
-    fixed
-    height="104"
-    color="white"
-    class="pt-1"
-  >
-    <v-container fluid class="pt-0">
+  <v-app-bar app fixed height="85px" color="white" class="py-0 my-0">
+    <v-container fluid class="py-0 my-0">
       <v-row no-gutters justify="space-around">
         <v-col xs="12" sm="11" md="12" lg="7" xl="6">
           <v-row no-gutters class="align-center">
             <v-col>
               <nuxt-link :to="localePath('index')">
                 <!--             <v-img nuxt :src="$router.options.base + '/logo.svg'" /> -->
-                <v-img nuxt src="/logo.svg" height="90px" width="90px" />
+                <v-img nuxt src="/logo.svg" height="70px" width="70px" />
               </nuxt-link>
             </v-col>
             <v-col align="right" cols="auto">
@@ -48,7 +41,7 @@
               <v-row no-gutters>
                 <v-col>
                   <template v-if="$vuetify.breakpoint.mdAndUp">
-                    <v-tabs right color="#00c2cb">
+                    <v-tabs right color="#00c2cb" optional slider-size="5">
                       <v-menu left bottom offset-y>
                         <template v-slot:activator="{ on, attrs }">
                           <v-tab v-bind="attrs" v-on="on">

@@ -2,7 +2,7 @@
   <div>
     <section style="background-color: #fff1d0; padding-bottom: 80px">
       <v-row justify="center">
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="pl-12 ml-12">
           <h1 class="mt-6">
             {{ tips.title }}
           </h1>
@@ -10,17 +10,17 @@
         </v-col>
       </v-row>
     </section>
-    <section style="margin-top: -90px">
+    <section style="margin-top: -60px">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-row>
             <v-col cols="12" sm="6">
               <v-card
                 color="#bfaa78"
-                class="pa-3"
+                class="pa-3 ml-6"
                 flat
                 target="_blank"
-                :to="'/rules_' + $i18n.locale + '.pdf'"
+                :to="'/tips_' + $i18n.locale + '.pdf'"
               >
                 <v-row>
                   <v-col cols="3" align="right">
