@@ -2,22 +2,28 @@
   <v-app v-scroll="onScroll">
     <v-main>
       <TopBar v-if="$vuetify.breakpoint.mdAndUp" />
-      <LanguagePicker v-if="$vuetify.breakpoint.smAndDown"></LanguagePicker>
-      <v-btn
-        v-if="$vuetify.breakpoint.smAndDown"
-        id="menu_btn"
-        large
-        icon
-        @click.stop="drawer = !drawer"
-      >
-        <v-icon large color="black">mdi-menu</v-icon>
-      </v-btn>
+      <v-app-bar v-else app fixed color="white" class="py-0 my-0">
+        <nuxt-link :to="localePath('index')">
+          <!--             <v-img nuxt :src="$router.options.base + '/logo.svg'" /> -->
+          <v-img nuxt src="/logo.svg" height="52px" width="52px" />
+        </nuxt-link>
+        <v-spacer></v-spacer>
+        <v-btn
+          v-if="$vuetify.breakpoint.smAndDown"
+          id="menu_btn"
+          large
+          icon
+          @click.stop="drawer = !drawer"
+        >
+          <v-icon large color="black">mdi-menu</v-icon>
+        </v-btn>
+      </v-app-bar>
+
       <v-navigation-drawer
         v-model="drawer"
         fixed
         temporary
         right
-        class="text-right"
         color="rgb(217, 217, 217)"
         overlay-color="white"
       >
@@ -32,39 +38,83 @@
           </v-tooltip>
         </div>
         <v-list>
-          <v-list-item link :to="localePath('/contest')">
-            <v-list-item-content>
-              <v-list-item-title class="text-h5">
-                {{ $t('navigation.contest') }}</v-list-item-title
-              >
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item link :to="localePath('/organizers')">
-            <v-list-item-content>
-              <v-list-item-title class="text-h5">
-                {{ $t('navigation.organizers') }}</v-list-item-title
-              >
-            </v-list-item-content>
-          </v-list-item>
+          <v-list-group>
+            <template v-slot:activator>
+              <v-list-item-content>
+                <v-list-item-title>
+                  {{ $t('navigation.contest') }}
+                </v-list-item-title>
+              </v-list-item-content>
+            </template>
+            <v-list-item nuxt :to="localePath('/contest/rules')" class="pl-6">
+              <v-list-item-title>
+                {{ $t('navigation.rules') }}
+              </v-list-item-title>
+            </v-list-item>
+            <v-list-item nuxt :to="localePath('/contest/tips')" class="pl-6">
+              <v-list-item-title>
+                {{ $t('navigation.tips') }}
+              </v-list-item-title>
+            </v-list-item>
+            <v-list-item nuxt :to="localePath('/contest/jury')" class="pl-6">
+              <v-list-item-title>
+                {{ $t('navigation.jury') }}
+              </v-list-item-title>
+            </v-list-item>
+          </v-list-group>
+
           <v-list-item link :to="localePath('/resources')">
             <v-list-item-content>
-              <v-list-item-title class="text-h5">
+              <v-list-item-title>
                 {{ $t('navigation.resources') }}</v-list-item-title
               >
             </v-list-item-content>
           </v-list-item>
+          <v-list-item link :to="localePath('/news')">
+            <v-list-item-content>
+              <v-list-item-title>
+                {{ $t('navigation.news') }}</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-group>
+            <template v-slot:activator>
+              <v-list-item-content>
+                <v-list-item-title>
+                  {{ $t('navigation.about') }}
+                </v-list-item-title>
+              </v-list-item-content>
+            </template>
+            <v-list-item
+              link
+              :to="localePath('/about/organizers')"
+              class="pl-6"
+            >
+              <v-list-item-content>
+                <v-list-item-title>
+                  {{ $t('navigation.organizers') }}</v-list-item-title
+                >
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item
+              link
+              :to="localePath('/about/scientific_advisory_board')"
+              class="pl-6"
+            >
+              <v-list-item-content>
+                <v-list-item-title>
+                  {{ $t('navigation.sab') }}</v-list-item-title
+                >
+              </v-list-item-content>
+            </v-list-item>
+          </v-list-group>
         </v-list>
+        <v-footer app class="text-align:right" flat color="rgb(217, 217, 217)">
+          <LanguagePicker></LanguagePicker>
+        </v-footer>
       </v-navigation-drawer>
 
       <v-row align="center" no-gutters justify="center">
-        <v-col cols="12">
-          <nuxt-link
-            v-if="$vuetify.breakpoint.smAndDown"
-            :to="localePath('index')"
-          >
-            <v-img src="/logo.svg" class="logo my-12" contain></v-img>
-          </nuxt-link>
-        </v-col>
         <v-col cols="12" class="mt-2">
           <nuxt />
         </v-col>

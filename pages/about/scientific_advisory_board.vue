@@ -1,16 +1,19 @@
 <template>
   <div>
-    <section style="background-color: #fff1d0">
+    <section
+      style="background-color: #fff1d0"
+      :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
+    >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <h1 class="my-3">
             {{ sab.title }}
           </h1>
-          <nuxt-content :document="sab" class="pb-3 ml-n6 pl-0" />
+          <nuxt-content :document="sab" class="pb-3" />
         </v-col>
       </v-row>
     </section>
-    <section>
+    <section :class="{ 'px-3': $vuetify.breakpoint.smAndDown }">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <template v-for="(item, index) in sab.members">

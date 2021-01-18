@@ -1,6 +1,9 @@
 <template>
   <div>
-    <section style="background-color: #fff1d0; padding-bottom: 80px">
+    <section
+      style="background-color: #fff1d0; padding-bottom: 80px"
+      :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
+    >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <h1 class="my-6">
@@ -48,24 +51,30 @@
               </v-col>
             </template>
             <template v-else>
-              <v-list three-line>
-                <template v-for="item in news">
-                  <v-list-item :key="item.title">
-                    <v-list-item-avatar tile>
-                      <v-img :src="item.image"></v-img>
-                    </v-list-item-avatar>
+              <v-col cols="12">
+                <v-list three-line block>
+                  <template v-for="item in news">
+                    <v-list-item
+                      :key="item.title"
+                      nuxt
+                      :to="localePath('/news/' + item.slug)"
+                    >
+                      <v-list-item-avatar tile>
+                        <v-img :src="item.image"></v-img>
+                      </v-list-item-avatar>
 
-                    <v-list-item-content>
-                      <v-list-item-title v-html="item.title">{{
-                        item.title
-                      }}</v-list-item-title>
-                      <v-list-item-subtitle>{{
-                        item.createdAt.split('T')[0] + ' - ' + item.subtitle
-                      }}</v-list-item-subtitle>
-                    </v-list-item-content>
-                  </v-list-item>
-                </template>
-              </v-list>
+                      <v-list-item-content>
+                        <v-list-item-title v-html="item.title">{{
+                          item.title
+                        }}</v-list-item-title>
+                        <v-list-item-subtitle>{{
+                          item.createdAt.split('T')[0] + ' - ' + item.subtitle
+                        }}</v-list-item-subtitle>
+                      </v-list-item-content>
+                    </v-list-item>
+                  </template>
+                </v-list></v-col
+              >
             </template>
           </v-row>
         </v-col>
