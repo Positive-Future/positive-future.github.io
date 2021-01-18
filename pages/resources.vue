@@ -178,7 +178,7 @@
                     <v-list-item-content>
                       <div class="overline mb-4">
                         <v-chip
-                          v-for="(item, index) in item.category.sort()"
+                          v-for="(item, index) in item.category"
                           :key="index"
                           class="mx-1"
                           x-small
@@ -247,12 +247,12 @@
                     <ChipsContainer
                       :filters="filters.perspectives"
                       related-key="perspectives"
-                      :items="item.perspectives.sort()"
+                      :items="item.perspectives"
                     />
                     <ChipsContainer
                       related-key="issues"
                       :items="item.issues"
-                      :filters="filters.issues.sort()"
+                      :filters="filters.issues"
                     />
                   </v-card-text>
                 </v-card>
@@ -325,25 +325,27 @@ export default {
   },
   computed: {
     filteredItems() {
-      return JSON.parse(
-        JSON.stringify(
-          this.items.filter(
-            (item) =>
-              (!this.filters.type?.length ||
-                this.filters.type.some((el) => item.type.includes(el))) &&
-              (!this.filters.issues?.length ||
-                this.filters.issues.some((el) => item.issues.includes(el))) &&
-              (!this.filters.perspectives?.length ||
-                this.filters.perspectives.some((el) =>
-                  item.perspectives.includes(el)
-                )) &&
-              (!this.filters.lang?.length ||
-                this.filters.lang.includes(item.lang)) &&
-              (!this.filters.category?.length ||
-                this.filters.category.some((el) => item.category.includes(el)))
-          )
+      return this.items
+        .filter(
+          (item) =>
+            (!this.filters.type?.length ||
+              this.filters.type.some((el) => item.type.includes(el))) &&
+            (!this.filters.issues?.length ||
+              this.filters.issues.some((el) => item.issues.includes(el))) &&
+            (!this.filters.perspectives?.length ||
+              this.filters.perspectives.some((el) =>
+                item.perspectives.includes(el)
+              )) &&
+            (!this.filters.lang?.length ||
+              this.filters.lang.includes(item.lang)) &&
+            (!this.filters.category?.length ||
+              this.filters.category.some((el) => item.category.includes(el)))
         )
-      )
+        .map((e) => ({
+          ...e,
+          perspectives: e.perspectives.sort(),
+          category: e.category.sort(),
+        }))
     },
   },
   watch: {},
