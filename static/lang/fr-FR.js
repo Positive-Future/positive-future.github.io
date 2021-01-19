@@ -5,6 +5,8 @@ export default () => {
         noDataText: 'Aucune ressource disponible',
         noResultsText: 'Aucune ressource ne correspond à votre recherche',
         thisDocumentLangIs: 'Cette ressource est en',
+        resultFound: ' ressources trouvées',
+        perPage: ' par page',
         filterAlternativeText:
           'Les ressources peuvent aussi être explorées à partir des filtres suivants:',
         filters: {
@@ -115,6 +117,7 @@ export default () => {
           award: 'Prix',
           with_the_support_of: 'Avec le soutien de',
           thisDocumentLangIs: 'Ce document est en ',
+          back_to_categories: 'Revenir à la vue par catégorie',
         },
       },
       navigation: {

@@ -1,16 +1,20 @@
 <template>
-  <v-app-bar app fixed height="85px" color="white" class="py-0 my-0">
+  <v-app-bar app fixed height="90px" color="white" class="py-0 my-0">
     <v-container fluid class="py-0 my-0">
       <v-row no-gutters justify="space-around">
         <v-col xs="12" sm="11" md="12" lg="7" xl="6">
           <v-row no-gutters class="align-center">
             <v-col>
               <nuxt-link :to="localePath('index')">
-                <!--             <v-img nuxt :src="$router.options.base + '/logo.svg'" /> -->
-                <v-img nuxt src="/logo.svg" height="70px" width="70px" />
+                <v-img
+                  nuxt
+                  :src="$router.options.base + '/logo.svg'"
+                  height="70px"
+                  width="70px"
+                />
               </nuxt-link>
             </v-col>
-            <v-col align="right" cols="auto">
+            <v-col align="right" cols="auto" class="pt-1">
               <v-row>
                 <v-col class="d-inline-flex flex-row-reverse align-center">
                   <LanguagePicker></LanguagePicker>
@@ -41,10 +45,29 @@
               <v-row no-gutters>
                 <v-col>
                   <template v-if="$vuetify.breakpoint.mdAndUp">
-                    <v-tabs right color="#00c2cb" optional slider-size="5">
+                    <v-tabs
+                      right
+                      color="#00c2cb"
+                      optional
+                      slider-size="5"
+                      active-class="selected"
+                    >
                       <v-menu left bottom offset-y>
                         <template v-slot:activator="{ on, attrs }">
-                          <v-tab v-bind="attrs" v-on="on">
+                          <v-tab
+                            v-bind="attrs"
+                            :class="{
+                              selected: [
+                                'contest-rules___fr',
+                                'contest-rules___en',
+                                'contest-jury___fr',
+                                'contest-jury___en',
+                                'contest-tips___fr',
+                                'contest-tips___en',
+                              ].includes($route.name),
+                            }"
+                            v-on="on"
+                          >
                             {{ $t('navigation.contest') }}
                             <v-icon>mdi-chevron-down</v-icon>
                           </v-tab>
@@ -77,7 +100,18 @@
                       </v-tab>
                       <v-menu left bottom offset-y>
                         <template v-slot:activator="{ on, attrs }">
-                          <v-tab v-bind="attrs" v-on="on">
+                          <v-tab
+                            v-bind="attrs"
+                            :class="{
+                              selected: [
+                                'about-organizers___en',
+                                'about-organizers___fr',
+                                'about-scientific_advisory_board___en',
+                                'about-scientific_advisory_board___fr',
+                              ].includes($route.name),
+                            }"
+                            v-on="on"
+                          >
                             {{ $t('navigation.about') }}
                             <v-icon>mdi-chevron-down</v-icon>
                           </v-tab>

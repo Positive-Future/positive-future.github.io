@@ -48,7 +48,7 @@
         </v-col>
       </v-row>
     </section>
-    <section style="background-color: #b0e0f5">
+    <section style="background-color: #6cadc9">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <h1 class="mb-3 ml-6">{{ $t('navigation.news') }}</h1>
@@ -59,7 +59,24 @@
             show-arrows-on-hover
           >
             <v-carousel-item v-for="(item, i) in featured" :key="i">
-              <NewsItem :item="item"></NewsItem>
+              <v-card
+                nuxt
+                :to="localePath('/news/' + item.slug)"
+                color="#ffe2a0"
+                height="400"
+                light
+              >
+                <v-img
+                  contain
+                  :src="$router.options.base + item.image"
+                  height="300"
+                ></v-img>
+                <v-card-title> {{ item.title }} </v-card-title>
+                <v-card-subtitle> {{ dateAgo }}</v-card-subtitle>
+                <v-card-text>
+                  {{ item.subtitle }}
+                </v-card-text>
+              </v-card>
             </v-carousel-item>
           </v-carousel>
         </v-col>

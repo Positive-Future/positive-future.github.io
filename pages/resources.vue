@@ -6,10 +6,14 @@
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="mt-6">
+          <h1 class="mt-6 pt-6">
             {{ resources.title }}
           </h1>
-          <nuxt-content :document="resources" class="pb-3" />
+          <nuxt-content
+            :document="resources"
+            class="py-3"
+            :class="{ 'ml-n3': $vuetify.breakpoint.mdAndUp }"
+          />
         </v-col>
       </v-row>
     </section>
@@ -30,7 +34,10 @@
                   flat
                   :elevation="hover ? 12 : 2"
                   height="100%"
-                  @click="filters.category = [item.name]"
+                  @click="
+                    filters.category = [item.name]
+                    browsing = true
+                  "
                 >
                   <v-avatar color="#00c2cb" size="44">
                     <v-icon dark> mdi-{{ item.icon }} </v-icon>
@@ -56,9 +63,22 @@
             </v-col>
           </v-row>
         </v-expand-transition>
+        <v-btn
+          v-if="browsing"
+          text
+          small
+          class="mt-6"
+          @click="browsing = false"
+        >
+          <small
+            ><v-icon left>mdi-arrow-left</v-icon
+            >{{ $t('misc.ui.back_to_categories') }}</small
+          ></v-btn
+        >
+
         <v-data-iterator
           :items="filteredItems"
-          :items-per-page="itemsPerPage"
+          :items-per-page.sync="itemsPerPage"
           :page="page"
           :search="search"
           :hide-default-footer="!browsing"
@@ -73,6 +93,7 @@
                   multiple
                   outlined
                   hide-details
+                  :menu-props="{ bottom: true, offsetY: true }"
                   prepend-inner-icon="mdi-magnify"
                   :label="$t('resources.filters.search')"
                 ></v-text-field
@@ -83,6 +104,7 @@
                   outlined
                   multiple
                   hide-details
+                  :menu-props="{ bottom: true, offsetY: true }"
                   :items="
                     categories.map((item) => {
                       return {
@@ -100,6 +122,7 @@
                   outlined
                   multiple
                   hide-details
+                  :menu-props="{ bottom: true, offsetY: true }"
                   :items="
                     types.map((item) => {
                       return {
@@ -117,6 +140,7 @@
                   outlined
                   multiple
                   hide-details
+                  :menu-props="{ bottom: true, offsetY: true }"
                   :items="
                     perspectives.map((item) => {
                       return {
@@ -134,6 +158,7 @@
                   outlined
                   multiple
                   hide-details
+                  :menu-props="{ bottom: true, offsetY: true }"
                   :items="
                     issues.map((item) => {
                       return {
@@ -151,6 +176,7 @@
                   outlined
                   multiple
                   hide-details
+                  :menu-props="{ bottom: true, offsetY: true }"
                   :items="
                     languages.map((item) => {
                       return {
@@ -165,13 +191,22 @@
             </v-row>
           </template>
           <template v-if="browsing" v-slot:no-results class="ml-6"
-            ><div class="ml-6">{{ $t('resources.noResultsText') }}</div>
+            ><div class="ml-6 my-6">{{ $t('resources.noResultsText') }}</div>
           </template>
           <template v-if="browsing" v-slot:no-data class="ml-6"
-            ><div class="ml-6">{{ $t('resources.noDataText') }}</div>
+            ><div class="ml-6 my-6">{{ $t('resources.noDataText') }}</div>
           </template>
           <template v-if="browsing" v-slot:default="props">
             <v-row class="mx-3">
+              <small class="ml-3 mt-6">
+                {{
+                  filteredItems.length +
+                  $t('resources.resultFound') +
+                  (itemsPerPage > 0
+                    ? ' (' + itemsPerPage + $t('resources.perPage') + ')'
+                    : '')
+                }}
+              </small>
               <v-col v-for="item in props.items" :key="item.name" cols="12">
                 <v-card link :href="item.url" :to="item.file" target="'_blank'">
                   <v-list-item three-line>
@@ -208,8 +243,8 @@
                                   ? 'https://cdn.vuetifyjs.com/images/flags/us.png'
                                   : 'https://cdn.vuetifyjs.com/images/flags/fr.png'
                               "
-                              max-width="30"
-                              height="20"
+                              max-width="20"
+                              height="15"
                               v-bind="attrs"
                               v-on="on"
                             >
@@ -296,11 +331,11 @@ export default {
         Picture: 'image',
         Video: 'video-box',
       },
-      browsing: true,
+      browsing: false,
       itemsPerPageArray: [10, 20, 50, 100],
       sortDesc: false,
       page: 1,
-      itemsPerPage: 4,
+      itemsPerPage: 10,
       sortBy: 'name',
       categories: [
         { name: 'imagine_a_far_away_future', icon: 'head-cog' },

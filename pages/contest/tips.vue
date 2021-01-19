@@ -1,15 +1,15 @@
 <template>
   <div>
     <section
-      style="background-color: #ffe2a0; padding-bottom: 80px"
+      style="background-color: #ffe2a0; padding-bottom: 70px"
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="mt-6">
+          <h1 class="mt-6 pt-6">
             {{ tips.title }}
           </h1>
-          <p>
+          <p class="mt-3">
             {{ tips.subtitle }}
           </p>
         </v-col>

@@ -1,7 +1,7 @@
 ---
 title: Qui sommes nous?
 fundation:
-  logo: "who/2100.png"
+  logo: "/who/2100.png"
   text: La Fondation 2100, sous égide de la Fondation ParisTech, a vocation à promouvoir
     la prospective de long terme des sociétés humaines. Elle prolonge les travaux
     entamés il y a près de quarante ans sous la direction de Thierry Gaudin par
@@ -14,7 +14,7 @@ fundation:
   title: Fondation 2100
   url: https://2100.org
 ias:
-  logo: "who/iea.png"
+  logo: "/who/iea.png"
   text: L'Institut d'études avancées de Paris est un centre de recherche indépendant
     en sciences humaines et sociales qui vise à favoriser la recherche interdisciplinaire
     et à expérimenter de nouveaux formats de collaborations intersectorielles. Pour
@@ -24,7 +24,7 @@ ias:
   title: L'Institut d'études avancées de Paris
   url: https://www.paris-iea.fr/fr/
 iff:
-  logo: "who/iffs.png"
+  logo: "/who/iffs.png"
   text: L'institut a deux tâches, dont l'une consiste à mener des études prospectives,
     à promouvoir une perspective orientée vers l'avenir dans la recherche suédoise,
     et à utiliser et développer une théorie et une méthodologie appropriées. Nos

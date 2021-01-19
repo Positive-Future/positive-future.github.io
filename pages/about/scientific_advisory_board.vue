@@ -6,10 +6,14 @@
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="my-3">
+          <h1 class="my-3 pt-6">
             {{ sab.title }}
           </h1>
-          <nuxt-content :document="sab" class="pb-3" />
+          <nuxt-content
+            :document="sab"
+            class="pb-3"
+            :class="{ 'ml-n3': $vuetify.breakpoint.mdAndUp }"
+          />
         </v-col>
       </v-row>
     </section>

@@ -115,7 +115,7 @@
       </v-navigation-drawer>
 
       <v-row align="center" no-gutters justify="center">
-        <v-col cols="12" class="mt-2">
+        <v-col cols="12">
           <nuxt />
         </v-col>
       </v-row>

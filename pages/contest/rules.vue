@@ -59,7 +59,7 @@
         </v-col>
       </v-row>
     </section>
-    <section style="background-color: #b0e0f5; padding-top: 100px">
+    <section style="background-color: #6cadc9; padding-top: 100px">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <h1 class="mt-6">

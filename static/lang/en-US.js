@@ -4,6 +4,8 @@ export default () => {
       resources: {
         noDataText: 'No resource available',
         noResultsText: 'No resource match your search',
+        resultFound: ' resources found',
+        perPage: ' per page',
         filterAlternativeText:
           'Resources can also be explored with the following filters:',
         filters: {
@@ -114,6 +116,7 @@ export default () => {
           award: 'Award',
           with_the_support_of: 'With the support of',
           thisDocumentLangIs: 'this document language is ',
+          back_to_categories: 'Go back to category view',
         },
       },
       navigation: {

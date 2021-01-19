@@ -6,7 +6,7 @@
       color="#ffe2a0"
       :elevation="hover ? 12 : 2"
     >
-      <v-img contain :src="item.image"></v-img>
+      <v-img contain :src="$router.options.base + item.image"></v-img>
       <v-card-title> {{ item.title }} </v-card-title>
       <v-card-subtitle> {{ dateAgo }}</v-card-subtitle>
       <v-card-text>
