@@ -48,7 +48,7 @@
         </v-col>
       </v-row>
     </section>
-    <section style="background-color: #6cadc9">
+    <section style="background-color: #14c3cc">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <h1 class="mb-3 ml-6">{{ $t('navigation.news') }}</h1>

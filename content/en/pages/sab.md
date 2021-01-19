@@ -34,17 +34,8 @@ members:
       Studies Federation and the French Society for Foresight and held the chair of
       Foresight, Innovation and Intangible Capital at Polytech Angers as associate
       professor. An international speaker, her research, after the “Great Transition”,
-      is now focused on the X.0 development model
+      is now focused on the X.0 development model.
   '6':
-    firstname: Jean
-    lastname: Haëntjens
-    bio: Economist and urban planner, he is a consultant in urban strategies and foresight
-      (Urbatopie). He works with local authorities, public institutions and companies.
-      He previously held operational responsibilities in the fields of urban planning
-      and territorial development. Since The Power of Cities (2008), he has published
-      books and articles on the themes of urban strategies, eco-urbanism and the smart
-      city.
-  '7':
     firstname: Bettina
     lastname: Laville
     bio: Honorary State Councillor, Doctor of Letters, laureate of Sciences Po and
@@ -55,12 +46,12 @@ members:
       the Environmental Film Festival in 1982 and is co-founder of the Festival of
       New Explorations since 2016. She is the author of L'adaptation au changement
       climatique, une question de sociétés published in 2017 with the CNRS.
-  '8':
+  '7':
     firstname: Frédéric
     lastname: Lefèvre
     bio: Architect, teacher at the Ecole Nationale d'Architecture Paris Val-de-Seine,
       he conducted studies within the group "Society, foresight and architecture".
-  '9':
+  '8':
     firstname: Helga
     lastname: Nowotny
     bio: 'Emeritus Professor at ETH Zurich in Social Studies of Science and Technology,
@@ -68,14 +59,14 @@ members:
       include An Orderly Mess (CEU 2017) and The Cunning of Uncertainty (Polity, 2015).
       Her next book, In AI We Trust. Power, illusion and control of predictive algorithms,
       will be published by Polity in 2021. '
-  '10':
+  '9':
     firstname: Jean-François
     lastname: Soupizet
     bio: He holds a doctorate in economics and is a scientific advisor for Futuribles
       International. He is a consultant in international development and digital strategies.
       He has devoted his career to information and communication technologies (ICT)
       in the context of development.
-  '11':
+  '10':
     firstname: Jacques
     lastname: Theys 
     bio: Teacher at the Ecole des Hautes Etudes en Sciences Sociales and vice-president
