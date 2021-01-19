@@ -14,7 +14,7 @@ fundation:
   title: Fondation 2100
   url: https://2100.org
 ias:
-  logo: "/who/iea.png"
+  logo: "/who/ias.webp"
   text: L'Institut d'études avancées de Paris est un centre de recherche indépendant
     en sciences humaines et sociales qui vise à favoriser la recherche interdisciplinaire
     et à expérimenter de nouveaux formats de collaborations intersectorielles. Pour

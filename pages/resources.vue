@@ -208,7 +208,7 @@
                 }}
               </small>
               <v-col v-for="item in props.items" :key="item.name" cols="12">
-                <v-card link :href="item.url" :to="item.file" target="'_blank'">
+                <v-card link :href="item.url" :to="item.file" target="_blank">
                   <v-list-item three-line>
                     <v-list-item-content>
                       <div class="overline mb-4">

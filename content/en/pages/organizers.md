@@ -14,7 +14,7 @@ fundation:
   title: Fondation 2100
   url: https://2100.org
 ias:
-  logo: /who/iea.png
+  logo: /who/ias.webp
   text: The Paris Institute for Advanced Study is an independent research center
     in the humanities and social sciences aiming at fostering interdisciplinary
     research and experimenting new formats of intersectoral collaborations. It invites
