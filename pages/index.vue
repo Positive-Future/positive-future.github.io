@@ -1,9 +1,12 @@
 <template>
   <div>
-    <section style="background-color: #fff1d0; padding-bottom: 80px">
+    <section
+      style="background-color: #ffe2a0; padding-bottom: 80px"
+      :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
+    >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="ml-6 mt-6">
+          <h1 class="mt-6">
             {{ index.title }}
           </h1>
           <nuxt-content :document="index" />
