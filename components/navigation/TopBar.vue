@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app fixed height="108px" color="white" class="py-0 my-0">
+  <v-app-bar app fixed height="110px" color="white" class="py-0 my-0">
     <v-container fluid class="py-0 my-0">
       <v-row no-gutters justify="space-around">
         <v-col xs="12" sm="11" md="12" lg="7" xl="6">
@@ -9,8 +9,8 @@
                 <v-img
                   nuxt
                   :src="$router.options.base + '/icon.png'"
-                  :height="$vuetify.breakpoint.mdAndUp ? '70px' : '44px'"
-                  :width="$vuetify.breakpoint.mdAndUp ? '70px' : '44px'"
+                  :height="$vuetify.breakpoint.mdAndUp ? '90px' : '44px'"
+                  :width="$vuetify.breakpoint.mdAndUp ? '90px' : '44px'"
                 />
               </nuxt-link>
             </v-col>
