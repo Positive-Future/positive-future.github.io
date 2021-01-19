@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      style="background-color: #ffe2a0; padding-bottom: 80px"
+      style="background-color: #fff1d0; padding-bottom: 80px"
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
     >
       <v-row justify="center">

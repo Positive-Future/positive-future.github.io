@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      style="background-color: #ffe2a0; padding-bottom: 80px"
+      style="background-color: #fff1d0; padding-bottom: 80px"
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
     >
       <v-row justify="center">
@@ -24,7 +24,7 @@
           <v-row>
             <v-col cols="12" sm="6">
               <v-card
-                color="#bfaa78"
+                color="#FFE2A0"
                 class="pa-3"
                 flat
                 target="_blank"
@@ -45,7 +45,7 @@
           <v-row>
             <v-col cols="12" sm="9">
               <v-card
-                color="#88cdea"
+                color="#4FD4C7"
                 class="pa-6"
                 style="margin-bottom: -120px"
               >
@@ -59,7 +59,7 @@
         </v-col>
       </v-row>
     </section>
-    <section style="background-color: #6cadc9; padding-top: 100px">
+    <section style="background-color: #c9f8f3; padding-top: 100px">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <h1 class="mt-6">

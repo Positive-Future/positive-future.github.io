@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      style="background-color: #ffe2a0; padding-bottom: 80px"
+      style="background-color: #fff1d0; padding-bottom: 80px"
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
     >
       <v-row justify="center">
@@ -18,7 +18,7 @@
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-row no-gutters>
             <v-col cols="12" sm="6">
-              <v-card max-width="80%" color="#bfaa78" class="pa-6" flat>
+              <v-card max-width="80%" color="#FFE2A0" class="pa-6" flat>
                 {{ $t('misc.ui.theme') }}
                 <h1>
                   {{ index.theme }}
@@ -48,7 +48,7 @@
         </v-col>
       </v-row>
     </section>
-    <section style="background-color: #14c3cc">
+    <section style="background-color: #c9f8f3">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <h1 class="mb-3 ml-6">{{ $t('navigation.news') }}</h1>
@@ -62,7 +62,7 @@
               <v-card
                 nuxt
                 :to="localePath('/news/' + item.slug)"
-                color="#ffe2a0"
+                color="#FFF1D0"
                 height="400"
                 light
               >

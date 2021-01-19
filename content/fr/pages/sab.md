@@ -38,15 +38,6 @@ members:
       Conférencière internationale, ses travaux de recherche, après la ‘Grande Transition’,
       se portent aujourd'hui sur le modèle de développement X.0.
   '6':
-    firstname: Jean
-    lastname: Haëntjens
-    bio: Economiste et urbaniste, il est consultant en stratégies et prospective urbaines
-      (Urbatopie). Il intervient auprès de collectivités locales, d'institutions publiques
-      et d'entreprises. Il exerçait auparavant des responsabilités opérationnelles
-      dans les domaines de l'urbanisme, de l'aménagement et du développement territorial.
-      Depuis Le pouvoir des villes (2008), j'ai publié de nombreux livres et articles
-      sur les thèmes des stratégies urbaines, de l'éco-urbanisme et de la smart city.
-  '7':
     firstname: Bettina
     lastname: Laville
     bio: Conseillère d’État honoraire, docteur en lettres, lauréate de Sciences Po
@@ -58,13 +49,13 @@ members:
       depuis 2016. Enseignante à Science Po pendant 10 ans, elle est notamment l’auteur
       de L’adaptation au changement climatique, une question de sociétés publié en
       2017 avec le CNRS.
-  '8':
+  '7':
     firstname: Frédéric
     lastname: Lefèvre
     bio: Architecte, enseignant à l'Ecole Nationale d'Architecture Paris Val-de-Seine,
       il a mené des études au sein du groupe « Société, prospective et architecture
       ».
-  '9':
+  '8':
     firstname: Helga
     lastname: Nowotny
     bio: 'Professeure émerite de l’ETH Zurich en études sociales de la science et
@@ -72,14 +63,14 @@ members:
       ERC. Elle a notamment publié An Orderly Mess (CEU 2017) et The Cunning of Uncertainty
       (Polity, 2015). Son prochain livre, In AI We Trust. Power, illusion and control
       of predictive algorithms sera publié par Polity en 2021. '
-  '10':
+  '9':
     firstname: Jean-François
     lastname: Soupizet
     bio: Docteur en économie, Conseiller scientifique de Futuribles international,
       Jean-François Soupizet est consultant en développement international et stratégies
       numériques. Il a consacré sa carrière aux technologies de l’information et de
       la communication (TIC) dans le contexte du développement.
-  '11':
+  '10':
     firstname: Jacques
     lastname: Theys 
     bio: Enseignant à l’École des hautes études en sciences sociales, Il est vice-président

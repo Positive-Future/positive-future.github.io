@@ -3,7 +3,7 @@
     <v-card
       nuxt
       :to="localePath('/news/' + item.slug)"
-      color="#ffe2a0"
+      color="#FFF1D0"
       :elevation="hover ? 12 : 2"
     >
       <v-img contain :src="$router.options.base + item.image"></v-img>

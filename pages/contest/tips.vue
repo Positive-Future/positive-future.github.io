@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      style="background-color: #ffe2a0; padding-bottom: 70px"
+      style="background-color: #fff1d0; padding-bottom: 70px"
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
     >
       <v-row justify="center">
@@ -21,7 +21,7 @@
           <v-row>
             <v-col cols="12" sm="6">
               <v-card
-                color="#bfaa78"
+                color="#FFE2A0"
                 class="pa-3 ml-6"
                 flat
                 target="_blank"
