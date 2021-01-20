@@ -1,15 +1,15 @@
 <template>
   <div>
     <section
-      style="background-color: #fff1d0; padding-bottom: 80px"
+      style="background-color: #fff1d0; padding-bottom: 70px"
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <p class="mt-12">
+          <div class="mt-6 subtitle">
             {{ $t('misc.ui.theme') }}
-          </p>
-          <h1 class="">
+          </div>
+          <h1 class="pt-0 mt-0 mb-4">
             {{ index.theme }}
           </h1>
           <p>
@@ -41,7 +41,7 @@
               </v-card>
             </v-col>
           </v-row>
-          <nuxt-content :document="contest" class="pa-6" />
+          <nuxt-content :document="contest" class="py-6" />
           <v-row>
             <v-col cols="12" sm="9">
               <v-card
@@ -49,7 +49,7 @@
                 class="pa-6"
                 style="margin-bottom: -120px"
               >
-                <h1>
+                <h1 class="mb-4">
                   {{ $t('misc.ui.award') }}
                 </h1>
                 {{ contest.award }}
@@ -62,10 +62,12 @@
     <section style="background-color: #c9f8f3; padding-top: 100px">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
-          <h1 class="mt-6">
+          <h1 class="mt-8 mb-4">
             {{ contest.criterions.title }}
           </h1>
-          {{ contest.criterions.text }}
+          <p>
+            {{ contest.criterions.text }}
+          </p>
         </v-col>
       </v-row>
     </section>

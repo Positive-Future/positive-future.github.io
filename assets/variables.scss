@@ -47,27 +47,18 @@
   letter-spacing: normal;
 
 }
-
+.subtitle {
+  flex: 1 1 auto;
+  max-width: 100%;
+  font-family: "Lato", sans-serif;
+}
 .nuxt-content p, p,
 .nuxt-content li {
-  padding: 12px;
   flex: 1 1 auto;
   max-width: 100%;
   font-family: "Lato", sans-serif;
   font-size: 16px;
-  line-height: 24px;
 
-  @media (max-width: 800px) {
-
-    padding: 6px;
-    margin-left: 6px;
-  }
-
-  @media (max-width: 600px) {
-
-    padding: 0px;
-    margin-left: 0px;
-  }
 }
 
 $primary:#00c2cb !important;

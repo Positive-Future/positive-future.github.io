@@ -6,18 +6,18 @@
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="mt-6 pt-6">
+          <h1 class="mt-8 mb-4">
             {{ tips.title }}
           </h1>
-          <p class="mt-3">
+          <p>
             {{ tips.subtitle }}
           </p>
         </v-col>
       </v-row>
     </section>
-    <section style="margin-top: -60px">
+    <section style="margin-top: -55px">
       <v-row justify="center">
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <v-row>
             <v-col cols="12" sm="6">
               <v-card
@@ -33,12 +33,14 @@
                       >mdi-file-pdf</v-icon
                     >
                   </v-col>
-                  <v-col cols="9"> {{ $t('misc.ui.download_tips') }}</v-col>
+                  <v-col cols="9" class="align-center justify-center d-flex">
+                    {{ $t('misc.ui.download_tips') }}</v-col
+                  >
                 </v-row>
               </v-card>
             </v-col>
           </v-row>
-          <nuxt-content :document="tips" class="pa-6" />
+          <nuxt-content :document="tips" class="py-6" />
         </v-col>
       </v-row>
     </section>

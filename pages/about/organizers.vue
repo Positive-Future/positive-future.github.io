@@ -8,7 +8,7 @@
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <v-row no-gutters>
             <v-col cols="12" md="8" class="pa-3">
-              <h1 class="mt-6">
+              <h1 class="mt-8 mb-4">
                 {{ organizers.ias.title }}
               </h1>
               <p>
@@ -57,13 +57,13 @@
         </v-col>
       </v-row>
     </section>
-    <section :class="{ 'px-3': $vuetify.breakpoint.smAndDown }">
+    <section :class="{ 'px-3': $vuetify.breakpoint.smAndDown }" class="px-3">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <v-row>
             <v-col cols="12" md="8">
               <p class="mt-10 mb-0">{{ $t('misc.ui.with_the_support_of') }}</p>
-              <h1 class="mb-4">
+              <h1 class="mt-4 mb-4">
                 {{ organizers.iff.title }}
               </h1>
               <p class="mb-3">

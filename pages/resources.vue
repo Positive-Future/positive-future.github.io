@@ -1,26 +1,22 @@
 <template>
   <div>
     <section
-      style="background-color: #fff1d0"
+      style="background-color: #fff1d0; padding-bottom: 80px"
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="mt-6 pt-6">
+          <h1 class="mt-8 mb-4">
             {{ resources.title }}
           </h1>
-          <nuxt-content
-            :document="resources"
-            class="py-3"
-            :class="{ 'ml-n3': $vuetify.breakpoint.mdAndUp }"
-          />
+          <nuxt-content :document="resources" />
         </v-col>
       </v-row>
     </section>
-    <v-row justify="center">
-      <v-col xs="12" sm="11" md="8" lg="7">
+    <v-row justify="center" no-gutters>
+      <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="px-0 mx-0">
         <v-expand-transition v-if="!browsing">
-          <v-row class="mx-3" style="margin-top: -40px">
+          <v-row style="margin-top: -40px" class="px-0 mx-n1">
             <v-col
               v-for="(item, index) in categories"
               :key="index"
@@ -85,7 +81,7 @@
           class="my-6"
         >
           <template v-slot:header>
-            <v-row class="mx-3">
+            <v-row>
               <v-col cols="12" sm="6" md="4"
                 ><v-text-field
                   v-model="search"

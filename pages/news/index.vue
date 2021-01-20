@@ -6,7 +6,7 @@
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="my-6">
+          <h1 class="mt-8 mb-4">
             {{ $t('navigation.news') }}
           </h1>
           <p>
@@ -27,13 +27,17 @@
                 href="http://eepurl.com/hgbB6f"
                 target="_blank"
               >
-                <v-row>
+                <v-row align="center">
                   <v-col cols="2" align="right">
                     <v-icon x-large class="rotate-24 mr-3" color="black"
                       >mdi-email</v-icon
                     >
                   </v-col>
-                  <v-col cols="9"> {{ $t('misc.ui.subscribe2') }}</v-col>
+                  <v-col cols="9" class="align-center justify-center d-flex">
+                    <div class="subtitle">
+                      {{ $t('misc.ui.subscribe2') }}
+                    </div>
+                  </v-col>
                 </v-row>
               </v-card>
             </v-col>

@@ -6,7 +6,7 @@
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="my-6">
+          <h1 class="mt-6 mb-4">
             {{ jury.title }}
           </h1>
           <p>

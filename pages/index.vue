@@ -6,7 +6,7 @@
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="mt-6">
+          <h1 class="mt-8 mb-4">
             {{ index.title }}
           </h1>
           <nuxt-content :document="index" />
@@ -24,7 +24,7 @@
                   {{ index.theme }}
                 </h1>
               </v-card>
-              <v-card flat class="pa-6">
+              <v-card flat class="py-6 px-1">
                 <h1>{{ dates.title }}</h1>
                 <b class="date_headline">{{ dates.schedule.opening.date }}</b>
                 <p>{{ dates.schedule.opening.content }}</p>
@@ -51,7 +51,7 @@
     <section style="background-color: #c9f8f3">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
-          <h1 class="mb-3 ml-6">{{ $t('navigation.news') }}</h1>
+          <h1 class="mb-3">{{ $t('navigation.news') }}</h1>
           <v-carousel
             cycle
             height="400"

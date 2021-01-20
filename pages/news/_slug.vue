@@ -7,7 +7,7 @@
           {
             text: $t('navigation.news'),
             disabled: false,
-            href: localePath('/news'),
+            href: $router.options.base + localePath('/news'),
           },
           {
             text: post.title,
