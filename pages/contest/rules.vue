@@ -25,22 +25,20 @@
             <v-col cols="12" sm="6">
               <v-card
                 color="#FFE2A0"
-                class="pa-3"
+                class="pa-6"
                 flat
                 target="_blank"
                 :to="'/rules_' + $i18n.locale + '.pdf'"
-                :class="{ 'ml-n8': $vuetify.breakpoint.mdAndUp }"
+                :class="{ 'ml-n6': $vuetify.breakpoint.mdAndUp }"
               >
-                <v-row>
-                  <v-col cols="2" align="right">
-                    <v-icon x-large class="rotate-24 mr-3" color="black"
-                      >mdi-file-pdf</v-icon
-                    >
-                  </v-col>
-                  <v-col cols="9" class="align-center d-flex">
-                    {{ $t('misc.ui.download_rules') }}</v-col
+                <div class="d-inline-flex justify-center align-center">
+                  <v-icon x-large class="rotate-24 mr-6" color="black"
+                    >mdi-file-pdf</v-icon
                   >
-                </v-row>
+                  <div class="subtitle">
+                    {{ $t('misc.ui.download_rules') }}
+                  </div>
+                </div>
               </v-card>
             </v-col>
           </v-row>
