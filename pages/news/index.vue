@@ -61,7 +61,7 @@
                       :to="localePath('/news/' + item.slug)"
                     >
                       <v-list-item-avatar tile>
-                        <v-img :src="item.image"></v-img>
+                        <v-img :src="$router.options.base + item.image"></v-img>
                       </v-list-item-avatar>
 
                       <v-list-item-content>
