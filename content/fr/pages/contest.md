@@ -1,10 +1,8 @@
 ---
 title: Concours
-intro: Ce thème invite à repenser nos modes de vie et nos espaces urbains pour cette
-  première édition. Quel serait le visage de la ville durable et agréable à vivre
-  de demain ? Quels liens aux territoires et aux espaces ruraux ? Les participants
-  devront proposer un récit montrant en arrière-plan une vision à la fois crédible
-  et originale des villes en 2100.
+intro: |2-
+
+  Ce thème invite à repenser nos modes de vie et nos espaces urbains pour cette première édition. Quel serait le visage de la ville durable et agréable à vivre de demain ? Quels liens aux territoires et aux espaces ruraux ? Les participants devront proposer un récit montrant en arrière-plan une vision à la fois crédible et originale des villes en 2100.
 award: Des prix seront décernés aux meilleures œuvres fictionnelles dans les quatre
   catégories. Un grand prix de 10 000 euros sera décerné à la meilleure proposition
   toutes catégories confondues.
