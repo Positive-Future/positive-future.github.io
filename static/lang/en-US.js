@@ -4,7 +4,8 @@ export default () => {
       resources: {
         noDataText: 'No resource available',
         noResultsText: 'No resource match your search',
-        resultFound: ' resources found',
+        resultFound: ' resource found',
+        resultsFound: ' resources found',
         perPage: ' per page',
         filterAlternativeText:
           'Resources can also be explored with the following filters:',

@@ -5,7 +5,8 @@ export default () => {
         noDataText: 'Aucune ressource disponible',
         noResultsText: 'Aucune ressource ne correspond à votre recherche',
         thisDocumentLangIs: 'Cette ressource est en',
-        resultFound: ' ressources trouvées',
+        resultFound: ' ressource trouvée',
+        resultsFound: ' ressources trouvées',
         perPage: ' par page',
         filterAlternativeText:
           'Les ressources peuvent aussi être explorées à partir des filtres suivants:',

@@ -197,7 +197,9 @@
               <small class="ml-3 mt-6">
                 {{
                   filteredItems.length +
-                  $t('resources.resultFound') +
+                  (filteredItems.length === 1
+                    ? $t('resources.resultFound')
+                    : $t('resources.resultsFound')) +
                   (itemsPerPage > 0
                     ? ' (' + itemsPerPage + $t('resources.perPage') + ')'
                     : '')
