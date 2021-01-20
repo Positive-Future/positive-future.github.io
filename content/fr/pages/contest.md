@@ -1,8 +1,10 @@
 ---
 title: Concours
-intro: |2-
-
-  Ce thème invite à repenser nos modes de vie et nos espaces urbains pour cette première édition. Quel serait le visage de la ville durable et agréable à vivre de demain ? Quels liens aux territoires et aux espaces ruraux ? Les participants devront proposer un récit montrant en arrière-plan une vision à la fois crédible et originale des villes en 2100.
+intro: Ce thème invite à repenser nos modes de vie et nos espaces urbains pour cette
+  première édition. Quel serait le visage de la ville durable et agréable à vivre
+  de demain ? Quels liens aux territoires et aux espaces ruraux ? Les participants
+  devront proposer un récit montrant en arrière-plan une vision à la fois crédible
+  et originale des villes en 2100.
 award: Des prix seront décernés aux meilleures œuvres fictionnelles dans les quatre
   catégories. Un grand prix de 10 000 euros sera décerné à la meilleure proposition
   toutes catégories confondues.
@@ -27,7 +29,6 @@ Les propositions peuvent être réalisées individuellement ou en groupe.
 * Date limite de dépôt des propositions : 31 mai 2021
 * Remise des prix à Paris : Septembre 2021
 
-
 ## Comment ?
 
 Les récits peuvent se présenter sous les formats suivants :
@@ -36,10 +37,3 @@ Les récits peuvent se présenter sous les formats suivants :
 * **Nouvelles ou scénarios** : maximum 20.000 signes (espaces compris)
 * **Vidéos ou courts-métrages** : maximum 10 minutes
 * **Bandes dessinées, romans graphiques** : maximum 15 pages
-
-
-## Prix
-
-Des prix seront décernés aux meilleures œuvres fictionnelles dans les quatre catégories.
-
-Un grand prix de 10 000 euros sera décerné à la meilleure proposition toutes catégories confondues.
