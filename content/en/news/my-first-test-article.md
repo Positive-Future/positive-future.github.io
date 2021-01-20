@@ -1,6 +1,6 @@
 ---
 draft: false
-title: My first test article
+title: My first  super test article
 subtitle: That a new one B-)
 categories:
 - event
@@ -11,7 +11,7 @@ en: ''
 fr: content/fr/news/mon-premier-article-de-test.md
 
 ---
-I did have a lot of things to say but .....
+I did have a lot of things to say but ..... I don't
 
 ### Mayonnaise Ingredients
 
