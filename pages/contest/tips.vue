@@ -15,17 +15,18 @@
         </v-col>
       </v-row>
     </section>
-    <section style="margin-top: -55px">
+    <section style="margin-top: -40px">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <v-row>
             <v-col cols="12" sm="6">
               <v-card
                 color="#FFE2A0"
-                class="pa-3 ml-6"
+                class=""
                 flat
                 target="_blank"
                 :to="'/tips_' + $i18n.locale + '.pdf'"
+                :class="{ 'ml-n8': $vuetify.breakpoint.mdAndUp }"
               >
                 <v-row>
                   <v-col cols="3" align="right">
@@ -33,7 +34,7 @@
                       >mdi-file-pdf</v-icon
                     >
                   </v-col>
-                  <v-col cols="9" class="align-center justify-center d-flex">
+                  <v-col cols="9" class="align-center d-flex">
                     {{ $t('misc.ui.download_tips') }}</v-col
                   >
                 </v-row>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      style="background-color: #fff1d0; padding-bottom: 80px"
+      style="background-color: #fff1d0; padding-bottom: 100px"
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
     >
       <v-row justify="center">
@@ -13,7 +13,7 @@
         </v-col>
       </v-row>
     </section>
-    <section style="margin-top: -90px">
+    <section style="margin-top: -95px">
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-row no-gutters>

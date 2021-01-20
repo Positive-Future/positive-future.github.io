@@ -26,6 +26,7 @@
                 flat
                 href="http://eepurl.com/hgbB6f"
                 target="_blank"
+                :class="{ 'ml-n8': $vuetify.breakpoint.mdAndUp }"
               >
                 <v-row align="center">
                   <v-col cols="2" align="right">
@@ -33,7 +34,7 @@
                       >mdi-email</v-icon
                     >
                   </v-col>
-                  <v-col cols="9" class="align-center justify-center d-flex">
+                  <v-col cols="9" class="align-center d-flex">
                     <div class="subtitle">
                       {{ $t('misc.ui.subscribe2') }}
                     </div>

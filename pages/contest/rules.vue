@@ -29,14 +29,17 @@
                 flat
                 target="_blank"
                 :to="'/rules_' + $i18n.locale + '.pdf'"
+                :class="{ 'ml-n8': $vuetify.breakpoint.mdAndUp }"
               >
                 <v-row>
-                  <v-col cols="3" align="right">
+                  <v-col cols="2" align="right">
                     <v-icon x-large class="rotate-24 mr-3" color="black"
                       >mdi-file-pdf</v-icon
                     >
                   </v-col>
-                  <v-col cols="9"> {{ $t('misc.ui.download_rules') }}</v-col>
+                  <v-col cols="9" class="align-center d-flex">
+                    {{ $t('misc.ui.download_rules') }}</v-col
+                  >
                 </v-row>
               </v-card>
             </v-col>
@@ -46,7 +49,7 @@
             <v-col cols="12" sm="9">
               <v-card
                 color="#4FD4C7"
-                class="pa-6"
+                class="px-6 pt-6 pb-8"
                 style="margin-bottom: -120px"
               >
                 <h1 class="mb-4">
@@ -59,9 +62,9 @@
         </v-col>
       </v-row>
     </section>
-    <section style="background-color: #c9f8f3; padding-top: 100px">
+    <section style="background-color: #c9f8f3; padding-top: 110px">
       <v-row justify="center">
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3 pb-8">
           <h1 class="mt-8 mb-4">
             {{ contest.criterions.title }}
           </h1>

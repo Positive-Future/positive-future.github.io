@@ -167,23 +167,23 @@ export default {
       console.log('COMPUTED SOCIAL ICONS')
       return [
         {
-          url:
-            'https://www.linkedin.com/company/wprn-world-pandemic-research-network/',
+          url: 'https://www.instagram.com/futurpositif/',
           text: this.$t('misc.social.instagram'),
           icon: 'instagram',
         },
         {
-          url: 'https://github.com/WPRN/website',
+          url:
+            'https://www.youtube.com/channel/UCguKalm3EVILMvkvoNXkANg/featured',
           text: this.$t('misc.social.youtube'),
           icon: 'youtube',
         },
         {
-          url: 'https://twitter.com/WPRN_org',
+          url: 'https://twitter.com/FuturPositif',
           text: this.$t('misc.social.twitter'),
           icon: 'twitter',
         },
         {
-          url: 'https://www.facebook.com/WPRN.org/',
+          url: 'https://www.facebook.com/FuturPositif',
           text: this.$t('misc.social.facebook'),
           icon: 'facebook',
         },

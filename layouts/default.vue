@@ -3,9 +3,14 @@
     <v-main>
       <TopBar v-if="$vuetify.breakpoint.mdAndUp" />
       <v-app-bar v-else app fixed color="white" class="py-0 my-0">
-        <nuxt-link :to="localePath('index')">
+        <nuxt-link :to="$router.options.base + localePath('index')">
           <!--             <v-img nuxt :src="$router.options.base + '/logo.svg'" /> -->
-          <v-img nuxt src="/logo.svg" height="52px" width="52px" />
+          <v-img
+            nuxt
+            :src="$router.options.base + '/icon.png'"
+            height="52px"
+            width="52px"
+          />
         </nuxt-link>
         <v-spacer></v-spacer>
         <v-btn
