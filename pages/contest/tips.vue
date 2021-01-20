@@ -15,7 +15,7 @@
         </v-col>
       </v-row>
     </section>
-    <section style="margin-top: -68px">
+    <section style="margin-top: -75px">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <v-row>
