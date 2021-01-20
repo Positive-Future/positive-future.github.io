@@ -25,7 +25,7 @@
                 </h1>
               </v-card>
               <v-card flat class="py-6 px-1">
-                <h1>{{ dates.title }}</h1>
+                <h1 class="mt-2 mb-4">{{ dates.title }}</h1>
                 <b class="date_headline">{{ dates.schedule.opening.date }}</b>
                 <p>{{ dates.schedule.opening.content }}</p>
                 <b class="date_headline">{{ dates.schedule.deadline.date }}</b>
