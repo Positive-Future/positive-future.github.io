@@ -14,19 +14,19 @@ criterions:
     directly actionable perspectives will also be considered.
 
 ---
-# Who ?
+## Who ?
 
 The competition is open to all, regardless of nationality, age or profession.
 
 Proposals can be made individually or in groups.
 
-# When ?
+## When ?
 
 * Official launch of the call for proposals: January 2020
 * Deadline for the submission of proposals: May 31, 2021
 * Awards ceremony: September 2021
 
-# How ?
+## How ?
 
 Stories can be presented in the following formats:
 
