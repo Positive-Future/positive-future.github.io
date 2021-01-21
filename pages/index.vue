@@ -37,8 +37,8 @@
             <v-col cols="12" sm="6">
               <iframe
                 width="560"
-                height="320"
-                src="https://www.youtube.com/embed/Y2VFEW5GruM"
+                height="315"
+                src="https://www.youtube.com/embed/c1x1LN8XelU"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
