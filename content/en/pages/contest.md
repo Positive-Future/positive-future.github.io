@@ -20,11 +20,13 @@ The competition is open to all, regardless of nationality, age or profession.
 
 Proposals can be made individually or in groups.
 
+
 ## When ?
 
 * Official launch of the call for proposals: January 2020
 * Deadline for the submission of proposals: May 31, 2021
 * Awards ceremony: September 2021
+
 
 ## How ?
 
