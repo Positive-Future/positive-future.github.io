@@ -31,7 +31,7 @@ Les propositions peuvent être réalisées individuellement ou en groupe.
 
 Les récits peuvent se présenter sous les formats suivants :
 
-* **Articles de journal** : maximum 10.000 signes (espaces compris), avec la possibilité d’intégrer des illustrations
+* **Articles de journal** : maximum 10.000 signes (espaces compris), avec la possibilité d’intégrer des illustrations 
 * **Nouvelles ou scénarios** : maximum 20.000 signes (espaces compris)
 * **Vidéos ou courts-métrages** : maximum 10 minutes
 * **Bandes dessinées, romans graphiques** : maximum 15 pages
