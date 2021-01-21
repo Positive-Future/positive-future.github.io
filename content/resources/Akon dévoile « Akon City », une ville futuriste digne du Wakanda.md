@@ -22,7 +22,6 @@ perspectives:
 - case_studies
 date: 10/09/2020
 file: ''
-url: " https://www.influencia.net/fr/actualites/tendance,innovations,akon-devoile-akon-city-ville
-  \ /  https://youtu.be/-UdXHtrs_Ho-futuriste-digne-wakanda,10508.html (video)"
+url: https://www.influencia.net/fr/actualites/tendance,innovations,akon-devoile-akon-city-ville-futuriste-digne-wakanda,10508.html
 
 ---
