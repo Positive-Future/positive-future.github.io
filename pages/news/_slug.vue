@@ -20,7 +20,7 @@
           <v-icon>mdi-chevron-right</v-icon>
         </template>
       </v-breadcrumbs>
-      <v-card>
+      <v-card class="pa-6">
         <v-card-title
           ><h1>
             {{ post.title }}
