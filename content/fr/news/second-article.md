@@ -1,6 +1,6 @@
 ---
 draft: false
-created: 2021-01-13T14:37:00Z
+created: '2021-01-13T14:37:00.000+00:00'
 en: content/en/news/my-second-article.md
 fr: []
 title: Second article,
@@ -15,6 +15,8 @@ background_color: ''
 ## Production
 
 ### Déroulements
+
+![](/image-annonce-webinaire.png)
 
 Les nombreuses péripéties de la série se passent à Bikini Bottom, une ville située dans l'[Océan Pacifique](https://fr.wikipedia.org/wiki/Oc%C3%A9an_Pacifique "Océan Pacifique") représentant la véritable vie marine de l'île d'[Atoll de Bikini](https://fr.wikipedia.org/wiki/Atoll_de_Bikini "Atoll de Bikini")[20](https://fr.wikipedia.org/wiki/Bob_l%27%C3%A9ponge#cite_note-QSR-20). Stephen Hillenburg explique qu'une grande partie de Bikini Bottom est fondée sur le véritable mode de vie de [Seattle](https://fr.wikipedia.org/wiki/Seattle "Seattle")[21](https://fr.wikipedia.org/wiki/Bob_l%27%C3%A9ponge#cite_note-SpongeBob_SquarePants-21). La plupart de ces contextes sont représentés dans les épisodes; cependant, malgré l'implication de la ville, il explique qu'il souhaite quitter cette ville isolée du monde réel, ce qui explique la scène parodique de la série [_Alerte à Malibu_](https://fr.wikipedia.org/wiki/Alerte_%C3%A0_Malibu "Alerte à Malibu") dans le film [_Bob l'éponge, le film_](https://fr.wikipedia.org/wiki/Bob_l%27%C3%A9ponge,_le_film "Bob l'éponge, le film") comme référence à sa série préférée[21](https://fr.wikipedia.org/wiki/Bob_l%27%C3%A9ponge#cite_note-SpongeBob_SquarePants-21),[22](https://fr.wikipedia.org/wiki/Bob_l%27%C3%A9ponge#cite_note-Exposed-22). les citoyens de Bikini Bottom vivent pour la majorité dans des bâtiments, et utilisent des « bateaux-mobiles », un mélange de voiture et de [bateau](https://fr.wikipedia.org/wiki/Bateau "Bateau"), comme mode de transport. L'[anthropomorphisme](https://fr.wikipedia.org/wiki/Anthropomorphisme "Anthropomorphisme") des personnages peut être dû à une radiation causée par le [champignon de la bombe atomique Baker](https://fr.wikipedia.org/wiki/Op%C3%A9ration_Crossroads "Opération Crossroads").
 
