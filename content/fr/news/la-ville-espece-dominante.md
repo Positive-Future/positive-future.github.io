@@ -12,7 +12,9 @@ image: "/darcey-beau-q8d7wzc40ea-unsplash.jpg"
 background_color: "#F8E71C"
 
 ---
-**En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.** 
+**En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
+
+![](/image-annonce-webinaire.png)
 
 **Le tout premier webinaire aura lieu le 11 février 2021 de 18h à 20h et sera animé par Fabienne Goux-Baudiment, docteure en prospective.**
 
