@@ -14,7 +14,7 @@ background_color: "#F8E71C"
 ---
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
 
-## **Jeudi 11 février de xx h à xx h**
+## **Jeudi 11 février de 18 h à 20 h**
 
 ## **Webinaire** 
 
