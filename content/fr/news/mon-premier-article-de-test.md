@@ -26,6 +26,6 @@ La Ville est un objet fascinant, quel que soit l'angle sous lequel on la regarde
 
 Mais qu'est-ce que la ville ? Quelle est sa nature intime ? Quelle est cette concordance entre elle et nous, humains ? N'est-elle qu'un artefact, un simple construit ? Ou un reflet de nous-mêmes, de nos espoirs, de nos peurs, de nos ambitions ; un reflet qui lui donnerait une âme ? Alors qu'une Grande Transformation (the Green Recovery) se prépare enfin, quelle place y tiendra la ville ? sous quelles formes ?
 
-**Fabienne Goux-Baudiment** est docteure en sciences sociales, elle a fondé proGective - centre d’étude, de recherche et de conseil en prospective en 1995, a présidé la World Futures Studies Federation ainsi que la Société Française de Prospective, et a occupé la Chaire de Prospective, Innovation et Capital Immatériel de Polytech Angers comme professeure associée. Conférencière internationale, ses travaux de recherche, après la _‘Grande Transition_’, se portent aujourd'hui sur le modèle de développement X.0. 
+**_Fabienne Goux-Baudiment_** _est docteure en sciences sociales, elle a fondé proGective - centre d’étude, de recherche et de conseil en prospective en 1995, a présidé la World Futures Studies Federation ainsi que la Société Française de Prospective, et a occupé la Chaire de Prospective, Innovation et Capital Immatériel de Polytech Angers comme professeure associée. Conférencière internationale, ses travaux de recherche, après la_ ‘Grande Transition’, _se portent aujourd'hui sur le modèle de développement X.0._ 
 
-## **Inscriptions ici (en attente lien)**
+**Inscriptions ici (en attente lien)**
