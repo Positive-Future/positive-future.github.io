@@ -70,7 +70,7 @@
                 height="400"
                 light
               >
-                <v-img contain :src="item.image" height="300"></v-img>
+                <v-img :src="item.image" height="300"></v-img>
                 <v-card-title> {{ item.title }} </v-card-title>
                 <v-card-text>
                   {{ item.subtitle }}
