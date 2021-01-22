@@ -14,9 +14,9 @@ background_color: "#F8E71C"
 ---
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
 
-## **Jeudi 11 février de 18 h à 20 h**
+## **Jeudi 11 février de 18h à 20h**
 
-## **Webinaire** 
+## **Webinaire**
 
 ## **La Ville, espèce dominante ?**
 
@@ -26,8 +26,6 @@ La Ville est un objet fascinant, quel que soit l'angle sous lequel on la regarde
 
 Mais qu'est-ce que la ville ? Quelle est sa nature intime ? Quelle est cette concordance entre elle et nous, humains ? N'est-elle qu'un artefact, un simple construit ? Ou un reflet de nous-mêmes, de nos espoirs, de nos peurs, de nos ambitions ; un reflet qui lui donnerait une âme ? Alors qu'une Grande Transformation (the Green Recovery) se prépare enfin, quelle place y tiendra la ville ? sous quelles formes ?
 
-**_Fabienne Goux-Baudiment_** _est docteure en sciences sociales, elle a fondé proGective - centre d’étude, de recherche et de conseil en prospective en 1995, a présidé la World Futures Studies Federation ainsi que la Société Française de Prospective, et a occupé la Chaire de Prospective, Innovation et Capital Immatériel de Polytech Angers comme professeure associée. Conférencière internationale, ses travaux de recherche, après la_ ‘Grande Transition’, _se portent aujourd'hui sur le modèle de développement X.0._ 
+**_Fabienne Goux-Baudiment_** _est docteure en sciences sociales, elle a fondé proGective - centre d’étude, de recherche et de conseil en prospective en 1995, a présidé la World Futures Studies Federation ainsi que la Société Française de Prospective, et a occupé la Chaire de Prospective, Innovation et Capital Immatériel de Polytech Angers comme professeure associée. Conférencière internationale, ses travaux de recherche, après la_ ‘Grande Transition’, _se portent aujourd'hui sur le modèle de développement X.0._
 
 **Inscriptions ici (en attente lien)**
-
- 
