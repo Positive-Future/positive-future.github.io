@@ -221,17 +221,19 @@
           </template>
           <template v-if="browsing" v-slot:default="props">
             <v-row class="mx-3">
-              <small class="ml-3 mt-6">
-                {{
-                  filteredItems.length +
-                  (filteredItems.length === 1
-                    ? $t('resources.resultFound')
-                    : $t('resources.resultsFound')) +
-                  (itemsPerPage > 0
-                    ? ' (' + itemsPerPage + $t('resources.perPage') + ')'
-                    : '')
-                }}
-              </small>
+              <p class="ml-3 mt-6">
+                <small>
+                  {{
+                    filteredItems.length +
+                    (filteredItems.length === 1
+                      ? $t('resources.resultFound')
+                      : $t('resources.resultsFound')) +
+                    (itemsPerPage > 0
+                      ? ' (' + itemsPerPage + $t('resources.perPage') + ')'
+                      : '')
+                  }}
+                </small>
+              </p>
               <v-col v-for="item in props.items" :key="item.name" cols="12">
                 <v-card link :href="item.url" :to="item.file" target="_blank">
                   <v-list-item three-line>

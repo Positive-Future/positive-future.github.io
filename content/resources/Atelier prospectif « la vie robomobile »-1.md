@@ -13,7 +13,6 @@ description_fr: Atelier prospectif «La vie robomobile» initié par le Ministè
 category:
 - stimulate_your_creativity
 - think_of_your_ideal_city
-- think_of_your_ideal_city
 type:
 - Book
 issues:
