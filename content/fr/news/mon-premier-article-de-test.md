@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 created: '2021-01-13T14:34:25.000+00:00'
 en: content/en/news/my-first-test-article.md
 fr: []
