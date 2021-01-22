@@ -26,13 +26,7 @@
         FR
       </v-btn>
     </v-btn-toggle> -->
-    <v-btn-toggle
-      v-if="!$route.params.slug"
-      v-model="$root.$i18n.locale"
-      class="ml-6"
-      tile
-      dense
-    >
+    <v-btn-toggle v-if="!$route.params.slug" class="ml-6" tile dense>
       <v-btn
         outlined
         :color="$i18n.locale === 'en' ? 'primary' : 'grey darken-2'"
