@@ -81,8 +81,6 @@
 </template>
 
 <script>
-import { formatDistance } from 'date-fns'
-
 export default {
   async asyncData({ app, $content }) {
     const index = await $content(app.i18n.locale + '/pages/index').fetch()
