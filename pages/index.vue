@@ -68,7 +68,6 @@
               >
                 <v-img contain :src="item.image" height="300"></v-img>
                 <v-card-title> {{ item.title }} </v-card-title>
-                <v-card-subtitle> {{ dateAgo }}</v-card-subtitle>
                 <v-card-text>
                   {{ item.subtitle }}
                 </v-card-text>
@@ -107,13 +106,7 @@ export default {
       slides: ['First', 'Second', 'Third'],
     }
   },
-  computed: {
-    dateAgo() {
-      const date = new Date(this.item.createdAt)
-
-      return formatDistance(date, new Date()) + ' ago'
-    },
-  },
+  computed: {},
   mounted() {},
 }
 </script>
