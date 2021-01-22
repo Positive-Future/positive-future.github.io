@@ -14,16 +14,16 @@ background_color: "#F8E71C"
 ---
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future vous propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
 
-###### **Jeudi 11 février à xx h**
+# **Jeudi 11 février à xx h**
 
-###### **Webinaire** 
+# **Webinaire** 
 
-###### **La Ville, espèce dominante ?**
+# **La Ville, espèce dominante ?**
 
-###### Par Fabienne GOUX-BAUDIMENT
+# Par Fabienne GOUX-BAUDIMENT
 
 Mais qu'est-ce que la ville ? Quelle est sa nature intime ? Quelle est cette concordance entre elle et nous, humains ? N'est-elle qu'un artefact, un simple construit ? Ou un reflet de nous-mêmes, de nos espoirs, de nos peurs, de nos ambitions ; un reflet qui lui donnerait une âme ? Alors qu'une Grande Transformation (the Green Recovery) se prépare enfin, quelle place y tiendra la ville ? sous quelles formes ?
 
 Fabienne Goux-Baudiment est docteure en sciences sociales, elle a fondé proGective —centre d’étude, de recherche et de conseil en prospective en 1995, a présidé la World Futures Studies Federation et la Société Française de Prospective et a occupé la chaire de Prospective, Innovation et Capital Immatériel de Polytech Angers comme professeur associé. Conférencière internationale, ses travaux de recherche, après la ‘Grande Transition’, se portent aujourd'hui sur le modèle de développement X.0.La Ville est un objet fascinant, quel que soit l'angle sous lequel on la regarde : un simple groupement humain (_human settlement_); une conurbation tentaculaire; une foisonnante exposition architecturale; un lieu de vie, de travail et d'éducation; un condensé d'Histoire; un sujet d'ethnographie constamment renouvelé...
 
-###### **Inscriptions ici (en attente lien)**
+# **Inscriptions ici (en attente lien)**
