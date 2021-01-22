@@ -7,6 +7,7 @@ export default () => {
         resultFound: ' resource found',
         resultsFound: ' resources found',
         perPage: ' per page',
+        check: 'Consult an overview of resources on the city of the future',
         filterAlternativeText:
           'Resources can also be explored with the following filters:',
         filters: {

@@ -7,6 +7,7 @@ export default () => {
         thisDocumentLangIs: 'Cette ressource est en',
         resultFound: ' ressource trouvée',
         resultsFound: ' ressources trouvées',
+        check: 'Consultez un aperçu des ressources sur la ville du futur',
         perPage: ' par page',
         filterAlternativeText:
           'Les ressources peuvent aussi être explorées à partir des filtres suivants:',
