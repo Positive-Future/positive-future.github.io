@@ -13,10 +13,37 @@
         </v-col>
       </v-row>
     </section>
+    <section style="margin-top: -85px">
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
+          <v-row>
+            <v-col cols="12" sm="8">
+              <v-card
+                color="#FFE2A0"
+                class="pa-6"
+                flat
+                href="http://eepurl.com/hgbB6f"
+                target="_blank"
+                :class="{ 'ml-n6': $vuetify.breakpoint.mdAndUp }"
+              >
+                <div class="d-inline-flex justify-center align-center">
+                  <v-icon x-large class="rotate-24 mr-6" color="black"
+                    >mdi-email</v-icon
+                  >
+                  <div class="subtitle">
+                    {{ $t('misc.ui.subscribe2') }}
+                  </div>
+                </div>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+    </section>
     <v-row justify="center" no-gutters>
       <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="px-0 mx-0">
         <v-expand-transition v-if="!browsing">
-          <v-row style="margin-top: -40px" class="px-0 mx-n1">
+          <v-row class="px-0 mx-n1">
             <v-col
               v-for="(item, index) in categories"
               :key="index"
