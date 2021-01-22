@@ -85,9 +85,9 @@
           >. <br />Based on a work at
           <a
             xmlns:dct="http://purl.org/dc/terms/"
-            href="https://github.com/IEA-Paris/Positive-Future"
+            href="https://github.com/Positive-Future/positive-future.github.io"
             rel="dct:source"
-            >https://github.com/IEA-Paris/Positive-Future</a
+            >https://github.com/Positive-Future/positive-future.github.io</a
           >
           By Antoine Cordelois.
         </span>
