@@ -28,7 +28,7 @@
     </v-btn-toggle> -->
     <v-btn-toggle
       v-if="!$route.params.slug"
-      v-model="$i18n.locale"
+      v-model="$root.$i18n.locale"
       class="ml-6"
       tile
       dense

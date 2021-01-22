@@ -38,7 +38,11 @@
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/c1x1LN8XelU?autoplay=1&mute=1"
+                :src="
+                  'https://www.youtube.com/embed/' +
+                  ($i18n.locale === 'en' ? '1efqN3kp1NE' : '-7Fd0Vk8jHM') +
+                  '?autoplay=1&mute=1'
+                "
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
