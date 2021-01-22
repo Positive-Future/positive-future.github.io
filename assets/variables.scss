@@ -48,11 +48,14 @@
 
 }
 .nuxt-content h1, h1 {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 30px;
   font-family: "Poppins", sans-serif;
   letter-spacing: normal;
   word-break: normal;
+  margin-top:10px;
+  margin-bottom:20px;
+  line-height: normal;
 
 }
 .subtitle {
@@ -60,6 +63,15 @@
   max-width: 100%;
   font-family: "Lato", sans-serif;
   word-break: normal;
+}
+.v-card__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.15rem;
+  word-break: normal;
+}
+.v-card__text , .v-breadcrumbs{
+  font-family: "Lato", sans-serif;
+
 }
 .nuxt-content p, p,
 .nuxt-content li {

@@ -279,7 +279,7 @@ export default {
    */
   webfontloader: {
     google: {
-      families: ['Lato:400,700', 'Poppins:800'],
+      families: ['Lato:400,700', 'Poppins:600,800'],
     },
   },
   /*

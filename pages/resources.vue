@@ -28,7 +28,7 @@
               >
                 <div class="d-inline-flex justify-center align-center">
                   <v-icon x-large class="rotate-24 mr-6" color="black"
-                    >mdi-email</v-icon
+                    >mdi-file-pdf</v-icon
                   >
                   <div class="subtitle">
                     {{ $t('resources.check') }}

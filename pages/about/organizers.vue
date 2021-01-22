@@ -76,6 +76,7 @@
                 :src="organizers.iff.logo"
                 class="logo"
                 max-width="255"
+                max-height="200px"
               ></v-img>
             </v-col>
           </v-row>

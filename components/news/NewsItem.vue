@@ -8,7 +8,6 @@
     >
       <v-img contain :src="item.image"></v-img>
       <v-card-title style="word-break: normal"> {{ item.title }} </v-card-title>
-      <v-card-subtitle> {{ dateAgo }}</v-card-subtitle>
       <v-card-text>
         {{ item.subtitle }}
       </v-card-text>
