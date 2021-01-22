@@ -1,6 +1,6 @@
 ---
 draft: false
-created: 2021-01-13T14:37:00Z
+created: '2021-01-13T14:37:00.000+00:00'
 en: content/en/news/my-second-article.md
 fr: []
 title: Second article,

@@ -14,7 +14,9 @@ background_color: "#F8E71C"
 ---
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
 
-###### Le tout premier webinaire aura lieu le 11 février 2021 de 18h à 20h et sera animé par Fabienne Goux-Baudiment, docteure en prospective.
+![](/image-annonce-webinaire.png)
+
+**Le tout premier webinaire aura lieu le 11 février 2021 de 18h à 20h et sera animé par Fabienne Goux-Baudiment, docteure en prospective.**
 
 La Ville est un objet fascinant, quel que soit l'angle sous lequel on la regarde : un simple groupement humain (_human settlement_); une conurbation tentaculaire; une foisonnante exposition architecturale; un lieu de vie, de travail et d'éducation; un condensé d'Histoire; un sujet d'ethnographie constamment renouvelé...
 
@@ -22,4 +24,4 @@ Mais qu'est-ce que la ville ? Quelle est sa nature intime ? Quelle est cette con
 
 **_Fabienne Goux-Baudiment_** _est docteure en sciences sociales, elle a fondé proGective - centre d’étude, de recherche et de conseil en prospective en 1995, a présidé la World Futures Studies Federation ainsi que la Société Française de Prospective, et a occupé la Chaire de Prospective, Innovation et Capital Immatériel de Polytech Angers comme professeure associée. Conférencière internationale, ses travaux de recherche, après la_ ‘Grande Transition’, _se portent aujourd'hui sur le modèle de développement X.0._
 
-**Inscriptions ici (en attente lien)** 
+**Inscriptions ici (en attente lien)**
