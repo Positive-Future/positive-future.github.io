@@ -45,17 +45,18 @@
 </template>
 <script>
 export default {
-  data() {
-    return {
-      loading: true,
-    }
-  },
-  async created() {
+  async fetch() {
+    console.log('this.$route.params.slug: ', this.$route.params.slug)
     this.post = await this.$content(
       this.$i18n.locale + '/news',
       this.$route.params.slug
     ).fetch()
     this.loading = false
+  },
+  data() {
+    return {
+      loading: true,
+    }
   },
 }
 </script>
