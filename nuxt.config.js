@@ -17,6 +17,9 @@ export default {
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
    */
+  generate: {
+    fallback: true,
+  },
   head: {
     htmlAttrs: {
       dir: 'ltr',
