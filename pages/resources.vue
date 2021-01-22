@@ -42,7 +42,7 @@
     </section>
     <v-row justify="center" no-gutters>
       <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="px-0 mx-0">
-        <v-expand-transition v-if="!browsing">
+        <v-expand-transition v-if="category_view">
           <v-row class="px-0 mx-n1">
             <v-col
               v-for="(item, index) in categories"
@@ -59,7 +59,7 @@
                   height="100%"
                   @click="
                     filters.category = [item.name]
-                    browsing = true
+                    category_view = false
                   "
                 >
                   <v-avatar color="#00c2cb" size="44">
@@ -87,11 +87,11 @@
           </v-row>
         </v-expand-transition>
         <v-btn
-          v-if="browsing"
+          v-if="!category_view"
           text
           small
           class="mt-6"
-          @click="browsing = false"
+          @click="category_view = true"
         >
           <small
             ><v-icon left>mdi-arrow-left</v-icon
@@ -103,7 +103,7 @@
           :items="filteredItems"
           :items-per-page.sync="itemsPerPage"
           :page="page"
-          :search="search"
+          :search="filters.search"
           :hide-default-footer="!browsing"
           class="my-6"
         >
@@ -111,7 +111,7 @@
             <v-row>
               <v-col cols="12" sm="6" md="4"
                 ><v-text-field
-                  v-model="search"
+                  v-model="filters.search"
                   clearable
                   multiple
                   outlined
@@ -356,7 +356,7 @@ export default {
         Picture: 'image',
         Video: 'video-box',
       },
-      browsing: false,
+      category_view: true,
       itemsPerPageArray: [10, 20, 50, 100],
       sortDesc: false,
       page: 1,
@@ -373,17 +373,24 @@ export default {
         },
         { name: 'learn_from_the_past', icon: 'rewind' },
       ],
-      search: '',
       filters: {
         category: [],
         type: [],
         issues: [],
         perspectives: [],
         lang: [],
+        search: '',
       },
     }
   },
   computed: {
+    browsing() {
+      return (
+        Object.values(this.filters)
+          .flat()
+          .filter((item) => item?.length).length > 0 || !this.category_view
+      )
+    },
     filteredItems() {
       return this.items
         .filter(
@@ -409,9 +416,7 @@ export default {
     },
   },
   watch: {},
-  updated() {
-    console.log('updated')
-  },
+  updated() {},
   mounted() {},
   methods: {},
 }

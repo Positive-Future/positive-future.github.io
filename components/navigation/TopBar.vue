@@ -8,7 +8,7 @@
               <nuxt-link :to="localePath('index')">
                 <v-img
                   nuxt
-                  :src="$router.options.base + '/icon.png'"
+                  src="/icon.png"
                   :height="$vuetify.breakpoint.mdAndUp ? '90px' : '44px'"
                   :width="$vuetify.breakpoint.mdAndUp ? '90px' : '44px'"
                 />
@@ -164,7 +164,6 @@ export default {
   },
   computed: {
     socialIcons() {
-      console.log('COMPUTED SOCIAL ICONS')
       return [
         {
           url: 'https://www.instagram.com/futurpositif/',

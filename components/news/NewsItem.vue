@@ -6,7 +6,7 @@
       color="#FFF1D0"
       :elevation="hover ? 12 : 2"
     >
-      <v-img contain :src="$router.options.base + item.image"></v-img>
+      <v-img contain :src="item.image"></v-img>
       <v-card-title> {{ item.title }} </v-card-title>
       <v-card-subtitle> {{ dateAgo }}</v-card-subtitle>
       <v-card-text>
@@ -27,9 +27,7 @@ export default {
   },
   computed: {
     dateAgo() {
-      console.log('this.item.createdAt: ', this.item.createdAt)
       const date = new Date(this.item.createdAt)
-      console.log('date: ', date)
 
       return formatDistance(date, new Date()) + ' ago'
     },

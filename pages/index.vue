@@ -66,11 +66,7 @@
                 height="400"
                 light
               >
-                <v-img
-                  contain
-                  :src="$router.options.base + item.image"
-                  height="300"
-                ></v-img>
+                <v-img contain :src="item.image" height="300"></v-img>
                 <v-card-title> {{ item.title }} </v-card-title>
                 <v-card-subtitle> {{ dateAgo }}</v-card-subtitle>
                 <v-card-text>
@@ -86,6 +82,8 @@
 </template>
 
 <script>
+import { formatDistance } from 'date-fns'
+
 export default {
   async asyncData({ app, $content }) {
     const index = await $content(app.i18n.locale + '/pages/index').fetch()
@@ -96,7 +94,7 @@ export default {
       .sortBy('createdAt')
       .limit(3)
       .fetch()
-    console.log('featured: ', featured)
+
     return {
       index,
       dates,
@@ -109,10 +107,14 @@ export default {
       slides: ['First', 'Second', 'Third'],
     }
   },
-  mounted() {
-    console.log(this.$route)
-    console.log(this.$router)
+  computed: {
+    dateAgo() {
+      const date = new Date(this.item.createdAt)
+
+      return formatDistance(date, new Date()) + ' ago'
+    },
   },
+  mounted() {},
 }
 </script>
 <style>

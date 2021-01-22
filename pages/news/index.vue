@@ -61,7 +61,7 @@
                       :to="localePath('/news/' + item.slug)"
                     >
                       <v-list-item-avatar tile>
-                        <v-img :src="$router.options.base + item.image"></v-img>
+                        <v-img :src="item.image"></v-img>
                       </v-list-item-avatar>
 
                       <v-list-item-content>
@@ -92,7 +92,7 @@ export default {
       .where({ draft: false })
       .sortBy('createdAt')
       .fetch()
-    console.log('featured: ', news)
+
     return {
       news,
     }
@@ -103,10 +103,7 @@ export default {
       slides: ['First', 'Second', 'Third'],
     }
   },
-  mounted() {
-    console.log(this.$route)
-    console.log(this.$router)
-  },
+  mounted() {},
 }
 </script>
 <style>

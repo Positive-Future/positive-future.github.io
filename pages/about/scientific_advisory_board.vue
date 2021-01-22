@@ -33,7 +33,6 @@
 export default {
   async asyncData({ app, $content }) {
     const sab = await $content(app.i18n.locale + '/pages/sab').fetch()
-    console.log('sab: ', sab)
 
     return {
       sab,

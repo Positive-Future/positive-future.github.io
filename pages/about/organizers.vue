@@ -39,17 +39,11 @@
               <div class="logos">
                 <div class="line1"></div>
                 <div class="logo_container1 rounded-circle">
-                  <v-img
-                    :src="$router.options.base + organizers.ias.logo"
-                    class="logo"
-                  ></v-img>
+                  <v-img :src="organizers.ias.logo" class="logo"></v-img>
                 </div>
                 <div class="line2"></div>
                 <div class="logo_container2 rounded-circle">
-                  <v-img
-                    :src="$router.options.base + organizers.fundation.logo"
-                    class="logo"
-                  ></v-img>
+                  <v-img :src="organizers.fundation.logo" class="logo"></v-img>
                 </div>
               </div>
             </v-col>
@@ -79,7 +73,7 @@
             >
             <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="4">
               <v-img
-                :src="$router.options.base + organizers.iff.logo"
+                :src="organizers.iff.logo"
                 class="logo"
                 max-width="255"
               ></v-img>
