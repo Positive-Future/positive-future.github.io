@@ -22,7 +22,7 @@
                 color="#FFE2A0"
                 class="pa-6"
                 flat
-                href="http://eepurl.com/hgbB6f"
+                :to="'/resources_' + $i18n.locale + '.pdf'"
                 target="_blank"
                 :class="{ 'ml-n6': $vuetify.breakpoint.mdAndUp }"
               >
@@ -31,7 +31,7 @@
                     >mdi-email</v-icon
                   >
                   <div class="subtitle">
-                    {{ $t('misc.ui.subscribe2') }}
+                    {{ $t('resources.check') }}
                   </div>
                 </div>
               </v-card>
