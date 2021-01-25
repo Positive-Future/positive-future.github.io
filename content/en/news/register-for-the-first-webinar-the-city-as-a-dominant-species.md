@@ -13,7 +13,7 @@ background_color: ''
 ---
 **In addition to the scientific resources available in the Matter for Thought section, the Positive Future team offers scientific events, webinars, and online conferences over the months to feed the thinking of the contest participants.**
 
-![](/image-annonce-webinaire.png)
+![](/image-annonce-webinaire_-en.png)
 
 **The very first webinar will take place on February 11, 2021 from 6 to 8 pm and will be hosted by Fabienne Goux-Baudiment, PhD in prospective.**
 
