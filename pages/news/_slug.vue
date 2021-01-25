@@ -3,7 +3,7 @@
     <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
       <v-breadcrumbs
         nuxt
-        class="ml-4"
+        class="ml-n3"
         :items="[
           {
             text: $t('navigation.news'),
@@ -22,7 +22,7 @@
         </template>
       </v-breadcrumbs>
 
-      <v-card class="pa-6">
+      <v-card class="px-6 pb-6 pt-1">
         <v-card-title
           ><h1>
             {{ post.title }}
@@ -31,6 +31,7 @@
         <v-card-subtitle>
           {{ post.subtitle }}
         </v-card-subtitle>
+        <v-divider></v-divider>
         <v-card-text>
           <nuxt-content :document="post" />
         </v-card-text>

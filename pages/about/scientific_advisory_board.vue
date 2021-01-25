@@ -17,7 +17,7 @@
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <template v-for="(item, index) in sab.members">
-            <div :key="index" class="my-4">
+            <div :key="index" class="my-6">
               <span class="name px-1">
                 {{ item.firstname + ' ' + item.lastname }}
               </span>

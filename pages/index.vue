@@ -41,7 +41,8 @@
                 :src="
                   'https://www.youtube.com/embed/' +
                   ($i18n.locale === 'en' ? '1efqN3kp1NE' : '-7Fd0Vk8jHM') +
-                  '?autoplay=1&mute=1'
+                  '?autoplay=1&mute=1&loop=1&showinfo=0&playlist=' +
+                  ($i18n.locale === 'en' ? '1efqN3kp1NE' : '-7Fd0Vk8jHM')
                 "
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -58,17 +59,18 @@
           <h1 class="mb-3">{{ $t('navigation.news') }}</h1>
           <v-carousel
             cycle
-            height="400"
-            hide-delimiter-background
+            height="420"
             show-arrows-on-hover
+            hide-delimiter-background
           >
             <v-carousel-item v-for="(item, i) in featured" :key="i">
               <v-card
                 nuxt
                 :to="localePath('/news/' + item.slug)"
                 color="#FFF1D0"
-                height="400"
                 light
+                height="420"
+                class="mb-6"
               >
                 <v-img :src="item.image" height="300"></v-img>
                 <v-card-title> {{ item.title }} </v-card-title>
