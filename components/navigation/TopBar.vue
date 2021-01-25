@@ -3,11 +3,11 @@
     <v-container fluid class="py-0 my-0">
       <v-row
         no-gutters
-        justify="center"
+        justify="space-around"
         :class="{ 'mx-n6': $vuetify.breakpoint.lgAndUp }"
       >
         <v-col xs="12" sm="11" md="12" lg="7" xl="6" class="mx-n3">
-          <v-row no-gutters justify="center">
+          <v-row no-gutters class="align-center">
             <v-col>
               <nuxt-link :to="localePath('index')">
                 <v-img
