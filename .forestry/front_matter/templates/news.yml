@@ -72,6 +72,5 @@ fields:
   description: Only if it is an EN news
 pages:
 - content/en/news/how-to-help-you-before-you-apply.md
-- content/en/news/my-first-test-article.md
 - content/en/news/register-for-the-first-webinar-the-city-as-a-dominant-species.md
 - content/fr/news/pour-vous-aider-avant-de-candidater.md
