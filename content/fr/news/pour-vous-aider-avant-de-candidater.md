@@ -18,4 +18,4 @@ Notions de prospective, état des lieux des enjeux actuels, pistes créatives…
 
 N’hésitez pas non plus à consulter les « [conseils](mailto:http://www.positive-future.org/fr/contest/tips) » pour mettre toutes les chances de votre côté !
 
-Hâte de plonger dans votre histoire du futur !
+Hâte de plonger dans VOTRE histoire du futur !
