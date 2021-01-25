@@ -8,7 +8,12 @@ description_en: Les lieux de vie, de travail, de commerce, de service, d’éduc
   pesant sur certains lieux suite à la dématérialisation croissante de services et
   l’émergence de nouveaux lieux plus hybrides et partagés (Fab labs, coworking, commerces
   multiservices, Maisons de Services Publics ...) sur les territoires.
-description_fr: Lieux plateformes, hybrides et agiles
+description_fr: Les lieux de vie, de travail, de commerce, de service, d’éducation,
+  de culture, de convivialité, de loisirs... sont en mutation, bousculés par le numérique,
+  qui transforme leurs fonctions, formes et usages.Une réflexion sur la menace d'obsolescence
+  pesant sur certains lieux suite à la dématérialisation croissante de services et
+  l’émergence de nouveaux lieux plus hybrides et partagés (Fab labs, coworking, commerces
+  multiservices, Maisons de Services Publics ...) sur les territoires.
 category:
 - face_our_challenges_today
 type:
