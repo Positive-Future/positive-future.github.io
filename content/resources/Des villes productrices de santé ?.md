@@ -2,8 +2,10 @@
 lang: FR
 name: 'Des villes productrices de santé ? '
 author: Voisin-Bormuth, C.
-description_en: ''
-description_fr: 'Comment créer des villes “productrices de santé »? '
+description_en: Une réflexion sur la façon de repenser l’environnement pour compenser
+  les effets potentiellement pathogènes de la vie en ville ?
+description_fr: Une réflexion sur la façon de repenser l’environnement pour compenser
+  les effets potentiellement pathogènes de la vie en ville ?
 category:
 - learn_from_the_past
 - stay_positive
