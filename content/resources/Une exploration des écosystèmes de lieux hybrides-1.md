@@ -2,13 +2,24 @@
 lang: FR
 name: Une exploration des écosystèmes de lieux hybrides
 author: 'Albarède, M., Déri, C., & Marcou, T. '
-description_en: Lieux plateformes, hybrides et agiles
-description_fr: Lieux plateformes, hybrides et agiles
+description_en: Les lieux de vie, de travail, de commerce, de service, d’éducation,
+  de culture, de convivialité, de loisirs... sont en mutation, bousculés par le numérique,
+  qui transforme et hybride leurs fonctions, formes et usages. Réflexion sur l’émergence
+  de nouveaux lieux plus hybrides et partagés (Fab labs, coworking, commerces multiservices,
+  Maisons de Services Publics ...)
+description_fr: Les lieux de vie, de travail, de commerce, de service, d’éducation,
+  de culture, de convivialité, de loisirs... sont en mutation, bousculés par le numérique,
+  qui transforme et hybride leurs fonctions, formes et usages. Réflexion sur l’émergence
+  de nouveaux lieux plus hybrides et partagés (Fab labs, coworking, commerces multiservices,
+  Maisons de Services Publics ...)
 category:
 - face_our_challenges_today
 type:
 - Book
 issues:
+- work
+- leisure
+- culture
 - public_space
 - urban_spatial_planning
 perspectives:
