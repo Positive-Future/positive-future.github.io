@@ -2,12 +2,12 @@
 lang: FR
 name: Comment Séoul est devenue la ville du futur
 author: Pablo Maillé
-description_en: Le film Ecology in concrete interroge le passé et l’avenir de Séoul,
-  la capitale sud-coréenne.  Il  explore non seulement sa transformation urbaine fulgurante,
-  mais aussi la place de ses habitants, dans une ville en perpétuelle reconstruction
-description_fr: Le film Ecology in concrete interroge le passé et l’avenir de Séoul,
-  la capitale sud-coréenne.  Il  explore non seulement sa transformation urbaine fulgurante,
-  mais aussi la place de ses habitants, dans une ville en perpétuelle reconstruction
+description_en: Un documentaire qui interroge le passé et l’avenir de Séoul, la capitale
+  sud-coréenne et explore non seulement sa transformation urbaine fulgurante, mais
+  aussi la place des habitants, dans une ville en perpétuelle reconstruction.
+description_fr: Un documentaire qui interroge le passé et l’avenir de Séoul, la capitale
+  sud-coréenne et explore non seulement sa transformation urbaine fulgurante, mais
+  aussi la place des habitants, dans une ville en perpétuelle reconstruction.
 category:
 - stay_positive
 - think_of_your_ideal_city

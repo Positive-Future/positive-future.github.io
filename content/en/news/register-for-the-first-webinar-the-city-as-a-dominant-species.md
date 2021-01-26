@@ -13,7 +13,7 @@ background_color: ''
 ---
 **In addition to the scientific resources available in the Matter for Thought section, the Positive Future team offers scientific events, webinars, and online conferences over the months to feed the thinking of the contest participants.**
 
-![](/image-annonce-webinaire.png)
+![](/image-annonce-webinaire_-en.png)
 
 **The very first webinar will take place on February 11, 2021 from 6 to 8 pm and will be hosted by Fabienne Goux-Baudiment, PhD in prospective.**
 
@@ -23,4 +23,4 @@ But what is the city? What is its intimate nature? What is this concordance betw
 
 **_Fabienne Goux-Baudiment_** _holds a doctorate in social sciences, she founded proGective - center d'étude, de recherche et de conseil en prospective in 1995, has chaired the World Futures Studies Federation and the Société Française de Prospective, and has held the Chair of Prospective, Innovation and Immaterial Capital at Polytech Angers as an associate professor. An international speaker, her research, after the 'Great Transition', is now focused on the X.0 development model._
 
-**Registration here (en attente)**
+**Registration** [**here**](https://www.weezevent.com/la-ville-espece-dominante "here")
