@@ -2,10 +2,10 @@
 lang: FR
 name: Rêve de Scènes Urbaines, construire la ville sur elle-même
 author: José Michael Chenu
-description_en: Une préfiguration de la ville résiliente de demain, à partir d'une
-  étude de cas bien réelle.
-description_fr: Une préfiguration de la ville résiliente de demain, à partir d'une
-  étude de cas bien réelle.
+description_en: Une préfiguration des territoires résilients de demain, à partir de
+  réflexions et expérimentaions en région parisienne
+description_fr: Une préfiguration des territoires résilients de demain, à partir de
+  réflexions et expérimentaions en région parisienne
 category:
 - stimulate_your_creativity
 - learn_from_the_past
@@ -13,6 +13,10 @@ category:
 type:
 - Article
 issues:
+- work
+- government_local_and_national
+- environment
+- economy_trade
 - urban_spatial_planning
 perspectives:
 - opinions
