@@ -2,8 +2,8 @@
 lang: FR
 name: "« Génie de la bande dessinée, de Töpffer à Emil Ferris »"
 author: Benoît Peeters
-description_en: 'Impératif pour ceux qui se lanceront dans la BD. '
-description_fr: Impératif pour ceux qui se lanceront dans la BD
+description_en: 'Une conférence sur la BD, par le scénariste des célèbres "Cités obscures". '
+description_fr: 'Une conférence sur la BD, par le scénariste des célèbres "Cités obscures". '
 category:
 - stimulate_your_creativity
 type:
