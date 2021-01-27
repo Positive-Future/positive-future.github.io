@@ -2,8 +2,8 @@
 lang: FR
 name: Nausicaä de la vallée du vent
 author: 'Miyazaki, H. '
-description_en: Exemple de BD culte
-description_fr: Exemple de BD culte
+description_en: Exemple de BD culte sur une civilisation post-apocalyptique
+description_fr: Exemple de BD culte sur une civilisation post-apocalyptique
 category:
 - imagine_a_far_away_future
 - stimulate_your_creativity
@@ -18,6 +18,6 @@ perspectives:
 - science_fiction
 date: ''
 file: ''
-url: https://www.bdtheque.com/series/769/nausicaa-de-la-vallee-du-vent
+url: https://fr.wikipedia.org/wiki/Nausica%C3%A4_de_la_Vall%C3%A9e_du_Vent_(manga)
 
 ---
