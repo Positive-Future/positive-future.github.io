@@ -3,11 +3,11 @@ lang: FR
 name: 'Le futur des espaces publics : activité physique'
 author: Henriquez, L., Sena, N., Voisin-Bormuth, C., & Wright, H.
 description_en: Modalités d’aménagement des espaces publics pour encourager l’activité
-  physique et l’inclusion sociale. Informatif. Donne accès à diverses contributions
-  et illustrations.
+  physique et l’inclusion sociale. Un rapport détaillé et illustré sur différentes
+  initiatives.
 description_fr: Modalités d’aménagement des espaces publics pour encourager l’activité
-  physique et l’inclusion sociale. Informatif. Donne accès à diverses contributions
-  et illustrations.
+  physique et l’inclusion sociale. Un rapport détaillé et illustré sur différentes
+  initiatives.
 category:
 - think_of_your_ideal_city
 - face_our_challenges_today
