@@ -5,6 +5,7 @@ author: Cerema & Ministère des Transports
 description_en: 'Atelier prospectif « la vie robomobile ». Petits scenarios intéressants
   présentés sous forme de vidéos. '
 description_fr: 'Atelier prospectif « la vie robomobile ». Petits scenarios intéressants
+  sur des questions liées à la mobilité (place des piétons, rôle des plateformes internet...),
   présentés sous forme de vidéos. '
 category:
 - stimulate_your_creativity
