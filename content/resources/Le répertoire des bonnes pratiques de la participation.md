@@ -4,9 +4,9 @@ name: Le répertoire des bonnes pratiques de la participation
 author: 'Communauté de pratiques de la participation – La Compagnie des rêves urbains.
   (n.d.). '
 description_en: Bonnes pratiques pour répondre aux problèmes rencontrés par les techniciens
-  amenés à mettre en place des actions de participation sur le terrain.
+  amenés à mettre en place des actions de participation démocratique sur le terrain.
 description_fr: Bonnes pratiques pour répondre aux problèmes rencontrés par les techniciens
-  amenés à mettre en place des actions de participation sur le terrain.
+  amenés à mettre en place des actions de participation démocratique sur le terrain.
 category:
 - face_our_challenges_today
 - learn_from_the_past
