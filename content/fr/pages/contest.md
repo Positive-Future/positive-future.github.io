@@ -12,8 +12,7 @@ criterions:
     vision proposée de « la ville en 2100 » seront les principaux critères de sélection.
     La qualité du récit et la capacité de la proposition à susciter l’adhésion et
     de donner des pistes d’action directement exploitables seront également prises
-    en compte. Dans cette rubrique nous vous proposons quelques conseils pour réaliser
-    votre projet
+    en compte.
 
 ---
 ## Qui ?
