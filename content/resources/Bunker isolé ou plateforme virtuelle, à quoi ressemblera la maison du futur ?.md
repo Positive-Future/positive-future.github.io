@@ -4,12 +4,12 @@ name: Bunker isolé ou plateforme virtuelle, à quoi ressemblera la maison du fu
 author: Lahet, J.-F. (Usbek et Rica)
 description_en: 'La maison est désormais un actif numérique configuré et piloté par
   smartphone, elle fait corps avec son habitant. Cette hyper-connexion n''est-elle
-  pas sans risque ? La cybersécurité est citée comme premier frein à l’adoption de
-  ces technologies. '
+  pas risquée ? La cybersécurité est citée comme premier frein à l’adoption de ces
+  technologies. '
 description_fr: 'La maison est désormais un actif numérique configuré et piloté par
   smartphone, elle fait corps avec son habitant. Cette hyper-connexion n''est-elle
-  pas sans risque ? La cybersécurité est citée comme premier frein à l’adoption de
-  ces technologies. '
+  pas risquée ? La cybersécurité est citée comme premier frein à l’adoption de ces
+  technologies. '
 category:
 - face_our_challenges_today
 - think_of_your_ideal_city
