@@ -15,8 +15,13 @@ members:
   '3':
     firstname: Anne
     lastname: Charreyron Perchet
-    bio: '"Smart City" Project Manager at the French General Commission for Sustainable
-      Development (Commissariat général au développement durable).'
+    bio: Urban planner, she is now  an independent consultant after having worked
+      for several years in the French Ministry of Ecological and Solidarity Transition
+      where she was in charge of sustainable cities. Her latest work has focused on
+      issues of urban resilience and innovation. Author of several reports and articles
+      on sustainable urban development, she acts as an expert at the European level
+      in projects related to urban mobility and smart cities. She is a member of the
+      Editorial Board of the journal Futuribles.
   '4':
     firstname: Thierry
     lastname: Gaudin
@@ -77,6 +82,6 @@ members:
       with society and democracy - from the local to the global, from the most distant
       past to the most distant future. In particular, he has published Rethinking
       Cities in the Post-Carbon Society.
-      
+
 ---
 The scientific advisory board offers reliable resources to help participants to build their project. They will also be involved in the first selection of awarded projects.
