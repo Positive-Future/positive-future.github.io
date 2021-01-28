@@ -16,8 +16,14 @@ members:
   '3':
     firstname: Anne
     lastname: Charreyron Perchet
-    bio: Chargée de mission « ville intelligente » au Commissariat général au développement
-      durable
+    bio: Anne Charreyron-Perchet, urbaniste, est aujourd’hui consultante indépendante
+      après avoir travaillé plusieurs années au sein du Ministère français de la Transition
+      Ecologique et Solidaire  où elle était en charge des villes durables. Ses derniers
+      travaux ont principalement porté sur les questions de résilience urbaine et
+      d’innovation. Auteur de plusieurs rapports et articles sur le développement
+      urbain durable, elle intervient  comme expert à l’échelle européenne dans des
+      projets liés à la mobilité urbaine et aux villes intelligentes. Elle fait partie
+      du Comité de rédaction de la revue Futuribles.
   '4':
     firstname: Thierry
     lastname: Gaudin
@@ -81,6 +87,6 @@ members:
       durable - dans leur relation avec la société et la démocratie - du local au
       global , du passé le plus lointain au futur le plus éloigné. Il a notamment
       publié Repenser les villes dans la société post carbone.
-      
+
 ---
 Le Conseil scientifique propose des ressources fiables pour alimenter la réflexion des participants sur l'élaboration de leur projet. Il participera également à la première sélection des lauréats et lauréates.
