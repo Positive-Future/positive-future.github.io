@@ -7,7 +7,11 @@ description_en: 'Alors que les pics de pollution sévissent en France et qu''ils
   pour améliorer la qualité de l''air des grandes cités revêtent une importance cruciale.
   Pour gérer les approvisionnements en eau, en nourriture, pour garantir un air sain
   et évacuer les déchets, il faut penser les villes autrement. '
-description_fr: ''
+description_fr: 'Alors que les pics de pollution sévissent en France et qu''ils sont
+  devenus une habitude dans plusieurs mégalopoles d''Asie, les solutions imaginées
+  pour améliorer la qualité de l''air des grandes cités revêtent une importance cruciale.
+  Pour gérer les approvisionnements en eau, en nourriture, pour garantir un air sain
+  et évacuer les déchets, il faut penser les villes autrement. '
 category:
 - stimulate_your_creativity
 type:
