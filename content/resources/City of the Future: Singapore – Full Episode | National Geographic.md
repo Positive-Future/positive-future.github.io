@@ -12,10 +12,13 @@ category:
 type:
 - Video
 issues:
+- architecture
+- transport
 - housing
 - urban_spatial_planning
-- architecture
 perspectives:
+- foresight_studies
+- policy
 - case_studies
 date: 24/11/2018
 file: ''
