@@ -2,12 +2,10 @@
 lang: EN
 name: New VoloCity Air Taxi Design Released by Urban Air Mobility Pioneer Volocopter
 author: Volocopter
-description_en: Follow Volocopter CCO Christian Bauer as he gives a tour of our full-scale
-  VoloCity air taxi for the very first time! This is will be the first commercially
-  licensed product based on EASA requirement. So, sit back. Relax. And enjoy the tour!
-description_fr: Follow Volocopter CCO Christian Bauer as he gives a tour of our full-scale
-  VoloCity air taxi for the very first time! This is will be the first commercially
-  licensed product based on EASA requirement. So, sit back. Relax. And enjoy the tour!
+description_en: 'Follow Volocopter CCO Christian Bauer as he gives a tour of our full-scale
+  VoloCity air taxi for the very first time! '
+description_fr: 'Follow Volocopter CCO Christian Bauer as he gives a tour of our full-scale
+  VoloCity air taxi for the very first time! '
 category:
 - think_of_your_ideal_city
 - stimulate_your_creativity
