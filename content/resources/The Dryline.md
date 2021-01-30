@@ -14,6 +14,8 @@ category:
 type:
 - Video
 issues:
+- urban_spatial_planning
+- democracy_participation
 - environment
 - architecture
 perspectives:
