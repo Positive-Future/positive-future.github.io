@@ -1,7 +1,7 @@
 ---
 lang: EN
 name: A Globetrotting Filmmaker, Seeking Answers About Our Urban Future
-author: Jessica Leigh Hester
+author: Jessica Leigh Hester (Bloomberg City Lab)
 description_en: "“Is future urbanization going to be a good thing or a bad thing?”
   asks filmmaker Oscar Boyson. “If you care about people,” he adds, “this is going
   to be the defining question of our time.”"
