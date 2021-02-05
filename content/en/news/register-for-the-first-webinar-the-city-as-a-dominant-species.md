@@ -3,7 +3,7 @@ draft: false
 en: []
 fr: []
 title: 'Register for the first webinar: "The City as a Dominant Species?" '
-subtitle: Thursday, February 11th at 6:00 pm
+subtitle: Wednesday, March 3rd at 6:00 pm
 categories:
 - event
 featured: true
@@ -13,11 +13,9 @@ background_color: ''
 ---
 **In addition to the scientific resources available in the Matter for Thought section, the Positive Future team offers scientific events, webinars, and online conferences over the months to feed the thinking of the contest participants.**
 
-![](/image-annonce-webinaire_-en.png)
+**The very first webinar will take place on March 3rd, 2021 from 6 to 8 pm and will be hosted by Fabienne Goux-Baudiment, PhD in prospective.**
 
-**The very first webinar will take place on February 11, 2021 from 6 to 8 pm and will be hosted by Fabienne Goux-Baudiment, PhD in prospective.**
-
-The city is a fascinating object, from any angle: a simple human settlement; a sprawling conurbation; a teeming architectural exhibition; a place of life, work and education; a compendium of history; an ethnographic subject that is constantly being renewed?
+![](/webinaire_3-mars_en.png)The city is a fascinating object, from any angle: a simple human settlement; a sprawling conurbation; a teeming architectural exhibition; a place of life, work and education; a compendium of history; an ethnographic subject that is constantly being renewed?
 
 But what is the city? What is its intimate nature? What is this concordance between it and us humans? Is it only an artefact, a simple construction? Or a reflection of ourselves, of our hopes, our fears, our ambitions; a reflection that would give it a soul? As a Great Transformation (the Green Recovery) is finally being prepared, what place will the city have in it? In what form?
 
