@@ -3,8 +3,9 @@ draft: false
 created: 2021-01-13T14:34:25.000+00:00
 en: content/en/news/my-first-test-article.md
 fr: []
-title: 'Inscrivez-vous au tout premier Webinaire "La Ville, espèce dominante ?" '
-subtitle: Jeudi 11 février à 18 heures
+title: Inscrivez-vous au tout premier Webinaire "La Ville, espèce dominante ? Nature
+  et avenir du phénomène urbain"
+subtitle: Mercredi 3 mars à 18 heures
 categories:
 - event
 featured: true
@@ -14,7 +15,9 @@ background_color: "#F8E71C"
 ---
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
 
-![](/image-annonce-webinaire.png) **Le tout premier webinaire aura lieu le 11 février 2021 de 18h à 20h et sera animé par Fabienne Goux-Baudiment, docteure en prospective.**
+**Le tout premier webinaire aura lieu le 03 mars 2021 de 18h à 20h et sera animé par Fabienne Goux-Baudiment, docteure en prospective.**
+
+![](/webinaire_3-mars_fr.png)
 
 La Ville est un objet fascinant, quel que soit l'angle sous lequel on la regarde : un simple groupement humain (_human settlement_); une conurbation tentaculaire; une foisonnante exposition architecturale; un lieu de vie, de travail et d'éducation; un condensé d'Histoire; un sujet d'ethnographie constamment renouvelé...
 
