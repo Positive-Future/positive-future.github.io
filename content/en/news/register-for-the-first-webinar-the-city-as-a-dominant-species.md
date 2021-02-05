@@ -2,7 +2,7 @@
 draft: false
 en: []
 fr: []
-title: 'Register for the first webinar: "The City, a Dominant Species? Nature and
+title: 'Register for the first webinar: "The City, the Dominant Species? Nature and
   Future of the urban phenomenon"" '
 subtitle: Wednesday, March 3rd at 6:00 pm
 categories:
