@@ -21,19 +21,22 @@ The competition is open to all, regardless of nationality, age or profession.
 
 Proposals can be made individually or in groups.
 
-
 ## When ?
 
 * Official launch of the call for proposals: January 2020
+* Opening of the submission platform: beginning of April 2021
 * Deadline for the submission of proposals: May 31, 2021
 * Awards ceremony: September 2021
 
+## Where ?
+
+Proposals can be submitted on a submission platform which will be accessible from the beginning of April 2021.
 
 ## How ?
 
 Stories can be presented in the following formats:
 
 * **Newspaper articles** : maximum 10,000 characters (including spaces), with the possibility of including illustrations.
-* **News or scenarios** : maximum 20,000 characters (including spaces) 
+* **News or scenarios** : maximum 20,000 characters (including spaces)
 * **Videos or short films** : maximum 10 minutes
 * **Comics and graphic novels** : maximum 15 pages
