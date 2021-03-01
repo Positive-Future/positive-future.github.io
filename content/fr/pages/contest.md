@@ -21,21 +21,22 @@ Le concours est ouvert à toutes et à tous, quels que soient la nationalité, l
 
 Les propositions peuvent être réalisées individuellement ou en groupe.
 
-
-
 ## Quand ?
 
 * Lancement de l’appel : Janvier 2020
+* Ouverture de la plateforme de dépôt : début Avril 2021
 * Date limite de dépôt des propositions : 31 mai 2021
 * Remise des prix à Paris : Septembre 2021
 
+## Où ?
 
+Les propositions pourront être déposées sur une plateforme de dépôt qui sera accessible à partir de début Avril 2021. 
 
 ## Comment ?
 
 Les récits peuvent se présenter sous les formats suivants :
 
-* **Articles de journal** : maximum 10.000 signes (espaces compris), avec la possibilité d’intégrer des illustrations 
+* **Articles de journal** : maximum 10.000 signes (espaces compris), avec la possibilité d’intégrer des illustrations
 * **Nouvelles ou scénarios** : maximum 20.000 signes (espaces compris)
 * **Vidéos ou courts-métrages** : maximum 10 minutes
 * **Bandes dessinées, romans graphiques** : maximum 15 pages
