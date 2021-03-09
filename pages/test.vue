@@ -1,29 +1,34 @@
 <template>
   <div>
-    <section
-      style="background-color: #fff1d0; padding-bottom: 80px"
-      :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
-    >
+    <section style="background-color: #fff1d0">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="mt-6 mb-4">
+          <h1 class="mb-8 mt-12">
             {{ $t('form.application.title') }}
           </h1>
         </v-col>
       </v-row>
     </section>
-    <section>
+    <section :class="{ 'px-3': $vuetify.breakpoint.smAndDown }">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <v-form
             ref="form"
             v-model="valid"
             class="mt-6"
+            enctype="multipart/form-data"
             @submit.prevent="submit(submit)"
           >
             <v-row no-gutters>
-              <!-- FIRSTNAME -->
               <v-col cols="12">
+                <v-alert
+                  v-show="baseForm.description.length > 0"
+                  text
+                  border="left"
+                >
+                  <div>{{ $t('form.application.contact') }}</div>
+                </v-alert>
+                <!-- FIRSTNAME -->
                 <div class="overline">
                   {{ $t('form.application.firstname') }}
                   <v-tooltip bottom>
@@ -83,10 +88,11 @@
                   outlined
                 ></v-text-field>
               </v-col>
-              <!-- FORMAT -->
+
+              <!-- TITLE -->
               <v-col cols="12">
                 <div class="overline">
-                  {{ $t('form.application.format.title') }}
+                  {{ $t('form.application.work_title') }}
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on }">
                       <v-icon small color="red" v-on="on">
@@ -96,12 +102,33 @@
                     {{ $t('form.mandatory') }}
                   </v-tooltip>
                 </div>
-                <v-select
-                  v-model="baseForm.type"
-                  :items="formats"
-                  :rules="typeRules"
+                <v-text-field
+                  v-model="baseForm.title"
+                  :counter="85"
+                  :rules="titleRules"
                   outlined
-                ></v-select>
+                ></v-text-field>
+              </v-col>
+              <!-- DESCRIPTION -->
+              <v-col cols="12">
+                <div class="overline">
+                  {{ $t('form.application.description') }}
+                </div>
+                <v-expand-transition>
+                  <v-alert
+                    v-show="baseForm.description.length > 0"
+                    text
+                    border="left"
+                  >
+                    <div>{{ $t('form.application.description_alt') }}</div>
+                  </v-alert>
+                </v-expand-transition>
+                <v-textarea
+                  v-model="baseForm.description"
+                  :rules="descriptionRules"
+                  :counter="500"
+                  outlined
+                ></v-textarea>
               </v-col>
               <!-- TEAM -->
               <v-col cols="12">
@@ -144,10 +171,10 @@
                   ></template>
                 </v-list>
               </v-col>
-              <!-- TITLE -->
+              <!-- FORMAT -->
               <v-col cols="12">
                 <div class="overline">
-                  {{ $t('form.application.work_title') }}
+                  {{ $t('form.application.format.title') }}
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on }">
                       <v-icon small color="red" v-on="on">
@@ -157,33 +184,12 @@
                     {{ $t('form.mandatory') }}
                   </v-tooltip>
                 </div>
-                <v-text-field
-                  v-model="baseForm.title"
-                  :counter="85"
-                  :rules="titleRules"
+                <v-select
+                  v-model="baseForm.type"
+                  :items="formats"
+                  :rules="typeRules"
                   outlined
-                ></v-text-field>
-              </v-col>
-              <!-- DESCRIPTION -->
-              <v-col cols="12">
-                <div class="overline">
-                  {{ $t('form.application.description') }}
-                </div>
-                <v-expand-transition>
-                  <v-alert
-                    v-show="baseForm.description.length > 0"
-                    text
-                    border="left"
-                  >
-                    <div>{{ $t('form.application.description_alt') }}</div>
-                  </v-alert>
-                </v-expand-transition>
-                <v-textarea
-                  v-model="baseForm.description"
-                  :rules="descriptionRules"
-                  :counter="500"
-                  outlined
-                ></v-textarea>
+                ></v-select>
               </v-col>
               <!-- FILE -->
               <v-col cols="12">
@@ -249,26 +255,26 @@
                 </v-text-field>
               </v-col>
               <!-- TOS -->
-              <v-col cols="12">
-                <v-checkbox v-model="agreed" :rules="agreedRules">
-                  <template v-slot:label>
-                    <span class="ml-1">
-                      {{ $t('form.application.agreed') }}
-                      <nuxt-link :to="localePath('/contest/rules')">{{
-                        $t('form.application.agreed_link')
-                      }}</nuxt-link
-                      >{{ $t('form.application.agreed_2') }}
-                      <v-tooltip bottom>
-                        <template v-slot:activator="{ on }">
-                          <v-icon small color="red" v-on="on">
-                            mdi-asterisk
-                          </v-icon>
-                        </template>
-                        {{ $t('form.mandatory') }}
-                      </v-tooltip>
-                    </span>
-                  </template>
+              <v-col cols="12" class="d-inline-flex justify-start">
+                <v-checkbox v-model="agreed" :rules="agreedRules" class="mt-0">
+                  <template v-slot:label> </template>
                 </v-checkbox>
+                <div>
+                  {{ $t('form.application.agreed') }}
+                  <a
+                    :href="'/rules_' + $i18n.locale + '.pdf'"
+                    target="_blank"
+                    >{{ $t('form.application.agreed_link') }}</a
+                  >{{ $t('form.application.agreed_2') }}
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on }">
+                      <v-icon small color="red" v-on="on">
+                        mdi-asterisk
+                      </v-icon>
+                    </template>
+                    {{ $t('form.mandatory') }}
+                  </v-tooltip>
+                </div>
               </v-col>
               <!-- SUBMIT -->
               <v-col class="d-flex justify-end">
@@ -294,6 +300,18 @@
 const url = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/
 const email = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 export default {
+  beforeRouteLeave(to, from, next) {
+    if (!this.hasChanged) return next()
+
+    const answer = window.confirm(
+      'Do you really want to leave? You have unsaved changes!'
+    )
+    if (answer) {
+      next()
+    } else {
+      next(false)
+    }
+  },
   data() {
     return {
       valid: true,
@@ -404,7 +422,7 @@ export default {
             1: '85',
           }),
         (v) =>
-          v.length >= 10 ||
+          v.length >= 2 ||
           this.$t('form.application.validation.moreThan', {
             0: this.$t('form.application.title').toLowerCase(),
             1: '2',

@@ -19,7 +19,7 @@
         <v-card-text v-if="!submitting && !error">
           {{ $t('form.application.dialog.text') }}
         </v-card-text>
-        <v-card-text v-if="error">
+        <v-card-text v-if="error && !submitting">
           {{ $t('form.application.dialog.error') }}
         </v-card-text>
         <v-card-text v-if="submitting">

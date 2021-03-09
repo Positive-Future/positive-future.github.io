@@ -170,6 +170,11 @@ export default {
     socialIcons() {
       return [
         {
+          url: 'https://www.linkedin.com/company/futurpositif',
+          text: this.$t('misc.social.linkedin'),
+          icon: 'linkedin',
+        },
+        {
           url: 'https://www.instagram.com/futurpositif/',
           text: this.$t('misc.social.instagram'),
           icon: 'instagram',

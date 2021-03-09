@@ -53,7 +53,36 @@
         </v-col>
       </v-row>
     </section>
-    <section style="background-color: #c9f8f3">
+    <section>
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6">
+          <v-row>
+            <v-col cols="12" sm="9">
+              <v-card
+                color="#4FD4C7"
+                class="px-6 pt-6 pb-8"
+                style="margin-bottom: -60px"
+                flat
+                href="http://eepurl.com/hgbB6f"
+                target="_blank"
+                :class="{ 'ml-n6': $vuetify.breakpoint.mdAndUp }"
+              >
+                <div class="d-inline-flex justify-center align-center">
+                  <v-icon x-large class="rotate-24 mr-6" color="black"
+                    >mdi-email</v-icon
+                  >
+                  <div class="subtitle">
+                    {{ $t('misc.ui.subscribe3') }}
+                  </div>
+                </div>
+              </v-card>
+            </v-col></v-row
+          >
+        </v-col></v-row
+      >
+    </section>
+
+    <section style="background-color: #c9f8f3; padding-top: 80px">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <h1 class="mb-3">{{ $t('navigation.news') }}</h1>

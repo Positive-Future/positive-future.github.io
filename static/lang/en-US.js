@@ -100,9 +100,11 @@ export default () => {
           description: 'Work description',
           file: 'Your file',
           browse: 'Browse your files',
+          contact:
+            'Please indicate a contact. If you are in a group, please indicate a single contact for the whole group.',
           url: 'File URL',
           thank_you:
-            'Thank you for submitting your project to the Positive Future contest!',
+            'Thank you for submitting your work to the Positive Future contest!',
           back_to_home: 'Go back to Positive Future homepage',
 
           description_alt:
@@ -159,6 +161,7 @@ export default () => {
           twitter: 'Follow us on Twitter',
           youtube: 'Discover our Youtube channel',
           instagram: 'Our Instagram page',
+          linkedin: 'Get in touch with us on linkedin',
         },
         ui: {
           or: 'Or',
@@ -170,6 +173,8 @@ export default () => {
           subscribe: 'Subscribe to the newsletter',
           subscribe2:
             'Subscribe to the newsletter and stay in touch with every update!',
+          subscribe3:
+            'You are interested in this contest? Click here to subscribe to our newsletter!',
           accept: 'Accept',
           more: 'See more',
           news_intro:
