@@ -472,25 +472,39 @@ export default {
   },
   mounted() {},
   methods: {
-    async submit() {
+    submit() {
       console.log('submit')
       this.$refs.form.validate()
       if (this.valid) {
         console.log(this.baseForm)
 
         this.submitting = true
-        const data = new FormData()
+        /*   const data = new FormData()
         Object.keys(this.baseForm).forEach((key) =>
           data.append(key, this.baseForm[key])
-        )
+        ) */
         try {
+          const data = new FormData(his.baseForm)
+          const xhr = new XMLHttpRequest()
+          xhr.open('POST', this.action)
+          xhr.setRequestHeader('Accept', 'application/json')
+          xhr.onreadystatechange = () => {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return
+            if (xhr.status === 200) {
+              console.log('SUCCESS')
+            } else {
+              console.log('ERROR')
+            }
+          }
+          xhr.send(data)
           /* this.$axios.setHeader('content-type', 'multipart/form-data') */
-          await this.$axios.$post(this.action, data, {
+          /*   await this.$axios.$post(this.action, data, {
             headers: {
               'content-type': 'multipart/form-data',
               'Access-Control-Allow-Origin': 'http://www.positive-future.org',
+              Vary: 'Origin',
             },
-          })
+          }) */
           this.error = false
           this.submitting = false
           this.uploaded = true
