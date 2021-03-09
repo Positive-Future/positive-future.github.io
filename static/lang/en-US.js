@@ -87,6 +87,66 @@ export default () => {
           work: 'Work',
         },
       },
+      form: {
+        mandatory: 'This field is required',
+        submit: 'Complete application',
+        application: {
+          title: 'Submit your work',
+          firstname: 'Firstname',
+          lastname: 'Name',
+          email: 'Email',
+          work_title: 'Work title',
+          team: 'Names of the participant(s)',
+          description: 'Work description',
+          file: 'Your file',
+          browse: 'Browse your files',
+          url: 'File URL',
+          thank_you:
+            'Thank you for submitting your project to the Positive Future contest!',
+          back_to_home: 'Go back to Positive Future homepage',
+
+          description_alt:
+            'Present in a few lines your work, your inspirations, possibly the resources used. Remember! You must indicate any use of a pre-existing original work or the participation of a third party in the submitted work',
+          format: {
+            title: 'Format',
+            article: 'Newspaper article',
+            novel: 'Short novel/Scenarios',
+            video: 'Video/Short film',
+            comic: 'Comics/Graphic novel',
+          },
+          dialog: {
+            title: 'Confirm your application',
+            text:
+              ' Your application is definitive and can not be edited once it has been submitted. If you made sure that you provided all the correct information, click on the submit button',
+            submit: 'Submit',
+            submitting: 'Uploading your application',
+            error:
+              'Your application upload failed. Please try again or contact us',
+            cancel: 'Cancel',
+          },
+          article_hint:
+            'Remember! Maximum 10,000 characters (including spaces), with the possibility of including illustrations.',
+          novel_hint:
+            'Remember! Maximum 20,000 characters (including spaces). ',
+          video_hint: 'Remember! It must be maximum 10 minute-long.',
+          comic_hint: 'Remember! It is maximum 15 page-long.',
+          agreed: 'I certify that I have read the ',
+          agreed_link: 'rules of the Positive Future competition',
+          agreed_2: ' and agree to the terms and conditions of participation.',
+          validation: {
+            moreThan: 'The {0} field must be more than {1} characters',
+            lessThan: 'The {0} field must be less than {1} characters',
+            required: 'The {0} field is required',
+            invalid: 'The {0} field is invalid',
+            tos: 'You must agree to the terms of use to proceed',
+            url: 'A file URL is required if you do not provide a file directly',
+            file: 'A file is required if you do not provide a file URL',
+            fileSize: 'The maximum size allowed for files is 2GB (2000 MB)',
+          },
+          add_team: 'Add a team member',
+          remove_team: 'Remove this team member',
+        },
+      },
       misc: {
         languages: {
           fr: 'French',
@@ -101,6 +161,7 @@ export default () => {
           instagram: 'Our Instagram page',
         },
         ui: {
+          or: 'Or',
           theme: 'Theme',
           contact_us: 'Contact us',
           maintained: 'This website is maintained by',

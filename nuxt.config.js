@@ -167,6 +167,7 @@ export default {
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
     '@nuxt/content',
+    '@nuxtjs/axios',
     [
       'nuxt-i18n',
       {

@@ -88,6 +88,70 @@ export default () => {
           work: 'Emploi, travail',
         },
       },
+      form: {
+        mandatory: 'Ce champ est requis',
+        submit: 'Soumettre ma candidature',
+        application: {
+          title: 'Soumettez votre candidature',
+          firstname: 'Prénom',
+          lastname: 'Nom',
+          email: 'Email',
+          work_title: "Titre de l'oeuvre",
+          team: 'Nom du ou des participant-e-s',
+          description: "Description de l'oeuvre",
+          file: 'Votre fichier',
+          browse: 'Parcourir vos fichiers',
+          url: 'URL du fichier',
+          thank_you:
+            'Merci pour votre candidature au concours Positive Future! ',
+          back_to_home: "Revenir à la page d'accueil",
+
+          description_alt:
+            "Présentez votre travail en quelques lignes, vos inspirations et les ressources que vous avez peut-être utilisé. Souvenez vous! Vous êtes tenu d'indiquer  tout usage d'une oeuvre originale déjà existante ou la participation d'un tiers dans la création de l'oeuvre proposée",
+          format: {
+            title: "Type d'oeuvre",
+            article: 'Article de journal',
+            novel: 'Scénario ou nouvelle',
+            video: 'Film/court-métrage',
+            comic: 'Bande dessinée/Roman graphique',
+          },
+          dialog: {
+            title: 'Confirmez votre candidature',
+            text:
+              'Votre candidature est définitive et ne peut pas être modifiée une fois qu\'elle a été envoyée. Si vous vous êtes assuré(e) d\'avoir fourni des informations correctes, cliquez sur le bouton "Soumettre ma candidature"',
+            submit: 'Soumettre ma candidature',
+            submitting: 'Envoi en cours',
+            error:
+              'Un erreur est survenue. Merci de réessayer ou de nous contacter.',
+            cancel: 'Annuler',
+          },
+          article_hint:
+            "Souvenez vous! Maximum 10,000 caractères (espaces compris), avec la possibilité d'inclure des illustrations.",
+          novel_hint:
+            'Souvenez vous! Maximum 20,000 caractères (espaces compris). ',
+          video_hint:
+            'Souvenez vous! La durée maximum autorisée est de 10 linutes',
+          agreed: 'Je certifie avoir lu les ',
+          agreed_link: 'règles du concours Positive Future',
+          agreed_2: ' et accepte les termes et conditions de participation',
+          validation: {
+            moreThan: 'Le champ {0} doit faire plus de {1} caractères.',
+            lessThan: 'Le champ {0} doit faire moins de {1} caractères',
+            required: 'Le champ {0} est requis',
+            invalid: 'Le champ {0} est invalide',
+            tos:
+              "Vous devez accepter les termes et conditions d'usage pour continuer",
+            url:
+              'Une URL de fichier est nécessaire si vous ne fournissez pas le fichier directement',
+            file:
+              'Un fichier est requis si vous ne fournissez pas une URL de fichier.',
+            fileSize:
+              'La taille de fichiers maximale autorisée est de 2Go (2000 Mo)',
+          },
+          add_team: "Ajouter un membre de l'équipe",
+          remove_team: "Retirer ce membre de l'équipe",
+        },
+      },
       misc: {
         languages: {
           fr: 'Français',
