@@ -484,7 +484,7 @@ export default {
           data.append(key, this.baseForm[key])
         ) */
         try {
-          const data = new FormData(his.baseForm)
+          const data = new FormData(this.baseForm)
           const xhr = new XMLHttpRequest()
           xhr.open('POST', this.action)
           xhr.setRequestHeader('Accept', 'application/json')
