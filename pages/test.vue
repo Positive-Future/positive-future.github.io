@@ -17,6 +17,7 @@
             v-model="valid"
             class="mt-6"
             enctype="multipart/form-data"
+            method="POST"
             @submit.prevent="submit(submit)"
           >
             <v-row no-gutters>
