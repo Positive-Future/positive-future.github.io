@@ -105,7 +105,8 @@ export default () => {
           thank_you:
             'Merci pour votre candidature au concours Positive Future! ',
           back_to_home: "Revenir à la page d'accueil",
-
+          contact:
+            "Veuillez indiquer un contact. Si vous faites partie d'un groupe, veuillez indiquer un seul contact pour l'ensemble du groupe.",
           description_alt:
             "Présentez votre travail en quelques lignes, vos inspirations et les ressources que vous avez peut-être utilisé. Souvenez vous! Vous êtes tenu d'indiquer  tout usage d'une oeuvre originale déjà existante ou la participation d'un tiers dans la création de l'oeuvre proposée",
           format: {
@@ -126,11 +127,13 @@ export default () => {
             cancel: 'Annuler',
           },
           article_hint:
-            "Souvenez vous! Maximum 10,000 caractères (espaces compris), avec la possibilité d'inclure des illustrations.",
+            "Pour rappel, votre article doit faire maximum 10,000 caractères (espaces compris), avec la possibilité d'inclure des illustrations.",
           novel_hint:
-            'Souvenez vous! Maximum 20,000 caractères (espaces compris). ',
+            'Pour rappel, votre nouvelle doit faire maximum 20,000 caractères (espaces compris). ',
           video_hint:
-            'Souvenez vous! La durée maximum autorisée est de 10 linutes',
+            'Pour rappel, la durée maximum autorisée est de 10 minutes',
+          comic_hint:
+            'Pour rappel, votre bande dessinée doit faire 15 pages maximum',
           agreed: 'Je certifie avoir lu les ',
           agreed_link: 'règles du concours Positive Future',
           agreed_2: ' et accepte les termes et conditions de participation',
@@ -164,8 +167,10 @@ export default () => {
           twitter: 'Suivez nous sur Twitter',
           youtube: 'Découvrez notre chaîne Youtube',
           instagram: 'Notre page Instagram',
+          linkedin: 'Retrouvez nous sur Linkedin',
         },
         ui: {
+          or: 'Ou',
           theme: 'Thème',
           contact_us: 'Contactez nous',
           maintained: 'Ce site est géré par ',
@@ -174,6 +179,8 @@ export default () => {
           subscribe: "S'inscrire à la newsletter",
           subscribe2:
             'Inscrivez-vous à la newsletter et restez informé de toutes les actualités du concours !',
+          subscribe3:
+            'Vous êtes intéressé par le concours ? Cliquez ici pour vous inscrire à la newsletter!',
           accept: 'Accepter',
           more: 'Voir plus',
           news_intro:
