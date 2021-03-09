@@ -260,7 +260,7 @@
                 <v-checkbox v-model="agreed" :rules="agreedRules" class="mt-0">
                   <template v-slot:label> </template>
                 </v-checkbox>
-                <div>
+                <div @click="agreed = !agreed">
                   {{ $t('form.application.agreed') }}
                   <a
                     :href="'/rules_' + $i18n.locale + '.pdf'"
@@ -488,6 +488,7 @@ export default {
           await this.$axios.$post(this.action, data, {
             headers: {
               'content-type': 'multipart/form-data',
+              'Access-Control-Allow-Origin': 'http://www.positive-future.org',
             },
           })
           this.error = false
