@@ -487,6 +487,7 @@ export default {
           /* this.$axios.setHeader('content-type', 'multipart/form-data') */
           await this.$axios.$post(this.action, data, {
             headers: {
+              Accept: 'application/json',
               'content-type': 'multipart/form-data',
             },
           })
