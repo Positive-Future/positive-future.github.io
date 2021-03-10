@@ -488,9 +488,6 @@ export default {
           await this.$axios.$post(this.action, data, {
             headers: {
               'content-type': 'multipart/form-data',
-              'Access-Control-Allow-Origin': 'http://www.positive-future.org',
-              Vary: 'Origin',
-              Accept: 'application/json',
             },
           })
           this.error = false
