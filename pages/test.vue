@@ -490,7 +490,7 @@ export default {
             headers: {
               Accept: 'application/json',
               'content-type': 'multipart/form-data',
-              'Access-Control-Allow-Origin': 'https://www.positive-future.org',
+              'referrer-policy': 'strict-origin-when-cross-origin',
             },
           })
           this.error = false
