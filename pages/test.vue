@@ -18,6 +18,7 @@
             class="mt-6"
             enctype="multipart/form-data"
             method="POST"
+            :action="action"
             @submit.prevent="submit(submit)"
           >
             <v-row no-gutters>
@@ -489,6 +490,7 @@ export default {
             headers: {
               Accept: 'application/json',
               'content-type': 'multipart/form-data',
+              'Access-Control-Allow-Origin': 'https://www.positive-future.org',
             },
           })
           this.error = false
