@@ -486,13 +486,7 @@ export default {
         )
         try {
           /* this.$axios.setHeader('content-type', 'multipart/form-data') */
-          await this.$axios.$post(this.action, data, {
-            headers: {
-              Accept: 'application/json',
-              'content-type': 'multipart/form-data',
-              'referrer-policy': 'strict-origin-when-cross-origin',
-            },
-          })
+          await this.$axios.$post(this.action, data)
           this.error = false
           this.submitting = false
           this.uploaded = true
