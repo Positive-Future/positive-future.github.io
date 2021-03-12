@@ -148,8 +148,7 @@ export default () => {
               'Une URL de fichier est nécessaire si vous ne fournissez pas le fichier directement',
             file:
               'Un fichier est requis si vous ne fournissez pas une URL de fichier.',
-            fileSize:
-              'La taille de fichiers maximale autorisée est de 2Go (2000 Mo)',
+            fileSize: 'La taille de fichiers maximale autorisée est 25Mo.',
           },
           add_team: "Ajouter un membre de l'équipe",
           remove_team: "Retirer ce membre de l'équipe",
