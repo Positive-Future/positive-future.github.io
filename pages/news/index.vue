@@ -90,11 +90,14 @@ export default {
   async asyncData({ app, $content }) {
     const news = await $content(app.i18n.locale + '/news')
       .where({ draft: false })
-      .sortBy('created')
       .fetch()
 
     return {
-      news,
+      news: news.sort(function (a, b) {
+        // Turn your strings into dates, and then subtract them
+        // to get a value that is either negative, positive, or zero.
+        return new Date(b.createdAt) - new Date(a.createdAt)
+      }),
     }
   },
   data() {
