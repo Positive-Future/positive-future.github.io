@@ -80,6 +80,11 @@ fields:
       path: 
   label: French version
   description: Only if it is an EN news
+- name: file
+  type: file
+  config:
+    maxSize: 64
+  label: File
 pages:
 - content/en/news/how-to-help-you-before-you-apply.md
 - content/en/news/interview-with-the-organizers.md
