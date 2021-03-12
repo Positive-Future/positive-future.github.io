@@ -3,7 +3,7 @@ draft: false
 en: []
 fr: []
 title: Interview with the organizers
-subtitle: 'Saadi Lahlou et Jean-Eric Aubert vous expliquent tout ! '
+subtitle: 'Saadi Lahlou and Jean-Eric Aubert explain everything! '
 categories:
 - other
 featured: true
