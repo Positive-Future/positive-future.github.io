@@ -33,6 +33,11 @@
         </v-card-subtitle>
         <v-divider></v-divider>
         <v-card-text>
+          <YoutubeEmbedded
+            v-if="post.youtube_video_id"
+            :yt="post.youtube_video_id"
+            class="mb-9"
+          ></YoutubeEmbedded>
           <nuxt-content :document="post" />
         </v-card-text>
       </v-card>
@@ -44,6 +49,7 @@ export default {
   async asyncData({ app, $content, params }) {
     /*   const alterlang = app.i18n.locale === 'en' ? 'fr' : 'en' */
     const post = await $content(app.i18n.locale + '/news', params.slug).fetch()
+    console.log('post: ', post)
     /*  const newSlug = post[alterlang].split('/')[3].split('.')[0]
     
     const alterPost = await $content(alterlang + '/news', newSlug).fetch()
