@@ -164,6 +164,7 @@ export default () => {
           linkedin: 'Get in touch with us on linkedin',
         },
         ui: {
+          download: 'Download the attached file',
           or: 'Or',
           theme: 'Theme',
           contact_us: 'Contact us',
