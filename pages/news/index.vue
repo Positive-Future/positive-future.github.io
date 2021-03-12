@@ -90,7 +90,7 @@ export default {
   async asyncData({ app, $content }) {
     const news = await $content(app.i18n.locale + '/news')
       .where({ draft: false })
-      .sortBy('createdAt')
+      .sortBy('created')
       .fetch()
 
     return {
