@@ -31,6 +31,19 @@
         <v-card-subtitle>
           {{ post.subtitle }}
         </v-card-subtitle>
+        <v-chip
+          v-if="post.file"
+          class="ma-2"
+          link
+          :href="post.file"
+          :to="post.file"
+          target="_blank"
+        >
+          <v-avatar left>
+            <v-icon>mdi-paperclip</v-icon>
+          </v-avatar>
+          {{ $t('misc.ui.download') }}
+        </v-chip>
         <v-divider></v-divider>
         <v-card-text>
           <YoutubeEmbedded
@@ -50,6 +63,7 @@ export default {
     /*   const alterlang = app.i18n.locale === 'en' ? 'fr' : 'en' */
     const post = await $content(app.i18n.locale + '/news', params.slug).fetch()
     console.log('post: ', post)
+
     /*  const newSlug = post[alterlang].split('/')[3].split('.')[0]
     
     const alterPost = await $content(alterlang + '/news', newSlug).fetch()

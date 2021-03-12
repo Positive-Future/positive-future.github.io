@@ -169,6 +169,7 @@ export default () => {
           linkedin: 'Retrouvez nous sur Linkedin',
         },
         ui: {
+          download: 'Téléchargez le fichier joint',
           or: 'Ou',
           theme: 'Thème',
           contact_us: 'Contactez nous',
