@@ -437,7 +437,7 @@ export default {
           this.$t('form.application.validation.file'),
         (v) =>
           !v ||
-          v.size < 250000 ||
+          v.size < 25000000 ||
           this.$t('form.application.validation.fileSize'),
       ],
       urlRules: [
