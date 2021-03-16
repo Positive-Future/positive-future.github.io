@@ -10,16 +10,15 @@ description_en: Milan and Seoul are considered by many as pioneering examples of
   are also able to benefit the economy, environment, and society.
 description_fr: ''
 category:
-- stimulate_your_creativity
+- face_our_challenges_today
 - imagine_a_far_away_future
 type:
 - Article
 issues:
+- government_local_and_national
 - economy_trade
 - environment
 - urban_spatial_planning
-- housing
-- architecture
 perspectives:
 - case_studies
 date: "2019"
