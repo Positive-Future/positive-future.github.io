@@ -17,6 +17,7 @@ category:
 type:
 - Video
 issues:
+- food
 - urban_spatial_planning
 - economy_trade
 - culture
