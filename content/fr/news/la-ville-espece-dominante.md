@@ -8,7 +8,7 @@ title: Inscrivez-vous au tout premier Webinaire "La Ville, espèce dominante ? N
 subtitle: Mercredi 3 mars à 18 heures
 categories:
 - event
-featured: true
+featured: false
 image: "/darcey-beau-q8d7wzc40ea-unsplash.jpg"
 background_color: "#F8E71C"
 
