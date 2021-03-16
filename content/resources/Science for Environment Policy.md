@@ -15,6 +15,7 @@ category:
 type:
 - Article
 issues:
+- economy_trade
 - environment
 - urban_spatial_planning
 - housing
