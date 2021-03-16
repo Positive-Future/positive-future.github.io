@@ -15,8 +15,7 @@ description_fr: About 10,000 years ago, hunter-gatherers, aided by rudimentary a
 category:
 - learn_from_the_past
 type:
-- Drawing
-- Article
+- Video
 issues:
 - urban_spatial_planning
 - economy_trade
