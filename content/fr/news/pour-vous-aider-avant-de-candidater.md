@@ -10,7 +10,7 @@ categories:
 featured: true
 image: "/actu-2.png"
 background_color: ''
-
+file: ''
 ---
 Parce que nous pensons qu’il est important que les candidats se nourrissent de l’état actuel des savoirs scientifiques pour proposer leur récit d’une ville désirable et réaliste en 2100, l’équipe de Positive Future et son conseil scientifique mettent à votre disposition une base de ressources thématisée.
 

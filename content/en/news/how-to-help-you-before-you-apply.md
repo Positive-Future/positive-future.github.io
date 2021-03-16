@@ -9,6 +9,7 @@ categories:
 featured: true
 image: "/actu-2.png"
 background_color: ''
+file: ''
 
 ---
 Because we believe that it is important for candidates to draw on the current state of scientific knowledge to propose their story of a desirable and realistic city in 2100, the Positive Future team and its scientific board provide a thematic resource base.

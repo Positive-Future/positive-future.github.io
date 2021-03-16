@@ -11,7 +11,6 @@ image: "/victor-garcia-ndk_3biaghc-unsplash.jpg"
 youtube_video_id: ''
 background_color: ''
 file: ''
-
 ---
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
 
