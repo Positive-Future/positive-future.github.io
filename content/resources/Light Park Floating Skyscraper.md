@@ -18,6 +18,7 @@ issues:
 - housing
 - architecture
 perspectives:
+- magazine
 - foresight_studies
 date: "2013"
 file: ''
