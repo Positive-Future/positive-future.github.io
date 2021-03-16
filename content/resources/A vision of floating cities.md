@@ -6,7 +6,10 @@ description_en: By the end of this century, sea levels could rise worldwide by 3
   or more, inundating coastal cities and spurring catastrophic storms roughly every
   three years. To cope with rising sea levels, African architect suggests building
   on the water.
-description_fr: ''
+description_fr: By the end of this century, sea levels could rise worldwide by 3 feet
+  or more, inundating coastal cities and spurring catastrophic storms roughly every
+  three years. To cope with rising sea levels, African architect suggests building
+  on the water.
 category:
 - stay_positive
 - face_our_challenges_today
