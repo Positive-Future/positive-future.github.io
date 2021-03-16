@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 en: []
 fr: []
 title: Réinstaller la ville à la campagne ?
