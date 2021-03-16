@@ -8,7 +8,12 @@ description_en: The Light Park Floating Skyscraper, designed by Ting Xu & Yiming
   of green and recreation space scarcity within the world’s major urban centers, Light
   Park proposes a floating multi-platform for a plurality of functions, including
   parks, green houses, sports fields, restaurants, and exhibition spaces.
-description_fr: ''
+description_fr: The Light Park Floating Skyscraper, designed by Ting Xu & Yiming Chen
+  and winner of 3rd place in eVolo’s 2013 Skyscraper competition, is a brilliant and
+  optimistic proposal for a brighter, more care-free future. Addressing the problem
+  of green and recreation space scarcity within the world’s major urban centers, Light
+  Park proposes a floating multi-platform for a plurality of functions, including
+  parks, green houses, sports fields, restaurants, and exhibition spaces.
 category:
 - stimulate_your_creativity
 - imagine_a_far_away_future
