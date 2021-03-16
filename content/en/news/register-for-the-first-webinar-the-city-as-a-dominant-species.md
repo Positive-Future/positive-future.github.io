@@ -7,9 +7,11 @@ title: 'Register for the first webinar: "The City, the Dominant Species? Nature 
 subtitle: Wednesday, March 3rd at 6:00 pm
 categories:
 - event
-featured: true
+featured: false
 image: "/darcey-beau-q8d7wzc40ea-unsplash.jpg"
 background_color: ''
+youtube_video_id: ''
+file: ''
 
 ---
 **In addition to the scientific resources available in the Matter for Thought section, the Positive Future team offers scientific events, webinars, and online conferences over the months to feed the thinking of the contest participants.**
