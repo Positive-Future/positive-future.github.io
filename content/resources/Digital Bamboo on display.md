@@ -5,7 +5,9 @@ author: Schmid, Franziska
 description_en: Students at ETH Zurich used innovative technology to create an extremely
   lightweight and filigree pavilion using bamboo. The project demonstrates the possibilities
   of digital fabrication combined with natural construction materials.
-description_fr: ''
+description_fr: Students at ETH Zurich used innovative technology to create an extremely
+  lightweight and filigree pavilion using bamboo. The project demonstrates the possibilities
+  of digital fabrication combined with natural construction materials.
 category:
 - face_our_challenges_today
 - stimulate_your_creativity
