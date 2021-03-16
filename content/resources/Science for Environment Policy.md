@@ -8,7 +8,11 @@ description_en: Milan and Seoul are considered by many as pioneering examples of
   and concludes that they have both laid the right foundations for a sharing economy
   to develop. The researchers propose that while such economies carry risks, they
   are also able to benefit the economy, environment, and society.
-description_fr: ''
+description_fr: Milan and Seoul are considered by many as pioneering examples of cities
+  in promoting a sharing economy.A newstudy has analysed governance in these two cities,
+  and concludes that they have both laid the right foundations for a sharing economy
+  to develop. The researchers propose that while such economies carry risks, they
+  are also able to benefit the economy, environment, and society.
 category:
 - face_our_challenges_today
 - imagine_a_far_away_future
