@@ -27,6 +27,10 @@ Mais qu'est-ce que la ville ? Quelle est sa nature intime ? Quelle est cette con
 
 **_Fabienne Goux-Baudiment_** _est docteur en sciences sociales. Elle a fondé proGective - centre d’étude, de recherche et de conseil en prospective en 1995, a présidé la World Futures Studies Federation ainsi que la Société Française de Prospective, et a occupé la Chaire de Prospective, Innovation et Capital Immatériel de Polytech Angers comme professeure associée. Conférencière internationale, ses travaux de recherche, après la_ ‘Grande Transition’, _se portent aujourd'hui sur le modèle de développement X.0._
 
+**REVOIR LE WEBINAIRE**
+
+[https://youtu.be/F--31RpjIDM](https://youtu.be/F--31RpjIDM "https://youtu.be/F--31RpjIDM")
+
 ***
 
 Retrouvez la présentation de Fabienne Goux-Baudiment : [https://bit.ly/3qcQDwZ](https://bit.ly/3qcQDwZ "https://bit.ly/3qcQDwZ")
