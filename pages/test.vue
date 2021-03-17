@@ -481,9 +481,13 @@ export default {
 
         this.submitting = true
         const data = new FormData()
-        Object.keys(this.baseForm).forEach((key) =>
-          data.append(key, this.baseForm[key])
-        )
+        Object.keys(this.baseForm).forEach((key) => {
+          if (data.key === 'team') {
+            data.append(key, JSON.stringify(this.baseForm[key]))
+          } else {
+            data.append(key, this.baseForm[key])
+          }
+        })
         try {
           /* this.$axios.setHeader('content-type', 'multipart/form-data') */
           await this.$axios.$post(this.action, data)
