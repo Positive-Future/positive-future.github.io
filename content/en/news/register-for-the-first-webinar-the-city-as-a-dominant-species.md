@@ -3,7 +3,7 @@ draft: false
 en: []
 fr: []
 title: 'Review the first webinar: "The City, the Dominant Species? Nature and Future
-  of the urban phenomenon"" '
+  of the urban phenomenon"'
 subtitle: by Fabienne Goux-Baudiment
 categories:
 - event
