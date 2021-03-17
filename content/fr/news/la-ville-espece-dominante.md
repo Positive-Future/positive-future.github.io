@@ -30,5 +30,4 @@ Mais qu'est-ce que la ville ? Quelle est sa nature intime ? Quelle est cette con
 
 ***
 
-La vidéo du webinaire sera prochainement en ligne !  
-Retrouvez la présentation ici : [https://bit.ly/3qcQDwZ](https://bit.ly/3qcQDwZ "https://bit.ly/3qcQDwZ")
+Retrouvez la présentation de Fabienne Goux-Baudiment : [https://bit.ly/3qcQDwZ](https://bit.ly/3qcQDwZ "https://bit.ly/3qcQDwZ")
