@@ -1,12 +1,12 @@
 ---
-draft: false
+draft: true
 en: []
 fr: []
 title: Relocating the city to the country
 subtitle: Second webinar on April 8th
 categories:
 - event
-featured: false
+featured: true
 image: "/victor-garcia-ndk_3biaghc-unsplash.jpg"
 youtube_video_id: ''
 background_color: ''
