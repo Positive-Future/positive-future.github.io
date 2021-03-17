@@ -3,19 +3,20 @@ draft: false
 created: 2021-01-13T14:34:25.000+00:00
 en: content/en/news/my-first-test-article.md
 fr: []
-title: Inscrivez-vous au tout premier Webinaire "La Ville, espèce dominante ? Nature
-  et avenir du phénomène urbain"
-subtitle: Mercredi 3 mars à 18 heures
+title: Revoir le tout premier Webinaire "La Ville, espèce dominante ? Nature et avenir
+  du phénomène urbain"
+subtitle: par Fabienne Goux-Baudiment
 categories:
 - event
 featured: false
 image: "/darcey-beau-q8d7wzc40ea-unsplash.jpg"
 background_color: "#F8E71C"
 file: "/prezi_compressed.pdf"
+
 ---
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
 
-**Le tout premier webinaire aura lieu le 03 mars 2021 de 18h à 20h et sera animé par Fabienne Goux-Baudiment, docteure en prospective.**
+**Pour ceux qui n'ont pu y assister, vous avez la possibilité de revoir le tout premier webinaire du 3 mars, animé par Fabienne Goux-Baudiment, docteure en prospective.**
 
 ![](/webinaire_3-mars_fr.png)
 
@@ -27,5 +28,5 @@ Mais qu'est-ce que la ville ? Quelle est sa nature intime ? Quelle est cette con
 
 ***
 
-La vidéo du webinaire sera prochainement en ligne !   
-En attendant retrouvez la présentation ici : [https://bit.ly/3qcQDwZ](https://bit.ly/3qcQDwZ "https://bit.ly/3qcQDwZ")
+La vidéo du webinaire sera prochainement en ligne !  
+Retrouvez la présentation ici : [https://bit.ly/3qcQDwZ](https://bit.ly/3qcQDwZ "https://bit.ly/3qcQDwZ")
