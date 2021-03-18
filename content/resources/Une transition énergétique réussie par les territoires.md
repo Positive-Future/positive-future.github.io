@@ -22,6 +22,7 @@ category:
 type:
 - Article
 issues:
+- environment
 - urban_spatial_planning
 - energy
 perspectives:
