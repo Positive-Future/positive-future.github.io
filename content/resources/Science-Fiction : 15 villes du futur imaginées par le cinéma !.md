@@ -11,6 +11,7 @@ description_fr: L’univers du cinéma explore abondamment la question du futur 
 category:
 - imagine_a_far_away_future
 type:
+- Video
 - Article
 issues:
 - energy
