@@ -22,6 +22,7 @@ category:
 type:
 - Article
 issues:
+- government_local_and_national
 - environment
 - urban_spatial_planning
 - energy
