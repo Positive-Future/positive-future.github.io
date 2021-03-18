@@ -12,6 +12,7 @@ category:
 type:
 - Article
 issues:
+- economy_trade
 - government_local_and_national
 - urban_spatial_planning
 - energy
