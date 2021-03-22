@@ -39,6 +39,7 @@ issues:
 - agriculture_forestry_fishing
 - architecture
 perspectives:
+- magazine
 - foresight_studies
 date: "2021"
 file: ''
