@@ -3,7 +3,10 @@ lang: FR
 name: 'Ils inventent le logement du futur : le "Proto-Habitat" de Flavien Menu et
   Frédérique Barchelard'
 author: France Culture - Art & Création
-description_en: ''
+description_en: Le proto-habitat, c’est un habitat nomade, écologique et modulable.
+  Pour ses architectes, Flavien Menu et Frédérique Barchelard, ce projet utopique
+  rencontre, avec les crises sanitaire, immobilière et environnementale, une singulière
+  actualité.
 description_fr: Le proto-habitat, c’est un habitat nomade, écologique et modulable.
   Pour ses architectes, Flavien Menu et Frédérique Barchelard, ce projet utopique
   rencontre, avec les crises sanitaire, immobilière et environnementale, une singulière
