@@ -2,7 +2,11 @@
 lang: FR
 name: La lettre de l'Ordre n°11
 author: Ordre des architectes
-description_en: ''
+description_en: 'Lettre d''information de l''Ordre des architectes. Contient : "L''architecture
+  au service d''une identité régionale" de Jean-Paul Cassulo, "Smart city ?, smart-cité
+  ?, ville intelligente ?, ville connectée ?, ville numérique ?" de Jean-Paul Battesti,
+  "''Les civilisations meurent par suicide non pas par meurtre'', Arnorld Joseph Toynbee"
+  de Michel Benaïm'
 description_fr: 'Lettre d''information de l''Ordre des architectes. Contient : "L''architecture
   au service d''une identité régionale" de Jean-Paul Cassulo, "Smart city ?, smart-cité
   ?, ville intelligente ?, ville connectée ?, ville numérique ?" de Jean-Paul Battesti,
