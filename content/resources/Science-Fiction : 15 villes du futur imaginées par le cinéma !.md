@@ -2,7 +2,11 @@
 lang: FR
 name: 'Science-Fiction : 15 villes du futur imaginées par le cinéma !'
 author: SciencePost
-description_en: ''
+description_en: L’univers du cinéma explore abondamment la question du futur et permet
+  de communiquer différentes visions de l’évolution de la ville. Ces visions imaginent
+  comment pourraient devenir certaines grandes villes existantes, se basent sur des
+  villes existantes pour en imaginer d’autres ou élaborent carrément des villes entières
+  en partant de rien.
 description_fr: L’univers du cinéma explore abondamment la question du futur et permet
   de communiquer différentes visions de l’évolution de la ville. Ces visions imaginent
   comment pourraient devenir certaines grandes villes existantes, se basent sur des
