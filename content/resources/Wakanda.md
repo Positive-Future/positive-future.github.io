@@ -2,7 +2,10 @@
 lang: FR
 name: Le Wakanda de Black Panther et le rêve de ville africaine
 author: Rubio, Emmanuel
-description_en: ''
+description_en: La ville afro-futuriste de Black Panther, aussi bien que la peau de
+  son superhéros, défait les aprioris et sonne comme une promesse. La ville africaine,
+  avenir du monde, pourquoi pas, après tout ? Mais le présent reste malheureusement
+  plus complexe…
 description_fr: La ville afro-futuriste de Black Panther, aussi bien que la peau de
   son superhéros, défait les aprioris et sonne comme une promesse. La ville africaine,
   avenir du monde, pourquoi pas, après tout ? Mais le présent reste malheureusement
