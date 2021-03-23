@@ -2,7 +2,12 @@
 lang: FR
 name: 'Terra Award : 1er prix mondial des architectures contemporaines en terre crue'
 author: CRAterre-ENSAG
-description_en: ''
+description_en: Du 11 au 14 juillet 2016, sous l’égide de la chaire UNESCO « Architectures
+  de terre, cultures constructives et développement durable », le laboratoire CRAterre-ENSAG
+  organise le congrès mondial Terra 2016. Il accueille à Lyon près de 800 professionnels,
+  enseignants et chercheurs. C’est dans ce cadre qu’a été initié le TERRA Award, suite
+  logique du prix national lancé en France en 2013 par le laboratoire CRAterre-ENSAG,
+  AsTerre et le magazine EcologiK/EK.
 description_fr: Du 11 au 14 juillet 2016, sous l’égide de la chaire UNESCO « Architectures
   de terre, cultures constructives et développement durable », le laboratoire CRAterre-ENSAG
   organise le congrès mondial Terra 2016. Il accueille à Lyon près de 800 professionnels,
