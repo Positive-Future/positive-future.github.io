@@ -17,7 +17,7 @@ criterions:
 ---
 ## Qui ?
 
-Le concours est ouvert à toutes et à tous, quels que soient la nationalité, l’âge ou la profession.
+Le concours est ouvert à toutes et à tous, quels que soient la nationalité ou la profession.
 
 Les propositions peuvent être réalisées individuellement ou en groupe.
 
@@ -30,7 +30,7 @@ Les propositions peuvent être réalisées individuellement ou en groupe.
 
 ## Où ?
 
-Les propositions pourront être déposées sur une plateforme de dépôt qui sera accessible à partir de début Avril 2021. 
+Les propositions pourront être déposées sur une plateforme de dépôt qui sera accessible à partir de début Avril 2021.
 
 ## Comment ?
 
