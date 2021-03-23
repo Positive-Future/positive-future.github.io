@@ -2,7 +2,8 @@
 lang: FR
 name: Faire circuler les éléments de construction
 author: Rotor
-description_en: ''
+description_en: Conférence au pavillon de l'Arsenal, le 19 mars 2018 à Paris dans
+  le cadre de la publication du livre "Déconstruction et réemploi".
 description_fr: Conférence au pavillon de l'Arsenal, le 19 mars 2018 à Paris dans
   le cadre de la publication du livre "Déconstruction et réemploi".
 category:
