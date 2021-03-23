@@ -3,7 +3,10 @@ lang: FR
 name: 'Explorons nos futurs (heureux) : "On a toujours besoin de rêver", « Construire
   des compromis démocratiques »'
 author: Rottner, Jean  & Vergriete, Patrice
-description_en: ''
+description_en: 'Explorons nos futurs (heureux) : numéro HS consacré à la 41è rencontre
+  des agences d''urbanisme. Entretiens avec Jean Rottner, président de la Fédération
+  nationale des agences d’urbanisme (Fnau) et Patrice Vergriette président délégué
+  de la Fnau, maire de Dunkerque'
 description_fr: 'Explorons nos futurs (heureux) : numéro HS consacré à la 41è rencontre
   des agences d''urbanisme. Entretiens avec Jean Rottner, président de la Fédération
   nationale des agences d’urbanisme (Fnau) et Patrice Vergriette président délégué
