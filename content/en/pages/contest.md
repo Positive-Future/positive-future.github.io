@@ -17,7 +17,7 @@ criterions:
 ---
 ## Who ?
 
-The competition is open to all, regardless of nationality, age or profession.
+The competition is open to all, regardless of nationality or profession.
 
 Proposals can be made individually or in groups.
 
