@@ -2,7 +2,8 @@
 lang: FR
 name: 'Explorons nos futurs (heureux) : Synthèse - Retour sur les ateliers'
 author: Cordobes, Stéphane
-description_en: ''
+description_en: Synthèse des ateliers "Explorons nos futurs (heureux)". Quelques motifs
+  territoriaux qui pourraient rendre nos futurs heureux.
 description_fr: Synthèse des ateliers "Explorons nos futurs (heureux)". Quelques motifs
   territoriaux qui pourraient rendre nos futurs heureux.
 category:
