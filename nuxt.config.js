@@ -1,6 +1,6 @@
 // TODO: Ensure everything is minified/ugligied
 import colors from 'vuetify/es5/util/colors'
-import languages from './static/lang/languages'
+import languages from './static/lang/languages.js'
 
 export default {
   /*
@@ -155,7 +155,7 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    /* , '@nuxtjs/google-analytics' */
+    '@nuxtjs/google-analytics',
     '@nuxtjs/style-resources',
     '@nuxtjs/vuetify',
   ],
@@ -199,14 +199,14 @@ export default {
    ** https://github.com/nuxt-community/analytics-module
    ** https://matteogabriele.gitbooks.io/vue-analytics/content/
    */
-  /* googleAnalytics: {
-    id: 'UA-162015115-1'
+  googleAnalytics: {
+    id: 'UA-192949805-1',
     /*    dev: false,
        debug: {
          enabled: true,
          sendHitTask: true
-       }
-  }, */
+       } */
+  },
   /*
    ** PWA module configuration
    ** https://pwa.nuxtjs.org/setup#configuration
