@@ -22,6 +22,7 @@ issues:
 - housing
 - environment
 perspectives:
+- magazine
 - case_studies
 date: "2020"
 file: ''
