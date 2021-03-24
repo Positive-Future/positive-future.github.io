@@ -1,6 +1,6 @@
 ---
 lang: FR
-name: 'Le container : futur de la ville flexible?'
+name: 'Le container : futur de la ville flexible ?'
 author: UrbaNews
 description_en: L’objet est simple et pourtant passionnant. Longtemps laissé à la
   discrétion des transports de marchandises, symbole de la mondialisation, le container
