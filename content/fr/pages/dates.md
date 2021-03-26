@@ -2,7 +2,7 @@
 title: Dates à retenir!
 schedule:
   opening:
-    date: Avril 2021
+    date: 3 Avril 2021
     content: Ouverture de la plateforme de dépôt.
   deadline:
     date: Mai 2021
