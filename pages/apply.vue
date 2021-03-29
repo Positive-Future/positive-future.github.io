@@ -545,12 +545,7 @@ export default {
         const data = new FormData()
         Object.keys(this.baseForm).forEach((key) => {
           if (key === 'team') {
-            data.append(
-              key,
-              JSON.stringify(
-                this.baseForm[key].map((ppl, index) => JSON.stringify(ppl))
-              )
-            )
+            data.append(key, JSON.stringify(this.baseForm[key]))
           } else {
             data.append(key, this.baseForm[key])
           }
