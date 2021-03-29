@@ -84,10 +84,12 @@
                   </v-tooltip>
                 </div>
                 <v-text-field
+                  ref="email"
                   v-model.trim="baseForm.email"
                   :counter="85"
                   :rules="emailRules"
                   outlined
+                  @blur="$refs.email2.validate()"
                 ></v-text-field>
               </v-col>
               <!-- EMAIL 2-->
@@ -104,11 +106,13 @@
                   </v-tooltip>
                 </div>
                 <v-text-field
+                  ref="email2"
                   v-model.trim="email2"
                   :counter="85"
                   :rules="email2Rules"
                   outlined
                   @paste.prevent
+                  @blur="$refs.email.validate()"
                 ></v-text-field>
               </v-col>
               <!-- TITLE -->
@@ -535,16 +539,18 @@ export default {
   mounted() {},
   methods: {
     async submit() {
-      console.log('submit')
       this.$refs.form.validate()
       if (this.valid) {
-        console.log(this.baseForm)
-
         this.submitting = true
         const data = new FormData()
         Object.keys(this.baseForm).forEach((key) => {
           if (data.key === 'team') {
-            data.append(key, JSON.stringify(this.baseForm[key]))
+            data.append(
+              key,
+              JSON.stringify(
+                this.baseForm[key].map((ppl, index) => JSON.stringify(ppl))
+              )
+            )
           } else {
             data.append(key, this.baseForm[key])
           }
