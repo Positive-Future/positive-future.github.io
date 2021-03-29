@@ -544,7 +544,7 @@ export default {
         this.submitting = true
         const data = new FormData()
         Object.keys(this.baseForm).forEach((key) => {
-          if (data.key === 'team') {
+          if (key === 'team') {
             data.append(
               key,
               JSON.stringify(
