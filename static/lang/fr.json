@@ -118,7 +118,7 @@
       "comic_hint": "Pour rappel, votre bande dessinée doit faire 15 pages maximum",
       "agreed": "Je certifie avoir lu les ",
       "agreed_link": "règles du concours Positive Future",
-      "agreed_2": " et accepte les termes et conditions de participation",
+      "agreed_2": ", avoir plus de 18 ans, et j'accepte les termes et conditions de participation",
       "validation": {
         "moreThan": "Le champ {0} doit faire plus de {1} caractères.",
         "lessThan": "Le champ {0} doit faire moins de {1} caractères",
@@ -127,10 +127,18 @@
         "tos": "Vous devez accepter les termes et conditions d'usage pour continuer",
         "url": "Une URL de fichier est nécessaire si vous ne fournissez pas le fichier directement",
         "file": "Un fichier est requis si vous ne fournissez pas une URL de fichier.",
-        "fileSize": "La taille de fichiers maximale autorisée est 25Mo."
+        "fileSize": "La taille de fichiers maximale autorisée est 25Mo.",
+        "dontmatch": "Vos emails ne sont pas identiques"
       },
       "add_team": "Ajouter un membre de l'équipe",
-      "remove_team": "Retirer ce membre de l'équipe"
+      "remove_team": "Retirer ce membre de l'équipe",
+      "choice1": "Uploadez votre fichier depuis votre disque (25Mo max)",
+      "choice2": "Fournissez une URL pour votre fichier",
+      "email2": "Confirmez votre email",
+      "fileInstead": "Fournir un fichier plutôt qu'une URL",
+      "urlInstead": "Founir une URL plutôt que le fichier",
+      "pdfHint": "Fichier PDF de 25 Mo maximum",
+      "videoHint": "Fichier Vidéo de 25Mo maximum"
     }
   },
   "misc": {
@@ -180,5 +188,6 @@
     "privacy_policy": "Politique de confidentialité",
     "rules": "Modalités",
     "tips": "Conseils"
-  }
+  },
+  "or": "OU"
 }

@@ -118,7 +118,7 @@
       "comic_hint": "Remember! It is maximum 15 page-long.",
       "agreed": "I certify that I have read the ",
       "agreed_link": "rules of the Positive Future competition",
-      "agreed_2": " and agree to the terms and conditions of participation.",
+      "agreed_2": ", that I am over 18 years old and I agree to the terms and conditions of participation.",
       "validation": {
         "moreThan": "The {0} field must be more than {1} characters",
         "lessThan": "The {0} field must be less than {1} characters",
@@ -127,10 +127,18 @@
         "tos": "You must agree to the terms of use to proceed",
         "url": "A file URL is required if you do not provide a file directly",
         "file": "A file is required if you do not provide a file URL",
-        "fileSize": "The maximum size allowed for files is 2GB (2000 MB)"
+        "fileSize": "The maximum size allowed for files is 25MB",
+        "dontmatch": "Your emails don't match"
       },
       "add_team": "Add a team member",
-      "remove_team": "Remove this team member"     
+      "remove_team": "Remove this team member",
+      "email2": "Confirm your email",
+      "choice1": "Upload your file from your computer (25MB max)",
+      "choice2": "Provide an URL for your file",
+      "fileInstead": "Provide a file directly instead",
+      "urlInstead": "Provide your file URL instead",
+      "videoHint": "Video file of 25MB maximum",
+      "pdfHint": "PDF file of 25MB maximum"
     }
   },
   "misc": {
@@ -180,5 +188,6 @@
     "privacy_policy": "Privacy Policy",
     "rules": "Rules",
     "tips": "Tips"
-  }
+  },
+  "or": "OR"
 }

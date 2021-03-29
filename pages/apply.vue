@@ -90,7 +90,27 @@
                   outlined
                 ></v-text-field>
               </v-col>
-
+              <!-- EMAIL 2-->
+              <v-col cols="12">
+                <div class="overline">
+                  {{ $t('form.application.email2') }}
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on }">
+                      <v-icon small color="red" v-on="on">
+                        mdi-asterisk
+                      </v-icon>
+                    </template>
+                    {{ $t('form.mandatory') }}
+                  </v-tooltip>
+                </div>
+                <v-text-field
+                  v-model.trim="email2"
+                  :counter="85"
+                  :rules="email2Rules"
+                  outlined
+                  @paste.prevent
+                ></v-text-field>
+              </v-col>
               <!-- TITLE -->
               <v-col cols="12">
                 <div class="overline">
@@ -194,7 +214,7 @@
                 ></v-select>
               </v-col>
               <!-- FILE -->
-              <v-col cols="12">
+              <v-col v-if="baseForm.type" cols="12">
                 <div class="overline">
                   {{
                     $t('form.application.file', [
@@ -231,30 +251,69 @@
                     }}
                   </div>
                 </v-alert>
-                <v-file-input
-                  ref="file"
-                  v-model="baseForm.file"
-                  :accept="baseForm.type === 3 ? 'video/*' : '.pdf'"
-                  :label="$t('form.application.browse')"
-                  :rules="fileRules"
-                  outlined
-                  @blur="$refs.url.validate()"
-                ></v-file-input>
+                <template v-if="choice">
+                  <div class="text-center my-4">
+                    <v-btn
+                      color="primary"
+                      @click="
+                        choice = false
+                        urlMode = false
+                      "
+                      >{{ $t('form.application.choice1') }}</v-btn
+                    >
+                    <div class="overline">{{ $t('or') }}</div>
+                    <v-btn
+                      color="primary"
+                      @click="
+                        choice = false
+                        urlMode = true
+                      "
+                      >{{ $t('form.application.choice2') }}</v-btn
+                    >
+                  </div>
+                </template>
 
-                <v-text-field
-                  ref="url"
-                  v-model="baseForm.url"
-                  :rules="urlRules"
-                  :label="$t('form.application.url')"
-                  outlined
-                  @blur="$refs.file.validate()"
-                >
-                  <template v-slot:prepend>
-                    <div class="overline" min-width="24px">
-                      {{ $t('misc.ui.or') }}
-                    </div>
+                <template v-else>
+                  <template v-if="urlMode">
+                    <v-text-field
+                      ref="url"
+                      v-model="baseForm.url"
+                      :rules="urlRules"
+                      :label="$t('form.application.url')"
+                      outlined
+                    >
+                    </v-text-field>
+                    <v-btn
+                      small
+                      class="mb-6 float-right"
+                      @click="urlMode = false"
+                    >
+                      {{ $t('form.application.fileInstead') }}</v-btn
+                    >
                   </template>
-                </v-text-field>
+                  <template v-else>
+                    <v-file-input
+                      ref="file"
+                      v-model="baseForm.file"
+                      :accept="baseForm.type === 3 ? 'video/*' : '.pdf'"
+                      :label="$t('form.application.browse')"
+                      :rules="fileRules"
+                      outlined
+                      :hint="
+                        baseForm.type === 3
+                          ? $t('form.application.videoHint')
+                          : $t('form.application.pdfHint')
+                      "
+                    ></v-file-input>
+                    <v-btn
+                      small
+                      class="mb-6 float-right"
+                      @click="urlMode = true"
+                    >
+                      {{ $t('form.application.urlInstead') }}</v-btn
+                    >
+                  </template>
+                </template>
               </v-col>
               <!-- TOS -->
               <v-col cols="12" class="d-inline-flex justify-start">
@@ -322,7 +381,10 @@ export default {
       submitting: false,
       uploaded: false,
       action: 'https://formspree.io/f/xvovjdgv',
-      /*     baseForm: {
+      email2: '',
+      urlMode: false,
+      choice: true,
+      baseForm: {
         firstname: '',
         lastname: '',
         email: '',
@@ -331,18 +393,8 @@ export default {
         team: [],
         type: null,
         file: null,
-      }, */
-      baseForm: {
-        firstname: 'gesrgesr',
-        lastname: 'gesrgesrg',
-        email: 'boitalettre9@gmail.com',
-        title: 'gesrgsrg ersgesrg',
-        description:
-          'gsregseg esrg esrgesr gesrg esrgesrg ersg esrg esrg esrg sres g',
-        team: [],
-        type: 3,
-        file: null,
       },
+
       formats: [
         {
           text: this.$t('form.application.format.article'),
@@ -411,6 +463,21 @@ export default {
             0: this.$t('form.application.email').toLowerCase(),
           }),
       ],
+      email2Rules: [
+        (v) =>
+          !!v ||
+          this.$t('form.application.validation.required', {
+            0: this.$t('form.application.email').toLowerCase(),
+          }),
+        (v) =>
+          email.test(v) ||
+          this.$t('form.application.validation.invalid', {
+            0: this.$t('form.application.email').toLowerCase(),
+          }),
+        (v) =>
+          v === this.baseForm.email ||
+          this.$t('form.application.validation.dontmatch'),
+      ],
       titleRules: [
         (v) =>
           !!v ||
@@ -431,20 +498,14 @@ export default {
           }),
       ],
       fileRules: [
-        (v) =>
-          !!v ||
-          !!this.baseForm.url ||
-          this.$t('form.application.validation.file'),
+        (v) => !!v || this.$t('form.application.validation.file'),
         (v) =>
           !v ||
           v.size < 25000000 ||
           this.$t('form.application.validation.fileSize'),
       ],
       urlRules: [
-        (v) =>
-          !!v ||
-          !!this.baseForm.file ||
-          this.$t('form.application.validation.url'),
+        (v) => !!v || this.$t('form.application.validation.url'),
         (v) =>
           url.test(v) ||
           !v ||
