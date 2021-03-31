@@ -86,10 +86,10 @@
       "title": "Submit your work",
       "firstname": "Firstname",
       "lastname": "Name",
-      "email": "Email",
-      "work_title": "Work title",
+      "email": "Contact Email",
+      "work_title": "Title of the work",
       "team": "Names of the participant(s)",
-      "description": "Work description",
+      "description": "Description of the work",
       "file": "Your file",
       "browse": "Browse your files",
       "contact": "Please indicate a contact. If you are in a group, please indicate a single contact for the whole group.",
@@ -98,7 +98,7 @@
       "back_to_home": "Go back to Positive Future homepage",
       "description_alt": "Present in a few lines your work, your inspirations, possibly the resources used. \nRemember! You must indicate any use of a pre-existing original work or the participation of a third party in the submitted work",
       "format": {
-        "title": "Format",
+        "title": "Type of work",
         "article": "Newspaper article",
         "novel": "Short novel/Scenarios",
         "video": "Video/Short film",
@@ -118,7 +118,7 @@
       "comic_hint": "Remember! It is maximum 15 page-long.",
       "agreed": "I certify that I have read the ",
       "agreed_link": "rules of the Positive Future competition",
-      "agreed_2": ", that I am over 18 years old and I agree to the terms and conditions of participation.",
+      "agreed_2": ", that every team member is 18 years old or older and I agree to the terms and conditions of participation.",
       "validation": {
         "moreThan": "The {0} field must be more than {1} characters",
         "lessThan": "The {0} field must be less than {1} characters",
@@ -138,7 +138,12 @@
       "fileInstead": "Provide a file directly instead",
       "urlInstead": "Provide your file URL instead",
       "videoHint": "Video file of 25MB maximum",
-      "pdfHint": "PDF file of 25MB maximum"
+      "pdfHint": "PDF file of 25MB maximum",
+      "birthdayLabel": "Birthday date",
+      "18orOlder": "18 or older",
+      "18tooltip": "By ticking this box, I certify that this team member is 18 years old or older",
+      "clickToMakeContact": "Click to make this team member the project contact person",
+      "contactPerson": "Project contact person"
     }
   },
   "misc": {
