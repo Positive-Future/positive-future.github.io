@@ -22,17 +22,10 @@
             @submit.prevent="submit(submit)"
           >
             <v-row no-gutters>
+              <!-- TITLE -->
               <v-col cols="12">
-                <v-alert
-                  v-show="baseForm.description.length > 0"
-                  text
-                  border="left"
-                >
-                  <div>{{ $t('form.application.contact') }}</div>
-                </v-alert>
-                <!-- FIRSTNAME -->
                 <div class="overline">
-                  {{ $t('form.application.firstname') }}
+                  {{ $t('form.application.work_title') }}
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on }">
                       <v-icon small color="red" v-on="on">
@@ -43,35 +36,34 @@
                   </v-tooltip>
                 </div>
                 <v-text-field
-                  v-model="baseForm.firstname"
-                  :rules="firstnameRules"
-                  :counter="45"
+                  v-model="baseForm.title"
+                  :counter="85"
+                  :rules="titleRules"
                   outlined
-                  name="firstname"
                 ></v-text-field>
               </v-col>
-              <!-- LASTNAME -->
+              <!-- DESCRIPTION -->
               <v-col cols="12">
                 <div class="overline">
-                  {{ $t('form.application.lastname') }}
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{ on }">
-                      <v-icon small color="red" v-on="on">
-                        mdi-asterisk
-                      </v-icon>
-                    </template>
-                    {{ $t('form.mandatory') }}
-                  </v-tooltip>
+                  {{ $t('form.application.description') }}
                 </div>
-                <v-text-field
-                  v-model="baseForm.lastname"
-                  :rules="nameRules"
-                  :counter="45"
+                <v-expand-transition>
+                  <v-alert text border="left">
+                    <div>{{ $t('form.application.description_alt') }}</div>
+                  </v-alert>
+                </v-expand-transition>
+                <v-textarea
+                  v-model="baseForm.description"
+                  :rules="descriptionRules"
+                  :counter="1000"
                   outlined
-                ></v-text-field>
+                ></v-textarea>
               </v-col>
               <!-- EMAIL -->
               <v-col cols="12">
+                <v-alert text border="left">
+                  <div>{{ $t('form.application.contact') }}</div>
+                </v-alert>
                 <div class="overline">
                   {{ $t('form.application.email') }}
                   <v-tooltip bottom>
@@ -115,51 +107,10 @@
                   @blur="$refs.email.validate()"
                 ></v-text-field>
               </v-col>
-              <!-- TITLE -->
-              <v-col cols="12">
-                <div class="overline">
-                  {{ $t('form.application.work_title') }}
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{ on }">
-                      <v-icon small color="red" v-on="on">
-                        mdi-asterisk
-                      </v-icon>
-                    </template>
-                    {{ $t('form.mandatory') }}
-                  </v-tooltip>
-                </div>
-                <v-text-field
-                  v-model="baseForm.title"
-                  :counter="85"
-                  :rules="titleRules"
-                  outlined
-                ></v-text-field>
-              </v-col>
-              <!-- DESCRIPTION -->
-              <v-col cols="12">
-                <div class="overline">
-                  {{ $t('form.application.description') }}
-                </div>
-                <v-expand-transition>
-                  <v-alert
-                    v-show="baseForm.description.length > 0"
-                    text
-                    border="left"
-                  >
-                    <div>{{ $t('form.application.description_alt') }}</div>
-                  </v-alert>
-                </v-expand-transition>
-                <v-textarea
-                  v-model="baseForm.description"
-                  :rules="descriptionRules"
-                  :counter="500"
-                  outlined
-                ></v-textarea>
-              </v-col>
               <!-- TEAM -->
               <v-col cols="12">
                 <div class="overline mb-1">
-                  {{ $t('form.application.add_team') }}
+                  {{ $t('form.application.team') }}
                 </div>
 
                 <Team
@@ -168,7 +119,29 @@
                 />
                 <v-list>
                   <template v-for="(item, index) in baseForm.team">
-                    <v-list-item :key="index" class="pl-0">
+                    <v-list-item
+                      :key="index"
+                      class="pl-0"
+                      @click="makeContact(index)"
+                    >
+                      <v-list-item-icon>
+                        <v-tooltip bottom>
+                          <template v-slot:activator="{ on, attrs }">
+                            <v-icon
+                              :color="index === 0 ? 'primary' : ''"
+                              v-bind="attrs"
+                              v-on="on"
+                            >
+                              mdi-email
+                            </v-icon>
+                          </template>
+                          <span>{{
+                            index === 0
+                              ? $t('form.application.contactPerson')
+                              : $t('form.application.clickToMakeContact')
+                          }}</span>
+                        </v-tooltip>
+                      </v-list-item-icon>
                       <v-list-item-content>
                         <v-list-item-title>{{
                           item.firstname + ' ' + item.lastname
@@ -322,24 +295,26 @@
               <!-- TOS -->
               <v-col cols="12" class="d-inline-flex justify-start">
                 <v-checkbox v-model="agreed" :rules="agreedRules" class="mt-0">
-                  <template v-slot:label> </template>
+                  <template v-slot:label>
+                    <div>
+                      {{ $t('form.application.agreed') }}
+                      <a
+                        :href="'/rules_' + $i18n.locale + '.pdf'"
+                        target="_blank"
+                        @click.stop
+                        >{{ $t('form.application.agreed_link') }}</a
+                      >{{ $t('form.application.agreed_2') }}
+                      <v-tooltip bottom>
+                        <template v-slot:activator="{ on }">
+                          <v-icon small color="red" v-on="on">
+                            mdi-asterisk
+                          </v-icon>
+                        </template>
+                        {{ $t('form.mandatory') }}
+                      </v-tooltip>
+                    </div>
+                  </template>
                 </v-checkbox>
-                <div @click="agreed = !agreed">
-                  {{ $t('form.application.agreed') }}
-                  <a
-                    :href="'/rules_' + $i18n.locale + '.pdf'"
-                    target="_blank"
-                    >{{ $t('form.application.agreed_link') }}</a
-                  >{{ $t('form.application.agreed_2') }}
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{ on }">
-                      <v-icon small color="red" v-on="on">
-                        mdi-asterisk
-                      </v-icon>
-                    </template>
-                    {{ $t('form.mandatory') }}
-                  </v-tooltip>
-                </div>
               </v-col>
               <!-- SUBMIT -->
               <v-col class="d-flex justify-end">
@@ -519,11 +494,11 @@ export default {
       ],
       descriptionRules: [
         (v) =>
-          (!!v && v.length <= 500) ||
+          (!!v && v.length <= 1000) ||
           v.length === 0 ||
           this.$t('form.application.validation.lessThan', {
             0: this.$t('form.application.description').toLowerCase(),
-            1: '500',
+            1: '1000',
           }),
       ],
       typeRules: [
@@ -538,6 +513,9 @@ export default {
   },
   mounted() {},
   methods: {
+    makeContact(index) {
+      this.baseForm.team.unshift(this.baseForm.team.splice(index, 1)[0])
+    },
     async submit() {
       this.$refs.form.validate()
       if (this.valid) {

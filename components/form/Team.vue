@@ -6,7 +6,6 @@
       :counter="45"
       :label="$t('form.application.firstname')"
       outlined
-      min-width="250px"
     ></v-text-field>
     <v-text-field
       v-model="lastname"
@@ -15,15 +14,30 @@
       :label="$t('form.application.lastname')"
       outlined
       class="mx-3"
-      min-width="250px"
     ></v-text-field>
     <v-tooltip bottom>
       <template v-slot:activator="{ on, attrs }">
+        <div v-bind="attrs" class="mr-2 d-flex flex-column caption" v-on="on">
+          <div class="text-center">
+            {{ $t('form.application.18orOlder') }}
+          </div>
+          <v-simple-checkbox
+            v-model="major"
+            small
+            class="ma-0"
+            no-hint
+            color="primary"
+          ></v-simple-checkbox>
+        </div>
+      </template>
+      <span>{{ $t('form.application.18tooltip') }}</span>
+    </v-tooltip>
+    <v-tooltip bottom>
+      <template v-slot:activator="{ on, attrs }">
         <v-btn
-          color="success"
-          outlined
           height="56"
-          :disabled="!(firstname.length > 2 && lastname.length > 2)"
+          color="primary"
+          :disabled="!(firstname.length > 1 && lastname.length > 1 && major)"
           v-bind="attrs"
           v-on="on"
           @click="$emit('add', { firstname, lastname })"
@@ -46,6 +60,9 @@ export default {
     return {
       firstname: '',
       lastname: '',
+      birthday: null,
+      menu: false,
+      major: false,
       nameRules: [
         (v) =>
           !!v ||
@@ -90,6 +107,15 @@ export default {
       ],
     }
   },
-  methods: {},
+  watch: {
+    menu(val) {
+      val && setTimeout(() => (this.$refs.picker.activePicker = 'YEAR'))
+    },
+  },
+  methods: {
+    save(date) {
+      this.$refs.menu.save(date)
+    },
+  },
 }
 </script>
