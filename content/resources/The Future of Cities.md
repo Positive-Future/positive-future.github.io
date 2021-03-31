@@ -30,7 +30,7 @@ issues:
 - environment
 - housing
 perspectives:
-- policy
+- opinions
 - case_studies
 date: "2016"
 file: ''
