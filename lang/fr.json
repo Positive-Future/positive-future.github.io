@@ -118,7 +118,7 @@
       "comic_hint": "Pour rappel, votre bande dessinée doit faire 15 pages maximum.",
       "agreed": "- Je certifie avoir lu les ",
       "agreed_link": "règles du concours Positive Future",
-      "agreed_2": "  et en accepte les termes et conditions de participation <br> -Je certifie que moi-même et, le cas échéant, les membres de mon groupe, sommes âgés de plus de 18 ans à la date de soumission du projet.",
+      "agreed_2": "  et en accepte les termes et conditions de participation <br> - Je certifie que moi-même et, le cas échéant, les membres de mon groupe, sommes âgés de plus de 18 ans à la date de soumission du projet.",
       "validation": {
         "moreThan": "Le champ {0} doit faire plus de {1} caractères.",
         "lessThan": "Le champ {0} doit faire moins de {1} caractères",
