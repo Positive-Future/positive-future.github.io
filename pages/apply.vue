@@ -303,7 +303,8 @@
                         target="_blank"
                         @click.stop
                         >{{ $t('form.application.agreed_link') }}</a
-                      >{{ $t('form.application.agreed_2') }}
+                      >
+                      <span v-html="$t('form.application.agreed_2')"></span>
                       <v-tooltip bottom>
                         <template v-slot:activator="{ on }">
                           <v-icon small color="red" v-on="on">

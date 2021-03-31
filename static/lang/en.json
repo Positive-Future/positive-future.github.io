@@ -96,11 +96,11 @@
       "url": "File URL",
       "thank_you": "Thank you for submitting your work to the Positive Future contest!",
       "back_to_home": "Go back to Positive Future homepage",
-      "description_alt": "Present in a few lines your work, your inspirations, possibly the resources used. \nRemember! You must indicate any use of a pre-existing original work or the participation of a third party in the submitted work",
+      "description_alt": "Present in a few lines your work, your inspirations, possibly the resources you used. \nRemember! You must indicate any use of a pre-existing original work or the participation of a third party in the submitted work",
       "format": {
         "title": "Type of work",
         "article": "Newspaper article",
-        "novel": "Short novel/Scenarios",
+        "novel": "Short novel/Scenario",
         "video": "Video/Short film",
         "comic": "Comics/Graphic novel"
       },
