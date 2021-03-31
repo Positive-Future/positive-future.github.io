@@ -78,6 +78,11 @@
                         </template>
 
                         <v-list>
+                          <v-list-item nuxt :to="localePath('/apply')">
+                            <v-list-item-title>
+                              {{ $t('apply') }}
+                            </v-list-item-title>
+                          </v-list-item>
                           <v-list-item nuxt :to="localePath('/contest/rules')">
                             <v-list-item-title>
                               {{ $t('navigation.rules') }}

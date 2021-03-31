@@ -18,11 +18,20 @@
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-row no-gutters>
             <v-col cols="12" sm="6">
-              <v-card max-width="80%" color="#FFE2A0" class="pa-6" flat>
+              <v-card max-width="80%" color="#FFE2A0" class="pa-6 mb-6" flat>
                 {{ $t('misc.ui.theme') }}
                 <h1>
                   {{ index.theme }}
                 </h1>
+
+                <v-btn
+                  color="primary"
+                  class="mx-1 float-right"
+                  nuxt
+                  :to="localePath('/apply')"
+                >
+                  {{ $t('apply') }}
+                </v-btn>
               </v-card>
               <v-card flat class="py-6 px-1">
                 <h1 class="mt-2 mb-4">{{ dates.title }}</h1>

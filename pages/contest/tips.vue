@@ -8,6 +8,15 @@
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <h1 class="mt-8 mb-4">
             {{ tips.title }}
+            <v-btn
+              v-if="$vuetify.breakpoint.mdAndUp"
+              color="primary"
+              class="mx-1 float-right"
+              nuxt
+              :to="localePath('/apply')"
+            >
+              {{ $t('apply') }}
+            </v-btn>
           </h1>
           <p>
             {{ tips.subtitle }}
