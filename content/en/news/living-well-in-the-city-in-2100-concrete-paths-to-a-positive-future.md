@@ -17,9 +17,9 @@ In addition to the scientific resources available in the "Food for thought" sect
 
 ![](/webinaire_8avril_en.jpg)
 
-**Living well in the city in 2100 is possible!** Faced with the climatic, demographic, economic and social challenges that are looming, technological progress, "good" public policies and, above all, the creativity of the greatest number of people offer solutions. 
+**Living well in the city in 2100 is possible!** Faced with the climatic, demographic, economic and social challenges that are looming, technological progress, "good" public policies and, above all, the creativity of the greatest number of people offer solutions.
 
-On the basis of existing experience and knowledge, the human and social sciences and prospective, can help to clear the way and propose perspectives in terms of social ties, urban planning and architecture, and governance. 
+On the basis of existing experience and knowledge, the human and social sciences and prospective, can help to clear the way and propose perspectives in terms of social ties, urban planning and architecture, and governance.
 
 **Jean-Éric Aubert**, President of the 2100 Foundation, and **Saadi Lahlou**, Director of the Institut d'Études Avancées de Paris, will present these approaches and show how it is possible today to design and prepare a positive future.
 
