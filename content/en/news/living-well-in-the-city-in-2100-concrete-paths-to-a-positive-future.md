@@ -27,4 +27,4 @@ On the basis of existing experience and knowledge, the human and social sciences
 
 **REGISTRATION FOR THE WEBINAR**
 
-**Free entry upon registration** [**here**](https://www.weezevent.com/bien-vivre-dans-la-ville-en-2100-des-pistes-concretes)**.** The connection link to the webinar will be sent to you the day before the event.
+**Free entry upon registration** [here.](https://www.weezevent.com/bien-vivre-dans-la-ville-en-2100-des-pistes-concretes) The connection link to the webinar will be sent to you the day before the event.
