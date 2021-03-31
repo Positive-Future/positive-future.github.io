@@ -44,6 +44,10 @@ members:
       Conférencière internationale, ses travaux de recherche, après la ‘Grande Transition’,
       se portent aujourd'hui sur le modèle de développement X.0.
   '6':
+    firstname: Hank
+    lastname: Kune
+    bio: Hank Kune est directeur d'Educore BV aux Pays-Bas et partenaire fondateur de Future Center Alliance. Fort de nombreuses années d'expérience en tant que facilitateur de process et développeur de méthodologies pour l'innovation et le changement, Hank croit en la nécessité de relever les défis sociétaux dans le cadre de projets d'innovation collaborative. Il est le co-initiateur du Global Lab for Societal Innovation et de l'initiative Positive Cartography. Son travail sur les environnements propices à l'innovation - centres du futur et laboratoires vivants - a aidé de nombreuses organisations à atteindre des objectifs ambitieux. 
+  '7':
     firstname: Bettina
     lastname: Laville
     bio: Conseillère d’État honoraire, docteur en lettres, lauréate de Sciences Po
@@ -55,12 +59,6 @@ members:
       depuis 2016. Enseignante à Science Po pendant 10 ans, elle est notamment l’auteur
       de L’adaptation au changement climatique, une question de sociétés publié en
       2017 avec le CNRS.
-  '7':
-    firstname: Frédéric
-    lastname: Lefèvre
-    bio: Architecte, enseignant à l'Ecole Nationale d'Architecture Paris Val-de-Seine,
-      il a mené des études au sein du groupe « Société, prospective et architecture
-      ».
   '8':
     firstname: Helga
     lastname: Nowotny

@@ -41,6 +41,10 @@ members:
       professor. An international speaker, her research, after the “Great Transition”,
       is now focused on the X.0 development model.
   '6':
+    firstname: Hank
+    lastname: Kune
+    bio: Hank Kune is director of Educore BV in the Netherlands, and a Founding Partner of the Future Center Alliance. With many years of experience as process facilitator, workshop moderator, and developer of methodologies for innovation and change, Hank believes in addressing societal challenges as mission-driven collaborative innovation projects. He is co-initiator of the Global Lab for Societal Innovation, and the Positive Cartography initiative. His work on dedicated innovation-enabling environments – action learning camps, future centers, and living labs – has supported many organizations to achieve aspirational objectives. 
+  '7':
     firstname: Bettina
     lastname: Laville
     bio: Honorary State Councillor, Doctor of Letters, laureate of Sciences Po and
@@ -51,11 +55,6 @@ members:
       the Environmental Film Festival in 1982 and is co-founder of the Festival of
       New Explorations since 2016. She is the author of L'adaptation au changement
       climatique, une question de sociétés published in 2017 with the CNRS.
-  '7':
-    firstname: Frédéric
-    lastname: Lefèvre
-    bio: Architect, teacher at the Ecole Nationale d'Architecture Paris Val-de-Seine,
-      he conducted studies within the group "Society, foresight and architecture".
   '8':
     firstname: Helga
     lastname: Nowotny
