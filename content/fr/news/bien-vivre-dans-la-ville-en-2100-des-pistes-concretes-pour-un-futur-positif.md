@@ -27,4 +27,4 @@ Sur la base des expériences et connaissances existantes, les sciences humaines 
 
 **INSCRIPTIONS**
 
-Entrée libre sur inscription obligatoire [ici ](https://www.weezevent.com/webinaire-reinstaller-la-ville-a-la-campagne). Le lien de connexion au webinaire vous sera envoyé la veille de l’événement.
+Entrée libre sur inscription obligatoire [ici ](https://www.weezevent.com/bien-vivre-dans-la-ville-en-2100-des-pistes-concretes). Le lien de connexion au webinaire vous sera envoyé la veille de l’événement.
