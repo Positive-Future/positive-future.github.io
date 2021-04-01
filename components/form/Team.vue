@@ -27,6 +27,7 @@
             class="ma-0"
             no-hint
             color="primary"
+            :ripple="false"
           ></v-simple-checkbox>
         </div>
       </template>
@@ -66,7 +67,8 @@ export default {
       nameRules: [
         (v) =>
           !!v ||
-          v.length === 0 ||
+          this.team.length > 0 ||
+          (v.length === 0 && this.team.length > 0) ||
           this.$t('form.application.validation.required', {
             0: this.$t('form.application.lastname').toLowerCase(),
           }),
@@ -87,7 +89,8 @@ export default {
       firstnameRules: [
         (v) =>
           !!v ||
-          v.length === 0 ||
+          this.team.length > 0 ||
+          (v.length === 0 && this.team.length) ||
           this.$t('form.application.validation.required', {
             0: this.$t('form.application.firstname').toLowerCase(),
           }),

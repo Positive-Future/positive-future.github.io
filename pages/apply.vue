@@ -111,10 +111,19 @@
               <v-col cols="12">
                 <div class="overline mb-1">
                   {{ $t('form.application.team') }}
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on }">
+                      <v-icon small color="red" v-on="on">
+                        mdi-asterisk
+                      </v-icon>
+                    </template>
+                    {{ $t('form.mandatory') }}
+                  </v-tooltip>
                 </div>
 
                 <Team
                   :key="baseForm.team.length"
+                  :team="baseForm.team"
                   @add="baseForm.team.push($event)"
                 />
                 <v-list>
@@ -365,8 +374,6 @@ export default {
       urlMode: false,
       choice: true,
       baseForm: {
-        firstname: '',
-        lastname: '',
         email: '',
         title: '',
         description: '',
