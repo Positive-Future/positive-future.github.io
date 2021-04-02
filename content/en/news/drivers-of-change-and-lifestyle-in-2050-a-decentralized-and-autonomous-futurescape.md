@@ -17,7 +17,7 @@ In addition to the scientific resources available in the "Food for thought" sect
 
 ![](/webinaire_27avril_en.png)
 
-The art and science of futures studies help us obtain a better understanding of the drivers of change by focusing on Long Term, Big Picture and Radical Change: for example, Tech Revolutions (Biohacking plus Artificial Intelligence), Social Upheavals (Massive Access to Free Education/Tools of Production), Business Disruptions (End of Banking), Major Transformations (Post Plastic Society). **Drivers of change are factors causing change, affecting or shaping the futures**. 
+The art and science of futures studies help us obtain a better understanding of the drivers of change by focusing on Long Term, Big Picture and Radical Change: for example, Tech Revolutions (Biohacking plus Artificial Intelligence), Social Upheavals (Massive Access to Free Education/Tools of Production), Business Disruptions (End of Banking), Major Transformations (Post Plastic Society). **Drivers of change are factors causing change, affecting or shaping the futures**.
 
 In this webinar, Victor V. Motti will do a review of some drivers of change such as data, clean energy, automation, green economy, and silver tsunami. He will also report from a global survey of experts on Society and Lifestyles in 2050. The expert sample of the survey was selected from authors of the articles in the leading futures and foresight journals. **This survey shows us how a decentralized and autonomous futurescape is emerging in areas such consumption of food and manufactured goods, and infrastructure: housing and mobility.**
 
@@ -25,4 +25,4 @@ _Victor V. Motti is an international writer, speaker, and strategic foresight ad
 
 **REGISTRATION FOR THE WEBINAR**
 
-**Free entry upon registration** [**HERE**](). The connection link to the webinar will be sent to you the day before the event.
+**Free entry upon registration** [**HERE.**](https://www.weezevent.com/webinaire-drivers-of-change-and-lifestyle-in-2050) The connection link to the webinar will be sent to you the day before the event.
