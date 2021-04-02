@@ -37,7 +37,11 @@
                 class="pa-6"
                 flat
                 target="_blank"
-                :to="'/rules_' + $i18n.locale + '.pdf'"
+                :to="
+                  'https://www.positive-future.org/rules_' +
+                  $i18n.locale +
+                  '.pdf'
+                "
                 :class="{ 'ml-n6': $vuetify.breakpoint.mdAndUp }"
               >
                 <div class="d-inline-flex justify-center align-center">
