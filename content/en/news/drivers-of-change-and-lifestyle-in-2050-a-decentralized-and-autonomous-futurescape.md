@@ -1,12 +1,12 @@
 ---
-draft: true
+draft: false
 en: []
 fr: []
 title: 'Drivers of Change and Lifestyle in 2050: A Decentralized and Autonomous Futurescape'
 subtitle: Webinar on April 27th
 categories:
 - event
-featured: false
+featured: true
 image: "/ross-findon-mg28olyfghi-unsplash.jpg"
 youtube_video_id: ''
 background_color: ''
