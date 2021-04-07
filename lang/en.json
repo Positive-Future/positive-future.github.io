@@ -195,5 +195,6 @@
     "tips": "Tips"
   },
   "or": "OR",
-  "apply": "Apply"
+  "apply": "Apply",
+  "required": "Required"
 }
