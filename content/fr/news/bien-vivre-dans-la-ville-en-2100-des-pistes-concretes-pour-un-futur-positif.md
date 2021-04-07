@@ -27,4 +27,4 @@ Sur la base des expériences et connaissances existantes, les sciences humaines 
 
 **INSCRIPTIONS**
 
-Entrée libre sur inscription obligatoire [ici ](https://www.weezevent.com/bien-vivre-dans-la-ville-en-2100-des-pistes-concretes). Le lien de connexion au webinaire vous sera envoyé la veille de l’événement.
+Les inscriptions sont closes. Si vous souhaitez suivre le webinaire, écrivez-nous à [info@positive-future.org](info@positive-future.org). 
