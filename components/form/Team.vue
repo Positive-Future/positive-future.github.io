@@ -1,6 +1,7 @@
 <template>
   <div class="d-flex">
     <v-text-field
+      ref="firstname"
       v-model="firstname"
       :rules="firstnameRules"
       :counter="45"
@@ -8,6 +9,7 @@
       outlined
     ></v-text-field>
     <v-text-field
+      ref="lastname"
       v-model="lastname"
       :rules="nameRules"
       :counter="45"
@@ -21,14 +23,15 @@
           <div class="text-center">
             {{ $t('form.application.18orOlder') }}
           </div>
-          <v-simple-checkbox
+          <v-checkbox
             v-model="major"
+            :rules="majorRules"
             small
             class="ma-0"
             no-hint
             color="primary"
             :ripple="false"
-          ></v-simple-checkbox>
+          ></v-checkbox>
         </div>
       </template>
       <span>{{ $t('form.application.18tooltip') }}</span>
@@ -109,6 +112,16 @@ export default {
           }),
       ],
     }
+  },
+  computed: {
+    majorRules() {
+      return [
+        (v) =>
+          (v !== undefined && v !== null && v !== false) ||
+          this.team.length > 0 ||
+          this.$t('required'),
+      ]
+    },
   },
   watch: {
     menu(val) {

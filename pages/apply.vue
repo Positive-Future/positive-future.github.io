@@ -129,7 +129,7 @@
                 <v-list>
                   <template v-for="(item, index) in baseForm.team">
                     <v-list-item
-                      :key="index"
+                      :key="item.firstname + item.lastname"
                       class="pl-0"
                       @click="makeContact(index)"
                     >
@@ -331,7 +331,7 @@
                 <Confirm
                   :error="error"
                   :submitting="submitting"
-                  :valid="valid"
+                  :valid="valid && baseForm.team.length > 0"
                   @submit="
                     submitting = true
                     submit()
@@ -531,6 +531,8 @@ export default {
         const data = new FormData()
         Object.keys(this.baseForm).forEach((key) => {
           if (key === 'team') {
+            data.append('firstname', this.baseForm.team[0].firstname)
+            data.append('lastname', this.baseForm.team[0].lastname)
             data.append(key, JSON.stringify(this.baseForm[key]))
           } else {
             data.append(key, this.baseForm[key])

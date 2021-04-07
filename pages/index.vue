@@ -149,9 +149,7 @@ export default {
     }
   },
   computed: {},
-  mounted() {
-    console.log('featured: ', this.featured)
-  },
+  mounted() {},
 }
 </script>
 <style>
