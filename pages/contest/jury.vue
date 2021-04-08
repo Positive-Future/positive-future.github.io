@@ -37,11 +37,13 @@ export default {
     const list = await $content(app.i18n.locale + '/jury').fetch()
     const jury = await $content(app.i18n.locale + '/pages/jury').fetch()
 
-    console.log('list: ', list)
-
     return {
       jury,
-      list,
+      list: list.sort(function (a, b) {
+        const textA = a.slug.toUpperCase()
+        const textB = b.slug.toUpperCase()
+        return textA < textB ? -1 : textA > textB ? 1 : 0
+      }),
     }
   },
   data() {
