@@ -1,4 +1,4 @@
 ---
 name: Antoine Buéno.
 ---
-A writer and advisor to the French Senate in charge of monitoring the work of the Sustainable Development Commission and the Foresight Delegation, he is also a specialist in utopia and science fiction, which he taught at Sciences Po. He is the author of anticipation novels and essays on subjects as varied as the sociology of smurfs, the virtues of non-voting, and birth control. His latest book, Futur, *notre avenir de A à Z (Flammarion)*, has been presented in the media as the essential book on foresight.
+Antoine Buéno est écrivain et conseiller au Sénat en charge du suivi des travaux de la commission du développement durable et de la délégation à la prospective. Il est aussi spécialiste de l'utopie et de la science-fiction qu'il a enseignées à Sciences Po. Il est auteur de romans d'anticipation et d'essais sur des sujets aussi variés que la sociologie des schtroumpfs, les vertus de l'abstention ou le contrôle des naissances. Son dernier ouvrage, Futur, notre avenir de A à Z (éd. Flammarion), a été présenté dans les médias comme le livre de prospective incontournable.
