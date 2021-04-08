@@ -23,7 +23,7 @@
               <span class="name px-1">
                 {{ item.name }}
               </span>
-              <p>{{ item.description }}</p>
+              <p><nuxt-content :document="item" /></p>
             </div>
           </template>
         </v-col>
