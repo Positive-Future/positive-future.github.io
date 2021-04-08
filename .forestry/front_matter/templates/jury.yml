@@ -18,3 +18,5 @@ fields:
   label: description
   description: meant to follow the name. E.g. "has been Deputy Mayor of Paris since
     2014. After a mandate in charge of the EcologicalTransition, Climate and Water..."
+pages:
+- content/en/jury/blauel.md
