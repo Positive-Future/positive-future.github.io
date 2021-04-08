@@ -9,10 +9,6 @@ members:
       He was director of the "foresight and innovative design" unit at RATP. His publications
       include Aimer le futur (2013) and Homo Mobilis (2016).
   '2':
-    firstname: Célia
-    lastname: Blauel
-    bio: Deputy Mayor of Paris in charge of the Seine, Paris 2030 foresight, and Resilience.
-  '3':
     firstname: Anne
     lastname: Charreyron Perchet
     bio: Urban planner, she is now  an independent consultant after having worked
@@ -22,6 +18,10 @@ members:
       on sustainable urban development, she acts as an expert at the European level
       in projects related to urban mobility and smart cities. She is a member of the
       Editorial Board of the journal Futuribles.
+  '3':
+    firstname: Christina
+    lastname: Garsten
+    bio: Christina Garsten is professor of Social Anthropology at Stockholm University and Principal and Permanent Fellow of the Swedish Collegium for Advanced Study. She works in organizational anthropology, with a special focus on globalization processes, sociocultural dynamics and forms of governance. She is particularly interested in the creation and use of future foresight activities and scenario creation as part of knowledge creation.
   '4':
     firstname: Thierry
     lastname: Gaudin

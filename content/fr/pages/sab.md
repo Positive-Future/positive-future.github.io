@@ -9,11 +9,6 @@ members:
       Il fut directeur de l’unité « prospective et conception innovante » de la RATP.
       Il a notamment publié Aimer le futur (2013) et Homo Mobilis (2016).
   '2':
-    firstname: Célia
-    lastname: Blauel
-    bio: Adjointe à la Maire de Paris en charge de la Seine, de la Prospective Paris
-      2030 et de la Résilience.
-  '3':
     firstname: Anne
     lastname: Charreyron Perchet
     bio: Anne Charreyron-Perchet, urbaniste, est aujourd’hui consultante indépendante
@@ -24,6 +19,10 @@ members:
       urbain durable, elle intervient  comme expert à l’échelle européenne dans des
       projets liés à la mobilité urbaine et aux villes intelligentes. Elle fait partie
       du Comité de rédaction de la revue Futuribles.
+  '3':
+    firstname: Christina
+    lastname: Garsten
+    bio: Christina Garsten est professeure d'anthropologie sociale à l'université de Stockholm et directrice et résidente permanente du Collegium suédois d’études avancées (SCAS). Elle travaille dans le domaine de l'anthropologie organisationnelle, avec un accent particulier sur les processus de mondialisation, les dynamiques socioculturelles et les formes de gouvernance. Elle s'intéresse particulièrement à la création et à l'utilisation d'activités de prospective et de création de scénarios pour la création de connaissances.
   '4':
     firstname: Thierry
     lastname: Gaudin
