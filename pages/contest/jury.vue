@@ -6,26 +6,38 @@
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="mt-6 mb-4">
-            {{ jury.title }}
-          </h1>
-          <p>
-            {{ jury.subtitle }}
-          </p>
+          <div>
+            <h1 class="mt-6 mb-4">
+              {{ jury.title }}
+            </h1>
+            <p>
+              {{ jury.subtitle }}
+            </p>
+          </div>
         </v-col>
       </v-row>
     </section>
     <section :class="{ 'px-3': $vuetify.breakpoint.smAndDown }">
       <v-row justify="center">
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <template v-for="(item, index) in list">
-            <div :key="index" class="my-6">
-              <span class="name px-1">
-                {{ item.name }}
-              </span>
-              <p><nuxt-content :document="item" /></p>
-            </div>
-          </template>
+        <v-col
+          v-for="(item, index) in list"
+          :key="index"
+          xs="12"
+          sm="11"
+          md="8"
+          lg="7"
+          xl="6"
+          class="d-flex"
+        >
+          <v-avatar class="mr-6 mt-6" size="120">
+            <img :src="'/jury/' + item.slug + '.jpg'" :alt="item.name" />
+          </v-avatar>
+          <div :key="index" class="my-6">
+            <span class="name px-1">
+              {{ item.name }}
+            </span>
+            <p><nuxt-content :document="item" /></p>
+          </div>
         </v-col>
       </v-row>
     </section>
