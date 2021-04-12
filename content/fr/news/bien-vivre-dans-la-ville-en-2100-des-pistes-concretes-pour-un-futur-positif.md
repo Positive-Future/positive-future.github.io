@@ -6,7 +6,7 @@ title: Bien vivre dans la ville en 2100 ? Des pistes concrètes pour un futur po
 subtitle: Webinaire le 8 avril à 18h
 categories:
 - event
-featured: true
+featured: false
 image: "/will-truettner-lxlczkjc5ao-unsplash.jpg"
 youtube_video_id: ''
 background_color: ''
@@ -27,4 +27,4 @@ Sur la base des expériences et connaissances existantes, les sciences humaines 
 
 **INSCRIPTIONS**
 
-Les inscriptions sont closes. Si vous souhaitez suivre le webinaire, écrivez-nous à [info@positive-future.org](info@positive-future.org). 
+Les inscriptions sont closes. Si vous souhaitez suivre le webinaire, écrivez-nous à [info@positive-future.org](info@positive-future.org).
