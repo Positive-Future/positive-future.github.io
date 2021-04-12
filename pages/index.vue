@@ -132,7 +132,7 @@ export default {
     const featured = await $content(app.i18n.locale + '/news')
       .where({ featured: true })
       .where({ draft: false })
-      .sortBy('createdAt')
+      .sortBy('order', 'desc')
       .limit(3)
       .fetch()
 

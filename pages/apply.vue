@@ -120,12 +120,68 @@
                     {{ $t('form.mandatory') }}
                   </v-tooltip>
                 </div>
-
-                <Team
-                  :key="baseForm.team.length"
-                  :team="baseForm.team"
-                  @add="baseForm.team.push($event)"
-                />
+                <div class="d-flex">
+                  <v-text-field
+                    ref="firstname"
+                    v-model="baseForm.firstname"
+                    :rules="firstnameRules"
+                    :counter="45"
+                    :label="$t('form.application.firstname')"
+                    outlined
+                  ></v-text-field>
+                  <v-text-field
+                    ref="lastname"
+                    v-model="baseForm.lastname"
+                    :rules="nameRules"
+                    :counter="45"
+                    :label="$t('form.application.lastname')"
+                    outlined
+                    class="mx-3"
+                  ></v-text-field>
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on, attrs }">
+                      <div
+                        v-bind="attrs"
+                        class="mr-2 d-flex flex-column caption"
+                        v-on="on"
+                      >
+                        <div class="text-center">
+                          {{ $t('form.application.18orOlder') }}
+                        </div>
+                        <v-checkbox
+                          v-model="major"
+                          :rules="majorRules"
+                          small
+                          class="ma-0"
+                          no-hint
+                          color="primary"
+                          :ripple="false"
+                        ></v-checkbox>
+                      </div>
+                    </template>
+                    <span>{{ $t('form.application.18tooltip') }}</span>
+                  </v-tooltip>
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn
+                        height="56"
+                        color="primary"
+                        :disabled="
+                          !(
+                            baseForm.firstname.length > 1 &&
+                            baseForm.lastname.length > 1 &&
+                            major
+                          )
+                        "
+                        v-bind="attrs"
+                        v-on="on"
+                        @click="addTeamMember()"
+                        ><v-icon>mdi-plus</v-icon></v-btn
+                      >
+                    </template>
+                    <span>{{ $t('form.application.add_team') }}</span>
+                  </v-tooltip>
+                </div>
                 <v-list>
                   <template v-for="(item, index) in baseForm.team">
                     <v-list-item
@@ -331,7 +387,7 @@
                 <Confirm
                   :error="error"
                   :submitting="submitting"
-                  :valid="valid && baseForm.team.length > 0"
+                  :valid="valid"
                   @submit="
                     submitting = true
                     submit()
@@ -374,6 +430,8 @@ export default {
       urlMode: false,
       choice: true,
       baseForm: {
+        firstname: '',
+        lastname: '',
         email: '',
         title: '',
         description: '',
@@ -399,44 +457,6 @@ export default {
           text: this.$t('form.application.format.comic'),
           value: 4,
         },
-      ],
-      nameRules: [
-        (v) =>
-          !!v ||
-          this.$t('form.application.validation.required', {
-            0: this.$t('form.application.lastname').toLowerCase(),
-          }),
-        (v) =>
-          v.length <= 45 ||
-          this.$t('form.application.validation.lessThan', {
-            0: this.$t('form.application.lastname').toLowerCase(),
-            1: '45',
-          }),
-        (v) =>
-          v.length >= 2 ||
-          this.$t('form.application.validation.moreThan', {
-            0: this.$t('form.application.lastname').toLowerCase(),
-            1: '2',
-          }),
-      ],
-      firstnameRules: [
-        (v) =>
-          !!v ||
-          this.$t('form.application.validation.required', {
-            0: this.$t('form.application.firstname'.toLowerCase()),
-          }),
-        (v) =>
-          v.length <= 45 ||
-          this.$t('form.application.validation.lessThan', {
-            0: this.$t('form.application.firstname'.toLowerCase()),
-            1: '45',
-          }),
-        (v) =>
-          v.length >= 2 ||
-          this.$t('form.application.validation.moreThan', {
-            0: this.$t('form.application.firstname'.toLowerCase()),
-            1: '2',
-          }),
       ],
       emailRules: [
         (v) =>
@@ -517,10 +537,76 @@ export default {
           }),
       ],
       agreedRules: [(v) => v || this.$t('form.application.validation.tos')],
+      birthday: null,
+      menu: false,
+      major: false,
+      nameRules: [
+        (v) =>
+          !!v ||
+          this.baseForm.team.length > 0 ||
+          (v.length === 0 && this.baseForm.team.length > 0) ||
+          this.$t('form.application.validation.required', {
+            0: this.$t('form.application.lastname').toLowerCase(),
+          }),
+        (v) =>
+          v.length <= 45 ||
+          this.$t('form.application.validation.lessThan', {
+            0: this.$t('form.application.lastname').toLowerCase(),
+            1: '45',
+          }),
+        (v) =>
+          v.length >= 2 ||
+          v.length === 0 ||
+          this.$t('form.application.validation.moreThan', {
+            0: this.$t('form.application.lastname').toLowerCase(),
+            1: '2',
+          }),
+      ],
+      firstnameRules: [
+        (v) =>
+          !!v ||
+          this.baseForm.team.length > 0 ||
+          (v.length === 0 && this.baseForm.team.length) ||
+          this.$t('form.application.validation.required', {
+            0: this.$t('form.application.firstname').toLowerCase(),
+          }),
+        (v) =>
+          v.length <= 45 ||
+          this.$t('form.application.validation.lessThan', {
+            0: this.$t('form.application.firstname').toLowerCase(),
+            1: '45',
+          }),
+        (v) =>
+          v.length >= 2 ||
+          v.length === 0 ||
+          this.$t('form.application.validation.moreThan', {
+            0: this.$t('form.application.firstname').toLowerCase(),
+            1: '2',
+          }),
+      ],
     }
+  },
+  computed: {
+    majorRules() {
+      return [
+        (v) =>
+          (v !== undefined && v !== null && v !== false) ||
+          this.baseForm.team.length > 0 ||
+          this.$t('required'),
+      ]
+    },
   },
   mounted() {},
   methods: {
+    addTeamMember() {
+      this.baseForm.team.push({
+        firstname: this.baseForm.firstname,
+        lastname: this.baseForm.lastname,
+      })
+      this.baseForm.firstname = ''
+      this.baseForm.lastname = ''
+      this.major = false
+    },
     makeContact(index) {
       this.baseForm.team.unshift(this.baseForm.team.splice(index, 1)[0])
     },
@@ -531,8 +617,6 @@ export default {
         const data = new FormData()
         Object.keys(this.baseForm).forEach((key) => {
           if (key === 'team') {
-            data.append('firstname', this.baseForm.team[0].firstname)
-            data.append('lastname', this.baseForm.team[0].lastname)
             data.append(key, JSON.stringify(this.baseForm[key]))
           } else {
             data.append(key, this.baseForm[key])

@@ -26,7 +26,6 @@
           sm="11"
           md="8"
           lg="7"
-          xl="6"
           class="d-flex"
         >
           <v-avatar class="mr-6 mt-6" size="120">

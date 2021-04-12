@@ -13,7 +13,7 @@ image: "/darcey-beau-q8d7wzc40ea-unsplash.jpg"
 background_color: "#F8E71C"
 file: "/prezi_compressed.pdf"
 youtube_video_id: vnWSDQFP_Xc
-
+order: 3
 ---
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
 
