@@ -23,6 +23,7 @@ category:
 type:
 - Video
 issues:
+- public_space
 - housing
 - urban_spatial_planning
 perspectives:
