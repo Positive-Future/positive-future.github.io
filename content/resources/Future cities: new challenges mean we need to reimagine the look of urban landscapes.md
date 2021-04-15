@@ -6,15 +6,21 @@ author: The Conversation
 description_en: Imagining future cities has long been a favourite activity for architects,
   artists and designers. Technology is often central in these schemes – it appears
   as a dynamic and seemingly unstoppable force, providing a neat solution to society’s
-  problems. We need to answer questions about what can be sustained and what cannot,
-  where cities can be located and where they cannot, and how we might travel in and
-  between them.
+  problems. But our recent research has suggested that we need to significantly rethink
+  the way we imagine future cities, and move our focus from an overarching technological
+  vision to other priorities, such as environmental sustainability and the need to
+  tackle social inequalities. We need to answer questions about what can be sustained
+  and what cannot, where cities can be located and where they cannot, and how we might
+  travel in and between them.
 description_fr: Imagining future cities has long been a favourite activity for architects,
   artists and designers. Technology is often central in these schemes – it appears
   as a dynamic and seemingly unstoppable force, providing a neat solution to society’s
-  problems. We need to answer questions about what can be sustained and what cannot,
-  where cities can be located and where they cannot, and how we might travel in and
-  between them.
+  problems. But our recent research has suggested that we need to significantly rethink
+  the way we imagine future cities, and move our focus from an overarching technological
+  vision to other priorities, such as environmental sustainability and the need to
+  tackle social inequalities. We need to answer questions about what can be sustained
+  and what cannot, where cities can be located and where they cannot, and how we might
+  travel in and between them.
 category:
 - face_our_challenges_today
 - stimulate_your_creativity
