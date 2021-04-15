@@ -22,6 +22,7 @@ category:
 type:
 - Video
 issues:
+- public_space
 - transport
 perspectives:
 - magazine

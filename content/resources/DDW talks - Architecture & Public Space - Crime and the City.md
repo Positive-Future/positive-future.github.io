@@ -20,6 +20,7 @@ category:
 type:
 - Video
 issues:
+- public_space
 - security_police
 - urban_spatial_planning
 perspectives:
