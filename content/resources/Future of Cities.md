@@ -17,7 +17,7 @@ description_fr: This report shares the findings from this Future of Cities Open 
   the issues addressed are specific to key locations but most are universal and therefore
   of relevance to most cities.
 category:
-- imagine_a_far_away_future
+- think_of_your_ideal_city
 - face_our_challenges_today
 type:
 - Article
