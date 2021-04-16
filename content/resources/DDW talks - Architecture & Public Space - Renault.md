@@ -1,6 +1,6 @@
 ---
 lang: EN
-name: 'Architecture & Public Space - Renault : New Mobility'
+name: 'Architecture & Public Space - Renault : Future of Mobility'
 author: DDW talks
 description_en: As Senior Vice President Corporate Design at Groupe Renault, Laurens
   van den Acker shared his vision on the future of mobility in relation to shared
