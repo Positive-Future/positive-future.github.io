@@ -15,6 +15,7 @@ category:
 type:
 - Article
 issues:
+- work
 - food
 - education
 - sciences_technologies
@@ -22,7 +23,6 @@ issues:
 - energy
 - health
 - environment
-- government_local_and_national
 perspectives:
 - risk_management
 - foresight_studies
