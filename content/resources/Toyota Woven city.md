@@ -22,8 +22,8 @@ perspectives:
 - opinions
 - case_studies
 - magazine
-date: ''
+date: "2020"
 file: ''
-url: ''
+url: https://www.youtube.com/watch?v=BONZLgt1G2U
 
 ---
