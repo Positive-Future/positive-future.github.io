@@ -1,5 +1,5 @@
 ---
-lang: ''
+lang: EN
 name: Toyota Woven city
 author: 'Toyota '
 description_en: Presentation of the project Toyota Woven City, a prototype of a city
