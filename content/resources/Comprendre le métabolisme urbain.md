@@ -1,5 +1,5 @@
 ---
-lang: EN
+lang: FR
 name: Comprendre le métabolisme urbain - Understanding urban metabolism
 author: Moreno, Carlos
 description_en: It took 40,000 years to mankind to grow up to 3 billion people settled
