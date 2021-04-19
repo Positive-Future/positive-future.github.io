@@ -16,6 +16,7 @@ category:
 - face_our_challenges_today
 - stimulate_your_creativity
 type:
+- Video
 - Drawing
 - Article
 issues:
