@@ -28,9 +28,13 @@
           lg="7"
           class="d-flex"
         >
-          <v-avatar class="mr-6 mt-6" size="120">
-            <img :src="'/jury/' + item.slug + '.jpg'" :alt="item.name" />
-          </v-avatar>
+          <div class="d-flex flex-column">
+            <v-avatar class="mr-6 mt-6" size="120">
+              <img :src="'/jury/' + item.slug + '.jpg'" :alt="item.name" />
+            </v-avatar>
+            <small v-if="item.copyright">&COPY;{{ item.copyright }}</small>
+          </div>
+
           <div :key="index" class="my-6">
             <span class="name px-1">
               {{ item.name }}
