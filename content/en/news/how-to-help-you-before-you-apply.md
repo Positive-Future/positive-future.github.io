@@ -3,7 +3,7 @@ draft: false
 en: []
 fr: []
 title: How to help you before you apply?
-subtitle: About fifty scientific resources are now available to nourish your reflection!
+subtitle: About 160 scientific resources are now available to nourish your reflection!
 categories:
 - event
 featured: true
@@ -11,6 +11,8 @@ image: "/actu-2.png"
 background_color: ''
 file: ''
 order: 1
+youtube_video_id: ''
+
 ---
 Because we believe that it is important for candidates to draw on the current state of scientific knowledge to propose their story of a desirable and realistic city in 2100, the Positive Future team and its scientific board provide a thematic resource base.
 
