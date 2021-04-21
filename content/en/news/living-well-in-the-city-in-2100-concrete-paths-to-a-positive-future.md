@@ -2,8 +2,9 @@
 draft: false
 en: []
 fr: []
-title: Living well in the city in 2100? Concrete paths to a positive future
-subtitle: 'Webinar on April 8th '
+title: Watch again the webinar "Living well in the city in 2100? Concrete paths to
+  a positive future"
+subtitle: By Saadi Lahlou and Jean-Eric Aubert
 categories:
 - event
 featured: true
@@ -22,10 +23,10 @@ In addition to the scientific resources available in the "Food for thought" sect
 
 On the basis of existing experience and knowledge, the human and social sciences and prospective, can help to clear the way and propose perspectives in terms of social ties, urban planning and architecture, and governance.
 
-**Jean-Éric Aubert**, President of the 2100 Foundation, and **Saadi Lahlou**, Director of the Institut d'Études Avancées de Paris, will present these approaches and show how it is possible today to design and prepare a positive future.
+**Jean-Éric Aubert**, President of the 2100 Foundation, and **Saadi Lahlou**, Director of the Institut d'Études Avancées de Paris, present these approaches and show how it is possible today to design and prepare a positive future.
 
-**_This webinar will be an opportunity for a question and answer session about the Positive Future contest, for all interested candidates._**
+**_This webinar contains a question and answer session about the Positive Future contest, for all interested candidates._**
 
-**REGISTRATION FOR THE WEBINAR**
+**WATCH THE WEBINAR**
 
-Registration is closed. If you would like to attend the webinar, please contact us at [info@positive-future.org](info@positive-future.org).
+[https://www.youtube.com/watch?v=Qe6GUH_2ils](https://www.youtube.com/watch?v=Qe6GUH_2ils "https://www.youtube.com/watch?v=Qe6GUH_2ils")
