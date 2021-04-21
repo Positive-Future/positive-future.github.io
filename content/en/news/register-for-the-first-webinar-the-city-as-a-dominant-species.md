@@ -2,17 +2,18 @@
 draft: false
 en: []
 fr: []
-title: 'Review the first webinar: "The City, the Dominant Species? Nature and Future
-  of the urban phenomenon"'
+title: 'Watch again the first webinar: "The City, the Dominant Species? Nature and
+  Future of the urban phenomenon"'
 subtitle: by Fabienne Goux-Baudiment
 categories:
 - event
 featured: false
 image: "/darcey-beau-q8d7wzc40ea-unsplash.jpg"
 background_color: ''
-youtube_video_id: 'vnWSDQFP_Xc'
+youtube_video_id: vnWSDQFP_Xc
 file: "/prezi_compressed.pdf"
 order: 3
+
 ---
 **In addition to the scientific resources available in the Matter for Thought section, the Positive Future team offers scientific events, webinars, and online conferences over the months to feed the thinking of the contest participants.**
 
