@@ -2,8 +2,9 @@
 draft: false
 en: []
 fr: []
-title: Bien vivre dans la ville en 2100 ? Des pistes concrètes pour un futur positif
-subtitle: Webinaire le 8 avril à 18h
+title: Revoir le webinaire "Bien vivre dans la ville en 2100 ? Des pistes concrètes
+  pour un futur positif"
+subtitle: Par Saadi Lahlou et Jean-Eric Aubert
 categories:
 - event
 featured: false
@@ -12,6 +13,7 @@ youtube_video_id: ''
 background_color: ''
 file: ''
 order: 6
+
 ---
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
 
@@ -21,10 +23,10 @@ order: 6
 
 Sur la base des expériences et connaissances existantes, les sciences humaines et sociales et la prospective, peuvent aider à défricher les pistes à suivre et proposer des perspectives, en matière de lien social, d’urbanisme et architecture, ou encore de gouvernance.
 
-**Jean-Éric Aubert,** Président de la Fondation 2100, et **Saadi Lahlou**, Directeur de l’Institut d’Études Avancées de Paris, **nous présenteront ces démarches et montreront comment il est possible dès aujourd’hui de concevoir et préparer un futur positif.**
+**Jean-Éric Aubert,** Président de la Fondation 2100, et **Saadi Lahlou**, Directeur de l’Institut d’Études Avancées de Paris, **nous présentent ces démarches et montrent comment il est possible dès aujourd’hui de concevoir et préparer un futur positif.**
 
-**_Ce webinaire sera l’occasion d’une session de questions-réponses au sujet du concours Positive Future, à l’attention de toutes les candidates et tous les candidats intéressé.e.s._**
+**_Ce webinaire comprend une session de questions-réponses au sujet du concours Positive Future, à l’attention de toutes les candidates et tous les candidats intéressé.e.s._**
 
-**INSCRIPTIONS**
+**REVOIR LE WEBINAIRE**
 
-Les inscriptions sont closes. Si vous souhaitez suivre le webinaire, écrivez-nous à [info@positive-future.org](info@positive-future.org).
+[https://www.youtube.com/watch?v=Qe6GUH_2ils](https://www.youtube.com/watch?v=Qe6GUH_2ils "https://www.youtube.com/watch?v=Qe6GUH_2ils")
