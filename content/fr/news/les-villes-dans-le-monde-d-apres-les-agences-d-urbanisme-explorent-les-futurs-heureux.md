@@ -13,6 +13,7 @@ youtube_video_id: ''
 background_color: ''
 file: ''
 order: 4
+
 ---
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
 
@@ -28,4 +29,4 @@ La Fédération nationale des agences d’urbanisme (Fnau) a placé ses rencontr
 
 **INSCRIPTIONS**
 
-Entrée libre sur inscription obligatoire [ICI](https://www.weezevent.com/les-villes-dans-le-monde-dapres-les-agences-durbanisme-explorent-les-futurs). Le lien de connexion au webinaire vous sera envoyé la veille de l’événement.
+Entrée libre sur inscription obligatoire [ICI](https://www.weezevent.com/les-villes-dans-le-monde-dapres-les-agences-durbanisme-explorent-les-futurs). Vous recevrez le lien de connexion à l'issue de votre inscription.
