@@ -2,11 +2,10 @@
   "resources": {
     "noDataText": "Aucune ressource disponible",
     "noResultsText": "Aucune ressource ne correspond à votre recherche",
-    "thisDocumentLangIs": "Cette ressource est en",
     "resultFound": " ressource trouvée",
     "resultsFound": " ressources trouvées",
-    "check": "Consultez un aperçu des ressources sur la ville du futur",
     "perPage": " par page",
+    "check": "Consultez un aperçu des ressources sur la ville du futur",
     "filterAlternativeText": "Les ressources peuvent aussi être explorées à partir des filtres suivants:",
     "filters": {
       "search": "Rechercher une ressource",
@@ -77,7 +76,8 @@
       "transport": "Transport",
       "urban_spatial_planning": "Urbanisme, territoire",
       "work": "Emploi, travail"
-    }
+    },
+    "thisDocumentLangIs": "Cette ressource est en"
   },
   "form": {
     "mandatory": "Ce champ est requis",
@@ -92,10 +92,10 @@
       "description": "Description de l'oeuvre",
       "file": "Votre fichier",
       "browse": "Parcourir vos fichiers",
+      "contact": "Veuillez indiquer un contact. Si vous faites partie d'un groupe, veuillez indiquer un seul contact pour l'ensemble du groupe.",
       "url": "URL du fichier",
       "thank_you": "Merci pour votre candidature au concours Positive Future! ",
       "back_to_home": "Revenir à la page d'accueil",
-      "contact": "Veuillez indiquer un contact. Si vous faites partie d'un groupe, veuillez indiquer un seul contact pour l'ensemble du groupe.",
       "description_alt": "Présentez votre travail en quelques lignes, vos inspirations et les ressources que vous avez peut-être utilisées. \n Rappelez-vous que vous êtes tenu.e d'indiquer  tout usage d'une oeuvre originale déjà existante ou la participation d'un tiers dans la création de l'oeuvre proposée.",
       "format": {
         "title": "Type d'oeuvre",
@@ -132,16 +132,16 @@
       },
       "add_team": "Ajouter un membre de l'équipe",
       "remove_team": "Retirer ce membre de l'équipe",
+      "email2": "Confirmez votre E-mail",
       "choice1": "Téléchargez votre fichier depuis votre ordinateur (25Mo max)",
       "choice2": "Fournissez une URL pour votre fichier",
-      "email2": "Confirmez votre E-mail",
       "fileInstead": "Fournir un fichier plutôt qu'une URL",
       "urlInstead": "Founir une URL plutôt que le fichier",
-      "pdfHint": "Fichier PDF de 25 Mo maximum",
       "videoHint": "Fichier Vidéo de 25Mo maximum",
+      "pdfHint": "Fichier PDF de 25 Mo maximum",
+      "birthdayLabel": "Date d'anniversaire",
       "18orOlder": "18 ans ou +",
       "18tooltip": "En cochant cette case, je certifie que ce membre de l'équipe a 18 ans ou plus",
-      "birthdayLabel": "Date d'anniversaire",
       "clickToMakeContact": "Cliquez pour désigner ce membre de l'équipe comme contact",
       "contactPerson": "Contact du projet"
     }
@@ -195,5 +195,6 @@
     "tips": "Conseils"
   },
   "or": "OU",
-  "apply": "Participer"
+  "apply": "Participer",
+  "required": "Requis"
 }
