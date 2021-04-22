@@ -15,4 +15,4 @@ file: ''
 link: contest/jury
 
 ---
-Have a look at the [8 jury members ](https://www.positive-future.org/contest/jury)of the Positive Future competition!
+Have a look at the [8 jury members ](https://www.positive-future.org/contest/jury)of the Positive Future competition and discover their bios!
