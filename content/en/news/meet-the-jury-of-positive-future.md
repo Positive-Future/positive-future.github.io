@@ -1,17 +1,18 @@
 ---
-draft: true
+draft: false
 en: []
 fr: []
 order: 7
-title: Meet the jury of Positive Future
+title: Meet the jury of Positive Future!
 subtitle: ''
-categories: []
+categories:
+- event
 featured: true
-image: "/jury/garreta.jpg"
+image: "/jury.jpg"
 youtube_video_id: ''
 background_color: ''
 file: ''
 link: contest/jury
 
 ---
-Come and meet the jry members of the Positive Future contest!
+Have a look at the 8 jury members of the Positive Future competition!
