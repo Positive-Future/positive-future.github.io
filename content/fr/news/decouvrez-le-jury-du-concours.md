@@ -12,7 +12,7 @@ image: "/jury.jpg"
 youtube_video_id: ''
 background_color: ''
 file: ''
-link: concours/jury
+link: contest/jury
 
 ---
 Découvrez dès à présent les [8 membres du jury ](https://www.positive-future.org/fr/contest/jury)du concours et leurs bios !
