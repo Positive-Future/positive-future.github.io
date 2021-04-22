@@ -11,6 +11,7 @@ image: "/jury/garreta.jpg"
 youtube_video_id: ''
 background_color: ''
 file: ''
+link: contest/jury
 
 ---
 Come and meet the jry members of the Positive Future contest!

@@ -104,7 +104,11 @@
             <v-carousel-item v-for="(item, i) in featured" :key="i">
               <v-card
                 nuxt
-                :to="localePath('/news/' + item.slug)"
+                :to="
+                  item.link
+                    ? localePath('/' + item.link)
+                    : localePath('/news/' + item.slug)
+                "
                 color="#FFF1D0"
                 light
                 height="420"
