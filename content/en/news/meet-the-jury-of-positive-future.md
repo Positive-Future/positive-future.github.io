@@ -6,7 +6,7 @@ order: 7
 title: Meet the jury of Positive Future
 subtitle: ''
 categories: []
-featured: false
+featured: true
 image: "/jury/garreta.jpg"
 youtube_video_id: ''
 background_color: ''
