@@ -3,7 +3,7 @@ draft: false
 en: []
 fr: []
 order: 7
-title: Meet the jury of Positive Future!
+title: Meet the jury of the competition!
 subtitle: ''
 categories:
 - event
