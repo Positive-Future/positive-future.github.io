@@ -37,6 +37,6 @@ Proposals can be submitted on a submission platform which will be accessible fro
 Stories can be presented in the following formats:
 
 * **Newspaper articles** : maximum 10,000 characters (including spaces), with the possibility of including illustrations.
-* **News or scenarios** : maximum 20,000 characters (including spaces)
+* **Short stories or scenarios** : maximum 20,000 characters (including spaces)
 * **Videos or short films** : maximum 10 minutes
 * **Comics and graphic novels** : maximum 15 pages
