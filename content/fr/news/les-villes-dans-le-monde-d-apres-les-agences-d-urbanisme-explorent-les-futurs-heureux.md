@@ -7,12 +7,13 @@ title: Les villes dans le monde d’après – Les agences d’urbanisme explore
 subtitle: Webinaire le 21 avril à 18h
 categories:
 - event
-featured: true
+featured: false
 image: "/peerapon-chantharainthron-kavu6s_qtyo-unsplash.jpg"
 youtube_video_id: ''
 background_color: ''
 file: ''
 order: 4
+link: ''
 
 ---
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
