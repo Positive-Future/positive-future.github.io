@@ -104,6 +104,7 @@ fields:
     news will redirect to the link localePath in the website instead of the related
     news page.
 pages:
+- content/en/news/cities-after-the-pandemic.md
 - content/en/news/cities-in-the-post-world-urban-planning-agencies-explore-the-happy-future.md
 - content/en/news/drivers-of-change-and-lifestyle-in-2050-a-decentralized-and-autonomous-futurescape.md
 - content/en/news/how-to-help-you-before-you-apply.md
