@@ -26,6 +26,7 @@ category:
 type:
 - Book
 issues:
+- housing
 - urban_spatial_planning
 - food
 - environment
