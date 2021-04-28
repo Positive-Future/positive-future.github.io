@@ -30,7 +30,7 @@ Proposals can be submitted individually or in groups.
 
 ## Where ?
 
-Proposals can be submitted on our online platform, accessible from April 1 until May 31, 2021.
+Proposals can be submitted on our [online platform](https://www.positive-future.org/fr/apply), accessible from April 1 until May 31, 2021.
 
 ## How ?
 
