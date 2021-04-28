@@ -1,6 +1,6 @@
 ---
 lang: EN
-name: The future of urban air
+name: The Future of Urban Air
 author: Imperial Tech Foresight
 description_en: Together, the creators examined the effects of urban air on the experience
   of city dwellers and explored the ways that these could change with the introduction
