@@ -10,8 +10,10 @@ featured: true
 image: "/ross-findon-mg28olyfghi-unsplash.jpg"
 youtube_video_id: ''
 background_color: ''
-file: ''
+file: "/presentation_victor-motti.pdf"
 order: 5
+link: ''
+
 ---
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
 
