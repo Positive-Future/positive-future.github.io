@@ -10,7 +10,7 @@ featured: true
 image: "/ross-findon-mg28olyfghi-unsplash.jpg"
 youtube_video_id: ''
 background_color: ''
-file: ''
+file: "/presentation_victor-motti.pdf"
 order: 5
 link: ''
 
