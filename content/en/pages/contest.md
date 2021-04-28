@@ -17,7 +17,7 @@ criterions:
 ---
 ## Who ?
 
-The contest is open to all, regardless of nationality or profession.
+The contest is open to anyone aged 18 or more, regardless of nationality or profession.
 
 Proposals can be submitted individually or in groups.
 
