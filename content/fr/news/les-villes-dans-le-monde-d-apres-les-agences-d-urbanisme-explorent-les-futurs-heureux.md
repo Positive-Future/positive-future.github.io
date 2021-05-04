@@ -2,7 +2,7 @@
 draft: false
 en: []
 fr: []
-title: revoir le webinaire "Les villes dans le monde d’après – Les agences d’urbanisme
+title: Revoir le webinaire "Les villes dans le monde d’après – Les agences d’urbanisme
   explorent les futurs (heureux)"
 subtitle: Par Brigitte Bariol-Mathais et Karine Hurel
 categories:
