@@ -2,9 +2,9 @@
 draft: false
 en: []
 fr: []
-title: Les villes dans le monde d’après – Les agences d’urbanisme explorent les futurs
-  (heureux)
-subtitle: Webinaire le 21 avril à 18h
+title: revoir le webinaire "Les villes dans le monde d’après – Les agences d’urbanisme
+  explorent les futurs (heureux)"
+subtitle: Par Brigitte Bariol-Mathais et Karine Hurel
 categories:
 - event
 featured: false
@@ -28,6 +28,6 @@ La Fédération nationale des agences d’urbanisme (Fnau) a placé ses rencontr
 
 **_Karine HUREL_** _est géographe et cartographe. Aujourd'hui, déléguée générale adjointe de la fédération nationale des agences d'urbanisme, elle a été pendant plus d'une dizaine d'année responsable de la cartographie à la Datar (puis au CGET). Spécialiste des enjeux de représentation, elle mène des travaux de recherche-action plus spécifiquement sur le thème de la représentation des flux et du mouvement et sur le rôle de la représentation cartographique dans la prise de décision politique._
 
-**INSCRIPTIONS**
+**REVOIR LE WEBINAIRE**
 
-Entrée libre sur inscription obligatoire [ICI](https://www.weezevent.com/les-villes-dans-le-monde-dapres-les-agences-durbanisme-explorent-les-futurs). Vous recevrez le lien de connexion à l'issue de votre inscription.
+[https://www.youtube.com/watch?v=va_hcao0uRc](https://www.youtube.com/watch?v=va_hcao0uRc "https://www.youtube.com/watch?v=va_hcao0uRc")
