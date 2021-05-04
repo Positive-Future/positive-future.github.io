@@ -25,6 +25,4 @@ L'art et la science des études prospectives nous aident à mieux comprendre les
 
 **_Victor V. Motti_** _est un écrivain international, conférencier et conseiller en prospective stratégique. Il est directeur de la **World Futures Studies Federation** (WFSF) et rédacteur en chef du_ European Journal of Futures Research _(EJFR) publié par Springer. Il a été invité à participer à des conférences internationales en Europe, en Afrique et en Asie, où il a parlé des transitions clés aux niveaux planétaire et régional pour les horizons 2030, 2050 et 2060. Il a été le lauréat du prix du président de la WFSF pour les jeunes futurologues exceptionnels en 2013. Il a publié l’ouvrage_ Alternative Planetary Futures _en 2019 au Royaume-Uni._
 
-**INSCRIPTIONS**
-
-Entrée libre sur inscription obligatoire [ICI](https://www.weezevent.com/webinaire-drivers-of-change-and-lifestyle-in-2050) . Le lien de connexion au webinaire vous sera envoyé la veille de l’événement.
+**REVOIR LE WEBINAIRE**
