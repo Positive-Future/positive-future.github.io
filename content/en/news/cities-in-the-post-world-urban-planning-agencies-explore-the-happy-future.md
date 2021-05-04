@@ -2,8 +2,9 @@
 draft: false
 en: []
 fr: []
-title: Cities in the post-world - Urban planning agencies explore the (happy) future
-subtitle: Webinar on April 21st
+title: Watch again the webinar "Cities in the post-world - Urban planning agencies
+  explore the (happy) future"
+subtitle: By Brigitte Bariol-Mathais and Karine Hurel
 categories:
 - event
 featured: false
@@ -27,6 +28,6 @@ The Fédération nationale des agences d'urbanisme (Fnau) has placed its 2020 me
 
 **_Karine HUREL_** _is a geographer and cartographer. Today, she is the deputy general delegate of the national federation of urban planning agencies. For more than ten years, she was in charge of cartography at the Datar (then at the CGET). A specialist in representation issues, she conducts research-action work more specifically on the theme of the representation of flows and movement and on the role of cartographic representation in political decision-making._
 
-**REGISTRATION FOR THE WEBINAR**
+**WATCH AGAIN THE WEBINAR**
 
-**Free entry upon registration** [**HERE**](https://www.weezevent.com/les-villes-dans-le-monde-dapres-les-agences-durbanisme-explorent-les-futurs). The connection link to the webinar will be sent to you the day before the event.
+[https://www.youtube.com/watch?v=va_hcao0uRc](https://www.youtube.com/watch?v=va_hcao0uRc "https://www.youtube.com/watch?v=va_hcao0uRc")
