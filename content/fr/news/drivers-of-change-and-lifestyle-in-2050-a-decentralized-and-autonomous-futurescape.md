@@ -2,11 +2,12 @@
 draft: false
 en: []
 fr: []
-title: 'Drivers of Change and Lifestyle in 2050: A Decentralized and Autonomous Futurescape'
-subtitle: Webinaire le 27 avril à 18h
+title: 'Revoir le webinaire : Drivers of Change and Lifestyle in 2050: A Decentralized
+  and Autonomous Futurescape'
+subtitle: Par Victor V. Motti
 categories:
 - event
-featured: true
+featured: false
 image: "/ross-findon-mg28olyfghi-unsplash.jpg"
 youtube_video_id: ''
 background_color: ''
@@ -26,3 +27,5 @@ L'art et la science des études prospectives nous aident à mieux comprendre les
 **_Victor V. Motti_** _est un écrivain international, conférencier et conseiller en prospective stratégique. Il est directeur de la **World Futures Studies Federation** (WFSF) et rédacteur en chef du_ European Journal of Futures Research _(EJFR) publié par Springer. Il a été invité à participer à des conférences internationales en Europe, en Afrique et en Asie, où il a parlé des transitions clés aux niveaux planétaire et régional pour les horizons 2030, 2050 et 2060. Il a été le lauréat du prix du président de la WFSF pour les jeunes futurologues exceptionnels en 2013. Il a publié l’ouvrage_ Alternative Planetary Futures _en 2019 au Royaume-Uni._
 
 **REVOIR LE WEBINAIRE**
+
+[https://www.youtube.com/watch?v=ocv7qL3g6EU](https://www.youtube.com/watch?v=ocv7qL3g6EU "https://www.youtube.com/watch?v=ocv7qL3g6EU")
