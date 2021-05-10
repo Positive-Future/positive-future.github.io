@@ -2,7 +2,7 @@
 draft: false
 en: []
 fr: []
-title: 'Whatch again the webinar: Drivers of Change and Lifestyle in 2050: A Decentralized
+title: 'Watch again the webinar: Drivers of Change and Lifestyle in 2050: A Decentralized
   and Autonomous Futurescape'
 subtitle: By Victor V. Motti
 categories:
