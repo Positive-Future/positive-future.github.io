@@ -2,11 +2,12 @@
 draft: false
 en: []
 fr: []
-title: 'Drivers of Change and Lifestyle in 2050: A Decentralized and Autonomous Futurescape'
-subtitle: Webinar on April 27th
+title: 'Whatch again the webinar: Drivers of Change and Lifestyle in 2050: A Decentralized
+  and Autonomous Futurescape'
+subtitle: By Victor V. Motti
 categories:
 - event
-featured: true
+featured: false
 image: "/ross-findon-mg28olyfghi-unsplash.jpg"
 youtube_video_id: ''
 background_color: ''
@@ -25,6 +26,6 @@ In this webinar, Victor V. Motti will review some drivers of change such as data
 
 _Victor V. Motti is an international writer, speaker, and strategic foresight adviser. He is Director of the World Futures Studies Federation (WFSF) since 2017 and Managing Editor of the_ European Journal of Futures Research (EJFR) published by Springer. He has been a guest speaker at international conferences in Europe, Africa and Asia, speaking on key transitions at planetary and regional levels for the 2030, 2050 and 2060 horizons. He was the recipient of the WFSF President’s Outstanding Young Futurist Award in 2013. He is also the author of the book Alternative Planetary Futures _published in the UK._
 
-**REGISTRATION FOR THE WEBINAR**
+**WATCH THE WEBINAR**
 
-**Free entry upon registration** [**HERE.**](https://www.weezevent.com/webinaire-drivers-of-change-and-lifestyle-in-2050) The connection link to the webinar will be sent to you the day before the event.
+[https://www.youtube.com/watch?v=ocv7qL3g6EU](https://www.youtube.com/watch?v=ocv7qL3g6EU "https://www.youtube.com/watch?v=ocv7qL3g6EU")
