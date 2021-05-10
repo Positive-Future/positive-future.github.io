@@ -25,4 +25,4 @@ _By **Marion Waller**, urban planner and philosopher. She is currently Advisor t
 
 **REGISTRATION FOR THE WEBINAR**
 
-**Register for free from** [**HERE **](https://www.weezevent.com/webinaire-la-restauration-ecologique-urbaine)The connection link to the webinar will be sent to you the day before the event.
+**Register for free from** [**HERE**](https://www.weezevent.com/webinaire-la-restauration-ecologique-urbaine). The connection link to the webinar will be sent to you the day before the event.
