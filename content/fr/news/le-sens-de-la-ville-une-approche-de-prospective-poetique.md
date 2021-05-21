@@ -7,7 +7,7 @@ title: 'Revoir le webinaire "Le sens de la ville - une approche de prospective p
 subtitle: Par Georges Amar
 categories:
 - event
-featured: false
+featured: true
 image: "/trust-tru-katsande-wdjrbpl-q3q-unsplashbd.jpg"
 youtube_video_id: ''
 background_color: ''
