@@ -3,8 +3,8 @@ draft: false
 en: []
 fr: []
 order: 9
-title: The meaning of cities - a poetic foresight approach
-subtitle: Webinar on May 17th
+title: Watch again the webinar "The meaning of cities - a poetic foresight approach"
+subtitle: By Georges Amar
 categories:
 - event
 featured: false
@@ -23,6 +23,6 @@ A city is not only a system. A technical, social, economic system. It is not onl
 
 _By **Georges Amar**, futurist and mobility consultant. He is also a research associate of the Theory and Methods of Innovative Design chair at the Ecole des Mines ParisTech. He was Director of the "Foresight and innovative design" unit at RATP. His publications include_ Aimer le futur _(2013) and_ Homo Mobilis _(2016)._
 
-**REGISTRATION FOR THE WEBINAR**
+**WATCH AGAIN THE WEBINAR**
 
-**Register for free from** [**HERE**](https://www.weezevent.com/webinaire-le-sens-de-la-ville-une-approche-de-prospective-poetique)**.** The connection link to the webinar will be sent to you the day before the event.
+[https://www.youtube.com/watch?v=vEZXLUgpcw0](https://www.youtube.com/watch?v=vEZXLUgpcw0 "https://www.youtube.com/watch?v=vEZXLUgpcw0")
