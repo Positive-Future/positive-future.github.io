@@ -7,7 +7,7 @@ title: 'Les villes après la pandémie '
 subtitle: Webinaire le 10 mai à 18h
 categories:
 - event
-featured: true
+featured: false
 image: "/danist-dqxiw7ncb9q-unsplashbd.jpg"
 youtube_video_id: ''
 background_color: ''
