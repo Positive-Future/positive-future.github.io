@@ -1,13 +1,13 @@
 ---
-draft: false
+draft: true
 en: []
 fr: []
 order: 9
-title: 'Le sens de la ville - une approche de prospective poétique '
-subtitle: Webinaire le 17 mai à 18h
+title: 'Revoir le webinaire "Le sens de la ville - une approche de prospective poétique" '
+subtitle: Par Georges Amar
 categories:
 - event
-featured: true
+featured: false
 image: "/trust-tru-katsande-wdjrbpl-q3q-unsplashbd.jpg"
 youtube_video_id: ''
 background_color: ''
@@ -23,6 +23,6 @@ Une ville ce n’est pas seulement un système. Un système technique, social, �
 
 _Par **Georges Amar**, prospectiviste et consultant en mobilité. Il est également chercheur associé de la chaire Théorie et Méthodes de la Conception innovante de l'Ecole des Mines ParisTech. Il fut directeur de l’unité « prospective et conception innovante » de la RATP. Il a notamment publié_ Aimer le futur _(2013) et_ Homo Mobilis _(2016)._
 
-**INSCRIPTIONS**
+**REVOIR LE WEBINAIRE**
 
-Entrée libre sur inscription obligatoire [ICI](https://www.weezevent.com/webinaire-le-sens-de-la-ville-une-approche-de-prospective-poetique). Le lien de connexion au webinaire vous sera envoyé la veille de l’événement.
+[https://www.youtube.com/watch?v=vEZXLUgpcw0](https://www.youtube.com/watch?v=vEZXLUgpcw0 "https://www.youtube.com/watch?v=vEZXLUgpcw0").
