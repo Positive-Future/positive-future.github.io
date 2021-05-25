@@ -144,7 +144,10 @@
       "18tooltip": "En cochant cette case, je certifie que ce membre de l'équipe a 18 ans ou plus",
       "clickToMakeContact": "Cliquez pour désigner ce membre de l'équipe comme contact",
       "contactPerson": "Contact du projet"
-    }
+    },
+    "application-closed-text": "La période de dépôt des candidatures s'est terminée le 31 mai 2021.",
+    "application-closed-text2": "Vous souhaitez participer à la prochaine édition de Positive Future?",
+    "application-closed-text3": "Visitez la page avec le sujet et les informations."
   },
   "misc": {
     "languages": {
@@ -196,5 +199,6 @@
   },
   "or": "OU",
   "apply": "Participer",
-  "required": "Requis"
+  "required": "Requis",
+  "the-applications-are-closed": "Le dépôt des candidatures est clos!"
 }
