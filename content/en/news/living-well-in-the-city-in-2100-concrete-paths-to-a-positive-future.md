@@ -16,7 +16,7 @@ order: 6
 link: ''
 
 ---
-In addition to the scientific resources available in the "Food for thought" section, the Positive Future team offers scientific events, webinars, and online conferences over the course of the months to help participants in the contest.It's a challenge to say what the city of tomorrow will be like, given the challenges, ruptures and progress of this century, which will lead to radical changes. To say how we dream it in a probable future, how to dream of achievable utopias, is a poetic exercise that transports us into an ideal within reach.
+In addition to the scientific resources available in the "Food for thought" section, the Positive Future team offers scientific events, webinars, and online conferences to help participants in the contest, and for anyone interested in the themes tackled by the Positive Future project.
 
 ![](/webinaire_8avril_en.jpg)
 
