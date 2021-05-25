@@ -144,10 +144,7 @@
       "18tooltip": "By ticking this box, I certify that this team member is 18 years old or older",
       "clickToMakeContact": "Click to make this team member the project contact person",
       "contactPerson": "Project contact person"
-    },
-    "application-closed-text": "The applications for the current edition of Positive Futures were closed on the 31th of May 2021.",
-    "application-closed-text2": "You want to take part in the next Positive Future edition?",
-    "application-closed-text3": "Check out the topic and information page."
+    }
   },
   "misc": {
     "languages": {
@@ -199,7 +196,5 @@
   },
   "or": "OR",
   "apply": "Apply",
-  "required": "Required",
-  "the-applications-are-closed": "The applications are closed!",
-  "positive-future-next-edition": "Positive Future next edition"
+  "required": "Required"
 }
