@@ -13,11 +13,10 @@ background_color: ''
 youtube_video_id: vnWSDQFP_Xc
 file: "/prezi_compressed.pdf"
 order: 3
+link: ''
 
 ---
-**In addition to the scientific resources available in the Matter for Thought section, the Positive Future team offers scientific events, webinars, and online conferences over the months to feed the thinking of the contest participants.**
-
-**For those who could not attend, you have the opportunity to review the very first webinar of March 3, hosted by Fabienne Goux-Baudiment, PhD in prospective.**
+In addition to the scientific resources available in the "Food for thought" section, the Positive Future team offers scientific events, webinars, and online conferences to help participants in the contest, and for anyone interested in the themes tackled by the Positive Future project.
 
 ![](/webinaire_3-mars_en.png)
 
@@ -30,3 +29,7 @@ But what is the city? What is its intimate nature? What is this concordance betw
 ***
 
 **Find Fabienne Goux-Baudiment presentation here**: [https://bit.ly/3qcQDwZ](https://bit.ly/3qcQDwZ "https://bit.ly/3qcQDwZ")
+
+**WATCH AGAIN THE WEBINAR**
+
+[https://www.youtube.com/watch?v=vnWSDQFP_Xc](https://www.youtube.com/watch?v=vnWSDQFP_Xc "https://www.youtube.com/watch?v=vnWSDQFP_Xc")
