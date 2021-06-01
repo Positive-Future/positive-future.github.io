@@ -3,11 +3,11 @@ draft: false
 en: []
 fr: []
 order: 8
-title: 'Les villes après la pandémie '
-subtitle: Webinaire le 10 mai à 18h
+title: 'Revoir le webinaire "Les villes après la pandémie" '
+subtitle: Par Bettina Laville, Patrick Le Galès, et Patrick Braouezec
 categories:
 - event
-featured: false
+featured: true
 image: "/danist-dqxiw7ncb9q-unsplashbd.jpg"
 youtube_video_id: ''
 background_color: ''
@@ -25,6 +25,6 @@ La pandémie a en effet révélé ce que nous savons sans en avoir gardé la mé
 
 _Avec la participation de **Patrick Braouezec**, ancien député maire de Saint Denis, Président d’honneur du Conseil National de villes, **Patrick Le Galès**, Directeur de recherche CNRS, Doyen de l’École urbaine de Sciences Po, Professeur à Sciences Po, FBA, **Bettina Laville**, conseiller d’État honoraire, Présidente fondatrice du Comité 21. Webinaire animé par **Jean-Eric Aubert,** Président de la Société française de prospective, et de la Fondation 2100_
 
-**INSCRIPTIONS**
+**REVOIR LE WEBINAIRE**
 
-Entrée libre sur inscription obligatoire [ICI](https://www.weezevent.com/webinaire-les-villes-apres-la-pandemie). Le lien de connexion au webinaire vous sera envoyé la veille de l’événement.
+[https://www.youtube.com/watch?v=u75Wb5TKWtY](https://www.youtube.com/watch?v=u75Wb5TKWtY "https://www.youtube.com/watch?v=u75Wb5TKWtY")

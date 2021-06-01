@@ -3,8 +3,8 @@ draft: false
 en: []
 fr: []
 order: 8
-title: 'Cities after the pandemic '
-subtitle: Webinar on May 10th
+title: Watch again the webinar "Cities after the pandemic"
+subtitle: With Bettina Laville, Patrick Le Galès, Patrick Braouezec
 categories:
 - event
 featured: true
@@ -25,6 +25,6 @@ The pandemic has indeed revealed what we know without having remembered: viruses
 
 _With the participation of **Patrick Braouezec**, former deputy mayor of Saint Denis, Honorary President of the National Council of Cities, **Patrick Le Galès**, Director of Research CNRS, Dean of the Urban School of Sciences Po, Professor at Sciences Po, FBA, **Bettina Laville**, Honorary State Councillor, Founding President of the Comité 21. Moderated by **Jean-Eric Auber**t, President of the French Society of Foresight, and of the 2100 Foundation._
 
-**REGISTRATION FOR THE WEBINAR**
+**WATCH AGAIN THE WEBINAR**
 
-**Register for free from** [**HERE**](https://www.weezevent.com/webinaire-les-villes-apres-la-pandemie)**.** The connection link to the webinar will be sent to you the day before the event.
+[https://www.youtube.com/watch?v=u75Wb5TKWtY](https://www.youtube.com/watch?v=u75Wb5TKWtY "https://www.youtube.com/watch?v=u75Wb5TKWtY")
