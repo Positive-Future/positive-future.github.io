@@ -24,14 +24,14 @@
                   {{ index.theme }}
                 </h1>
 
-                <!--       <v-btn
+                <v-btn
                   color="primary"
                   class="mx-1 float-right"
                   nuxt
                   :to="localePath('/apply')"
                 >
                   {{ $t('apply') }}
-                </v-btn> -->
+                </v-btn>
               </v-card>
               <v-card flat class="py-6 px-1">
                 <h1 class="mt-2 mb-4">{{ dates.title }}</h1>
