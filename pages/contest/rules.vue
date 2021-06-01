@@ -11,7 +11,7 @@
           </div>
           <h1 class="pt-0 mt-0 mb-4">
             {{ index.theme }}
-            <!--           <v-btn
+            <v-btn
               v-if="$vuetify.breakpoint.mdAndUp"
               color="primary"
               class="mx-1 float-right"
@@ -19,7 +19,7 @@
               :to="localePath('/apply')"
             >
               {{ $t('apply') }}
-            </v-btn> -->
+            </v-btn>
           </h1>
           <p>
             {{ contest.intro }}
