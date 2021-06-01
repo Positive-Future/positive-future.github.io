@@ -2,9 +2,10 @@
 draft: false
 en: []
 fr: []
-order: 10
-title: 'Urban ecological restoration: overcoming the city-nature opposition'
-subtitle: Webinar on May 25th
+order: "10"
+title: 'Watch again the webinar "Urban ecological restoration: overcoming the city-nature
+  opposition"'
+subtitle: By Marion Waller
 categories:
 - event
 featured: false
@@ -23,6 +24,6 @@ While the idea of a dichotomy between, on the one hand, a wild nature without hu
 
 _By **Marion Waller**, urban planner and philosopher. She is currently Advisor to the Mayor of Paris in charge of architecture, heritage and the transformation of the urban landscape. She was previously Deputy Director of Jean-Louis Missika’s cabinet, Deputy Mayor of Paris, and oversaw the "Reinvent Paris" competition, which invited teams from around the world to rethink Parisian sites. In 2016, she published "Artefacts naturels" (Editions de l'Eclat), a book on ecological restoration and possibilities of environmental re-habitation._
 
-**REGISTRATION FOR THE WEBINAR**
+**WATCH AGAIN THE WEBINAR**
 
-**Register for free from** [**HERE**](https://www.weezevent.com/webinaire-la-restauration-ecologique-urbaine). The connection link to the webinar will be sent to you the day before the event.
+[https://www.youtube.com/watch?v=fgttpvGzDGg](https://www.youtube.com/watch?v=fgttpvGzDGg "https://www.youtube.com/watch?v=fgttpvGzDGg")
