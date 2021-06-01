@@ -3,8 +3,9 @@ draft: false
 en: []
 fr: []
 order: 10
-title: 'La restauration écologique urbaine : dépasser l’opposition ville-nature'
-subtitle: Webinaire le 25 mai à 18h
+title: 'Revoir le webinaire "La restauration écologique urbaine : dépasser l’opposition
+  ville-nature"'
+subtitle: Par Marion Waller
 categories:
 - event
 featured: true
@@ -23,6 +24,6 @@ Alors qu’a parfois été véhiculée l’idée d’une dichotomie entre, d’u
 
 _Par **Marion Waller**, urbaniste et philosophe. Elle est actuellement conseillère de la Maire de Paris en charge de l’architecture, du patrimoine et de la transformation du paysage urbain. Elle était précédemment directrice adjointe du cabinet de Jean-Louis Missika, adjoint à la Maire de Paris, et a notamment piloté le concours « Réinventer Paris » qui a invité des équipes du monde entier à repenser des sites parisiens. Elle a publié en 2016_ Artefacts naturels _(Editions de l’Eclat), un livre sur la restauration écologique et les possibilités de ré-habitation de l’environnement._
 
-**INSCRIPTIONS**
+**REVOIR LE WEBINAIRE**
 
-Entrée libre sur inscription obligatoire [ICI](https://www.weezevent.com/webinaire-la-restauration-ecologique-urbaine). Le lien de connexion au webinaire vous sera envoyé la veille de l’événement.
+[https://www.youtube.com/watch?v=fgttpvGzDGg](https://www.youtube.com/watch?v=fgttpvGzDGg "https://www.youtube.com/watch?v=fgttpvGzDGg")
