@@ -8,7 +8,7 @@ title: 'Webinaire "Neighbourhoods for the Future: a Plea for a Social and Ecolog
 subtitle: Lundi 14 mai 2021 à 18h (heure française)
 categories:
 - event
-featured: false
+featured: true
 image: "/2hannah-sibayan-kzhmbyzktng-unsplash-1.jpg"
 youtube_video_id: ''
 background_color: ''
