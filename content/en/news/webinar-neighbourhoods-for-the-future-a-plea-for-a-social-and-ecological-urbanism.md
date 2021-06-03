@@ -8,7 +8,7 @@ title: 'Webinar "Neighbourhoods for the Future: a Plea for a Social and Ecologic
 subtitle: On June 14th at 6pm (Paris Time)
 categories:
 - event
-featured: false
+featured: true
 image: "/2hannah-sibayan-kzhmbyzktng-unsplash-1.jpg"
 youtube_video_id: ''
 background_color: ''
