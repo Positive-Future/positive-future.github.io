@@ -5,7 +5,7 @@ fr: []
 order: 11
 title: 'Webinaire "Neighbourhoods for the Future: a Plea for a Social and Ecological
   Urbanism"'
-subtitle: Lundi 14 mai 2021 à 18h (heure française)
+subtitle: Lundi 14 juin 2021 à 18h (heure française)
 categories:
 - event
 featured: true
