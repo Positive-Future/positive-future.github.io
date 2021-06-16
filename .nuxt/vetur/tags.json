@@ -1,0 +1,62 @@
+{
+  "Confirm": {
+    "description": "Auto imported from components/form/Confirm.vue"
+  },
+  "LazyConfirm": {
+    "description": "Auto imported from components/form/Confirm.vue"
+  },
+  "NewsletterForm": {
+    "description": "Auto imported from components/form/NewsletterForm.vue"
+  },
+  "LazyNewsletterForm": {
+    "description": "Auto imported from components/form/NewsletterForm.vue"
+  },
+  "Credits": {
+    "description": "Auto imported from components/navigation/Credits.vue"
+  },
+  "LazyCredits": {
+    "description": "Auto imported from components/navigation/Credits.vue"
+  },
+  "Disconnected": {
+    "description": "Auto imported from components/navigation/Disconnected.vue"
+  },
+  "LazyDisconnected": {
+    "description": "Auto imported from components/navigation/Disconnected.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/navigation/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/navigation/Footer.vue"
+  },
+  "LanguagePicker": {
+    "description": "Auto imported from components/navigation/LanguagePicker.vue"
+  },
+  "LazyLanguagePicker": {
+    "description": "Auto imported from components/navigation/LanguagePicker.vue"
+  },
+  "TopBar": {
+    "description": "Auto imported from components/navigation/TopBar.vue"
+  },
+  "LazyTopBar": {
+    "description": "Auto imported from components/navigation/TopBar.vue"
+  },
+  "NewsItem": {
+    "description": "Auto imported from components/news/NewsItem.vue"
+  },
+  "LazyNewsItem": {
+    "description": "Auto imported from components/news/NewsItem.vue"
+  },
+  "YoutubeEmbedded": {
+    "description": "Auto imported from components/news/YoutubeEmbedded.vue"
+  },
+  "LazyYoutubeEmbedded": {
+    "description": "Auto imported from components/news/YoutubeEmbedded.vue"
+  },
+  "ChipsContainer": {
+    "description": "Auto imported from components/resources/ChipsContainer.vue"
+  },
+  "LazyChipsContainer": {
+    "description": "Auto imported from components/resources/ChipsContainer.vue"
+  }
+}
