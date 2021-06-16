@@ -5,8 +5,7 @@ fr: []
 order: 11
 title: 'Revoir le webinaire "Neighbourhoods for the Future: a Plea for a Social and
   Ecological Urbanism"'
-subtitle: par Maarten Hajer, professeur distingué d' "Urban Futures" à l'Université
-  d'Utrecht
+subtitle: par Maarten Hajer
 categories:
 - event
 featured: true
