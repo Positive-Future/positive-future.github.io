@@ -9,7 +9,7 @@ subtitle: par Maarten Hajer, professeur distingué d' "Urban Futures" à l'Unive
   d'Utrecht
 categories:
 - event
-featured: false
+featured: true
 image: "/2hannah-sibayan-kzhmbyzktng-unsplash-1.jpg"
 youtube_video_id: ''
 background_color: ''
