@@ -105,7 +105,12 @@
                 </div>
                 <div
                   id="mergeRow-gdpr"
-                  class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group"
+                  class="
+                    mergeRow
+                    gdpr-mergeRow
+                    content__gdprBlock
+                    mc-field-group
+                  "
                 >
                   <div class="content__gdpr">
                     <label>Permission</label>
