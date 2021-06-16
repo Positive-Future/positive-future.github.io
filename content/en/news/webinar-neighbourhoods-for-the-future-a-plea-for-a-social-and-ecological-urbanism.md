@@ -10,7 +10,7 @@ categories:
 - event
 featured: true
 image: "/2hannah-sibayan-kzhmbyzktng-unsplash-1.jpg"
-youtube_video_id: ''
+youtube_video_id: 9mP1f7JR_vE
 background_color: ''
 file: ''
 link: ''
@@ -27,5 +27,3 @@ The current ecological crisis will transform the face and fate of cities, **_Nei
 **_Maarten Hajer_** _is distinguished professor of Urban Futures at Utrecht University. Previously he was the Dutch Cabinet's advisor on spatial planning as Director-General of PBL – the Netherlands Environmental Assessment Agency. His most recent book is_ Neighbourhoods for the Future – a Plea for a Social and Ecological Urbanism_, written with Peter Pelzer, Martijn van den Hurk, Chris ten Dam and Edwin Buitelaar (Trancity/Valiz, 2020)._
 
 **WATCH AGAIN THE WEBINAR**
-
-[https://www.youtube.com/watch?v=9mP1f7JR_vE&t=2629s](https://www.youtube.com/watch?v=9mP1f7JR_vE&t=2629s "https://www.youtube.com/watch?v=9mP1f7JR_vE&t=2629s")

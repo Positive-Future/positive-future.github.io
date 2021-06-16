@@ -10,7 +10,7 @@ categories:
 - event
 featured: true
 image: "/2hannah-sibayan-kzhmbyzktng-unsplash-1.jpg"
-youtube_video_id: ''
+youtube_video_id: 9mP1f7JR_vE
 background_color: ''
 file: ''
 link: ''
@@ -27,5 +27,3 @@ En introduisant les concepts d'arrangements et d'écologies de quartier, sur la 
 **_Maarten Hajer_** _est professeur distingué d'"Urban Futures" à l'université d'Utrecht. Auparavant, il était le conseiller du cabinet néerlandais en matière d'aménagement du territoire en tant que directeur général de PBL - l'agence néerlandaise d'évaluation environnementale. Son livre le plus récent est_ Neighbourhoods for the Future - a Plea for a Social and Ecological Urbanism, _écrit avec Peter Pelzer, Martijn van den Hurk, Chris ten Dam et Edwin Buitelaar (Trancity/Valiz, 2020)._
 
 **REVOIR LE WEBINAIRE**
-
-[https://www.youtube.com/watch?v=9mP1f7JR_vE&t=2629s](https://www.youtube.com/watch?v=9mP1f7JR_vE&t=2629s "https://www.youtube.com/watch?v=9mP1f7JR_vE&t=2629s")
