@@ -3,12 +3,13 @@ draft: false
 en: []
 fr: []
 order: 11
-title: 'Webinaire "Neighbourhoods for the Future: a Plea for a Social and Ecological
-  Urbanism"'
-subtitle: Lundi 14 juin 2021 à 18h (heure française)
+title: 'Revoir le webinaire "Neighbourhoods for the Future: a Plea for a Social and
+  Ecological Urbanism"'
+subtitle: par Maarten Hajer, professeur distingué d' "Urban Futures" à l'Université
+  d'Utrecht
 categories:
 - event
-featured: true
+featured: false
 image: "/2hannah-sibayan-kzhmbyzktng-unsplash-1.jpg"
 youtube_video_id: ''
 background_color: ''
@@ -24,8 +25,8 @@ La crise écologique actuelle va transformer le visage et le destin des villes. 
 
 En introduisant les concepts d'arrangements et d'écologies de quartier, sur la base d'exemples en Europe et en Amérique du Nord, ce livre offre une nouvelle perspective sur la relation entre les différents acteurs, les ressources et les règles, afin de susciter le changement et de préparer les citadins et les responsables politiques à réaliser leurs propres quartiers durables pour l'avenir.
 
-**_Maarten Hajer_** _est professeur distingué d'"Urban Futures" à l'université d'Utrecht. Auparavant, il était le conseiller du cabinet néerlandais en matière d'aménagement du territoire en tant que directeur général de PBL - l'agence néerlandaise d'évaluation environnementale. Son livre le plus récent est_ Neighbourhoods for the Future - a Plea for a Social and Ecological Urbanism_, écrit avec Peter Pelzer, Martijn van den Hurk, Chris ten Dam et Edwin Buitelaar (Trancity/Valiz, 2020)._
+**_Maarten Hajer_** _est professeur distingué d'"Urban Futures" à l'université d'Utrecht. Auparavant, il était le conseiller du cabinet néerlandais en matière d'aménagement du territoire en tant que directeur général de PBL - l'agence néerlandaise d'évaluation environnementale. Son livre le plus récent est_ Neighbourhoods for the Future - a Plea for a Social and Ecological Urbanism, _écrit avec Peter Pelzer, Martijn van den Hurk, Chris ten Dam et Edwin Buitelaar (Trancity/Valiz, 2020)._
 
-**S'INSCRIRE AU WEBINAIRE**
+**REVOIR LE WEBINAIRE**
 
-Gratuit sur inscription obligatoire [**ICI**](https://www.weezevent.com/webinaire-neighbourhoods-for-the-future). Un lien de connexion vous sera envoyé la veille de l'événement.
+[https://www.youtube.com/watch?v=9mP1f7JR_vE&t=2629s](https://www.youtube.com/watch?v=9mP1f7JR_vE&t=2629s "https://www.youtube.com/watch?v=9mP1f7JR_vE&t=2629s")
