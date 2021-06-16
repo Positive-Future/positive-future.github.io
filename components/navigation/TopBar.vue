@@ -185,8 +185,7 @@ export default {
           icon: 'instagram',
         },
         {
-          url:
-            'https://www.youtube.com/channel/UCguKalm3EVILMvkvoNXkANg/featured',
+          url: 'https://www.youtube.com/channel/UCguKalm3EVILMvkvoNXkANg/featured',
           text: this.$t('misc.social.youtube'),
           icon: 'youtube',
         },
