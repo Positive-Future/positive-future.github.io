@@ -23,8 +23,8 @@
       </v-breadcrumbs>
 
       <v-card class="px-6 pb-6 pt-1">
-        <v-card-title
-          ><h1>
+        <v-card-title>
+          <h1>
             {{ post.title }}
           </h1>
         </v-card-title>
@@ -62,7 +62,6 @@ export default {
   async asyncData({ app, $content, params }) {
     /*   const alterlang = app.i18n.locale === 'en' ? 'fr' : 'en' */
     const post = await $content(app.i18n.locale + '/news', params.slug).fetch()
-    console.log('post: ', post)
 
     /*  const newSlug = post[alterlang].split('/')[3].split('.')[0]
     
