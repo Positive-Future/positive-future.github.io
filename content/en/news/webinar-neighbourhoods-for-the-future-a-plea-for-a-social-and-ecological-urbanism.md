@@ -3,9 +3,9 @@ draft: false
 en: []
 fr: []
 order: 11
-title: 'Webinar "Neighbourhoods for the Future: a Plea for a Social and Ecological
-  Urbanism"'
-subtitle: On June 14th at 6pm (Paris Time)
+title: 'Watch again the webinar "Neighbourhoods for the Future: a Plea for a Social
+  and Ecological Urbanism"'
+subtitle: By Maarten Hajer
 categories:
 - event
 featured: true
@@ -26,6 +26,6 @@ The current ecological crisis will transform the face and fate of cities, **_Nei
 
 **_Maarten Hajer_** _is distinguished professor of Urban Futures at Utrecht University. Previously he was the Dutch Cabinet's advisor on spatial planning as Director-General of PBL – the Netherlands Environmental Assessment Agency. His most recent book is_ Neighbourhoods for the Future – a Plea for a Social and Ecological Urbanism_, written with Peter Pelzer, Martijn van den Hurk, Chris ten Dam and Edwin Buitelaar (Trancity/Valiz, 2020)._
 
-**REGISTER FOR THE WEBINAR**
+**WATCH AGAIN THE WEBINAR**
 
-Free upon registration [**HERE**](https://www.weezevent.com/webinaire-neighbourhoods-for-the-future). You will receive the connexion link the day before the event.
+[https://www.youtube.com/watch?v=9mP1f7JR_vE&t=2629s](https://www.youtube.com/watch?v=9mP1f7JR_vE&t=2629s "https://www.youtube.com/watch?v=9mP1f7JR_vE&t=2629s")
