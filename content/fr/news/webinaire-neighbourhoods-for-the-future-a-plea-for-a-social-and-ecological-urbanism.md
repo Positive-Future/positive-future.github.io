@@ -11,7 +11,7 @@ categories:
 featured: true
 image: "/2hannah-sibayan-kzhmbyzktng-unsplash-1.jpg"
 youtube_video_id: 9mP1f7JR_vE
-background_color: ''
+background_color: "#FFFFFF"
 file: ''
 link: ''
 
