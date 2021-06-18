@@ -9,6 +9,6 @@ schedule:
     content: Application deadline​
   awards:
     date: September 2021
-    content: Prices award in Paris
+    content: Awards Ceremony (online)
 
 ---
