@@ -1,6 +1,6 @@
 ---
 lang: EN
-name: Society & Future of Work
+name: 'Society & Future of Work: Challenges and Trends'
 author: World Economic Forum
 description_en: Anyone with a mobile phone can access the course material for a Harvard
   degree, take part in the 'gig economy' or find funding for their new venture. That's
