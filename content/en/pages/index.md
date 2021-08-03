@@ -1,7 +1,7 @@
 ---
 title: Positive Future
 subtitle: 'Fostering visions of a desirable future '
-theme: The City in 2100
+theme: Working in 2100
 
 ---
 There are representations aplenty of dystopian futures. However, many research and foresight works focus on positive alternatives for the tomorrow's world.

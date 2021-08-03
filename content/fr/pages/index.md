@@ -1,7 +1,7 @@
 ---
 title: Positive Future
 subtitle: Réaliser et promouvoir des visions d'un avenir désirable
-theme: La ville en 2100
+theme: Le travail en 2100
 
 ---
 Alors que les représentations de futurs dystopiques sont nombreuses, il existe en parallèle beaucoup de travaux de recherche et de prospective dessinant des alternatives positives pour le monde de demain.

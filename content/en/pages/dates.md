@@ -1,5 +1,5 @@
 ---
-title: Important dates
+title: Important dates!
 schedule:
   opening:
     date: April 1st, 2021

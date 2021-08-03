@@ -1,6 +1,6 @@
 <template>
   <v-dialog
-    v-model="credits"
+    :value="credits"
     scrollable
     max-width="700px"
     light
@@ -51,24 +51,21 @@
         been designed by IAS Paris. It is powered by
         <a href="https://nuxtjs.org/" target="_blank">Nuxt</a> and
         <a href="http://vuetifyjs.com" target="_blank">Vuetify</a>
-        .<br />All the images used are free of rights (or distributed as such).
+        .<br />All the images used are free of rights (or distributed as
+        such).<br />
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+          <img
+            alt="Creative Commons License"
+            style="border-width: 0"
+            src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
+          />
+        </a>
         <br />
-        <span class="caption">
-          <a
-            rel="license"
-            href="http://creativecommons.org/licenses/by-sa/4.0/"
-          >
-            <img
-              alt="Creative Commons License"
-              style="border-width: 0"
-              src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
-            />
-          </a>
-          <br />
-          <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"
-            >Positive-Future</span
-          >
-          by
+        <span
+          xmlns:dct="http://purl.org/dc/terms/"
+          property="dct:title"
+          class="caption"
+          >Positive-Future by
           <a
             xmlns:cc="http://creativecommons.org/ns#"
             href="https://wprn.org"
@@ -89,7 +86,7 @@
             rel="dct:source"
             >https://github.com/Positive-Future/positive-future.github.io</a
           >
-          By Antoine Cordelois.
+          by Antoine Cordelois.
         </span>
       </v-card-text>
 

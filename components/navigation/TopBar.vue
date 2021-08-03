@@ -13,8 +13,8 @@
                 <v-img
                   nuxt
                   src="/icon.png"
-                  :height="$vuetify.breakpoint.mdAndUp ? '90px' : '44px'"
-                  :width="$vuetify.breakpoint.mdAndUp ? '90px' : '44px'"
+                  :height="$vuetify.breakpoint.mdAndUp ? '80px' : '44px'"
+                  :width="$vuetify.breakpoint.mdAndUp ? '80px' : '44px'"
                 />
               </nuxt-link>
             </v-col>
@@ -27,7 +27,7 @@
                     :key="index"
                     bottom
                   >
-                    <template v-slot:activator="{ on }">
+                    <template #activator="{ on }">
                       <v-btn
                         target="_blank"
                         rel="noopener noreferrer"
@@ -57,7 +57,7 @@
                       active-class="selected"
                     >
                       <v-menu left bottom offset-y>
-                        <template v-slot:activator="{ on, attrs }">
+                        <template #activator="{ on, attrs }">
                           <v-tab
                             v-bind="attrs"
                             :class="{
@@ -78,24 +78,28 @@
                         </template>
 
                         <v-list>
-                          <v-list-item nuxt :to="localePath('/apply')">
+                          <v-list-item
+                            nuxt
+                            :to="localePath('/contest/current')"
+                          >
                             <v-list-item-title>
-                              {{ $t('apply') }}
+                              {{ $t('next-edition') }}
                             </v-list-item-title>
                           </v-list-item>
-                          <v-list-item nuxt :to="localePath('/contest/rules')">
+                          <v-list-item
+                            nuxt
+                            :to="localePath('/contest/previous')"
+                          >
                             <v-list-item-title>
-                              {{ $t('navigation.rules') }}
+                              {{ $t('previous-edition') }}
                             </v-list-item-title>
                           </v-list-item>
-                          <v-list-item nuxt :to="localePath('/contest/tips')">
+                          <v-list-item
+                            nuxt
+                            :to="localePath('/contest/laureates')"
+                          >
                             <v-list-item-title>
-                              {{ $t('navigation.tips') }}
-                            </v-list-item-title>
-                          </v-list-item>
-                          <v-list-item nuxt :to="localePath('/contest/jury')">
-                            <v-list-item-title>
-                              {{ $t('navigation.jury') }}
+                              {{ $t('laureates') }}
                             </v-list-item-title>
                           </v-list-item>
                         </v-list>
@@ -104,11 +108,11 @@
                       <v-tab nuxt :to="localePath('/resources')">{{
                         $t('navigation.resources')
                       }}</v-tab>
-                      <v-tab nuxt :to="localePath('/news')">
-                        {{ $t('navigation.news') }}
+                      <v-tab nuxt :to="localePath('/webinars')">
+                        {{ $t('webinars') }}
                       </v-tab>
                       <v-menu left bottom offset-y>
-                        <template v-slot:activator="{ on, attrs }">
+                        <template #activator="{ on, attrs }">
                           <v-tab
                             v-bind="attrs"
                             :class="{

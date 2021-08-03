@@ -6,10 +6,7 @@
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="mt-8 mb-4">
-            {{ index.title }}
-          </h1>
-          <nuxt-content :document="index" />
+          <nuxt-content :document="index" class="mt-12" />
         </v-col>
       </v-row>
     </section>
@@ -62,39 +59,10 @@
         </v-col>
       </v-row>
     </section>
+
     <section>
       <v-row justify="center">
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <v-row>
-            <v-col cols="12" sm="9">
-              <v-card
-                color="#4FD4C7"
-                class="px-6 pt-6 pb-8"
-                style="margin-bottom: -60px"
-                flat
-                href="http://eepurl.com/hgbB6f"
-                target="_blank"
-                :class="{ 'ml-n6': $vuetify.breakpoint.mdAndUp }"
-              >
-                <div class="d-inline-flex justify-center align-center">
-                  <v-icon x-large class="rotate-24 mr-6" color="black"
-                    >mdi-email</v-icon
-                  >
-                  <div class="subtitle">
-                    {{ $t('misc.ui.subscribe3') }}
-                  </div>
-                </div>
-              </v-card>
-            </v-col></v-row
-          >
-        </v-col></v-row
-      >
-    </section>
-
-    <section style="background-color: #c9f8f3; padding-top: 80px">
-      <v-row justify="center">
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
-          <h1 class="mb-3">{{ $t('navigation.news') }}</h1>
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="pb-12">
           <v-carousel
             cycle
             height="420"
@@ -125,6 +93,89 @@
         </v-col>
       </v-row>
     </section>
+    <section>
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
+          <v-card
+            color="#4FD4C7"
+            class="px-6 pt-6 pb-8"
+            style="margin-bottom: -60px; max-width: 50%"
+            flat
+            href="http://eepurl.com/hgbB6f"
+            target="_blank"
+          >
+            <div class="d-inline-flex justify-center align-center">
+              <v-icon x-large class="rotate-24 mr-6" color="black"
+                >mdi-email</v-icon
+              >
+              <div class="subtitle">
+                {{ $t('misc.ui.subscribe3') }}
+              </div>
+            </div>
+          </v-card>
+        </v-col>
+      </v-row>
+    </section>
+    <section style="background-color: #c9f8f3; padding-top: 50px">
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
+          <template v-if="$vuetify.breakpoint.mdAndUp">
+            <v-row>
+              <v-col md="4">
+                <div class="logos">
+                  <div class="line1"></div>
+                  <div class="logo_container1 rounded-circle">
+                    <v-img :src="organizers.ias.logo" class="logo"></v-img>
+                  </div>
+                  <div class="line2"></div>
+                  <div class="logo_container2 rounded-circle">
+                    <v-img
+                      :src="organizers.fundation.logo"
+                      class="logo"
+                    ></v-img>
+                  </div>
+                </div>
+              </v-col>
+              <v-col md="6">
+                <div>
+                  Une initiative créée par l'Institut d'études avancées de Paris
+                  et la fondation 2100, avec le soutien de l'Institut for Future
+                  Studies.
+                </div>
+                <v-img
+                  :src="organizers.iff.logo"
+                  class="float-right"
+                  max-width="255"
+                  max-height="200px"
+                ></v-img>
+              </v-col>
+            </v-row>
+          </template>
+          <template v-else>
+            <v-col cols="12" class="ma-3">
+              <div class="mb-6">
+                Une initiative créée par l'Institut d'études avancées de Paris
+                et la fondation 2100, avec le soutien de l'Institut for Future
+                Studies.
+              </div>
+              <v-row>
+                <v-col cols="4">
+                  <div class="white ma-3">
+                    <v-img :src="organizers.ias.logo"></v-img>
+                  </div>
+                </v-col>
+                <v-col cols="4">
+                  <v-img :src="organizers.fundation.logo"></v-img>
+                </v-col>
+                <v-col cols="4">
+                  <v-img :src="organizers.iff.logo"></v-img>
+                </v-col>
+              </v-row>
+            </v-col>
+          </template>
+        </v-col>
+      </v-row>
+    </section>
   </div>
 </template>
 
@@ -139,11 +190,14 @@ export default {
       .sortBy('order', 'desc')
       .limit(3)
       .fetch()
-
+    const organizers = await $content(
+      app.i18n.locale + '/pages/organizers'
+    ).fetch()
     return {
       index,
       dates,
       featured,
+      organizers,
     }
   },
   data() {
@@ -156,9 +210,60 @@ export default {
   mounted() {},
 }
 </script>
-<style>
+<style lang="scss">
 .date_headline {
   background-color: black;
   color: white;
+}
+
+.logos {
+  position: relative;
+  height: 400px;
+}
+.logo_container1 {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  background-color: white;
+  height: 160px;
+  width: 160px;
+  padding: 30px;
+  align-items: center;
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+}
+.logo_container2 {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  background-color: white;
+  height: 160px;
+  width: 160px;
+  padding: 30px;
+  align-items: center;
+  .logo {
+    width: 80px;
+    margin: 8px;
+  }
+}
+.line1 {
+  position: absolute;
+  top: -20px;
+  left: 80px;
+  height: 160px;
+  width: 4px;
+  margin: 6px 0;
+  background: white;
+}
+.line2 {
+  position: absolute;
+  top: -20px;
+  left: 228px;
+  height: 180px;
+  width: 4px;
+  margin: 6px 0;
+  background: white;
 }
 </style>

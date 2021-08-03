@@ -1,9 +1,9 @@
 ---
-title: Dates à retenir!
+title: Dates clés!
 schedule:
   opening:
     date: 1er Avril 2021
-    content: Ouverture de la plateforme de dépôt.
+    content: Lancement de l'édition 2022
   deadline:
     date: 31 Mai 2021
     content: Date limite pour le dépôt des dossiers.

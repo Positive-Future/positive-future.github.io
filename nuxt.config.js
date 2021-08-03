@@ -158,7 +158,6 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    '@nuxtjs/google-analytics',
     '@nuxtjs/style-resources',
     '@nuxtjs/vuetify',
   ],
@@ -171,6 +170,8 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxt/content',
     '@nuxtjs/axios',
+    '@nuxtjs/sentry',
+    '@nuxtjs/ackee',
     [
       'nuxt-i18n',
       {
@@ -198,17 +199,23 @@ export default {
   // MODULES CONFIGURATIONS
   // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   /*
-   ** Google Analytics module configuration
-   ** https://github.com/nuxt-community/analytics-module
-   ** https://matteogabriele.gitbooks.io/vue-analytics/content/
+   ** Sentry module configuration
+   ** https://github.com/nuxt-community/sentry-module#options
    */
-  googleAnalytics: {
-    id: 'UA-192949805-1',
-    /*    dev: false,
-       debug: {
-         enabled: true,
-         sendHitTask: true
-       } */
+  sentry: {
+    dsn: 'https://933066c491f04f9a8b15141c68c7a0a8@sentry.paris-ias.io/2',
+    config: {}, // Additional config
+  },
+  /*
+   ** Ackee module configuration
+   ** https://github.com/nuxt-community/ackee-module
+   ** https://ackee.nuxtjs.org/
+   */
+  ackee: {
+    server: 'https://ackee.paris-ias.io/',
+    domainId: 'e20368c7-be1f-4f07-9a10-590cc9eb517b',
+    // see documentation for more!
+    ignoreOwnVisits: false,
   },
   /*
    ** PWA module configuration

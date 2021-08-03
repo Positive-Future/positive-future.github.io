@@ -166,7 +166,7 @@
     "ui": {
       "download": "Download the attached file",
       "or": "Or",
-      "theme": "Theme",
+      "theme": "Contest Edition 2022",
       "contact_us": "Contact us",
       "maintained": "This website is maintained by",
       "maintainer": "Paris IAS",
@@ -186,7 +186,7 @@
     }
   },
   "navigation": {
-    "about": "About us",
+    "about": "About our initiative",
     "contest": "Competition",
     "resources": "Food for thought",
     "sab": "Scientific Advisory Board",
@@ -201,5 +201,9 @@
   "apply": "Apply",
   "required": "Required",
   "the-applications-are-closed": "The applications are closed!",
-  "positive-future-next-edition": "Positive Future next edition"
+  "positive-future-next-edition": "Positive Future next edition",
+  "next-edition": "Next edition",
+  "previous-edition": "Previous edition",
+  "laureates": "Laureates",
+  "webinars": "Webinars"
 }
