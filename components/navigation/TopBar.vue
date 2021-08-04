@@ -13,8 +13,8 @@
                 <v-img
                   nuxt
                   src="/icon.png"
-                  :height="$vuetify.breakpoint.mdAndUp ? '80px' : '44px'"
-                  :width="$vuetify.breakpoint.mdAndUp ? '80px' : '44px'"
+                  :height="$vuetify.breakpoint.mdAndUp ? '90px' : '44px'"
+                  :width="$vuetify.breakpoint.mdAndUp ? '90px' : '44px'"
                 />
               </nuxt-link>
             </v-col>

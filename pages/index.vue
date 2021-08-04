@@ -136,15 +136,15 @@
                   </div>
                 </div>
               </v-col>
-              <v-col md="6">
-                <div>
+              <v-col md="8">
+                <div class="my-6">
                   Une initiative créée par l'Institut d'études avancées de Paris
                   et la fondation 2100, avec le soutien de l'Institut for Future
                   Studies.
                 </div>
                 <v-img
                   :src="organizers.iff.logo"
-                  class="float-right"
+                  class="float-right mt-6"
                   max-width="255"
                   max-height="200px"
                 ></v-img>
@@ -184,7 +184,7 @@ export default {
   async asyncData({ app, $content }) {
     const index = await $content(app.i18n.locale + '/pages/index').fetch()
     const dates = await $content(app.i18n.locale + '/pages/dates').fetch()
-    const featured = await $content(app.i18n.locale + '/news')
+    const featured = await $content(app.i18n.locale + '/webinars')
       .where({ featured: true })
       .where({ draft: false })
       .sortBy('order', 'desc')

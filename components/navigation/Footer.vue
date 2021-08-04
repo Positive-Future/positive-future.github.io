@@ -1,5 +1,5 @@
 <template>
-  <v-footer style="z-index: 2">
+  <v-footer style="z-index: 2" color="white">
     <v-row align="center" no-gutters justify="center">
       <v-col xs="12" sm="11" md="9" lg="9" xl="8" class="text-center">
         <a
@@ -24,7 +24,7 @@
         >
         <br />
         <v-tooltip top>
-          <template v-slot:activator="{ on }">
+          <template #activator="{ on }">
             <v-btn text icon v-on="on">
               <a
                 href="http://creativecommons.org/licenses/by-sa/4.0/"
