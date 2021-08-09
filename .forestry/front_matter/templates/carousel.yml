@@ -1,4 +1,27 @@
 ---
 label: Carousel
 hide_body: true
-fields: []
+fields:
+- name: carousel_title
+  type: text
+  config:
+    required: true
+    max: 200
+    min: 2
+  label: Title
+- name: picture
+  type: file
+  config:
+    maxSize: 64
+  label: Picture
+- name: link
+  type: text
+  config:
+    required: false
+  label: Link
+  description: The link where you forward the visitor when he/she clicks on the carousel
+    item
+- name: new_tab_link
+  type: boolean
+  label: New tab link
+  description: Only for websites others than positive future
