@@ -13,6 +13,8 @@ sections:
   label: Pages
   create: all
   match: "**/*"
+- type: heading
+  label: Other
 - type: directory
   path: content/resources
   label: Resources
