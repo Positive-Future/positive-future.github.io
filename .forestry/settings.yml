@@ -7,6 +7,11 @@ sections:
 - type: heading
   label: French
 - type: directory
+  path: content/fr/carousel
+  label: Carousel
+  create: all
+  match: "**/*"
+- type: directory
   path: content/fr/pages
   label: Pages
   create: all
@@ -20,6 +25,11 @@ sections:
   - webinar
 - type: heading
   label: English
+- type: directory
+  path: content/en/carousel
+  label: Carousel
+  create: all
+  match: "**/*"
 - type: directory
   path: content/en/pages
   label: Pages
