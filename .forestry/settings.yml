@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: heading
+  label: French
+- type: heading
+  label: English
 - type: directory
   path: content/resources
   label: Resources
