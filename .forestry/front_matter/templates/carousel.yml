@@ -25,3 +25,5 @@ fields:
   type: boolean
   label: New tab link
   description: Only for websites others than positive future
+pages:
+- content/en/carousel/jury.md
