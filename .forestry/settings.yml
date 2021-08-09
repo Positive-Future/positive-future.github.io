@@ -11,6 +11,8 @@ sections:
   label: Carousel
   create: all
   match: "**/*"
+  templates:
+  - carousel
 - type: directory
   path: content/fr/pages
   label: Pages
@@ -30,6 +32,8 @@ sections:
   label: Carousel
   create: all
   match: "**/*"
+  templates:
+  - carousel
 - type: directory
   path: content/en/pages
   label: Pages
