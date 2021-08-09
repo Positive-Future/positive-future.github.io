@@ -9,11 +9,6 @@ sections:
 - type: heading
   label: English
 - type: directory
-  path: content/en/laureates
-  label: Laureates
-  create: all
-  match: "**/*"
-- type: directory
   path: content/en/webinars
   label: Webinars
   create: all
@@ -25,6 +20,11 @@ sections:
   match: "**/*"
 - type: heading
   label: Other
+- type: directory
+  path: content/en/laureates
+  label: Laureates
+  create: all
+  match: "**/*"
 - type: directory
   path: content/resources
   label: Resources
