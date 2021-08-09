@@ -33,16 +33,6 @@ sections:
   templates:
   - resource-fr
   - resource-fr
-- type: directory
-  path: content/en
-  label: EN
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/fr
-  label: FR
-  create: documents
-  match: "**/*"
 upload_dir: static
 public_path: ''
 front_matter_path: "/Positive-Future"
