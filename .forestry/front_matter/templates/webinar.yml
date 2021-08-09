@@ -1,4 +1,11 @@
 ---
 label: Webinar
 hide_body: false
-fields: []
+fields:
+- name: webinar_title
+  type: text
+  config:
+    required: true
+    min: 2
+    max: 100
+  label: Title
