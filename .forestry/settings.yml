@@ -9,6 +9,11 @@ sections:
 - type: heading
   label: English
 - type: directory
+  path: content/en/pages
+  label: Pages
+  create: all
+  match: "**/*"
+- type: directory
   path: content/resources
   label: Resources
   create: all
