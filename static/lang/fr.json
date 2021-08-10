@@ -183,10 +183,11 @@
       "with_the_support_of": "Avec le soutien de",
       "thisDocumentLangIs": "Ce document est en ",
       "back_to_categories": "Revenir à la vue par catégorie"
-    }
+    },
+    "credits": "Une initiative créée par l'Institut d'études avancées de Paris et la fondation 2100, avec le soutien de l'Institute for Future Studies."
   },
   "navigation": {
-    "about": "À propos",
+    "about": "À propos de notre initiative",
     "contest": "Concours",
     "resources": "Matière à penser",
     "sab": "Conseil Scientifique",

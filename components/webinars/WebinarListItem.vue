@@ -1,13 +1,5 @@
 <template>
-  <v-card
-    class="d-flex"
-    justify="top"
-    align="top"
-    @click="
-      selected = index
-      openModal = true
-    "
-  >
+  <v-card class="d-flex" justify="top" align="top" @click="$emit('open')">
     <v-avatar
       v-if="$vuetify.breakpoint.smAndUp"
       class="my-3 mr-6"

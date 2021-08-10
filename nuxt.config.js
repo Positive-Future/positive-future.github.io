@@ -189,6 +189,7 @@ export default {
           useCookie: true,
           cookieKey: 'i18n_redirected',
           alwaysRedirect: true,
+          fallbackLocale: 'en',
         },
         langDir: 'static/lang/',
       },
@@ -203,7 +204,7 @@ export default {
    ** https://github.com/nuxt-community/sentry-module#options
    */
   sentry: {
-    dsn: 'https://933066c491f04f9a8b15141c68c7a0a8@sentry.paris-ias.io/2',
+    dsn: 'https://becb4e69d6784063b10c703ae74837f7@sentry.paris-ias.io/6',
     config: {}, // Additional config
   },
   /*
@@ -213,9 +214,15 @@ export default {
    */
   ackee: {
     server: 'https://ackee.paris-ias.io/',
-    domainId: 'e20368c7-be1f-4f07-9a10-590cc9eb517b',
+    domainId: '2c59e48e-c8f4-4cff-b074-95b14b1c7af7',
     // see documentation for more!
     ignoreOwnVisits: false,
+  },
+  // ESLint module configuration (https://github.com/nuxt-community/eslint-module)
+  eslint: {
+    fix: true,
+    emitWarning: true,
+    quiet: true,
   },
   /*
    ** PWA module configuration
@@ -300,9 +307,12 @@ export default {
    ** robots module configuration
    ** https://github.com/nuxt-community/robots-module#options
    */
+  // Robots module configuration (https://github.com/nuxt-community/robots-module)
   robots: {
     UserAgent: '*',
     Disallow: '',
+    Allow: '/',
+    Sitemap: `${process.env.BASE_URL}/sitemap.xml`,
   },
   /*
    ** Page Layout transition
@@ -322,5 +332,9 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    extend(config) {
+      config.resolve.alias['vue'] = 'vue/dist/vue.common'
+    },
+  },
 }

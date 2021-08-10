@@ -69,21 +69,18 @@
             show-arrows-on-hover
             hide-delimiter-background
           >
-            <v-carousel-item v-for="(item, i) in featured" :key="i">
+            <v-carousel-item v-for="(item, i) in carousel" :key="i">
               <v-card
-                nuxt
-                :to="
-                  item.link
-                    ? localePath('/' + item.link)
-                    : localePath('/news/' + item.slug)
-                "
+                :nuxt="!item.new_tab_link"
+                :to="localePath(item.link)"
+                :target="item.new_tab_link ? '_blank' : 'self'"
                 color="#FFF1D0"
                 light
                 height="420"
                 class="mb-6"
               >
-                <v-img :src="item.image" height="300"></v-img>
-                <v-card-title> {{ item.title }} </v-card-title>
+                <v-img :src="item.picture" height="300"></v-img>
+                <v-card-title> {{ item.carousel_title }} </v-card-title>
                 <v-card-text>
                   {{ item.subtitle }}
                 </v-card-text>
@@ -138,9 +135,7 @@
               </v-col>
               <v-col md="8">
                 <div class="my-6">
-                  Une initiative créée par l'Institut d'études avancées de Paris
-                  et la fondation 2100, avec le soutien de l'Institut for Future
-                  Studies.
+                  {{ $t('misc.credits') }}
                 </div>
                 <v-img
                   :src="organizers.iff.logo"
@@ -154,9 +149,7 @@
           <template v-else>
             <v-col cols="12" class="ma-3">
               <div class="mb-6">
-                Une initiative créée par l'Institut d'études avancées de Paris
-                et la fondation 2100, avec le soutien de l'Institut for Future
-                Studies.
+                {{ $t('misc.credits') }}
               </div>
               <v-row>
                 <v-col cols="4">
@@ -184,9 +177,7 @@ export default {
   async asyncData({ app, $content }) {
     const index = await $content(app.i18n.locale + '/pages/index').fetch()
     const dates = await $content(app.i18n.locale + '/pages/dates').fetch()
-    const featured = await $content(app.i18n.locale + '/webinars')
-      .where({ featured: true })
-      .where({ draft: false })
+    const carousel = await $content(app.i18n.locale + '/carousel')
       .sortBy('order', 'desc')
       .limit(3)
       .fetch()
@@ -196,7 +187,7 @@ export default {
     return {
       index,
       dates,
-      featured,
+      carousel,
       organizers,
     }
   },

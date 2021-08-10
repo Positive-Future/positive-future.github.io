@@ -65,23 +65,44 @@
                 v-else
                 class="overline text-h6 d-flex flex-column align-center"
               >
-                <div>No result found matching "{{ searchString }}"</div>
-                <v-btn outlined class="mt-3" @click="searchString = ''"
-                  >Cancel my search</v-btn
-                >
+                <div>
+                  {{ $t('no-result-found-matching') }} "{{ searchString }}"
+                </div>
+                <v-btn outlined class="mt-3" @click="searchString = ''">{{
+                  $t('cancel-my-search')
+                }}</v-btn>
               </div>
               <WebinarListItem
                 v-for="(item, index) in webinars"
                 :key="index"
                 :item="item"
                 :search="searchString"
+                :index="index"
+                @open="
+                  selected = index
+                  openModal = true
+                "
               />
             </template>
             <template v-for="(item, index) in webinars" v-else>
-              <WebinarListItem :key="index" :item="item" />
+              <WebinarListItem
+                :key="index"
+                :item="item"
+                :index="index"
+                @open="
+                  selected = index
+                  openModal = true
+                "
+                @close="openModal = false"
+              />
             </template>
           </v-tab-item>
         </v-tabs-items>
+        <WebinarModal
+          :item="webinars[selected] || {}"
+          :open="openModal"
+          @close="openModal = false"
+        />
       </v-col>
     </v-row>
   </section>
@@ -96,9 +117,10 @@ export default {
       searchString: '',
       limit: 10,
       tab: 0,
-      expand: false,
       openModal: false,
       webinars: [],
+      selected: null,
+      expand: false,
     }
   },
   async fetch() {

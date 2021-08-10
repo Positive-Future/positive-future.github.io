@@ -103,7 +103,7 @@ export default {
   methods: {},
 }
 </script>
-<style lang="scss" scoped>
+<style scoped>
 .logos {
   position: relative;
 }
@@ -123,7 +123,7 @@ export default {
 }
 .logo_container2 {
   position: absolute;
-  top: 120px;
+  top: 350px;
   left: 150px;
   background-color: white;
   height: 160px;

@@ -10,7 +10,8 @@
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
-    ></iframe>
+    >
+    </iframe>
   </div>
 </template>
 <script>
@@ -37,3 +38,8 @@ export default {
   },
 }
 </script>
+<style lang="scss">
+iframe {
+  background: rgba(0, 0, 0, 0.12);
+}
+</style>

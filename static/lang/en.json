@@ -183,7 +183,8 @@
       "with_the_support_of": "With the support of",
       "thisDocumentLangIs": "this document language is ",
       "back_to_categories": "Go back to category view"
-    }
+    },
+    "credits": "An inititative from Paris institute for advanced studies and the 2100 Foundation, with the support of the Institute for Future Studies."
   },
   "navigation": {
     "about": "About our initiative",
@@ -207,5 +208,8 @@
   "laureates": "Laureates",
   "webinars": "Webinars",
   "learn-more": "Learn more",
-  "search": "Search"
+  "search": "Search",
+  "no-result-found-matching": "No result found matching",
+  "cancel-my-search": "Cancel my search",
+  "open-the-webinar-page": "Open the webinar page"
 }

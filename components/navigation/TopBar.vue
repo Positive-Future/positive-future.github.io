@@ -6,7 +6,7 @@
         justify="space-around"
         :class="{ 'mx-n6': $vuetify.breakpoint.lgAndUp }"
       >
-        <v-col xs="12" sm="11" md="12" lg="7" xl="6" class="mx-n3">
+        <v-col xs="12" sm="11" md="12" lg="8" xl="6" class="mx-n3">
           <v-row no-gutters class="align-center">
             <v-col>
               <nuxt-link :to="localePath('index')">
@@ -18,7 +18,7 @@
                 />
               </nuxt-link>
             </v-col>
-            <v-col align="right" cols="auto" class="pt-1">
+            <v-col align="right" cols="auto" class="pt-1 mt-3">
               <v-row>
                 <v-col class="d-inline-flex flex-row-reverse align-center">
                   <LanguagePicker></LanguagePicker>
@@ -55,6 +55,7 @@
                       optional
                       slider-size="5"
                       active-class="selected"
+                      class="mt-3"
                     >
                       <v-menu left bottom offset-y>
                         <template #activator="{ on, attrs }">

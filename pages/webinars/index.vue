@@ -63,6 +63,9 @@ export default {
     }
   },
   computed: {},
+  created() {
+    if (this.$vuetify.breakpoint.smAndDown) this.$vuetify.goTo(0)
+  },
   mounted() {},
   methods: {},
 }
