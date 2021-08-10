@@ -13,6 +13,7 @@ background_color: ''
 file: ''
 order: 2
 link: ''
+edition: 2021
 
 ---
 What exactly do we expect from the participants of the Positive Future competition, whose objective is to stimulate alternative and hopeful discourses for the next century?

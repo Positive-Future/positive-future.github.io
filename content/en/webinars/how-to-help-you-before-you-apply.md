@@ -13,6 +13,7 @@ file: ''
 order: 1
 youtube_video_id: ''
 link: ''
+edition: 2021
 
 ---
 Because we believe that it is important for contest participants to draw on the current state of scientific knowledge to propose their story of a desirable and realistic city in 2100, the Positive Future team and its scientific committee provide a thematic resource base.

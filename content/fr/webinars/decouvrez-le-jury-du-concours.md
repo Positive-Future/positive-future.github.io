@@ -13,6 +13,7 @@ youtube_video_id: ''
 background_color: ''
 file: ''
 link: contest/jury
+edition: 2021
 
 ---
 Découvrez dès à présent les [8 membres du jury ](https://www.positive-future.org/fr/contest/jury)du concours et leurs bios !

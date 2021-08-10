@@ -13,6 +13,7 @@ youtube_video_id: 'vEZXLUgpcw0'
 background_color: ''
 file: ''
 link: ''
+edition: 2021
 
 ---
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**

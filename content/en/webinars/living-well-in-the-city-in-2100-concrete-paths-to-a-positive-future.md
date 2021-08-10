@@ -14,6 +14,7 @@ background_color: ''
 file: ''
 order: 6
 link: ''
+edition: 2021
 
 ---
 In addition to the scientific resources available in the "Food for thought" section, the Positive Future team offers scientific events, webinars, and online conferences to help participants in the contest, and for anyone interested in the themes tackled by the Positive Future project.

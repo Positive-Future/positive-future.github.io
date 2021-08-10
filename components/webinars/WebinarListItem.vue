@@ -33,8 +33,16 @@
             font-size: 1.15rem;
             word-break: normal;
           "
-          v-html="highlight(item.title, search)"
-        ></p>
+        >
+          <v-chip class="ma-2" label small>
+            {{
+              item.edition === 2021
+                ? $t('the-city-in-2100')
+                : $t('work-in-2100')
+            }}
+          </v-chip>
+          <span v-html="highlight(item.title, search)"></span>
+        </p>
       </v-card-title>
       <v-card-text>
         <p v-html="highlight(item.subtitle, search)"></p>
