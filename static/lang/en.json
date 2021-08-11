@@ -5,7 +5,7 @@
     "resultFound": " resource found",
     "resultsFound": " resources found",
     "perPage": " per page",
-    "check": "Consult an overview of resources on the city of the future",
+    "check": "Consult an overview of Positive Future resources",
     "filterAlternativeText": "Resources can also be explored with the following filters:",
     "filters": {
       "search": "Search a resource",
@@ -205,7 +205,7 @@
   "positive-future-next-edition": "Next edition",
   "next-edition": "Next edition",
   "previous-edition": "Previous edition",
-  "laureates": "Laureates",
+  "laureates_title": "Laureates",
   "webinars": "Webinars",
   "learn-more": "Learn more",
   "search": "Search",
@@ -214,5 +214,18 @@
   "open-the-webinar-page": "Open the webinar page",
   "the-city-in-2100": "The city in 2100",
   "work-in-2100": "Work in 2100",
-  "jury-members": "Jury members"
+  "jury-members": "Jury members",
+  "2021-edition": "2021 Edition",
+  "the-big-prize-winner": "The big prize winner",
+  "see-the-full-version": "See the full version",
+  "laureates": {
+    "winner": "Grand Prize",
+    "Video": "Laureate of the video category",
+    "Article": "Laureate of the article category"
+  },
+  "watch-the-award-ceremony": "Watch the award ceremony",
+  "choose-an-edition": "Choose an edition",
+  "upcoming-webinars": "Upcoming Webinars",
+  "add-to-my-calendar": "Add to my calendar",
+  "close": "Close"
 }

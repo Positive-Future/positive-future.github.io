@@ -5,7 +5,7 @@
     "resultFound": " ressource trouvée",
     "resultsFound": " ressources trouvées",
     "perPage": " par page",
-    "check": "Consultez un aperçu des ressources sur la ville du futur",
+    "check": "Consultez un aperçu des ressources de Postiive Future",
     "filterAlternativeText": "Les ressources peuvent aussi être explorées à partir des filtres suivants:",
     "filters": {
       "search": "Rechercher une ressource",
@@ -202,5 +202,6 @@
   "apply": "Participer",
   "required": "Requis",
   "the-applications-are-closed": "Le dépôt des candidatures est clos!",
-  "positive-future-next-edition": "Nouvelle édition"
+  "positive-future-next-edition": "Nouvelle édition",
+  "laureates": "Lauréats"
 }

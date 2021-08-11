@@ -47,6 +47,8 @@ export default {
   data() {
     return {}
   },
-  mounted() {},
+  mounted() {
+    console.log(this.$route.name.startsWith('webinars-next-slug'))
+  },
 }
 </script>

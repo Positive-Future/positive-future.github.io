@@ -56,10 +56,62 @@
         <span v-html="$t('open-the-webinar-page')"></span>
       </v-tooltip>
     </v-card-actions>
+    <template v-if="$route.name.startsWith('webinars-next-slug')">
+      <v-divider></v-divider>
+      <div class="ma-3">The webinar will be held on Zoom: {{ item.zoom }}</div>
+      <v-btn large text class="my-6" @click="calendar = true">
+        <v-icon x-large left color="black" class="mr-6 ml-3"
+          >mdi-calendar-plus</v-icon
+        >
+        {{ $t('add-to-my-calendar') }}</v-btn
+      >
+      <AddToCalendarModal
+        :dialog="calendar"
+        :item="item"
+        @close="calendar = false"
+      />
+      <v-row>
+        <v-col xs="12" sm="11" md="8" class="ma-3">
+          <v-card
+            color="#ffe2a0"
+            class="px-6 pt-6 pb-8"
+            flat
+            href="http://eepurl.com/hgbB6f"
+            target="_blank"
+          >
+            <div class="d-inline-flex justify-center align-center">
+              <v-icon x-large class="rotate-24 mr-6" color="black"
+                >mdi-email</v-icon
+              >
+              <div class="subtitle">
+                {{ $t('misc.ui.subscribe3') }}
+              </div>
+            </div>
+          </v-card>
+        </v-col>
+      </v-row>
+      <div class="headline ma-3">{{ $t('upcoming-webinars') }} ...</div>
+      <template v-for="(webinar, index) in webinars">
+        <WebinarListItem
+          :key="index"
+          :item="webinar"
+          :index="index"
+          @open="
+            selected = index
+            openModal = true
+          "
+          @close="openModal = false"
+        />
+      </template>
+    </template>
   </v-card>
 </template>
 <script>
+import AddToCalendarModal from '../misc/AddToCalendarModal.vue'
 export default {
+  components: {
+    AddToCalendarModal,
+  },
   props: {
     item: {
       type: Object,
@@ -67,7 +119,18 @@ export default {
     },
   },
   data() {
-    return {}
+    return {
+      webinars: [],
+      calendar: false,
+    }
+  },
+  async fetch() {
+    this.webinars = await this.$content(this.$i18n.locale + '/webinars')
+      /*  .where({ featured: true }) */
+      .sortBy('order', 'desc')
+      .where({ slug: { $ne: this.item.slug } })
+      .limit(this.limit)
+      .fetch()
   },
   computed: {},
   mounted() {},

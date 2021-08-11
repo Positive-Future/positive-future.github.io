@@ -100,7 +100,7 @@
                             :to="localePath('/contest/laureates')"
                           >
                             <v-list-item-title>
-                              {{ $t('laureates') }}
+                              {{ $t('laureates_title') }}
                             </v-list-item-title>
                           </v-list-item>
                         </v-list>

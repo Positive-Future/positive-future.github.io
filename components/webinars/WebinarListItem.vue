@@ -51,6 +51,16 @@
           >Image of &copy; {{ item.copyright }}</small
         >
       </v-card-text>
+      <v-card-actions v-if="$route.name.startsWith('webinars-next-slug')">
+        <v-spacer></v-spacer>
+        <v-btn
+          color="primary"
+          nuxt
+          :to="localePath('/webinars/next/' + item.slug)"
+          @click="$emit('expand', index)"
+          >{{ $t('learn-more') }}</v-btn
+        >
+      </v-card-actions>
     </div>
   </v-card>
 </template>
@@ -82,9 +92,7 @@ export default {
     return {}
   },
   computed: {},
-  created() {
-    console.log('item', this)
-  },
+  created() {},
   mounted() {},
   methods: {
     highlight(word, query) {

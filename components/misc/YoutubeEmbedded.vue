@@ -12,7 +12,7 @@
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
-      @load="ready = false"
+      @load="ready = true"
     >
     </iframe>
   </div>

@@ -7,7 +7,7 @@
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <div class="mt-6 subtitle">
-            {{ $t('positive-future-next-edition') }}
+            {{ $t('positive-future--edition') }}
           </div>
           <h1 class="pt-0 mt-0 mb-4">
             {{ intro.theme }}
@@ -124,7 +124,12 @@
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
           <v-row no-gutters>
             <v-col cols="12" sm="6">
-              <v-card color="#4fd4c7" class="pa-6">
+              <v-card
+                color="#4fd4c7"
+                class="pa-6"
+                :to="'/resources_' + $i18n.locale + '.pdf'"
+                target="_blank"
+              >
                 <h1 class="mb-0">
                   {{ prize.title }}
                 </h1>
@@ -150,6 +155,11 @@
             <h1 class="pt-0 mt-0 mb-4">
               {{ $t('jury-members') }}
             </h1>
+            <people-block
+              v-for="(people, index) in jury"
+              :key="index"
+              :item="people"
+            />
           </v-card>
         </v-col>
       </v-row>
@@ -159,16 +169,17 @@
 <script>
 export default {
   async asyncData({ app, $content }) {
-    const intro = await $content(app.i18n.locale + '/pages/next/intro').fetch()
+    const intro = await $content(app.i18n.locale + '/pages/2022/intro').fetch()
     const modalities = await $content(
-      app.i18n.locale + '/pages/next/modalities'
+      app.i18n.locale + '/pages/2022/modalities'
     ).fetch()
-    const dates = await $content(app.i18n.locale + '/pages/next/dates').fetch()
-    const prize = await $content(app.i18n.locale + '/pages/next/prize').fetch()
-    const rules = await $content(app.i18n.locale + '/pages/next/rules').fetch()
-    const more = await $content(app.i18n.locale + '/pages/next/more').fetch()
+    const dates = await $content(app.i18n.locale + '/pages/2022/dates').fetch()
+    const prize = await $content(app.i18n.locale + '/pages/2022/prize').fetch()
+    const rules = await $content(app.i18n.locale + '/pages/2022/rules').fetch()
+    const more = await $content(app.i18n.locale + '/pages/2022/more').fetch()
+    const jury = await $content(app.i18n.locale + '/pages/2022/jury').fetch()
     const criterions = await $content(
-      app.i18n.locale + '/pages/next/criterions'
+      app.i18n.locale + '/pages/2022/criterions'
     ).fetch()
 
     return {
@@ -179,6 +190,7 @@ export default {
       prize,
       rules,
       more,
+      jury,
     }
   },
   data() {

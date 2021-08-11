@@ -1,0 +1,101 @@
+---
+label: people
+hide_body: false
+fields:
+- type: text
+  name: firstname
+  label: firstname
+- type: text
+  name: lastname
+  label: lastname
+- type: file
+  name: image
+  label: image
+- name: copyright
+  type: text
+  config:
+    required: false
+  label: Image copyright owner and date
+  description: 'No need to include the copyright sign, just the copyright owner name
+    is needed, with a comma separating with the date: e.g. "Sponge Bob, 2007"'
+- name: title_and_institution
+  type: text
+  config:
+    required: false
+  label: Title
+- name: presentation
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Presentation
+- name: linkedin
+  type: text
+  config:
+    required: false
+  label: linkedin
+- name: twitter
+  type: text
+  config:
+    required: false
+  label: twitter
+- name: wikipedia
+  type: text
+  config:
+    required: false
+  label: wikipedia
+- name: website
+  type: text
+  config:
+    required: false
+  label: Website
+  description: The person personal website or page
+pages:
+- content/Chairs/rabinovici.md
+- content/Fellows/candiotto.md
+- content/Fellows/caycogajic.md
+- content/Fellows/coelhodesuarez.md
+- content/Fellows/cunha.md
+- content/Fellows/diluca.md
+- content/Fellows/frasinelli.md
+- content/Fellows/fujita.md
+- content/Fellows/growiec.md
+- content/Fellows/guedj.md
+- content/Fellows/kasthurirathne.md
+- content/Fellows/kawanishi.md
+- content/Fellows/kellmyer.md
+- content/Fellows/livermore.md
+- content/Fellows/moodley.md
+- content/Fellows/rabinowitch.md
+- content/Fellows/ralitera.md
+- content/Fellows/stalnov.md
+- content/Fellows/taylor.md
+- content/Fellows/wevers.md
+- content/Mentors/aumann.md
+- content/Mentors/copeland.md
+- content/Mentors/damasio.md
+- content/Mentors/fukada.md
+- content/Mentors/hopkins.md
+- content/Mentors/mcclelland.md
+- content/Mentors/mézard.md
+- content/Mentors/paré.md
+- content/Mentors/rees.md
+- content/Mentors/shagrir.md
+- content/Mentors/ullman.md
+- content/Mentors/wang.md
+- content/Mentors/yeung.md
+- content/Mentors/yonath.md
+- content/Mentors/zatorre.md
+- content/Steering_Committee/aryplonski.md
+- content/Steering_Committee/decarvalho.md
+- content/Steering_Committee/floresmendoza.md
+- content/Steering_Committee/gajdos.md
+- content/Steering_Committee/gilligan.md
+- content/Steering_Committee/henneaux.md
+- content/Steering_Committee/lahlou.md
+- content/Steering_Committee/meira.md
+- content/Steering_Committee/montenegro.md
+- content/Steering_Committee/tuffisaliba.md
