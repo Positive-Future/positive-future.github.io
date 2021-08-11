@@ -202,7 +202,7 @@
   "apply": "Apply",
   "required": "Required",
   "the-applications-are-closed": "The applications are closed!",
-  "positive-future-next-edition": "New edition",
+  "positive-future-next-edition": "Next edition",
   "next-edition": "Next edition",
   "previous-edition": "Previous edition",
   "laureates": "Laureates",
@@ -213,5 +213,6 @@
   "cancel-my-search": "Cancel my search",
   "open-the-webinar-page": "Open the webinar page",
   "the-city-in-2100": "The city in 2100",
-  "work-in-2100": "Work in 2100"
+  "work-in-2100": "Work in 2100",
+  "jury-members": "Jury members"
 }

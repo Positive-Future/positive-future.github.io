@@ -42,6 +42,7 @@
             </v-col>
             <v-col cols="12" sm="6">
               <iframe
+                title="Positive Future presentation video"
                 width="560"
                 height="315"
                 :src="
@@ -53,6 +54,7 @@
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
+                @load="loaded()"
               ></iframe>
             </v-col>
           </v-row>
@@ -199,6 +201,12 @@ export default {
   },
   computed: {},
   mounted() {},
+
+  methods: {
+    loaded() {
+      console.log('LOADED')
+    },
+  },
 }
 </script>
 <style lang="scss">
