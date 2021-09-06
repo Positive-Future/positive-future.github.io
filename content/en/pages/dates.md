@@ -8,7 +8,6 @@ schedule:
     date: May 31st, 2021
     content: Application deadline​
   awards:
-    date: September 2021
+    date: 30 September 2021
     content: Awards Ceremony (online)
-
 ---
