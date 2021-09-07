@@ -51,6 +51,8 @@
             :yt="post.youtube_video_id"
             class="mb-9"
           ></YoutubeEmbedded>
+          <OptimizedImage v-else-if="post.image" :src="post.image">
+          </OptimizedImage>
           <nuxt-content :document="post" />
         </v-card-text>
       </v-card>

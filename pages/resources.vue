@@ -240,19 +240,18 @@
                     <v-list-item-content>
                       <div class="overline mb-4">
                         <v-chip
-                          v-for="(item, index) in item.category"
+                          v-for="(cat, index) in item.category"
                           :key="index"
                           class="mx-1"
                           x-small
                           label
                           :outlined="
                             !(
-                              filters.category &&
-                              filters.category.includes(item)
+                              filters.category && filters.category.includes(cat)
                             )
                           "
                         >
-                          {{ $t('resources.categories.' + item) }}
+                          {{ $t('resources.categories.' + cat) }}
                         </v-chip>
                       </div>
                       <v-list-item-title class="headline mb-1">

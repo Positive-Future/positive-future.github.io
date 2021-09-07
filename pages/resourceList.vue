@@ -5,7 +5,7 @@
       :items-per-page.sync="itemsPerPage"
       :page="page"
       :search="search"
-      :sort-by="sortBy.toLowerCase()"
+      :sort-by="(sortBy && sortBy.toLowerCase()) || 'asc'"
       :sort-desc="sortDesc"
       hide-default-footer
     >

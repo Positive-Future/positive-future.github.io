@@ -6,7 +6,7 @@
       color="#FFF1D0"
       :elevation="hover ? 12 : 2"
     >
-      <v-img contain :src="item.image"></v-img>
+      <OptimizedImage :src="item.image"> </OptimizedImage>
       <v-card-title style="word-break: normal"> {{ item.title }} </v-card-title>
       <v-card-text>
         {{ item.subtitle }}

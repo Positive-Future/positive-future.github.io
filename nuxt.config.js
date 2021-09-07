@@ -7,7 +7,7 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  ssr: false,
+  /*   ssr: false, */
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -160,6 +160,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
     '@nuxtjs/vuetify',
+    '@nuxt/image',
   ],
   /*
    ** Nuxt.js modules
@@ -170,6 +171,10 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxt/content',
     '@nuxtjs/axios',
+    // https://ackee.nuxtjs.org/
+    '@nuxtjs/ackee',
+    // https://sentry.nuxtjs.org/
+    '@nuxtjs/sentry',
     [
       'nuxt-i18n',
       {
@@ -193,22 +198,6 @@ export default {
     ],
   ],
 
-  // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-  // MODULES CONFIGURATIONS
-  // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-  /*
-   ** Google Analytics module configuration
-   ** https://github.com/nuxt-community/analytics-module
-   ** https://matteogabriele.gitbooks.io/vue-analytics/content/
-   */
-  googleAnalytics: {
-    id: 'UA-192949805-1',
-    /*    dev: false,
-       debug: {
-         enabled: true,
-         sendHitTask: true
-       } */
-  },
   /*
    ** PWA module configuration
    ** https://pwa.nuxtjs.org/setup#configuration
@@ -219,7 +208,21 @@ export default {
       lang: 'en',
     },
   },
-
+  // https://image.nuxtjs.org
+  image: {
+    screens: {
+      avatarSm: 24,
+      avatarLg: 48,
+      logo: 32,
+      migration: 536,
+      blogImage: 864,
+    },
+    domains: [
+      'https://picsum.photos',
+      // snipcart.nuxtjs.org',
+      'source.unsplash.com',
+    ],
+  },
   /*
    ** Sitemap module configuration
    ** https://github.com/nuxt-community/sitemap-module#setup-a-sitemap
@@ -309,6 +312,20 @@ export default {
     afterLeave(el) {
       console.log('TRANSITION : afterLeave', el)
     },
+  },
+  /*
+   ** Sentry module configuration
+   ** https://github.com/nuxt-community/sentry-module#options
+   */
+  sentry: {
+    dsn: 'https://f7e554c755e9479dbc14e037a789e7ea@sentry.paris-ias.io/7' || '',
+    config: {}, // Additional configyarn dev
+  },
+  ackee: {
+    server: 'https://ackee.paris-ias.io/',
+    domainId: '2c59e48e-c8f4-4cff-b074-95b14b1c7af7' || '',
+    // see documentation for more!
+    ignoreOwnVisits: false,
   },
   /*
    ** Build configuration
