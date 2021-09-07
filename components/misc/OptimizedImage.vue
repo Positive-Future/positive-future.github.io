@@ -7,6 +7,7 @@
       :srcset="_srcset.srcset"
       :sizes="_srcset.size"
       class="mb-6"
+      contain
     ></v-img>
   </div>
 </template>
