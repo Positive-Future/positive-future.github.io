@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/resourceList", {data:[{_img:{}}],fetch:{},mutations:[]});
