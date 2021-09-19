@@ -49,7 +49,7 @@ sections:
   create: all
   match: "**/*"
 - type: heading
-  label: OTHER
+  label: BOTH
 - type: directory
   path: content/resources
   label: Resources
