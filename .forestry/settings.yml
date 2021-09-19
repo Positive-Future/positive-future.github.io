@@ -29,7 +29,7 @@ sections:
 - type: heading
   label: ENGLISH
 - type: directory
-  path: content/en/laureates
+  path: content/en/carousel
   label: Carousel
   create: all
   match: "**/*"
