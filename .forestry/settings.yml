@@ -13,6 +13,11 @@ sections:
   label: Pages
   create: all
   match: content/en/pages/**/*
+- type: directory
+  path: ''
+  label: Webinars
+  create: all
+  match: content/en/webinars/**/*
 - type: heading
   label: OTHER
 - type: directory
