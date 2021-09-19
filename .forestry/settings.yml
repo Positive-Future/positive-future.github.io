@@ -28,13 +28,6 @@ sections:
   label: Pages
   create: all
   match: "**/*"
-- type: directory
-  path: content/fr/sab
-  label: Scientific Advisory Board
-  create: all
-  match: "**/*"
-  templates:
-  - people
 - type: document
   path: static/lang/fr.json
   label: Translations
@@ -67,13 +60,6 @@ sections:
   label: Pages
   create: all
   match: "**/*"
-- type: directory
-  path: content/en/sab
-  label: Scientific Avisory Board
-  create: all
-  match: "**/*"
-  templates:
-  - people
 - type: document
   path: static/lang/en.json
   label: Translations
