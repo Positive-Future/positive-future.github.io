@@ -6,6 +6,11 @@ webhook_url:
 sections:
 - type: heading
   label: FRENCH
+- type: directory
+  path: content/fr/webinars
+  label: Webinars
+  create: all
+  match: "**/*"
 - type: heading
   label: ENGLISH
 - type: directory
