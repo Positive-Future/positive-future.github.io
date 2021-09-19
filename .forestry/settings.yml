@@ -4,6 +4,52 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: heading
+  label: FRENCH
+- type: directory
+  path: content/fr/carousel
+  label: Carousel
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/fr/laureates
+  label: Laureates
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/fr/pages
+  label: Pages
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/fr/webinars
+  label: Webinars
+  create: all
+  match: "**/*"
+- type: heading
+  label: ENGLISH
+- type: directory
+  path: content/en/laureates
+  label: Carousel
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/en/laureates
+  label: Laureates
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/en/pages
+  label: Pages
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/en/webinars
+  label: Webinars
+  create: all
+  match: "**/*"
+- type: heading
+  label: OTHER
 - type: directory
   path: content/resources
   label: Resources
@@ -12,16 +58,6 @@ sections:
   templates:
   - resource-fr
   - resource-fr
-- type: directory
-  path: content/en
-  label: EN
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/fr
-  label: FR
-  create: documents
-  match: "**/*"
 upload_dir: static
 public_path: ''
 front_matter_path: "/Positive-Future"
