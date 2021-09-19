@@ -1,0 +1,16 @@
+---
+label: Carousel Item
+hide_body: true
+fields:
+- type: text
+  name: carousel_title
+  label: carousel_title
+- type: file
+  name: picture
+  label: picture
+- type: text
+  name: link
+  label: link
+- type: boolean
+  name: new_tab_link
+  label: new_tab_link
