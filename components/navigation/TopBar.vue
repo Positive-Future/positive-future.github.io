@@ -185,11 +185,6 @@ export default {
           icon: 'linkedin',
         },
         {
-          url: 'https://www.instagram.com/futurpositif/',
-          text: this.$t('misc.social.instagram'),
-          icon: 'instagram',
-        },
-        {
           url: 'https://www.youtube.com/channel/UCguKalm3EVILMvkvoNXkANg/featured',
           text: this.$t('misc.social.youtube'),
           icon: 'youtube',

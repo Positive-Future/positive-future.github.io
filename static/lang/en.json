@@ -173,7 +173,7 @@
       "seeCredits": "Credits",
       "subscribe": "Subscribe to the newsletter",
       "subscribe2": "Subscribe to the newsletter and stay in touch with every update!",
-      "subscribe3": "You are interested in this contest? Click here to subscribe to our newsletter!",
+      "subscribe3": "Interested in Positive Future news? Click here to subscribe to our newsletter!",
       "accept": "Accept",
       "more": "See more",
       "news_intro": "Events, jury announcements, read all the news about Positive Future.",
@@ -184,7 +184,7 @@
       "thisDocumentLangIs": "this document language is ",
       "back_to_categories": "Go back to category view"
     },
-    "credits": "An inititative from Paris institute for advanced studies and the 2100 Foundation, with the support of the Institute for Future Studies."
+    "credits": "An inititative from Paris Institute for Advanced Study and the 2100 Foundation, with the support of the Institute for Future Studies."
   },
   "navigation": {
     "about": "About our initiative",
@@ -227,5 +227,6 @@
   "choose-an-edition": "Choose an edition",
   "upcoming-webinars": "Upcoming Webinars",
   "add-to-my-calendar": "Add to my calendar",
-  "close": "Close"
+  "close": "Close",
+  "new-edition": "New edition"
 }

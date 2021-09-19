@@ -131,6 +131,7 @@
                   {{ $t('misc.credits') }}
                 </div>
                 <v-img
+                  contain
                   :src="organizers.iff.logo"
                   class="float-right mt-6"
                   max-width="255"
@@ -154,7 +155,7 @@
                   <v-img :src="organizers.fundation.logo"></v-img>
                 </v-col>
                 <v-col cols="4">
-                  <v-img :src="organizers.iff.logo"></v-img>
+                  <v-img contain :src="organizers.iff.logo"></v-img>
                 </v-col>
               </v-row>
             </v-col>

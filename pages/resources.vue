@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      style="background-color: #fff1d0; padding-bottom: 80px"
+      style="background-color: #fff1d0"
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
     >
       <v-row justify="center">
@@ -13,33 +13,7 @@
         </v-col>
       </v-row>
     </section>
-    <section style="margin-top: -85px">
-      <v-row justify="center">
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
-          <v-row>
-            <v-col cols="12" sm="8">
-              <v-card
-                color="#FFE2A0"
-                class="pa-6"
-                flat
-                :to="'/resources_' + $i18n.locale + '.pdf'"
-                target="_blank"
-                :class="{ 'ml-n6': $vuetify.breakpoint.mdAndUp }"
-              >
-                <div class="d-inline-flex justify-center align-center">
-                  <v-icon x-large class="rotate-24 mr-6" color="black"
-                    >mdi-file-pdf</v-icon
-                  >
-                  <div class="subtitle">
-                    {{ $t('resources.check') }}
-                  </div>
-                </div>
-              </v-card>
-            </v-col>
-          </v-row>
-        </v-col>
-      </v-row>
-    </section>
+
     <v-row justify="center" no-gutters>
       <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="px-0 mx-0">
         <v-expand-transition v-if="category_view">
@@ -51,7 +25,7 @@
               sm="6"
               md="4"
             >
-              <v-hover v-slot:default="{ hover }">
+              <v-hover v-slot="{ hover }">
                 <v-card
                   class="pa-2 text-center"
                   flat
@@ -107,7 +81,7 @@
           :hide-default-footer="!browsing"
           class="my-6"
         >
-          <template v-slot:header>
+          <template #header>
             <v-row>
               <v-col cols="12" sm="6" md="4"
                 ><v-text-field
@@ -213,13 +187,13 @@
               ></v-col>
             </v-row>
           </template>
-          <template v-if="browsing" v-slot:no-results class="ml-6"
+          <template v-if="browsing" #no-results class="ml-6"
             ><div class="ml-6 my-6">{{ $t('resources.noResultsText') }}</div>
           </template>
-          <template v-if="browsing" v-slot:no-data class="ml-6"
+          <template v-if="browsing" #no-data class="ml-6"
             ><div class="ml-6 my-6">{{ $t('resources.noDataText') }}</div>
           </template>
-          <template v-if="browsing" v-slot:default="props">
+          <template v-if="browsing" #default="props">
             <v-row class="mx-3">
               <p class="ml-3 mt-6">
                 <small>
@@ -262,7 +236,7 @@
                         class="d-inline-flex align-center justify-start"
                       >
                         <v-tooltip bottom>
-                          <template v-slot:activator="{ on, attrs }">
+                          <template #activator="{ on, attrs }">
                             <v-img
                               class="mr-3"
                               :src="
@@ -290,7 +264,7 @@
 
                     <v-list-item-avatar>
                       <v-tooltip bottom>
-                        <template v-slot:activator="{ on, attrs }">
+                        <template #activator="{ on, attrs }">
                           <v-icon v-bind="attrs" v-on="on">
                             mdi-{{ icons[item.type[0]] }}
                           </v-icon>

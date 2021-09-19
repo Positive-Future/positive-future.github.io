@@ -7,7 +7,7 @@
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <div class="mt-6 subtitle">
-            {{ $t('positive-future--edition') }}
+            {{ $t('new-edition') }}
           </div>
           <h1 class="pt-0 mt-0 mb-4">
             {{ intro.theme }}
@@ -27,7 +27,9 @@
                 :to="'/tips_' + $i18n.locale + '.pdf'"
                 target="_blank"
               >
-                <v-icon x-large class="mr-6">mdi-file-pdf</v-icon>
+                <v-icon x-large class="mr-6" color="black"
+                  >mdi-file-pdf-box</v-icon
+                >
                 {{ intro.tipDownload }}
               </v-card>
             </v-col>
@@ -51,12 +53,12 @@
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <v-card
-            class="d-flex py-3"
+            class="d-flex py-3 align-center"
             :to="'/rules_' + $i18n.locale + '.pdf'"
             target="_blank"
           >
-            <v-icon x-large class="mx-6">mdi-file-pdf</v-icon>
-            <nuxt-content id="rules" :document="rules" />
+            <v-icon x-large class="mx-6" color="black">mdi-file-pdf-box</v-icon>
+            <nuxt-content id="rules" :document="rules" class="mt-3" />
           </v-card>
         </v-col>
       </v-row>
