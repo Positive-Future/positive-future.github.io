@@ -2,11 +2,12 @@
 label: Webinar
 hide_body: false
 fields:
-- name: draft
+- name: published
   type: boolean
-  label: draft
+  label: Published
   default: true
-- name: title
+  description: Switch to green if it is ready to publish
+- name: webinar-title
   type: text
   config:
     required: false
