@@ -16,6 +16,15 @@ fields:
   config:
     required: false
   label: Subtitle
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
 - name: categories
   type: list
   config:
@@ -54,47 +63,11 @@ fields:
     color_format: Hex
   description: Color used for the featured thumbnail background, wether we have an
     image or not.
-- name: en
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: pages
-      section: en
-      file: 
-      path: 
-  label: 'English version '
-  description: Only if it is a FR news
-- name: fr
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: pages
-      section: fr
-      file: 
-      path: 
-  label: French version
-  description: Only if it is an EN news
 - name: file
   type: file
   config:
     maxSize: 64
   label: File
-- name: order
-  type: number
-  label: order
-  description: higher is more recent
-  default: 0
-  required: true
-  config:
-    min: 
-    max: 
-    step: 
 - name: link
   type: text
   config:

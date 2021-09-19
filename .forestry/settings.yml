@@ -24,7 +24,6 @@ sections:
 - type: document
   path: static/lang/fr.json
   label: Translations
-  match: "**/*"
 - type: directory
   path: content/fr/webinars
   label: Webinars
@@ -50,7 +49,6 @@ sections:
 - type: document
   path: static/lang/en.json
   label: Translations
-  match: "**/*"
 - type: directory
   path: content/en/webinars
   label: Webinars
