@@ -13,6 +13,11 @@ sections:
   match: "**/*"
 - type: heading
   label: ENGLISH
+- type: directory
+  path: content/en/webinars
+  label: Webinars
+  create: all
+  match: "**/*"
 - type: heading
   label: OTHER
 - type: directory
