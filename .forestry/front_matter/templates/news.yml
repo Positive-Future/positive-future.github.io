@@ -103,24 +103,3 @@ fields:
   description: Used to override the link of the carousel. If clicked on, the  featured
     news will redirect to the link localePath in the website instead of the related
     news page.
-pages:
-- content/en/news/cities-after-the-pandemic.md
-- content/en/news/cities-in-the-post-world-urban-planning-agencies-explore-the-happy-future.md
-- content/en/news/drivers-of-change-and-lifestyle-in-2050-a-decentralized-and-autonomous-futurescape.md
-- content/en/news/how-to-help-you-before-you-apply.md
-- content/en/news/interview-with-the-organizers.md
-- content/en/news/living-well-in-the-city-in-2100-concrete-paths-to-a-positive-future.md
-- content/en/news/meet-the-jury-of-positive-future.md
-- content/en/news/register-for-the-first-webinar-the-city-as-a-dominant-species.md
-- content/en/news/the-meaning-of-cities-a-poetic-foresight-approach.md
-- content/en/news/webinar-neighbourhoods-for-the-future-a-plea-for-a-social-and-ecological-urbanism.md
-- content/fr/news/bien-vivre-dans-la-ville-en-2100-des-pistes-concretes-pour-un-futur-positif.md
-- content/fr/news/decouvrez-le-jury-du-concours.md
-- content/fr/news/drivers-of-change-and-lifestyle-in-2050-a-decentralized-and-autonomous-futurescape.md
-- content/fr/news/l-interview-des-organisateurs.md
-- content/fr/news/la-restauration-ecologique-urbaine-depasser-l-opposition-ville-nature.md
-- content/fr/news/le-sens-de-la-ville-une-approche-de-prospective-poetique.md
-- content/fr/news/les-villes-apres-la-pandemie.md
-- content/fr/news/les-villes-dans-le-monde-d-apres-les-agences-d-urbanisme-explorent-les-futurs-heureux.md
-- content/fr/news/pour-vous-aider-avant-de-candidater.md
-- content/fr/news/webinaire-neighbourhoods-for-the-future-a-plea-for-a-social-and-ecological-urbanism.md
