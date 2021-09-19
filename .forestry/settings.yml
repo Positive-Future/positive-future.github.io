@@ -10,11 +10,6 @@ sections:
   label: ENGLISH
 - type: directory
   path: ''
-  label: Pages
-  create: all
-  match: content/en/pages/**/*
-- type: directory
-  path: ''
   label: Webinars
   create: all
   match: content/en/webinars/**/*
