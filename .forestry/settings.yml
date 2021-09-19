@@ -47,6 +47,10 @@ sections:
   label: Pages
   create: all
   match: "**/*"
+- type: document
+  path: static/lang/en.json
+  label: Translations
+  match: "**/*"
 - type: directory
   path: content/en/webinars
   label: Webinars
