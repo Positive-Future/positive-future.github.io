@@ -1,10 +1,14 @@
 <template>
   <v-card :color="highlight ? '#ffe2a0' : 'transparent'" class="pa-6 my-3">
     <v-card-subtitle>{{ $t('laureates.' + item.category) }}</v-card-subtitle>
-    <v-card-title>
-      {{
-        item.lastname.toUpperCase() + ' ' + item.firstname + ', ' + item.title
-      }}
+    <v-card-title class="pt-0">
+      {{ item.title }} (
+      <span
+        v-for="(ppl, index) in item.team"
+        :key="ppl.firstname + ppl.lastname"
+        >{{ ppl.lastname.toUpperCase() + ' ' + ppl.firstname
+        }}<template v-if="index < item.team.length - 1">,&nbsp;</template></span
+      >)
       <v-chip class="ma-2" color="primary">
         {{ $t('resources.types.' + item.type) }}
       </v-chip>
@@ -16,6 +20,7 @@
       :yt="$i18n.locale === 'en' ? '1efqN3kp1NE' : '-7Fd0Vk8jHM'"
       class="mb-9"
     ></YoutubeEmbedded>
+    <OptimizedImage v-if="item.image" :src="item.image"> </OptimizedImage>
     <v-card-actions>
       <v-btn color="primary" @click="$emit('open')">{{
         $t('see-the-full-version')

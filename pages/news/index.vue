@@ -89,7 +89,7 @@ export default {
   components: {},
   async asyncData({ app, $content }) {
     const news = await $content(app.i18n.locale + '/news')
-      .where({ draft: false })
+      .where({ published: true })
       .fetch()
 
     return {

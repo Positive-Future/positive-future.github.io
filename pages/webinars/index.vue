@@ -47,11 +47,10 @@ export default {
       app.i18n.locale + '/pages/webinars'
     ).fetch()
     const webinars = await $content(app.i18n.locale + '/webinars')
-      .where({ featured: true })
-      .where({ draft: false })
-      .sortBy('order', 'desc')
-      .limit(3)
+      .where({ published: true })
+      .sortBy('date', 'desc')
       .fetch()
+    console.log('webinars: ', webinars)
     return {
       webinarText,
       webinars,
@@ -64,7 +63,8 @@ export default {
   },
   computed: {},
   created() {
-    if (this.$vuetify.breakpoint.smAndDown) this.$vuetify.goTo(0)
+    if (this.$vuetify.breakpoint.smAndDown && process.env.BROWSER)
+      this.$vuetify.goTo(0)
   },
   mounted() {},
   methods: {},

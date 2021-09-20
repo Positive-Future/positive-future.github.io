@@ -1,22 +1,23 @@
 ---
-draft: false
+published: true
 en: []
 fr: []
-title: Watch again the webinar "Cities in the post-world - Urban planning agencies
+title:
+  Watch again the webinar "Cities in the post-world - Urban planning agencies
   explore the (happy) future"
 subtitle: By Brigitte Bariol-Mathais and Karine Hurel
 categories:
-- event
+  - event
 featured: false
-image: "/peerapon-chantharainthron-kavu6s_qtyo-unsplash.jpg"
+image: '/peerapon-chantharainthron-kavu6s_qtyo-unsplash.jpg'
 youtube_video_id: 'va_hcao0uRc'
 background_color: ''
 file: ''
 order: 4
 link: ''
 edition: 2021
-
 ---
+
 In addition to the scientific resources available in the "Food for thought" section, the Positive Future team offers scientific events, webinars, and online conferences to help participants in the contest, and for anyone interested in the themes tackled by the Positive Future project.
 
 The Fédération nationale des agences d'urbanisme (Fnau) has placed its 2020 meetings under the sign of foresight. **The agencies worked in a network on the changes to 2040 to imagine a "world after" that would have succeeded in meeting the challenges of transitions.** The idea was to question the future through the notions of happiness and well-being, sustainable development and successful ecological transition, and democratic renewal, in order to build perspectives of desirable, but also credible, futures. **The proposed prospective visions have several facets: some are based on resilience in the face of the Covid-19 crisis, others are based on territorial imaginations or playful approaches to question territorial projects or the emergence of new public policies, by 2040.**

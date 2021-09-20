@@ -1,5 +1,5 @@
 <template>
-  <v-card class="px-6 pb-6 pt-1" style="margin-top='112px'">
+  <v-card class="px-6 pb-6 pt-1">
     <v-btn
       v-if="['laureates___en', 'laureates___fr'].includes($route.name)"
       large
@@ -8,36 +8,27 @@
       @click="$emit('close')"
       ><v-icon large>mdi-close</v-icon></v-btn
     >
-    <v-card-title class="d-flex">
-      <h1 class="d-flex">
-        {{ item.title }}
-      </h1>
+    <v-card-subtitle>{{ $t('laureates.' + item.category) }}</v-card-subtitle>
+    <v-card-title class="pt-0">
+      {{ item.title }} (
+      <span
+        v-for="(ppl, index) in item.team"
+        :key="ppl.firstname + ppl.lastname"
+        >{{ ppl.lastname.toUpperCase() + ' ' + ppl.firstname
+        }}<template v-if="index < item.team.length - 1">,&nbsp;</template></span
+      >)
+      <v-chip class="ma-2" color="primary">
+        {{ $t('resources.types.' + item.type) }}
+      </v-chip>
     </v-card-title>
-    <v-card-subtitle>
-      {{ item.subtitle }}
-    </v-card-subtitle>
-    <v-chip
-      v-if="item.file"
-      class="ma-2"
-      link
-      :href="item.file"
-      :to="item.file"
-      target="_blank"
-    >
-      <v-avatar left>
-        <v-icon>mdi-paperclip</v-icon>
-      </v-avatar>
-      {{ $t('misc.ui.download') }}
-    </v-chip>
-    <v-divider></v-divider>
     <v-card-text>
-      <YoutubeEmbedded
-        v-if="item.youtube_video_id"
-        :yt="item.youtube_video_id"
-        class="mb-9"
-      ></YoutubeEmbedded>
       <nuxt-content :document="item" />
     </v-card-text>
+    <YoutubeEmbedded
+      :yt="$i18n.locale === 'en' ? '1efqN3kp1NE' : '-7Fd0Vk8jHM'"
+      class="mb-9"
+    ></YoutubeEmbedded>
+
     <v-card-actions
       v-if="['laureates___en', 'laureates___fr'].includes($route.name)"
     >

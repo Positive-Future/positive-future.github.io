@@ -4,8 +4,12 @@
     max-width="400"
     :class="{ 'ml-4': index === 0, 'mr-4 ': index !== total }"
   >
-    <v-img class="white--text align-end" height="200px" :src="item.image">
-    </v-img>
+    <OptimizedImage
+      class="white--text align-end"
+      height="200px"
+      :src="item.image"
+    >
+    </OptimizedImage>
     <v-card-title>{{ item.title }}</v-card-title>
 
     <v-card-subtitle class="pb-0"> {{ item.date }} </v-card-subtitle>

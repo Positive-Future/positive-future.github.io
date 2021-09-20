@@ -179,7 +179,7 @@ export default {
     const prize = await $content(app.i18n.locale + '/pages/2022/prize').fetch()
     const rules = await $content(app.i18n.locale + '/pages/2022/rules').fetch()
     const more = await $content(app.i18n.locale + '/pages/2022/more').fetch()
-    const jury = await $content(app.i18n.locale + '/pages/2022/jury').fetch()
+    const jury = await $content(app.i18n.locale + '/jury/2022').fetch()
     const criterions = await $content(
       app.i18n.locale + '/pages/2022/criterions'
     ).fetch()

@@ -172,7 +172,7 @@ export default {
     const index = await $content(app.i18n.locale + '/pages/index').fetch()
     const dates = await $content(app.i18n.locale + '/pages/dates').fetch()
     const carousel = await $content(app.i18n.locale + '/carousel')
-      .sortBy('order', 'desc')
+      .sortBy('date', 'desc')
       .limit(3)
       .fetch()
     const organizers = await $content(

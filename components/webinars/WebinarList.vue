@@ -126,8 +126,8 @@ export default {
   async fetch() {
     this.webinars = await this.$content(this.$i18n.locale + '/webinars')
       /*  .where({ featured: true }) */
-      .where({ draft: false })
-      .sortBy('order', 'desc')
+      .where({ published: true })
+      .sortBy('date', 'desc')
       .limit(this.limit)
       .fetch()
   },
@@ -139,15 +139,15 @@ export default {
         this.searching = false
         this.webinars = await this.$content(this.$i18n.locale + '/webinars')
           /*  .where({ featured: true }) */
-          .where({ draft: false })
-          .sortBy('order', 'desc')
+          .where({ published: false })
+          .sortBy('date', 'desc')
           .limit(this.limit)
           .fetch()
       } else {
         this.searching = true
         this.webinars = await this.$content(this.$i18n.locale + '/webinars')
           .search(searchString)
-          .sortBy('start_date_and_time', 'asc')
+          .sortBy('date', 'asc')
           .fetch()
       }
     },

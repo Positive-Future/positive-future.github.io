@@ -61,7 +61,7 @@
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
           <v-card class="px-6 pt-6 pb-0 mb-0" flat color="transparent">
-            <h1 class="pt-0 mt-0 mb-4">
+            <h1 class="mb-4">
               {{ $t('jury-members') }}
             </h1>
             <people-block
@@ -76,7 +76,7 @@
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <h1 class="pt-0 mt-0 mb-4">
+          <h1 class="mb-4">
             {{ $t('laureates_title') }}
           </h1>
           <laureate-block
@@ -84,6 +84,11 @@
             :key="index"
             :highlight="laureate.category === 'winner'"
             :item="laureate"
+            @open="
+              selected = index
+              openModal = true
+            "
+            @close="openModal = false"
           /> </v-col
       ></v-row>
     </section>
@@ -94,12 +99,14 @@
             <v-col cols="12" sm="6">
               <v-card
                 color="#4fd4c7"
-                class="pa-6 d-flex"
+                class="pa-6 d-flex mt-6 justify-center"
                 :to="'/tips_' + $i18n.locale + '.pdf'"
                 target="_blank"
               >
-                <v-icon x-large class="mr-6">mdi-file-pdf</v-icon>
-                <nuxt-content :document="prize" />
+                <v-icon x-large color="black" class="mr-6"
+                  >mdi-file-pdf-box</v-icon
+                >
+                <nuxt-content :document="prize" class="mt-2" />
               </v-card>
             </v-col>
           </v-row>
@@ -123,6 +130,11 @@
               class="mb-9"
             ></YoutubeEmbedded>
           </v-card>
+          <LaureateModal
+            :item="laureates[selected] || {}"
+            :open="openModal"
+            @close="openModal = false"
+          />
         </v-col>
       </v-row>
     </section>
@@ -140,8 +152,8 @@ export default {
     const prize = await $content(app.i18n.locale + '/pages/2021/prize').fetch()
     const rules = await $content(app.i18n.locale + '/pages/2021/rules').fetch()
     const more = await $content(app.i18n.locale + '/pages/2021/more').fetch()
-    const jury = await $content(app.i18n.locale + '/pages/2021/jury').fetch()
-    const laureates = await $content(app.i18n.locale + '/pages/2021/laureates')
+    const jury = await $content(app.i18n.locale + '/jury/2021').fetch()
+    const laureates = await $content(app.i18n.locale + '/laureates/2021')
       .sortBy('order', 'asc')
       .fetch()
 
@@ -157,7 +169,7 @@ export default {
     }
   },
   data() {
-    return {}
+    return { openModal: false, selected: null }
   },
   computed: {},
   mounted() {},

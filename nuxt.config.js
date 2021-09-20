@@ -7,7 +7,7 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  ssr: false,
+  /*   ssr: false, */
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -160,6 +160,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
     '@nuxtjs/vuetify',
+    '@nuxt/image',
   ],
   /*
    ** Nuxt.js modules
@@ -204,7 +205,7 @@ export default {
    ** https://github.com/nuxt-community/sentry-module#options
    */
   sentry: {
-    dsn: 'https://becb4e69d6784063b10c703ae74837f7@sentry.paris-ias.io/6',
+    dsn: 'https://f7e554c755e9479dbc14e037a789e7ea@sentry.paris-ias.io/7',
     config: {}, // Additional config
   },
   /*

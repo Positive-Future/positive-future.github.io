@@ -3,7 +3,7 @@
   <section>
     <v-row justify="center">
       <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-        <div class="d-flex">
+        <!--   <div class="d-flex">
           <v-select
             v-model="edition"
             :items="editions"
@@ -65,7 +65,7 @@
               "
             />
           </v-expand-x-transition>
-        </div>
+        </div> -->
         <!-- LIST -->
         <template v-if="searching">
           <div v-if="laureates.length > 0" class="overline">
@@ -137,10 +137,7 @@ export default {
     }
     console.log('filter: ', filter)
 
-    this.laureates = await this.$content(
-      this.$i18n.locale + '/pages/2021/laureates'
-    )
-      .sortBy('order', 'asc')
+    this.laureates = await this.$content(this.$i18n.locale + '/laureates/2021')
       .where(filter)
       .fetch()
   },
@@ -156,7 +153,7 @@ export default {
       if (!searchString) {
         this.searching = false
         this.laureates = await this.$content(
-          this.$i18n.locale + '/pages/2021/laureates'
+          this.$i18n.locale + '/laureates/2021'
         )
           /*  .where({ featured: true }) */
           .sortBy('order', 'desc')
@@ -166,7 +163,7 @@ export default {
       } else {
         this.searching = true
         this.laureates = await this.$content(
-          this.$i18n.locale + '/pages/2021/laureates'
+          this.$i18n.locale + '/laureates/2021'
         )
           .search(searchString)
           .where(filter)
