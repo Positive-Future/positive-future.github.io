@@ -77,3 +77,5 @@ fields:
       path: 
   label: Edition
   description: "# of the PF contest edition"
+pages:
+- content/en/laureates/tetr.md
