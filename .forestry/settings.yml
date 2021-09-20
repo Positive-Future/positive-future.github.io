@@ -36,6 +36,8 @@ sections:
   label: Webinars
   create: all
   match: "**/*"
+  templates:
+  - webinar
 - type: heading
   label: ENGLISH
 - type: directory
@@ -68,6 +70,8 @@ sections:
   label: Webinars
   create: all
   match: "**/*"
+  templates:
+  - webinar
 - type: heading
   label: BOTH
 - type: directory
