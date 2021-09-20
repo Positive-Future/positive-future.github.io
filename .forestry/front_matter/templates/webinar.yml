@@ -5,7 +5,7 @@ fields:
 - name: published
   type: boolean
   label: Published
-  default: true
+  default: false
   description: Switch to green if it is ready to publish
 - name: webinar-title
   type: text
