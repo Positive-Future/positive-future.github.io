@@ -3,10 +3,7 @@ label: Laureate
 hide_body: false
 fields:
 - type: text
-  name: date
-  label: date
-- type: text
-  name: title
+  name: laureate-title
   label: title
 - type: textarea
   name: description
@@ -21,12 +18,62 @@ fields:
   - type: text
     name: lastname
     label: lastname
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - winner
+    - comic
+    - video
+    - article
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+  description: Will be used to indicate the category of the laureate. Winner being
+    the 1st prize of the edition
+- name: type
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - article
+    - novel
+    - video
+    - comic
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+  description: Will be used for the pill displaying the type of content attached to
+    the laureate application.
+- name: youtube_video_id
+  type: text
+  config:
+    required: false
+  label: Youtube video ID
 - type: file
   name: file
   label: file
-- type: text
-  name: category
-  label: category
-- type: text
-  name: type
-  label: type
+- name: edition
+  type: select
+  default: '2021'
+  config:
+    required: false
+    options:
+    - '2021'
+    - '2022'
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Edition
+  description: "# of the PF contest edition"
