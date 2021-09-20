@@ -23,6 +23,8 @@ sections:
   label: Laureates
   create: all
   match: "**/*"
+  templates:
+  - laureate
 - type: directory
   path: content/fr/pages
   label: Pages
@@ -57,6 +59,8 @@ sections:
   label: Laureates
   create: all
   match: "**/*"
+  templates:
+  - laureate
 - type: directory
   path: content/en/pages
   label: Pages
