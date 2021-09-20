@@ -1,0 +1,32 @@
+---
+label: Laureate
+hide_body: false
+fields:
+- type: text
+  name: date
+  label: date
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: field_group_list
+  name: team
+  label: team
+  fields:
+  - type: text
+    name: firstname
+    label: firstname
+  - type: text
+    name: lastname
+    label: lastname
+- type: file
+  name: file
+  label: file
+- type: text
+  name: category
+  label: category
+- type: text
+  name: type
+  label: type
