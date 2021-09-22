@@ -92,33 +92,9 @@
           /> </v-col
       ></v-row>
     </section>
-    <section>
+
+    <section style="background-color: #c9f8f3" class="mt-12">
       <v-row justify="center" no-gutters>
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <v-row no-gutters>
-            <v-col cols="12" sm="6">
-              <v-card
-                color="#4fd4c7"
-                class="pa-6 d-flex mt-6 justify-center"
-                :to="'/tips_' + $i18n.locale + '.pdf'"
-                target="_blank"
-              >
-                <v-icon x-large color="black" class="mr-6"
-                  >mdi-file-pdf-box</v-icon
-                >
-                <nuxt-content :document="prize" class="mt-2" />
-              </v-card>
-            </v-col>
-          </v-row>
-        </v-col>
-      </v-row>
-    </section>
-    <section style="background-color: #c9f8f3">
-      <v-row
-        justify="center"
-        no-gutters
-        style="margin-top: -85px; padding-top: 85px"
-      >
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
           <v-card class="px-6 pt-6 pb-0 mb-0" flat color="transparent">
             <nuxt-content :document="intro" class="py-6" />

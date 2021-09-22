@@ -87,7 +87,9 @@
                 nuxt
                 :to="localePath('/webinars')"
               >
-                <v-icon color="black" x-large class="d-flex">mdi-video</v-icon>
+                <v-icon color="black" x-large class="d-flex"
+                  >mdi-video-vintage</v-icon
+                >
 
                 <v-card-text
                   class="subtitle-1 title font-weight-regular"
@@ -106,7 +108,7 @@
                 :to="localePath('/about/scientific_advisory_board')"
               >
                 <v-icon color="black" x-large class="d-flex">
-                  mdi-handshake</v-icon
+                  mdi-file-document-multiple</v-icon
                 >
 
                 <v-card-text
@@ -126,12 +128,7 @@
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
           <v-row no-gutters>
             <v-col cols="12" sm="6">
-              <v-card
-                color="#4fd4c7"
-                class="pa-6"
-                :to="'/resources_' + $i18n.locale + '.pdf'"
-                target="_blank"
-              >
+              <v-card color="#4fd4c7" class="pa-6">
                 <h1 class="mb-0">
                   {{ prize.title }}
                 </h1>

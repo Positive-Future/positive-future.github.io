@@ -6,8 +6,8 @@
         <div class="d-flex">
           <v-select
             v-model="edition"
-            :items="editions"
-            :label="$t('choose-an-edition')"
+            :items="[$t('the-city-in-2100'), $t('work-in-2100')]"
+            :label="$t('choose-a-thematic')"
             outlined
             clearable
             :menu-props="{ bottom: true, offsetY: true }"

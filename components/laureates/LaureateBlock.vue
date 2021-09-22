@@ -18,7 +18,6 @@
       </template>
       <span>{{ $t('open-in-a-new-tab') }}</span>
     </v-tooltip>
-    <v-card-subtitle>{{ $t('laureates.' + item.category) }}</v-card-subtitle>
     <v-card-title class="pt-0">
       {{ item.title }} (
       <span
@@ -27,6 +26,9 @@
         >{{ ppl.lastname.toUpperCase() + ' ' + ppl.firstname
         }}<template v-if="index < item.team.length - 1">,&nbsp;</template></span
       >)
+      <v-chip v-if="item.category === 'winner'" class="ma-2" color="#fff1d0">
+        {{ $t('laureates.' + item.category).toUpperCase() }}
+      </v-chip>
       <v-chip class="ma-2">
         {{ $t('resources.types.' + item.type) }}
       </v-chip>
@@ -63,10 +65,14 @@
         }}</v-btn>
       </template>
     </v-card-text>
-    <YoutubeEmbedded
-      :yt="$i18n.locale === 'en' ? '1efqN3kp1NE' : '-7Fd0Vk8jHM'"
-      class="mb-9"
-    ></YoutubeEmbedded>
+    <v-row>
+      <v-col cols="12">
+        <YoutubeEmbedded
+          :yt="$i18n.locale === 'en' ? '1efqN3kp1NE' : '-7Fd0Vk8jHM'"
+          class="mb-9 ml-3"
+        ></YoutubeEmbedded
+      ></v-col>
+    </v-row>
     <OptimizedImage v-if="item.image" :src="item.image"> </OptimizedImage>
     <v-card-actions>
       <v-btn color="primary" @click="$emit('open')">

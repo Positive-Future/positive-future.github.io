@@ -78,17 +78,20 @@
               $t('cancel-my-search')
             }}</v-btn>
           </div>
-          <LaureateBlock
-            v-for="(item, index) in laureates"
-            :key="index"
-            :item="item"
-            :search="searchString"
-            :index="index"
-            @open="
-              selected = index
-              openModal = true
-            "
-          />
+          <v-row>
+            <v-col v-for="(item, index) in laureates" :key="index" cols="6">
+              <LaureateBlock
+                :item="item"
+                :search="searchString"
+                :index="index"
+                cols="6"
+                @open="
+                  selected = index
+                  openModal = true
+                "
+              />
+            </v-col>
+          </v-row>
         </template>
         <template v-for="(item, index) in laureates" v-else>
           <LaureateBlock

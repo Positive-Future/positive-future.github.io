@@ -19,7 +19,7 @@
       "imagine_a_far_away_future": "Imagine a far away future",
       "stimulate_your_creativity": "Stimulate your creativity",
       "stay_positive": "Stay positive",
-      "think_of_your_ideal_city": "Think of our ideal city",
+      "think_of_your_ideal_city": "Urban utopias",
       "face_our_challenges_today": "Face our challenges today",
       "learn_from_the_past": "Learn from the past"
     },
@@ -117,7 +117,7 @@
       "video_hint": "Remember! It must be maximum 10 minute-long.",
       "comic_hint": "Remember! It is maximum 15 page-long.",
       "agreed": "I certify that I have read the ",
-      "agreed_link": "rules of the Positive Future competition",
+      "agreed_link": "rules of the Positive Future contest",
       "agreed_2": ", that every team member is 18 years old or older and I agree to the terms and conditions of participation.",
       "validation": {
         "moreThan": "The {0} field must be more than {1} characters",
@@ -169,7 +169,7 @@
       "theme": "Contest Edition 2022",
       "contact_us": "Contact us",
       "maintained": "This website is maintained by",
-      "maintainer": "Paris IAS",
+      "maintainer": "IAS Paris",
       "seeCredits": "Credits",
       "subscribe": "Subscribe to the newsletter",
       "subscribe2": "Subscribe to the newsletter and stay in touch with every update!",
@@ -188,7 +188,7 @@
   },
   "navigation": {
     "about": "About our initiative",
-    "contest": "Competition",
+    "contest": "Contest",
     "resources": "Food for thought",
     "sab": "Scientific Advisory Board",
     "news": "News",
@@ -236,5 +236,7 @@
   "from-the-jury": "From the jury",
   "open-in-a-new-tab": "Open in a new tab",
   "download": "Download",
-  "coming-soon": "Coming Soon..."
+  "coming-soon": "Coming Soon...",
+  "about-us": "About us",
+  "choose-a-thematic": "Choose a theme"
 }

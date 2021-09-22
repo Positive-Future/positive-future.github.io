@@ -132,6 +132,11 @@
                         </template>
 
                         <v-list>
+                          <v-list-item nuxt :to="localePath('/about/us')">
+                            <v-list-item-title>
+                              {{ $t('about-us') }}
+                            </v-list-item-title>
+                          </v-list-item>
                           <v-list-item
                             nuxt
                             :to="localePath('/about/organizers')"

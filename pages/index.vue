@@ -54,7 +54,7 @@
         </v-col>
       </v-row>
     </section>
-    <section>
+    <section style="margin-top: 5vh">
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-row no-gutters>
@@ -78,7 +78,7 @@
             <v-col cols="12" sm="6">
               <iframe
                 title="Positive Future presentation video"
-                width="560"
+                width="100%"
                 height="315"
                 :src="
                   'https://www.youtube.com/embed/' +
