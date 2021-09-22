@@ -8,6 +8,15 @@ fields:
 - type: textarea
   name: description
   label: description
+- name: jury
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Jury note
 - type: field_group_list
   name: team
   label: team
