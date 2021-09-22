@@ -85,7 +85,7 @@
                 class="pa-3"
                 height="100%"
                 nuxt
-                :to="localePath('/resources')"
+                :to="localePath('/webinars')"
               >
                 <v-icon color="black" x-large class="d-flex">mdi-video</v-icon>
 
@@ -157,11 +157,18 @@
             <h1 class="pt-0 mt-0 mb-4">
               {{ $t('jury-members') }}
             </h1>
-            <people-block
-              v-for="(people, index) in jury"
-              :key="index"
-              :item="people"
-            />
+            <template v-if="jury.length">
+              <people-block
+                v-for="(people, index) in jury"
+                :key="index"
+                :item="people"
+              />
+            </template>
+            <template v-else>
+              <div>
+                {{ $t('coming-soon') }}
+              </div>
+            </template>
           </v-card>
         </v-col>
       </v-row>

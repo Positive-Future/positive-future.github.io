@@ -4,10 +4,23 @@
     <v-row justify="center">
       <v-col xs="12" sm="11" md="8" lg="7" xl="6">
         <div class="d-flex">
-          <v-tabs v-model="tab">
-            <v-tab> Past Webinars </v-tab>
-            <v-tab> All Webinars </v-tab>
-          </v-tabs>
+          <v-select
+            v-model="edition"
+            :items="editions"
+            :label="$t('choose-an-edition')"
+            outlined
+            clearable
+            :menu-props="{ bottom: true, offsetY: true }"
+          ></v-select
+          ><!-- 
+          <v-checkbox
+            v-model="winner"
+            :label="$t('laureates.winner')"
+            value="false"
+            class="ml-3"
+            @change="searchString()"
+          ></v-checkbox> -->
+          <v-spacer></v-spacer>
           <v-expand-x-transition>
             <v-tooltip bottom>
               <template #activator="{ on, attrs }">
@@ -121,6 +134,8 @@ export default {
       webinars: [],
       selected: null,
       expand: false,
+      editions: [2021, 2022],
+      edition: null,
     }
   },
   async fetch() {
@@ -139,7 +154,7 @@ export default {
         this.searching = false
         this.webinars = await this.$content(this.$i18n.locale + '/webinars')
           /*  .where({ featured: true }) */
-          .where({ published: false })
+          .where({ published: true })
           .sortBy('date', 'desc')
           .limit(this.limit)
           .fetch()

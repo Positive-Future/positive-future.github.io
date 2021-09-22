@@ -11,6 +11,41 @@
       </v-row>
     </section>
     <section style="margin-top: -95px">
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6">
+          <v-carousel
+            cycle
+            show-arrows-on-hover
+            hide-delimiter-background
+            height="400"
+          >
+            <v-carousel-item v-for="(item, i) in carousel" :key="i">
+              <v-card
+                :nuxt="!item.new_tab_link"
+                :to="localePath(item.link)"
+                :target="item.new_tab_link ? '_blank' : 'self'"
+                light
+                class="mb-6"
+              >
+                <v-img :src="item.picture" class="d-flex align-end">
+                  <v-card-title>
+                    <span style="background-color: #fff1d0" class="px-2">
+                      {{ item.carousel_title }}
+                    </span></v-card-title
+                  >
+                  <v-card-text v-if="item.subtitle">
+                    <span style="background-color: #fff1d0">
+                      {{ item.subtitle }}
+                    </span></v-card-text
+                  >
+                </v-img>
+              </v-card>
+            </v-carousel-item>
+          </v-carousel>
+        </v-col>
+      </v-row>
+    </section>
+    <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-row no-gutters>
@@ -53,36 +88,6 @@
       </v-row>
     </section>
 
-    <section>
-      <v-row justify="center">
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="pb-12">
-          <v-carousel
-            cycle
-            height="420"
-            show-arrows-on-hover
-            hide-delimiter-background
-          >
-            <v-carousel-item v-for="(item, i) in carousel" :key="i">
-              <v-card
-                :nuxt="!item.new_tab_link"
-                :to="localePath(item.link)"
-                :target="item.new_tab_link ? '_blank' : 'self'"
-                color="#FFF1D0"
-                light
-                height="420"
-                class="mb-6"
-              >
-                <v-img :src="item.picture" height="300"></v-img>
-                <v-card-title> {{ item.carousel_title }} </v-card-title>
-                <v-card-text>
-                  {{ item.subtitle }}
-                </v-card-text>
-              </v-card>
-            </v-carousel-item>
-          </v-carousel>
-        </v-col>
-      </v-row>
-    </section>
     <section>
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">

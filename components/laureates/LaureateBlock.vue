@@ -1,5 +1,23 @@
 <template>
-  <v-card :color="highlight ? '#ffe2a0' : 'transparent'" class="pa-6 my-3">
+  <v-card
+    :color="item.category === 'winner' ? '#ffe2a0' : 'transparent'"
+    class="pa-6 my-3"
+  >
+    <v-tooltip v-if="!$route.name.startsWith('contest-laureates-slug')" bottom>
+      <template #activator="{ on, attrs }">
+        <v-btn
+          icon
+          class="float-right"
+          v-bind="attrs"
+          nuxt
+          :to="localePath('/contest/laureates/' + item.slug)"
+          v-on="on"
+        >
+          <v-icon> mdi-open-in-new </v-icon></v-btn
+        >
+      </template>
+      <span>{{ $t('open-in-a-new-tab') }}</span>
+    </v-tooltip>
     <v-card-subtitle>{{ $t('laureates.' + item.category) }}</v-card-subtitle>
     <v-card-title class="pt-0">
       {{ item.title }} (
@@ -9,12 +27,41 @@
         >{{ ppl.lastname.toUpperCase() + ' ' + ppl.firstname
         }}<template v-if="index < item.team.length - 1">,&nbsp;</template></span
       >)
-      <v-chip class="ma-2" color="primary">
+      <v-chip class="ma-2">
         {{ $t('resources.types.' + item.type) }}
       </v-chip>
     </v-card-title>
     <v-card-text>
-      <nuxt-content :document="item" />
+      <div class="overline">
+        {{ $t('description') }}
+      </div>
+      <template v-if="show1">
+        {{ item.description }}
+        <v-btn x-small text class="d-inline-block" @click="show1 = false">{{
+          $t('show-less')
+        }}</v-btn>
+      </template>
+      <template v-else>
+        {{ truncateString(item.description, 40) }}
+        <v-btn x-small text class="d-inline-block" @click="show1 = true">{{
+          $t('show-more')
+        }}</v-btn>
+      </template>
+      <div class="overline mt-2">
+        {{ $t('from-the-jury') }}
+      </div>
+      <template v-if="show2">
+        {{ item.jury }}
+        <v-btn x-small text class="d-inline-block" @click="show2 = false">{{
+          $t('show-less')
+        }}</v-btn>
+      </template>
+      <template v-else>
+        {{ truncateString(item.jury, 40) }}
+        <v-btn x-small text class="d-inline-block" @click="show2 = true">{{
+          $t('show-more')
+        }}</v-btn>
+      </template>
     </v-card-text>
     <YoutubeEmbedded
       :yt="$i18n.locale === 'en' ? '1efqN3kp1NE' : '-7Fd0Vk8jHM'"
@@ -22,30 +69,37 @@
     ></YoutubeEmbedded>
     <OptimizedImage v-if="item.image" :src="item.image"> </OptimizedImage>
     <v-card-actions>
-      <v-btn color="primary" @click="$emit('open')">{{
-        $t('see-the-full-version')
-      }}</v-btn>
+      <v-btn color="primary" @click="$emit('open')">
+        <v-icon left>mdi-download</v-icon>
+        {{ $t('download') }}
+      </v-btn>
     </v-card-actions>
   </v-card>
 </template>
 <script>
+import { truncateString } from '~/assets/utils'
 export default {
   props: {
     item: {
       type: Object,
       default: () => {},
     },
-    highlight: {
-      type: Boolean,
-      default: false,
-    },
   },
   data() {
-    return {}
+    return {
+      show1: false,
+      show2: false,
+    }
   },
   computed: {},
-  mounted() {},
-  methods: {},
+  mounted() {
+    console.log('item: ', this.item)
+  },
+  methods: {
+    truncateString(str = '') {
+      return truncateString(str, 250)
+    },
+  },
 }
 </script>
 <style lang="scss"></style>

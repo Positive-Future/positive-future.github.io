@@ -48,6 +48,7 @@ export default {
     ).fetch()
     const webinars = await $content(app.i18n.locale + '/webinars')
       .where({ published: true })
+      // TODO complete
       .sortBy('date', 'desc')
       .fetch()
     console.log('webinars: ', webinars)

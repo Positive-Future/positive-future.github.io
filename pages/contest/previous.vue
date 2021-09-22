@@ -79,7 +79,7 @@
           <h1 class="mb-4">
             {{ $t('laureates_title') }}
           </h1>
-          <laureate-block
+          <LaureateBlock
             v-for="(laureate, index) in laureates"
             :key="index"
             :highlight="laureate.category === 'winner'"
@@ -130,11 +130,6 @@
               class="mb-9"
             ></YoutubeEmbedded>
           </v-card>
-          <LaureateModal
-            :item="laureates[selected] || {}"
-            :open="openModal"
-            @close="openModal = false"
-          />
         </v-col>
       </v-row>
     </section>

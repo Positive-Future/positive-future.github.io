@@ -161,6 +161,7 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/vuetify',
     '@nuxt/image',
+    'nuxt-compress',
   ],
   /*
    ** Nuxt.js modules
