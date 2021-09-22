@@ -166,6 +166,23 @@ export default {
           .fetch()
       }
     },
+    async edition(val) {
+      console.log('edition', val)
+      if (!val) {
+        this.webinars = await this.$content(this.$i18n.locale + '/webinars')
+          /*  .where({ featured: true }) */
+          .where({ published: true })
+          .sortBy('date', 'desc')
+          .limit(this.limit)
+          .fetch()
+      } else {
+        this.searching = true
+        this.webinars = await this.$content(this.$i18n.locale + '/webinars')
+          .search('searchString')
+          .sortBy('date', 'asc')
+          .fetch()
+      }
+    },
   },
   mounted() {},
   methods: {

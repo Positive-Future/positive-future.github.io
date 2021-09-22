@@ -8,7 +8,7 @@
           {
             text: $t('laureates_title'),
             disabled: false,
-            href: localePath('/laureates'),
+            href: localePath('/contest/laureates'),
           },
           {
             text: item.title,

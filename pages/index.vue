@@ -19,15 +19,24 @@
             hide-delimiter-background
             height="400"
           >
-            <v-carousel-item v-for="(item, i) in carousel" :key="i">
+            <v-carousel-item
+              v-for="(item, i) in carousel"
+              :key="i"
+              height="400"
+            >
               <v-card
                 :nuxt="!item.new_tab_link"
                 :to="localePath(item.link)"
                 :target="item.new_tab_link ? '_blank' : 'self'"
                 light
                 class="mb-6"
+                height="400"
               >
-                <v-img :src="item.picture" class="d-flex align-end">
+                <v-img
+                  :src="item.picture"
+                  class="d-flex align-end"
+                  height="400"
+                >
                   <v-card-title>
                     <span style="background-color: #fff1d0" class="px-2">
                       {{ item.carousel_title }}
