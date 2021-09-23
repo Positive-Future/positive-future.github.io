@@ -1,22 +1,22 @@
 ---
 draft: false
-title:
-  'Revoir le webinaire : Drivers of Change and Lifestyle in 2050: A Decentralized
-  and Autonomous Futurescape'
-subtitle: Par Victor V. Motti
+en: []
+fr: []
+title: 'Drivers of Change and Lifestyle in 2050: A Decentralized and Autonomous Futurescape'
+subtitle: Par Victor V. Motti, Directeur de la WFSF.
 categories:
   - event
 featured: false
 image: '/ross-findon-mg28olyfghi-unsplash.jpg'
-youtube_video_id: 'ocv7qL3g6EU'
+youtube_video_id: ocv7qL3g6EU
 background_color: ''
 file: '/presentation_victor-motti.pdf'
 link: ''
-edition: 2021
+edition: '2021'
 date: 2021-01-13T14:34:25.000+00:00
 ---
 
-**En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
+**Webinaire diffusé le 4 mai 2021.**
 
 L'art et la science des études prospectives nous aident à mieux comprendre les moteurs du changement en se concentrant sur le long terme et les changements radicaux : par exemple, les révolutions technologiques (le biohacking et l'intelligence artificielle), les bouleversements sociaux (l'accès massif à l'éducation gratuite et aux outils de production), les perturbations commerciales (la fin de la banque), les transformations majeures (la société post plastique).
 
