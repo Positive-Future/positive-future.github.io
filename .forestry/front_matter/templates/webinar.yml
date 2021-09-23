@@ -77,3 +77,17 @@ fields:
   description: Used to override the link of the carousel. If clicked on, the  featured
     news will redirect to the link localePath in the website instead of the related
     news page.
+- name: edition
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - '2021'
+    - '2022'
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Edition
