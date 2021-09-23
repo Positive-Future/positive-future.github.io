@@ -1,7 +1,6 @@
 ---
 published: true
-en: []
-fr: []
+
 title:
   Watch again the webinar "Cities in the post-world - Urban planning agencies
   explore the (happy) future"
@@ -13,9 +12,9 @@ image: '/peerapon-chantharainthron-kavu6s_qtyo-unsplash.jpg'
 youtube_video_id: 'va_hcao0uRc'
 background_color: ''
 file: ''
-order: 4
 link: ''
 edition: 2021
+date: 2021-01-13T14:34:25.000+00:00
 ---
 
 In addition to the scientific resources available in the "Food for thought" section, the Positive Future team offers scientific events, webinars, and online conferences to help participants in the contest, and for anyone interested in the themes tackled by the Positive Future project.

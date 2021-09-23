@@ -1,22 +1,23 @@
 ---
 draft: false
-en: []
-fr: []
+
 order: 11
-title: 'Revoir le webinaire "Neighbourhoods for the Future: a Plea for a Social and
+title:
+  'Revoir le webinaire "Neighbourhoods for the Future: a Plea for a Social and
   Ecological Urbanism"'
 subtitle: par Maarten Hajer
 categories:
-- event
+  - event
 featured: true
-image: "/2hannah-sibayan-kzhmbyzktng-unsplash-1.jpg"
+image: '/2hannah-sibayan-kzhmbyzktng-unsplash-1.jpg'
 youtube_video_id: 9mP1f7JR_vE
-background_color: "#FFFFFF"
+background_color: '#FFFFFF'
 file: ''
 link: ''
 edition: 2021
-
+date: 2021-01-13T14:34:25.000+00:00
 ---
+
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
 
 ![](/webinaire1406.png)

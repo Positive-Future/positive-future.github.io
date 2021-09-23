@@ -1,7 +1,6 @@
 ---
 published: true
-en: []
-fr: []
+
 title: Interview with the organizers
 subtitle: 'Saadi Lahlou and Jean-Eric Aubert explain everything! '
 categories:
@@ -11,9 +10,9 @@ image: '/capture-interview-saadi-jean-eric.jpg'
 youtube_video_id: 8wESmmniGKw
 background_color: ''
 file: ''
-order: 2
 link: ''
 edition: 2021
+date: 2021-01-13T14:34:25.000+00:00
 ---
 
 What exactly do we expect from the participants of the Positive Future competition, whose objective is to stimulate alternative and hopeful discourses for the next century?

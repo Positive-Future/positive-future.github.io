@@ -1,7 +1,5 @@
 ---
 published: true
-en: []
-fr: []
 title:
   'Watch again the first webinar: "The City, the Dominant Species? Nature and
   Future of the urban phenomenon"'
@@ -13,9 +11,9 @@ image: '/darcey-beau-q8d7wzc40ea-unsplash.jpg'
 background_color: ''
 youtube_video_id: vnWSDQFP_Xc
 file: '/prezi_compressed.pdf'
-order: 3
 link: ''
 edition: 2021
+date: 2021-01-13T14:34:25.000+00:00
 ---
 
 In addition to the scientific resources available in the "Food for thought" section, the Positive Future team offers scientific events, webinars, and online conferences to help participants in the contest, and for anyone interested in the themes tackled by the Positive Future project.

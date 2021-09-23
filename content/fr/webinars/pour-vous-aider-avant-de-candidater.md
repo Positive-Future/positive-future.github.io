@@ -1,21 +1,21 @@
 ---
 draft: false
-en: []
-fr: []
+
 title: Pour vous aider avant de candidater !
-subtitle: 160 ressources scientifiques sont désormais disponibles pour nourrir votre
+subtitle:
+  160 ressources scientifiques sont désormais disponibles pour nourrir votre
   réflexion !
 categories:
-- other
+  - other
 featured: true
-image: "/actu-2.png"
+image: '/actu-2.png'
 background_color: ''
 file: ''
-order: 1
 youtube_video_id: ''
 edition: 2021
-
+date: 2021-01-13T14:34:25.000+00:00
 ---
+
 Parce que nous pensons qu’il est important que les candidats se nourrissent de l’état actuel des savoirs scientifiques pour proposer leur récit d’une ville désirable et réaliste en 2100, l’équipe de Positive Future et son conseil scientifique mettent à votre disposition une base de ressources thématisée.
 
 Notions de prospective, état des lieux des enjeux actuels, pistes créatives… Enrichies régulièrement, ces « [matières à penser](mailto:http://www.positive-future.org/fr/resources) » vous permettent de donner un arrière-plan crédible au récit que vous proposerez.

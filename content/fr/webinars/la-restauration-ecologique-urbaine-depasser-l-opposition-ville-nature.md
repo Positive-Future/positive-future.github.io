@@ -1,22 +1,21 @@
 ---
 draft: false
-en: []
-fr: []
-order: 10
-title: 'Revoir le webinaire "La restauration écologique urbaine : dépasser l’opposition
+title:
+  'Revoir le webinaire "La restauration écologique urbaine : dépasser l’opposition
   ville-nature"'
 subtitle: Par Marion Waller
 categories:
-- event
+  - event
 featured: true
-image: "/victor-garcia-ndk_3biaghc-unsplash-1.jpg"
+image: '/victor-garcia-ndk_3biaghc-unsplash-1.jpg'
 youtube_video_id: 'fgttpvGzDGg'
 background_color: ''
-file: "/victor-garcia-ndk_3biaghc-unsplash-1.jpg"
+file: '/victor-garcia-ndk_3biaghc-unsplash-1.jpg'
 link: ''
 edition: 2021
-
+date: 2021-01-13T14:34:25.000+00:00
 ---
+
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
 
 Alors qu’a parfois été véhiculée l’idée d’une dichotomie entre, d’un côté, une nature sauvage sans Hommes et, de l’autre, une ville sans nature, Marion Waller interviendra au titre de ses travaux de philosophe de l’environnement et son expérience au sein de la Ville de Paris **pour évoquer des perspectives de futur urbain et rural dépassant cette séparation**. Elle s’appuiera notamment sur les projets issus du concours « Réinventer Paris » pour montrer les possibilités qu’offre le contexte parisien.

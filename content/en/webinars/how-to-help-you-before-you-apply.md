@@ -1,7 +1,6 @@
 ---
 published: true
-en: []
-fr: []
+
 title: Some inspiration before you enter the contest?
 subtitle: More than 160 scientific resources are now available to nourish your reflection!
 categories:
@@ -10,10 +9,10 @@ featured: false
 image: '/actu-2.png'
 background_color: ''
 file: ''
-order: 1
 youtube_video_id: ''
 link: ''
 edition: 2021
+date: 2021-01-13T14:34:25.000+00:00
 ---
 
 Because we believe that it is important for contest participants to draw on the current state of scientific knowledge to propose their story of a desirable and realistic city in 2100, the Positive Future team and its scientific committee provide a thematic resource base.

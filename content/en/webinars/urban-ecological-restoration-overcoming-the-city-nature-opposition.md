@@ -1,8 +1,5 @@
 ---
 published: true
-en: []
-fr: []
-order: 10
 title:
   'Watch again the webinar "Urban ecological restoration: overcoming the city-nature
   opposition"'
@@ -16,6 +13,7 @@ background_color: ''
 file: ''
 link: ''
 edition: 2021
+date: 2021-01-13T14:34:25.000+00:00
 ---
 
 In addition to the scientific resources available in the "Food for thought" section, the Positive Future team offers scientific events, webinars, and online conferences to help participants in the contest.It's a challenge to say what the city of tomorrow will be like, given the challenges, ruptures and progress of this century, which will lead to radical changes. To say how we dream it in a probable future, how to dream of achievable utopias, is a poetic exercise that takes us into an achievable ideals.

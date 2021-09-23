@@ -32,7 +32,7 @@
                 class="mb-6"
                 height="400"
               >
-                <v-img
+                <OptimizedImage
                   :src="item.picture"
                   class="d-flex align-end"
                   height="400"
@@ -47,7 +47,7 @@
                       {{ item.subtitle }}
                     </span></v-card-text
                   >
-                </v-img>
+                </OptimizedImage>
               </v-card>
             </v-carousel-item>
           </v-carousel>

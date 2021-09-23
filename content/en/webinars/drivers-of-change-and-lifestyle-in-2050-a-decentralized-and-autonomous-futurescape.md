@@ -1,7 +1,6 @@
 ---
 published: true
-en: []
-fr: []
+
 title:
   'Watch again the webinar: Drivers of Change and Lifestyle in 2050: A Decentralized
   and Autonomous Futurescape'
@@ -13,9 +12,9 @@ image: '/ross-findon-mg28olyfghi-unsplash.jpg'
 youtube_video_id: 'ocv7qL3g6EU'
 background_color: ''
 file: '/presentation_victor-motti.pdf'
-order: 5
 link: ''
 edition: 2021
+date: 2021-01-13T14:34:25.000+00:00
 ---
 
 In addition to the scientific resources available in the "Food for thought" section, the Positive Future team offers scientific events, webinars, and online conferences to help participants in the contest, and for anyone interested in the themes tackled by the Positive Future project.
