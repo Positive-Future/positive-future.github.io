@@ -1,23 +1,21 @@
 ---
 published: true
-
-title:
-  Watch again the webinar "Living well in the city in 2100? Concrete paths to
-  a positive future"
-subtitle: By Saadi Lahlou and Jean-Eric Aubert
+title: Living well in the city in 2100? Concrete paths to a positive future
+subtitle: By Saadi Lahlou, Director of the Paris IAS, and Jean-Eric Aubert, President
+  of the Fondation 2100.
 categories:
-  - event
+- event
 featured: false
-image: '/will-truettner-lxlczkjc5ao-unsplash.jpg'
-youtube_video_id: 'Qe6GUH_2ils'
+image: "/will-truettner-lxlczkjc5ao-unsplash.jpg"
+youtube_video_id: Qe6GUH_2ils
 background_color: ''
 file: ''
 link: ''
-edition: 2021
-date: 2021-01-13T14:34:25.000+00:00
----
+edition: "2021"
+date: 2021-04-08T16:00:25Z
 
-In addition to the scientific resources available in the "Food for thought" section, the Positive Future team offers scientific events, webinars, and online conferences to help participants in the contest, and for anyone interested in the themes tackled by the Positive Future project.
+---
+**Webinar broadcast on April 8th, 2021.**
 
 **Living well in the city in 2100 is possible!** Faced with the climatic, demographic, economic and social challenges that are looming, technological progress, "good" public policies and, above all, the creativity of the greatest number of people offer solutions.
 
