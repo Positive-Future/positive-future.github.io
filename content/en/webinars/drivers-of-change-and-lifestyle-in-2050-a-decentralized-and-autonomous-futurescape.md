@@ -1,23 +1,20 @@
 ---
 published: true
-
-title:
-  'Watch again the webinar: Drivers of Change and Lifestyle in 2050: A Decentralized
-  and Autonomous Futurescape'
-subtitle: By Victor V. Motti
+title: 'Drivers of Change and Lifestyle in 2050: A Decentralized and Autonomous Futurescape'
+subtitle: 'By Victor V. Motti, Director of the WFSF. '
 categories:
-  - event
+- event
 featured: false
-image: '/ross-findon-mg28olyfghi-unsplash.jpg'
-youtube_video_id: 'ocv7qL3g6EU'
+image: "/ross-findon-mg28olyfghi-unsplash.jpg"
+youtube_video_id: ocv7qL3g6EU
 background_color: ''
-file: '/presentation_victor-motti.pdf'
+file: "/presentation_victor-motti.pdf"
 link: ''
-edition: 2021
-date: 2021-01-13T14:34:25.000+00:00
----
+edition: "2021"
+date: 2021-04-27T16:00:25Z
 
-In addition to the scientific resources available in the "Food for thought" section, the Positive Future team offers scientific events, webinars, and online conferences to help participants in the contest, and for anyone interested in the themes tackled by the Positive Future project.
+---
+**Webinar broadcast on April 27th, 2021.**
 
 The art and science of futures studies help us obtain a better understanding of the drivers of change by focusing on Long Term, Big Picture and Radical Change: for example, Tech Revolutions (Biohacking plus Artificial Intelligence), Social Upheavals (Massive Access to Free Education/Tools of Production), Business Disruptions (End of Banking), Major Transformations (Post Plastic Society). **Drivers of change are factors causing change, affecting or shaping the futures**.
 
