@@ -36,7 +36,8 @@
       "Book": "Books",
       "Drawing": "Drawings, paintings",
       "Photo": "Photos",
-      "Video": "Videos and films"
+      "Video": "Videos and films",
+      "comic": "Comics & visual novels"
     },
     "perspectives": {
       "foresight_studies": "Foresight studies",
@@ -238,5 +239,12 @@
   "download": "Download",
   "coming-soon": "Coming Soon...",
   "about-us": "About us",
-  "choose-a-thematic": "Choose a theme"
+  "choose-a-thematic": "Choose a theme",
+  "about": {
+    "database": "A database of scientific resources and prospective documents accessible to all",
+    "webinars": "A series of webinars to enrich thinking about the future",
+    "contest": "An annual contest to use participatory imagination to spread positive visions of the future"
+  },
+  "author-s": "Author(s)",
+  "see-also": "See also"
 }

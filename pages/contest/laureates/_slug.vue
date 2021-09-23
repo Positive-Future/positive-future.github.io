@@ -29,28 +29,17 @@
 <script>
 export default {
   async asyncData({ app, $content, params }) {
-    /*   const alterlang = app.i18n.locale === 'en' ? 'fr' : 'en' */
-    const items = await $content(app.i18n.locale + '/laureates', { deep: true })
-      .only(['path', 'slug'])
+    const item = await $content(app.i18n.locale + '/laureates', { deep: true })
+      .where({ slug: params.slug })
       .fetch()
-    console.log('items: ', items)
-    const item = await $content(
-      items.find((item) => item.slug === params.slug).path
-    ).fetch()
-    /*  const newSlug = post[alterlang].split('/')[3].split('.')[0]
 
-    const alterPost = await $content(alterlang + '/news', newSlug).fetch()
+    console.log('item: ', item[0])
 
-    const path = alterPost.path
-
-    app.alter = path */
-    return { item }
+    return { item: item[0] }
   },
   data() {
     return {}
   },
-  created() {
-    console.log()
-  },
+  created() {},
 }
 </script>

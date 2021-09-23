@@ -1,52 +1,59 @@
 <template>
-  <v-card class="d-flex" justify="top" align="top" @click="$emit('open')">
+  <v-card
+    :color="item.category === 'winner' ? '#ffe2a0' : 'transparent'"
+    class="d-flex ma-3"
+    justify="top"
+    align="top"
+    nuxt
+    :to="localePath('/contest/laureates/' + item.slug)"
+  >
     <v-avatar
       v-if="$vuetify.breakpoint.smAndUp"
-      class="my-3 mr-6"
-      size="125"
+      size="160"
       tile
       rounded
       :color="
-        item.image.length ? 'transparent' : $vuetify.theme.themes.light.primary
+        item.image && item.image.length
+          ? 'transparent'
+          : $vuetify.theme.themes.light.primary
       "
     >
-      <v-img
+      <OptimizedImage
         v-if="item.image"
         :src="item.image"
         :alt="item.title"
         contain
-      ></v-img>
-      <p v-else v-html="highlight(item.title, search)"></p>
+      ></OptimizedImage>
+      <p v-else v-html="item.title"></p>
     </v-avatar>
-    <div class="flex-column align-content-start mt-3">
+    <div class="flex-column align-content-start">
       <v-card-title class="d-flex flex-row align-center">
         <!-- 
         I had to wrap the title in a paragraph node to avoid inconsistent line breaks with search highlights. 
         If your CSS foo is better than mine, the cleaner way is welcome. 
         -->
-        <p
-          style="
-            font-weight: 500;
-            letter-spacing: 0.0125em;
-            line-height: 2rem;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.15rem;
-            word-break: normal;
-          "
-        >
-          <v-chip class="ma-2" label small>
-            {{
-              item.edition === 2021
-                ? $t('the-city-in-2100')
-                : $t('work-in-2100')
-            }}
-          </v-chip>
-          <span v-html="highlight(item.title, search)"></span>
-        </p>
+        {{ item.title }}
+
+        <v-chip v-if="item.category === 'winner'" class="ma-2" color="#fff1d0">
+          {{ $t('laureates.' + item.category).toUpperCase() }}
+        </v-chip>
+        <v-chip class="ma-2">
+          {{ $t('resources.types.' + item.type) }}
+        </v-chip>
       </v-card-title>
       <v-card-text>
-        <p v-html="highlight(item.subtitle, search)"></p>
-        <div class="overline">{{ item.date }}</div>
+        <div class="overline">{{ $t('author-s') }}</div>
+        <p>
+          <span
+            v-for="(ppl, index) in item.team"
+            :key="ppl.firstname + ppl.lastname"
+            >{{ ppl.lastname.toUpperCase() + ' ' + ppl.firstname
+            }}<template v-if="index < item.team.length - 1"
+              >,&nbsp;</template
+            ></span
+          >
+        </p>
+
         <small v-if="item.copyright" class="muted caption"
           >Image of &copy; {{ item.copyright }}</small
         >
@@ -86,20 +93,7 @@ export default {
     console.log('item', this)
   },
   mounted() {},
-  methods: {
-    highlight(word, query) {
-      if (!this.search.length) return word
-      console.log('this: ', this)
-      const check = new RegExp(query, 'ig')
-      return word.replace(check, function (matchedText, a, b) {
-        return (
-          '<strong style="color: darkslategray;background-color: yellow;">' +
-          matchedText +
-          '</strong>'
-        )
-      })
-    },
-  },
+  methods: {},
 }
 </script>
 <style lang="scss"></style>

@@ -51,12 +51,12 @@
               :end="new Date(new Date().setDate(new Date().getDate() + 1))"
               inline-template
             >
-              <google-calendar
-                id="google-calendar"
+              <office365-calendar
+                id="office365-calendar"
                 style="color: inherit; text-decoration: none"
               >
                 Add to Office365 outlook
-              </google-calendar>
+              </office365-calendar>
             </AddToCalendar>
           </v-btn>
         </div>

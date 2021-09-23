@@ -3,29 +3,9 @@
     :color="item.category === 'winner' ? '#ffe2a0' : 'transparent'"
     class="pa-6 my-3"
   >
-    <v-tooltip v-if="!$route.name.startsWith('contest-laureates-slug')" bottom>
-      <template #activator="{ on, attrs }">
-        <v-btn
-          icon
-          class="float-right"
-          v-bind="attrs"
-          nuxt
-          :to="localePath('/contest/laureates/' + item.slug)"
-          v-on="on"
-        >
-          <v-icon> mdi-open-in-new </v-icon></v-btn
-        >
-      </template>
-      <span>{{ $t('open-in-a-new-tab') }}</span>
-    </v-tooltip>
     <v-card-title class="pt-0">
-      {{ item.title }} (
-      <span
-        v-for="(ppl, index) in item.team"
-        :key="ppl.firstname + ppl.lastname"
-        >{{ ppl.lastname.toUpperCase() + ' ' + ppl.firstname
-        }}<template v-if="index < item.team.length - 1">,&nbsp;</template></span
-      >)
+      {{ item.title }}
+
       <v-chip v-if="item.category === 'winner'" class="ma-2" color="#fff1d0">
         {{ $t('laureates.' + item.category).toUpperCase() }}
       </v-chip>
@@ -34,6 +14,20 @@
       </v-chip>
     </v-card-title>
     <v-card-text>
+      <div class="overline">
+        {{ $t('author-s') }}
+      </div>
+      <div class="mb-3">
+        <span
+          v-for="(ppl, index) in item.team"
+          :key="ppl.firstname + ppl.lastname"
+          >{{ ppl.lastname.toUpperCase() + ' ' + ppl.firstname
+          }}<template v-if="index < item.team.length - 1"
+            >,&nbsp;</template
+          ></span
+        >
+      </div>
+
       <div class="overline">
         {{ $t('description') }}
       </div>
@@ -74,8 +68,8 @@
       ></v-col>
     </v-row>
     <OptimizedImage v-if="item.image" :src="item.image"> </OptimizedImage>
-    <v-card-actions>
-      <v-btn color="primary" @click="$emit('open')">
+    <v-card-actions v-if="item.file">
+      <v-btn color="primary" :to="'/laureates/' + item.file" target="_blank">
         <v-icon left>mdi-download</v-icon>
         {{ $t('download') }}
       </v-btn>

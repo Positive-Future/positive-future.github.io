@@ -1,86 +1,84 @@
 <template>
   <div>
     <section
-      style="background-color: #fff1d0"
+      style="background-color: #fff1d0; padding-bottom: 60px"
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
     >
-      <v-row justify="center" no-gutters>
+      <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <v-row no-gutters>
-            <v-col cols="12" md="8" class="pa-3">
-              <h1 class="mt-8 mb-4">
-                {{ organizers.ias.title }}
-              </h1>
-              <p>
-                {{ organizers.ias.text }}
-                <a
-                  :href="organizers.ias.url"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  :title="organizers.ias.title"
-                  >{{ $t('misc.ui.more') }}</a
-                >
-              </p>
-              <h1 class="mt-8 mb-4">
-                {{ organizers.fundation.title }}
-              </h1>
-              <p>
-                {{ organizers.fundation.text }}
-                <a
-                  :href="organizers.fundation.url"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  :title="organizers.fundation.title"
-                  >{{ $t('misc.ui.more') }}</a
-                >
-              </p>
-            </v-col>
-            <v-col v-if="$vuetify.breakpoint.mdAndUp" md="4">
-              <div class="logos">
-                <div class="line1"></div>
-                <div class="logo_container1 rounded-circle">
-                  <v-img :src="organizers.ias.logo" class="logo"></v-img>
-                </div>
-                <div class="line2"></div>
-                <div class="logo_container2 rounded-circle">
-                  <v-img :src="organizers.fundation.logo" class="logo"></v-img>
-                </div>
-              </div>
-            </v-col>
-          </v-row>
+          <h1 class="mt-8 pb-4">
+            {{ about.title }}
+          </h1>
+          <nuxt-content :document="about" />
         </v-col>
       </v-row>
     </section>
-    <section :class="{ 'px-3': $vuetify.breakpoint.smAndDown }" class="px-3">
+    <section :class="{ 'px-3': $vuetify.breakpoint.smAndDown }">
       <v-row justify="center">
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <v-row>
-            <v-col cols="12" md="8">
-              <p class="mt-10 mb-0">{{ $t('misc.ui.with_the_support_of') }}</p>
-              <h1 class="mt-4 mb-4">
-                {{ organizers.iff.title }}
-              </h1>
-              <p class="mb-3">
-                {{ organizers.iff.text }}
-                <a
-                  :href="organizers.iff.url"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  :title="organizers.iff.title"
-                  >{{ $t('misc.ui.more') }}</a
+        <v-row justify="center" no-gutters>
+          <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3 mt-9">
+            <v-row>
+              <v-col cols="12" md="4" class="pa-3 mb-6">
+                <v-card
+                  class="pa-3"
+                  height="100%"
+                  nuxt
+                  :to="localePath('/resources')"
                 >
-              </p></v-col
-            >
-            <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="4">
-              <v-img
-                :src="organizers.iff.logo"
-                class="logo"
-                max-width="255"
-                max-height="200px"
-              ></v-img>
-            </v-col>
-          </v-row>
-        </v-col>
+                  <v-icon color="black" x-large class="d-flex"
+                    >mdi-file-document-multiple-outline</v-icon
+                  >
+
+                  <v-card-text
+                    class="subtitle-1 title font-weight-regular"
+                    color="black"
+                  >
+                    {{ $t('about.database') }}
+                  </v-card-text>
+                </v-card>
+              </v-col>
+              <v-col cols="12" md="4" class="pa-3 mb-6">
+                <v-card
+                  class="pa-3"
+                  height="100%"
+                  nuxt
+                  :to="localePath('/webinars')"
+                >
+                  <v-icon color="black" x-large class="d-flex"
+                    >mdi-video-vintage</v-icon
+                  >
+
+                  <v-card-text
+                    class="subtitle-1 title font-weight-regular"
+                    color="black"
+                  >
+                    {{ $t('about.webinars') }}
+                  </v-card-text>
+                </v-card>
+              </v-col>
+              <v-col cols="12" md="4" class="pa-3 mb-6">
+                <v-card
+                  class="pa-3"
+                  :flat="$vuetify.theme.isDark"
+                  height="100%"
+                  nuxt
+                  :to="localePath('/about/scientific_advisory_board')"
+                >
+                  <v-icon color="black" x-large class="d-flex">
+                    mdi-trophy</v-icon
+                  >
+
+                  <v-card-text
+                    class="subtitle-1 title font-weight-regular"
+                    color="black"
+                  >
+                    {{ $t('about.contest') }}
+                  </v-card-text>
+                </v-card>
+              </v-col></v-row
+            ></v-col
+          >
+        </v-row>
       </v-row>
     </section>
   </div>
@@ -88,69 +86,24 @@
 <script>
 export default {
   async asyncData({ app, $content }) {
-    const organizers = await $content(
-      app.i18n.locale + '/pages/organizers'
-    ).fetch()
+    const about = await $content(app.i18n.locale + '/pages/about-us').fetch()
 
     return {
-      organizers,
+      about,
     }
   },
   data() {
-    return {}
+    return {
+      expanded: [0, 1, 2, 3, 4],
+    }
   },
   mounted() {},
   methods: {},
 }
 </script>
-<style scoped>
-.logos {
-  position: relative;
-}
-.logo_container1 {
-  position: absolute;
-  top: 60px;
-  left: 30px;
-  background-color: white;
-  height: 160px;
-  width: 160px;
-  padding: 30px;
-  align-items: center;
-  .logo {
-    height: 100px;
-    width: 100px;
-  }
-}
-.logo_container2 {
-  position: absolute;
-  top: 350px;
-  left: 150px;
-  background-color: white;
-  height: 160px;
-  width: 160px;
-  padding: 30px;
-  align-items: center;
-  .logo {
-    height: 100px;
-    width: 100px;
-  }
-}
-.line1 {
-  position: absolute;
-  top: -20px;
-  left: 108px;
-  height: 160px;
-  width: 4px;
-  margin: 6px 0;
-  background: white;
-}
-.line2 {
-  position: absolute;
-  top: -20px;
-  left: 228px;
-  height: 380px;
-  width: 4px;
-  margin: 6px 0;
-  background: white;
+<style>
+.name {
+  background-color: black;
+  color: white;
 }
 </style>

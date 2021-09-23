@@ -36,7 +36,7 @@
         :yt="item.youtube_video_id"
         class="mb-9"
       ></YoutubeEmbedded>
-      <OptimizedImage v-else-if="post.image" :src="post.image">
+      <OptimizedImage v-else-if="post.image" :src="item.image">
       </OptimizedImage>
       <nuxt-content :document="item" />
     </v-card-text>
@@ -92,19 +92,20 @@
           </v-card>
         </v-col>
       </v-row>
-      <div class="headline ma-3">{{ $t('upcoming-webinars') }} ...</div>
+      <div class="headline mt-6 mb-3">{{ $t('see-also') }}</div>
       <template v-for="(webinar, index) in webinars">
         <WebinarListItem
           :key="index"
           :item="webinar"
           :index="index"
-          @open="
-            selected = index
-            openModal = true
-          "
-          @close="openModal = false"
+          @open="$router.push(localePath('/webinars/' + item.slug))"
         />
       </template>
+      <WebinarModal
+        :item="webinars[selected] || {}"
+        :open="openModal"
+        @close="openModal = false"
+      />
     </template>
   </v-card>
 </template>
@@ -124,13 +125,15 @@ export default {
     return {
       webinars: [],
       calendar: false,
+      selected: null,
+      openModal: false,
     }
   },
   async fetch() {
     this.webinars = await this.$content(this.$i18n.locale + '/webinars')
       /*  .where({ featured: true }) */
       .sortBy('order', 'desc')
-      .where({ slug: { $ne: this.item.slug } })
+      .where({ slug: { $ne: this.item.slug }, edition: this.item.edition })
       .limit(this.limit)
       .fetch()
   },
