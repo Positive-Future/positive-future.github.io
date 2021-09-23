@@ -46,7 +46,7 @@
       </v-card-title>
       <v-card-text>
         <p v-html="highlight(item.subtitle, search)"></p>
-        <div class="overline">{{ item.date }}</div>
+        <!--     <div class="overline">{{ item.date }}</div> -->
         <small v-if="item.copyright" class="muted caption"
           >Image of &copy; {{ item.copyright }}</small
         >
