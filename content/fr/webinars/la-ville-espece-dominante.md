@@ -3,9 +3,9 @@ draft: false
 created: 2021-01-13T14:34:25.000+00:00
 en: content/en/news/my-first-test-article.md
 fr: []
-title: Revoir le tout premier Webinaire "La Ville, espèce dominante ? Nature et avenir
-  du phénomène urbain"
-subtitle: par Fabienne Goux-Baudiment
+title: La Ville, espèce dominante ? Nature et avenir du phénomène urbain
+subtitle: par Fabienne Goux-Baudiment, docteure en sciences sociales et fondatrice
+  de ProGective.
 categories:
 - event
 featured: false
@@ -13,8 +13,8 @@ image: "/darcey-beau-q8d7wzc40ea-unsplash.jpg"
 background_color: "#F8E71C"
 file: "/prezi_compressed.pdf"
 youtube_video_id: vnWSDQFP_Xc
-order: 3
-edition: 2021
+order: "3"
+edition: "2021"
 
 ---
 **En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
