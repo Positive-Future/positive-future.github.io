@@ -17,9 +17,7 @@ order: "3"
 edition: "2021"
 
 ---
-**En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
-
-**Pour ceux qui n'ont pu y assister, vous avez la possibilité de revoir le tout premier webinaire du 3 mars, animé par Fabienne Goux-Baudiment, docteure en prospective.**
+**Webinair diffusé le 3 mars 2021.** 
 
 La Ville est un objet fascinant, quel que soit l'angle sous lequel on la regarde : un simple groupement humain (_human settlement_); une conurbation tentaculaire; une foisonnante exposition architecturale; un lieu de vie, de travail et d'éducation; un condensé d'Histoire; un sujet d'ethnographie constamment renouvelé...
 
