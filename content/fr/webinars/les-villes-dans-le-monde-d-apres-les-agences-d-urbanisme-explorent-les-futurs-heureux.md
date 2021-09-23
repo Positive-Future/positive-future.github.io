@@ -1,23 +1,21 @@
 ---
 draft: false
-
-title:
-  Revoir le webinaire "Les villes dans le monde d’après – Les agences d’urbanisme
-  explorent les futurs (heureux)"
-subtitle: Par Brigitte Bariol-Mathais et Karine Hurel
+title: Les villes dans le monde d’après – Les agences d’urbanisme explorent les futurs
+  (heureux)
+subtitle: Par Brigitte Bariol-Mathais et Karine Hurel.
 categories:
-  - event
+- event
 featured: false
-image: '/peerapon-chantharainthron-kavu6s_qtyo-unsplash.jpg'
-youtube_video_id: 'va_hcao0uRc'
+image: "/peerapon-chantharainthron-kavu6s_qtyo-unsplash.jpg"
+youtube_video_id: va_hcao0uRc
 background_color: ''
 file: ''
 link: ''
-edition: 2021
-date: 2021-01-13T14:34:25.000+00:00
----
+edition: "2021"
+date: 2021-04-21T16:00:25Z
 
-**En complément des ressources scientifiques disponibles dans la rubrique Matière à penser, l'équipe de Positive Future propose au fil des mois des événements scientifiques, webinaires, conférences en ligne, pour nourrir la réflexion des participants au concours.**
+---
+**Webinaire diffusé le 21 avril 2021.**
 
 La Fédération nationale des agences d’urbanisme (Fnau) a placé ses rencontres 2020 sous le signe de la prospective. **Les agences ont travaillé en réseau sur les changements à l’horizon 2040 pour imaginer un « monde d’après » qui aurait réussi à relever les défis des transitions**. Il s’agissait de questionner l’avenir par les notions de bonheur et de bien-être, de développement durable et de transition écologique réussie, de renouveau démocratique, afin de construire des perspectives de futurs souhaitables, mais aussi crédibles. Les visions prospectives proposées ont plusieurs facettes : certaines se fondent sur la résilience face à la crise de la Covid-19, d’autres s’appuient sur des imaginaires territoriaux ou des démarches ludiques **pour questionner les projets de territoire ou l’émergence de nouvelles politiques publiques, à l’horizon 2040.**
 

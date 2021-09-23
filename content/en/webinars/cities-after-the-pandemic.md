@@ -1,22 +1,20 @@
 ---
 published: true
-date: 5844324532453
-
-title: Watch again the webinar "Cities after the pandemic"
-subtitle: With Bettina Laville, Patrick Le Galès, Patrick Braouezec
+date: 2021-05-10T16:00:25Z
+title: Cities after the pandemic
+subtitle: With Bettina Laville, Patrick Le Galès and Patrick Braouezec.
 categories:
-  - event
+- event
 featured: true
-image: '/danist-dqxiw7ncb9q-unsplashbd.jpg'
-youtube_video_id: 'u75Wb5TKWtY'
+image: "/danist-dqxiw7ncb9q-unsplashbd.jpg"
+youtube_video_id: u75Wb5TKWtY
 background_color: ''
 file: ''
 link: ''
-edition: 2021
-date: 2021-01-13T14:34:25.000+00:00
----
+edition: "2021"
 
-In addition to the scientific resources available in the "Food for thought" section, the Positive Future team offers scientific events, webinars, and online conferences to help participants in the contest, and for anyone interested in the themes tackled by the Positive Future project.
+---
+Webinar broadcast on May 10th, 2021.
 
 As part of the effort to recover from the crisis triggered by the Covid-19 pandemic, cities can reduce the impact of future pandemics and become more equitable, healthy and environmentally friendly," says a new UN-Habitat report released in late March 2021
 
