@@ -11,7 +11,7 @@ background_color: ''
 file: "/victor-garcia-ndk_3biaghc-unsplash-1.jpg"
 link: ''
 edition: "2021"
-date: 2021-01-13T14:34:25.000+00:00
+date: 2021-05-25T16:00:25Z
 
 ---
 **Webinaire diffusé le 25 mai 2021.**
