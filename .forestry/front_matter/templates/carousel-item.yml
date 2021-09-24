@@ -14,3 +14,6 @@ fields:
 - type: boolean
   name: new_tab_link
   label: new_tab_link
+pages:
+- content/en/carousel/Video the unveiling of the laureates.md
+- content/fr/carousel/video devoilement laureats.md

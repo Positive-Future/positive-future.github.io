@@ -1,7 +1,7 @@
 ---
-carousel_title: Meet the jury of Positive Future
-picture: "/2hannah-sibayan-kzhmbyzktng-unsplash-1.jpg"
-link: "/about/scientific_advisory_board"
+carousel_title: 'Concours 2021 : cérémonie d''annonce des résultats '
+picture: ''
+link: ''
 new_tab_link: false
 
 ---
