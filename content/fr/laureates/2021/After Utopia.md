@@ -9,12 +9,15 @@ jury: |-
 
   Erik Overland: "Après avoir lu After utopia. An Agropolis for Future Ancestors, certaines choses ont frappé mon esprit. La première est le concept de "post-utopie". La première fois que j'ai lu cette histoire, qui contient beaucoup de dessins fabuleux, je n'étais pas sûr d'aimer ce terme. Puis je l'ai relue, et je dois dire que je l'ai vraiment apprécié. Parce que le terme "post-utopie" est une critique de ce que je suppose être le genre d'utopistes non réfléchis ou naïfs, qui veulent sauver le monde et veulent faire les bonnes choses, les meilleures choses qu'ils puissent imaginer, mais le résultat de cela n'est pas toujours très prometteur. Et c'est pourquoi l'auteur a créé le terme "post-utopisme" et j'aime cette façon de faire. Cela dit, je dois examiner le contenu et, en tant que futurologue, je dois dire que même dans une société post utopique, l'Agropolis de l'après-utopie qui est décrite, je ne sais pas à quel point ces idées sont éloignées dans l'avenir ; pour moi, l'histoire n'est pas surprenante. Mais le narrateur, le sujet de l'histoire, l'abeille, est intéressant. Parce qu'elle est le symbole d'un défi environnemental très intéressant de notre époque."
 team:
+- firstname: GM
+  lastname: KUHN
 - firstname: Sophie Z.
   lastname: SHAO
 youtube_video_id: ''
 file: "/shao-sophie-comic.pdf"
 image: "/after-utopia.jpg"
 copyright: ''
+jury_notes: []
 
 ---
 Cette bande dessinée dépeint une ville du futur appelée Agropolis. On suit l'histoire de la ferme de la Vieille Carrière et la vie de certains membres de sa communauté, en explorant comment les transports, les droits du travail, l'aide sociale, etc. fonctionnent dans cette société "post-utopique". L'histoire est racontée par une abeille à longues cornes qui vit également à la ferme. Cette abeille solitaire incarne ce que signifie être un "bon ancêtre" : sa courte vie est consacrée à prendre soin des générations futures.
