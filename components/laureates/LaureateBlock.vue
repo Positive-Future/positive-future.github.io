@@ -10,7 +10,7 @@
         {{ $t('laureates.' + item.category).toUpperCase() }}
       </v-chip>
       <v-chip class="ma-2">
-        {{ $t('form.applications.format.' + item.type) }}
+        {{ $t('form.application.format.' + item.type) }}
       </v-chip>
     </v-card-title>
     <v-card-text>
@@ -95,4 +95,13 @@ export default {
   },
 }
 </script>
-<style lang="scss"></style>
+<style lang="scss">
+.nuxt-content p {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: 'Lato', sans-serif !important;
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+  line-height: 1.375rem !important;
+  letter-spacing: 0.0071428571em !important;
+}
+</style>
