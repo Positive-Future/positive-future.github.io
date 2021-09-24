@@ -14,46 +14,7 @@
     <section style="margin-top: -95px">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <v-carousel
-            cycle
-            show-arrows-on-hover
-            hide-delimiter-background
-            height="400"
-          >
-            <v-carousel-item
-              v-for="(item, i) in carousel"
-              :key="i"
-              height="400"
-            >
-              <v-card
-                :nuxt="!item.new_tab_link"
-                :to="localePath(item.link)"
-                :target="item.new_tab_link ? '_blank' : 'self'"
-                light
-                class="mb-6"
-                height="400"
-              >
-                <OptimizedImage
-                  :src="item.picture"
-                  class="d-flex align-end"
-                  height="400"
-                >
-                  <template #caption>
-                    <v-card-title>
-                      <span style="background-color: #fff1d0" class="px-2">
-                        {{ item.carousel_title }}
-                      </span></v-card-title
-                    >
-                    <v-card-text v-if="item.subtitle">
-                      <span style="background-color: #fff1d0">
-                        {{ item.subtitle }}
-                      </span></v-card-text
-                    ></template
-                  >
-                </OptimizedImage>
-              </v-card>
-            </v-carousel-item>
-          </v-carousel>
+          <Carousel />
         </v-col>
       </v-row>
     </section>
@@ -188,17 +149,12 @@ export default {
   async asyncData({ app, $content }) {
     const index = await $content(app.i18n.locale + '/pages/index').fetch()
     const dates = await $content(app.i18n.locale + '/pages/dates').fetch()
-    const carousel = await $content(app.i18n.locale + '/carousel')
-      .sortBy('date', 'desc')
-      .limit(3)
-      .fetch()
     const organizers = await $content(
       app.i18n.locale + '/pages/organizers'
     ).fetch()
     return {
       index,
       dates,
-      carousel,
       organizers,
     }
   },

@@ -1,19 +1,21 @@
 <template>
   <div class="frame">
-    <div class="overlay">
-      <span id="caption-content">
-        <slot name="caption"></slot>
-        <br />
-      </span>
-    </div>
+    <div class="overlay"></div>
     <v-img
+      v-if="src"
       :aspect-ratio="ratio"
       :lazy-src="$img(src, { width: 10, quality: 70 })"
       :src="$img(src, { height, quality: 70 })"
       :srcset="_srcset.srcset"
       :sizes="_srcset.size"
+      v-bind="$attrs"
     >
+      <span id="caption-content">
+        <slot name="caption"></slot>
+        <br />
+      </span>
     </v-img>
+    <v-sheet v-else></v-sheet>
   </div>
 </template>
 <script>
@@ -33,7 +35,7 @@ export default {
         modifiers: {
           format: 'webp',
           quality: 70,
-          height: 500,
+          height: this.height,
         },
       })
     },
