@@ -15,7 +15,7 @@ team:
   lastname: PERLMUTTER
 youtube_video_id: ''
 file: "/perlmutter-franck-short-story.pdf"
-image: ''
+image: "/michal-mrozek-y0itdawgbxi-unsplash.jpg"
 copyright: ''
 
 ---
