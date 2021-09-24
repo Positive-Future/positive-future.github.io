@@ -91,6 +91,12 @@ fields:
   config:
     maxSize: 64
   label: Image
+- name: copyright
+  type: text
+  config:
+    required: false
+  label: Image copyright owner and date
+  description: If necessary
 pages:
 - content/en/laureates/2021/En attendant Cléo.md
 - content/en/laureates/tetr.md

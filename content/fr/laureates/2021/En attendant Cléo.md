@@ -15,6 +15,7 @@ team:
   lastname: CASES
 youtube_video_id: ''
 file: "/cases-anne-laure-short-story.pdf"
+image: "/umit-bulut-qbtc7zwjb64-unsplash.jpg"
 
 ---
 La nouvelle _En attendant Cléo_ nous plonge dans la journée du 21 mai 2105, dans un Paris vidé de ses voitures, de sa pollution, de son bruit incessant. Il y fait très chaud certes, mais il y fait bon vivre. Fermes verticales, forets d’altitude en haut des immeubles, lacs artificiels de récupération des eaux usées y côtoient nouvelles technologies, drones et moyens de transports à très grande vitesse. Au fil des heures, nous suivons Auguste, nous découvrons son quotidien, sa vie. Auguste attend Cléo. Le rejoindra-t-elle ou préférera-t-elle s’évader vers de nouveaux horizons? 
