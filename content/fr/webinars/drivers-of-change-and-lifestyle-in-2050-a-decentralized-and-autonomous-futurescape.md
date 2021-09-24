@@ -1,21 +1,21 @@
 ---
-draft: false
+published: true
 en: []
 fr: []
 title: 'Drivers of Change and Lifestyle in 2050: A Decentralized and Autonomous Futurescape'
 subtitle: Par Victor V. Motti, Directeur de la WFSF.
 categories:
-- event
+  - event
 featured: false
-image: "/ross-findon-mg28olyfghi-unsplash.jpg"
+image: '/ross-findon-mg28olyfghi-unsplash.jpg'
 youtube_video_id: ocv7qL3g6EU
 background_color: ''
-file: "/presentation_victor-motti.pdf"
+file: '/presentation_victor-motti.pdf'
 link: ''
-edition: "2021"
+edition: '2021'
 date: 2021-05-04T16:00:25Z
-
 ---
+
 **Webinaire diffusé le 4 mai 2021.**
 
 L'art et la science des études prospectives nous aident à mieux comprendre les moteurs du changement en se concentrant sur le long terme et les changements radicaux : par exemple, les révolutions technologiques (le biohacking et l'intelligence artificielle), les bouleversements sociaux (l'accès massif à l'éducation gratuite et aux outils de production), les perturbations commerciales (la fin de la banque), les transformations majeures (la société post plastique).

@@ -21,7 +21,7 @@
             center-active
           >
             <v-slide-item
-              v-for="(item, index) in webinars"
+              v-for="(item, index) in upcomingWebinars"
               :key="item.title"
               v-slot="{ active }"
             >
@@ -51,10 +51,15 @@ export default {
       // TODO complete
       .sortBy('date', 'desc')
       .fetch()
+    const upcomingWebinars = webinars.filter(
+      (item) => new Date(item.date) > Date.now()
+    )
+    console.log('upcomingWebinars: ', upcomingWebinars)
     console.log('webinars: ', webinars)
     return {
       webinarText,
       webinars,
+      upcomingWebinars,
     }
   },
   data() {

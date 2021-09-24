@@ -12,7 +12,19 @@
     </OptimizedImage>
     <v-card-title>{{ item.title }}</v-card-title>
 
-    <v-card-subtitle class="pb-0"> {{ item.date }} </v-card-subtitle>
+    <v-card-subtitle class="pb-0">
+      {{
+        new Date(item.date).toLocaleDateString($i18n.locale, {
+          timezone: 'UTC',
+        }) +
+        ' - ' +
+        new Date(item.date).toLocaleTimeString($i18n.locale, {
+          hour: '2-digit',
+          minute: '2-digit',
+          timezone: 'UTC',
+        })
+      }}
+    </v-card-subtitle>
 
     <v-card-text class="text--primary">
       {{ item.subtitle }}
@@ -21,13 +33,9 @@
     <v-spacer></v-spacer>
     <v-card-actions class="flex-row">
       <v-spacer></v-spacer>
-      <v-btn
-        color="primary"
-        nuxt
-        :to="localePath('/webinars/next/' + item.slug)"
-        @click="$emit('expand', index)"
-        >{{ $t('learn-more') }}</v-btn
-      >
+      <v-btn color="primary" nuxt :to="localePath('/webinars/' + item.slug)">{{
+        $t('learn-more')
+      }}</v-btn>
     </v-card-actions>
   </v-card>
 </template>

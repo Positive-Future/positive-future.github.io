@@ -6,7 +6,12 @@
         <div class="d-flex">
           <v-select
             v-model="edition"
-            :items="[$t('the-city-in-2100'), $t('work-in-2100')]"
+            :items="[
+              { text: $t('the-city-in-2100'), year: 2021 },
+              { text: $t('work-in-2100'), year: 2022 },
+            ]"
+            item-text="text"
+            item-value="year"
             :label="$t('choose-a-thematic')"
             outlined
             clearable
@@ -71,7 +76,8 @@
           <v-tab-item>
             <template v-if="searching">
               <div v-if="webinars.length > 0" class="overline">
-                Searching for "{{ searchString }}" - {{ webinars.length }}
+                {{ edition ? '' : 'Searching for "' + searchString + '"' }}" -
+                {{ webinars.length }}
                 {{ webinars.length > 1 ? 'results' : 'result' }}
               </div>
               <div
@@ -79,11 +85,18 @@
                 class="overline text-h6 d-flex flex-column align-center"
               >
                 <div>
-                  {{ $t('no-result-found-matching') }} "{{ searchString }}"
+                  {{ $t('no-result-found-matching') }}
+                  {{ edition ? $t('your-filters') : '"' + searchString + '"' }}
                 </div>
-                <v-btn outlined class="mt-3" @click="searchString = ''">{{
-                  $t('cancel-my-search')
-                }}</v-btn>
+                <v-btn
+                  outlined
+                  class="mt-3"
+                  @click="
+                    searchString = ''
+                    edition = null
+                  "
+                  >{{ $t('cancel-my-search') }}</v-btn
+                >
               </div>
               <WebinarListItem
                 v-for="(item, index) in webinars"
@@ -91,10 +104,7 @@
                 :item="item"
                 :search="searchString"
                 :index="index"
-                @open="
-                  selected = index
-                  openModal = true
-                "
+                @open="$router.push(localePath('/webinars/' + item.slug))"
               />
             </template>
             <template v-for="(item, index) in webinars" v-else>
@@ -102,11 +112,7 @@
                 :key="index"
                 :item="item"
                 :index="index"
-                @open="
-                  selected = index
-                  openModal = true
-                "
-                @close="openModal = false"
+                @open="$router.push(localePath('/webinars/' + item.slug))"
               />
             </template>
           </v-tab-item>
@@ -151,7 +157,7 @@ export default {
     async searchString(searchString) {
       console.log('search', searchString)
       if (!searchString) {
-        this.searching = false
+        this.searching = this.edition || false
         this.webinars = await this.$content(this.$i18n.locale + '/webinars')
           /*  .where({ featured: true }) */
           .where({ published: true })
@@ -161,6 +167,7 @@ export default {
       } else {
         this.searching = true
         this.webinars = await this.$content(this.$i18n.locale + '/webinars')
+          .where({ published: true })
           .search(searchString)
           .sortBy('date', 'asc')
           .fetch()
@@ -169,16 +176,17 @@ export default {
     async edition(val) {
       console.log('edition', val)
       if (!val) {
+        this.searching = this.searchString.length || false
         this.webinars = await this.$content(this.$i18n.locale + '/webinars')
-          /*  .where({ featured: true }) */
           .where({ published: true })
           .sortBy('date', 'desc')
           .limit(this.limit)
           .fetch()
       } else {
+        console.log('searchiung for val', val)
         this.searching = true
         this.webinars = await this.$content(this.$i18n.locale + '/webinars')
-          .search('searchString')
+          .where({ published: true, edition: val.toString() })
           .sortBy('date', 'asc')
           .fetch()
       }

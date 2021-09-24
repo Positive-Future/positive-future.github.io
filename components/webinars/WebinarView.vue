@@ -58,7 +58,7 @@
         <span v-html="$t('open-the-webinar-page')"></span>
       </v-tooltip>
     </v-card-actions>
-    <template v-if="$route.name.startsWith('webinars-next-slug')">
+    <template v-else-if="new Date(item.date) > Date.now()">
       <v-divider></v-divider>
       <div class="ma-3">The webinar will be held on Zoom: {{ item.zoom }}</div>
       <v-btn large text class="my-6" @click="calendar = true">
@@ -92,19 +92,14 @@
           </v-card>
         </v-col>
       </v-row>
-      <div class="headline mt-6 mb-3">{{ $t('see-also') }}</div>
-      <template v-for="(webinar, index) in webinars">
-        <WebinarListItem
-          :key="index"
-          :item="webinar"
-          :index="index"
-          @open="$router.push(localePath('/webinars/' + item.slug))"
-        />
-      </template>
-      <WebinarModal
-        :item="webinars[selected] || {}"
-        :open="openModal"
-        @close="openModal = false"
+    </template>
+    <div class="headline mt-6 mb-3">{{ $t('see-also') }}</div>
+    <template v-for="(webinar, index) in webinars">
+      <WebinarListItem
+        :key="index"
+        :item="webinar"
+        :index="index"
+        @open="$router.push(localePath('/webinars/' + webinar.slug))"
       />
     </template>
   </v-card>

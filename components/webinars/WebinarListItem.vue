@@ -34,7 +34,7 @@
             word-break: normal;
           "
         >
-          <v-chip class="ma-2" label small>
+          <v-chip class="mr-2" label small>
             {{
               item.edition === 2021
                 ? $t('the-city-in-2100')
@@ -45,7 +45,21 @@
         </p>
       </v-card-title>
       <v-card-text>
-        <p v-html="highlight(item.subtitle, search)"></p>
+        <p
+          v-html="
+            new Date(item.date).toLocaleDateString($i18n.locale, {
+              timezone: 'UTC',
+            }) +
+            ' - ' +
+            new Date(item.date).toLocaleTimeString($i18n.locale, {
+              hour: '2-digit',
+              minute: '2-digit',
+              timezone: 'UTC',
+            }) +
+            ' - ' +
+            highlight(item.subtitle, search)
+          "
+        ></p>
         <!--     <div class="overline">{{ item.date }}</div> -->
         <small v-if="item.copyright" class="muted caption"
           >Image of &copy; {{ item.copyright }}</small

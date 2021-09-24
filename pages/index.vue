@@ -37,15 +37,17 @@
                   class="d-flex align-end"
                   height="400"
                 >
-                  <v-card-title>
-                    <span style="background-color: #fff1d0" class="px-2">
-                      {{ item.carousel_title }}
-                    </span></v-card-title
-                  >
-                  <v-card-text v-if="item.subtitle">
-                    <span style="background-color: #fff1d0">
-                      {{ item.subtitle }}
-                    </span></v-card-text
+                  <template #caption>
+                    <v-card-title>
+                      <span style="background-color: #fff1d0" class="px-2">
+                        {{ item.carousel_title }}
+                      </span></v-card-title
+                    >
+                    <v-card-text v-if="item.subtitle">
+                      <span style="background-color: #fff1d0">
+                        {{ item.subtitle }}
+                      </span></v-card-text
+                    ></template
                   >
                 </OptimizedImage>
               </v-card>
