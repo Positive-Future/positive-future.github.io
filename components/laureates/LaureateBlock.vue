@@ -10,7 +10,7 @@
         {{ $t('laureates.' + item.category).toUpperCase() }}
       </v-chip>
       <v-chip class="ma-2">
-        {{ $t('form.format.' + item.type) }}
+        {{ $t('form.applications.format.' + item.type) }}
       </v-chip>
     </v-card-title>
     <v-card-text>
