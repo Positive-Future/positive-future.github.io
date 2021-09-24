@@ -1,14 +1,14 @@
 ---
-title: Dates clés!
+title: Dates-clés du concours 2022!
 schedule:
   opening:
-    date: 1er Avril 2021
+    date: 1er avril 2022
     content: Lancement de l'édition 2022
   deadline:
-    date: 31 Mai 2021
+    date: 31 Mai 2022
     content: Date limite pour le dépôt des dossiers.
   awards:
-    date: Septembre 2021
-    content: Remise des prix à Paris.
+    date: Automne 2022
+    content: 'Remise des Prix '
 
 ---
