@@ -84,7 +84,7 @@
                             :to="localePath('/contest/current')"
                           >
                             <v-list-item-title>
-                              {{ $t('next-edition') }}
+                              {{ $t('edition-2022') }}
                             </v-list-item-title>
                           </v-list-item>
                           <v-list-item
