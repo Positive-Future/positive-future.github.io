@@ -87,4 +87,6 @@ fields:
   label: Edition
   description: "# of the PF contest edition"
 pages:
+- content/en/laureates/2021/En attendant Cléo.md
 - content/en/laureates/tetr.md
+- content/fr/laureates/2021/En attendant Cléo.md
