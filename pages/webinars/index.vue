@@ -16,7 +16,8 @@
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <v-slide-group
             v-model="model"
-            class="mx-n16 my-4"
+            class="my-4"
+            :class="upcomingWebinars.length > 3 ? 'mx-n16' : 'mx-n4'"
             show-arrows
             center-active
           >

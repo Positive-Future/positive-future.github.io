@@ -43,6 +43,8 @@ export default {
 </script>
 <style scoped>
 .frame {
+  display: flex;
+  position: relative;
   overflow: hidden;
 }
 .overlay {

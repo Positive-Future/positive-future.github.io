@@ -30,7 +30,6 @@
       {{ item.subtitle }}
       <!-- <nuxt-content :document="item.content" class="mt-12" /> -->
     </v-card-text>
-    <v-spacer></v-spacer>
     <v-card-actions class="flex-row">
       <v-spacer></v-spacer>
       <v-btn color="primary" nuxt :to="localePath('/webinars/' + item.slug)">{{

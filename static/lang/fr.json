@@ -37,7 +37,12 @@
       "Drawing": "Dessins, peintures",
       "Photo": "Photos",
       "Video": "Vidéos et films",
-      "comic": "Bande dessinée et roman graphique"
+      "comic": "Bande dessinée et roman graphique",
+      "article": "Articles",
+      "book": "Livres",
+      "drawing": "Dessins, peintures",
+      "photo": "Photos",
+      "video": "Vidéos et films"
     },
     "perspectives": {
       "foresight_studies": "Travaux de prospective",

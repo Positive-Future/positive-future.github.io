@@ -31,18 +31,7 @@
       <div class="overline">
         {{ $t('description') }}
       </div>
-      <template v-if="show1">
-        {{ item.description }}
-        <v-btn x-small text class="d-inline-block" @click="show1 = false">{{
-          $t('show-less')
-        }}</v-btn>
-      </template>
-      <template v-else>
-        {{ truncateString(item.description, 40) }}
-        <v-btn x-small text class="d-inline-block" @click="show1 = true">{{
-          $t('show-more')
-        }}</v-btn>
-      </template>
+      <nuxt-content :document="item" />
       <div class="overline mt-2">
         {{ $t('from-the-jury') }}
       </div>

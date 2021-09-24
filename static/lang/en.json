@@ -37,7 +37,12 @@
       "Drawing": "Drawings, paintings",
       "Photo": "Photos",
       "Video": "Videos and films",
-      "comic": "Comics & visual novels"
+      "comic": "Comics & visual novels",
+      "article": "Articles",
+      "book": "Books",
+      "drawing": "Drawings, paintings",
+      "photo": "Photos",
+      "video": "Videos and films"
     },
     "perspectives": {
       "foresight_studies": "Foresight studies",
