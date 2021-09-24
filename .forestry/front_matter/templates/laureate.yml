@@ -86,6 +86,11 @@ fields:
       path: 
   label: Edition
   description: "# of the PF contest edition"
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
 pages:
 - content/en/laureates/2021/En attendant Cléo.md
 - content/en/laureates/tetr.md
