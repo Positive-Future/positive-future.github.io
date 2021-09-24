@@ -43,8 +43,8 @@ export default {
     this.laureates = await this.$content(this.$i18n.locale + '/laureates', {
       deep: true,
     })
+      .sortBy({ category: 'asc' })
       /*  .where({ featured: true }) */
-      .sortBy('date', 'desc')
       .limit(this.limit)
       .fetch()
   },
@@ -56,15 +56,14 @@ export default {
         this.searching = false
         this.laureates = await this.$content(this.$i18n.locale + '/laureates')
           /*  .where({ featured: true }) */
-          .where({ published: true })
-          .sortBy('date', 'desc')
+          .sortBy({ category: 'asc' })
           .limit(this.limit)
           .fetch()
       } else {
         this.searching = true
         this.laureates = await this.$content(this.$i18n.locale + '/laureates')
           .search(searchString)
-          .sortBy('date', 'asc')
+          .sortBy({ category: 'asc' })
           .fetch()
       }
     },
@@ -73,15 +72,14 @@ export default {
       if (!val) {
         this.laureates = await this.$content(this.$i18n.locale + '/laureates')
           /*  .where({ featured: true }) */
-          .where({ published: true })
-          .sortBy('date', 'desc')
+          .sortBy({ category: 'asc' })
           .limit(this.limit)
           .fetch()
       } else {
         this.searching = true
         this.laureates = await this.$content(this.$i18n.locale + '/laureates')
           .search('searchString')
-          .sortBy('date', 'asc')
+          .sortBy({ category: 'asc' })
           .fetch()
       }
     },

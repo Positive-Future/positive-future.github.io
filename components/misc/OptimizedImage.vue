@@ -46,6 +46,8 @@ export default {
   display: flex;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .overlay {
   position: absolute;

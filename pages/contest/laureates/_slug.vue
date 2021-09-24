@@ -11,7 +11,7 @@
             href: localePath('/contest/laureates'),
           },
           {
-            text: item.title,
+            text: item['laureate-title'],
             disabled: true,
             href: 'breadcrumbs_link_1',
           },
@@ -32,9 +32,6 @@ export default {
     const item = await $content(app.i18n.locale + '/laureates', { deep: true })
       .where({ slug: params.slug })
       .fetch()
-
-    console.log('item: ', item[0])
-
     return { item: item[0] }
   },
   data() {

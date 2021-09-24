@@ -22,7 +22,6 @@
         v-if="item.image"
         :src="item.image"
         :alt="item['laureate-title']"
-        contain
       ></OptimizedImage>
       <p v-else v-html="item['laureate-title']"></p>
     </v-avatar>
@@ -42,7 +41,7 @@
         </v-chip>
       </v-card-title>
       <v-card-text>
-        <div class="overline">{{ $t('author-s') }}</div>
+        <div class="overline">{{ $tc('author-s', item.team.length) }}</div>
         <p>
           <span
             v-for="(ppl, index) in item.team"

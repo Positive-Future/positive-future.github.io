@@ -14,6 +14,16 @@
       </v-chip>
     </v-card-title>
     <v-card-text>
+      <v-row>
+        <v-col cols="12">
+          <YoutubeEmbedded
+            v-if="item.video"
+            :yt="item.video"
+            class="mb-9 ml-3"
+          ></YoutubeEmbedded
+        ></v-col>
+      </v-row>
+      <OptimizedImage v-if="item.image" :src="item.image"> </OptimizedImage>
       <div class="overline">
         {{ $t('author-s') }}
       </div>
@@ -48,21 +58,12 @@
         }}</v-btn>
       </template>
     </v-card-text>
-    <v-row>
-      <v-col cols="12">
-        <YoutubeEmbedded
-          v-if="item.video"
-          :yt="item.video"
-          class="mb-9 ml-3"
-        ></YoutubeEmbedded
-      ></v-col>
-    </v-row>
-    <OptimizedImage v-if="item.image" :src="item.image"> </OptimizedImage>
+
     <small v-if="item.copyright" class="muted caption"
       >Image of &copy; {{ item.copyright }}</small
     >
     <v-card-actions v-if="item.file">
-      <v-btn color="primary" :to="'/laureates/' + item.file" target="_blank">
+      <v-btn color="primary" :to="'/laureates' + item.file" target="_blank">
         <v-icon left>mdi-download</v-icon>
         {{ $t('download') }}
       </v-btn>
