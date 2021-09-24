@@ -229,7 +229,8 @@
     "winner": "Grand Prize",
     "video": "Laureate of the video category",
     "article": "Laureate of the article category",
-    "comic": "Laureate of the comic category"
+    "comic": "Laureate of the comic category",
+    "novel": "Laureate of the novel category"
   },
   "watch-the-award-ceremony": "Watch the award ceremony",
   "choose-an-edition": "Choose an edition",
