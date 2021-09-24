@@ -15,7 +15,7 @@ team:
   lastname: LE SAOUT
 youtube_video_id: ''
 file: "/larminay-camille-comic.pdf"
-image: ''
+image: "/vivladi2100.jpg"
 copyright: ''
 
 ---
