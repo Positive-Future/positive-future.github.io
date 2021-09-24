@@ -53,3 +53,11 @@ fields:
     required: false
   label: Website
   description: The person personal website or page
+pages:
+- content/fr/jury/2021/Anne Garreta.md
+- content/fr/jury/2021/Antoine Bueno.md
+- content/fr/jury/2021/Benoit Peeters.md
+- content/fr/jury/2021/Celia Blauel.md
+- content/fr/jury/2021/Cristian Jimenez.md
+- content/fr/jury/2021/Erik Overland.md
+- content/fr/jury/2021/Marie-Christine Lemardeley.md
