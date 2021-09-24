@@ -17,8 +17,9 @@ team:
   lastname: MERKLE
 youtube_video_id: ''
 file: "/merkle-julian-short-story.pdf"
-image: ''
+image: "/bank-4856829_1920-1.jpg"
 copyright: ''
+jury_notes: []
 
 ---
 Cette nouvelle explore, à travers les yeux de quatre personnages, une vision du XXIIe siècle dans laquelle l'innovation sociétale occupe une place centrale. Si les énergies propres, l'agriculture urbaine et les transports publics performants constituent la toile de fond de la ville, ses innovations les plus importantes concernent les institutions sociales. 

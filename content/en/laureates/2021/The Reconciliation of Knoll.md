@@ -16,8 +16,9 @@ team:
   firstname: Julien
 youtube_video_id: ''
 file: "/merkle-julian-short-story.pdf"
-image: ''
+image: "/bank-4856829_1920-1.jpg"
 copyright: ''
+jury_notes: []
 
 ---
 This short story explores, through the eyes of four characters, a vision of the 22nd century where societal innovation takes centre stage. While clean energy, urban farming technology and efficient public transport are important as the backdrop of the city, its most important aspects are the social institutions that have taken root. 
