@@ -9,7 +9,7 @@
       <v-chip v-if="item.category === 'winner'" class="ma-2" color="#fff1d0">
         {{ $t('laureates.' + item.category).toUpperCase() }}
       </v-chip>
-      <v-chip v-if="item.category === 'crush'" class="ma-2" color="pink" dark>
+      <v-chip v-if="item.category === 'crush'" class="ma-2" color="#fff1d0">
         {{ $t('laureates.crush') }}
       </v-chip>
       <v-chip class="ma-2">
@@ -27,6 +27,9 @@
         ></v-col>
       </v-row>
       <OptimizedImage v-if="item.image" :src="item.image"> </OptimizedImage>
+      <small v-if="item.copyright" class="muted caption"
+        >&copy; {{ item.copyright }}</small
+      >
       <div class="overline mt-6">
         {{ $tc('author-s', item.team.length) }}
       </div>
@@ -45,24 +48,38 @@
         {{ $t('description') }}
       </div>
       <nuxt-content :document="item" />
-      <div class="overline mt-2">
+      <v-btn
+        v-if="!$route.name.startsWith('contest-laureates-slug')"
+        color="default"
+        x-small
+        class="overline ml-n6"
+        text
+        style="color: rgba(0, 0, 0, 0.6)"
+        @click="show = !show"
+      >
+        <v-icon color="rgba(0, 0, 0, 0.6)">{{
+          show ? 'mdi-chevron-down' : 'mdi-chevron-right'
+        }}</v-icon
+        >{{ $t('from-the-jury') }}</v-btn
+      >
+      <div v-else class="overline">
         {{ $t('from-the-jury') }}
       </div>
-      <div
-        v-for="note in item.jury_notes"
-        :key="note.firstname + ' ' + note.lastname"
-        class="mb-3"
+      <v-expand-transition>
+        <div
+          v-for="note in item.jury_notes"
+          v-show="show || $route.name.startsWith('contest-laureates-slug')"
+          :key="note.firstname + ' ' + note.lastname"
+          class="my-3"
+        >
+          <v-icon x-small>mdi-format-quote-open</v-icon>{{ note.text }}
+          <v-icon x-small>mdi-format-quote-close</v-icon>&nbsp;<b>{{
+            note.firstname + ' ' + note.lastname
+          }}</b>
+        </div></v-expand-transition
       >
-        <v-icon x-small>mdi-format-quote-open</v-icon>{{ note.text }}
-        <v-icon x-small>mdi-format-quote-close</v-icon>&nbsp;<b>{{
-          note.firstname + ' ' + note.lastname
-        }}</b>
-      </div>
     </v-card-text>
 
-    <small v-if="item.copyright" class="muted caption"
-      >Image of &copy; {{ item.copyright }}</small
-    >
     <v-card-actions v-if="item.file">
       <v-btn color="primary" :to="'/laureates' + item.file" target="_blank">
         <v-icon left>mdi-download</v-icon>
@@ -82,12 +99,13 @@ export default {
   },
   data() {
     return {
-      show1: false,
-      show2: false,
+      show: false,
     }
   },
   computed: {},
-  mounted() {},
+  mounted() {
+    console.log(this.$route.name)
+  },
   methods: {
     truncateString(str = '') {
       return truncateString(str, 250)

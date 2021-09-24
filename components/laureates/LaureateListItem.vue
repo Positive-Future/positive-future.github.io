@@ -26,7 +26,7 @@
       <p v-else v-html="item['laureate-title']"></p>
     </v-avatar>
     <div class="flex-column align-content-start">
-      <v-card-title class="d-flex flex-row align-center">
+      <v-card-title class="d-flex flex-row align-center pb-0">
         <!-- 
         I had to wrap the title in a paragraph node to avoid inconsistent line breaks with search highlights. 
         If your CSS foo is better than mine, the cleaner way is welcome. 
@@ -36,7 +36,7 @@
         <v-chip v-if="item.category === 'winner'" class="ma-2" color="#fff1d0">
           {{ $t('laureates.' + item.category).toUpperCase() }}
         </v-chip>
-        <v-chip v-if="item.category === 'crush'" class="ma-2" color="pink" dark>
+        <v-chip v-if="item.category === 'crush'" class="ma-2" color="#fff1d0">
           {{ $t('laureates.crush') }}
         </v-chip>
         <v-chip class="ma-2">
@@ -56,8 +56,8 @@
           >
         </p>
 
-        <small v-if="item.copyright" class="muted caption"
-          >Image of &copy; {{ item.copyright }}</small
+        <small v-if="item.copyright" class="muted caption">
+          &copy; {{ item.copyright }}</small
         >
       </v-card-text>
     </div>

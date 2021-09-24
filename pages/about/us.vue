@@ -17,6 +17,9 @@
       <v-row justify="center">
         <v-row justify="center" no-gutters>
           <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3 mt-9">
+            <h1 class="ml-3 mb-3">
+              {{ $t('our-tools') }}
+            </h1>
             <v-row>
               <v-col cols="12" md="4" class="pa-3 mb-6">
                 <v-card

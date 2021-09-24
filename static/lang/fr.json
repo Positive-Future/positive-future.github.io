@@ -226,7 +226,7 @@
   "coming-soon": "Disponible bientôt",
   "description": "Description",
   "download": "Télécharger",
-  "from-the-jury": "Le mot du jury",
+  "from-the-jury": "Les mots du jury",
   "jury-members": "Membres du jury",
   "learn-more": "En savoir plus",
   "next-edition": "Prochaine édition",
@@ -260,5 +260,6 @@
   "check-the-wikipedia-page": "Page Wikipédia",
   "follow-on-twitter": "Suivre sur Twitter",
   "get-in-touch-on-linkedin": "Profil Linkedin",
-  "visit-website": "Site web"
+  "visit-website": "Site web",
+  "our-tools": "Nos outils"
 }

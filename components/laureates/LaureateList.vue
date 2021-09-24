@@ -15,7 +15,13 @@
         </div> -->
         <!-- LIST -->
         <template v-for="(item, index) in laureates">
-          <LaureateListItem :key="index" :item="item" :index="index" />
+          <LaureateBlock
+            v-if="index === 0"
+            :key="index"
+            :item="item"
+            class="mx-3"
+          />
+          <LaureateListItem v-else :key="index" :item="item" :index="index" />
         </template>
       </v-col>
     </v-row>
