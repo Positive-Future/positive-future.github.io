@@ -40,48 +40,41 @@ export default {
     }
   },
   async fetch() {
-    this.laureates = await this.$content(this.$i18n.locale + '/laureates', {
+    const laureates = await this.$content(this.$i18n.locale + '/laureates', {
       deep: true,
-    })
-      .sortBy({ category: 'asc' })
-      /*  .where({ featured: true }) */
-      .limit(this.limit)
-      .fetch()
+    }).fetch()
+    this.laureates = this.sortLaureates(laureates)
   },
   computed: {},
   watch: {
     async searchString(searchString) {
-      console.log('search', searchString)
+      let laureates = []
       if (!searchString) {
         this.searching = false
-        this.laureates = await this.$content(this.$i18n.locale + '/laureates')
-          /*  .where({ featured: true }) */
-          .sortBy({ category: 'asc' })
-          .limit(this.limit)
-          .fetch()
+        laureates = await this.$content(
+          this.$i18n.locale + '/laureates'
+        ).fetch()
       } else {
         this.searching = true
-        this.laureates = await this.$content(this.$i18n.locale + '/laureates')
+        laureates = await this.$content(this.$i18n.locale + '/laureates')
           .search(searchString)
-          .sortBy({ category: 'asc' })
           .fetch()
       }
+      this.laureates = this.sortLaureates(laureates)
     },
     async edition(val) {
-      console.log('edition', val)
+      let laureates = []
       if (!val) {
-        this.laureates = await this.$content(this.$i18n.locale + '/laureates')
-          /*  .where({ featured: true }) */
-          .sortBy({ category: 'asc' })
-          .limit(this.limit)
-          .fetch()
+        laureates = await this.$content(
+          this.$i18n.locale + '/laureates'
+        ).fetch()
       } else {
         this.searching = true
-        this.laureates = await this.$content(this.$i18n.locale + '/laureates')
+        laureates = await this.$content(this.$i18n.locale + '/laureates')
           .search('searchString')
-          .sortBy({ category: 'asc' })
           .fetch()
       }
+      this.laureates = this.sortLaureates(laureates)
     },
   },
   mounted() {},
@@ -94,6 +87,13 @@ export default {
       this.$nextTick(() => {
         this.focusInput()
       })
+    },
+    sortLaureates(arr) {
+      return [
+        ...arr.filter((item) => item.category === 'winner'),
+        ...arr.filter((item) => item.category === 'crush'),
+        ...arr.filter((item) => !['winner', 'crush'].includes(item.category)),
+      ]
     },
     focusInput() {
       this.$refs.search.focus()

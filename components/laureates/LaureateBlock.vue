@@ -9,6 +9,9 @@
       <v-chip v-if="item.category === 'winner'" class="ma-2" color="#fff1d0">
         {{ $t('laureates.' + item.category).toUpperCase() }}
       </v-chip>
+      <v-chip v-if="item.category === 'crush'" class="ma-2" color="pink" dark>
+        {{ $t('laureates.crush') }}
+      </v-chip>
       <v-chip class="ma-2">
         {{ $t('form.application.format.' + item.type) }}
       </v-chip>
@@ -24,7 +27,7 @@
         ></v-col>
       </v-row>
       <OptimizedImage v-if="item.image" :src="item.image"> </OptimizedImage>
-      <div class="overline">
+      <div class="overline mt-6">
         {{ $tc('author-s', item.team.length) }}
       </div>
       <div class="mb-3">
@@ -45,18 +48,16 @@
       <div class="overline mt-2">
         {{ $t('from-the-jury') }}
       </div>
-      <template v-if="show2">
-        {{ item.jury }}
-        <v-btn x-small text class="d-inline-block" @click="show2 = false">{{
-          $t('show-less')
-        }}</v-btn>
-      </template>
-      <template v-else>
-        {{ truncateString(item.jury, 40) }}
-        <v-btn x-small text class="d-inline-block" @click="show2 = true">{{
-          $t('show-more')
-        }}</v-btn>
-      </template>
+      <div
+        v-for="note in item.jury_notes"
+        :key="note.firstname + ' ' + note.lastname"
+        class="mb-3"
+      >
+        <v-icon x-small>mdi-format-quote-open</v-icon>{{ note.text }}
+        <v-icon x-small>mdi-format-quote-close</v-icon>&nbsp;<b>{{
+          note.firstname + ' ' + note.lastname
+        }}</b>
+      </div>
     </v-card-text>
 
     <small v-if="item.copyright" class="muted caption"

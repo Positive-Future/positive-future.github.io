@@ -36,11 +36,14 @@
         <v-chip v-if="item.category === 'winner'" class="ma-2" color="#fff1d0">
           {{ $t('laureates.' + item.category).toUpperCase() }}
         </v-chip>
+        <v-chip v-if="item.category === 'crush'" class="ma-2" color="pink" dark>
+          {{ $t('laureates.crush') }}
+        </v-chip>
         <v-chip class="ma-2">
-          {{ $t('resources.types.' + item.type) }}
+          {{ $t('form.application.format.' + item.type) }}
         </v-chip>
       </v-card-title>
-      <v-card-text>
+      <v-card-text class="pb-0">
         <div class="overline">{{ $tc('author-s', item.team.length) }}</div>
         <p>
           <span

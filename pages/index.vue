@@ -6,7 +6,8 @@
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <nuxt-content :document="index" class="mt-12" />
+          <div class="headline mt-12">{{ index.subtitle }}</div>
+          <nuxt-content :document="index" class="mt-8" />
         </v-col>
       </v-row>
     </section>

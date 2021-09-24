@@ -230,7 +230,8 @@
     "video": "Laureate of the video category",
     "article": "Laureate of the article category",
     "comic": "Laureate of the comic category",
-    "novel": "Laureate of the novel category"
+    "novel": "Laureate of the novel category",
+    "crush": "Organizers favorite"
   },
   "watch-the-award-ceremony": "Watch the award ceremony",
   "choose-an-edition": "Choose an edition",
@@ -255,5 +256,5 @@
   "author-s": "Author | Author | Authors",
   "see-also": "See also",
   "your-filters": "your filters.",
-  "edition-2022": "Edition 2022"
+  "edition-2022": "2022 edition"
 }

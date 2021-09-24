@@ -136,7 +136,13 @@ export default {
       rules,
       more,
       jury,
-      laureates,
+      laureates: [
+        ...laureates.filter((item) => item.category === 'winner'),
+        ...laureates.filter((item) => item.category === 'crush'),
+        ...laureates.filter(
+          (item) => !['winner', 'crush'].includes(item.category)
+        ),
+      ],
     }
   },
   data() {
