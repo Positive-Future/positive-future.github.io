@@ -51,7 +51,8 @@
     <v-row>
       <v-col cols="12">
         <YoutubeEmbedded
-          :yt="$i18n.locale === 'en' ? '1efqN3kp1NE' : '-7Fd0Vk8jHM'"
+          v-if="item.video"
+          :yt="item.video"
           class="mb-9 ml-3"
         ></YoutubeEmbedded
       ></v-col>
