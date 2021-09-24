@@ -1,5 +1,5 @@
 ---
-category: ''
+category: crush
 type: comic
 edition: '2021'
 laureate-title: Vivaldi 2100
@@ -17,6 +17,7 @@ youtube_video_id: ''
 file: "/larminay-camille-comic.pdf"
 image: "/vivladi2100.jpg"
 copyright: Camille Larminay & Orane Le Saout
+jury_notes: []
 
 ---
 En 2100, pour lutter contre la raréfaction des ressources et les conséquences dramatiques du changement climatique, les villes, devenues des pôles d’innovation de pointe, ont créé des programmes d’échanges compatibles avec la limitation drastique du transport international pour favoriser la circulation des connaissances, et engager davantage les habitants dans le processus de résilience climatique. 
