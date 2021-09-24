@@ -1,20 +1,20 @@
 ---
 published: true
-order: '11'
+order: "11"
 title: 'Neighbourhoods for the Future: a Plea for a Social and Ecological Urbanism'
-subtitle: "par Maarten Hajer, professeur d'Urban Futures à l'université d'Utrecht. "
+subtitle: 'par Maarten Hajer, professeur d''Urban Futures à l''université d''Utrecht. '
 categories:
-  - event
+- event
 featured: true
-image: '/2hannah-sibayan-kzhmbyzktng-unsplash-1.jpg'
+image: "/2hannah-sibayan-kzhmbyzktng-unsplash-1.jpg"
 youtube_video_id: 9mP1f7JR_vE
-background_color: '#FFFFFF'
+background_color: "#FFFFFF"
 file: ''
 link: ''
-edition: '2021'
-date: 2021-01-13T14:34:25.000+00:00
----
+edition: "2021"
+date: 2021-06-14T16:00:25Z
 
+---
 **Webinaire diffusé le 14 juin 2021.**
 
 La crise écologique actuelle va transformer le visage et le destin des villes. **_Neighbourhoods for the Future_ repose sur la conviction que nous devons repenser les villes à partir de l'échelle du quartier.** Il revisite le quartier comme l'échelle et l'arène désignées pour construire nos futurs urbains. Le quartier est suffisamment petit pour être tangible, mais suffisamment grand pour faire la différence. Pour que les quartiers fonctionnent vraiment, les résidents doivent être engagés et **la tactique doit être intégrée dans une politique sociale plus large, si nous voulons des villes prospères.**
