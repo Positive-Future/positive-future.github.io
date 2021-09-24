@@ -25,7 +25,7 @@
       </v-row>
       <OptimizedImage v-if="item.image" :src="item.image"> </OptimizedImage>
       <div class="overline">
-        {{ $t('author-s') }}
+        {{ $tc('author-s', item.team.length) }}
       </div>
       <div class="mb-3">
         <span
