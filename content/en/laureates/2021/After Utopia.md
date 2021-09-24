@@ -13,7 +13,7 @@ team:
   lastname: SHAO
 youtube_video_id: ''
 file: "/shao-sophie-comic.pdf"
-image: ''
+image: "/after-utopia.jpg"
 copyright: ''
 
 ---
