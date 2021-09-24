@@ -4,7 +4,7 @@
     class="pa-6 my-3"
   >
     <v-card-title class="pt-0">
-      {{ item.title }}
+      {{ item['laureate-title'] }}
 
       <v-chip v-if="item.category === 'winner'" class="ma-2" color="#fff1d0">
         {{ $t('laureates.' + item.category).toUpperCase() }}

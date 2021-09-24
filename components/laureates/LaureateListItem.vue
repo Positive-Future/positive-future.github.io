@@ -21,10 +21,10 @@
       <OptimizedImage
         v-if="item.image"
         :src="item.image"
-        :alt="item.title"
+        :alt="item['laureate-title']"
         contain
       ></OptimizedImage>
-      <p v-else v-html="item.title"></p>
+      <p v-else v-html="item['laureate-title']"></p>
     </v-avatar>
     <div class="flex-column align-content-start">
       <v-card-title class="d-flex flex-row align-center">
@@ -32,7 +32,7 @@
         I had to wrap the title in a paragraph node to avoid inconsistent line breaks with search highlights. 
         If your CSS foo is better than mine, the cleaner way is welcome. 
         -->
-        {{ item.title }}
+        {{ item['laureate-title'] }}
 
         <v-chip v-if="item.category === 'winner'" class="ma-2" color="#fff1d0">
           {{ $t('laureates.' + item.category).toUpperCase() }}
