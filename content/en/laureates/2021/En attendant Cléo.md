@@ -15,6 +15,9 @@ team:
   lastname: CASES
 youtube_video_id: ''
 file: "/cases-anne-laure-short-story.pdf"
+image: "/umit-bulut-qbtc7zwjb64-unsplash.jpg"
+copyright: ''
+jury_notes: []
 
 ---
 The short story _En attendant Cléo_ takes us to the day of May 21, 2105, in a Paris emptied of its cars, its pollution, its incessant noise. It's very hot, but it's good to live there. Vertical farms, high-altitude forests on top of buildings, artificial lakes to collect wastewater, all live with new technologies, drones and high-speed transportation. As the hours go by, we follow Auguste, we discover his daily life. Auguste is waiting for Cléo. Will she join him or will she prefer to escape to new horizons? 
