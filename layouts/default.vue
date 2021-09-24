@@ -28,7 +28,7 @@
       >
         <div class="d-flex flex-row-reverse">
           <v-tooltip left>
-            <template v-slot:activator="{ on }">
+            <template #activator="{ on }">
               <v-btn class="ma-3" large icon @click="drawer = false" v-on="on">
                 <v-icon color="black">mdi-close</v-icon>
               </v-btn>
@@ -38,26 +38,34 @@
         </div>
         <v-list>
           <v-list-group>
-            <template v-slot:activator>
+            <template #activator>
               <v-list-item-content>
                 <v-list-item-title>
                   {{ $t('navigation.contest') }}
                 </v-list-item-title>
               </v-list-item-content>
             </template>
-            <v-list-item nuxt :to="localePath('/contest/rules')" class="pl-6">
+            <v-list-item nuxt :to="localePath('/contest/current')" class="pl-6">
               <v-list-item-title>
-                {{ $t('navigation.rules') }}
+                {{ $t('edition-2022') }}
               </v-list-item-title>
             </v-list-item>
-            <v-list-item nuxt :to="localePath('/contest/tips')" class="pl-6">
+            <v-list-item
+              nuxt
+              :to="localePath('/contest/previous')"
+              class="pl-6"
+            >
               <v-list-item-title>
-                {{ $t('navigation.tips') }}
+                {{ $t('previous-edition') }}
               </v-list-item-title>
             </v-list-item>
-            <v-list-item nuxt :to="localePath('/contest/jury')" class="pl-6">
+            <v-list-item
+              nuxt
+              :to="localePath('/contest/laureates')"
+              class="pl-6"
+            >
               <v-list-item-title>
-                {{ $t('navigation.jury') }}
+                {{ $t('laureates_title') }}
               </v-list-item-title>
             </v-list-item>
           </v-list-group>
@@ -69,21 +77,24 @@
               >
             </v-list-item-content>
           </v-list-item>
-          <v-list-item link :to="localePath('/news')">
+          <v-list-item link :to="localePath('/webinars')">
             <v-list-item-content>
-              <v-list-item-title>
-                {{ $t('navigation.news') }}</v-list-item-title
-              >
+              <v-list-item-title> {{ $t('webinars') }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
           <v-list-group>
-            <template v-slot:activator>
+            <template #activator>
               <v-list-item-content>
                 <v-list-item-title>
                   {{ $t('navigation.about') }}
                 </v-list-item-title>
               </v-list-item-content>
             </template>
+            <v-list-item link :to="localePath('/about/us')" class="pl-6">
+              <v-list-item-content>
+                <v-list-item-title> {{ $t('about-us') }}</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
             <v-list-item
               link
               :to="localePath('/about/organizers')"

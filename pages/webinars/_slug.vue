@@ -29,19 +29,10 @@
 <script>
 export default {
   async asyncData({ app, $content, params }) {
-    /*   const alterlang = app.i18n.locale === 'en' ? 'fr' : 'en' */
     const item = await $content(
       app.i18n.locale + '/webinars',
       params.slug
     ).fetch()
-
-    /*  const newSlug = post[alterlang].split('/')[3].split('.')[0]
-    
-    const alterPost = await $content(alterlang + '/news', newSlug).fetch()
-    
-    const path = alterPost.path
-    
-    app.alter = path */
     return { item }
   },
   data() {

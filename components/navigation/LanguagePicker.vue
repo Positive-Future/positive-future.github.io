@@ -68,26 +68,7 @@ export default {
       ]
     },
   },
-  async updated() {
-    /*   if (this.$route.params?.slug) {
-      const alterlang = this.$i18n.locale === 'en' ? 'fr' : 'en'
-      
-      const post = await this.$content(
-        this.$i18n.locale + '/news',
-        this.$route.params.slug
-      ).fetch()
-      
-      const newSlug = post[alterlang].split('/')[3].split('.')[0]
-      
-      const alterPost = await this.$content(alterlang + '/news')
-        .where({ slug: newSlug })
-        .fetch()
-      
-      const path = alterPost[0].path
-      
-      this.alter = path
-    } */
-  },
+  async updated() {},
   methods: {
     async link() {},
   },

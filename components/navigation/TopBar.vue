@@ -114,18 +114,7 @@
                       </v-tab>
                       <v-menu left bottom offset-y>
                         <template #activator="{ on, attrs }">
-                          <v-tab
-                            v-bind="attrs"
-                            :class="{
-                              selected: [
-                                'about-organizers___en',
-                                'about-organizers___fr',
-                                'about-scientific_advisory_board___en',
-                                'about-scientific_advisory_board___fr',
-                              ].includes($route.name),
-                            }"
-                            v-on="on"
-                          >
+                          <v-tab v-bind="attrs" v-on="on">
                             {{ $t('navigation.about') }}
                             <v-icon>mdi-chevron-down</v-icon>
                           </v-tab>
