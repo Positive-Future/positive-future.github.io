@@ -3,17 +3,17 @@ published: true
 title: 'La restauration écologique urbaine : dépasser l’opposition ville-nature'
 subtitle: Par Marion Waller, urbaniste et philosophe.
 categories:
-  - event
+- event
 featured: true
-image: '/victor-garcia-ndk_3biaghc-unsplash-1.jpg'
+image: "/victor-garcia-ndk_3biaghc-unsplash-1.jpg"
 youtube_video_id: fgttpvGzDGg
 background_color: ''
-file: '/victor-garcia-ndk_3biaghc-unsplash-1.jpg'
+file: "/victor-garcia-ndk_3biaghc-unsplash-1.jpg"
 link: ''
-edition: '2021'
-date: 2022-05-25T16:00:25Z
----
+edition: "2021"
+date: 2021-05-25T16:00:25Z
 
+---
 **Webinaire diffusé le 25 mai 2021.**
 
 Alors qu’a parfois été véhiculée l’idée d’une dichotomie entre, d’un côté, une nature sauvage sans Hommes et, de l’autre, une ville sans nature, Marion Waller interviendra au titre de ses travaux de philosophe de l’environnement et son expérience au sein de la Ville de Paris **pour évoquer des perspectives de futur urbain et rural dépassant cette séparation**. Elle s’appuiera notamment sur les projets issus du concours « Réinventer Paris » pour montrer les possibilités qu’offre le contexte parisien.
