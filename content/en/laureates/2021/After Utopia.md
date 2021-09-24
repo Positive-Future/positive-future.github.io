@@ -16,7 +16,7 @@ team:
 youtube_video_id: ''
 file: "/shao-sophie-comic.pdf"
 image: "/after-utopia.jpg"
-copyright: ''
+copyright: KM Kuhn & Sophie Z. SHAO
 jury_notes: []
 
 ---
