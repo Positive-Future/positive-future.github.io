@@ -55,8 +55,7 @@ export default {
     const upcomingWebinars = webinars.filter(
       (item) => new Date(item.date) > Date.now()
     )
-    console.log('upcomingWebinars: ', upcomingWebinars)
-    console.log('webinars: ', webinars)
+
     return {
       webinarText,
       webinars,

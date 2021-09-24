@@ -111,7 +111,7 @@ export default {
   methods: {
     highlight(word, query) {
       if (!this.search.length) return word
-      console.log('this: ', this)
+
       const check = new RegExp(query, 'ig')
       return word.replace(check, function (matchedText, a, b) {
         return (

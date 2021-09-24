@@ -212,9 +212,7 @@ export default {
   mounted() {},
 
   methods: {
-    loaded() {
-      console.log('LOADED')
-    },
+    loaded() {},
   },
 }
 </script>

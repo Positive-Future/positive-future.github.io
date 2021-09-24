@@ -35,9 +35,7 @@
               <v-icon>mdi-wikipedia</v-icon></v-btn
             >
           </template>
-          <span
-            >Check the Wikipedia page of the {{ mentor ? 'mentor' : 'fellow' }}
-          </span>
+          <span>Check the Wikipedia page </span>
         </v-tooltip>
         <v-tooltip v-if="item.linkedin" bottom>
           <template #activator="{ on, attrs }">
@@ -67,7 +65,7 @@
               <v-icon>mdi-twitter</v-icon></v-btn
             >
           </template>
-          <span>Follow this {{ mentor ? 'mentor' : 'fellow' }} on Twitter</span>
+          <span>Follow on Twitter</span>
         </v-tooltip>
         <v-tooltip v-if="item.website" bottom>
           <template #activator="{ on, attrs }">
@@ -82,10 +80,7 @@
               <v-icon>mdi-link-variant</v-icon></v-btn
             >
           </template>
-          <span
-            >Check this {{ mentor ? 'mentor' : 'fellow' }} personal
-            website</span
-          >
+          <span>Check personal website</span>
         </v-tooltip>
       </div>
     </v-col>
@@ -173,31 +168,25 @@ export default {
         socials.push({
           link: item.website,
           icon: 'mdi-link-variant',
-          tooltip:
-            'Visit this ' + (this.mentor ? 'mentor' : 'fellow') + ' website',
+          tooltip: this.$t('visit-website'),
         })
       if (item.wikipedia)
         socials.push({
           link: item.wikipedia,
           icon: 'mdi-wikipedia',
-          tooltip:
-            'Check the Wikipedia page of the ' +
-            (this.mentor ? 'mentor' : 'fellow'),
+          tooltip: this.$t('check-the-wikipedia-page'),
         })
       if (item.linkedin)
         socials.push({
           link: item.linkedin,
           icon: 'mdi-linkedin',
-          tooltip: 'Get in touch on Linkedin',
+          tooltip: this.$t('get-in-touch-on-linkedin'),
         })
       if (item.twitter)
         socials.push({
           link: item.twitter,
           icon: 'mdi-twitter',
-          tooltip:
-            'Follow this ' +
-            (this.mentor ? 'mentor' : 'fellow') +
-            ' on Twitter',
+          tooltip: this.$t('follow-on-twitter'),
         })
     },
   },

@@ -67,7 +67,6 @@ export default {
   methods: {
     storeTheme() {
       if (process.browser) {
-        console.log('this.$vuetify.theme.isDark: ', this.$vuetify.theme.isDark)
         localStorage.setItem('darkMode', this.$vuetify.theme.isDark)
       }
     },

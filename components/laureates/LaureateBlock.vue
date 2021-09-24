@@ -87,9 +87,7 @@ export default {
     }
   },
   computed: {},
-  mounted() {
-    console.log('item: ', this.item)
-  },
+  mounted() {},
   methods: {
     truncateString(str = '') {
       return truncateString(str, 250)

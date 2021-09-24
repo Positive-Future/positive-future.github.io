@@ -39,9 +39,7 @@ export default {
       // is located here: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
       this.isIntersecting = entries[0].isIntersecting
     },
-    iframeLoded() {
-      console.log('LOADED')
-    },
+    iframeLoded() {},
   },
 }
 </script>

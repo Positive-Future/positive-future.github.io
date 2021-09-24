@@ -91,9 +91,7 @@ export default {
     return {}
   },
   computed: {},
-  created() {
-    console.log('item', this)
-  },
+  created() {},
   mounted() {},
   methods: {},
 }

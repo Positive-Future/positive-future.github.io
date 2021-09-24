@@ -155,7 +155,6 @@ export default {
   computed: {},
   watch: {
     async searchString(searchString) {
-      console.log('search', searchString)
       if (!searchString) {
         this.searching = this.edition || false
         this.webinars = await this.$content(this.$i18n.locale + '/webinars')
@@ -174,7 +173,6 @@ export default {
       }
     },
     async edition(val) {
-      console.log('edition', val)
       if (!val) {
         this.searching = this.searchString.length || false
         this.webinars = await this.$content(this.$i18n.locale + '/webinars')
@@ -183,7 +181,6 @@ export default {
           .limit(this.limit)
           .fetch()
       } else {
-        console.log('searchiung for val', val)
         this.searching = true
         this.webinars = await this.$content(this.$i18n.locale + '/webinars')
           .where({ published: true, edition: val.toString() })
