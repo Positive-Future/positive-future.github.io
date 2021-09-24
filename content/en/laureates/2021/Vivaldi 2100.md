@@ -15,8 +15,8 @@ team:
   lastname: LARMINAY
 youtube_video_id: ''
 file: "/larminay-camille-comic.pdf"
-image: ''
-copyright: ''
+image: "/vivladi2100.jpg"
+copyright: Camille Larminay & Orane  Le Saout
 
 ---
 In 2100, in order to fight against the rarefaction of resources and the dramatic consequences of climate change, cities, which have become hubs of innovation, have created exchange programs compatible with the drastic limitation of international transport in order to promote the circulation of knowledge and to engage the inhabitants more deeply in the process of climate resilience. 
