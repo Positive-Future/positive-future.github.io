@@ -37,6 +37,7 @@ fields:
     - comic
     - video
     - article
+    - crush
     source:
       type: simple
       section: 
