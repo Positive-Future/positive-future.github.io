@@ -1,5 +1,5 @@
 ---
-title: Prochaine édition
+title: Edition 2021
 theme: Le travail en 2100
 
 ---
