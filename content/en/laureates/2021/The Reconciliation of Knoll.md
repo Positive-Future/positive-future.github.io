@@ -18,7 +18,13 @@ youtube_video_id: ''
 file: "/merkle-julian-short-story.pdf"
 image: "/bank-4856829_1920-1.jpg"
 copyright: ''
-jury_notes: []
+jury_notes:
+- firstname: Erik
+  lastname: Overland
+  text: What I have seen in this short story are some really interesting reflections
+    not necessarily on a future debate on the role of technology in social development
+    and the role of social innovations, but it’s also a kind of a critique of a “techno-optimistic”
+    approach, present among a lot of people today.
 
 ---
 This short story explores, through the eyes of four characters, a vision of the 22nd century where societal innovation takes centre stage. While clean energy, urban farming technology and efficient public transport are important as the backdrop of the city, its most important aspects are the social institutions that have taken root. 
