@@ -18,6 +18,10 @@ file: "/perlmutter-franck-short-story.pdf"
 image: "/michal-mrozek-y0itdawgbxi-unsplash.jpg"
 copyright: ''
 jury_notes:
+- firstname: Antoine
+  lastname: Buéno
+  text: In this story it's the ending that interested me, it's a bit of a surprise
+    for the reader. This is a quality that one likes to find in a short story.
 - firstname: Celia
   lastname: Blauel
   text: This was definitely one of the best stories I had to read. Because for many
