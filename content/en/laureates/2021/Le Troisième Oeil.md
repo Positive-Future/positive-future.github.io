@@ -4,10 +4,7 @@ type: novel
 edition: '2021'
 laureate-title: Le Troisième Oeil
 description: ''
-jury: 'Antoine Buéno: "From one end of the story to the other, you feel that something
-  is missing and you feel that something is hidden from you, and that holds your attention.
-  In other words, there is a narrative tension. That''s what you look for in a short
-  story."'
+jury: ''
 team:
 - firstname: Catherine
   lastname: BRUNEL
