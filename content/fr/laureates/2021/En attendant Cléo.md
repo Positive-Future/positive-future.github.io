@@ -16,6 +16,21 @@ team:
 youtube_video_id: ''
 file: "/cases-anne-laure-short-story.pdf"
 image: "/umit-bulut-qbtc7zwjb64-unsplash.jpg"
+jury_notes:
+- firstname: Sophie
+  lastname: Tran
+  text: En attendant Cléo est une histoire simple mais pourtant très touchante. C'est
+    l'histoire d'un homme qui attend la femme qu'il aime. Ce n'est pas une histoire
+    nouvelle, nous avons déjà entendu cette histoire auparavant, mais cela la rend
+    très éternelle et universelle, et c'est très touchant pour tout le monde je pense.
+    L'histoire décrit également un avenir positif, qui se déroule à Paris en 2105.
+    Et ce qui le rend positif, c'est que même si nous semblons nous être adaptés au
+    changement climatique grâce aux nouvelles technologies et aux divers bouleversements
+    sociaux, et même si nous avons aussi la possibilité de migrer, de fuir, d'explorer
+    une nouvelle terre, il est aussi possible dans l'histoire que nous souhaitions
+    rester. Et au final, c'est une histoire qui parle de ce qui devrait être changé
+    à l'avenir, mais aussi de ce qui restera en tant qu'humanité.
+copyright: ''
 
 ---
 La nouvelle _En attendant Cléo_ nous plonge dans la journée du 21 mai 2105, dans un Paris vidé de ses voitures, de sa pollution, de son bruit incessant. Il y fait très chaud certes, mais il y fait bon vivre. Fermes verticales, forets d’altitude en haut des immeubles, lacs artificiels de récupération des eaux usées y côtoient nouvelles technologies, drones et moyens de transports à très grande vitesse. Au fil des heures, nous suivons Auguste, nous découvrons son quotidien, sa vie. Auguste attend Cléo. Le rejoindra-t-elle ou préférera-t-elle s’évader vers de nouveaux horizons? 
