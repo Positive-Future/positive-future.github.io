@@ -3,9 +3,7 @@ type: novel
 edition: '2021'
 laureate-title: Canopée
 description: ''
-jury: 'Antoine Buéno: "On nous montre un Paris qui est devenu une sorte de petite
-  Venise, dans lequel les champs Elysées sont devenus un fleuve. Et ça donne envie
-  en fait de s’y promener, donc on a envie d’être projeté dans ce Paris futuriste."'
+jury: ''
 team:
 - firstname: 'Jean-Robert '
   lastname: BUIGUES
@@ -13,7 +11,12 @@ youtube_video_id: ''
 file: "/buigues-jean-robert-short-story.pdf"
 image: "/canopee.jpg"
 copyright: ''
-jury_notes: []
+jury_notes:
+- firstname: Antoine
+  lastname: Buéno
+  text: On nous montre un Paris qui est devenu une sorte de petite Venise, dans lequel
+    les champs Elysées sont devenus un fleuve. Et ça donne envie de s’y promener,
+    on a envie d’être projeté dans ce Paris futuriste.
 category: ''
 
 ---
