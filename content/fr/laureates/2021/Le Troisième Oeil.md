@@ -14,7 +14,12 @@ youtube_video_id: ''
 file: "/brunel-catherine-short-story.pdf"
 image: "/tommy-van-kessel-_tnkr2gu3kw-unsplash.jpg"
 copyright: ''
-jury_notes: []
+jury_notes:
+- firstname: Antoine
+  lastname: Buéno
+  text: D’un bout à l’autre de l’histoire, on sent que quelque chose manque et on
+    sent que quelque chose nous est caché, et ça, ça retient l’attention. C’est-à-dire
+    qu’il y a une tension narrative. C’est ce qu’on cherche dans une nouvelle.
 
 ---
 La nouvelle se déroule dans un quartier de Paris métamorphosé suite à des catastrophes majeures intervenues au cours du XXIe siècle. Le récit donne à voir comment la société s'organise autour de projets d'habitats désirables et soutenables.
