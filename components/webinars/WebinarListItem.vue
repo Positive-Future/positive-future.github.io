@@ -37,8 +37,8 @@
           <v-chip class="mr-2" label small>
             {{
               item.edition === 2021
-                ? $t('the-city-in-2100')
-                : $t('work-in-2100')
+                ? $t('work-in-2100')
+                : $t('the-city-in-2100')
             }}
           </v-chip>
           <span v-html="highlight(item.title, search)"></span>

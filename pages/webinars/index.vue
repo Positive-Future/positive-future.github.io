@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      style="background-color: #fff1d0; padding-bottom: 140px"
+      style="background-color: #fff1d0"
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
     >
       <v-row justify="center">
@@ -11,7 +11,7 @@
         </v-col>
       </v-row>
     </section>
-    <section style="margin-top: -140px">
+    <section>
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <v-slide-group

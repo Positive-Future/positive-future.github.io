@@ -66,18 +66,20 @@
         {{ $t('from-the-jury') }}
       </div>
       <v-expand-transition>
-        <div
-          v-for="note in item.jury_notes"
-          v-show="show || $route.name.startsWith('contest-laureates-slug')"
-          :key="note.firstname + ' ' + note.lastname"
-          class="my-3"
-        >
-          <v-icon x-small>mdi-format-quote-open</v-icon>{{ note.text }}
-          <v-icon x-small>mdi-format-quote-close</v-icon>&nbsp;<b>{{
-            note.firstname + ' ' + note.lastname
-          }}</b>
-        </div></v-expand-transition
-      >
+        <div>
+          <div
+            v-for="note in item.jury_notes"
+            v-show="show || $route.name.startsWith('contest-laureates-slug')"
+            :key="note.firstname + ' ' + note.lastname"
+            class="my-3"
+          >
+            <v-icon x-small>mdi-format-quote-open</v-icon>{{ note.text }}
+            <v-icon x-small>mdi-format-quote-close</v-icon>&nbsp;<b>{{
+              note.firstname + ' ' + note.lastname
+            }}</b>
+          </div>
+        </div>
+      </v-expand-transition>
     </v-card-text>
 
     <v-card-actions v-if="item.file">

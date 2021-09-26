@@ -19,7 +19,7 @@
             v-if="index === 0"
             :key="index"
             :item="item"
-            class="mx-3"
+            class=""
           />
           <LaureateListItem v-else :key="index" :item="item" :index="index" />
         </template>

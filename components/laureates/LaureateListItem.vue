@@ -1,7 +1,7 @@
 <template>
   <v-card
     :color="item.category === 'winner' ? '#ffe2a0' : 'transparent'"
-    class="d-flex ma-3"
+    class="d-flex my-3"
     justify="top"
     align="top"
     nuxt

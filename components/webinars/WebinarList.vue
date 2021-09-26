@@ -4,7 +4,7 @@
     <v-row justify="center">
       <v-col xs="12" sm="11" md="8" lg="7" xl="6">
         <div class="d-flex">
-          <v-select
+          <!--  <v-select
             v-model="edition"
             :items="[
               { text: $t('the-city-in-2100'), year: 2021 },
@@ -17,7 +17,7 @@
             clearable
             :menu-props="{ bottom: true, offsetY: true }"
           ></v-select
-          ><!-- 
+          > 
           <v-checkbox
             v-model="winner"
             :label="$t('laureates.winner')"
