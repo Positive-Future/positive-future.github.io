@@ -66,10 +66,9 @@
         {{ $t('from-the-jury') }}
       </div>
       <v-expand-transition>
-        <div>
+        <div v-show="show || $route.name.startsWith('contest-laureates-slug')">
           <div
             v-for="note in item.jury_notes"
-            v-show="show || $route.name.startsWith('contest-laureates-slug')"
             :key="note.firstname + ' ' + note.lastname"
             class="my-3"
           >
