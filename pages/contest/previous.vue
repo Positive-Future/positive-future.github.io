@@ -29,34 +29,7 @@
         </v-row>
       </v-col>
     </v-row>
-    <section>
-      <v-row justify="center" no-gutters>
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
-          <v-card class="px-6 pt-6 pb-0 mb-0" flat>
-            <h1 class="pt-0 mt-0 mb-4">
-              {{ dates.title }}
-            </h1>
-            <nuxt-content :document="dates" class="py-6" />
-          </v-card>
-        </v-col>
-      </v-row>
-    </section>
-    <section>
-      <v-row justify="center" no-gutters>
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <v-row no-gutters>
-            <v-col cols="12" sm="6">
-              <v-card color="#4fd4c7" class="pa-6">
-                <h1 class="mb-0">
-                  {{ prize.title }}
-                </h1>
-                <nuxt-content :document="prize" />
-              </v-card>
-            </v-col>
-          </v-row>
-        </v-col>
-      </v-row>
-    </section>
+
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
@@ -75,8 +48,8 @@
     </section>
     <section>
       <v-row justify="center" no-gutters>
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <h1 class="mb-4">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mt-6">
+          <h1 id="laureate" class="mb-4">
             {{ $t('laureates_title') }}
           </h1>
           <LaureateBlock
@@ -98,7 +71,7 @@
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
           <v-card class="px-6 pt-6 pb-0 mb-0" flat color="transparent">
             <nuxt-content :document="intro" class="py-6" />
-            <div class="my-6">
+            <div id="awards" class="my-6">
               {{ $t('watch-the-award-ceremony') }}
             </div>
             <YoutubeEmbedded

@@ -1,5 +1,4 @@
 ---
 title: rules
 ---
-
-Check out the rules of the contest. Contact us at [info@positive-future.org](mailto:info@positive-future.org) if you have any questions.
+Si vous avez des questions, contactez nous sur [info@positive-future.org](mailto:info@positive-future.org).

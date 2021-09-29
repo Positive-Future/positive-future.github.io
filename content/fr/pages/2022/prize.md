@@ -1,5 +1,5 @@
 ---
-title: Prize
+title: Prix
 ---
 
-Discover our scientific advisory board report about the first edition of Positive Future in 2021.
+Une somme de 10 000€ à répartir entre les gagnants.

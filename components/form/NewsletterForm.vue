@@ -1,7 +1,7 @@
 <template>
   <div class="text-center">
     <v-dialog v-model="dialog" width="500">
-      <template v-slot:activator="{ on, attrs }">
+      <template #activator="{ on, attrs }">
         <v-btn color="primary" v-bind="attrs" :disabled="!valid" v-on="on">
           {{ $t('form.submit') }}</v-btn
         >

@@ -16,7 +16,7 @@
         </v-col>
       </v-row>
     </section>
-    <section style="margin-top: -85px">
+    <!--     <section style="margin-top: -85px">
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-row no-gutters>
@@ -36,7 +36,7 @@
           </v-row>
         </v-col>
       </v-row>
-    </section>
+    </section> -->
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
@@ -49,7 +49,7 @@
         </v-col>
       </v-row>
     </section>
-    <section>
+    <!--     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <v-card
@@ -62,7 +62,7 @@
           </v-card>
         </v-col>
       </v-row>
-    </section>
+    </section> -->
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">

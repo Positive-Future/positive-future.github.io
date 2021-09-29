@@ -1,5 +1,5 @@
 ---
-title: To explore further this year's theme
-webinars: The Positive Future team produce regularly webinars discussing the current edition theme. Check the upcoming webinars and register to follow them in real-time.
-sab: The scientific advisory board of Positive Future maintains a currated list of resources to feed your reflexion. Find our articles, videos and podcast in the "Food for thought" section.
+title: Se documenter sur le thème de cette année
+webinars: L'équipe de Positive Future produit régulièrement des webinaires liés au thème du concours en cours. Consultez le calendrier des prochains webinaires et inscrivez-vous pour y assister en temps réel.
+sab: Le conseil scientifique de Positive Future tient régulièrement à jour une liste de ressources pour alimenter votre réflexion. Retrouvez prochainement nos articles, vidéos et podcasts dans la section "Matière à penser".
 ---
