@@ -11,4 +11,5 @@ Stories can be presented in the following formats:
 * **Videos or short films** : maximum 10 minutes
 * **Comics and graphic novels** : maximum 15 pages
 
+
 Proposals can be submitted on our online platform, accessible from April 1 until May 31, 2022.

@@ -12,7 +12,7 @@
           <h1 class="pt-0 mt-0 mb-4">
             {{ intro.theme }}
           </h1>
-          <nuxt-content :document="intro" class="py-6" />
+          <nuxt-content :document="intro" class="pt-6" />
         </v-col>
       </v-row>
     </section>
@@ -162,7 +162,7 @@
               />
             </template>
             <template v-else>
-              <div>
+              <div class="mb-6">
                 {{ $t('coming-soon') }}
               </div>
             </template>

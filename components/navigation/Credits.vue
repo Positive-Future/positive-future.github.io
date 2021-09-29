@@ -20,7 +20,7 @@
       <v-card-text class="pt-6 px-6 subtitle-1">
         Positive-future is a collective effort that originated from
         <a href="https://www.paris-iea.fr" target="_blank"
-          >IAS Paris - IEA de Paris</a
+          >Paris IAS - IEA de Paris</a
         >.
         <br />
         <b>Thanks</b>
@@ -48,7 +48,7 @@
         <br />
 
         <v-divider />This website and logo as well as its infrastructure have
-        been designed by IAS Paris. It is powered by
+        been designed by Paris IAS. It is powered by
         <a href="https://nuxtjs.org/" target="_blank">Nuxt</a> and
         <a href="http://vuetifyjs.com" target="_blank">Vuetify</a>
         .<br />All the images used are free of rights (or distributed as

@@ -10,4 +10,5 @@ Les récits peuvent se présenter sous les formats suivants :
 * **Vidéos ou courts-métrages** : maximum 10 minutes
 * **Bandes dessinées, romans graphiques** : maximum 15 pages
 
+
 Les propositions pourront être déposées sur une plateforme de dépôt qui sera accessible à partir de début avril 2022.
