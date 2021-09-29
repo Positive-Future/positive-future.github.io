@@ -15,6 +15,7 @@ fields:
   name: new_tab_link
   label: new_tab_link
 pages:
+- content/en/carousel/More info about the 2021 works.md
 - content/en/carousel/Video the unveiling of the laureates.md
 - content/fr/carousel/en savoir + sur les oeuvres lauréates.md
 - content/fr/carousel/video devoilement laureats.md
