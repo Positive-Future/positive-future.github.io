@@ -5,7 +5,9 @@ edition: '2021'
 laureate-title: Canopée
 description: ''
 jury: ''
-team: []
+team:
+- firstname: Jean-Robert
+  lastname: BUIGUES
 youtube_video_id: ''
 file: "/buigues-jean-robert-short-story.pdf"
 image: "/canopee.jpg"
