@@ -1,6 +1,6 @@
 ---
-title: Next edition
-theme: Work in 2100
+title: Prochainre édition
+theme: Le travail en 2100
 tipDownload: Download the contest organizers tips and advices to get some guidance for your application!
 ---
 
