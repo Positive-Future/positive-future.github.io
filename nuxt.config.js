@@ -171,6 +171,7 @@ export default {
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
     '@nuxt/content',
+    'nuxt-webfontloader',
     '@nuxtjs/axios',
     '@nuxtjs/sentry',
     '@nuxtjs/ackee',
