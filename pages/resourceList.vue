@@ -9,7 +9,7 @@
       :sort-desc="sortDesc"
       hide-default-footer
     >
-      <template v-slot:header>
+      <template #header>
         <v-toolbar class="mb-1">
           <v-text-field
             v-model="search"

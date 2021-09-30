@@ -8,7 +8,7 @@
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <v-row no-gutters>
             <v-col cols="12" md="8" class="pa-3">
-              <h1 class="mt-8 mb-4">
+              <h1 class="mt-8">
                 {{ organizers.ias.title }}
               </h1>
               <p>
@@ -74,7 +74,7 @@
             <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="4">
               <v-img
                 :src="organizers.iff.logo"
-                class="logo"
+                class="logo mt-16"
                 max-width="255"
                 max-height="200px"
               ></v-img>
@@ -103,7 +103,7 @@ export default {
   methods: {},
 }
 </script>
-<style lang="scss">
+<style scoped>
 .logos {
   position: relative;
 }

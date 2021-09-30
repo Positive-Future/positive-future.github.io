@@ -1,0 +1,72 @@
+---
+label: people
+hide_body: false
+fields:
+- type: text
+  name: firstname
+  label: firstname
+- type: text
+  name: lastname
+  label: lastname
+- type: file
+  name: image
+  label: image
+- name: copyright
+  type: text
+  config:
+    required: false
+  label: Image copyright owner and date
+  description: 'No need to include the copyright sign, just the copyright owner name
+    is needed, with a comma separating with the date: e.g. "Sponge Bob, 2007"'
+- name: title_and_institution
+  type: text
+  config:
+    required: false
+  label: Title
+- name: presentation
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Presentation
+- name: linkedin
+  type: text
+  config:
+    required: false
+  label: linkedin
+- name: twitter
+  type: text
+  config:
+    required: false
+  label: twitter
+- name: wikipedia
+  type: text
+  config:
+    required: false
+  label: wikipedia
+- name: website
+  type: text
+  config:
+    required: false
+  label: Website
+  description: The person personal website or page
+pages:
+- content/en/jury/2021/Ann Garreta.md
+- content/en/jury/2021/Antoine Bueno.md
+- content/en/jury/2021/Benoît Peeters.md
+- content/en/jury/2021/Celia Blauel.md
+- content/en/jury/2021/Cristian Jimenez.md
+- content/en/jury/2021/Erik Overland.md
+- content/en/jury/2021/Marie-Christine Lemardeley.md
+- content/en/jury/2021/Sophie Tran.md
+- content/fr/jury/2021/Anne Garreta.md
+- content/fr/jury/2021/Antoine Bueno.md
+- content/fr/jury/2021/Benoit Peeters.md
+- content/fr/jury/2021/Celia Blauel.md
+- content/fr/jury/2021/Cristian Jimenez.md
+- content/fr/jury/2021/Erik Overland.md
+- content/fr/jury/2021/Marie-Christine Lemardeley.md
+- content/fr/jury/2021/Sophie Tran.md

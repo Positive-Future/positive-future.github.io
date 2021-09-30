@@ -1,13 +1,14 @@
 ---
-title: Important dates
+title: Important dates of the contest!
 schedule:
   opening:
-    date: April 1st, 2021
-    content: 'Opening of the submission platform. '
+    date: April 1st, 2022
+    content: Opening of the submission platform
   deadline:
-    date: May 31st, 2021
+    date: May 31st, 2022
     content: Application deadline​
   awards:
-    date: 30 September 2021
-    content: Awards Ceremony (online)
+    date: Autumn 2022
+    content: Awards Ceremony
+
 ---

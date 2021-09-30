@@ -1,5 +1,5 @@
 <template>
-  <v-footer style="z-index: 2">
+  <v-footer style="z-index: 2" color="white">
     <v-row align="center" no-gutters justify="center">
       <v-col xs="12" sm="11" md="9" lg="9" xl="8" class="text-center">
         <a
@@ -19,12 +19,13 @@
           class="black--text"
           style="text-decoration: none"
           @click="showCredits = true"
+          @keyup.enter="showCredits = true"
         >
           {{ $t('misc.ui.seeCredits') }}</a
         >
         <br />
         <v-tooltip top>
-          <template v-slot:activator="{ on }">
+          <template #activator="{ on }">
             <v-btn text icon v-on="on">
               <a
                 href="http://creativecommons.org/licenses/by-sa/4.0/"
@@ -45,6 +46,7 @@
           target="_blank"
           rel="noopener noreferrer"
           style="text-decoration: none"
+          href="https://www.paris-iea.fr"
           >{{ $t('misc.ui.maintainer') }}</a
         >.
       </v-col>
@@ -67,7 +69,6 @@ export default {
   methods: {
     storeTheme() {
       if (process.browser) {
-        console.log('this.$vuetify.theme.isDark: ', this.$vuetify.theme.isDark)
         localStorage.setItem('darkMode', this.$vuetify.theme.isDark)
       }
     },

@@ -1,12 +1,12 @@
 <template>
   <div>
     <section
-      style="background-color: #fff1d0; padding-bottom: 60px"
+      style="background-color: #fff1d0"
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="mt-8 pb-4">
+          <h1 class="mt-12">
             {{ sab.title }}
           </h1>
           <nuxt-content :document="sab" />

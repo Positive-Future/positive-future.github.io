@@ -1,13 +1,14 @@
 ---
-title: Dates à retenir!
+title: Dates-clés du concours 2022!
 schedule:
   opening:
-    date: 1er Avril 2021
-    content: Ouverture de la plateforme de dépôt.
+    date: 1er avril 2022
+    content: Ouverture de la plateforme de candidatures
   deadline:
-    date: 31 Mai 2021
-    content: Date limite pour le dépôt des dossiers.
+    date: 31 Mai 2022
+    content: Date limite pour le dépôt des dossiers
   awards:
-    date: 30 Septembre 2021
-    content: Cérémonie virtuelle de remise des prix.
+    date: Automne 2022
+    content: 'Remise des Prix '
+
 ---

@@ -5,66 +5,75 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: heading
-  label: French
+  label: FRENCH
 - type: directory
   path: content/fr/carousel
   label: Carousel
   create: all
   match: "**/*"
-  templates:
-  - carousel
 - type: directory
   path: content/fr/jury
   label: Jury
   create: all
   match: "**/*"
   templates:
-  - jury
+  - people
+- type: directory
+  path: content/fr/laureates
+  label: Laureates
+  create: all
+  match: "**/*"
+  templates:
+  - laureate
 - type: directory
   path: content/fr/pages
   label: Pages
   create: all
   match: "**/*"
+- type: document
+  path: static/lang/fr.json
+  label: Translations
 - type: directory
   path: content/fr/webinars
   label: Webinars
   create: all
   match: "**/*"
-  templates:
-  - webinar
 - type: heading
-  label: English
+  label: ENGLISH
 - type: directory
   path: content/en/carousel
   label: Carousel
   create: all
   match: "**/*"
-  templates:
-  - carousel
 - type: directory
   path: content/en/jury
   label: Jury
   create: all
   match: "**/*"
   templates:
-  - jury
+  - people
+- type: directory
+  path: content/en/laureates
+  label: Laureates
+  create: all
+  match: "**/*"
+  templates:
+  - laureate
 - type: directory
   path: content/en/pages
   label: Pages
   create: all
   match: "**/*"
+- type: document
+  path: static/lang/en.json
+  label: Translations
 - type: directory
   path: content/en/webinars
   label: Webinars
   create: all
   match: "**/*"
 - type: heading
-  label: Other
-- type: directory
-  path: content/en/laureates
-  label: Laureates
-  create: all
-  match: "**/*"
+  label: BOTH
 - type: directory
   path: content/resources
   label: Resources

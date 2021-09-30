@@ -1,83 +1,14 @@
 <template>
   <div>
     <section
-      style="background-color: #fff1d0; padding-bottom: 70px"
+      style="background-color: #fff1d0; padding: 70px"
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <div class="mt-6 subtitle">
-            {{ $t('misc.ui.theme') }}
+          <div class="text-h3">
+            {{ $t('coming-soon') }}
           </div>
-          <h1 class="pt-0 mt-0 mb-4">
-            {{ index.theme }}
-            <!--           <v-btn
-              v-if="$vuetify.breakpoint.mdAndUp"
-              color="primary"
-              class="mx-1 float-right"
-              nuxt
-              :to="localePath('/apply')"
-            >
-              {{ $t('apply') }}
-            </v-btn> -->
-          </h1>
-          <p>
-            {{ contest.intro }}
-          </p>
-        </v-col>
-      </v-row>
-    </section>
-    <section style="margin-top: -90px">
-      <v-row justify="center">
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
-          <v-row>
-            <v-col cols="12" sm="6">
-              <v-card
-                color="#FFE2A0"
-                class="pa-6"
-                flat
-                target="_blank"
-                :to="'/rules_' + $i18n.locale + '.pdf'"
-                :class="{ 'ml-n6': $vuetify.breakpoint.mdAndUp }"
-              >
-                <div class="d-inline-flex justify-center align-center">
-                  <v-icon x-large class="rotate-24 mr-6" color="black"
-                    >mdi-file-pdf</v-icon
-                  >
-                  <div class="subtitle">
-                    {{ $t('misc.ui.download_rules') }}
-                  </div>
-                </div>
-              </v-card>
-            </v-col>
-          </v-row>
-          <nuxt-content :document="contest" class="py-6" />
-          <v-row>
-            <v-col cols="12" sm="9">
-              <v-card
-                color="#4FD4C7"
-                class="px-6 pt-6 pb-8"
-                style="margin-bottom: -120px"
-              >
-                <h1 class="mb-4">
-                  {{ $t('misc.ui.award') }}
-                </h1>
-                {{ contest.award }}
-              </v-card>
-            </v-col></v-row
-          >
-        </v-col>
-      </v-row>
-    </section>
-    <section style="background-color: #c9f8f3; padding-top: 110px">
-      <v-row justify="center">
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3 pb-8">
-          <h1 class="mt-8 mb-4">
-            {{ contest.criterions.title }}
-          </h1>
-          <p>
-            {{ contest.criterions.text }}
-          </p>
         </v-col>
       </v-row>
     </section>

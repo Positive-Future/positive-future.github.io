@@ -161,6 +161,7 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/vuetify',
     '@nuxt/image',
+    'nuxt-compress',
   ],
   /*
    ** Nuxt.js modules
@@ -170,11 +171,10 @@ export default {
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
     '@nuxt/content',
+    'nuxt-webfontloader',
     '@nuxtjs/axios',
-    // https://ackee.nuxtjs.org/
-    '@nuxtjs/ackee',
-    // https://sentry.nuxtjs.org/
     '@nuxtjs/sentry',
+    '@nuxtjs/ackee',
     [
       'nuxt-i18n',
       {
@@ -192,12 +192,41 @@ export default {
           useCookie: true,
           cookieKey: 'i18n_redirected',
           alwaysRedirect: true,
+          fallbackLocale: 'en',
         },
         langDir: 'static/lang/',
       },
     ],
   ],
 
+  // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  // MODULES CONFIGURATIONS
+  // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  /*
+   ** Sentry module configuration
+   ** https://github.com/nuxt-community/sentry-module#options
+   */
+  sentry: {
+    dsn: 'https://f7e554c755e9479dbc14e037a789e7ea@sentry.paris-ias.io/7',
+    config: {}, // Additional config
+  },
+  /*
+   ** Ackee module configuration
+   ** https://github.com/nuxt-community/ackee-module
+   ** https://ackee.nuxtjs.org/
+   */
+  ackee: {
+    server: 'https://ackee.paris-ias.io/',
+    domainId: '2c59e48e-c8f4-4cff-b074-95b14b1c7af7',
+    // see documentation for more!
+    ignoreOwnVisits: false,
+  },
+  // ESLint module configuration (https://github.com/nuxt-community/eslint-module)
+  eslint: {
+    fix: true,
+    emitWarning: true,
+    quiet: true,
+  },
   /*
    ** PWA module configuration
    ** https://pwa.nuxtjs.org/setup#configuration
@@ -295,9 +324,12 @@ export default {
    ** robots module configuration
    ** https://github.com/nuxt-community/robots-module#options
    */
+  // Robots module configuration (https://github.com/nuxt-community/robots-module)
   robots: {
     UserAgent: '*',
     Disallow: '',
+    Allow: '/',
+    Sitemap: `${process.env.BASE_URL}/sitemap.xml`,
   },
   /*
    ** Page Layout transition
@@ -331,5 +363,9 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    extend(config) {
+      config.resolve.alias['vue'] = 'vue/dist/vue.common'
+    },
+  },
 }
