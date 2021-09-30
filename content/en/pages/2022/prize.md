@@ -2,4 +2,4 @@
 title: Prize
 ---
 
-10 000€ will be shared among laureates.
+10 000€ to win!

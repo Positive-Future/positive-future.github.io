@@ -7,7 +7,7 @@
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <h1 class="mt-12">{{ laureateText.title }}</h1>
-          <nuxt-content :document="laureateText" class="mt-12" />
+          <nuxt-content :document="laureateText" class="mt-6" />
         </v-col>
       </v-row>
     </section>

@@ -6,7 +6,7 @@
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <div class="headline mt-12">{{ index.subtitle }}</div>
+          <div class="text-h5 mt-12">{{ index.subtitle }}</div>
           <nuxt-content :document="index" class="mt-8" />
         </v-col>
       </v-row>
@@ -46,9 +46,9 @@
                 height="315"
                 :src="
                   'https://www.youtube.com/embed/' +
-                  ($i18n.locale === 'en' ? '1efqN3kp1NE' : '-7Fd0Vk8jHM') +
+                  ($i18n.locale === 'en' ? 'qEMY1uWqQbA' : '4HIMlONqTgw') +
                   '?autoplay=1&mute=1&loop=1&showinfo=0&playlist=' +
-                  ($i18n.locale === 'en' ? '1efqN3kp1NE' : '-7Fd0Vk8jHM')
+                  ($i18n.locale === 'en' ? 'qEMY1uWqQbA' : '4HIMlONqTgw')
                 "
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -123,19 +123,6 @@
               <div class="mb-6">
                 {{ $t('misc.credits') }}
               </div>
-              <v-row>
-                <v-col cols="4">
-                  <div class="white ma-3">
-                    <v-img :src="organizers.ias.logo"></v-img>
-                  </div>
-                </v-col>
-                <v-col cols="4">
-                  <v-img :src="organizers.fundation.logo"></v-img>
-                </v-col>
-                <v-col cols="4">
-                  <v-img contain :src="organizers.iff.logo"></v-img>
-                </v-col>
-              </v-row>
             </v-col>
           </template>
         </v-col>

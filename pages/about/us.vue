@@ -6,7 +6,7 @@
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <h1 class="mt-8 pb-4">
+          <h1 class="mt-8">
             {{ about.title }}
           </h1>
           <nuxt-content :document="about" />
@@ -17,7 +17,7 @@
       <v-row justify="center">
         <v-row justify="center" no-gutters>
           <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3 mt-9">
-            <h1 class="ml-3 mb-3">
+            <h1 class="ml-3 mb-6">
               {{ $t('our-tools') }}
             </h1>
             <v-row>

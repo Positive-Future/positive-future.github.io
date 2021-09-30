@@ -19,6 +19,7 @@
           class="black--text"
           style="text-decoration: none"
           @click="showCredits = true"
+          @keyup.enter="showCredits = true"
         >
           {{ $t('misc.ui.seeCredits') }}</a
         >
@@ -45,6 +46,7 @@
           target="_blank"
           rel="noopener noreferrer"
           style="text-decoration: none"
+          href="https://www.paris-iea.fr"
           >{{ $t('misc.ui.maintainer') }}</a
         >.
       </v-col>

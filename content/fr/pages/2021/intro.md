@@ -1,6 +1,6 @@
 ---
 title: Edition précédente
-theme:La ville en 2100
+theme: La ville en 2100
 tipDownload: Download the contest organizers tips and advices to get some guidance for your application!
 ---
 

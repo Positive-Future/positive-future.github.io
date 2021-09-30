@@ -1,6 +1,6 @@
 ---
 title: Positive Future
-subtitle: ''
+subtitle: Pour stimuler l'imagination et promouvoir un avenir désirable et vivable!
 theme: Le travail en 2100
 
 ---

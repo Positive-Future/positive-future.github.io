@@ -12,7 +12,7 @@
           <h1 class="pt-0 mt-0 mb-4">
             {{ intro.theme }}
           </h1>
-          <nuxt-content :document="intro" class="py-6" />
+          <nuxt-content :document="intro" />
         </v-col>
       </v-row>
     </section>
@@ -21,7 +21,7 @@
         <v-row no-gutters>
           <v-col cols="12" sm="8">
             <YoutubeEmbedded
-              style="margin-top: -180px"
+              style="margin-top: -160px"
               :yt="$i18n.locale === 'en' ? '1efqN3kp1NE' : '-7Fd0Vk8jHM'"
               class="mb-9"
             ></YoutubeEmbedded>
@@ -70,13 +70,13 @@
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
           <v-card class="px-6 pt-6 pb-0 mb-0" flat color="transparent">
-            <nuxt-content :document="intro" class="py-6" />
+            <nuxt-content :document="intro" class="pt-6" />
             <div id="awards" class="my-6">
               {{ $t('watch-the-award-ceremony') }}
             </div>
             <YoutubeEmbedded
-              :yt="$i18n.locale === 'en' ? '1efqN3kp1NE' : '-7Fd0Vk8jHM'"
-              class="mb-9"
+              yt="OKMuRJFlfU0"
+              class="mb-9 ml-2"
             ></YoutubeEmbedded>
           </v-card>
         </v-col>

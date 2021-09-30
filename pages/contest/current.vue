@@ -12,11 +12,11 @@
           <h1 class="pt-0 mt-0 mb-4">
             {{ intro.theme }}
           </h1>
-          <nuxt-content :document="intro" class="pt-6" />
+          <nuxt-content :document="intro" />
         </v-col>
       </v-row>
     </section>
-    <!--     <section style="margin-top: -85px">
+    <section style="margin-top: -65px">
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-row no-gutters>
@@ -36,15 +36,15 @@
           </v-row>
         </v-col>
       </v-row>
-    </section> -->
+    </section>
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
-          <v-card class="px-6 pt-6 pb-0 mb-0" flat>
+          <v-card class="pt-6 pb-0 mb-0" flat>
             <h1 class="pt-0 mt-0 mb-4">
               {{ modalities.title }}
             </h1>
-            <nuxt-content :document="modalities" class="py-6" />
+            <nuxt-content :document="modalities" />
           </v-card>
         </v-col>
       </v-row>
@@ -66,11 +66,11 @@
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
-          <v-card class="px-6 pt-6 pb-0 mb-0" flat>
+          <v-card class="pb-0 mb-0" flat>
             <h1 class="pt-0 mt-0 mb-4">
               {{ dates.title }}
             </h1>
-            <nuxt-content :document="dates" class="py-6" />
+            <nuxt-content :document="dates" />
           </v-card>
         </v-col>
       </v-row>
@@ -78,7 +78,7 @@
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
-          <h1 class="pt-0 mt-0 mb-4 ml-6">{{ more.title }}:</h1>
+          <h1 class="pt-0 mt-0 mb-4">{{ more.title }}:</h1>
           <v-row no-gutters>
             <v-col cols="12" md="6" class="pa-3 mb-6">
               <v-card
@@ -129,7 +129,7 @@
           <v-row no-gutters>
             <v-col cols="12" sm="6">
               <v-card color="#4fd4c7" class="pa-6">
-                <h1 class="mb-0">
+                <h1>
                   {{ prize.title }}
                 </h1>
                 <nuxt-content :document="prize" />
@@ -143,14 +143,14 @@
       <v-row
         justify="center"
         no-gutters
-        style="margin-top: -85px; padding-top: 85px"
+        style="margin-top: -85px; padding-top: 105px"
       >
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <v-card class="px-6 pt-6 pb-0 mb-0" flat color="transparent">
+          <v-card class="pt-6 pb-0 mb-0" flat color="transparent">
             <h1 class="pt-0 mt-0 mb-4">
               {{ criterions.title }}
             </h1>
-            <nuxt-content :document="criterions" class="py-6" />
+            <nuxt-content :document="criterions" class="pb-6" />
             <h1 class="pt-0 mt-0 mb-4">
               {{ $t('jury-members') }}
             </h1>
@@ -162,9 +162,9 @@
               />
             </template>
             <template v-else>
-              <div class="mb-6">
+              <p class="mb-6">
                 {{ $t('coming-soon') }}
-              </div>
+              </p>
             </template>
           </v-card>
         </v-col>
