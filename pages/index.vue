@@ -47,8 +47,7 @@
                 :src="
                   'https://www.youtube.com/embed/' +
                   ($i18n.locale === 'en' ? 'qEMY1uWqQbA' : '4HIMlONqTgw') +
-                  '?autoplay=1&mute=1&loop=1&showinfo=0&playlist=' +
-                  ($i18n.locale === 'en' ? 'qEMY1uWqQbA' : '4HIMlONqTgw')
+                  '?autoplay=1&mute=1&loop=1&showinfo=0'
                 "
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
