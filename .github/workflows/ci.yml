@@ -44,8 +44,8 @@ jobs:
       - name: Generate
         run: yarn run generate
 
-      - name: Run linter 👀
-        run: yarn lint
+     # - name: Run linter 👀
+     #   run: yarn lint
 
       #      - name: Run tests 🧪
       #        run: yarn test

@@ -345,20 +345,7 @@ export default {
       console.log('TRANSITION : afterLeave', el)
     },
   },
-  /*
-   ** Sentry module configuration
-   ** https://github.com/nuxt-community/sentry-module#options
-   */
-  sentry: {
-    dsn: 'https://f7e554c755e9479dbc14e037a789e7ea@sentry.paris-ias.io/7' || '',
-    config: {}, // Additional configyarn dev
-  },
-  ackee: {
-    server: 'https://ackee.paris-ias.io/',
-    domainId: '2c59e48e-c8f4-4cff-b074-95b14b1c7af7' || '',
-    // see documentation for more!
-    ignoreOwnVisits: false,
-  },
+ 
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
