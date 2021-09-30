@@ -22,4 +22,4 @@ Les résultats seront dévoilés le 30 septembre 2021 à 20h, heure de Paris, lo
 
 Cette cérémonie sera également l’occasion de vous dévoiler le thème du concours 2022.
 
-Encore un peu de patience ! Nous espérons que vous serez au rendez-vous !
+Nous espérons que vous serez au rendez-vous !
