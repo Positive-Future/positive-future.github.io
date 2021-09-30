@@ -71,7 +71,7 @@
             href="https://wprn.org"
             property="cc:attributionName"
             rel="cc:attributionURL"
-            >IAS Paris</a
+            >Paris IAS</a
           >
           is licensed under a
           <a

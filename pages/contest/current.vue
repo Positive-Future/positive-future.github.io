@@ -105,7 +105,7 @@
                 :flat="$vuetify.theme.isDark"
                 height="100%"
                 nuxt
-                :to="localePath('/about/scientific_advisory_board')"
+                :to="localePath('/resources')"
               >
                 <v-icon color="black" x-large class="d-flex">
                   mdi-file-document-multiple</v-icon

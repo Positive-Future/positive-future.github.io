@@ -1,7 +1,7 @@
 ---
 carousel_title: '2021 Contest: the unveiling of the laureates'
 picture: "/awards-ceremony-carousel2.jpg"
-link: "/laureates"
+link: "/contest/previous#awards"
 new_tab_link: false
 
 ---

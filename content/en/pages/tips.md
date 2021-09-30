@@ -3,22 +3,22 @@ title: Tips to create your narrative
 subtitle: Here is some advice from the organizers on how to build your narrative.
 
 ---
-2100 seems far away! And it would be impossible to entirely design a sustainable, realistic and liveable city on this horizon in a work submitted to this contest.
+2100 seems a long way off!
 
-What we are asking you to do is simpler. We are looking for stories that show that a pleasant and sustainable future is possible, in contrast to the catastrophic anticipations that dominate current representations of the future.
+It would be impossible to completely design a sustainable, realistic and liveable 2100 society in this competition. What we are asking of you is simpler. We are looking for stories that show that a pleasant and sustainable future is possible, in contrast to the catastrophic expectations that dominate current representations of futures.
 
-For this, your story will show, in the background, one or more aspects of a sustainable city in the future. The city is not the focus of your narrative, it is its background, the place where it takes place. Your story, which focuses on its characters and their actions, is an opportunity to show some aspects of this background. We will no doubt see in passing how your characters live, move around, work, etc., and therefore what living, transport, production, leisure, sociability, government, etc. might be like in such a desirable city, while still remaining realistic. There is no point in trying to show all the aspects of life in a city of the future, it is impossible; show some of them well, it is fine.
+To do this, your story will show, in the background, one or more aspects of the place of work in people's lives in the future. Work does not have to be the central topic of your story, but rather its background, the framework in which it takes place. Your story, which is centred on its characters and their actions, is an opportunity to show some aspects of this background.
 
-The Scientific Committee of Positive Future has gathered resources that give some ideas on how to realistically think about what the future could be. The aim is to enable you to refer to things that are feasible or credible, that we know or think are technically possible, or even that we have already seen working in real-life cases (for example, in terms of forms of governance, work, etc.).
+You are free to define the central plot of your narrative: love, friendship, conflict, discovery, failure, success, dilemma, ambition, grief. It doesn't matter: humans will always be humans, even if the quality of life in the future society will positively influence everyone's experience, promote well-being and ease their pain. Make the story interesting for the reader/viewer.
 
-For inspiration, you can consult this knowledge base \[http://positive-future.org/resources\] to get a general vision of the major issues at stake for a desirable future. You can explore these documents in a targeted way, by keywords, to see how to give substance to the existence and settings of your characters: how they live, earn their living, take care of each other, etc.
+The story will show how your characters move around, interact with each other, how they balance their professional and private, social or artistic lives, etc. This should therefore give you the opportunity to sketch out in the background what the workplaces, tools, schedules, organisational modes, the place of leisure, sociability, etc., might be like in a desirable future, while remaining realistic. It is not necessary to try to show every aspect of jobs and relationships at work, that is impossible; show some of them well, that is already good.
 
-You can, for example, ask yourself the question of the occupation of your characters, their parents, their friends: the occupation you give them may highlight some aspect of a desirable future city; getting the characters to move from one place to another is an opportunity to talk about transport; showing them in their daily tasks shows different aspects of the way the city functions, etc.
+The Scientific Committee of Positive Future brings together various resources that gives us a realistic idea of what the future could be. The idea is to reflect on the challenges already identified, and to ground imagination on credible future development scenarios that we know or think are probable or at least technically feasible, or even that we have already seen work in real cases (for example, in the use of new technologies, the development of work via digital platforms, experiments of cooperatives, etc.).
 
-The story itself can be anything you want: love, friendship, conflict, discovery, failure, success, dilemma, ambition, mourning. It doesn't matter: humans will always be humans, although the quality of life in the city of the future will positively influence the human experience, promote happiness and ease their sorrows. Make the story interesting for the reader/viewer.
+For inspiration, please consult this [knowledge base](http://positive-future.org/resources) for a general overview of the major challenges of a desirable future. You can explore these documents in a targeted way, by key words, to see how to give substance to the life and setting of your characters.
 
-Our jury will pay attention to the story, the quality of the plot and the formal implementation; but also and above all to the realistic, pleasant and sustainable nature of the background, the city in which people live.
+Our jury will look at the story, the quality of the plot and the formal implementation; but also and above all at the realistic, enjoyable and sustainable nature of the background, the society in which people live and work.
 
-By disseminating positive representations of the future, you will contribute to giving everyone a motivation to change the world. Another world is possible if we all put our minds to it. For our part, we will do our best to highlight and spread these optimistic visions. 
+By spreading positive images of the future, you will help to give everyone a motivation to change the world. Another world is possible if we all do it. On our side, we will do our best to highlight and spread these optimistic visions.
 
 Good luck!
