@@ -2,24 +2,6 @@
 label: Laureate
 hide_body: false
 fields:
-<<<<<<< HEAD
-- name: title_of_the_work
-  type: text
-  config:
-    required: false
-  label: Title of the work
-- name: type_of_work
-  type: select
-  default: Article
-  config:
-    required: true
-    options:
-    - Article
-    - Book
-    - Drawing
-    - Photo
-    - Video
-=======
 - type: text
   name: laureate-title
   label: title
@@ -101,7 +83,6 @@ fields:
     - novel
     - video
     - comic
->>>>>>> main
     source:
       type: simple
       section: 

@@ -2,15 +2,6 @@
 label: Webinar
 hide_body: false
 fields:
-<<<<<<< HEAD
-- name: webinar_title
-  type: text
-  config:
-    required: true
-    min: 2
-    max: 100
-  label: Title
-=======
 - name: published
   type: boolean
   label: Published
@@ -100,4 +91,3 @@ fields:
       file: 
       path: 
   label: Edition
->>>>>>> main
