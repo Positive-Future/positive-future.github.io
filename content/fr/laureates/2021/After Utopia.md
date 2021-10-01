@@ -13,7 +13,7 @@ team:
 youtube_video_id: ''
 file: "/shao-sophie-comic.pdf"
 image: "/after-utopia.jpg"
-copyright: "© Sophie Z SHAO et GM KUHN"
+copyright: "© Sophie Z SHAO & GM KUHN"
 jury_notes:
 - lastname: Overland
   text: A la lecture d'After utopia. An Agropolis for Future Ancestors, certaines
