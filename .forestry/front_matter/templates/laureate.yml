@@ -1,0 +1,57 @@
+---
+label: Laureate
+hide_body: false
+fields:
+- type: text
+  name: type
+  label: type
+- type: text
+  name: edition
+  label: edition
+- type: text
+  name: laureate-title
+  label: laureate-title
+- type: text
+  name: description
+  label: description
+- type: text
+  name: jury
+  label: jury
+- type: field_group_list
+  name: team
+  label: team
+  fields:
+  - type: text
+    name: firstname
+    label: firstname
+  - type: text
+    name: lastname
+    label: lastname
+- type: text
+  name: youtube_video_id
+  label: youtube_video_id
+- type: file
+  name: file
+  label: file
+- type: file
+  name: image
+  label: image
+- type: text
+  name: copyright
+  label: copyright
+- type: field_group_list
+  name: jury_notes
+  label: jury_notes
+  fields:
+  - type: text
+    name: firstname
+    label: firstname
+  - type: text
+    name: lastname
+    label: lastname
+  - type: textarea
+    name: text
+    label: text
+- type: text
+  name: category
+  label: category
