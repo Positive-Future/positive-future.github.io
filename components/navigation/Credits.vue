@@ -31,11 +31,11 @@
         <nuxt-link :to="localePath('privacy_policy')" class="blue--text"
           >Privacy Policy</nuxt-link
         >&nbsp;-&nbsp;
-        <nuxt-link :to="localePath('organizers')" class="blue--text">{{
+        <nuxt-link :to="localePath('/about/organizers')" class="blue--text">{{
           $t('navigation.organizers')
         }}</nuxt-link
         >&nbsp;-&nbsp;
-        <nuxt-link :to="localePath('contest')" class="blue--text">{{
+        <nuxt-link :to="localePath('/contest/current')" class="blue--text">{{
           $t('navigation.contest')
         }}</nuxt-link
         >&nbsp;-&nbsp;

@@ -18,21 +18,21 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.11.1",
-    "@nuxtjs/ackee": "^3.0.2",
     "@nuxtjs/axios": "^5.13.1",
-    "@nuxtjs/sentry": "^5.1.0",
     "date-fns": "^2.16.1",
     "nuxt": "^2.14.0",
     "nuxt-compress": "^5.0.0",
     "nuxt-i18n": "^6.15.1",
     "nuxt-webfontloader": "^1.1.0",
-    "vue-add-to-calendar": "^1.0.7"
+    "vue-add-to-calendar": "^1.0.7",
+    "@nuxtjs/ackee": "^3.0.2",
+    "@nuxtjs/sentry": "^5.1.1"
   },
   "devDependencies": {
-    "@nuxt/image": "^0.5.0",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/pwa": "^3.0.2",
+    "@nuxt/image": "^0.5.0",
     "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/style-resources": "^1.0.0",

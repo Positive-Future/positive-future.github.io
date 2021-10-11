@@ -1,96 +1,96 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: "/static/admin"
-webhook_url: 
+admin_path: '/static/admin'
+webhook_url:
 sections:
-- type: heading
-  label: FRENCH
-- type: directory
-  path: content/fr/carousel
-  label: Carousel
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/fr/jury
-  label: Jury
-  create: all
-  match: "**/*"
-  templates:
-  - people
-- type: directory
-  path: content/fr/laureates
-  label: Laureates
-  create: all
-  match: "**/*"
-  templates:
-  - laureate
-- type: directory
-  path: content/fr/pages
-  label: Pages
-  create: all
-  match: "**/*"
-- type: document
-  path: static/lang/fr.json
-  label: Translations
-- type: directory
-  path: content/fr/webinars
-  label: Webinars
-  create: all
-  match: "**/*"
-- type: heading
-  label: ENGLISH
-- type: directory
-  path: content/en/carousel
-  label: Carousel
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/en/jury
-  label: Jury
-  create: all
-  match: "**/*"
-  templates:
-  - people
-- type: directory
-  path: content/en/laureates
-  label: Laureates
-  create: all
-  match: "**/*"
-  templates:
-  - laureate
-- type: directory
-  path: content/en/pages
-  label: Pages
-  create: all
-  match: "**/*"
-- type: document
-  path: static/lang/en.json
-  label: Translations
-- type: directory
-  path: content/en/webinars
-  label: Webinars
-  create: all
-  match: "**/*"
-- type: heading
-  label: BOTH
-- type: directory
-  path: content/resources
-  label: Resources
-  create: all
-  match: "**/*"
-  templates:
-  - resource-fr
-  - resource-fr
+  - type: heading
+    label: FRENCH
+  - type: directory
+    path: content/fr/carousel
+    label: Carousel
+    create: all
+    match: '**/*'
+  - type: directory
+    path: content/fr/jury
+    label: Jury
+    create: all
+    match: '**/*'
+    templates:
+      - people
+  - type: directory
+    path: content/fr/laureates
+    label: Laureates
+    create: all
+    match: '**/*'
+    templates:
+      - laureate
+  - type: directory
+    path: content/fr/pages
+    label: Pages
+    create: all
+    match: '**/*'
+  - type: document
+    path: static/lang/fr.json
+    label: Translations
+  - type: directory
+    path: content/fr/webinars
+    label: Webinars
+    create: all
+    match: '**/*'
+  - type: heading
+    label: ENGLISH
+  - type: directory
+    path: content/en/carousel
+    label: Carousel
+    create: all
+    match: '**/*'
+  - type: directory
+    path: content/en/jury
+    label: Jury
+    create: all
+    match: '**/*'
+    templates:
+      - people
+  - type: directory
+    path: content/en/laureates
+    label: Laureates
+    create: all
+    match: '**/*'
+    templates:
+      - laureate
+  - type: directory
+    path: content/en/pages
+    label: Pages
+    create: all
+    match: '**/*'
+  - type: document
+    path: static/lang/en.json
+    label: Translations
+  - type: directory
+    path: content/en/webinars
+    label: Webinars
+    create: all
+    match: '**/*'
+  - type: heading
+    label: BOTH
+  - type: directory
+    path: content/resources
+    label: Resources
+    create: all
+    match: '**/*'
+    templates:
+      - resource-fr
+      - resource-fr
 upload_dir: static
 public_path: ''
-front_matter_path: "/Positive-Future"
+front_matter_path: '/Positive-Future'
 use_front_matter_path: false
-file_template: ":filename:"
+file_template: ':filename:'
 build:
   preview_output_directory: dist
   install_dependencies_command: yarn
   preview_docker_image: forestryio/node:12
-  mount_path: "/srv"
-  working_dir: "/srv"
+  mount_path: '/srv'
+  working_dir: '/srv'
   instant_preview_command: yarn build

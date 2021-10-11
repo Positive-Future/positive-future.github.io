@@ -2,92 +2,95 @@
 label: Webinar
 hide_body: false
 fields:
-- name: published
-  type: boolean
-  label: Published
-  default: false
-  description: Switch to green if it is ready to publish
-- name: webinar-title
-  type: text
-  config:
-    required: false
-  label: Title
-- name: subtitle
-  type: text
-  config:
-    required: false
-  label: Subtitle
-- name: date
-  type: datetime
-  label: Date
-  description: ''
-  config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: false
-- name: categories
-  type: list
-  config:
-    use_select: true
-    min: 
-    max: 
-    source:
-      type: simple
-    options:
-    - event
-    - other
-  label: categories
-- name: featured
-  type: boolean
-  label: featured
-- name: image
-  type: file
-  config:
-    maxSize: 64
-  label: image
-- name: youtube_video_id
-  type: text
-  config:
-    required: false
-  label: Youtube video ID
-  description: The part of the youtube url with the video id. For example, for <a
-    href="https://www.youtube.com/watch?v=cGYyOY4XaFs" title="https://www.youtube.com/watch?v=cGYyOY4XaFs"
-    target="_blank">https://www.youtube.com/watch?v=cGYyOY4XaFs</a> the id is '<a
-    href="https://www.youtube.com/watch?v=cGYyOY4XaFs" title="https://www.youtube.com/watch?v=cGYyOY4XaFs"
-    target="_blank">cGYyOY4XaFs</a>'
-- name: background_color
-  type: color
-  label: Background color
-  config:
-    required: false
-    color_format: Hex
-  description: Color used for the featured thumbnail background, wether we have an
-    image or not.
-- name: file
-  type: file
-  config:
-    maxSize: 64
-  label: File
-- name: link
-  type: text
-  config:
-    required: false
-  label: Link
-  description: Used to override the link of the carousel. If clicked on, the  featured
-    news will redirect to the link localePath in the website instead of the related
-    news page.
-- name: edition
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - '2021'
-    - '2022'
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Edition
+  - name: published
+    type: boolean
+    label: Published
+    default: false
+    description: Switch to green if it is ready to publish
+  - name: webinar-title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: date
+    type: datetime
+    label: Date
+    description: ''
+    config:
+      required: false
+      date_format:
+      time_format:
+      display_utc: false
+  - name: categories
+    type: list
+    config:
+      use_select: true
+      min:
+      max:
+      source:
+        type: simple
+      options:
+        - event
+        - other
+    label: categories
+  - name: featured
+    type: boolean
+    label: featured
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: image
+  - name: youtube_video_id
+    type: text
+    config:
+      required: false
+    label: Youtube video ID
+    description:
+      The part of the youtube url with the video id. For example, for <a
+      href="https://www.youtube.com/watch?v=cGYyOY4XaFs" title="https://www.youtube.com/watch?v=cGYyOY4XaFs"
+      target="_blank">https://www.youtube.com/watch?v=cGYyOY4XaFs</a> the id is '<a
+      href="https://www.youtube.com/watch?v=cGYyOY4XaFs" title="https://www.youtube.com/watch?v=cGYyOY4XaFs"
+      target="_blank">cGYyOY4XaFs</a>'
+  - name: background_color
+    type: color
+    label: Background color
+    config:
+      required: false
+      color_format: Hex
+    description:
+      Color used for the featured thumbnail background, wether we have an
+      image or not.
+  - name: file
+    type: file
+    config:
+      maxSize: 64
+    label: File
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+    description:
+      Used to override the link of the carousel. If clicked on, the  featured
+      news will redirect to the link localePath in the website instead of the related
+      news page.
+  - name: edition
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+        - '2021'
+        - '2022'
+      source:
+        type: simple
+        section:
+        file:
+        path:
+    label: Edition

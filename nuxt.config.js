@@ -173,8 +173,10 @@ export default {
     '@nuxt/content',
     'nuxt-webfontloader',
     '@nuxtjs/axios',
-    '@nuxtjs/sentry',
+    // https://ackee.nuxtjs.org/
     '@nuxtjs/ackee',
+    // https://sentry.nuxtjs.org/
+    '@nuxtjs/sentry',
     [
       'nuxt-i18n',
       {
@@ -237,7 +239,21 @@ export default {
       lang: 'en',
     },
   },
-
+  // https://image.nuxtjs.org
+  image: {
+    screens: {
+      avatarSm: 24,
+      avatarLg: 48,
+      logo: 32,
+      migration: 536,
+      blogImage: 864,
+    },
+    domains: [
+      'https://picsum.photos',
+      // snipcart.nuxtjs.org',
+      'source.unsplash.com',
+    ],
+  },
   /*
    ** Sitemap module configuration
    ** https://github.com/nuxt-community/sitemap-module#setup-a-sitemap
@@ -331,6 +347,7 @@ export default {
       console.log('TRANSITION : afterLeave', el)
     },
   },
+ 
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
