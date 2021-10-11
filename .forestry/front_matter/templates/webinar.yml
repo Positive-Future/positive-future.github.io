@@ -1,0 +1,40 @@
+---
+label: Webinar
+hide_body: false
+fields:
+- type: boolean
+  name: published
+  label: published
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: list
+  name: categories
+  label: categories
+- type: boolean
+  name: featured
+  label: featured
+- type: file
+  name: image
+  label: image
+- type: text
+  name: youtube_video_id
+  label: youtube_video_id
+- type: text
+  name: background_color
+  label: background_color
+- type: text
+  name: file
+  label: file
+- type: text
+  name: link
+  label: link
+- type: text
+  name: edition
+  label: edition
+- type: datetime
+  name: date
+  label: date
