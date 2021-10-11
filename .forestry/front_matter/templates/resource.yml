@@ -1,0 +1,40 @@
+---
+label: Resource
+hide_body: true
+fields:
+- type: text
+  name: lang
+  label: lang
+- type: text
+  name: name
+  label: name
+- type: text
+  name: author
+  label: author
+- type: textarea
+  name: description_en
+  label: description_en
+- type: textarea
+  name: description_fr
+  label: description_fr
+- type: list
+  name: category
+  label: category
+- type: list
+  name: type
+  label: type
+- type: list
+  name: issues
+  label: issues
+- type: list
+  name: perspectives
+  label: perspectives
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: file
+  label: file
+- type: text
+  name: url
+  label: url

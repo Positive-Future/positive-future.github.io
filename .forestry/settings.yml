@@ -11,6 +11,8 @@ sections:
   label: Carousel
   create: all
   match: "**/*"
+  templates:
+  - carousel
 - type: directory
   path: content/fr/jury
   label: Jury
@@ -38,6 +40,8 @@ sections:
   label: Webinars
   create: all
   match: "**/*"
+  templates:
+  - webinar
 - type: heading
   label: ENGLISH
 - type: directory
@@ -45,6 +49,8 @@ sections:
   label: Carousel
   create: all
   match: "**/*"
+  templates:
+  - carousel
 - type: directory
   path: content/en/jury
   label: Jury
@@ -72,6 +78,8 @@ sections:
   label: Webinars
   create: all
   match: "**/*"
+  templates:
+  - webinar
 - type: heading
   label: BOTH
 - type: directory
