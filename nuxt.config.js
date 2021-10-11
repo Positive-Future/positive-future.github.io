@@ -347,7 +347,7 @@ export default {
       console.log('TRANSITION : afterLeave', el)
     },
   },
- 
+
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
