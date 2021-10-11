@@ -2,35 +2,13 @@
 label: Laureate
 hide_body: false
 fields:
-- type: text
-  name: laureate-title
-  label: title
-- type: textarea
-  name: description
-  label: description
-- name: jury
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Jury note
-- name: jury_notes
-  type: field_group_list
-  fields:
-  - name: firstname
-    type: text
-    config:
-      required: false
-    label: firstname
-  - name: lastname
-    type: text
-    config:
-      required: false
-    label: lastname
-  - name: text
+  - type: text
+    name: laureate-title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+  - name: jury
     type: textarea
     default: ''
     config:
@@ -38,105 +16,129 @@ fields:
       wysiwyg: false
       schema:
         format: markdown
-    label: text
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Jury notes
-- type: field_group_list
-  name: team
-  label: team
-  fields:
-  - type: text
-    name: firstname
-    label: firstname
-  - type: text
-    name: lastname
-    label: lastname
-- name: category
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - winner
-    - comic
-    - video
-    - article
-    - crush
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Category
-  description: Will be used to indicate the category of the laureate. Winner being
-    the 1st prize of the edition
-- name: type
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - article
-    - novel
-    - video
-    - comic
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Type
-  description: Will be used for the pill displaying the type of content attached to
-    the laureate application.
-- name: youtube_video_id
-  type: text
-  config:
-    required: false
-  label: Youtube video ID
-- type: file
-  name: file
-  label: file
-- name: edition
-  type: select
-  default: '2021'
-  config:
-    required: false
-    options:
-    - '2021'
-    - '2022'
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Edition
-  description: "# of the PF contest edition"
-- name: image
-  type: file
-  config:
-    maxSize: 64
-  label: Image
-- name: copyright
-  type: text
-  config:
-    required: false
-  label: Image copyright owner and date
-  description: If necessary
+    label: Jury note
+  - name: jury_notes
+    type: field_group_list
+    fields:
+      - name: firstname
+        type: text
+        config:
+          required: false
+        label: firstname
+      - name: lastname
+        type: text
+        config:
+          required: false
+        label: lastname
+      - name: text
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+          schema:
+            format: markdown
+        label: text
+    config:
+      min:
+      max:
+      labelField:
+    label: Jury notes
+  - type: field_group_list
+    name: team
+    label: team
+    fields:
+      - type: text
+        name: firstname
+        label: firstname
+      - type: text
+        name: lastname
+        label: lastname
+  - name: category
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+        - winner
+        - comic
+        - video
+        - article
+        - crush
+      source:
+        type: simple
+        section:
+        file:
+        path:
+    label: Category
+    description:
+      Will be used to indicate the category of the laureate. Winner being
+      the 1st prize of the edition
+  - name: type
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+        - article
+        - novel
+        - video
+        - comic
+      source:
+        type: simple
+        section:
+        file:
+        path:
+    label: Type
+    description:
+      Will be used for the pill displaying the type of content attached to
+      the laureate application.
+  - name: youtube_video_id
+    type: text
+    config:
+      required: false
+    label: Youtube video ID
+  - type: file
+    name: file
+    label: file
+  - name: edition
+    type: select
+    default: '2021'
+    config:
+      required: false
+      options:
+        - '2021'
+        - '2022'
+      source:
+        type: simple
+        section:
+        file:
+        path:
+    label: Edition
+    description: '# of the PF contest edition'
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  - name: copyright
+    type: text
+    config:
+      required: false
+    label: Image copyright owner and date
+    description: If necessary
 pages:
-- content/en/laureates/2021/After Utopia.md
-- content/en/laureates/2021/Canopée.md
-- content/en/laureates/2021/En attendant Cléo.md
-- content/en/laureates/2021/Le Troisième Oeil.md
-- content/en/laureates/2021/Papillon perdu.md
-- content/en/laureates/2021/The Reconciliation of Knoll.md
-- content/en/laureates/2021/Vivaldi 2100.md
-- content/fr/laureates/2021/After Utopia.md
-- content/fr/laureates/2021/Canopée.md
-- content/fr/laureates/2021/En attendant Cléo.md
-- content/fr/laureates/2021/Le Troisième Oeil.md
-- content/fr/laureates/2021/Papillon perdu.md
-- content/fr/laureates/2021/The Reconciliation of Knoll.md
-- content/fr/laureates/2021/Vivaldi 2100.md
+  - content/en/laureates/2021/After Utopia.md
+  - content/en/laureates/2021/Canopée.md
+  - content/en/laureates/2021/En attendant Cléo.md
+  - content/en/laureates/2021/Le Troisième Oeil.md
+  - content/en/laureates/2021/Papillon perdu.md
+  - content/en/laureates/2021/The Reconciliation of Knoll.md
+  - content/en/laureates/2021/Vivaldi 2100.md
+  - content/fr/laureates/2021/After Utopia.md
+  - content/fr/laureates/2021/Canopée.md
+  - content/fr/laureates/2021/En attendant Cléo.md
+  - content/fr/laureates/2021/Le Troisième Oeil.md
+  - content/fr/laureates/2021/Papillon perdu.md
+  - content/fr/laureates/2021/The Reconciliation of Knoll.md
+  - content/fr/laureates/2021/Vivaldi 2100.md
