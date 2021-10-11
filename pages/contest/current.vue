@@ -49,20 +49,6 @@
         </v-col>
       </v-row>
     </section>
-    <!--     <section>
-      <v-row justify="center" no-gutters>
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <v-card
-            class="d-flex py-3 align-center"
-            :to="'/rules_' + $i18n.locale + '.pdf'"
-            target="_blank"
-          >
-            <v-icon x-large class="mx-6" color="black">mdi-file-pdf-box</v-icon>
-            <nuxt-content id="rules" :document="rules" class="mt-3" />
-          </v-card>
-        </v-col>
-      </v-row>
-    </section> -->
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
@@ -181,7 +167,6 @@ export default {
     ).fetch()
     const dates = await $content(app.i18n.locale + '/pages/2022/dates').fetch()
     const prize = await $content(app.i18n.locale + '/pages/2022/prize').fetch()
-    const rules = await $content(app.i18n.locale + '/pages/2022/rules').fetch()
     const more = await $content(app.i18n.locale + '/pages/2022/more').fetch()
     const jury = await $content(app.i18n.locale + '/jury/2022').fetch()
     const criterions = await $content(
@@ -194,7 +179,6 @@ export default {
       modalities,
       dates,
       prize,
-      rules,
       more,
       jury,
     }

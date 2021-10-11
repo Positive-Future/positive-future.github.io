@@ -89,13 +89,9 @@ export default {
   props: {},
   async asyncData({ app, $content }) {
     const intro = await $content(app.i18n.locale + '/pages/2021/intro').fetch()
-    const modalities = await $content(
-      app.i18n.locale + '/pages/2021/modalities'
-    ).fetch()
+
     const dates = await $content(app.i18n.locale + '/pages/2021/dates').fetch()
-    const prize = await $content(app.i18n.locale + '/pages/2021/prize').fetch()
     const rules = await $content(app.i18n.locale + '/pages/2021/rules').fetch()
-    const more = await $content(app.i18n.locale + '/pages/2021/more').fetch()
     const jury = await $content(app.i18n.locale + '/jury/2021').fetch()
     const laureates = await $content(app.i18n.locale + '/laureates/2021')
       .sortBy('order', 'asc')
@@ -103,11 +99,8 @@ export default {
 
     return {
       intro,
-      modalities,
       dates,
-      prize,
       rules,
-      more,
       jury,
       laureates: [
         ...laureates.filter((item) => item.category === 'winner'),
