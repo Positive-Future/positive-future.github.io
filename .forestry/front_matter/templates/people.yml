@@ -1,0 +1,34 @@
+---
+label: People
+hide_body: true
+fields:
+- type: text
+  name: firstname
+  label: firstname
+- type: text
+  name: lastname
+  label: lastname
+- type: file
+  name: image
+  label: image
+- type: text
+  name: copyright
+  label: copyright
+- type: text
+  name: title_and_institution
+  label: title_and_institution
+- type: textarea
+  name: presentation
+  label: presentation
+- type: text
+  name: linkedin
+  label: linkedin
+- type: text
+  name: twitter
+  label: twitter
+- type: text
+  name: wikipedia
+  label: wikipedia
+- type: text
+  name: website
+  label: website
