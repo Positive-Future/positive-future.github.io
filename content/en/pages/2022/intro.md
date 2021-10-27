@@ -5,7 +5,7 @@ tipDownload: Download the tips from the organizers to guide you and help you bui
   your narrative.
 
 ---
-Changes in the field of work have accelerated in the last few years. Technological innovations as well as evolutions in the modes of organization of work or contractual relations lead us to believe that jobs and work will be very different in the future from what we know today.
+Changes in the field of work have accelerated in the last few years. Technological innovations as well as evolution in the modes of organization of work or contractual relations lead us to believe that jobs and work will be very different in the future from what we know today.
 
 The appearance of new jobs, the possible generalization of self-employment, the new modalities of remote work, should have a considerable impact on our living environment, our housing, our modes of transportation and more globally our lifestyles.
 
