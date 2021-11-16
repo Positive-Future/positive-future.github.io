@@ -61,6 +61,7 @@ fields:
     - Photo
     - Video
     - Drawing
+    - Podcast
   label: Type
 - name: issues
   type: list
