@@ -16,10 +16,10 @@ ias:
   logo: "/who/ias.webp"
   text: The Paris Institute for Advanced Study is an independent research center in
     the humanities and social sciences aiming at fostering collective intelligence
-    through interdisciplinary research and new formats of intersectoral collaborations.
-    It invites high-level international researchers for fellowships in residence in
-    Paris, organizes scientific events, and sets up spaces for reflection and exchange
-    involving academics, citizens, political decision-makers and businesses.
+    through interdisciplinary research and the experimentation of new formats of intersectoral
+    collaborations. It invites high-level international researchers for fellowships
+    in residence in Paris, organizes scientific events, and sets up spaces for reflection
+    and exchange involving academics, citizens, political decision-makers and businesses.
   title: Paris Institute for Advanced Study
   url: https://www.paris-iea.fr/en/
 iff:
