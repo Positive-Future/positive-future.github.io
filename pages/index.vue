@@ -21,40 +21,61 @@
     <section style="margin-top: 5vh">
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
-          <v-row no-gutters>
+          <div class="headline mb-6">{{ $t('the-contest') }}</div>
+          <div class="text-body-1 mb-12">
+            {{
+              $t(
+                'many-of-you-participated-in-the-2021-edition-thank-you-very-much'
+              )
+            }}
+            <br />
+            {{
+              $t(
+                'more-information-about-the-next-edition-is-coming-soon-stay-tuned'
+              )
+            }}
+          </div>
+
+          <v-row>
             <v-col cols="12" sm="6">
-              <v-card max-width="80%" color="#FFE2A0" class="pa-6 mb-6" flat>
-                {{ $t('misc.ui.theme') }}
-                <h1>
-                  {{ index.theme }}
-                </h1>
-              </v-card>
-              <v-card flat class="py-6 px-1">
-                <h1 class="mt-2 mb-4">{{ dates.title }}</h1>
-                <b class="date_headline">{{ dates.schedule.opening.date }}</b>
-                <p>{{ dates.schedule.opening.content }}</p>
-                <b class="date_headline">{{ dates.schedule.deadline.date }}</b>
-                <p>{{ dates.schedule.deadline.content }}</p>
-                <b class="date_headline">{{ dates.schedule.awards.date }}</b>
-                <p>{{ dates.schedule.awards.content }}</p>
+              <v-card
+                color="#FFE2A0"
+                class="px-6 pt-6 pb-8"
+                flat
+                :to="localePath('/contest/laureates')"
+                nuxt
+              >
+                <div class="d-inline-flex justify-center align-center">
+                  <v-icon x-large class="rotate-24 mr-6" color="black"
+                    >mdi-seal-variant</v-icon
+                  >
+                  <div class="subtitle">
+                    {{
+                      $t(
+                        'discover-the-laureates-of-the-2021-edition-on-the-city-in-2021'
+                      )
+                    }}
+                  </div>
+                </div>
               </v-card>
             </v-col>
             <v-col cols="12" sm="6">
-              <iframe
-                title="Positive Future presentation video"
-                width="100%"
-                height="315"
-                :src="
-                  'https://www.youtube.com/embed/' +
-                  ($i18n.locale === 'en' ? 'qEMY1uWqQbA' : '4HIMlONqTgw') +
-                  '?autoplay=1&mute=1&loop=1&showinfo=0&playlist=' +
-                  ($i18n.locale === 'en' ? 'qEMY1uWqQbA' : '4HIMlONqTgw')
-                "
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                @load="loaded()"
-              ></iframe>
+              <v-card
+                color="#FFE2A0"
+                class="px-6 pt-6 pb-8"
+                flat
+                nuxt
+                :to="localePath('/resources')"
+              >
+                <div class="d-inline-flex justify-center align-center">
+                  <v-icon x-large class="rotate-24 mr-6" color="black"
+                    >mdi-file-cog</v-icon
+                  >
+                  <div class="subtitle">
+                    {{ $t('find-resources-to-prepare-for-the-contest') }}
+                  </div>
+                </div>
+              </v-card>
             </v-col>
           </v-row>
         </v-col>
@@ -67,7 +88,7 @@
           <v-card
             color="#4FD4C7"
             class="px-6 pt-6 pb-8"
-            style="margin-bottom: -60px; max-width: 50%"
+            style="margin-bottom: -60px; max-width: 70%"
             flat
             href="http://eepurl.com/hgbB6f"
             target="_blank"

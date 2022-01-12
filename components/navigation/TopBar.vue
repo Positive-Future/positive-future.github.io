@@ -79,14 +79,14 @@
                         </template>
 
                         <v-list>
-                          <v-list-item
+                          <!--          <v-list-item
                             nuxt
                             :to="localePath('/contest/current')"
                           >
                             <v-list-item-title>
                               {{ $t('edition-2022') }}
                             </v-list-item-title>
-                          </v-list-item>
+                          </v-list-item> -->
                           <v-list-item
                             nuxt
                             :to="localePath('/contest/previous')"
