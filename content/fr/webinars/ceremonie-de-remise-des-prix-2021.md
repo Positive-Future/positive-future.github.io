@@ -9,6 +9,7 @@ image: '/30septcarouselsitepf_FR.jpg'
 background_color: ''
 file: ''
 order: 12
+date: 2021-09-30T16:00:25Z
 ---
 
 Le jury de Positive Future est arrivé au bout de ses délibérations !

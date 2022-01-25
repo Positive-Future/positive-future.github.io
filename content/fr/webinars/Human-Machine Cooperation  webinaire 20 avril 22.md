@@ -10,12 +10,14 @@ date: 2022-04-20T16:00:00Z
 categories:
   - event
 featured: true
-image: '/image-annonce-webinaire200422fr.png'
+image: '/webinaire-20-04-2022.png'
 youtube_video_id: ''
 background_color: ''
 file: ''
 link: ''
 ---
+
+**![](/image-annonce-webinaire200422fr.png)**
 
 **L'augmentation de la puissance de calcul a permis, au cours de la dernière décennie, d'améliorer considérablement les technologies d'IA, notamment la robotique, la vision artificielle et la reconnaissance vocale.**
 
@@ -29,4 +31,9 @@ Par "augmentation humaine", nous entendons une technologie qui améliore la prod
 
 **_Markus Furendal_** _est chercheur postdoctoral au département des sciences politiques de l'université de Stockholm, où il étudie des questions liées à la politique, à la philosophie et à l'économie. Il travaille actuellement sur un projet concernant la gouvernance mondiale de l'intelligence artificielle et la manière dont les avantages et les inconvénients créés par une IA de plus en plus performante devraient être répartis._
 
+<<<<<<< HEAD
 **Gratuit sur inscription obligatoire** [**ici**](https://my.weezevent.com/the-future-of-human-machine-cooperation-in-the-workplace)
+=======
+**Gratuit sur inscription obligatoire** [**ici**](https://my.weezevent.com/the-future-of-human-machine-cooperation-in-the-workplace)
+
+> > > > > > > 0332f97179b3d0b4b29ea7c70a21090c677d797b
