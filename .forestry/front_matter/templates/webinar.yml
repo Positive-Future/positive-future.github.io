@@ -7,7 +7,7 @@ fields:
   label: Published
   default: false
   description: Switch to green if it is ready to publish
-- name: webinar-title
+- name: title
   type: text
   config:
     required: false
@@ -22,7 +22,7 @@ fields:
   label: Date
   description: ''
   config:
-    required: false
+    required: true
     date_format: 
     time_format: 
     display_utc: false
