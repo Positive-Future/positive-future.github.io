@@ -14,6 +14,13 @@ fields:
 - type: boolean
   name: new_tab_link
   label: new_tab_link
+- name: link_fr
+  type: text
+  config:
+    required: false
+  label: Link fr
+  description: Only to be used when the link is not the same between languages (including
+    webinars URLs, etc.)
 pages:
 - content/en/carousel/More info about the 2021 works.md
 - content/en/carousel/Video the unveiling of the laureates.md
