@@ -339,11 +339,11 @@ export default {
       sortBy: 'name',
       categories: [
         { name: 'think_about_the_future', icon: 'head-cog' },
-        { name: 'think_of_your_ideal_city', icon: 'city' },
         {
           name: 'face_our_challenges_today',
           icon: 'white-balance-sunny',
         },
+        { name: 'stimulate_your_creativity', icon: 'creation' },
         { name: 'learn_from_the_past', icon: 'rewind' },
       ],
       filters: {
