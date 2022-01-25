@@ -1,8 +1,9 @@
 ---
 lang: FR
 name: 'Les villes, avenir de l’humanité ? '
-author: "« Manière de voir » #175 , Le Monde diplomatique"
-description_en: Toujours plus grandes, toujours plus peuplées, toujours plus démesurées...
+author: '« Manière de voir » #175 , Le Monde diplomatique'
+description_en:
+  Toujours plus grandes, toujours plus peuplées, toujours plus démesurées...
   Les villes hébergent depuis une douzaine d’années plus de la moitié de l’humanité.
   La métropolisation du monde entraîne avec elle son lot de ruptures et de désorganisations.
   Elle est taillée pour les plus riches et les plus diplômés, qui captent l’espace
@@ -12,7 +13,8 @@ description_en: Toujours plus grandes, toujours plus peuplées, toujours plus d�
   parfois, résistent. À la faveur de la pandémie de Covid-19, le désir d’un retour
   à la campagne alimente l’espoir d’une vie plus saine. Surtout chez ceux qui en ont
   les moyens.
-description_fr: Toujours plus grandes, toujours plus peuplées, toujours plus démesurées...
+description_fr:
+  Toujours plus grandes, toujours plus peuplées, toujours plus démesurées...
   Les villes hébergent depuis une douzaine d’années plus de la moitié de l’humanité.
   La métropolisation du monde entraîne avec elle son lot de ruptures et de désorganisations.
   Elle est taillée pour les plus riches et les plus diplômés, qui captent l’espace
@@ -23,20 +25,19 @@ description_fr: Toujours plus grandes, toujours plus peuplées, toujours plus d�
   à la campagne alimente l’espoir d’une vie plus saine. Surtout chez ceux qui en ont
   les moyens.
 category:
-- think_of_your_ideal_city
-- face_our_challenges_today
+  - think_about_the_future
+  - face_our_challenges_today
 type:
-- Drawing
-- Article
+  - Drawing
+  - Article
 issues:
-- transport
-- urban_spatial_planning
+  - transport
+  - urban_spatial_planning
 perspectives:
-- opinions
-- magazine
-- foresight_studies
+  - opinions
+  - magazine
+  - foresight_studies
 date: 03/2021
 file: ''
 url: https://www.monde-diplomatique.fr/mav/175/
-
 ---

@@ -5,19 +5,18 @@ author: Nielsen concept
 description_en: Presentation of Nielsen Concept for carbon-free cities
 description_fr: Presentation of Nielsen Concept for carbon-free cities
 category:
-- stimulate_your_creativity
-- face_our_challenges_today
-- think_of_your_ideal_city
+  - stimulate_your_creativity
+  - face_our_challenges_today
+  - think_about_the_future
 type:
-- Photo
+  - Photo
 issues:
-- transport
-- sciences_technologies
-- environment
+  - transport
+  - sciences_technologies
+  - environment
 perspectives:
-- case_studies
+  - case_studies
 date: 06/08/2020
 file: ''
 url: https://www.youtube.com/watch?v=d6tOvd7PPjk
-
 ---

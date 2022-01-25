@@ -23,7 +23,7 @@
               :key="index"
               cols="12"
               sm="6"
-              md="4"
+              md="3"
             >
               <v-hover v-slot="{ hover }">
                 <v-card
@@ -338,9 +338,7 @@ export default {
       itemsPerPage: 10,
       sortBy: 'name',
       categories: [
-        { name: 'imagine_a_far_away_future', icon: 'head-cog' },
-        { name: 'stimulate_your_creativity', icon: 'creation' },
-        { name: 'stay_positive', icon: 'arm-flex' },
+        { name: 'think_about_the_future', icon: 'head-cog' },
         { name: 'think_of_your_ideal_city', icon: 'city' },
         {
           name: 'face_our_challenges_today',

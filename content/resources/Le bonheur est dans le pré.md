@@ -2,7 +2,8 @@
 lang: FR
 name: 'Explorons nos futurs (heureux) : Le bonheur est dans le pré ! - Atelier'
 author: Clap, Pierre & Gracieux, Benjamin
-description_en: 'L’atelier « Quelles formes prendront les villes en 2040 » a imaginé
+description_en:
+  'L’atelier « Quelles formes prendront les villes en 2040 » a imaginé
   des futurs urbains « heureux » en invitant des experts à réfléchir sur ce que seront
   les villes dans vingt ans, en partant du postulat qu’elles auront réussi leurs transitions
   énergétique et écologique. Parce que les limites en sont floues, la notion même
@@ -14,7 +15,8 @@ description_en: 'L’atelier « Quelles formes prendront les villes en 2040 » a
   c’est-à-dire un territoire de vie cohérent à la fois urbain et naturel permettant
   d’être relativement autonome en production tant alimentaire qu’en matériaux de construction,
   voire en production énergétique.'
-description_fr: 'L’atelier « Quelles formes prendront les villes en 2040 » a imaginé
+description_fr:
+  'L’atelier « Quelles formes prendront les villes en 2040 » a imaginé
   des futurs urbains « heureux » en invitant des experts à réfléchir sur ce que seront
   les villes dans vingt ans, en partant du postulat qu’elles auront réussi leurs transitions
   énergétique et écologique. Parce que les limites en sont floues, la notion même
@@ -27,22 +29,20 @@ description_fr: 'L’atelier « Quelles formes prendront les villes en 2040 » a
   d’être relativement autonome en production tant alimentaire qu’en matériaux de construction,
   voire en production énergétique.'
 category:
-- think_of_your_ideal_city
-- stimulate_your_creativity
-- imagine_a_far_away_future
+  - think_about_the_future
+  - stimulate_your_creativity
 type:
-- Article
+  - Article
 issues:
-- urban_spatial_planning
-- energy
-- food
-- agriculture_forestry_fishing
-- architecture
+  - urban_spatial_planning
+  - energy
+  - food
+  - agriculture_forestry_fishing
+  - architecture
 perspectives:
-- magazine
-- foresight_studies
-date: "2021"
+  - magazine
+  - foresight_studies
+date: '2021'
 file: ''
 url: http://www.fnau.org/wp-content/uploads/2021/03/atelier_villes-1.pdf
-
 ---
