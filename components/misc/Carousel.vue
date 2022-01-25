@@ -4,7 +4,11 @@
       v-for="(item, i) in carousel"
       :key="i"
       :nuxt="!item.new_tab_link"
-      :to="localePath(item.link)"
+      :to="
+        $i18n.locale === 'en'
+          ? localePath(item.link)
+          : localePath(item.link_fr || item.link)
+      "
       :target="item.new_tab_link ? '_blank' : 'self'"
       :aspect-ratio="ratio"
       :lazy-src="$img(item.picture, { width: 10, quality: 70 })"
