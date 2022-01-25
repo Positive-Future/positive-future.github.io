@@ -8,7 +8,7 @@ date: 2022-04-20T16:00:00.000+00:00
 categories:
 - event
 featured: true
-image: "/webinaire-20-04-2022.png"
+image: "/thisisengineering-raeng-wjowazupass-unsplash.jpg"
 youtube_video_id: ''
 background_color: ''
 file: ''
