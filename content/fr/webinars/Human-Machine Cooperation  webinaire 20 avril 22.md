@@ -1,6 +1,6 @@
 ---
-edition: ''
-published: false
+edition: '2022'
+published: true
 webinar-title: 'The Future of Human-Machine Cooperation in the Workplace: How Will
   AI Impact the Development of Human Potential?'
 subtitle: Par Karim Jebabri (Institute for Futures Studies) et Markus Furendal (Stockholm
@@ -8,7 +8,7 @@ subtitle: Par Karim Jebabri (Institute for Futures Studies) et Markus Furendal (
 date: 2022-04-20T16:00:00Z
 categories:
 - event
-featured: false
+featured: true
 image: "/image-annonce-webinaire200422fr.png"
 youtube_video_id: ''
 background_color: ''
