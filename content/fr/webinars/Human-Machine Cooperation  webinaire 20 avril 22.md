@@ -8,7 +8,7 @@ date: 2022-04-20T16:00:00.000+00:00
 categories:
 - event
 featured: true
-image: "/thisisengineering-raeng-wjowazupass-unsplash2.jpg"
+image: "/thisisengineering-raeng-wjowazupass-unsplash-2.jpg"
 youtube_video_id: ''
 background_color: ''
 file: ''
