@@ -7,8 +7,8 @@ subtitle: Par Karim Jebabri (Institute for Futures Studies) et Markus Furendal (
 date: 2022-04-20T16:00:00.000+00:00
 categories:
 - event
-featured: false
-image: "/thisisengineering-raeng-wjowazupass-unsplash.jpg"
+featured: true
+image: "/thisisengineering-raeng-wjowazupass-unsplash2.jpg"
 youtube_video_id: ''
 background_color: ''
 file: ''
