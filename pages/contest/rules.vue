@@ -17,13 +17,13 @@
 <script>
 export default {
   async asyncData({ app, $content }) {
-    const contest = await $content(app.i18n.locale + '/pages/contest').fetch()
+    /*     const contest = await $content(app.i18n.locale + '/pages/contest').fetch()
     const index = await $content(app.i18n.locale + '/pages/index').fetch()
 
     return {
       contest,
       index,
-    }
+    } */
   },
   data() {
     return {}

@@ -12,10 +12,10 @@
             {{ $t('form.application-closed-text') }}
           </p>
           <p>
-            {{ $t('form.application-closed-text2') }}
+            <!--             {{ $t('form.application-closed-text2') }}
             <nuxt-link to="/next">{{
               $t('form.application-closed-text3')
-            }}</nuxt-link>
+            }}</nuxt-link> -->
           </p>
         </v-col>
       </v-row>
