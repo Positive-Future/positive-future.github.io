@@ -11,13 +11,6 @@ fields:
 - type: text
   name: link
   label: link
-- name: link_fr
-  type: text
-  config:
-    required: false
-  label: link fr
-  description: Only to be used when the link is not the same between languages (including
-    webinars URLs, etc.)
 - type: boolean
   name: new_tab_link
   label: new_tab_link
