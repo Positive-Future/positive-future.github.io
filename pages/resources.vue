@@ -341,7 +341,7 @@ export default {
         { name: 'think_about_the_future', icon: 'head-cog' },
         {
           name: 'face_our_challenges_today',
-          icon: 'white-balance-sunny',
+          icon: 'earth',
         },
         { name: 'stimulate_your_creativity', icon: 'creation' },
         { name: 'learn_from_the_past', icon: 'rewind' },
