@@ -8,7 +8,7 @@ date: 2022-04-20T16:00:00.000+00:00
 categories:
 - event
 featured: true
-image: "/webinaire-20-04-2022.png"
+image: "/thisisengineering-raeng-wjowazupass-unsplash-2.jpg"
 youtube_video_id: ''
 background_color: ''
 file: ''
@@ -31,5 +31,4 @@ Par "augmentation humaine", nous entendons une technologie qui améliore la prod
 
 **_Markus Furendal_** _est chercheur postdoctoral au département des sciences politiques de l'université de Stockholm, où il étudie des questions liées à la politique, à la philosophie et à l'économie. Il travaille actuellement sur un projet concernant la gouvernance mondiale de l'intelligence artificielle et la manière dont les avantages et les inconvénients créés par une IA de plus en plus performante devraient être répartis._
 
-### 
-**Gratuit sur inscription obligatoire** [**ici**](https://my.weezevent.com/the-future-of-human-machine-cooperation-in-the-workplace)
+#### **Gratuit sur inscription obligatoire** [**ici**](https://my.weezevent.com/the-future-of-human-machine-cooperation-in-the-workplace)
