@@ -47,8 +47,12 @@ export default {
       { property: 'twitter:card', content: 'summary' }, // TODO: update
       { property: 'twitter:image:src', content: '/images/logo.png' }, // TODO: update
       { property: 'og:url', content: process.env.URL },
-      { property: 'og:title', content: process.env.title },
-      { property: 'og:description', content: process.env.desc },
+      { property: 'og:title', content: 'Positive Future' },
+      {
+        property: 'og:description',
+        content:
+          'Climate change and pollution, the acceleration of the digital revolution, an aging population, social tensions and pandemics are forcing us to review our models of society and start thinking today about the "world to come". To do this, we need to be able to draw on visions of desirable futures that can mobilize energies to bring about positive change.',
+      },
       { name: 'twitter:site', content: process.env.URL },
       { name: 'twitter:card', content: 'summary_large_image' }, // TODO: update
       { name: 'twitter:image', content: process.env.LOGO },

@@ -34,7 +34,7 @@
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
           <v-card class="px-6 pt-6 pb-0 mb-0" flat color="transparent">
-            <h1 class="mb-4">
+            <h1 id="jury" class="mb-4">
               {{ $t('jury-members') }}
             </h1>
             <people-block
