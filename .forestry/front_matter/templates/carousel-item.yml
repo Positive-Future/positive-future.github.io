@@ -14,6 +14,15 @@ fields:
 - type: boolean
   name: new_tab_link
   label: new_tab_link
+- name: date
+  type: datetime
+  label: date
+  description: Not displayed, used to sort the items
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
 pages:
 - content/en/carousel/More info about the 2021 works.md
 - content/en/carousel/Video the unveiling of the laureates.md
