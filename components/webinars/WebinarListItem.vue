@@ -19,28 +19,26 @@
       <p v-else v-html="highlight(item.title, search)"></p>
     </v-avatar>
     <div class="flex-column align-content-start mt-3">
-      <v-card-title class="d-flex flex-row align-center">
+      <v-card-title class="d-flex flex-row align-center pb-0">
         <!-- 
         I had to wrap the title in a paragraph node to avoid inconsistent line breaks with search highlights. 
         If your CSS foo is better than mine, the cleaner way is welcome. 
         -->
         <p
           style="
-            font-weight: 500;
             letter-spacing: 0.0125em;
-            line-height: 2rem;
             font-family: 'Poppins', sans-serif;
-            font-size: 1.15rem;
             word-break: normal;
           "
+          class="text-h6"
         >
-          <v-chip class="mr-2" label small>
+          <!--    <v-chip class="mr-2" label small>
             {{
               item.edition === 2021
                 ? $t('work-in-2100')
                 : $t('the-city-in-2100')
             }}
-          </v-chip>
+          </v-chip> -->
           <span v-html="highlight(item.title, search)"></span>
         </p>
       </v-card-title>
