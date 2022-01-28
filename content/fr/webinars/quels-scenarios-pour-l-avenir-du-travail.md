@@ -22,6 +22,6 @@ Comment réfléchir sur l'avenir du travail ? La prise en considération de l'hi
 
 **_Dominique Méda_** _est actuellement professeure de sociologie à l’Université Paris Dauphine, directrice de l'Institut de recherche Interdisciplinaire en Sciences Sociales( IRISSO). Ancienne élève de l’ENS et de l’ENA, agrégée de philosophie, elle est habilitée à diriger des recherches en sociologie. Elle est également Inspectrice Générale des Affaires Sociales. Ses thèmes de recherche concernent les politiques sociales et de l'emploi ainsi que les questions relatives à la transition écologique. Elle a notamment publié récemment avec Isabelle Ferreras et Julie Battilana, Manifeste Travail. Démocratiser. Démarchandiser. Dépolluer (Le Seuil, 2020)_
 
-##### Inscriptions obligatoire [ici ](https://my.weezevent.com/webinaire-quels-scenarios-pour-lavenir-du-travail)pour recevoir le lien de connexion
+##### Inscription obligatoire [ici ](https://my.weezevent.com/webinaire-quels-scenarios-pour-lavenir-du-travail)pour recevoir le lien de connexion
 
 ##### 
