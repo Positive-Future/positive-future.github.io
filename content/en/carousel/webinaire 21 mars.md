@@ -4,6 +4,6 @@ published: true
 date: 
 picture: "/webinaire-21-03-2022en.png"
 link: ''
-new_tab_link: false
+new_tab_link: true
 
 ---
