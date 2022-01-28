@@ -1,13 +1,13 @@
 ---
 edition: ''
-published: false
+published: true
 title: 'Quels scénarios pour l''avenir du travail ? '
 subtitle: By Dominique Méda (Paris Dauphine University)
 date: 2022-03-21T17:00:00Z
 categories:
 - event
 featured: false
-image: "/webinaire-21-03-2022en.png"
+image: "/ant-rozetsky-hxolltswrpm-unsplash.jpg"
 youtube_video_id: ''
 background_color: ''
 file: ''
