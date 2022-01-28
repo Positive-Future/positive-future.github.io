@@ -1,5 +1,5 @@
 ---
-carousel_title: Webinaire 21 mars
+carousel_title: Ne manquez pas nos prochains webinaires
 published: true
 date: 
 picture: "/webinaire-21-03-2022fr.png"
