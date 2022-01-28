@@ -16,7 +16,7 @@ link: ''
 ---
 ![](/image-annonce-webinaire210322.png)
 
-##### Présentation
+**Présentation**
 
 Comment réfléchir sur l'avenir du travail ? La prise en considération de l'histoire longue de celui-ci, le recul historique peuvent-ils nous permettre d'y voir plus clair ? Quels sont les scénarios imaginables qui peuvent nous aider à distinguer les futurs désirables et les voies pour y parvenir ?
 
@@ -24,6 +24,6 @@ Comment réfléchir sur l'avenir du travail ? La prise en considération de l'hi
 
 ![](/photo-dominique-meda-copie.png)
 
-##### Inscription obligatoire [ici ](https://my.weezevent.com/webinaire-quels-scenarios-pour-lavenir-du-travail)pour recevoir le lien de connexion
+**Inscription obligatoire** [**ici**](https://my.weezevent.com/webinaire-quels-scenarios-pour-lavenir-du-travail) **pour recevoir le lien de connexion**
 
 ##### 
