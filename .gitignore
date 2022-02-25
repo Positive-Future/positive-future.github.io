@@ -98,3 +98,6 @@ dist/
 #Npm
 yarn.lock
 
+
+#local history vscode plugin (aka life-saver)
+.history/
