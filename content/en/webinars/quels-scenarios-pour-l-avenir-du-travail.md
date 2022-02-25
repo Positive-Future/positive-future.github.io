@@ -12,6 +12,7 @@ youtube_video_id: ''
 background_color: ''
 file: ''
 link: ''
+fr: content/en/webinars/quels-scenarios-pour-l-avenir-du-travail.md
 
 ---
 ![](/image-annonce-webinaire210322en.png)
