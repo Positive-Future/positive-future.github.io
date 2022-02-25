@@ -3,7 +3,7 @@ export default async function ({ route, $content, redirect, app }) {
     if (route.params.lang !== app.i18n.locale) {
       await app.i18n.setLocale(route.params.lang)
     }
-    const original = await $content(app.i18n.locale + '/webinars')
+    const original = await $content(route.params.lang + '/webinars')
       .where({ order: route.params.id })
       .fetch()
 
