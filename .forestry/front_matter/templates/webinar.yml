@@ -91,6 +91,19 @@ fields:
       file: 
       path: 
   label: Edition
+- name: fr
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: webinars-b5d109fc-56b0-4aee-bcd3-d7d7ae1c10f0
+      file: 
+      path: 
+  label: fr
+  description: 'Only necessary for EN version. Used to redirect from newsletter links '
 pages:
 - content/en/webinars/quels-scenarios-pour-l-avenir-du-travail.md
 - content/en/webinars/the-future-of-human-machine-cooperation-in-the-workplace-how-will-ai-impact-the-development-of-human-potential.md
