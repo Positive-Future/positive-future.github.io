@@ -6,12 +6,6 @@ export default async function ({ route, store, $content, redirect, app }) {
       .where({ order: +route.params.id })
       .fetch()
 
-    return original.length
-      ? redirect(
-          app.i18n.locale === 'en'
-            ? ''
-            : '/fr' + '/webinars/' + original[0].slug
-        )
-      : true
+    return original.length ? redirect('/webinars/' + original[0].slug) : true
   }
 }

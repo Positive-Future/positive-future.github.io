@@ -5,13 +5,8 @@ export default async function ({ route, store, $content, redirect, app }) {
     const original = await $content(app.i18n.locale + '/webinars')
       .where({ order: +route.params.id })
       .fetch()
+    console.log('original: ', original)
 
-    return original.length
-      ? redirect(
-          app.i18n.locale === 'en'
-            ? ''
-            : '/fr' + '/webinars/' + original[0].slug
-        )
-      : true
+    return original.length ? redirect('/webinars/' + original[0].slug) : true
   }
 }

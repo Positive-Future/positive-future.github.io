@@ -1,24 +1,22 @@
 ---
 edition: ''
 published: true
-title:
-  'The Future of Human-Machine Cooperation in the Workplace: How Will AI Impact
+title: 'The Future of Human-Machine Cooperation in the Workplace: How Will AI Impact
   the Development of Human Potential?'
-subtitle:
-  By Karim Jebari (Institute for Futures Studies), Markus Furendal (Stockholm
+subtitle: By Karim Jebari (Institute for Futures Studies), Markus Furendal (Stockholm
   University)
 date: 2022-04-20T16:00:00.000+00:00
 categories:
-  - event
+- event
 featured: false
-image: '/thisisengineering-raeng-wjowazupass-unsplash-2.jpg'
+image: "/thisisengineering-raeng-wjowazupass-unsplash-2.jpg"
 youtube_video_id: ''
 background_color: ''
 file: ''
 link: ''
-order: 11
----
+fr: content/en/webinars/Human-Machine Cooperation  webinar 20 avril 22.md
 
+---
 ![](/webinaire-20-04-2022englishfinal.png)
 
 #### Presentation
@@ -35,4 +33,4 @@ By “human augmentation” we mean technology that improves productivity while 
 
 #### Mandatory registration [HERE](https://my.weezevent.com/the-future-of-human-machine-cooperation-in-the-workplace)
 
-####
+#### 

@@ -2,24 +2,21 @@
 edition: '2022'
 published: true
 webinar-title: ''
-subtitle:
-  Par Karim Jebari (Institute for Futures Studies) et Markus Furendal (Stockholm
+subtitle: Par Karim Jebari (Institute for Futures Studies) et Markus Furendal (Stockholm
   University)
 date: 2022-04-20T16:00:00.000+00:00
 categories:
-  - event
+- event
 featured: true
-image: '/thisisengineering-raeng-wjowazupass-unsplash-2.jpg'
+image: "/thisisengineering-raeng-wjowazupass-unsplash-2.jpg"
 youtube_video_id: ''
 background_color: ''
 file: ''
 link: ''
-title:
-  'The Future of Human-Machine Cooperation in the Workplace: How Will AI Impact
+title: 'The Future of Human-Machine Cooperation in the Workplace: How Will AI Impact
   the Development of Human Potential?'
-order: 11
----
 
+---
 **![](/image-annonce-webinaire200422francais-final.png)**
 
 **L'augmentation de la puissance de calcul a permis, au cours de la dernière décennie, d'améliorer considérablement les technologies d'IA, notamment la robotique, la vision artificielle et la reconnaissance vocale.**

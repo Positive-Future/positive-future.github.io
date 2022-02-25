@@ -17,7 +17,7 @@
           },
         ]"
       >
-        <template v-slot:divider>
+        <template #divider>
           <v-icon>mdi-chevron-right</v-icon>
         </template>
       </v-breadcrumbs>

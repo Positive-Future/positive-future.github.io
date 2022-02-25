@@ -16,7 +16,7 @@ youtube_video_id: ''
 background_color: ''
 file: ''
 link: ''
-order: 11
+fr: content/fr/webinars/Human-Machine Cooperation webinaire 20 avril 22.md
 ---
 
 ![](/webinaire-20-04-2022englishfinal.png)
