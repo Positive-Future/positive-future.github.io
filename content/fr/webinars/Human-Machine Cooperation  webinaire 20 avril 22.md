@@ -17,7 +17,7 @@ link: ''
 title:
   'The Future of Human-Machine Cooperation in the Workplace: How Will AI Impact
   the Development of Human Potential?'
-order: 11
+order: '11'
 ---
 
 **![](/image-annonce-webinaire200422francais-final.png)**
