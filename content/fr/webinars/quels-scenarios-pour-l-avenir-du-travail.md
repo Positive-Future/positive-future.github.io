@@ -3,7 +3,7 @@ edition: ''
 published: true
 title: 'Quels scénarios pour l''avenir du travail ? '
 subtitle: Par Dominique Méda (Université Paris Dauphine)
-date: 2022-03-21T17:00:00Z
+date: 2022-03-21T17:00:00.000+00:00
 categories:
 - event
 featured: false
@@ -12,6 +12,7 @@ youtube_video_id: ''
 background_color: ''
 file: ''
 link: ''
+order: "10"
 
 ---
 ![](/image-annonce-webinaire210322.png)
@@ -26,4 +27,4 @@ Comment réfléchir sur l'avenir du travail ? La prise en considération de l'hi
 
 **Inscription obligatoire** [**ici**](https://my.weezevent.com/webinaire-quels-scenarios-pour-lavenir-du-travail) **pour recevoir le lien de connexion**
 
-##### 
+#####
