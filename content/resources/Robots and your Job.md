@@ -1,6 +1,6 @@
 ---
 lang: EN
-name: 'Robots and your job: how automation is changing the workplace'
+name: The Robots Are Coming. Is Your Firm Ready?
 author: Lynn Wu
 description_en: The automation of work as seen from businesses. Elements on a comprehensive
   study on how automation affects employment, labor, strategic priorities, and other
