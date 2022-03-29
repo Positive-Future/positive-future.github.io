@@ -18,6 +18,7 @@ category:
 type:
 - Video
 issues:
+- education
 - public_administration
 - work
 - transport
