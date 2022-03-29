@@ -18,6 +18,7 @@ category:
 type:
 - Video
 issues:
+- health
 - education
 - public_administration
 - work
