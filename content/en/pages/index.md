@@ -1,6 +1,6 @@
 ---
 title: Positive Future
-subtitle: Stimulating the imagination and promoting a desirable and liveable future!
+subtitle: Stimulating the imagination and promoting a desirable and livable future!
 theme: Work in 2100
 
 ---
