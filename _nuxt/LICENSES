@@ -51,6 +51,13 @@ PERFORMANCE OF THIS SOFTWARE.
 
 
 /*!
+ * vue-add-to-calendar v1.0.7 
+ * (c) 2021 nicolasbeauvais
+ * Released under the MIT License.
+ */
+
+
+/*!
   * vue-router v3.5.3
   * (c) 2021 Evan You
   * @license MIT
@@ -73,11 +80,4 @@ PERFORMANCE OF THIS SOFTWARE.
  * vuex v3.6.2
  * (c) 2021 Evan You
  * @license MIT
- */
-
-
-/*!
- * vue-add-to-calendar v1.0.7 
- * (c) 2021 nicolasbeauvais
- * Released under the MIT License.
  */
