@@ -1,5 +1,5 @@
 ---
-carousel_title: Ne manquez pas nos prochains webinaires
+carousel_title: Revoir la vidéo en replay
 published: true
 date: 
 picture: "/webinaire-21-03-2022fr.png"

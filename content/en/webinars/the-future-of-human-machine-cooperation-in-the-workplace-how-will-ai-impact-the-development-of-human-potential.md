@@ -31,6 +31,6 @@ By “human augmentation” we mean technology that improves productivity while 
 
 **_Markus Furendal_** _is a postdoctoral researcher in the Department of Political Science, Stockholm University, researching issues relating to politics, philosophy and economics. He currently works in a project concerning the global governance of artificial intelligence, and how the benefits and burdens created by increasingly capable AI ought to be distributed._
 
-#### Mandatory registration [HERE](https://my.weezevent.com/the-future-of-human-machine-cooperation-in-the-workplace)
+#### Replay soon available!
 
-####
+#### 

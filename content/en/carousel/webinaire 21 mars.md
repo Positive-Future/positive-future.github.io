@@ -1,5 +1,5 @@
 ---
-carousel_title: Don't miss our next webinar!
+carousel_title: Watch again the webinar
 published: true
 date: 
 picture: "/webinaire-21-03-2022en.png"
