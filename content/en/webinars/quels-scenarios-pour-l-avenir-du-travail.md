@@ -16,8 +16,6 @@ fr: content/en/webinars/quels-scenarios-pour-l-avenir-du-travail.md
 order: "10"
 
 ---
-![](/image-annonce-webinaire210322en.png)
-
 **Presentation**
 
 How can we think about the future of work? Can taking into consideration the long history of work and historical hindsight help us to see things more clearly? What are the imaginable scenarios that can help us to distinguish desirable futures and the ways to get there?
