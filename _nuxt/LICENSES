@@ -1,4 +1,11 @@
 /*!
+ * vue-add-to-calendar v1.0.7 
+ * (c) 2021 nicolasbeauvais
+ * Released under the MIT License.
+ */
+
+
+/*!
  * The buffer module from node.js, for the browser.
  *
  * @author   Feross Aboukhadijeh <http://feross.org>
@@ -67,17 +74,3 @@ LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
-
-
-/*!
- * vue-add-to-calendar v1.0.7 
- * (c) 2021 nicolasbeauvais
- * Released under the MIT License.
- */
-
-
-/*!
- * vue-add-to-calendar v1.0.7 
- * (c) 2021 nicolasbeauvais
- * Released under the MIT License.
- */
