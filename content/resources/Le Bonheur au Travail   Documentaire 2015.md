@@ -1,6 +1,6 @@
 ---
 lang: FR
-name: Le Bonheur au Travail   Documentaire 2015
+name: Le Bonheur au Travail
 author: CGT Canon
 description_en: ''
 description_fr: ''

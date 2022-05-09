@@ -1,6 +1,6 @@
 ---
 lang: EN
-name: Happiness At Work 2015
+name: Happiness At Work
 author: Niels Arlene
 description_en: ''
 description_fr: ''
