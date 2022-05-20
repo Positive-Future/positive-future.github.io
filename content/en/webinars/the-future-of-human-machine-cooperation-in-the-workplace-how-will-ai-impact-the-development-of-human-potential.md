@@ -17,8 +17,6 @@ link: ''
 order: "11"
 
 ---
-![](/webinaire-20-04-2022englishfinal.png)
-
 #### Presentation
 
 The increase in computing power has, in the last decade, led to significant improvements in AI technologies, including robotics, machine vision and speech recognition. According to several prominent thinkers that have discussed the future of work and automation, there are two main scenarios for how the development of AI in the workplace will impact labor markets: (1) replacing workers with machines; and (2) using machines to improve worker productivity.
@@ -31,6 +29,8 @@ By “human augmentation” we mean technology that improves productivity while 
 
 **_Markus Furendal_** _is a postdoctoral researcher in the Department of Political Science, Stockholm University, researching issues relating to politics, philosophy and economics. He currently works in a project concerning the global governance of artificial intelligence, and how the benefits and burdens created by increasingly capable AI ought to be distributed._
 
-#### Replay soon available!
+#### Watch the webinar
+
+[https://www.youtube.com/watch?v=AwxkhJp0P14](https://www.youtube.com/watch?v=AwxkhJp0P14 "https://www.youtube.com/watch?v=AwxkhJp0P14")
 
 #### 
