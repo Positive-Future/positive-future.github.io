@@ -2,26 +2,22 @@
 edition: '2022'
 published: true
 webinar-title: ''
-subtitle:
-  Par Karim Jebari (Institute for Futures Studies) et Markus Furendal (Stockholm
+subtitle: Par Karim Jebari (Institute for Futures Studies) et Markus Furendal (Stockholm
   University)
 date: 2022-04-20T16:00:00.000+00:00
 categories:
-  - event
+- event
 featured: true
-image: '/thisisengineering-raeng-wjowazupass-unsplash-2.jpg'
+image: "/thisisengineering-raeng-wjowazupass-unsplash-2.jpg"
 youtube_video_id: ''
 background_color: ''
 file: ''
 link: ''
-title:
-  'The Future of Human-Machine Cooperation in the Workplace: How Will AI Impact
+title: 'The Future of Human-Machine Cooperation in the Workplace: How Will AI Impact
   the Development of Human Potential?'
-order: '11'
+order: "11"
+
 ---
-
-**![](/image-annonce-webinaire200422francais-final.png)**
-
 **L'augmentation de la puissance de calcul a permis, au cours de la dernière décennie, d'améliorer considérablement les technologies d'IA, notamment la robotique, la vision artificielle et la reconnaissance vocale.**
 
 Selon plusieurs penseurs éminents qui ont discuté de l'avenir du travail et de l'automatisation, il existe **deux principaux scénarios concernant l'impact du développement de l'IA sur les marchés du travail : (1) le remplacement des travailleurs par des machines ; et (2) l'utilisation de machines pour améliorer la productivité des travailleurs.**
@@ -34,4 +30,6 @@ Par "augmentation humaine", nous entendons une technologie qui améliore la prod
 
 **_Markus Furendal_** _est chercheur postdoctoral au département des sciences politiques de l'université de Stockholm, où il étudie des questions liées à la politique, à la philosophie et à l'économie. Il travaille actuellement sur un projet concernant la gouvernance mondiale de l'intelligence artificielle et la manière dont les avantages et les inconvénients créés par une IA de plus en plus performante devraient être répartis._
 
-#### **Gratuit sur inscription obligatoire** [**ici**](https://my.weezevent.com/the-future-of-human-machine-cooperation-in-the-workplace)
+#### Revoir le webinaire
+
+[https://www.youtube.com/watch?v=AwxkhJp0P14](https://www.youtube.com/watch?v=AwxkhJp0P14 "https://www.youtube.com/watch?v=AwxkhJp0P14")
