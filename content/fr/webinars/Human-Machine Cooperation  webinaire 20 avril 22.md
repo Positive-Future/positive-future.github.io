@@ -7,7 +7,7 @@ subtitle: Par Karim Jebari (Institute for Futures Studies) et Markus Furendal (S
 date: 2022-04-20T16:00:00.000+00:00
 categories:
 - event
-featured: true
+featured: false
 image: "/thisisengineering-raeng-wjowazupass-unsplash-2.jpg"
 youtube_video_id: ''
 background_color: ''
