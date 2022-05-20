@@ -34,4 +34,4 @@ Par "augmentation humaine", nous entendons une technologie qui améliore la prod
 
 #### Revoir le webinaire
 
-<YoutubeEmbedded yt="[AwxkhJp0P14](https://www.youtube.com/embed/AwxkhJp0P14 "https://www.youtube.com/embed/awxkhjp0p14")" caption ="[The Future of Human-Machine Cooperation in the Workplace](https://www.youtube.com/watch?v=AwxkhJp0P14 "https://www.youtube.com/watch?v=awxkhjp0p14")"></YoutubeEmbedded>
+<YoutubeEmbedded yt="[AwxkhJp0P14](https://www.youtube.com/embed/AwxkhJp0P14 "https://www.youtube.com/embed/awxkhjp0p14")" caption ="The Future of Human-Machine Cooperation in the Workplace"></YoutubeEmbedded>
