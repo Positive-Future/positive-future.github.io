@@ -18,6 +18,8 @@ title: 'The Future of Human-Machine Cooperation in the Workplace: How Will AI Im
 order: "11"
 
 ---
+#### Présentation
+
 **L'augmentation de la puissance de calcul a permis, au cours de la dernière décennie, d'améliorer considérablement les technologies d'IA, notamment la robotique, la vision artificielle et la reconnaissance vocale.**
 
 Selon plusieurs penseurs éminents qui ont discuté de l'avenir du travail et de l'automatisation, il existe **deux principaux scénarios concernant l'impact du développement de l'IA sur les marchés du travail : (1) le remplacement des travailleurs par des machines ; et (2) l'utilisation de machines pour améliorer la productivité des travailleurs.**
@@ -32,4 +34,4 @@ Par "augmentation humaine", nous entendons une technologie qui améliore la prod
 
 #### Revoir le webinaire
 
-[https://www.youtube.com/watch?v=AwxkhJp0P14](https://www.youtube.com/watch?v=AwxkhJp0P14 "https://www.youtube.com/watch?v=AwxkhJp0P14")
+<YoutubeEmbedded yt="[AwxkhJp0P14](https://www.youtube.com/embed/AwxkhJp0P14 "https://www.youtube.com/embed/awxkhjp0p14")" caption ="[The Future of Human-Machine Cooperation in the Workplace](https://www.youtube.com/watch?v=AwxkhJp0P14 "https://www.youtube.com/watch?v=awxkhjp0p14")"></YoutubeEmbedded>
