@@ -31,6 +31,6 @@ By “human augmentation” we mean technology that improves productivity while 
 
 #### Watch the webinar
 
-[https://www.youtube.com/watch?v=AwxkhJp0P14](https://www.youtube.com/watch?v=AwxkhJp0P14 "https://www.youtube.com/watch?v=AwxkhJp0P14")
+<YoutubeEmbedded yt="AwxkhJp0P14" caption ="The Future of Human-Machine Cooperation in the Workplace"><YoutubeEmbedded>
 
 #### 
