@@ -15,7 +15,7 @@ link: ''
 order: "11"
 
 ---
-![](/image-annonce-webinaire21062022en.png)
+![](/newimage-annonce-webinaire21062022en.png)
 
 #### Presentation
 
