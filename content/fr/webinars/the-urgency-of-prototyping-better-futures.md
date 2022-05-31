@@ -2,8 +2,7 @@
 edition: '2022'
 published: true
 title: The Urgency of Prototyping Better Futures
-subtitle: Par Marcela Sabino, ancienne responsable de l'innovation au Musée de demain
-  à Rio de Janeiro
+subtitle: Par Marcela Sabino, spécialiste de prospective stratégique
 date: 2022-06-21T16:00:00Z
 categories:
 - event
