@@ -1,7 +1,7 @@
 ---
 lang: EN
-name: '3D Printed Food: The Future of Healthy Eating | Chloe Rutzerveld | TEDxYYC'
-author: TEDx Talks
+name: '3D Printed Food: The Future of Healthy Eating'
+author: Chloe Rutzerveld
 description_en: "Food Designer Chloé Rutzerveld is not impressed by the current 3D
   food printing hype in which the printers are basically being used as shaping machines
   to transform chocolate and sugar into fancy shapes. In her talk she shares her vision
