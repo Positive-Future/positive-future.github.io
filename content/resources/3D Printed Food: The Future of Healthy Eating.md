@@ -31,7 +31,7 @@ description_fr: "Food Designer Chloé Rutzerveld is not impressed by the current
   the TED conference format but independently organized by a local community. Learn
   more at http://ted.com/tedx"
 category:
-- face_our_challenges_today
+- think_about_the_future
 type:
 - Video
 issues:
