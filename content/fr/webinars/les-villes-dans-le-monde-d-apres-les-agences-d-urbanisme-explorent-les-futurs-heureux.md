@@ -12,9 +12,12 @@ background_color: ''
 file: ''
 link: ''
 edition: "2021"
-date: 2021-01-13T14:34:25.000+00:00
+en: []
+fr: []
+date: 2021-01-21T16:00:25Z
 
 ---
+
 La Fédération nationale des agences d’urbanisme (Fnau) a placé ses rencontres 2020 sous le signe de la prospective. **Les agences ont travaillé en réseau sur les changements à l’horizon 2040 pour imaginer un « monde d’après » qui aurait réussi à relever les défis des transitions**. Il s’agissait de questionner l’avenir par les notions de bonheur et de bien-être, de développement durable et de transition écologique réussie, de renouveau démocratique, afin de construire des perspectives de futurs souhaitables, mais aussi crédibles. Les visions prospectives proposées ont plusieurs facettes : certaines se fondent sur la résilience face à la crise de la Covid-19, d’autres s’appuient sur des imaginaires territoriaux ou des démarches ludiques **pour questionner les projets de territoire ou l’émergence de nouvelles politiques publiques, à l’horizon 2040.**
 
 **Ce webinaire, qui reviendra sur l’objectif et la méthode des travaux menés par les agences d’urbanisme, présentera les tendances convergentes dessinées par les 12 groupes de travail.**

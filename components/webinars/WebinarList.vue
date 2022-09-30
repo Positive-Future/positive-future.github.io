@@ -134,7 +134,7 @@ export default {
     return {
       searching: false,
       searchString: '',
-      limit: 10,
+      //limit: 10,
       tab: 0,
       openModal: false,
       webinars: [],
@@ -149,7 +149,7 @@ export default {
       /*  .where({ featured: true }) */
       .where({ published: true })
       .sortBy('date', 'desc')
-      .limit(this.limit)
+      //.limit(this.limit)
       .fetch()
   },
   computed: {},
@@ -161,7 +161,7 @@ export default {
           /*  .where({ featured: true }) */
           .where({ published: true })
           .sortBy('date', 'desc')
-          .limit(this.limit)
+          //.limit(this.limit)
           .fetch()
       } else {
         this.searching = true
@@ -178,7 +178,7 @@ export default {
         this.webinars = await this.$content(this.$i18n.locale + '/webinars')
           .where({ published: true })
           .sortBy('date', 'desc')
-          .limit(this.limit)
+          // .limit(this.limit)
           .fetch()
       } else {
         this.searching = true
