@@ -4,8 +4,6 @@ published: true
 title: "Quels scénarios pour l'avenir du travail ? "
 subtitle: Par Dominique Méda (Université Paris Dauphine)
 date: 2022-03-21T17:00:00.000+00:00
-categories:
-  - event
 featured: false
 image: '/ant-rozetsky-hxolltswrpm-unsplash.jpg'
 youtube_video_id: ''

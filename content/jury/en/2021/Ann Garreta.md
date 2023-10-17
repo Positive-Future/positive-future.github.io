@@ -12,5 +12,6 @@ linkedin: ''
 twitter: ''
 wikipedia: ''
 website: https://literature.duke.edu/people/anne-garreta
+editions: '2021'
 
 ---

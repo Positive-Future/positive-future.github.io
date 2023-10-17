@@ -2,8 +2,6 @@
 published: true
 title: 'Urban ecological restoration: overcoming the city-nature opposition'
 subtitle: 'By Marion Waller, urban planner and philosopher. '
-categories:
-  - event
 featured: false
 image: '/victor-garcia-ndk_3biaghc-unsplash-1.jpg'
 youtube_video_id: fgttpvGzDGg

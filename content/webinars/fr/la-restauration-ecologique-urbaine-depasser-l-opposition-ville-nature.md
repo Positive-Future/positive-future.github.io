@@ -2,8 +2,6 @@
 published: true
 title: 'La restauration écologique urbaine : dépasser l’opposition ville-nature'
 subtitle: Par Marion Waller, urbaniste et philosophe.
-categories:
-  - event
 featured: true
 image: '/victor-garcia-ndk_3biaghc-unsplash-1.jpg'
 youtube_video_id: fgttpvGzDGg

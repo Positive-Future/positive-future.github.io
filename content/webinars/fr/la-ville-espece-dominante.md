@@ -6,8 +6,6 @@ title: La Ville, espèce dominante ? Nature et avenir du phénomène urbain
 subtitle:
   par Fabienne Goux-Baudiment, docteure en sciences sociales et fondatrice
   de proGective.
-categories:
-  - event
 featured: false
 image: '/darcey-beau-q8d7wzc40ea-unsplash.jpg'
 background_color: '#F8E71C'

@@ -4,8 +4,6 @@ title: Bien vivre dans la ville en 2100 ? Des pistes concrètes pour un futur po
 subtitle:
   Par Saadi Lahlou, Directeur de l'IEA de Paris et Jean-Eric Aubert, Président
   de la Fondation 2100.
-categories:
-  - event
 featured: false
 image: '/will-truettner-lxlczkjc5ao-unsplash.jpg'
 youtube_video_id: Qe6GUH_2ils

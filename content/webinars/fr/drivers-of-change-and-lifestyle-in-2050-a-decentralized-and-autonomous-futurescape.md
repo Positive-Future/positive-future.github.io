@@ -4,8 +4,6 @@ en: []
 fr: []
 title: 'Drivers of Change and Lifestyle in 2050: A Decentralized and Autonomous Futurescape'
 subtitle: Par Victor V. Motti, Directeur de la WFSF.
-categories:
-  - event
 featured: false
 image: '/ross-findon-mg28olyfghi-unsplash.jpg'
 youtube_video_id: ocv7qL3g6EU

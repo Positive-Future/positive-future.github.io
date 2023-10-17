@@ -2,8 +2,6 @@
 published: true
 title: Award Ceremony
 subtitle: On September 30, 2021 at 8pm CET
-categories:
-  - event
 featured: true
 image: '/30septcarouselsitepf_ENjpg.jpg'
 background_color: ''

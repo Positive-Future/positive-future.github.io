@@ -2,8 +2,6 @@
 published: true
 title: 'Neighbourhoods for the Future: a Plea for a Social and Ecological Urbanism'
 subtitle: "par Maarten Hajer, professeur d'Urban Futures à l'université d'Utrecht. "
-categories:
-  - event
 featured: true
 image: '/2hannah-sibayan-kzhmbyzktng-unsplash-1.jpg'
 youtube_video_id: 9mP1f7JR_vE

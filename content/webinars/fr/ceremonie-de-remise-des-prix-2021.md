@@ -2,8 +2,6 @@
 published: true
 title: Cérémonie de Remise des Prix
 subtitle: Le 30 septembre à 20h
-categories:
-  - event
 featured: true
 image: '/30septcarouselsitepf_FR.jpg'
 background_color: ''

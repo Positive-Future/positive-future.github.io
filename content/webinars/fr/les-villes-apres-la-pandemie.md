@@ -2,8 +2,6 @@
 published: true
 title: Les villes après la pandémie
 subtitle: Par Bettina Laville, Patrick Le Galès et Patrick Braouezec.
-categories:
-  - event
 featured: true
 image: '/danist-dqxiw7ncb9q-unsplashbd.jpg'
 youtube_video_id: u75Wb5TKWtY
