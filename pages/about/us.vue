@@ -89,7 +89,9 @@
 <script>
 export default {
   async asyncData({ app, $content }) {
-    const about = await $content(app.i18n.locale + '/pages/about-us').fetch()
+    const about = await $content(
+      '/pages/' + app.i18n.locale + '/about-us'
+    ).fetch()
 
     return {
       about,

@@ -155,10 +155,13 @@
 <script>
 export default {
   async asyncData({ app, $content }) {
-    const index = await $content(app.i18n.locale + '/pages/index').fetch()
-    const dates = await $content(app.i18n.locale + '/pages/dates').fetch()
+    const index = await $content('pages/' + app.i18n.locale + '/index').fetch()
+    const dates = await $content('pages/' + app.i18n.locale + '/dates').fetch()
     const organizers = await $content(
-      app.i18n.locale + '/pages/organizers'
+      '/pages/' + app.i18n.locale + '/organizers'
+    ).fetch()
+    const organizerCollection = await $content(
+      'organizers/' + app.i18n.locale
     ).fetch()
     return {
       index,

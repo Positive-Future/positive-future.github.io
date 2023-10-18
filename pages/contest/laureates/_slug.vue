@@ -29,7 +29,7 @@
 <script>
 export default {
   async asyncData({ app, $content, params }) {
-    const item = await $content(app.i18n.locale + '/laureates', { deep: true })
+    const item = await $content('laureates/' + app.i18n.locale, { deep: true })
       .where({ slug: params.slug })
       .fetch()
     return { item: item[0] }

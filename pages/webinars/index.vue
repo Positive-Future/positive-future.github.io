@@ -45,9 +45,9 @@ export default {
   props: {},
   async asyncData({ app, $content }) {
     const webinarText = await $content(
-      app.i18n.locale + '/pages/webinars'
+      'pages/' + app.i18n.locale + '/webinars'
     ).fetch()
-    const webinars = await $content(app.i18n.locale + '/webinars')
+    const webinars = await $content('webinars/' + app.i18n.locale)
       .where({ published: true })
       // TODO complete
       .sortBy('date', 'desc')

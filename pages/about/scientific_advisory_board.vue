@@ -16,12 +16,12 @@
     <section :class="{ 'px-3': $vuetify.breakpoint.smAndDown }">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <template v-for="(item, index) in sab.members">
+          <template v-for="(item, index) in sabList">
             <div :key="index" class="my-6">
               <span class="name px-1">
                 {{ item.firstname + ' ' + item.lastname }}
               </span>
-              <p>{{ item.bio }}</p>
+              <nuxt-content :document="item" />
             </div>
           </template>
         </v-col>
@@ -32,10 +32,11 @@
 <script>
 export default {
   async asyncData({ app, $content }) {
-    const sab = await $content(app.i18n.locale + '/pages/sab').fetch()
-
+    const sab = await $content('/pages/' + app.i18n.locale + '/sab').fetch()
+    const sabList = await $content('sab/' + app.i18n.locale).fetch()
     return {
       sab,
+      sabList,
     }
   },
   data() {

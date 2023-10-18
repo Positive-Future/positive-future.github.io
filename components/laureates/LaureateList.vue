@@ -46,7 +46,7 @@ export default {
     }
   },
   async fetch() {
-    const laureates = await this.$content(this.$i18n.locale + '/laureates', {
+    const laureates = await this.$content('laureates/' + this.$i18n.locale, {
       deep: true,
     }).fetch()
     this.laureates = this.sortLaureates(laureates)
@@ -58,11 +58,11 @@ export default {
       if (!searchString) {
         this.searching = false
         laureates = await this.$content(
-          this.$i18n.locale + '/laureates'
+          'laureates/' + this.$i18n.locale
         ).fetch()
       } else {
         this.searching = true
-        laureates = await this.$content(this.$i18n.locale + '/laureates')
+        laureates = await this.$content('laureates/' + this.$i18n.locale)
           .search(searchString)
           .fetch()
       }
@@ -72,11 +72,11 @@ export default {
       let laureates = []
       if (!val) {
         laureates = await this.$content(
-          this.$i18n.locale + '/laureates'
+          'laureates/' + this.$i18n.locale
         ).fetch()
       } else {
         this.searching = true
-        laureates = await this.$content(this.$i18n.locale + '/laureates')
+        laureates = await this.$content('laureates/' + this.$i18n.locale)
           .search('searchString')
           .fetch()
       }

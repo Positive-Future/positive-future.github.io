@@ -303,9 +303,9 @@
 export default {
   async asyncData({ app, $content }) {
     const resources = await $content(
-      app.i18n.locale + '/pages/resources'
+      'pages/' + app.i18n.locale + '/resources'
     ).fetch()
-    const items = await $content('resources').fetch()
+    const items = await $content('resources_2021').fetch()
     const types = [...new Set(items.map((item) => item.type).flat())].sort()
     const languages = [...new Set(items.map((item) => item.lang))].sort()
     const issues = [...new Set(items.map((item) => item.issues).flat())].sort()

@@ -983,17 +983,17 @@ collections:
     nested:
       depth: 2
       summary: '{{lastname}}'
-    folder: 'content/jury' # The path to the folder where the documents are stored
+    folder: 'content/sab' # The path to the folder where the documents are stored
     create: true
     slug: '{{lastname}}'
     summary: '{{lastname}}'
     view_groups:
       - label: 'Edition 2021'
         field: edition
-        pattern: '2021'
+        pattern: "'2021'"
       - label: 'Edition 2024'
         field: edition
-        pattern: '2024'
+        pattern: "'2024'"
     fields:
       [
         {
@@ -1004,7 +1004,7 @@ collections:
           required: true,
           i18n: duplicate,
         },
-    
+
         {
           label: Lastname,
           name: lastname,
@@ -1121,4 +1121,61 @@ collections:
               },
             ],
         },
+        { label: 'Body', i18n: true, name: 'body', widget: 'markdown' },
+      ]
+  - name: 'organizers'
+    label: 'Organizers'
+    label_singular: 'Organizer'
+    i18n: true
+    nested:
+      depth: 2
+      summary: '{{title}}'
+    folder: 'content/organizers' # The path to the folder where the documents are stored
+    create: true
+    slug: '{{title}}'
+    summary: '{{title}}'
+    view_groups:
+      - label: 'Edition 2021'
+        field: edition
+        pattern: "'2021'"
+      - label: 'Edition 2024'
+        field: edition
+        pattern: "'2024'"
+    fields:
+      [
+        {
+          label: Title,
+          name: title,
+          widget: string,
+          default: '',
+          required: true,
+          i18n: duplicate,
+        },
+
+        {
+          label: 'Edition',
+          name: 'edition',
+          widget: 'select',
+          default: ['2024'],
+          multiple: true,
+          options: ['2021', '2024'],
+          i18n: duplicate,
+          min: 1,
+        },
+
+        {
+          label: 'Logo',
+          name: 'logo',
+          widget: 'image',
+          required: false,
+          i18n: duplicate,
+        },
+        {
+          label: 'URL',
+          name: 'url',
+          widget: 'string',
+          required: false,
+          i18n: true,
+        },
+        { label: 'Body', i18n: true, name: 'body', widget: 'markdown' },
       ]

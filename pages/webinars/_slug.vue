@@ -30,7 +30,7 @@
 export default {
   async asyncData({ app, $content, params }) {
     const item = await $content(
-      app.i18n.locale + '/webinars',
+      'webinars/' + app.i18n.locale,
       params.slug
     ).fetch()
     return { item }

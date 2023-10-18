@@ -145,7 +145,7 @@ export default {
     }
   },
   async fetch() {
-    this.webinars = await this.$content(this.$i18n.locale + '/webinars')
+    this.webinars = await this.$content('webinars/' + this.$i18n.locale)
       /*  .where({ featured: true }) */
       .where({ published: true })
       .sortBy('date', 'desc')
@@ -157,7 +157,7 @@ export default {
     async searchString(searchString) {
       if (!searchString) {
         this.searching = this.edition || false
-        this.webinars = await this.$content(this.$i18n.locale + '/webinars')
+        this.webinars = await this.$content('webinars/' + this.$i18n.locale)
           /*  .where({ featured: true }) */
           .where({ published: true })
           .sortBy('date', 'desc')
@@ -165,7 +165,7 @@ export default {
           .fetch()
       } else {
         this.searching = true
-        this.webinars = await this.$content(this.$i18n.locale + '/webinars')
+        this.webinars = await this.$content('webinars/' + this.$i18n.locale)
           .where({ published: true })
           .search(searchString)
           .sortBy('date', 'asc')
@@ -175,14 +175,14 @@ export default {
     async edition(val) {
       if (!val) {
         this.searching = this.searchString.length || false
-        this.webinars = await this.$content(this.$i18n.locale + '/webinars')
+        this.webinars = await this.$content('webinars/' + this.$i18n.locale)
           .where({ published: true })
           .sortBy('date', 'desc')
           // .limit(this.limit)
           .fetch()
       } else {
         this.searching = true
-        this.webinars = await this.$content(this.$i18n.locale + '/webinars')
+        this.webinars = await this.$content('webinars/' + this.$i18n.locale)
           .where({ published: true, edition: val.toString() })
           .sortBy('date', 'asc')
           .fetch()

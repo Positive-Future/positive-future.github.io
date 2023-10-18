@@ -63,7 +63,7 @@
 export default {
   async asyncData({ app, $content, params }) {
     /*   const alterlang = app.i18n.locale === 'en' ? 'fr' : 'en' */
-    const post = await $content(app.i18n.locale + '/news', params.slug).fetch()
+    const post = await $content('news/' + app.i18n.locale, params.slug).fetch()
 
     /*  const newSlug = post[alterlang].split('/')[3].split('.')[0]
     

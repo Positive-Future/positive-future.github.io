@@ -89,7 +89,7 @@
 export default {
   async asyncData({ app, $content }) {
     const organizers = await $content(
-      app.i18n.locale + '/pages/organizers'
+      '/pages/' + app.i18n.locale + '/organizers'
     ).fetch()
 
     return {

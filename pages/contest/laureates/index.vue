@@ -19,9 +19,9 @@ export default {
   props: {},
   async asyncData({ app, $content }) {
     const laureateText = await $content(
-      app.i18n.locale + '/pages/laureates'
+      '/pages/' + app.i18n.locale + '/laureates'
     ).fetch()
-    const laureates = await $content(app.i18n.locale + '/laureates').fetch()
+    const laureates = await $content('laureates/' + app.i18n.locale).fetch()
     return {
       laureateText,
       laureates,

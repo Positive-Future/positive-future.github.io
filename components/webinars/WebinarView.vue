@@ -123,7 +123,7 @@ export default {
     }
   },
   async fetch() {
-    this.webinars = await this.$content(this.$i18n.locale + '/webinars')
+    this.webinars = await this.$content('webinars/' + this.$i18n.locale)
       /*  .where({ featured: true }) */
       .sortBy('order', 'desc')
       .where({ slug: { $ne: this.item.slug }, edition: this.item.edition })
