@@ -50,6 +50,7 @@ collections:
           default: ['2024'],
           multiple: true,
           options: ['2021', '2024'],
+          i18n: duplicate,
           min: 1,
         },
         {
@@ -96,7 +97,7 @@ collections:
           collapsed: true,
           label: 'Social channels',
           name: 'social_channels',
-          i18n: false,
+          i18n: true,
           fields:
             [
               {
@@ -105,6 +106,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
+                i18n: duplicate,
               },
               {
                 label: 'Wikipedia',
@@ -112,6 +114,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
+                i18n: duplicate,
               },
               {
                 label: 'Orcid ID',
@@ -120,6 +123,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
+                i18n: duplicate,
               },
               {
                 label: 'Linkedin',
@@ -127,6 +131,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
+                i18n: duplicate,
               },
               {
                 label: 'Twitter',
@@ -134,6 +139,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
+                i18n: duplicate,
               },
               {
                 label: 'Google scholar',
@@ -141,6 +147,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
+                i18n: duplicate,
               },
               {
                 label: 'ResearchGate',
@@ -148,6 +155,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
+                i18n: duplicate,
               },
               {
                 label: 'Mendeley',
@@ -155,6 +163,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
+                i18n: duplicate,
               },
             ],
         },
@@ -499,11 +508,11 @@ collections:
         },
         { label: 'Body', i18n: true, name: 'body', widget: 'markdown' },
       ]
-  - name: 'Resources'
-    label: 'Resources'
+  - name: 'Resources_2021'
+    label: 'Resources 2021'
     label_singular: 'Resource'
     i18n: false
-    folder: 'content/resource' # The path to the folder where the documents are stored
+    folder: 'content/resources_2021' # The path to the folder where the documents are stored
     create: true
     identifier_field: name
     fields: [
@@ -520,7 +529,6 @@ collections:
           widget: boolean,
           default: false,
           required: false,
-          i18n: duplicate,
         },
         {
           label: Featured,
@@ -528,7 +536,15 @@ collections:
           widget: boolean,
           default: false,
           required: false,
-          i18n: duplicate,
+        },
+        {
+          label: 'Language',
+          name: 'lang',
+          widget: 'select',
+          default: ['EN'],
+          multiple: false,
+          options: ['FR', 'EN', 'ES', 'DE'],
+          min: 1,
         },
         {
           label: 'Edition',
@@ -538,6 +554,103 @@ collections:
           multiple: false,
           options: ['2021', '2024'],
           min: 1,
+        },
+        {
+          label: 'Perspectives',
+          name: 'perspectives',
+          widget: 'select',
+          default: [''],
+          multiple: true,
+          options:
+            [
+              'foresight_studies',
+              'case_studies',
+              'data_and_trends',
+              'magazine',
+              'opinions',
+              'policy',
+              'risk_management',
+              'science_fiction',
+            ],
+          min: 1,
+        },
+        {
+          label: 'Issues and Challenges',
+          name: 'issues',
+          widget: 'select',
+          default: ['2024'],
+          multiple: true,
+          options:
+            [
+              'agriculture_forestry_fishing',
+              'architecture',
+              'clothing',
+              'democracy_participation',
+              'culture',
+              'economy_trade',
+              'education',
+              'environment',
+              'food',
+              'energy',
+              'government_local_and_national',
+              'health',
+              'housing',
+              'imigration',
+              'information_communications',
+              'law_justice',
+              'leisure',
+              'public_administration',
+              'public_space',
+              'sciences_technologies',
+              'security_police',
+              'social_services',
+              'sport',
+              'tourism',
+              'transport',
+              'urban_spatial_planning',
+              'work',
+            ],
+          min: 1,
+        },
+        {
+          label: 'Category',
+          name: 'category',
+          widget: 'select',
+          default: [],
+          multiple: false,
+          options:
+            [
+              'stimulate_your_creativity',
+              'learn_from_the_past',
+              'face_our_challenges_today',
+              'think_about_the_future',
+            ],
+          min: 1,
+        },
+        {
+          label: 'Type',
+          name: 'type',
+          widget: 'select',
+          default: [],
+          multiple: false,
+          options: ['Article', 'Book', 'Photo', 'Video', 'Drawing', 'Podcast'],
+          min: 1,
+        },
+        {
+          label: French description,
+          name: description_fr,
+          widget: text,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: English description,
+          name: description_en,
+          widget: text,
+          default: '',
+          required: false,
+          i18n: true,
         },
         {
           label: 'Youtube video ID',
@@ -588,7 +701,200 @@ collections:
           picker_utc: false,
           i18n: duplicate,
         },
-        { label: 'Body', i18n: true, name: 'body', widget: 'markdown' },
+      ]
+  - name: 'Resources_2024'
+    label: 'Resources 2024'
+    label_singular: 'Resource'
+    i18n: false
+    folder: 'content/resources_2024' # The path to the folder where the documents are stored
+    create: true
+    identifier_field: name
+    fields: [
+        {
+          label: Name,
+          name: name,
+          widget: string,
+          default: '',
+          required: true,
+        },
+        {
+          label: Published,
+          name: published,
+          widget: boolean,
+          default: false,
+          required: false,
+        },
+        {
+          label: Featured,
+          name: featured,
+          widget: boolean,
+          default: false,
+          required: false,
+        },
+        {
+          label: 'Language',
+          name: 'lang',
+          widget: 'select',
+          default: ['EN'],
+          multiple: false,
+          options: ['FR', 'EN', 'ES', 'DE'],
+          min: 1,
+        },
+        {
+          label: 'Edition',
+          name: 'edition',
+          widget: 'select',
+          default: ['2024'],
+          multiple: false,
+          options: ['2021', '2024'],
+          min: 1,
+        },
+        {
+          label: 'Perspectives',
+          name: 'perspectives',
+          widget: 'select',
+          default: [''],
+          multiple: true,
+          options:
+            [
+              'foresight_studies',
+              'case_studies',
+              'data_and_trends',
+              'magazine',
+              'opinions',
+              'policy',
+              'risk_management',
+              'science_fiction',
+            ],
+          min: 1,
+        },
+        {
+          label: 'Issues and Challenges',
+          name: 'issues',
+          widget: 'select',
+          default: ['2024'],
+          multiple: true,
+          options:
+            [
+              'agriculture_forestry_fishing',
+              'architecture',
+              'clothing',
+              'democracy_participation',
+              'culture',
+              'economy_trade',
+              'education',
+              'environment',
+              'food',
+              'energy',
+              'government_local_and_national',
+              'health',
+              'housing',
+              'imigration',
+              'information_communications',
+              'law_justice',
+              'leisure',
+              'public_administration',
+              'public_space',
+              'sciences_technologies',
+              'security_police',
+              'social_services',
+              'sport',
+              'tourism',
+              'transport',
+              'urban_spatial_planning',
+              'work',
+            ],
+          min: 1,
+        },
+        {
+          label: 'Category',
+          name: 'category',
+          widget: 'select',
+          default: [],
+          multiple: false,
+          options:
+            [
+              'stimulate_your_creativity',
+              'learn_from_the_past',
+              'face_our_challenges_today',
+              'think_about_the_future',
+            ],
+          min: 1,
+        },
+        {
+          label: 'Type',
+          name: 'type',
+          widget: 'select',
+          default: [],
+          multiple: false,
+          options: ['Article', 'Book', 'Photo', 'Video', 'Drawing', 'Podcast'],
+          min: 1,
+        },
+        {
+          label: French description,
+          name: description_fr,
+          widget: text,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: English description,
+          name: description_en,
+          widget: text,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Youtube video ID',
+          name: 'youtube_video_id',
+          widget: 'string',
+          required: false,
+          i18n: duplicate,
+        },
+        {
+          label: 'Background color',
+          name: 'background_color',
+          widget: 'color',
+          default: '#ffffff',
+          required: false,
+          i18n: duplicate,
+          allowInput: true,
+        },
+        {
+          label: 'Webinar file',
+          name: 'file',
+          widget: 'file',
+          required: false,
+          media_library: { config: { multiple: false } },
+          i18n: true,
+        },
+        {
+          label: 'Image',
+          name: 'image',
+          widget: 'image',
+          required: false,
+          i18n: duplicate,
+        },
+        {
+          label: 'Picture Copyright',
+          name: 'copyright',
+          widget: 'string',
+          required: false,
+          i18n: duplicate,
+        },
+        {
+          label: 'Date',
+          name: 'date',
+          widget: 'datetime',
+          default: '',
+          date_format: 'DD.MM.YYYY', # e.g. 24.12.2021,
+          time_format: 'HH:mm', # e.g. 21:07,
+          format: 'LLL',
+          picker_utc: false,
+          i18n: duplicate,
+        },
       ]
   - name: pressroom
     label: Pressroom

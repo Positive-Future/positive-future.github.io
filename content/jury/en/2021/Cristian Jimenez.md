@@ -14,6 +14,6 @@ linkedin: ''
 twitter: ''
 wikipedia: ''
 website: ''
-editions: '2021'
+editions: ['2021']
 
 ---
