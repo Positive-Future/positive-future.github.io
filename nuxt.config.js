@@ -172,8 +172,7 @@ export default {
    */
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/robots',
-    '@nuxtjs/sitemap',
+
     '@nuxt/content',
     'nuxt-webfontloader',
     '@nuxtjs/axios',
@@ -203,6 +202,8 @@ export default {
         langDir: 'static/lang/',
       },
     ],
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
   ],
 
   // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

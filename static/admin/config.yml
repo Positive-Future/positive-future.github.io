@@ -328,6 +328,9 @@ collections:
   - name: 'pages' # Used in routes, e.g., /admin/collections/blog
     label: 'Pages' # Used in the UI
     i18n: true
+    nested:
+      depth: 2
+      summary: '{{page_title}}'
     folder: 'content/pages' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
@@ -973,3 +976,149 @@ collections:
                     ],
                 },
             }
+  - name: 'sab'
+    label: 'Scientific Advisory Board'
+    label_singular: 'Board member'
+    i18n: true
+    nested:
+      depth: 2
+      summary: '{{lastname}}'
+    folder: 'content/jury' # The path to the folder where the documents are stored
+    create: true
+    slug: '{{lastname}}'
+    summary: '{{lastname}}'
+    view_groups:
+      - label: 'Edition 2021'
+        field: edition
+        pattern: '2021'
+      - label: 'Edition 2024'
+        field: edition
+        pattern: '2024'
+    fields:
+      [
+        {
+          label: Firstname,
+          name: firstname,
+          widget: string,
+          default: '',
+          required: true,
+          i18n: duplicate,
+        },
+    
+        {
+          label: Lastname,
+          name: lastname,
+          widget: string,
+          default: '',
+          required: true,
+          i18n: duplicate,
+        },
+        {
+          label: 'Edition',
+          name: 'edition',
+          widget: 'select',
+          default: ['2024'],
+          multiple: true,
+          options: ['2021', '2024'],
+          i18n: duplicate,
+          min: 1,
+        },
+        {
+          label: Title and institution,
+          name: title_and_institution,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Image',
+          name: 'image',
+          widget: 'image',
+          required: false,
+          i18n: duplicate,
+        },
+        {
+          label: 'Picture Copyright',
+          name: 'copyright',
+          widget: 'string',
+          required: false,
+          i18n: duplicate,
+        },
+        {
+          widget: 'object',
+          default: [],
+          collapsed: true,
+          label: 'Social channels',
+          name: 'social_channels',
+          i18n: true,
+          fields:
+            [
+              {
+                label: 'Website',
+                name: 'website',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: duplicate,
+              },
+              {
+                label: 'Wikipedia',
+                name: 'wikipedia',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: duplicate,
+              },
+              {
+                label: 'Orcid ID',
+                name: 'orcid',
+                hint: 'Add only the ORCID ID, not the URL: e.g. <strong>0000-0003-1715-2919</strong>',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: duplicate,
+              },
+              {
+                label: 'Linkedin',
+                name: 'linkedin',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: duplicate,
+              },
+              {
+                label: 'Twitter',
+                name: 'webstwitterite',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: duplicate,
+              },
+              {
+                label: 'Google scholar',
+                name: 'google_scholar',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: duplicate,
+              },
+              {
+                label: 'ResearchGate',
+                name: 'researchgate',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: duplicate,
+              },
+              {
+                label: 'Mendeley',
+                name: 'mendeley',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: duplicate,
+              },
+            ],
+        },
+      ]
