@@ -79,22 +79,23 @@
                         </template>
 
                         <v-list>
-                          <!--          <v-list-item
-                            nuxt
-                            :to="localePath('/contest/current')"
-                          >
-                            <v-list-item-title>
-                              {{ $t('edition-2022') }}
-                            </v-list-item-title>
-                          </v-list-item> -->
                           <v-list-item
                             nuxt
-                            :to="localePath('/contest/previous')"
+                            :to="localePath('/contest/2024_edition')"
                           >
                             <v-list-item-title>
-                              {{ $t('previous-edition') }}
+                              {{ $t('2024-edition') }}
                             </v-list-item-title>
                           </v-list-item>
+                          <v-list-item
+                            nuxt
+                            :to="localePath('/contest/2021_edition')"
+                          >
+                            <v-list-item-title>
+                              {{ $t('2021-edition') }}
+                            </v-list-item-title></v-list-item
+                          >
+
                           <v-list-item
                             nuxt
                             :to="localePath('/contest/laureates')"
@@ -105,10 +106,40 @@
                           </v-list-item>
                         </v-list>
                       </v-menu>
+                      <v-menu left bottom offset-y>
+                        <template #activator="{ on, attrs }">
+                          <v-tab
+                            v-bind="attrs"
+                            :class="{
+                              selected: [
+                                'resources___fr',
+                                'resources___en',
+                                'contest-jury___fr',
+                                'contest-jury___en',
+                                'contest-tips___fr',
+                                'contest-tips___en',
+                              ].includes($route.name),
+                            }"
+                            v-on="on"
+                          >
+                            {{ $t('navigation.resources') }}
+                            <v-icon>mdi-chevron-down</v-icon>
+                          </v-tab>
+                        </template>
 
-                      <v-tab nuxt :to="localePath('/resources')">{{
-                        $t('navigation.resources')
-                      }}</v-tab>
+                        <v-list>
+                          <v-list-item nuxt :to="localePath('/resources')">
+                            <v-list-item-title>
+                              {{ $t('2024-edition') }}
+                            </v-list-item-title>
+                          </v-list-item>
+                          <v-list-item nuxt :to="localePath('/resources_2021')">
+                            <v-list-item-title>
+                              {{ $t('2021-edition') }}
+                            </v-list-item-title></v-list-item
+                          >
+                        </v-list>
+                      </v-menu>
                       <v-tab nuxt :to="localePath('/webinars')">
                         {{ $t('webinars') }}
                       </v-tab>
@@ -123,7 +154,7 @@
                         <v-list>
                           <v-list-item nuxt :to="localePath('/about/us')">
                             <v-list-item-title>
-                              {{ $t('about-us') }}
+                              {{ $t('our-initiative') }}
                             </v-list-item-title>
                           </v-list-item>
                           <v-list-item
@@ -140,6 +171,11 @@
                           >
                             <v-list-item-title>
                               {{ $t('navigation.sab') }}
+                            </v-list-item-title>
+                          </v-list-item>
+                          <v-list-item nuxt :to="localePath('/pressroom')">
+                            <v-list-item-title>
+                              {{ $t('press') }}
                             </v-list-item-title>
                           </v-list-item>
                         </v-list>

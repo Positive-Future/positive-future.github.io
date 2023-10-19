@@ -6,7 +6,7 @@
     <v-row justify="center">
       <v-col xs="12" sm="11" md="8" lg="7" xl="6">
         <h1 class="mt-8 mb-4">
-          {{ privacy.title }}
+          {{ faq }}
         </h1>
         <nuxt-content :document="privacy" />
       </v-col>

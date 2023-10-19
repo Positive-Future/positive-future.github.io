@@ -1,9 +1,15 @@
 ---
-title: Dates clés
+title: Concours "Le Travail en 2050"
 
 ---
+**20 novembre 2023**  
+Lancement du concours  
 
-* Lancement de l’appel : Octobre 2021
-* Ouverture de la plateforme de dépôt : 1er Avril 2022
-* Date limite de dépôt des propositions : 31 Mai 2022
-* Remise des prix : Automne 2022
+**22 mars 2024**  
+Ouverture de la plateforme de déposition dess oeuvres
+
+**26 avril 2024**  
+Fermeture de la plateforme de déposition des oeuvres
+
+**Juin 2024** (date à préciser)  
+Remise des Prix à Paris

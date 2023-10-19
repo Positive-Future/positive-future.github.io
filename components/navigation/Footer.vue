@@ -2,18 +2,18 @@
   <v-footer style="z-index: 2" color="white">
     <v-row align="center" no-gutters justify="center">
       <v-col xs="12" sm="11" md="9" lg="9" xl="8" class="text-center">
+        <nuxt-link
+          :to="localePath('/faq')"
+          class="black--text"
+          style="text-decoration: none; cursor: pointer"
+          href="mailto:info@positive-future.org"
+          >{{ $t('faq') }}</nuxt-link
+        >&nbsp;-&nbsp;
         <a
           class="black--text"
           style="text-decoration: none; cursor: pointer"
           href="mailto:info@positive-future.org"
           >{{ $t('misc.ui.contact_us') }}</a
-        >&nbsp;-&nbsp;
-        <a
-          class="black--text"
-          style="text-decoration: none"
-          href="http://eepurl.com/hgbB6f"
-        >
-          {{ $t('misc.ui.subscribe') }}</a
         >&nbsp;-&nbsp;
         <a
           class="black--text"

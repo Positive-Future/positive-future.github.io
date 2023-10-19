@@ -1,5 +1,5 @@
 ---
-title: About us
+title: Our initiative
 
 ---
 There are many representations of dystopian futures, depicting a frightening world and tending to discourage initiatives for change. Fortunately, there is also a lot of research and foresight work sketching positive and realistic alternatives for tomorrow's world.

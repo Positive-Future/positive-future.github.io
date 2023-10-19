@@ -1,6 +1,6 @@
 ---
 title: Nouvelle édition
-theme: Le travail en 2100
+theme: Le travail en 2050
 tipDownload: Téléchargez les conseils des organisateurs pour vous guider dans votre
   réflexion
 

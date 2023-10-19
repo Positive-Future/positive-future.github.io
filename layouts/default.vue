@@ -45,20 +45,20 @@
                 </v-list-item-title>
               </v-list-item-content>
             </template>
-            <v-list-item nuxt :to="localePath('/contest/current')" class="pl-6">
+            <v-list-item class="pl-6" nuxt :to="localePath('/contest/current')">
               <v-list-item-title>
-                {{ $t('edition-2022') }}
+                {{ $t('2024-edition') }}
               </v-list-item-title>
             </v-list-item>
             <v-list-item
-              nuxt
-              :to="localePath('/contest/previous')"
               class="pl-6"
+              nuxt
+              :to="localePath('/contest/2021_edition')"
             >
               <v-list-item-title>
-                {{ $t('previous-edition') }}
-              </v-list-item-title>
-            </v-list-item>
+                {{ $t('2021-edition') }}
+              </v-list-item-title></v-list-item
+            >
             <v-list-item
               nuxt
               :to="localePath('/contest/laureates')"
@@ -69,14 +69,33 @@
               </v-list-item-title>
             </v-list-item>
           </v-list-group>
-
-          <v-list-item link :to="localePath('/resources')">
-            <v-list-item-content>
+          <v-list-group>
+            <template #activator>
+              <v-list-item-content>
+                <v-list-item-title>
+                  {{ $t('navigation.resources') }}
+                </v-list-item-title>
+              </v-list-item-content>
+            </template>
+            <v-list-item
+              class="pl-6"
+              nuxt
+              :to="localePath('/contest/2024_edition')"
+            >
               <v-list-item-title>
-                {{ $t('navigation.resources') }}</v-list-item-title
-              >
-            </v-list-item-content>
-          </v-list-item>
+                {{ $t('2024-edition') }}
+              </v-list-item-title>
+            </v-list-item>
+            <v-list-item
+              class="pl-6"
+              nuxt
+              :to="localePath('/contest/2021_edition')"
+            >
+              <v-list-item-title>
+                {{ $t('2021-edition') }}
+              </v-list-item-title></v-list-item
+            >
+          </v-list-group>
           <v-list-item link :to="localePath('/webinars')">
             <v-list-item-content>
               <v-list-item-title> {{ $t('webinars') }}</v-list-item-title>
@@ -92,7 +111,9 @@
             </template>
             <v-list-item link :to="localePath('/about/us')" class="pl-6">
               <v-list-item-content>
-                <v-list-item-title> {{ $t('about-us') }}</v-list-item-title>
+                <v-list-item-title>
+                  {{ $t('our-initiative') }}</v-list-item-title
+                >
               </v-list-item-content>
             </v-list-item>
             <v-list-item
@@ -115,6 +136,11 @@
                 <v-list-item-title>
                   {{ $t('navigation.sab') }}</v-list-item-title
                 >
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item link :to="localePath('/pressroom')" class="pl-6">
+              <v-list-item-content>
+                <v-list-item-title> {{ $t('press') }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list-group>

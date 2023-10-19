@@ -65,20 +65,57 @@
           /> </v-col
       ></v-row>
     </section>
-
-    <section style="background-color: #c9f8f3" class="mt-12">
-      <v-row justify="center" no-gutters>
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <v-card class="px-6 pt-6 pb-0 mb-0" flat color="transparent">
-            <nuxt-content :document="intro" class="pt-6" />
-            <div id="awards" class="my-6">
-              {{ $t('watch-the-award-ceremony') }}
+    <section>
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
+          <v-card
+            color="#4FD4C7"
+            class="pr-6 pt-6 pb-6 ml-n1"
+            style="margin-bottom: -120px; max-width: 66%"
+            flat
+            nuxt
+            :to="localePath('/webinars/award-ceremony-2021')"
+          >
+            <div class="d-inline-flex justify-center align-center">
+              <v-icon x-large class="rotate-24 mx-6" color="black"
+                >mdi-medal</v-icon
+              >
+              <div class="subtitle">
+                {{ $t('watch-the-award-ceremony') }}
+              </div>
             </div>
-            <YoutubeEmbedded
-              yt="OKMuRJFlfU0"
-              class="mb-9 ml-2"
-            ></YoutubeEmbedded>
           </v-card>
+        </v-col>
+      </v-row>
+    </section>
+    <section
+      style="background-color: #c9f8f3; padding-top: 90px; padding-bottom: 2rem"
+    >
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
+          <div class="headline my-6">
+            {{ $t('the-tools-of-the-contest') }}
+          </div>
+          <div class="mx-6">
+            <v-icon x-large color="black" class="ma-6"
+              >mdi-television-play</v-icon
+            >
+            {{
+              $t(
+                'consult-the-webinars-produced-on-the-theme-of-the-city-in-2100'
+              )
+            }}
+          </div>
+          <div class="mx-6">
+            <v-icon x-large color="black" class="ma-6"
+              >mdi-note-multiple</v-icon
+            >
+            {{
+              $t(
+                'find-all-the-resources-on-the-theme-of-the-competition-proposed-by-the-scientific-committee'
+              )
+            }}
+          </div>
         </v-col>
       </v-row>
     </section>

@@ -21,61 +21,41 @@
     <section style="margin-top: 5vh">
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
-          <div class="headline mb-6">{{ $t('the-contest') }}</div>
-          <div class="text-body-1 mb-12">
-            {{
-              $t(
-                'many-of-you-participated-in-the-2021-edition-thank-you-very-much'
-              )
-            }}
-            <br />
-            {{
-              $t(
-                'more-information-about-the-next-edition-is-coming-soon-stay-tuned'
-              )
-            }}
-          </div>
-
           <v-row>
-            <v-col cols="12" sm="6">
-              <v-card
-                color="#FFE2A0"
-                class="px-6 pt-6 pb-8"
-                flat
-                :to="localePath('/contest/laureates')"
-                nuxt
-              >
-                <div class="d-inline-flex justify-center align-center">
-                  <v-icon x-large class="rotate-24 mr-6" color="black"
-                    >mdi-seal-variant</v-icon
+            <v-col cols="6">
+              <div class="headline mb-6">
+                {{ dates.title }}
+              </div>
+              <v-card>
+                <v-card-title
+                  >{{ $t('key-dates') }}
+                  <v-tooltip bottom>
+                    <template #activator="{ on, attrs }">
+                      <v-btn icon class="ml-auto" v-bind="attrs" v-on="on">
+                        <v-icon>mdi-calendar-plus</v-icon></v-btn
+                      >
+                    </template>
+                    <span>{{ $t('add-the-key-dates-to-your-calendar') }}</span>
+                  </v-tooltip>
+                </v-card-title>
+                <v-card-text>
+                  <nuxt-content :document="dates" class="my-4" />
+                </v-card-text>
+                <v-card-actions
+                  ><p
+                    style="background-color: #ffe2a0"
+                    class="ml-auto pa-6 mb-n6 mr-n6"
                   >
-                  <div class="subtitle">
-                    {{
-                      $t(
-                        'discover-the-laureates-of-the-2021-edition-on-the-city-in-2021'
-                      )
-                    }}
-                  </div>
-                </div>
+                    Jusqu'à <b>16 000€</b> à gagner
+                  </p></v-card-actions
+                >
               </v-card>
             </v-col>
-            <v-col cols="12" sm="6">
-              <v-card
-                color="#FFE2A0"
-                class="px-6 pt-6 pb-8"
-                flat
-                nuxt
-                :to="localePath('/resources')"
+            <v-col cols="6">
+              <v-sheet
+                class="primary d-flex justify-center align-center fill-height"
+                >TEASER</v-sheet
               >
-                <div class="d-inline-flex justify-center align-center">
-                  <v-icon x-large class="rotate-24 mr-6" color="black"
-                    >mdi-file-cog</v-icon
-                  >
-                  <div class="subtitle">
-                    {{ $t('find-resources-to-prepare-for-the-contest') }}
-                  </div>
-                </div>
-              </v-card>
             </v-col>
           </v-row>
         </v-col>
@@ -98,7 +78,7 @@
                 >mdi-email</v-icon
               >
               <div class="subtitle">
-                {{ $t('misc.ui.subscribe3') }}
+                {{ $t('discover-more-about-the-positive-future-initiative') }}
               </div>
             </div>
           </v-card>
@@ -129,13 +109,22 @@
                 <div class="my-6">
                   {{ $t('misc.credits') }}
                 </div>
-                <v-img
-                  contain
-                  :src="organizers.iff.logo"
-                  class="float-right mt-6"
-                  max-width="255"
-                  max-height="200px"
-                ></v-img>
+                <div class="d-flex justify-end">
+                  <v-img
+                    contain
+                    :src="organizers.anact.logo"
+                    class="mt-6"
+                    max-width="150"
+                    max-height="200px"
+                  ></v-img>
+                  <v-img
+                    contain
+                    :src="organizers.inrs.logo"
+                    class="mt-6 ml-12"
+                    max-width="150"
+                    max-height="200px"
+                  ></v-img>
+                </div>
               </v-col>
             </v-row>
           </template>
@@ -156,7 +145,9 @@
 export default {
   async asyncData({ app, $content }) {
     const index = await $content('pages/' + app.i18n.locale + '/index').fetch()
-    const dates = await $content('pages/' + app.i18n.locale + '/dates').fetch()
+    const dates = await $content(
+      'pages/' + app.i18n.locale + '/2024/dates'
+    ).fetch()
     const organizers = await $content(
       '/pages/' + app.i18n.locale + '/organizers'
     ).fetch()

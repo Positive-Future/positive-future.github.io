@@ -58,22 +58,44 @@
             <v-col cols="12" md="8">
               <p class="mt-10 mb-0">{{ $t('misc.ui.with_the_support_of') }}</p>
               <h1 class="mt-4 mb-4">
-                {{ organizers.iff.title }}
+                {{ organizers.anact.title }}
               </h1>
               <p class="mb-3">
-                {{ organizers.iff.text }}
+                {{ organizers.anact.text }}
                 <a
-                  :href="organizers.iff.url"
+                  :href="organizers.anact.url"
                   target="_blank"
                   rel="noopener noreferrer"
-                  :title="organizers.iff.title"
+                  :title="organizers.anact.title"
                   >{{ $t('misc.ui.more') }}</a
                 >
               </p></v-col
             >
             <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="4">
               <v-img
-                :src="organizers.iff.logo"
+                :src="organizers.anact.logo"
+                contain
+                class="logo mt-16"
+              ></v-img>
+            </v-col>
+            <v-col cols="12" md="8">
+              <h1 class="mt-4 mb-4">
+                {{ organizers.inrs.title }}
+              </h1>
+              <p class="mb-3">
+                {{ organizers.inrs.text }}
+                <a
+                  :href="organizers.inrs.url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  :title="organizers.inrs.title"
+                  >{{ $t('misc.ui.more') }}</a
+                >
+              </p></v-col
+            >
+            <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="4">
+              <v-img
+                :src="organizers.inrs.logo"
                 class="logo mt-16"
                 max-width="255"
                 max-height="200px"

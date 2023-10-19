@@ -1,5 +1,5 @@
 ---
-title: À propos de nous
+title: Notre initiative
 ---
 
 Les représentations de futurs dystopiques sont nombreuses, et dessinent un avenir angoissant qui tend à décourager les initiatives de changement. Pourtant, il existe beaucoup de travaux de recherche et de prospective dessinant des alternatives positives et réalistes pour le monde de demain.
