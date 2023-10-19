@@ -1,0 +1,8 @@
+---
+carousel_title: Notre tout nouveau item du carousel
+published: true
+new_tab_link: true
+copyright: ""
+date: October 4, 2023 12:00 AM
+link: https://www.threadless.com/shop/@threadless/design/cool-octopus-wearing-sunglasses/mens/t-shirt/champion?color=heather_grey#m
+---
