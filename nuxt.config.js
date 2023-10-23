@@ -149,7 +149,8 @@ export default {
    */
   plugins: [
     // TODO: update with shared versions
-    { src: '~plugins/i18n-config.js' },
+    { src: '~plugins/addToCalendar.js' },
+    { src: '~plugins/addToCalendar.js' },
   ] /*   { src: '~plugins/ga.js', mode: 'client' }, */,
   /*
    ** Auto import components
