@@ -1,39 +1,48 @@
 <template>
   <v-card
     :color="item.category === 'winner' ? '#ffe2a0' : 'transparent'"
-    class="pa-6 my-3"
+    class="pa-6 my-3 d-flex flex-row flex-no-wrap justify-space-between"
+    nuxt
+    :to="localePath('/contest/laureates/' + item.slug)"
   >
-    <v-card-title class="pt-0">
-      {{ item['laureate-title'] }}
-
-      <v-chip v-if="item.category === 'winner'" class="ma-2" color="#fff1d0">
-        {{ $t('laureates.' + item.category).toUpperCase() }}
-      </v-chip>
-      <v-chip v-if="item.category === 'crush'" class="ma-2" color="#fff1d0">
-        {{ $t('laureates.crush') }}
-      </v-chip>
-      <v-chip class="ma-2">
-        {{ $t('form.application.format.' + item.type) }}
-      </v-chip>
-    </v-card-title>
-    <v-card-text>
-      <v-row>
-        <v-col cols="12">
-          <YoutubeEmbedded
-            v-if="item.video"
-            :yt="item.video"
-            class="mb-9 ml-3"
-          ></YoutubeEmbedded
-        ></v-col>
-      </v-row>
-      <OptimizedImage v-if="item.image" :src="item.image"> </OptimizedImage>
-      <small v-if="item.copyright" class="muted caption"
-        >&copy; {{ item.copyright }}</small
-      >
-      <div class="overline mt-6">
-        {{ $tc('author-s', item.team.length) }}
+    <div v-if="$vuetify.breakpoint.smAndUp">
+      <YoutubeEmbedded
+        v-if="item.video"
+        :yt="item.video"
+        class="mb-9 ml-3"
+      ></YoutubeEmbedded>
+      <div v-if="item.image">
+        <OptimizedImage :src="item.image" width="200px"> </OptimizedImage>
+        <small v-if="item.copyright" class="muted caption"
+          >&copy; {{ item.copyright }}</small
+        >
+      </div>
+    </div>
+    <v-card-text class="pt-0">
+      <div class="headline">
+        {{ item.title }}
+        <v-chip
+          v-if="item.category === 'winner'"
+          small
+          class="ma-2"
+          color="#fff1d0"
+        >
+          {{ $t('laureates.' + item.category).toUpperCase() }}
+        </v-chip>
+        <v-chip
+          v-if="item.category === 'crush'"
+          small
+          class="ma-2"
+          color="#fff1d0"
+        >
+          {{ $t('laureates.crush') }}
+        </v-chip>
+        <v-chip small class="ma-2">
+          {{ $t('form.application.format.' + item.type) }}
+        </v-chip>
       </div>
       <div class="mb-3">
+        {{ $t('from') }}
         <span
           v-for="(ppl, index) in item.team"
           :key="ppl.firstname + ppl.lastname"
@@ -43,50 +52,8 @@
           ></span
         >
       </div>
-
-      <div class="overline">
-        {{ $t('description') }}
-      </div>
-      <nuxt-content :document="item" />
-      <v-btn
-        v-if="!$route.name.startsWith('contest-laureates-slug')"
-        color="default"
-        x-small
-        class="overline ml-n6"
-        text
-        style="color: rgba(0, 0, 0, 0.6)"
-        @click="show = !show"
-      >
-        <v-icon color="rgba(0, 0, 0, 0.6)">{{
-          show ? 'mdi-chevron-down' : 'mdi-chevron-right'
-        }}</v-icon
-        >{{ $t('from-the-jury') }}</v-btn
-      >
-      <div v-else class="overline">
-        {{ $t('from-the-jury') }}
-      </div>
-      <v-expand-transition>
-        <div v-show="show || $route.name.startsWith('contest-laureates-slug')">
-          <div
-            v-for="note in item.jury_notes"
-            :key="note.firstname + ' ' + note.lastname"
-            class="my-3"
-          >
-            <v-icon x-small>mdi-format-quote-open</v-icon>{{ note.text }}
-            <v-icon x-small>mdi-format-quote-close</v-icon>&nbsp;<b>{{
-              note.firstname + ' ' + note.lastname
-            }}</b>
-          </div>
-        </div>
-      </v-expand-transition>
+      <nuxt-content class="d-inline" :document="{ body: item.excerpt }" />
     </v-card-text>
-
-    <v-card-actions v-if="item.file">
-      <v-btn color="primary" :to="'/laureates' + item.file" target="_blank">
-        <v-icon left>mdi-download</v-icon>
-        {{ $t('download') }}
-      </v-btn>
-    </v-card-actions>
   </v-card>
 </template>
 <script>

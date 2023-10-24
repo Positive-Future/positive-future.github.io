@@ -34,7 +34,7 @@
                       <v-btn icon class="ml-auto" v-bind="attrs" v-on="on">
                         <v-icon>mdi-calendar-plus</v-icon></v-btn
                       >
-                      <add-to-calendar
+                      <!--  <add-to-calendar
                         title="VueConf"
                         location="WROCŁAW, POLAND"
                         :start="new Date()"
@@ -59,7 +59,7 @@
                             outlook calendar
                           </office365-calendar>
                         </div>
-                      </add-to-calendar>
+                      </add-to-calendar> -->
                     </template>
                     <span>{{ $t('add-the-key-dates-to-your-calendar') }}</span>
                   </v-tooltip>
@@ -70,7 +70,7 @@
                 <v-card-actions
                   ><p
                     style="background-color: #ffe2a0"
-                    class="ml-auto pa-6 mb-n6 mr-n6"
+                    class="ml-auto pa-6 mb-n6 mr-n6 text-h6 text-right w-33"
                   >
                     Jusqu'à <b>16 000€</b> à gagner
                   </p></v-card-actions
@@ -96,7 +96,8 @@
             class="px-6 pt-6 pb-8"
             style="margin-bottom: -60px; max-width: 70%"
             flat
-            href="http://eepurl.com/hgbB6f"
+            nuxt
+            :to="localePath('/about/us')"
             target="_blank"
           >
             <div class="d-inline-flex justify-center align-center">

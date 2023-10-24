@@ -2,7 +2,7 @@
 category: winner
 type: novel
 edition: '2021'
-laureate-title: En attendant Cléo
+title: En attendant Cléo
 description: ''
 jury: ''
 team:
@@ -56,6 +56,6 @@ jury_notes:
     as a humanity, as a mankind.
 
 ---
-The short story _En attendant Cléo_ takes us to the day of May 21, 2105, in a Paris emptied of its cars, its pollution, its incessant noise. It's very hot, but it's good to live there. Vertical farms, high-altitude forests on top of buildings, artificial lakes to collect wastewater, all live with new technologies, drones and high-speed transportation. As the hours go by, we follow Auguste, we discover his daily life. Auguste is waiting for Cléo. Will she join him or will she prefer to escape to new horizons? 
+The short story _En attendant Cléo_ takes us to the day of May 21, 2105, in a Paris emptied of its cars, its pollution, its incessant noise. It's very hot, but it's good to live there. Vertical farms, high-altitude forests on top of buildings, artificial lakes to collect wastewater, <!--more-->all live with new technologies, drones and high-speed transportation. As the hours go by, we follow Auguste, we discover his daily life. Auguste is waiting for Cléo. Will she join him or will she prefer to escape to new horizons? 
 
 _En attendant Cléo_, whose title is reminiscent of Beckett's Godot, is a universal story about love and waiting, and makes us reflect on what makes happiness... which is not always to be found elsewhere.

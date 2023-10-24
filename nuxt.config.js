@@ -150,7 +150,6 @@ export default {
   plugins: [
     // TODO: update with shared versions
     { src: '~plugins/addToCalendar.js' },
-    { src: '~plugins/addToCalendar.js' },
   ] /*   { src: '~plugins/ga.js', mode: 'client' }, */,
   /*
    ** Auto import components

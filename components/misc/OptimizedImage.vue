@@ -31,7 +31,7 @@ export default {
   computed: {
     _srcset() {
       return this.$img.getSizes(this.src, {
-        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
+        sizes: 'xs:100vh sm:100vh md:100vh lg:100vh xl:100vh',
         modifiers: {
           format: 'webp',
           quality: 70,
@@ -47,9 +47,9 @@ export default {
 .frame {
   display: flex;
   position: relative;
-  overflow: hidden;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .overlay {
   position: absolute;

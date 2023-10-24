@@ -2,7 +2,7 @@
 category: ''
 type: novel
 edition: '2021'
-laureate-title: The Reconciliation of Knoll
+title: The Reconciliation of Knoll
 description: ''
 jury: ''
 team:
@@ -25,6 +25,6 @@ jury_notes:
     présente chez beaucoup de gens aujourd'hui.
 
 ---
-Cette nouvelle explore, à travers les yeux de quatre personnages, une vision du XXIIe siècle dans laquelle l'innovation sociétale occupe une place centrale. Si les énergies propres, l'agriculture urbaine et les transports publics performants constituent la toile de fond de la ville, ses innovations les plus importantes concernent les institutions sociales. 
+Cette nouvelle explore, à travers les yeux de quatre personnages, une vision du XXIIe siècle dans laquelle l'innovation sociétale occupe une place centrale. Si les énergies propres, l'agriculture urbaine et les transports publics performants constituent la toile de fond de la ville, ses innovations les plus importantes concernent les institutions sociales. <!--more-->
 
 Basée sur une gouvernance décentralisée et des infrastructures appartenant à la communauté, la politique de la ville est orientée vers l'autonomisation des citoyens pour améliorer leurs conditions de vie locales, tout en favorisant un fort sentiment de confiance mutuelle. Ces réseaux participatifs nous permettent d'envisager la ville comme un écosystème évolutif.

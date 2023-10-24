@@ -288,5 +288,12 @@
   "find-all-the-resources-on-the-theme-of-the-competition-proposed-by-the-scientific-committee": "Find all the resources on the theme of the competition, proposed by the Scientific Committee.",
   "check-this-person-personal-website": "Check this person personal website",
   "follow-this-person-on-twitter": "Follow this person on Twitter",
-  "check-the-wikipedia-page-0": "Check the Wikipedia page"
+  "check-the-wikipedia-page-0": "Check the Wikipedia page",
+  "from": "from",
+  "the-jury-will-be-announced-soon": "The jury will be announced soon.",
+  "the-scientific-advisory-board-will-be-announced-soon": "The Scientific advisory board will be announced soon",
+  "format": "Format",
+  "edition": "Edition",
+  "laureates-only": "Laureates only",
+  "no-laureates-found-matching-the-search-and-filter-criteria": "No laureates found matching the search & filter criteria."
 }

@@ -11,7 +11,7 @@
             href: localePath('/contest/laureates'),
           },
           {
-            text: item['laureate-title'],
+            text: item['title'],
             disabled: true,
             href: 'breadcrumbs_link_1',
           },
@@ -22,7 +22,7 @@
         </template>
       </v-breadcrumbs>
 
-      <LaureateBlock :item="item" />
+      <LaureatePage :item="item" />
     </v-col>
   </v-row>
 </template>

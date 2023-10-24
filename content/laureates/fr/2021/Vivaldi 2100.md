@@ -2,7 +2,7 @@
 category: crush
 type: comic
 edition: '2021'
-laureate-title: Vivaldi 2100
+title: Vivaldi 2100
 description: ''
 jury: ''
 team:
@@ -43,6 +43,6 @@ jury_notes:
     le produit d’un travail collectif.
 
 ---
-En 2100, pour lutter contre la raréfaction des ressources et les conséquences dramatiques du changement climatique, les villes, devenues des pôles d’innovation de pointe, ont créé des programmes d’échanges compatibles avec la limitation drastique du transport international pour favoriser la circulation des connaissances, et engager davantage les habitants dans le processus de résilience climatique. 
+En 2100, pour lutter contre la raréfaction des ressources et les conséquences dramatiques du changement climatique, les villes, devenues des pôles d’innovation de pointe, ont créé des programmes d’échanges compatibles <!--more-->avec la limitation drastique du transport international pour favoriser la circulation des connaissances, et engager davantage les habitants dans le processus de résilience climatique. 
 
 Nous suivons donc Ren, habitante de Shenzen fraichement débarquée à Lyon, qui entretient tout au long de l’histoire une correspondance avec Achille, lyonnais d’origine, lui-même expatrié à Shenzen. Au fil des planches, nous découvrons le quotidien et l’implication citoyenne de Ren dans un Lyon dont le climat équivaut à celui d’Alger aujourd’hui, et découvrons les nouveaux services municipaux, les nouvelles avancées sociétales, et même éthiques au service de la cohésion sociale et du bien-être de tous.

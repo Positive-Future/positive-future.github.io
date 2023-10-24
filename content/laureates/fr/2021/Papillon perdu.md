@@ -2,7 +2,7 @@
 category: ''
 type: novel
 edition: '2021'
-laureate-title: Papillon perdu
+title: Papillon perdu
 description: ''
 jury: ''
 team:
@@ -43,5 +43,5 @@ jury_notes:
     dans ce futur tous ensemble.
 
 ---
-Dans _Papillon perdu_, nous suivons la journée de Naomi, une scientifique très engagée pour la cohabitation harmonieuse des humains et des autres espèces. Une journée banale en apparence, du réveil matin au défilement classique des heures d’une journée de travail où Naomi croise notamment Jame, un collaborateur malicieux qui lui réserve une surprise de taille qui sera dévoilée au lecteur au terme de l’histoire.   
+Dans _Papillon perdu_, nous suivons la journée de Naomi, une scientifique très engagée pour la cohabitation harmonieuse des humains et des autres espèces. Une journée banale en apparence, du réveil matin au défilement classique des heures d’une journée de travail où Naomi <!--more-->croise notamment Jame, un collaborateur malicieux qui lui réserve une surprise de taille qui sera dévoilée au lecteur au terme de l’histoire.   
 Sans confiner à la pure science-fiction, cette nouvelle est riche de 1 000 petits détails d’un quotidien futuriste où l’intelligence artificielle ainsi que les nouvelles technologies sont présentes à chaque instant, et où les progrès et les innovations semblent avoir cessé d’abimer l’environnement, et permettent de retrouver une biodiversité qu’on aurait pu croire perdue.

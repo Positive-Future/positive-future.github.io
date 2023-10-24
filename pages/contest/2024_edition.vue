@@ -76,11 +76,16 @@
             <div id="jury" class="mb-4 headline">
               {{ $t('jury-members') }}
             </div>
-            <people-block
-              v-for="(people, index) in jury"
-              :key="index"
-              :item="people"
-            />
+            <template v-if="jury && jury.length > 0">
+              <people-block
+                v-for="(people, index) in jury"
+                :key="index"
+                :item="people"
+              />
+            </template>
+            <template v-else>
+              {{ $t('the-jury-will-be-announced-soon') }}
+            </template>
           </v-card>
         </v-col>
       </v-row>
@@ -92,11 +97,16 @@
             <div id="dates" class="mb-4 headline">
               {{ $t('members-of-the-scientific-advisory-board') }}
             </div>
-            <people-block
-              v-for="(people, index) in jury"
-              :key="index"
-              :item="people"
-            />
+            <v-row v-if="sab && sab.length > 0" justify="center" no-gutters>
+              <people-block
+                v-for="(people, index) in sab"
+                :key="index"
+                :item="people"
+                :sab="true"
+            /></v-row>
+            <i v-else>
+              {{ $t('the-scientific-advisory-board-will-be-announced-soon') }}
+            </i>
           </v-card>
         </v-col>
       </v-row>
@@ -177,6 +187,7 @@ export default {
       '/pages/' + app.i18n.locale + '/2024/faq'
     ).fetch()
     const jury = await $content('/jury/' + app.i18n.locale + '/2024').fetch()
+    const sab = await $content('/sab/' + app.i18n.locale + '/2024').fetch()
     const prize = await $content(
       '/pages/' + app.i18n.locale + '/2024/prize'
     ).fetch()
@@ -191,6 +202,7 @@ export default {
       rules,
       prize,
       jury,
+      sab,
       laureates: [
         ...laureates.filter((item) => item.category === 'winner'),
         ...laureates.filter((item) => item.category === 'crush'),

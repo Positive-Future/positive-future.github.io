@@ -2,7 +2,7 @@
 category: crush
 type: comic
 edition: '2021'
-laureate-title: Vivaldi 2100
+title: Vivaldi 2100
 description: ''
 jury: |-
   Jean-Eric Aubert: "Vivaldi 2100 takes us through four seasons in the city of Lyon, which is very green and in which collective mutual aid has made it possible to adapt to climate change. The comic also shows the interdependence of the world's populations and how cities, taking over from the States, collaborate and share their experiences. This nice work caught our attention because it offers a realistic and credible vision of a future in which everything is not rosy, but in which the efforts and responsibility of all allow for a better life, more sober, but also more united. We particularly appreciated the fact that this work is based on foresight work and is the product of a collective effort."
@@ -44,7 +44,7 @@ jury_notes:
     and is the product of a collective effort.
 
 ---
-In 2100, in order to fight against the rarefaction of resources and the dramatic consequences of climate change, cities, which have become hubs of innovation, have created exchange programs compatible with the drastic limitation of international transport in order to promote the circulation of knowledge and to engage the inhabitants more deeply in the process of climate resilience. 
+In 2100, in order to fight against the rarefaction of resources and the dramatic consequences of climate change, cities, which have become hubs of innovation, have created exchange programs compatible with the drastic limitation of international transport in order to promote the circulation of knowledge and to engage the inhabitants more deeply<!--more--> in the process of climate resilience. 
 
 We follow Ren, a resident of Shenzen who has just arrived in Lyon, and who maintains a correspondence with Achille, a native of Lyon who has himself moved to Shenzen. 
 

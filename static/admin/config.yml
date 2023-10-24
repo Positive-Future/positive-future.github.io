@@ -174,17 +174,17 @@ collections:
     i18n: true
     nested:
       depth: 2
-      summary: '{{laureate-title}}'
+      summary: '{{title}}'
     folder: 'content/laureates' # The path to the folder where the documents are stored
     create: true
-    slug: '{{laureate-title}}'
-    identifier_field: laureate-title
-    summary: '{{laureate-title}}'
+    slug: '{{title}}'
+    identifier_field: title
+    summary: '{{title}}'
     fields:
       [
         {
           label: Title,
-          name: laureate-title,
+          name: title,
           widget: string,
           default: '',
           required: true,
@@ -368,14 +368,6 @@ collections:
           i18n: duplicate,
         },
         {
-          label: Published,
-          name: published,
-          widget: boolean,
-          default: false,
-          required: false,
-          i18n: duplicate,
-        },
-        {
           label: Featured,
           name: featured,
           widget: boolean,
@@ -461,14 +453,6 @@ collections:
             ['^[^]{2,150}$', 'Minimum 2 characters, maximum 150 characters'],
         },
         {
-          label: Published,
-          name: published,
-          widget: boolean,
-          default: false,
-          required: false,
-          i18n: duplicate,
-        },
-        {
           label: Open link in a new tab?,
           name: new_tab_link,
           widget: boolean,
@@ -525,13 +509,6 @@ collections:
           widget: string,
           default: '',
           required: true,
-        },
-        {
-          label: Published,
-          name: published,
-          widget: boolean,
-          default: false,
-          required: false,
         },
         {
           label: Featured,
@@ -719,13 +696,6 @@ collections:
           widget: string,
           default: '',
           required: true,
-        },
-        {
-          label: Published,
-          name: published,
-          widget: boolean,
-          default: false,
-          required: false,
         },
         {
           label: Featured,
@@ -1195,3 +1165,15 @@ collections:
             ['^[^]{2,150}$', 'Minimum 2 characters, maximum 150 characters'],
         }
       - { label: 'Body', i18n: true, name: 'body', widget: 'markdown' }
+      - {
+          label: 'Date',
+          name: 'date',
+          widget: 'datetime',
+          default: '',
+          date_format: 'DD.MM.YYYY', # e.g. 24.12.2021,
+          time_format: 'HH:mm', # e.g. 21:07,
+          format: 'LLL',
+          picker_utc: false,
+          i18n: duplicate,
+          hint: used to sort the questions. Oldest are displayed last,
+        }

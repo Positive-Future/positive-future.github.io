@@ -46,7 +46,6 @@ export default {
   },
   async fetch() {
     const items = await this.$content('carousel/' + this.$i18n.locale)
-      .where({ published: true })
       .sortBy('date', 'desc')
       .limit(3)
       .fetch()

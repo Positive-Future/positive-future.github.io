@@ -2,7 +2,7 @@
 category: winner
 type: novel
 edition: '2021'
-laureate-title: En attendant Cléo
+title: En attendant Cléo
 description: ''
 jury: ''
 team:
@@ -58,6 +58,6 @@ jury_notes:
 copyright: ''
 
 ---
-La nouvelle _En attendant Cléo_ nous plonge dans la journée du 21 mai 2105, dans un Paris vidé de ses voitures, de sa pollution, de son bruit incessant. Il y fait très chaud certes, mais il y fait bon vivre. Fermes verticales, forets d’altitude en haut des immeubles, lacs artificiels de récupération des eaux usées y côtoient nouvelles technologies, drones et moyens de transports à très grande vitesse. Au fil des heures, nous suivons Auguste, nous découvrons son quotidien, sa vie. Auguste attend Cléo. Le rejoindra-t-elle ou préférera-t-elle s’évader vers de nouveaux horizons? 
+La nouvelle _En attendant Cléo_ nous plonge dans la journée du 21 mai 2105, dans un Paris vidé de ses voitures, de sa pollution, de son bruit incessant. Il y fait très chaud certes, mais il y fait bon vivre. Fermes verticales, forets d’altitude en haut des immeubles, lacs artificiels de récupération des eaux usées y côtoient nouvelles technologies, drones et moyens de transports<!--more--> à très grande vitesse. Au fil des heures, nous suivons Auguste, nous découvrons son quotidien, sa vie. Auguste attend Cléo. Le rejoindra-t-elle ou préférera-t-elle s’évader vers de nouveaux horizons? 
 
 En attendant Cléo, dont le titre n’est pas sans rappeler le Godot de Beckett, nous livre un récit universel sur le sentiment amoureux et l’attente, et nous donne à réfléchir sur ce qui fait le bonheur... lequel n’est pas toujours à rechercher ailleurs.

@@ -2,7 +2,7 @@
 category: ''
 type: comic
 edition: '2021'
-laureate-title: After Utopia
+title: After Utopia
 description: ''
 jury: ''
 team:
@@ -48,6 +48,6 @@ jury_notes:
     which in itself is a very nice word
 
 ---
-This comic depicts a future city called the Agropolis. The story follows the history of the Old Quarry farm and the lives of some of its community members, exploring how transportation, labour rights, social care, etc., work in this “post-utopian” society. 
+This comic depicts a future city called the Agropolis. The story follows the history of the Old Quarry farm and the lives of some of its community members, exploring how transportation, labour rights, social care, etc., <!--more-->work in this “post-utopian” society. 
 
 The story is narrated by a long-horned bee who also lives at the Old Quarry. This solitary bees embody what it means to be a 'good ancestor'; its brief life is spent caring for future generations.

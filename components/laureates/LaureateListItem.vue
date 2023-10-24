@@ -33,13 +33,23 @@
         -->
         {{ item['laureate-title'] }}
 
-        <v-chip v-if="item.category === 'winner'" class="ma-2" color="#fff1d0">
+        <v-chip
+          v-if="item.category === 'winner'"
+          small
+          class="ma-2"
+          color="#fff1d0"
+        >
           {{ $t('laureates.' + item.category).toUpperCase() }}
         </v-chip>
-        <v-chip v-if="item.category === 'crush'" class="ma-2" color="#fff1d0">
+        <v-chip
+          v-if="item.category === 'crush'"
+          small
+          class="ma-2"
+          color="#fff1d0"
+        >
           {{ $t('laureates.crush') }}
         </v-chip>
-        <v-chip class="ma-2">
+        <v-chip small class="ma-2">
           {{ $t('form.application.format.' + item.type) }}
         </v-chip>
       </v-card-title>

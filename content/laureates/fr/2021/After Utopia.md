@@ -2,7 +2,7 @@
 category: ''
 type: comic
 edition: '2021'
-laureate-title: After Utopia
+title: After Utopia
 description: ''
 jury: ''
 team:
@@ -51,4 +51,4 @@ jury_notes:
     joli mot.
 
 ---
-Cette bande dessinée dépeint une ville du futur appelée Agropolis. On suit l'histoire de la ferme de la Vieille Carrière et la vie de certains membres de sa communauté, en explorant comment les transports, les droits du travail, l'aide sociale, etc. fonctionnent dans cette société "post-utopique". L'histoire est racontée par une abeille à longues cornes qui vit également à la ferme. Cette abeille solitaire incarne ce que signifie être un "bon ancêtre" : sa courte vie est consacrée à prendre soin des générations futures.
+Cette bande dessinée dépeint une ville du futur appelée Agropolis. On suit l'histoire de la ferme de la Vieille Carrière et la vie ... de certains membres de sa communauté, en explorant comment les transports, les droits du travail, l'aide <!--more-->sociale, etc. fonctionnent dans cette société "post-utopique". L'histoire est racontée par une abeille à longues cornes qui vit également à la ferme. Cette abeille solitaire incarne ce que signifie être un "bon ancêtre" : sa courte vie est consacrée à prendre soin des générations futures.

@@ -37,9 +37,9 @@
 export default {
   async asyncData({ app, $content, i18n }) {
     const faq = await $content('pages/' + app.i18n.locale + '/2024/faq').fetch()
-    const faqItems = (
-      await $content('faq/' + (i18n.locale || 'en')).fetch()
-    ).sort((a, b) => a.title && b.title && a.title.localeCompare(b.title))
+    const faqItems = await $content('faq/' + (i18n.locale || 'en'))
+      .sortBy('date', 'desc')
+      .fetch() /* .sort((a, b) => a.title && b.title && a.title.localeCompare(b.title)) */
     console.log('faq: ', faq)
 
     return {

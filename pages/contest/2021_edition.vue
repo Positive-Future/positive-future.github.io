@@ -37,11 +37,13 @@
             <h1 id="jury" class="mb-4">
               {{ $t('jury-members') }}
             </h1>
-            <people-block
-              v-for="(people, index) in jury"
-              :key="index"
-              :item="people"
-            />
+            <v-row no-gutters>
+              <people-block
+                v-for="(people, index) in jury"
+                :key="index"
+                :item="people"
+              />
+            </v-row>
           </v-card>
         </v-col>
       </v-row>
@@ -139,12 +141,14 @@ export default {
     const laureates = await $content('/laureates/' + app.i18n.locale + '/2021')
       .sortBy('order', 'asc')
       .fetch()
+    const sab = await $content('/sab/' + app.i18n.locale + '/2024').fetch()
 
     return {
       intro,
       dates,
       rules,
       jury,
+      sab,
       laureates: [
         ...laureates.filter((item) => item.category === 'winner'),
         ...laureates.filter((item) => item.category === 'crush'),

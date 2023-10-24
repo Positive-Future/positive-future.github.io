@@ -2,7 +2,7 @@
 category: ''
 type: novel
 edition: '2021'
-laureate-title: Papillon perdu
+title: Papillon perdu
 description: ''
 jury: |2-
 
@@ -45,6 +45,6 @@ jury_notes:
     all together.
 
 ---
-In _Papillon perdu_, we follow the day of Naomi, a scientist very committed to the harmonious cohabitation of humans and other species. A seemingly ordinary day, from the morning wake-up call to the classic scrolling of the hours of a working day where Naomi meets Jame, a mischievous collaborator who keeps her a big surprise, which will be revealed to the reader at the end of the story. 
+In _Papillon perdu_, we follow the day of Naomi, a scientist very committed to the harmonious cohabitation of humans and other species. A seemingly ordinary day, from the morning wake-up call to the classic scrolling of the hours of a<!--more--> working day where Naomi meets Jame, a mischievous collaborator who keeps her a big surprise, which will be revealed to the reader at the end of the story. 
 
 Without going as far as pure science fiction, this short story is rich in a myriad of small details of a futuristic daily life where artificial intelligence and new technologies are present at every moment, and where progress and innovations seem to have stopped damaging the environment, making possible a return of lost biodiversity.

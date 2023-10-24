@@ -1,46 +1,80 @@
 <template>
-  <v-row class="mt-12" :class="{ 'mx:6': $vuetify.breakpoint.mdAndUp }">
-    <v-col
-      v-if="$vuetify.breakpoint.mdAndUp"
-      cols="3"
-      col-md-offset="1"
-      justify="center"
-      align="center"
-      class="d-flex flex-column align-center"
-    >
-      <v-avatar size="160" class="mb-3">
-        <OptimizedImage
-          v-if="item.image"
-          alt="Avatar"
-          :src="item.image"
-          height="160"
-          :ratio="1"
-        />
-        <v-icon
-          v-else
-          class="white--text headline"
-          :style="
-            'background-color:' +
-            $vuetify.theme.themes.light.primary +
-            '; font-style: normal;'
-          "
-          >{{ item.firstname[0] + item.lastname[0] }}</v-icon
-        >
-      </v-avatar>
-      <div class="flex-row justify-center">
+  <v-col cols="12" :sm="sab ? '12' : '6'" class="px-3">
+    <v-row class="mt-12" :class="{ 'mx:6': $vuetify.breakpoint.mdAndUp }">
+      <v-col
+        v-if="$vuetify.breakpoint.mdAndUp && !sab"
+        cols="2"
+        justify="center"
+        align="center"
+        class="d-flex flex-column align-center mr-3"
+      >
+        <v-avatar size="100" class="mb-3">
+          <OptimizedImage
+            v-if="item.image"
+            alt="Avatar"
+            :src="item.image"
+            :ratio="1"
+            contain
+          />
+          <v-icon
+            v-else
+            class="white--text headline"
+            :style="
+              'background-color:' +
+              $vuetify.theme.themes.light.primary +
+              '; font-style: normal;'
+            "
+            >{{ item.firstname[0] + item.lastname[0] }}</v-icon
+          >
+        </v-avatar>
+        <div class="flex-row justify-center">
+          <div
+            v-if="$vuetify.breakpoint.smAndDown"
+            class="flex-row justify-center mb-6"
+          >
+            <v-tooltip v-if="item.wikipedia" bottom>
+              <template #activator="{ on, attrs }">
+                <v-btn
+                  v-for="social in getSocials(item)"
+                  :key="social.link"
+                  icon
+                  text
+                  v-bind="attrs"
+                  :href="socail.link"
+                  target="_blank"
+                  v-on="on"
+                >
+                  <v-icon>{{ social.icon }}</v-icon></v-btn
+                >
+              </template>
+              <span>{{ social.tooltip }} </span>
+            </v-tooltip>
+          </div>
+        </div>
+      </v-col>
+      <v-col :cols="sab ? '12' : '9'" class="px-3">
+        <div :id="slugifyItem(item.lastname)" class="anchor"></div>
+        <div
+          class="text-h5 font-weight-black"
+          v-html="item.firstname + ' ' + item.lastname"
+        ></div>
+        <div class="text-h6 mb-3" v-html="item.title_and_institution"></div>
         <div
           v-if="$vuetify.breakpoint.smAndDown"
           class="flex-row justify-center mb-6"
         >
-          <v-tooltip v-if="item.wikipedia" bottom>
+          <v-tooltip
+            v-for="social in getSocials(item)"
+            :key="social.link"
+            bottom
+          >
             <template #activator="{ on, attrs }">
               <v-btn
-                v-for="social in getSocials(item)"
-                :key="social.link"
-                icon
                 text
+                icon
+                color="primary"
                 v-bind="attrs"
-                :href="socail.link"
+                :href="social.link"
                 target="_blank"
                 v-on="on"
               >
@@ -50,78 +84,29 @@
             <span>{{ social.tooltip }} </span>
           </v-tooltip>
         </div>
-      </div>
-    </v-col>
-    <v-col cols="12" md="6" class="mx-3">
-      <div :id="slugifyItem(item.lastname)" class="anchor"></div>
-      <div
-        class="text-h5 font-weight-black"
-        v-html="item.firstname + ' ' + item.lastname"
-      ></div>
-      <div class="text-h6 mb-3" v-html="item.title_and_institution"></div>
-      <div
-        v-if="$vuetify.breakpoint.smAndDown"
-        class="flex-row justify-center mb-6"
-      >
-        <v-tooltip v-for="social in getSocials(item)" :key="social.link" bottom>
-          <template #activator="{ on, attrs }">
-            <v-btn
-              text
-              icon
-              color="primary"
-              v-bind="attrs"
-              :href="social.link"
-              target="_blank"
-              v-on="on"
-            >
-              <v-icon>{{ social.icon }}</v-icon></v-btn
-            >
-          </template>
-          <span>{{ social.tooltip }} </span>
-        </v-tooltip>
-        <template v-if="podcast">
-          <v-btn
-            outlined
-            nuxt
-            :href="'https://www.intercontinental-academia.org/blog/' + podcast"
-          >
-            <v-icon left>mdi-play-circle</v-icon> Podcast
-          </v-btn>
-        </template>
-      </div>
-      <p v-html="highlight(item.presentation, search)"></p>
-      <template v-if="podcast && $vuetify.breakpoint.mdAndUp">
-        <v-btn
-          outlined
-          class="mb-3"
-          nuxt
-          :href="'https://www.intercontinental-academia.org/blog/' + podcast"
-        >
-          <v-icon left>mdi-play-circle</v-icon> Podcast
-        </v-btn>
-      </template>
-      <div>
+        <template v-if="sab">{{ item.presentation }}</template>
+        <nuxt-content v-else :document="item" />
+
         <small v-if="item.copyright" class="muted caption"
           >Image of &copy; {{ item.copyright }}</small
         >
-      </div>
 
-      <v-expansion-panels v-if="jury" class="mt-6">
-        <v-expansion-panel>
-          <v-expansion-panel-header> References </v-expansion-panel-header>
-          <v-expansion-panel-content>
-            <nuxt-content :document="item" />
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-      </v-expansion-panels>
-    </v-col>
-  </v-row>
+        <v-expansion-panels v-if="sab" class="mt-6">
+          <v-expansion-panel>
+            <v-expansion-panel-header> References </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <nuxt-content :document="item" />
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
+      </v-col> </v-row
+  ></v-col>
 </template>
 <script>
 import { slugify } from '~/assets/utils'
 export default {
   props: {
-    jury: {
+    sab: {
       type: Boolean,
       default: false,
     },

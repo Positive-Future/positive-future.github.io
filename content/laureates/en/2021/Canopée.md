@@ -2,7 +2,7 @@
 category: ''
 type: novel
 edition: '2021'
-laureate-title: Canopée
+title: Canopée
 description: ''
 jury: ''
 team:
@@ -20,6 +20,6 @@ jury_notes:
     projected into this futuristic Paris.
 
 ---
-_Canopée_ is the story of an unusual job interview between the city recruiter Cléa and the candidate Léo, a pretext for the reader to discover the futuristic Paris of 2100. Everything has changed there: people use horse-drawn carriages, hoverboards and boats, water has replaced most of the roads, working conditions are respectful of employees, and flora and fauna now flourish in the "Great Forest", which adjoins the capital and whose objective is to eventually extend so far that it will merge with the German forest. 
+_Canopée_ is the story of an unusual job interview between the city recruiter Cléa and the candidate Léo, a pretext for the reader to discover the futuristic Paris of 2100. <!--more-->Everything has changed there: people use horse-drawn carriages, hoverboards and boats, water has replaced most of the roads, working conditions are respectful of employees, and flora and fauna now flourish in the "Great Forest", which adjoins the capital and whose objective is to eventually extend so far that it will merge with the German forest. 
 
 At the end of this day, while we leave Leo convinced to leave his job in Agen for Paris, we join Clea's bittersweet reality, made more bearable by innovations in artificial intelligence.
