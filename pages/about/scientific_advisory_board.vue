@@ -16,6 +16,13 @@
     <section :class="{ 'px-3': $vuetify.breakpoint.smAndDown }">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
+          <div v-if="sabList.length === 0" class="headline mt-12">
+            {{
+              $t(
+                'we-will-soon-release-the-full-list-of-positive-future-scientific-advisory-board-members'
+              )
+            }}
+          </div>
           <template v-for="(item, index) in sabList">
             <div :key="index" class="my-6">
               <span class="name px-1">
@@ -24,6 +31,9 @@
               <nuxt-content :document="item" />
             </div>
           </template>
+          <nuxt-link nuxt :to="localePath('/contest/2021_edition#sab')">{{
+            $t('check-positive-future-2021-scientific-advisory-board-members')
+          }}</nuxt-link>
         </v-col>
       </v-row>
     </section>
@@ -33,7 +43,7 @@
 export default {
   async asyncData({ app, $content }) {
     const sab = await $content('/pages/' + app.i18n.locale + '/sab').fetch()
-    const sabList = await $content('sab/' + app.i18n.locale).fetch()
+    const sabList = await $content('sab/' + app.i18n.locale + '/2024').fetch()
     return {
       sab,
       sabList,

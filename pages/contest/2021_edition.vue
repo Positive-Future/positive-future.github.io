@@ -81,7 +81,7 @@
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
           <v-card class="px-6 pt-6 mb-12" flat color="transparent">
-            <h1 id="dates" class="mt-8 mb-0">
+            <h1 id="sab" class="mt-8 mb-0">
               {{ $t('members-of-the-scientific-advisory-board') }}
             </h1>
             <v-row v-if="sab && sab.length > 0" justify="center" no-gutters>

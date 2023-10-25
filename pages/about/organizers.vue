@@ -76,6 +76,8 @@
                 :src="organizers.anact.logo"
                 contain
                 class="logo mt-16"
+                max-width="255"
+                max-height="200px"
               ></v-img>
             </v-col>
             <v-col cols="12" md="8">
