@@ -40,7 +40,6 @@ export default {
     const faqItems = await $content('faq/' + (i18n.locale || 'en'))
       .sortBy('date', 'desc')
       .fetch() /* .sort((a, b) => a.title && b.title && a.title.localeCompare(b.title)) */
-    console.log('faq: ', faq)
 
     return {
       faq,

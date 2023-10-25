@@ -89,16 +89,11 @@
         <v-tabs-items v-model="tab">
           <v-tab-item>
             <template v-if="searching">
-              <div v-if="webinars.length > 0" class="overline">
-                {{ edition ? '' : 'Searching for "' + searchString + '"' }}" -
-                {{ webinars.length }}
-                {{ webinars.length > 1 ? 'results' : 'result' }}
-              </div>
               <div
-                v-else
+                v-if="webinars.length === 0"
                 class="overline text-h6 d-flex flex-column align-center"
               >
-                <div>
+                <div class="mt-6">
                   {{ $t('no-result-found-matching') }}
                   {{ edition ? $t('your-filters') : '"' + searchString + '"' }}
                 </div>
@@ -107,6 +102,7 @@
                   class="mt-3"
                   @click="
                     searchString = ''
+                    pastOnly = false
                     edition = null
                   "
                   >{{ $t('cancel-my-search') }}</v-btn
@@ -116,7 +112,7 @@
                 v-for="(item, index) in webinars"
                 :key="index"
                 :item="item"
-                :search="searchString"
+                :search="searchString || ''"
                 :index="index"
                 @open="$router.push(localePath('/webinars/' + item.slug))"
               />

@@ -33,11 +33,12 @@
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mt-6">
           <v-card class="px-6 pt-6 mb-12" flat color="transparent">
-            <h1 id="laureate" class="mb-4">
+            <!-- eslint-disable-next-line vuejs-accessibility/anchor-has-content -->
+            <a id="awards" class="anchor"></a>
+            <h1 id="laureates" class="mb-4">
               {{ $t('laureates_title') }}
             </h1>
             <v-slide-group
-              v-model="model"
               class="my-4"
               :class="laureates.length > 3 ? 'mx-n16' : 'mx-n4'"
               show-arrows
@@ -81,7 +82,9 @@
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
           <v-card class="px-6 pt-6 mb-12" flat color="transparent">
-            <h1 id="sab" class="mt-8 mb-0">
+            <!-- eslint-disable-next-line vuejs-accessibility/anchor-has-content -->
+            <a id="sab" class="anchor"></a>
+            <h1 id="sab_list" class="mt-8 mb-0">
               {{ $t('members-of-the-scientific-advisory-board') }}
             </h1>
             <v-row v-if="sab && sab.length > 0" justify="center" no-gutters>
@@ -197,4 +200,11 @@ export default {
   methods: {},
 }
 </script>
-<style lang="scss"></style>
+<style lang="scss">
+.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}
+</style>
