@@ -133,6 +133,8 @@ export default {
           .where(query)
           .fetch()
       }
+      this.searching =
+        this.searchString?.length || Object.keys(query).length || false
       this.laureates = this.sortLaureates(laureates)
     },
     sortLaureates(arr) {

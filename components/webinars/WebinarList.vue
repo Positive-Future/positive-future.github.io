@@ -4,72 +4,86 @@
     <v-row justify="center">
       <v-col xs="12" sm="11" md="8" lg="7" xl="6">
         <div class="d-flex">
-          <!--  <v-select
-            v-model="edition"
-            :items="[
-              { text: $t('the-city-in-2100'), year: 2021 },
-              { text: $t('work-in-2100'), year: 2022 },
-            ]"
-            item-text="text"
-            item-value="year"
-            :label="$t('choose-a-thematic')"
-            outlined
-            clearable
-            :menu-props="{ bottom: true, offsetY: true }"
-          ></v-select
-          > 
-          <v-checkbox
-            v-model="winner"
-            :label="$t('laureates.winner')"
-            value="false"
-            class="ml-3"
-            @change="searchString()"
-          ></v-checkbox> -->
-          <v-spacer></v-spacer>
-          <v-expand-x-transition>
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <v-btn
-                  v-show="!expand"
-                  text
-                  class="text-h4 py-8 my-0"
-                  nuxt
-                  v-bind="attrs"
-                  v-on="on"
-                  @click="showInput()"
-                  ><v-icon large :color="$vuetify.theme.themes.light.primary"
-                    >mdi-magnify</v-icon
-                  ></v-btn
-                >
-              </template>
-              <span>Search in the program</span>
-            </v-tooltip>
-          </v-expand-x-transition>
-          <v-expand-x-transition>
-            <v-text-field
-              v-show="expand"
-              ref="search"
-              v-model="searchString"
-              height="64"
-              large
-              type="search"
-              :style="'max-width:' + (expand ? '300px' : '0px') + ';'"
-              :placeholder="$t('search')"
-              outlined
-              prepend-inner-icon="mdi-magnify"
-              :color="$vuetify.theme.themes.light.primary"
-              hide-details
-              clearable
-              @keydown.esc.prevent="
-                expand = false
-                searchString = ''
-              "
-              @click:clear="
-                expand = false
-                searchString = ''
-              "
-            />
-          </v-expand-x-transition>
+          <v-toolbar v-if="$vuetify.breakpoint.smAndUp" flat class="mx-n4">
+            <v-toolbar-items class="align-center justify-center d-flex">
+              <v-text-field
+                id="search"
+                v-model="searchString"
+                name="search"
+                label="Search"
+                hide-details
+                solo
+                flat
+                outlined
+                clearable
+                :append-icon="searching ? null : 'mdi-magnify'"
+              ></v-text-field>
+              <v-select
+                v-model="edition"
+                :items="[
+                  { text: $t('the-city-in-2100'), value: 2021 },
+                  { text: $t('work-in-2100'), value: 2024 },
+                ]"
+                :label="$t('edition')"
+                outlined
+                hide-details
+                clearable
+                :menu-props="{ bottom: true, offsetY: true }"
+              ></v-select>
+
+              <v-checkbox
+                v-model="pastOnly"
+                class="ml-4"
+                hide-details
+                :label="$t('past-webinars-only')"
+              ></v-checkbox>
+              <v-menu offset-y>
+                <template #activator="{ on: menu, attrs }">
+                  <v-tooltip bottom>
+                    <template #activator="{ on: tooltip }">
+                      <v-btn
+                        x-large
+                        tile
+                        icon
+                        v-bind="attrs"
+                        :class="{
+                          'mt-3': $vuetify.breakpoint.xs,
+                        }"
+                        v-on="{ ...tooltip, ...menu }"
+                      >
+                        <v-icon> mdi-sort</v-icon>
+                      </v-btn>
+                    </template>
+                    <span
+                      v-html="
+                        $t('sort-mode') +
+                        $t(currentSort.text || defaultSort.text)
+                      "
+                    ></span>
+                  </v-tooltip>
+                </template>
+                <v-list>
+                  <v-subheader>{{ $t('sort-webinars-by-date') }} </v-subheader>
+                  <v-list-item @click="sortDate = false">
+                    <v-list-item-icon>
+                      <v-icon>mdi-sort-calendar-descending</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-title>{{
+                      $t('latest-first')
+                    }}</v-list-item-title>
+                  </v-list-item>
+                  <v-list-item @click="sortDate = true">
+                    <v-list-item-icon>
+                      <v-icon>mdi-sort-calendar-ascending</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-title>{{
+                      $t('oldest-first')
+                    }}</v-list-item-title>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
+            </v-toolbar-items>
+          </v-toolbar>
         </div>
         <!-- LIST -->
         <v-tabs-items v-model="tab">
@@ -112,16 +126,12 @@
                 :key="index"
                 :item="item"
                 :index="index"
+                :search="searchString"
                 @open="$router.push(localePath('/webinars/' + item.slug))"
               />
             </template>
           </v-tab-item>
         </v-tabs-items>
-        <WebinarModal
-          :item="webinars[selected] || {}"
-          :open="openModal"
-          @close="openModal = false"
-        />
       </v-col>
     </v-row>
   </section>
@@ -136,12 +146,21 @@ export default {
       searchString: '',
       //limit: 10,
       tab: 0,
-      openModal: false,
       webinars: [],
-      selected: null,
       expand: false,
-      editions: [2021, 2022],
       edition: null,
+      pastOnly: false,
+      sortDate: null,
+      currentSort: {
+        text: 'date',
+        value: 'date',
+        icon: 'sort-calendar-descending',
+      },
+      defaultSort: {
+        text: 'date',
+        value: 'date',
+        icon: 'calendar',
+      },
     }
   },
   async fetch() {
@@ -154,50 +173,55 @@ export default {
   computed: {},
   watch: {
     async searchString(searchString) {
-      if (!searchString) {
-        this.searching = this.edition || false
-        this.webinars = await this.$content('webinars/' + this.$i18n.locale)
-          /*  .where({ featured: true }) */
-          .sortBy('date', 'desc')
-          //.limit(this.limit)
-          .fetch()
-      } else {
-        this.searching = true
-        this.webinars = await this.$content('webinars/' + this.$i18n.locale)
-          .search(searchString)
-          .sortBy('date', 'asc')
-          .fetch()
-      }
+      await this.updateSearch()
     },
-    async edition(val) {
-      if (!val) {
-        this.searching = this.searchString.length || false
-        this.webinars = await this.$content('webinars/' + this.$i18n.locale)
-          .sortBy('date', 'desc')
-          // .limit(this.limit)
-          .fetch()
-      } else {
-        this.searching = true
-        this.webinars = await this.$content('webinars/' + this.$i18n.locale)
-          .where({ edition: val.toString() })
-          .sortBy('date', 'asc')
-          .fetch()
-      }
+    async edition() {
+      await this.updateSearch()
+    },
+    async pastOnly() {
+      await this.updateSearch()
+    },
+    async sortDate() {
+      await this.updateSearch()
     },
   },
   mounted() {},
   methods: {
-    showInput() {
-      // Show the input component
-      this.expand = true
-      // Focus the component, but we have to wait
-      // so that it will be showing first.
-      this.$nextTick(() => {
-        this.focusInput()
-      })
-    },
-    focusInput() {
-      this.$refs.search.focus()
+    async updateSearch() {
+      let webinars = []
+      let query = {
+        ...(this.edition && { edition: this.edition.toString() }),
+      }
+      console.log('query: ', query)
+      if (this.searchString) {
+        webinars = await this.$content('webinars/' + this.$i18n.locale, {
+          deep: true,
+        })
+          .where(query)
+          .search(this.searchString)
+          .sortBy('date', 'desc')
+          .fetch()
+      } else {
+        webinars = await this.$content('webinars/' + this.$i18n.locale, {
+          deep: true,
+        })
+          .where(query)
+          .sortBy('date', 'desc')
+          .fetch()
+      }
+      this.searching =
+        this.searchString?.length ||
+        Object.keys(query).length ||
+        this.pastOnly ||
+        false
+      // filter if needed
+      webinars = this.pastOnly
+        ? webinars.filter((item) => new Date(item.date) < Date.now())
+        : webinars
+      // sort if needed
+      webinars = this.sortDate ? webinars.reverse() : webinars
+      // then assign
+      this.webinars = webinars
     },
   },
 }

@@ -295,5 +295,9 @@
   "format": "Format",
   "edition": "Edition",
   "laureates-only": "Laureates only",
-  "no-laureates-found-matching-the-search-and-filter-criteria": "No laureates found matching the search & filter criteria."
+  "no-laureates-found-matching-the-search-and-filter-criteria": "No laureates found matching the search & filter criteria.",
+  "past-webinars-only": "Past webinars only",
+  "oldest-first": "Oldest first",
+  "latest-first": "Latest first",
+  "sort-webinars-by-date": "Sort webinars by date"
 }

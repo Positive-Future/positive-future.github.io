@@ -14,7 +14,7 @@
       </v-row>
     </section>
     <v-row justify="center">
-      <v-col cols="12" sm="12" md="8">
+      <v-col xs="12" sm="11" md="8" lg="7" xl="6">
         <v-expansion-panels popout class="white--text mb-6">
           <v-expansion-panel v-for="(question, index) in faqItems" :key="index">
             <v-expansion-panel-header class="pa-6">
