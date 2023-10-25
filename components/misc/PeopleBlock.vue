@@ -18,7 +18,7 @@
           />
           <v-icon
             v-else
-            class="white--text headline"
+            class="white--text"
             :style="
               'background-color:' +
               $vuetify.theme.themes.light.primary +
@@ -55,7 +55,7 @@
       <v-col :cols="sab ? '12' : '9'" class="px-3">
         <div :id="slugifyItem(item.lastname)" class="anchor"></div>
         <div
-          class="text-h5 font-weight-black"
+          class="headline font-weight-black"
           v-html="item.firstname + ' ' + item.lastname"
         ></div>
         <div class="text-h6 mb-3" v-html="item.title_and_institution"></div>

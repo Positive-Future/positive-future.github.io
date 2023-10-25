@@ -29,11 +29,39 @@
         </v-row>
       </v-col>
     </v-row>
-
+    <section>
+      <v-row justify="center" no-gutters>
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mt-6">
+          <v-card class="px-6 pt-6 mb-12" flat color="transparent">
+            <h1 id="laureate" class="mb-4">
+              {{ $t('laureates_title') }}
+            </h1>
+            <v-slide-group
+              v-model="model"
+              class="my-4"
+              :class="laureates.length > 3 ? 'mx-n16' : 'mx-n4'"
+              show-arrows
+              center-active
+            >
+              <v-slide-item
+                v-for="(laureate, index) in laureates"
+                :key="index"
+                v-slot="{ active }"
+              >
+                <LaureateItem
+                  :item="laureate"
+                  :active="active"
+                  :index="index"
+                  :total="laureates.length"
+                />
+              </v-slide-item> </v-slide-group
+          ></v-card> </v-col
+      ></v-row>
+    </section>
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <v-card class="px-6 pt-6 pb-0 mb-0" flat color="transparent">
+          <v-card class="px-6 pt-6 mb-12" flat color="transparent">
             <h1 id="jury" class="mb-4">
               {{ $t('jury-members') }}
             </h1>
@@ -48,24 +76,27 @@
         </v-col>
       </v-row>
     </section>
+
     <section>
       <v-row justify="center" no-gutters>
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mt-6">
-          <h1 id="laureate" class="mb-4">
-            {{ $t('laureates_title') }}
-          </h1>
-          <LaureateBlock
-            v-for="(laureate, index) in laureates"
-            :key="index"
-            :highlight="laureate.category === 'winner'"
-            :item="laureate"
-            @open="
-              selected = index
-              openModal = true
-            "
-            @close="openModal = false"
-          /> </v-col
-      ></v-row>
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
+          <v-card class="px-6 pt-6 mb-12" flat color="transparent">
+            <h1 id="dates" class="mt-8 mb-0">
+              {{ $t('members-of-the-scientific-advisory-board') }}
+            </h1>
+            <v-row v-if="sab && sab.length > 0" justify="center" no-gutters>
+              <people-block
+                v-for="(people, index) in sab"
+                :key="index"
+                :item="people"
+                :sab="true"
+            /></v-row>
+            <i v-else>
+              {{ $t('the-scientific-advisory-board-will-be-announced-soon') }}
+            </i>
+          </v-card>
+        </v-col>
+      </v-row>
     </section>
     <section>
       <v-row justify="center">
@@ -141,7 +172,7 @@ export default {
     const laureates = await $content('/laureates/' + app.i18n.locale + '/2021')
       .sortBy('order', 'asc')
       .fetch()
-    const sab = await $content('/sab/' + app.i18n.locale + '/2024').fetch()
+    const sab = await $content('/sab/' + app.i18n.locale + '/2021').fetch()
 
     return {
       intro,

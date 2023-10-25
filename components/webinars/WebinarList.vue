@@ -30,14 +30,14 @@
                 clearable
                 :menu-props="{ bottom: true, offsetY: true }"
               ></v-select>
-
               <v-checkbox
                 v-model="pastOnly"
                 class="ml-4"
                 hide-details
                 :label="$t('past-webinars-only')"
               ></v-checkbox>
-              <v-menu offset-y>
+              <v-spacer></v-spacer>
+              <v-menu offset-y class="ml-auto">
                 <template #activator="{ on: menu, attrs }">
                   <v-tooltip bottom>
                     <template #activator="{ on: tooltip }">
