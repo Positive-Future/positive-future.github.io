@@ -5,38 +5,38 @@
       <v-col xs="12" sm="11" md="8" lg="7" xl="6">
         <div class="d-flex">
           <v-toolbar v-if="$vuetify.breakpoint.smAndUp" flat class="mx-n4">
-            <v-toolbar-items class="align-center justify-center d-flex">
-              <v-text-field
-                id="search"
-                v-model="searchString"
-                name="search"
-                label="Search"
-                hide-details
-                solo
-                flat
-                outlined
-                clearable
-                :append-icon="searching ? null : 'mdi-magnify'"
-              ></v-text-field>
-              <v-select
-                v-model="edition"
-                :items="[
-                  { text: $t('the-city-in-2100'), value: 2021 },
-                  { text: $t('work-in-2100'), value: 2024 },
-                ]"
-                :label="$t('edition')"
-                outlined
-                hide-details
-                clearable
-                :menu-props="{ bottom: true, offsetY: true }"
-              ></v-select>
-              <v-checkbox
-                v-model="pastOnly"
-                class="ml-4"
-                hide-details
-                :label="$t('past-webinars-only')"
-              ></v-checkbox>
-              <v-spacer></v-spacer>
+            <v-text-field
+              id="search"
+              v-model="searchString"
+              name="search"
+              label="Search"
+              hide-details
+              solo
+              flat
+              outlined
+              clearable
+              :append-icon="searching ? null : 'mdi-magnify'"
+            ></v-text-field>
+            <v-select
+              v-model="edition"
+              :items="[
+                { text: $t('the-city-in-2100'), value: 2021 },
+                { text: $t('work-in-2100'), value: 2024 },
+              ]"
+              :label="$t('edition')"
+              outlined
+              hide-details
+              clearable
+              :menu-props="{ bottom: true, offsetY: true }"
+            ></v-select>
+            <v-checkbox
+              v-model="pastOnly"
+              class="ml-4"
+              hide-details
+              :label="$t('past-webinars-only')"
+            ></v-checkbox>
+            <v-spacer></v-spacer>
+            <div>
               <v-menu offset-y class="ml-auto">
                 <template #activator="{ on: menu, attrs }">
                   <v-tooltip bottom>
@@ -82,7 +82,7 @@
                   </v-list-item>
                 </v-list>
               </v-menu>
-            </v-toolbar-items>
+            </div>
           </v-toolbar>
         </div>
         <!-- LIST -->
