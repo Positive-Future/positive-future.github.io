@@ -1,6 +1,6 @@
 <template>
   <v-col cols="12" :sm="sab ? '12' : '6'" class="px-3">
-    <v-row class="mt-12" :class="{ 'mx:6': $vuetify.breakpoint.mdAndUp }">
+    <v-row class="mt-6" :class="{ 'mx:6': $vuetify.breakpoint.mdAndUp }">
       <v-col
         v-if="$vuetify.breakpoint.mdAndUp && !sab"
         cols="2"
@@ -55,10 +55,12 @@
       <v-col :cols="sab ? '12' : '9'" class="px-3">
         <div :id="slugifyItem(item.lastname)" class="anchor"></div>
         <div
-          class="headline font-weight-black"
+          class="font-weight-black"
           v-html="item.firstname + ' ' + item.lastname"
         ></div>
-        <div class="text-h6 mb-3" v-html="item.title_and_institution"></div>
+        <div>
+          <i>{{ item.title_and_institution }}</i>
+        </div>
         <div
           v-if="$vuetify.breakpoint.smAndDown"
           class="flex-row justify-center mb-6"
@@ -84,14 +86,19 @@
             <span>{{ social.tooltip }} </span>
           </v-tooltip>
         </div>
-        <template v-if="sab">{{ item.presentation }}</template>
+        <template v-if="sab" class="nuxt-content"
+          ><p>{{ item.presentation }}</p></template
+        >
         <nuxt-content v-else :document="item" />
 
         <small v-if="item.copyright" class="muted caption"
           >Image of &copy; {{ item.copyright }}</small
         >
 
-        <v-expansion-panels v-if="sab" class="mt-6">
+        <v-expansion-panels
+          v-if="sab && item.body && item.body.children.length"
+          class="mt-6"
+        >
           <v-expansion-panel>
             <v-expansion-panel-header> References </v-expansion-panel-header>
             <v-expansion-panel-content>

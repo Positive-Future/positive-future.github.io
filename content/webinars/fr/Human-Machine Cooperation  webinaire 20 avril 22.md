@@ -1,5 +1,5 @@
 ---
-edition: '2022'
+edition: '2024'
 published: true
 webinar-title: ''
 subtitle: Par Karim Jebari (Institute for Futures Studies) et Markus Furendal (Stockholm

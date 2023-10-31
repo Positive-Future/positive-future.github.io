@@ -56,6 +56,61 @@
         </v-col></v-row
       >
     </section>
+    <section class="mt-12">
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
+          <v-card
+            color="#4FD4C7"
+            class="px-6 pt-6"
+            style="margin-bottom: -60px; max-width: 70%"
+            flat
+            nuxt
+            :to="localePath('/about/us')"
+            target="_blank"
+          >
+            <div class="subtitle">
+              {{ $t('press-contact') }}
+            </div>
+            <div class="d-flex">
+              <v-avatar size="100" class="">
+                <OptimizedImage
+                  alt="Avatar"
+                  src="/jury/AntoineC.jpg"
+                  :ratio="1"
+                  contain
+                />
+              </v-avatar>
+              <div cols="8">
+                Solène Debonis<br />
+                <a href="mailto:contact@positive-future.org" text-color="white">
+                  contact@positive-future.org</a
+                ><br />
+                +33 6 12 34 56 78
+              </div>
+            </div>
+          </v-card>
+        </v-col>
+      </v-row>
+    </section>
+    <section style="background-color: #c9f8f3; padding-top: 50px">
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3 mt-8">
+          <template v-if="$vuetify.breakpoint.mdAndUp">
+            <div class="my-6">
+              {{ $t('misc.credits') }}
+            </div>
+            <div class="d-flex justify-end"></div>
+          </template>
+          <template v-else>
+            <v-col cols="12" class="ma-3">
+              <div class="mb-6">
+                {{ $t('misc.credits') }}
+              </div>
+            </v-col>
+          </template>
+        </v-col>
+      </v-row>
+    </section>
   </div>
 </template>
 <script>

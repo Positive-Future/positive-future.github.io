@@ -4,18 +4,15 @@
     <v-row justify="center">
       <v-col xs="12" sm="11" md="8" lg="7" xl="6">
         <!-- LIST -->
-        <LaureateBlock
-          v-if="$vuetify.breakpoint.smAndUp && laureates[0]"
-          :item="laureates[0]"
-          class=""
-        />
+
         <v-toolbar v-if="$vuetify.breakpoint.smAndUp" flat class="mx-n4">
           <v-toolbar-items class="align-center justify-center d-flex">
             <v-text-field
               id="search"
               v-model="searchString"
               name="search"
-              label="Search"
+              class="mr-2"
+              :label="$t('search')"
               hide-details
               solo
               flat
@@ -33,11 +30,13 @@
               outlined
               hide-details
               clearable
+              class="mr-2"
               :menu-props="{ bottom: true, offsetY: true }"
             ></v-select>
             <v-select
               v-model="formats"
               :items="[
+                { text: $t('form.application.format.audio'), value: 'audio' },
                 { text: $t('form.application.format.comic'), value: 'comic' },
                 {
                   text: $t('form.application.format.article'),
@@ -117,6 +116,11 @@ export default {
         ...(this.edition && { edition: this.edition.toString() }),
         ...(this.formats?.length && { type: { $in: this.formats } }),
         ...(this.laureatesOnly && { category: { $in: ['winner', 'crush'] } }),
+        /*  below is an attempt to searhc in the team array for lastnames.
+        Turns out it doesn't work. Not possible afaik. Pls fix if you can. */
+        ...(this.searchString && {
+          'team.$.lastname': { $contains: this.searchString },
+        }),
       }
       console.log('query: ', query)
       if (this.searchString) {
@@ -143,9 +147,6 @@ export default {
         ...arr.filter((item) => item.category === 'crush'),
         ...arr.filter((item) => !['winner', 'crush'].includes(item.category)),
       ]
-    },
-    focusInput() {
-      this.$refs.search.focus()
     },
   },
 }

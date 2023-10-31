@@ -21,25 +21,24 @@
       style="margin-top: -60px"
     >
       <v-row justify="center">
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-12">
           <v-card
             color="#FFE2A0"
-            class="px-6 pt-6 pb-8"
+            class="pa-6 d-inline-flex justify-center align-center"
             flat
             target="_blank"
-            style="max-width: 400px"
+            style="max-width: 60%"
+            href="https://www.positive-future.org"
           >
-            <div class="d-inline-flex justify-center align-center">
-              <v-icon x-large class="rotate-24 mr-6" color="black"
-                >mdi-folder</v-icon
-              >
-              <div class="subtitle">
+            <v-icon x-large class="rotate-24 mr-6">mdi-folder-download</v-icon>
+            <div class="nuxt-content">
+              <p class="mb-0">
                 {{
                   $t(
                     'telechargez-lappel-a-participation-et-le-reglement-du-concours-pour-avoir-toutes-les-cles-en-main'
                   )
                 }}
-              </div>
+              </p>
             </div>
           </v-card>
         </v-col>
@@ -47,8 +46,8 @@
     </section>
     <section>
       <v-row justify="center" no-gutters>
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <v-card class="px-6 pt-6 pb-0 mb-0" flat color="transparent">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-12">
+          <v-card class="px-6 pb-0 mb-0" flat color="transparent">
             <div id="dates" class="mb-4 headline">
               {{ $t('key-dates') }}
             </div>
@@ -59,8 +58,8 @@
     </section>
     <section>
       <v-row justify="center" no-gutters>
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <v-card class="px-6 pt-6 pb-0 mb-0" flat color="transparent">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-12">
+          <v-card class="px-6 pb-0 mb-0" flat color="transparent">
             <div id="prizes" class="mb-4 headline">
               {{ $t('prizes-to-be-awarded') }}
             </div>
@@ -71,8 +70,8 @@
     </section>
     <section>
       <v-row justify="center" no-gutters>
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <v-card class="px-6 pt-6 pb-0 mb-0" flat color="transparent">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-12">
+          <v-card class="px-6 pb-0 mb-0" flat color="transparent">
             <div id="jury" class="mb-4 headline">
               {{ $t('jury-members') }}
             </div>
@@ -92,8 +91,8 @@
     </section>
     <section>
       <v-row justify="center" no-gutters>
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <v-card class="px-6 pt-6 pb-0 mb-0" flat color="transparent">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-12">
+          <v-card class="px-6 pb-0 mb-0" flat color="transparent">
             <div id="dates" class="mb-4 headline">
               {{ $t('members-of-the-scientific-advisory-board') }}
             </div>
@@ -155,15 +154,16 @@
               </div>
             </div>
           </v-card>
-          <div class="d-inline-flex justify-center align-center mt-12">
-            <v-icon x-large color="black">mdi-forum-plus</v-icon>
-            <v-card class="pa-6" flat color="transparent">
-              <div id="faq" class="headline mt-6">
-                {{ $t('frequently-asked-questions') }}
-              </div>
-              <nuxt-content :document="faq" class="my-4" />
-            </v-card>
-          </div>
+          <v-card class="pa-6 mt-12" flat color="transparent">
+            <div id="faq" class="headline mt-12">
+              {{ $t('frequently-asked-questions') }}
+            </div>
+            <div class="d-inline-flex justify-center align-center">
+              <v-icon x-large color="black" class="mr-6">mdi-forum-plus</v-icon>
+
+              <nuxt-content :document="faq" class="mb-4 mt-2" />
+            </div>
+          </v-card>
         </v-col>
       </v-row>
     </section>

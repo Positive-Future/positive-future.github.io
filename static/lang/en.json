@@ -1,4 +1,7 @@
 {
+  "2021": "2021 Edition",
+  "2022": "2022 Edition",
+  "2024": "2024 Edition",
   "resources": {
     "noDataText": "No resource available",
     "noResultsText": "No resource match your search",
@@ -111,7 +114,8 @@
         "article": "Newspaper article",
         "novel": "Short novel/Scenario",
         "video": "Video/Short film",
-        "comic": "Comics/Graphic novel"
+        "comic": "Comics/Graphic novel",
+        "audio": "Audio/podcast"
       },
       "dialog": {
         "title": "Confirm your application",
@@ -222,7 +226,7 @@
   "cancel-my-search": "Cancel my search",
   "open-the-webinar-page": "Open the webinar page",
   "the-city-in-2100": "The city in 2100",
-  "work-in-2100": "Work in 2100",
+  "work-in-2100": "Work in 2050",
   "jury-members": "Jury members",
   "2021-edition": "2021 Edition",
   "the-big-prize-winner": "The big prize winner",
@@ -301,5 +305,10 @@
   "latest-first": "Latest first",
   "sort-webinars-by-date": "Sort webinars by date",
   "we-will-soon-release-the-full-list-of-positive-future-scientific-advisory-board-members": "We will soon release the full list of Positive Future scientific advisory board members",
-  "check-positive-future-2021-scientific-advisory-board-members": "Check Positive Future 2021 Scientific advisory board members"
+  "check-positive-future-2021-scientific-advisory-board-members": "Check Positive Future 2021 Scientific advisory board members",
+  "learn-more-about-the-role-of-the-scientific-advisory-board": "Learn more about the role of the scientific advisory board",
+  "selected": "Selected",
+  "upcoming": "Upcoming",
+  "replay": "Replay",
+  "press-contact": "Press contact"
 }

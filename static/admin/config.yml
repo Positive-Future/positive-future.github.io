@@ -368,6 +368,14 @@ collections:
           i18n: duplicate,
         },
         {
+          label: Abstract,
+          name: abstract,
+          widget: text,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
           label: Featured,
           name: featured,
           widget: boolean,

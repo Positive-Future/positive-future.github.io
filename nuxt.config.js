@@ -283,6 +283,17 @@ export default {
     color: '#00c2cb',
     height: '4px',
   },
+  content: {
+    // Only search in title and description
+    fullTextSearchFields: [
+      'title',
+      'team.$.lastname',
+      'lastname',
+      'subtitle',
+      'description',
+    ],
+    nestedProperties: ['team.lastname'],
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module

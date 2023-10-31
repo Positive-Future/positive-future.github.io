@@ -8,6 +8,7 @@ background_color: ''
 file: ''
 order: 12
 date: 2021-09-30T16:00:25Z
+edition: '2021'
 ---
 
 Le jury de Positive Future est arrivé au bout de ses délibérations !

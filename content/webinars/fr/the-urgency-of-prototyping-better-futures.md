@@ -1,5 +1,5 @@
 ---
-edition: '2022'
+edition: '2024'
 published: true
 title: The Urgency of Prototyping Better Futures
 subtitle: Par Marcela Sabino, spécialiste de prospective stratégique

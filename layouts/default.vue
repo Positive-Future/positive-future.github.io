@@ -45,7 +45,11 @@
                 </v-list-item-title>
               </v-list-item-content>
             </template>
-            <v-list-item class="pl-6" nuxt :to="localePath('/contest/current')">
+            <v-list-item
+              class="pl-6"
+              nuxt
+              :to="localePath('/contest/2024_edition')"
+            >
               <v-list-item-title>
                 {{ $t('2024-edition') }}
               </v-list-item-title>

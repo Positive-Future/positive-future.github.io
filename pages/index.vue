@@ -68,12 +68,13 @@
                   <nuxt-content :document="dates" class="my-4" />
                 </v-card-text>
                 <v-card-actions
-                  ><p
+                  ><v-sheet
                     style="background-color: #ffe2a0"
-                    class="ml-auto pa-6 mb-n6 mr-n6 text-h6 text-right w-33"
+                    class="ml-auto pa-6 mb-n6 mr-n6 text-h6 text-right"
+                    rounded
                   >
                     Jusqu'à <b>16 000€</b> à gagner
-                  </p></v-card-actions
+                  </v-sheet></v-card-actions
                 >
               </v-card>
             </v-col>
@@ -88,12 +89,12 @@
       </v-row>
     </section>
 
-    <section>
+    <section class="mt-12">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-card
             color="#4FD4C7"
-            class="px-6 pt-6 pb-8"
+            class="pa-6"
             style="margin-bottom: -60px; max-width: 70%"
             flat
             nuxt
@@ -102,7 +103,7 @@
           >
             <div class="d-inline-flex justify-center align-center">
               <v-icon x-large class="rotate-24 mr-6" color="black"
-                >mdi-email</v-icon
+                >mdi-lightbulb-on</v-icon
               >
               <div class="subtitle">
                 {{ $t('discover-more-about-the-positive-future-initiative') }}

@@ -9,12 +9,13 @@
               id="search"
               v-model="searchString"
               name="search"
-              label="Search"
+              :label="$t('search')"
               hide-details
               solo
               flat
               outlined
               clearable
+              class="mr-2"
               :append-icon="searching ? null : 'mdi-magnify'"
             ></v-text-field>
             <v-select
@@ -122,7 +123,7 @@
                 :key="index"
                 :item="item"
                 :index="index"
-                :search="searchString"
+                :search="searchString || ''"
                 @open="$router.push(localePath('/webinars/' + item.slug))"
               />
             </template>

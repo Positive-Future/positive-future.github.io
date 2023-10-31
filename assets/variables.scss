@@ -27,7 +27,7 @@
   }
 }
  */
- $body-font-family: 'Lato', sans-serif;
+$body-font-family: 'Lato', sans-serif;
 .nuxt-content hr {
   border-color: rgba(0, 0, 0, 0.12);
   display: block;
@@ -88,12 +88,11 @@ p,
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   word-break: normal;
-  color: rgba(0,0,0,.6);
-font-family: "Lato",sans-serif !important;
-font-size: .875rem !important;
-font-weight: 400 !important;
-line-height: 1.375rem !important;
-letter-spacing: .0071428571em !important;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.375rem !important;
+  letter-spacing: 0.0071428571em !important;
 }
 .nuxt-content ul {
   margin-bottom: 20px;

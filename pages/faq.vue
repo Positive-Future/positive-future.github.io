@@ -17,10 +17,10 @@
       <v-col xs="12" sm="11" md="8" lg="7" xl="6">
         <v-expansion-panels popout class="white--text mb-6">
           <v-expansion-panel v-for="(question, index) in faqItems" :key="index">
-            <v-expansion-panel-header class="pa-6">
-              <h3 class="font-weight-regular headline">
+            <v-expansion-panel-header class="pa-6 nuxt-content">
+              <p class="black--text">
                 {{ question.title }}
-              </h3>
+              </p>
             </v-expansion-panel-header>
             <v-expansion-panel-content
               :class="$vuetify.breakpoint.mdAndDown ? 'py-3' : 'pa-3'"

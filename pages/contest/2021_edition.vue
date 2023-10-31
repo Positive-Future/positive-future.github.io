@@ -31,13 +31,13 @@
     </v-row>
     <section>
       <v-row justify="center" no-gutters>
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mt-6">
-          <v-card class="px-6 pt-6 mb-12" flat color="transparent">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
+          <v-card class="mb-12" flat color="transparent">
             <!-- eslint-disable-next-line vuejs-accessibility/anchor-has-content -->
             <a id="awards" class="anchor"></a>
-            <h1 id="laureates" class="mb-4">
+            <div id="laureates" class="headline mb-4">
               {{ $t('laureates_title') }}
-            </h1>
+            </div>
             <v-slide-group
               class="my-4"
               :class="laureates.length > 3 ? 'mx-n16' : 'mx-n4'"
@@ -62,10 +62,10 @@
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <v-card class="px-6 pt-6 mb-12" flat color="transparent">
-            <h1 id="jury" class="mb-4">
+          <v-card class="mb-12" flat color="transparent">
+            <div id="jury" class="mb-4 headline">
               {{ $t('jury-members') }}
-            </h1>
+            </div>
             <v-row no-gutters>
               <people-block
                 v-for="(people, index) in jury"
@@ -81,12 +81,19 @@
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <v-card class="px-6 pt-6 mb-12" flat color="transparent">
+          <v-card class="px-6 mb-12" flat color="transparent">
             <!-- eslint-disable-next-line vuejs-accessibility/anchor-has-content -->
             <a id="sab" class="anchor"></a>
-            <h1 id="sab_list" class="mt-8 mb-0">
+            <div id="sab_list" class="mt-8 mb-0 headline">
               {{ $t('members-of-the-scientific-advisory-board') }}
-            </h1>
+            </div>
+            <nuxt-link
+              class="subtitle"
+              :to="localePath('/about/scientific_advisory_board')"
+              >{{
+                $t('learn-more-about-the-role-of-the-scientific-advisory-board')
+              }}</nuxt-link
+            >
             <v-row v-if="sab && sab.length > 0" justify="center" no-gutters>
               <people-block
                 v-for="(people, index) in sab"
@@ -106,17 +113,21 @@
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-card
             color="#4FD4C7"
-            class="pr-6 pt-6 pb-6 ml-n1"
-            style="margin-bottom: -120px; max-width: 66%"
+            class="py-6 ml-n1"
+            style="margin-bottom: -60px; max-width: 66%"
             flat
             nuxt
             :to="localePath('/webinars/award-ceremony-2021')"
           >
             <div class="d-inline-flex justify-center align-center">
-              <v-icon x-large class="rotate-24 mx-6" color="black"
+              <v-icon
+                v-if="$vuetify.breakpoint.smAndUp"
+                x-large
+                class="rotate-24 mx-6"
+                color="black"
                 >mdi-medal</v-icon
               >
-              <div class="subtitle">
+              <div class="subtitle" :class="{ 'px-3': $vuetify.breakpoint.xs }">
                 {{ $t('watch-the-award-ceremony') }}
               </div>
             </div>
@@ -125,33 +136,50 @@
       </v-row>
     </section>
     <section
-      style="background-color: #c9f8f3; padding-top: 90px; padding-bottom: 2rem"
+      style="background-color: #c9f8f3; padding-top: 60px; padding-bottom: 2rem"
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <div class="headline my-6">
+          <div class="headline my-6 ml-12">
             {{ $t('the-tools-of-the-contest') }}
           </div>
-          <div class="mx-6">
-            <v-icon x-large color="black" class="ma-6"
-              >mdi-television-play</v-icon
-            >
-            {{
-              $t(
-                'consult-the-webinars-produced-on-the-theme-of-the-city-in-2100'
-              )
-            }}
-          </div>
-          <div class="mx-6">
-            <v-icon x-large color="black" class="ma-6"
-              >mdi-note-multiple</v-icon
-            >
-            {{
-              $t(
-                'find-all-the-resources-on-the-theme-of-the-competition-proposed-by-the-scientific-committee'
-              )
-            }}
-          </div>
+          <v-card
+            class="mx-6"
+            flat
+            nuxt
+            :href="localePath('/webinars')"
+            color="transparent"
+          >
+            <div class="d-inline-flex justify-center align-center">
+              <v-icon x-large color="black" class="ma-6"
+                >mdi-television-play</v-icon
+              >
+              {{
+                $t(
+                  'consult-the-webinars-produced-on-the-theme-of-the-city-in-2100'
+                )
+              }}
+            </div>
+          </v-card>
+          <v-card
+            class="mx-6"
+            flat
+            nuxt
+            :href="localePath('/resources')"
+            color="transparent"
+            :class="{ 'mt-6': $vuetify.breakpoint.xs }"
+          >
+            <div class="d-inline-flex justify-center align-center">
+              <v-icon x-large color="black" class="ma-6"
+                >mdi-note-multiple</v-icon
+              >
+              {{
+                $t(
+                  'find-all-the-resources-on-the-theme-of-the-competition-proposed-by-the-scientific-committee'
+                )
+              }}
+            </div>
+          </v-card>
         </v-col>
       </v-row>
     </section>

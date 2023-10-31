@@ -1,48 +1,75 @@
 <template>
-  <v-card class="d-flex" justify="top" align="top" @click="$emit('open')">
+  <v-card
+    class="d-flex ma-2"
+    justify="top"
+    align="top"
+    plain
+    @click="$emit('open')"
+  >
     <v-avatar
       v-if="$vuetify.breakpoint.smAndUp"
-      class="my-3 mr-6"
-      size="125"
+      class="mr-6 ma-3"
+      size="200"
       tile
       rounded
       :color="
         item.image.length ? 'transparent' : $vuetify.theme.themes.light.primary
       "
     >
-      <v-img
-        v-if="item.image"
-        :src="item.image"
-        :alt="item.title"
-        contain
-      ></v-img>
+      <v-img v-if="item.image" :src="item.image" :alt="item.title" cover>
+        <v-chip label> {{ $t(item.edition) }} </v-chip>
+      </v-img>
       <p v-else v-html="highlight(item.title, search)"></p>
     </v-avatar>
-    <div class="flex-column align-content-start mt-3">
-      <v-card-title class="d-flex flex-row align-center pb-0">
-        <!-- 
+    <div class="d-flex flex-column flex-grow-1">
+      <div class="d-flex flex-row pt-3 pr-3">
+        <v-card-title class="align-center pb-0 pr-0" style="max-width: 580px">
+          <!-- 
         I had to wrap the title in a paragraph node to avoid inconsistent line breaks with search highlights. 
         If your CSS foo is better than mine, the cleaner way is welcome. 
         -->
-        <p
-          style="
-            letter-spacing: 0.0125em;
-            font-family: 'Poppins', sans-serif;
-            word-break: normal;
-          "
-          class="text-h6"
-        >
-          <!--    <v-chip class="mr-2" label small>
+          <p
+            style="
+              letter-spacing: 0.0125em;
+              font-family: 'Poppins', sans-serif;
+              word-break: normal;
+            "
+            class="font-weight-black"
+          >
+            <!--    <v-chip class="mr-2" label small>
             {{
               item.edition === 2021
                 ? $t('work-in-2100')
                 : $t('the-city-in-2100')
             }}
           </v-chip> -->
-          <span v-html="highlight(item.title, search)"></span>
-        </p>
-      </v-card-title>
-      <v-card-text>
+            <span v-html="highlight(item.title, search)"></span>
+          </p>
+        </v-card-title>
+        <v-spacer></v-spacer>
+        <v-chip
+          v-if="new Date(item.date) > Date.now()"
+          label
+          small
+          color="#fff1d0"
+        >
+          {{ $t('upcoming') }}</v-chip
+        >
+        <v-chip
+          v-else
+          label
+          color="#00c2cb"
+          text-color="white"
+          :style="
+            'min-width: ' +
+            ($i18n.locale === 'en' ? '65' : '80') +
+            'px; text-align: center;'
+          "
+        >
+          {{ $t('replay') }}
+        </v-chip>
+      </div>
+      <v-card-text class="pt-0">
         <p
           v-html="
             new Date(item.date).toLocaleDateString($i18n.locale, {
@@ -53,11 +80,10 @@
               hour: '2-digit',
               minute: '2-digit',
               timezone: 'UTC',
-            }) +
-            ' - ' +
-            highlight(item.subtitle, search)
+            })
           "
         ></p>
+        <p>{{ item.abstract }} &hellip;</p>
         <!--     <div class="overline">{{ item.date }}</div> -->
         <small v-if="item.copyright" class="muted caption"
           >Image of &copy; {{ item.copyright }}</small

@@ -113,13 +113,4 @@ export default {
   },
 }
 </script>
-<style lang="scss">
-.nuxt-content p {
-  color: rgba(0, 0, 0, 0.6);
-  font-family: 'Lato', sans-serif !important;
-  font-size: 0.875rem !important;
-  font-weight: 400 !important;
-  line-height: 1.375rem !important;
-  letter-spacing: 0.0071428571em !important;
-}
-</style>
+<style lang="scss"></style>

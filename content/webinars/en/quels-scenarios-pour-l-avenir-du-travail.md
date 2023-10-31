@@ -1,5 +1,5 @@
 ---
-edition: '2022'
+edition: '2024'
 published: true
 title: 'Quels scénarios pour l''avenir du travail ? '
 subtitle: By Dominique Méda (Paris Dauphine University)

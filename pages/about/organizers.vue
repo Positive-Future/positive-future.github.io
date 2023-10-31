@@ -55,6 +55,15 @@
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <v-row>
+            <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="4">
+              <v-img
+                :src="organizers.anact.logo"
+                contain
+                class="logo mt-16"
+                max-width="255"
+                max-height="200px"
+              ></v-img>
+            </v-col>
             <v-col cols="12" md="8">
               <p class="mt-10 mb-0">{{ $t('misc.ui.with_the_support_of') }}</p>
               <h1 class="mt-4 mb-4">
@@ -71,10 +80,10 @@
                 >
               </p></v-col
             >
+
             <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="4">
               <v-img
-                :src="organizers.anact.logo"
-                contain
+                :src="organizers.inrs.logo"
                 class="logo mt-16"
                 max-width="255"
                 max-height="200px"
@@ -95,14 +104,6 @@
                 >
               </p></v-col
             >
-            <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="4">
-              <v-img
-                :src="organizers.inrs.logo"
-                class="logo mt-16"
-                max-width="255"
-                max-height="200px"
-              ></v-img>
-            </v-col>
           </v-row>
         </v-col>
       </v-row>

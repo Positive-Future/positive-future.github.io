@@ -18,10 +18,11 @@
           : $vuetify.theme.themes.light.primary
       "
     >
+      <v-chip text-color="white"> {{ $t(item.edition) }}</v-chip>
       <OptimizedImage
         v-if="item.image"
         :src="item.image"
-        :alt="item['laureate-title']"
+        :alt="item['title']"
       ></OptimizedImage>
       <p v-else v-html="item['laureate-title']"></p>
     </v-avatar>
@@ -48,6 +49,13 @@
           color="#fff1d0"
         >
           {{ $t('laureates.crush') }}
+        </v-chip>
+        <v-chip
+          v-if="!['crush', 'winner'].includes(item.category)"
+          small
+          class="ma-2"
+        >
+          {{ $t('selected') }}
         </v-chip>
         <v-chip small class="ma-2">
           {{ $t('form.application.format.' + item.type) }}

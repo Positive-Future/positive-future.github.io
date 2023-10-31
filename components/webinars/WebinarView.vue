@@ -91,7 +91,7 @@
         </v-col>
       </v-row>
     </template>
-    <div class="headline mt-6 mb-3">{{ $t('see-also') }}</div>
+    <div class="headline mt-6 mb-3 ml-3">{{ $t('see-also') }}</div>
     <template v-for="(webinar, index) in webinars">
       <WebinarListItem
         :key="index"
