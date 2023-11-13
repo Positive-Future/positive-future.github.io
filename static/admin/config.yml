@@ -989,11 +989,12 @@ collections:
     i18n: true
     nested:
       depth: 2
-      summary: '{{lastname}}'
+      summary: '{{lastname}} {{firstname}}'
     folder: 'content/sab' # The path to the folder where the documents are stored
     create: true
-    slug: '{{lastname}}'
-    summary: '{{lastname}}'
+    summary: '{{lastname}} {{firstname}}'
+    slug: '{{lastname}}-{{firstname}}'
+    identifier_field: lastname
     view_groups:
       - label: 'Edition 2021'
         field: edition
@@ -1032,7 +1033,7 @@ collections:
           label: 'Edition',
           name: 'edition',
           widget: 'select',
-          default: ['2024'],
+          default: '2024',
           multiple: true,
           options: ['2021', '2024'],
           i18n: duplicate,
