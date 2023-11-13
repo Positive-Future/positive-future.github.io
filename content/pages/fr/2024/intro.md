@@ -1,6 +1,6 @@
 ---
-title: Nouvelle édition
-theme: Le travail en 2050
+title: "Nouvelle édition"
+theme: "Le travail en 2050"
 tipDownload: "Téléchargez les conseils des organisateurs pour vous guider dans votre réflexion"
 ---
 Les changements dans le domaine du travail se sont accélérés ces toutes dernières années et les innovations technologiques tout comme les évolutions dans les modes d’organisation du travail ou les relations contractuelles nous laissent penser que les emplois et le travail seront à l’avenir très différents de ce que nous connaissons aujourd’hui.
