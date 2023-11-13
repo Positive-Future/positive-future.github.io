@@ -1,7 +1,7 @@
 ---
 edition: '2021'
-firstname: Anne
-lastname: Charreyron Perchet
+firstname: 'Anne'
+lastname: 'Charreyron Perchet'
 presentation: 'Urban planner, she is now an independent consultant after having worked
 for several years in the French Ministry of Ecological and Solidarity Transition
 where she was in charge of sustainable cities. Her latest work has focused on

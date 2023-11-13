@@ -1,7 +1,7 @@
 ---
 edition: '2021'
-firstname: Thierry
-lastname: Gaudin
+firstname: 'Thierry'
+lastname: 'Gaudin'
 presentation: "Honorary Ingénieur Général des Mines, founding president of Prospective 2100,
 an international association whose objective is to prepare planetary programs
 for the 21st century, he founded and directed the Centre de prospective et d'évaluation

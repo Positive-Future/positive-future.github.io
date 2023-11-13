@@ -69,6 +69,8 @@ collections:
           required: true,
           i18n: duplicate,
         },
+        { label: 'Body', i18n: true, name: 'body', widget: 'markdown' },
+
         {
           label: Title and institution,
           name: title_and_institution,

@@ -1,7 +1,7 @@
 ---
 edition: '2021'
-firstname: Jacques
-lastname: Theys 
+firstname: 'Jacques'
+lastname: 'Theys '
 presentation: "Enseignant à l’École des hautes études en sciences sociales, Il est vice-président
 de la Société Française de Prospective et du Plan Bleu Méditerranéen. Jacques
 Theys a notamment été responsable de la prospective au ministère du Développement

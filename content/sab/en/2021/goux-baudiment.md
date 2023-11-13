@@ -1,7 +1,7 @@
 ---
 edition: '2021'
-firstname: Fabienne
-lastname: Goux-Baudiment
+firstname: 'Fabienne'
+lastname: 'Goux-Baudiment'
 presentation: 'Doctor in Human and Social Foresight (HSS), she founded proGective - a study,
 research and consultancy center in foresight in 1995, chaired the World Futures
 Studies Federation and the French Society for Foresight and held the chair of

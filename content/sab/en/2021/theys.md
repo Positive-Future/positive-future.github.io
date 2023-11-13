@@ -1,7 +1,7 @@
 ---
 edition: '2021'
-firstname: Jacques
-lastname: Theys 
+firstname: 'Jacques'
+lastname: 'Theys '
 presentation: 'Teacher at the Ecole des Hautes Etudes en Sciences Sociales and vice-president
 of the Société Française de Prospective and the Plan Bleu Méditerranéen. Jacques
 Theys has notably been in charge of foresight at the Ministry of Sustainable

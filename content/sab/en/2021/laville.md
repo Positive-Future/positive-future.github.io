@@ -1,7 +1,7 @@
 ---
 edition: '2021'
-firstname: Bettina
-lastname: Laville
+firstname: 'Bettina'
+lastname: 'Laville'
 presentation: "Honorary State Councillor, Doctor of Letters, laureate of Sciences Po and
 former student of ENA, Bettina Laville is president and founder of Comité 21,
 editorial director of the transdisciplinary journal Vraiment Durable and member
