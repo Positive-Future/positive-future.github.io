@@ -357,14 +357,14 @@ collections:
     i18n: true
     nested:
       depth: 2
-      summary: '{{page_title}}'
+      summary: '{{title}}'
     folder: 'content/pages' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
       - {
           label: 'Page title',
           i18n: true,
-          name: 'page_title',
+          name: 'title',
           widget: 'string',
           required: true,
           pattern:

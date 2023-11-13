@@ -1,9 +1,7 @@
 ---
 title: 2024 edition
 theme: Work in 2050
-tipDownload: Download the tips from the organizers to guide you and help you build
-  your narrative.
-
+tipDownload: "Download the tips from the organizers to guide you and help your narrative."
 ---
 Changes in the field of work have accelerated in the last few years. Technological innovations as well as evolution in the modes of organization of work or contractual relations lead us to believe that jobs and work will be very different in the future from what we know today.
 
