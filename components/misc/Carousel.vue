@@ -4,6 +4,7 @@
       v-for="(item, i) in carousel"
       :key="i"
       :nuxt="!item.new_tab_link"
+      :contain="$vuetify.breakpoint.xs"
       :to="
         $i18n.locale === 'en'
           ? localePath(item.link)

@@ -32,7 +32,7 @@
       >
         {{ $t('selected') }}
       </v-chip>
-      <v-card-title class="pa-0">
+      <v-card-title class="pa-0 text-h6">
         {{ item.title }}
       </v-card-title>
 

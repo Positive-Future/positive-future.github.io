@@ -4,7 +4,6 @@ lastname: Buéno
 image: "/jury/bueno.jpg"
 copyright: ''
 title_and_institution: ''
-presentation: 
 linkedin: ''
 twitter: ''
 wikipedia: ''

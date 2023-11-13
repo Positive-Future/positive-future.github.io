@@ -18,17 +18,16 @@
         </v-col>
       </v-row>
     </section>
-    <section style="margin-top: 5vh">
+    <section class="mt-6">
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-row>
-            <v-col cols="6">
-              <div class="headline mb-6">
-                {{ dates.title }}
-              </div>
+            <v-col cols="12" md="6">
               <v-card>
-                <v-card-title
-                  >{{ $t('key-dates') }}
+                <v-card-title>
+                  <div class="headline mb-6">
+                    {{ dates.title }}
+                  </div>
                   <v-tooltip bottom>
                     <template #activator="{ on, attrs }">
                       <v-btn icon class="ml-auto" v-bind="attrs" v-on="on">
@@ -78,7 +77,7 @@
                 >
               </v-card>
             </v-col>
-            <v-col cols="6">
+            <v-col cols="12" md="6">
               <v-sheet
                 class="primary d-flex justify-center align-center fill-height"
                 >TEASER</v-sheet
@@ -95,7 +94,10 @@
           <v-card
             color="#4FD4C7"
             class="pa-6"
-            style="margin-bottom: -60px; max-width: 70%"
+            :style="
+              'margin-bottom: -60px; max-width: ' +
+              ($vuetify.breakpoint.smAndUp ? '70%' : '100%')
+            "
             flat
             nuxt
             :to="localePath('/about/us')"
@@ -122,14 +124,11 @@
                 <div class="logos">
                   <div class="line1"></div>
                   <div class="logo_container1 rounded-circle">
-                    <v-img :src="organizers.ias.logo" class="logo"></v-img>
+                    <v-img :src="ias.logo" class="logo"></v-img>
                   </div>
                   <div class="line2"></div>
                   <div class="logo_container2 rounded-circle">
-                    <v-img
-                      :src="organizers.fundation.logo"
-                      class="logo"
-                    ></v-img>
+                    <v-img :src="fundation.logo" class="logo"></v-img>
                   </div>
                 </div>
               </v-col>
@@ -140,14 +139,14 @@
                 <div class="d-flex justify-end">
                   <v-img
                     contain
-                    :src="organizers.anact.logo"
+                    :src="anact.logo"
                     class="mt-6"
                     max-width="150"
                     max-height="200px"
                   ></v-img>
                   <v-img
                     contain
-                    :src="organizers.inrs.logo"
+                    :src="inrs.logo"
                     class="mt-6 ml-12"
                     max-width="150"
                     max-height="200px"
@@ -176,16 +175,19 @@ export default {
     const dates = await $content(
       'pages/' + app.i18n.locale + '/2024/dates'
     ).fetch()
-    const organizers = await $content(
-      '/pages/' + app.i18n.locale + '/organizers'
-    ).fetch()
-    const organizerCollection = await $content(
-      'organizers/' + app.i18n.locale
-    ).fetch()
+    const organizers = await $content('organizers/' + app.i18n.locale).fetch()
+    const ias = organizers.find((item) => item.slug === 'ias')
+    const fundation = organizers.find((item) => item.slug === '2100')
+    const inrs = organizers.find((item) => item.slug === 'inrs')
+    const anact = organizers.find((item) => item.slug === 'anact')
     return {
       index,
       dates,
       organizers,
+      ias,
+      fundation,
+      inrs,
+      anact,
     }
   },
   data() {

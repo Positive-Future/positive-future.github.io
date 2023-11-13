@@ -9,28 +9,30 @@
           <v-row no-gutters>
             <v-col cols="12" md="8" class="pa-3">
               <h1 class="mt-8">
-                {{ organizers.ias.title }}
+                {{ ias.title }}
               </h1>
               <p>
-                {{ organizers.ias.text }}
+                <nuxt-content :document="ias" />
+
                 <a
-                  :href="organizers.ias.url"
+                  :href="ias.url"
                   target="_blank"
                   rel="noopener noreferrer"
-                  :title="organizers.ias.title"
+                  :title="ias.title"
                   >{{ $t('misc.ui.more') }}</a
                 >
               </p>
               <h1 class="mt-8 mb-4">
-                {{ organizers.fundation.title }}
+                {{ fundation.title }}
               </h1>
               <p>
-                {{ organizers.fundation.text }}
+                <nuxt-content :document="fundation" />
+
                 <a
-                  :href="organizers.fundation.url"
+                  :href="fundation.url"
                   target="_blank"
                   rel="noopener noreferrer"
-                  :title="organizers.fundation.title"
+                  :title="fundation.title"
                   >{{ $t('misc.ui.more') }}</a
                 >
               </p>
@@ -39,11 +41,11 @@
               <div class="logos">
                 <div class="line1"></div>
                 <div class="logo_container1 rounded-circle">
-                  <v-img :src="organizers.ias.logo" class="logo"></v-img>
+                  <v-img :src="ias.logo" class="logo"></v-img>
                 </div>
                 <div class="line2"></div>
                 <div class="logo_container2 rounded-circle">
-                  <v-img :src="organizers.fundation.logo" class="logo"></v-img>
+                  <v-img :src="fundation.logo" class="logo"></v-img>
                 </div>
               </div>
             </v-col>
@@ -57,7 +59,7 @@
           <v-row>
             <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="4">
               <v-img
-                :src="organizers.anact.logo"
+                :src="anact.logo"
                 contain
                 class="logo mt-16"
                 max-width="255"
@@ -67,15 +69,15 @@
             <v-col cols="12" md="8">
               <p class="mt-10 mb-0">{{ $t('misc.ui.with_the_support_of') }}</p>
               <h1 class="mt-4 mb-4">
-                {{ organizers.anact.title }}
+                {{ anact.title }}
               </h1>
               <p class="mb-3">
-                {{ organizers.anact.text }}
+                <nuxt-content :document="anact" />
                 <a
-                  :href="organizers.anact.url"
+                  :href="anact.url"
                   target="_blank"
                   rel="noopener noreferrer"
-                  :title="organizers.anact.title"
+                  :title="anact.title"
                   >{{ $t('misc.ui.more') }}</a
                 >
               </p></v-col
@@ -83,7 +85,7 @@
 
             <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="4">
               <v-img
-                :src="organizers.inrs.logo"
+                :src="inrs.logo"
                 class="logo mt-16"
                 max-width="255"
                 max-height="200px"
@@ -91,15 +93,16 @@
             </v-col>
             <v-col cols="12" md="8">
               <h1 class="mt-4 mb-4">
-                {{ organizers.inrs.title }}
+                {{ inrs.title }}
               </h1>
               <p class="mb-3">
-                {{ organizers.inrs.text }}
+                <nuxt-content :document="inrs" />
+
                 <a
-                  :href="organizers.inrs.url"
+                  :href="inrs.url"
                   target="_blank"
                   rel="noopener noreferrer"
-                  :title="organizers.inrs.title"
+                  :title="inrs.title"
                   >{{ $t('misc.ui.more') }}</a
                 >
               </p></v-col
@@ -113,12 +116,18 @@
 <script>
 export default {
   async asyncData({ app, $content }) {
-    const organizers = await $content(
-      '/pages/' + app.i18n.locale + '/organizers'
-    ).fetch()
+    const organizers = await $content('organizers/' + app.i18n.locale).fetch()
+    const ias = organizers.find((item) => item.slug === 'ias')
+    const fundation = organizers.find((item) => item.slug === '2100')
+    const inrs = organizers.find((item) => item.slug === 'inrs')
+    const anact = organizers.find((item) => item.slug === 'anact')
 
     return {
       organizers,
+      ias,
+      fundation,
+      inrs,
+      anact,
     }
   },
   data() {

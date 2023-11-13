@@ -1,5 +1,5 @@
 ---
-title: 2022 edition
+title: 2024 edition
 theme: Work in 2050
 tipDownload: Download the tips from the organizers to guide you and help you build
   your narrative.

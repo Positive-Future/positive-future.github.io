@@ -19,7 +19,7 @@
       </div>
     </div>
     <v-card-text class="pt-0">
-      <div class="headline">
+      <div class="text-h6">
         {{ item.title }}
         <v-chip
           v-if="item.category === 'winner'"

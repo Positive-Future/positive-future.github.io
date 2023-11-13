@@ -117,10 +117,10 @@ export default {
         ...(this.formats?.length && { type: { $in: this.formats } }),
         ...(this.laureatesOnly && { category: { $in: ['winner', 'crush'] } }),
         /*  below is an attempt to searhc in the team array for lastnames.
-        Turns out it doesn't work. Not possible afaik. Pls fix if you can. */
+        Turns out it doesn't work. Not possible afaik. Pls fix if you can. 
         ...(this.searchString && {
-          'team.$.lastname': { $contains: this.searchString },
-        }),
+          'team.$.lastname': { $regex: this.searchString },
+        }),*/
       }
       console.log('query: ', query)
       if (this.searchString) {

@@ -9,6 +9,10 @@ backend:
   base_url: https://85o05b11ri.execute-api.eu-west-2.amazonaws.com/
   auth_endpoint: '/dev/auth'
   cms_label_prefix: 'IEA-Paris/'
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+  sanitize_replacement: '-'
 publish_mode: editorial_workflow
 media_folder: 'static'
 logo_url: https://www.positive-future.org/icon.png
@@ -22,17 +26,21 @@ collections:
     label: 'Jury'
     label_singular: 'Jury member'
     i18n: true
+    view_filters:
+      - label: '2021 Edition'
+        field: edition
+        pattern: '2021'
+      - label: '2024 Edition'
+        field: edition
+        pattern: '2024'
     nested:
       depth: 2
       summary: '{{lastname}} {{firstname}}'
     folder: 'content/jury' # The path to the folder where the documents are stored
     create: true
-    slug: '{{lastname}}-{{firstname}}'
     summary: '{{lastname}} {{firstname}}'
-    view_groups:
-      - label: 'Edition'
-        field: editions
-        pattern: "'2021'"
+    slug: '{{lastname}}-{{firstname}}'
+    filter: false
     fields:
       [
         {
@@ -200,6 +208,17 @@ collections:
           min: 1,
         },
         {
+          label: 'Award',
+          name: 'category',
+          widget: 'select',
+          required: false,
+          default: [''],
+          multiple: false,
+          options: ['crush', 'winner'],
+          min: 1,
+          hint: 'Crush = coup de coeur du jury; winner = gagnant',
+        },
+        {
           label: 'Type',
           name: 'type',
           widget: 'select',
@@ -221,6 +240,14 @@ collections:
           widget: string,
           default: '',
           required: false,
+          i18n: true,
+        },
+        {
+          label: Presentation,
+          name: presentation,
+          widget: text,
+          default: '',
+          required: true,
           i18n: true,
         },
         {
@@ -992,6 +1019,14 @@ collections:
           i18n: duplicate,
         },
         {
+          label: Presentation,
+          name: presentation,
+          widget: text,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+        {
           label: 'Edition',
           name: 'edition',
           widget: 'select',
@@ -1129,24 +1164,20 @@ collections:
           required: true,
           i18n: duplicate,
         },
-
-        {
-          label: 'Edition',
-          name: 'edition',
-          widget: 'select',
-          default: ['2024'],
-          multiple: true,
-          options: ['2021', '2024'],
-          i18n: duplicate,
-          min: 1,
-        },
-
         {
           label: 'Logo',
           name: 'logo',
           widget: 'image',
           required: false,
           i18n: duplicate,
+        },
+        {
+          label: Presentation,
+          name: text,
+          widget: text,
+          default: '',
+          required: true,
+          i18n: true,
         },
         {
           label: 'URL',

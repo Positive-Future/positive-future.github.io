@@ -35,12 +35,12 @@
           <v-card class="mb-12" flat color="transparent">
             <!-- eslint-disable-next-line vuejs-accessibility/anchor-has-content -->
             <a id="awards" class="anchor"></a>
-            <div id="laureates" class="headline mb-4">
+            <div id="laureates" class="headline mb-4 mx-6">
               {{ $t('laureates_title') }}
             </div>
             <v-slide-group
+              v-if="$vuetify.breakpoint.smAndUp"
               class="my-4"
-              :class="laureates.length > 3 ? 'mx-n16' : 'mx-n4'"
               show-arrows
               center-active
             >
@@ -55,14 +55,16 @@
                   :index="index"
                   :total="laureates.length"
                 />
-              </v-slide-item> </v-slide-group
+              </v-slide-item>
+            </v-slide-group>
+            <LaureateList v-else></LaureateList
           ></v-card> </v-col
       ></v-row>
     </section>
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <v-card class="mb-12" flat color="transparent">
+          <v-card class="px-6 mb-12" flat color="transparent">
             <div id="jury" class="mb-4 headline">
               {{ $t('jury-members') }}
             </div>
@@ -114,7 +116,10 @@
           <v-card
             color="#4FD4C7"
             class="py-6 ml-n1"
-            style="margin-bottom: -60px; max-width: 66%"
+            :style="
+              'margin-bottom: -60px; max-width: ' +
+              ($vuetify.breakpoint.smAndUp ? '66%' : '100%')
+            "
             flat
             nuxt
             :to="localePath('/webinars/award-ceremony-2021')"
@@ -140,11 +145,14 @@
     >
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <div class="headline my-6 ml-12">
+          <div
+            class="headline my-6"
+            :class="$vuetify.breakpoint.smAndUp ? ' ml-12' : 'mx-6'"
+          >
             {{ $t('the-tools-of-the-contest') }}
           </div>
           <v-card
-            class="mx-6"
+            :class="$vuetify.breakpoint.smAndUp ? ' mx-6' : 'mx-2'"
             flat
             nuxt
             :href="localePath('/webinars')"
@@ -162,12 +170,11 @@
             </div>
           </v-card>
           <v-card
-            class="mx-6"
             flat
             nuxt
             :href="localePath('/resources')"
             color="transparent"
-            :class="{ 'mt-6': $vuetify.breakpoint.xs }"
+            :class="$vuetify.breakpoint.smAndUp ? 'mx-6' : 'mx-2 mt-6'"
           >
             <div class="d-inline-flex justify-center align-center">
               <v-icon x-large color="black" class="ma-6"
@@ -192,23 +199,13 @@ export default {
     const intro = await $content(
       '/pages/' + app.i18n.locale + '/2021/intro'
     ).fetch()
-
-    const dates = await $content(
-      '/pages/' + app.i18n.locale + '/2021/dates'
-    ).fetch()
-    const rules = await $content(
-      '/pages/' + app.i18n.locale + '/2021/rules'
-    ).fetch()
     const jury = await $content('/jury/' + app.i18n.locale + '/2021').fetch()
     const laureates = await $content('/laureates/' + app.i18n.locale + '/2021')
       .sortBy('order', 'asc')
       .fetch()
     const sab = await $content('/sab/' + app.i18n.locale + '/2021').fetch()
-
     return {
       intro,
-      dates,
-      rules,
       jury,
       sab,
       laureates: [

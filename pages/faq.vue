@@ -18,7 +18,7 @@
         <v-expansion-panels popout class="white--text mb-6">
           <v-expansion-panel v-for="(question, index) in faqItems" :key="index">
             <v-expansion-panel-header class="pa-6 nuxt-content">
-              <p class="black--text">
+              <p class="black--text mb-0">
                 {{ question.title }}
               </p>
             </v-expansion-panel-header>

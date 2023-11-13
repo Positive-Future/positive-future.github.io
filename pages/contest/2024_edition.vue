@@ -27,7 +27,9 @@
             class="pa-6 d-inline-flex justify-center align-center"
             flat
             target="_blank"
-            style="max-width: 60%"
+            :style="
+              'max-width: ' + ($vuetify.breakpoint.smAndUp ? '60%' : '100%')
+            "
             href="https://www.positive-future.org"
           >
             <v-icon x-large class="rotate-24 mr-6">mdi-folder-download</v-icon>
@@ -92,7 +94,7 @@
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-12">
-          <v-card class="px-6 pb-0 mb-0" flat color="transparent">
+          <v-card class="px-6 mb-6" flat color="transparent">
             <div id="dates" class="mb-4 headline">
               {{ $t('members-of-the-scientific-advisory-board') }}
             </div>
@@ -110,6 +112,7 @@
         </v-col>
       </v-row>
     </section>
+
     <!--  <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mt-6">
@@ -130,13 +133,16 @@
       ></v-row>
     </section> -->
 
-    <section style="background-color: #c9f8f3" class="mt-12">
+    <section style="background-color: #c9f8f3" class="mt-8">
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
           <v-card
             color="#4FD4C7"
-            class="px-6 pt-6 pb-8 mt-n6"
-            style="margin-bottom: -60px; max-width: 70%"
+            class="px-6 pt-6 pb-8 mt-n12"
+            :style="
+              'margin-bottom: -80px; max-width: ' +
+              ($vuetify.breakpoint.smAndUp ? '70%' : '100%')
+            "
             flat
             nuxt
             :to="localePath('/resources')"
@@ -180,9 +186,6 @@ export default {
     const dates = await $content(
       '/pages/' + app.i18n.locale + '/2024/dates'
     ).fetch()
-    const rules = await $content(
-      '/pages/' + app.i18n.locale + '/2024/rules'
-    ).fetch()
     const faq = await $content(
       '/pages/' + app.i18n.locale + '/2024/faq'
     ).fetch()
@@ -199,7 +202,6 @@ export default {
       intro,
       faq,
       dates,
-      rules,
       prize,
       jury,
       sab,
