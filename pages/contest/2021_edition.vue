@@ -197,7 +197,7 @@ export default {
   props: {},
   async asyncData({ app, $content }) {
     const intro = await $content(
-      '/pages/' + app.i18n.locale + '/2021/intro'
+      '/pages/' + app.i18n.locale + '/2021/intro2021'
     ).fetch()
     const jury = await $content('/jury/' + app.i18n.locale + '/2021').fetch()
     const laureates = await $content('/laureates/' + app.i18n.locale + '/2021')

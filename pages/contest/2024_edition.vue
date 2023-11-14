@@ -180,7 +180,7 @@ export default {
   props: {},
   async asyncData({ app, $content }) {
     const intro = await $content(
-      '/pages/' + app.i18n.locale + '/2024/intro'
+      '/pages/' + app.i18n.locale + '/2024/intro2024'
     ).fetch()
 
     const dates = await $content(

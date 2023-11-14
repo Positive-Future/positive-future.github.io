@@ -995,13 +995,6 @@ collections:
     summary: '{{lastname}} {{firstname}}'
     slug: '{{lastname}}-{{firstname}}'
     identifier_field: lastname
-    view_groups:
-      - label: 'Edition 2021'
-        field: edition
-        pattern: "'2021'"
-      - label: 'Edition 2024'
-        field: edition
-        pattern: "'2024'"
     fields:
       [
         {
