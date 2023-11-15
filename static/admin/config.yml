@@ -40,7 +40,6 @@ collections:
     create: true
     summary: '{{lastname}} {{firstname}}'
     slug: '{{lastname}}-{{firstname}}'
-    filter: false
     fields:
       [
         {
@@ -1136,9 +1135,6 @@ collections:
     label: 'Organizers'
     label_singular: 'Organizer'
     i18n: true
-    nested:
-      depth: 2
-      summary: '{{title}}'
     folder: 'content/organizers' # The path to the folder where the documents are stored
     create: true
     slug: '{{title}}'

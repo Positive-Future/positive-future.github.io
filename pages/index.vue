@@ -23,9 +23,9 @@
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-row>
             <v-col cols="12" md="6">
-              <v-card>
+              <v-card class="pa-3 mr-6">
                 <v-card-title>
-                  <div class="headline mb-6">
+                  <div class="headline">
                     {{ dates.title }}
                   </div>
                   <v-tooltip bottom>
@@ -69,7 +69,7 @@
                 <v-card-actions
                   ><v-sheet
                     style="background-color: #ffe2a0"
-                    class="ml-auto pa-6 mb-n6 mr-n6 text-h6 text-right"
+                    class="ml-auto pa-6 mb-n12 mr-n9 text-h6 text-right"
                     rounded
                   >
                     Jusqu'à <b>16 000€</b> à gagner

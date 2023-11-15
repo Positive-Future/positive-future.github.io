@@ -1,5 +1,5 @@
 ---
-title: Key dates
+title: '"Work in 2050" contest'
 ---
 **20th November 2023**\
 Launch of the competition  
