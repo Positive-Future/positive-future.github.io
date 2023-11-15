@@ -1,6 +1,5 @@
 ---
 title: Concours "Le Travail en 2050"
-
 ---
 **20 novembre 2023**  
 Lancement du concours  
