@@ -68,7 +68,14 @@ collections:
           required: true,
           i18n: duplicate,
         },
-        { label: 'Body', i18n: true, name: 'body', widget: 'markdown' },
+        {
+          label: 'Body',
+          i18n: true,
+          name: 'body',
+          widget: 'markdown',
+          required: false,
+          hint: 'Use it to store the bibliography',
+        },
 
         {
           label: Title and institution,
