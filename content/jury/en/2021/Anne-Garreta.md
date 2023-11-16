@@ -1,6 +1,6 @@
 ---
 lastname: F. Garréta
-title_and_institution: ""
+title_and_institution: Duke University
 copyright: ""
 social_channels:
   website: https://literature.duke.edu/people/anne-garreta
