@@ -48,7 +48,7 @@ collections:
           widget: string,
           default: '',
           required: true,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Edition(s)',
@@ -57,7 +57,7 @@ collections:
           default: ['2024'],
           multiple: true,
           options: ['2021', '2024'],
-          i18n: duplicate,
+          i18n: true,
           min: 1,
         },
         {
@@ -66,7 +66,7 @@ collections:
           widget: string,
           default: '',
           required: true,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Body',
@@ -98,14 +98,14 @@ collections:
           name: 'image',
           widget: 'image',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Picture Copyright',
           name: 'copyright',
           widget: 'string',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           widget: 'object',
@@ -122,7 +122,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: 'Wikipedia',
@@ -130,7 +130,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: 'Orcid ID',
@@ -139,7 +139,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: 'Linkedin',
@@ -147,7 +147,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: 'Twitter',
@@ -155,7 +155,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: 'Google scholar',
@@ -163,7 +163,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: 'ResearchGate',
@@ -171,7 +171,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: 'Mendeley',
@@ -179,7 +179,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
             ],
         },
@@ -204,7 +204,7 @@ collections:
           widget: string,
           default: '',
           required: true,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Edition',
@@ -240,7 +240,7 @@ collections:
           widget: string,
           default: '',
           required: true,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: Title and institution,
@@ -271,7 +271,7 @@ collections:
           name: 'youtube_video_id',
           widget: 'string',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Laureate file',
@@ -285,14 +285,14 @@ collections:
           name: 'image',
           widget: 'image',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Picture Copyright',
           name: 'copyright',
           widget: 'string',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           widget: 'object',
@@ -309,7 +309,7 @@ collections:
                 widget: string,
                 default: '',
                 required: true,
-                i18n: duplicate,
+                i18n: true,
               },
 
               {
@@ -318,7 +318,7 @@ collections:
                 widget: string,
                 default: '',
                 required: true,
-                i18n: duplicate,
+                i18n: true,
               },
             ],
         },
@@ -337,7 +337,7 @@ collections:
                 widget: string,
                 default: '',
                 required: true,
-                i18n: duplicate,
+                i18n: true,
               },
 
               {
@@ -346,7 +346,7 @@ collections:
                 widget: string,
                 default: '',
                 required: true,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: Text,
@@ -392,7 +392,7 @@ collections:
           widget: string,
           default: '',
           required: true,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: Subtitle,
@@ -400,7 +400,7 @@ collections:
           widget: string,
           default: '',
           required: true,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: Abstract,
@@ -416,7 +416,7 @@ collections:
           widget: boolean,
           default: false,
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Edition',
@@ -432,7 +432,7 @@ collections:
           name: 'youtube_video_id',
           widget: 'string',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Background color',
@@ -440,7 +440,7 @@ collections:
           widget: 'color',
           default: '#ffffff',
           required: false,
-          i18n: duplicate,
+          i18n: true,
           allowInput: true,
         },
         {
@@ -456,14 +456,14 @@ collections:
           name: 'image',
           widget: 'image',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Picture Copyright',
           name: 'copyright',
           widget: 'string',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Date',
@@ -474,7 +474,7 @@ collections:
           time_format: 'HH:mm', # e.g. 21:07,
           format: 'LLL',
           picker_utc: false,
-          i18n: duplicate,
+          i18n: true,
         },
         { label: 'Body', i18n: true, name: 'body', widget: 'markdown' },
       ]
@@ -501,21 +501,21 @@ collections:
           widget: boolean,
           default: false,
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Image',
           name: 'picture',
           widget: 'image',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Picture Copyright',
           name: 'copyright',
           widget: 'string',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Date',
@@ -526,7 +526,7 @@ collections:
           time_format: 'HH:mm', # e.g. 21:07,
           format: 'LLL',
           picker_utc: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Link',
@@ -534,7 +534,7 @@ collections:
           hint: "relative link, e.G. '/webinars/the-future-of-human-machine-cooperation-in-the-workplace-how-will-ai-impact-the-development-of-human-potential'",
           widget: 'string',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         { label: 'Body', i18n: true, name: 'body', widget: 'markdown' },
       ]
@@ -680,7 +680,7 @@ collections:
           name: 'youtube_video_id',
           widget: 'string',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Background color',
@@ -688,7 +688,7 @@ collections:
           widget: 'color',
           default: '#ffffff',
           required: false,
-          i18n: duplicate,
+          i18n: true,
           allowInput: true,
         },
         {
@@ -704,14 +704,14 @@ collections:
           name: 'image',
           widget: 'image',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Picture Copyright',
           name: 'copyright',
           widget: 'string',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Date',
@@ -722,7 +722,7 @@ collections:
           time_format: 'HH:mm', # e.g. 21:07,
           format: 'LLL',
           picker_utc: false,
-          i18n: duplicate,
+          i18n: true,
         },
       ]
   - name: 'Resources_2024'
@@ -867,7 +867,7 @@ collections:
           name: 'youtube_video_id',
           widget: 'string',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Background color',
@@ -875,7 +875,7 @@ collections:
           widget: 'color',
           default: '#ffffff',
           required: false,
-          i18n: duplicate,
+          i18n: true,
           allowInput: true,
         },
         {
@@ -891,14 +891,14 @@ collections:
           name: 'image',
           widget: 'image',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Picture Copyright',
           name: 'copyright',
           widget: 'string',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Date',
@@ -909,7 +909,7 @@ collections:
           time_format: 'HH:mm', # e.g. 21:07,
           format: 'LLL',
           picker_utc: false,
-          i18n: duplicate,
+          i18n: true,
         },
       ]
   - name: pressroom
@@ -1009,7 +1009,7 @@ collections:
           widget: string,
           default: '',
           required: true,
-          i18n: duplicate,
+          i18n: true,
         },
 
         {
@@ -1018,7 +1018,7 @@ collections:
           widget: string,
           default: '',
           required: true,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: Presentation,
@@ -1035,7 +1035,7 @@ collections:
           default: '2024',
           multiple: true,
           options: ['2021', '2024'],
-          i18n: duplicate,
+          i18n: true,
           min: 1,
         },
         {
@@ -1051,14 +1051,14 @@ collections:
           name: 'image',
           widget: 'image',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Picture Copyright',
           name: 'copyright',
           widget: 'string',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           widget: 'object',
@@ -1075,7 +1075,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: 'Wikipedia',
@@ -1083,7 +1083,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: 'Orcid ID',
@@ -1092,7 +1092,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: 'Linkedin',
@@ -1100,7 +1100,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: 'Twitter',
@@ -1108,7 +1108,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: 'Google scholar',
@@ -1116,7 +1116,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: 'ResearchGate',
@@ -1124,7 +1124,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
               {
                 label: 'Mendeley',
@@ -1132,7 +1132,7 @@ collections:
                 widget: 'string',
                 default: '',
                 required: false,
-                i18n: duplicate,
+                i18n: true,
               },
             ],
         },
@@ -1161,14 +1161,14 @@ collections:
           widget: string,
           default: '',
           required: true,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: 'Logo',
           name: 'logo',
           widget: 'image',
           required: false,
-          i18n: duplicate,
+          i18n: true,
         },
         {
           label: Presentation,
@@ -1212,6 +1212,6 @@ collections:
           time_format: 'HH:mm', # e.g. 21:07,
           format: 'LLL',
           picker_utc: false,
-          i18n: duplicate,
+          i18n: true,
           hint: used to sort the questions. Oldest are displayed last,
         }
