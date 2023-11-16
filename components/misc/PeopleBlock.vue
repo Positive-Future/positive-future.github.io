@@ -86,17 +86,16 @@
             <span>{{ social.tooltip }} </span>
           </v-tooltip>
         </div>
-        <template v-if="sab" class="nuxt-content"
+        <template class="nuxt-content"
           ><p>{{ item.presentation }}</p></template
         >
-        <nuxt-content v-else :document="item" />
 
         <small v-if="item.copyright" class="muted caption"
           >Image of &copy; {{ item.copyright }}</small
         >
 
         <v-expansion-panels
-          v-if="sab && item.body && item.body.children.length"
+          v-if="item.body && item.body.children.length"
           class="mt-6"
         >
           <v-expansion-panel>
