@@ -17,4 +17,3 @@ firstname: Anne
 image: /jury/garreta.jpg
 linkedin: ""
 ---
-xxx
