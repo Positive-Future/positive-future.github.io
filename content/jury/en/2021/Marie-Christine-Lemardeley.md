@@ -1,14 +1,19 @@
 ---
-firstname: Marie-Christine
 lastname: Lemardeley
-image: "/jury/lemardeley.jpg"
+title_and_institution: ""
 copyright: Joséphine Brueder / Ville de Paris
-title_and_institution: ''
-linkedin: ''
-twitter: ''
-wikipedia: ''
-website: ''
-editions: ['2021']
-
+twitter: ""
+editions:
+  - "2021"
+wikipedia: ""
+presentation: Deputy Mayor of Paris, in charge of Higher Education, Research and
+  Student Life since 2014. Professor emeritus of American literature,
+  specializing in John Steinbeck, President of Université Sorbonne-Nouvelle -
+  Paris 3 between 2008 and 2014. She is a Chevalier de la Légion d'honneur,
+  Chevalier de l'ordre des Palmes académiques and Officier de l'ordre national
+  du mérite.
+website: ""
+firstname: Marie-Christine
+image: /jury/lemardeley.jpg
+linkedin: ""
 ---
-Marie Christine Lemardeley is Deputy Mayor of Paris, in charge of Higher education, Research and Student life, since her election to the Paris Council in 2014 and in 2020. She is an emeritus professor of American literature, specialising in John Steinbeck. She was also President of the Sorbonne-Nouvelle - Paris 3 University between 2008 and 2014. She is a Knight of the Légion d'honneur, Knight of the Ordre des Palmes académiques and Officier of the French National Order of Merit.
