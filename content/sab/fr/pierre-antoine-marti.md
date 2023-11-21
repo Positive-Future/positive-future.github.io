@@ -1,6 +1,6 @@
 ---
-firstname: Marti
-lastname: Pierre-Antoine
+firstname: Pierre-Antoine
+lastname: Marti
 presentation: Directeur d’études de Prospective pour Futuribles International -
   centre de réflexion et d’études prospectives, Doctorant en Histoire
   Contemporaine à l’EHESS, il étudie la littérature d’anticipation au XXe

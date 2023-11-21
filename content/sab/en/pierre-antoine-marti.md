@@ -1,6 +1,6 @@
 ---
-firstname: Marti
-lastname: Pierre-Antoine
+firstname: Pierre-Antoine
+lastname: Marti
 presentation: >
   Director of Foresight Studies for Futuribles International - a think-tank for
   future-oriented studies. Doctoral student in Contemporary History at EHESS, he
