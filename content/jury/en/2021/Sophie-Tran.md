@@ -1,19 +1,18 @@
 ---
-firstname: Sophie
 lastname: Tran
-image: "/jury/tran.jpg"
-copyright: ''
-title_and_institution: ''
-presentation: Sophie Tran is Deputy Director of the Cinema Unit at ARTE France. A
-  graduate of the Ecole des Hautes Etudes en Sciences de l'Information et de la Communication
-  (CELSA), she previously worked at France Télévisions, where she was programme advisor
-  for cinema and deputy director of programme acquisitions for cinema and foreign
-  fiction.
-linkedin: ''
-twitter: ''
-wikipedia: ''
-website: ''
-editions: ['2021']
-
+title_and_institution: ""
+copyright: ""
+twitter: ""
+editions:
+  - "2021"
+wikipedia: ""
+presentation: Deputy Director of the Cinema Unit at ARTE. A graduate of the
+  Ecole des hautes études en sciences de l'information et de la communication
+  (CELSA), she previously worked at France Télévisions, where she was cinema
+  program advisor and deputy director of program acquisitions for cinema and
+  foreign fiction.
+website: ""
+firstname: Sophie
+image: /jury/tran.jpg
+linkedin: ""
 ---
-Sophie Tran is Deputy Director of the Cinema Unit at ARTE France. A graduate of the Ecole des Hautes Etudes en Sciences de l'Information et de la Communication (CELSA), she previously worked at France Télévisions, where she was programme advisor for cinema and deputy director of programme acquisitions for cinema and foreign fiction.
