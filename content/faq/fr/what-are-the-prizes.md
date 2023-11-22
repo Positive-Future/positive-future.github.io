@@ -2,8 +2,8 @@
 title: "Quels sont les prix ? "
 date: November 6, 2023 12:00 AM
 ---
-Un prix sera décerné pour chaque format : 
+Un prix sera décerné pour les trois meilleures œuvres : 
 
-* 8 000 euros pour Bande-dessinée/roman graphique ou poster graphique
-* 5 000 euros pour Vidéo/court-métrage 
-* 3 000 euros pour Audio/podcast natif.
+* 1er prix de 8 000 euros 
+* 2ème prix de 5 000 euros
+* 3ème prix de 3 000 euros
