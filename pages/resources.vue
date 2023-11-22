@@ -305,7 +305,7 @@ export default {
     const resources = await $content(
       'pages/' + app.i18n.locale + '/resources'
     ).fetch()
-    const items = await $content('resources_2021').fetch()
+    const items = await $content('resources_2024').fetch()
     const types = [...new Set(items.map((item) => item.type).flat())].sort()
     const languages = [...new Set(items.map((item) => item.lang))].sort()
     const issues = [...new Set(items.map((item) => item.issues).flat())].sort()
