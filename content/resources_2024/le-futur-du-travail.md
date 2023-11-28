@@ -12,7 +12,7 @@ category:
 type:
   - Book
 url: ""
-author: Juan Sebastain Carbonell
+author: Juan Sebastian Carbonell
 description_fr: "Sociologue du travail et des relations professionnelles,
   l'auteur déconstruit, dans cet essai, les peurs contemporaines sur le travail,
   pour en dévoiler la réalité sous-jacente : un accroissement concret de
