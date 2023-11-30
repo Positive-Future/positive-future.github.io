@@ -26,4 +26,8 @@ reviews:
       subtitle: Positive Future
       from: Fantasleria
       link: https://www.fantasleria.fr/manifestations/positive-future
+  - review:
+      subtitle: "Positive Future : un Concours pour imaginer la ville de 2100"
+      from: Actua BD
+      link: https://www.actuabd.com/Positive-Future-un-concours-pour-imaginer-la-ville-de-2100
 ---
