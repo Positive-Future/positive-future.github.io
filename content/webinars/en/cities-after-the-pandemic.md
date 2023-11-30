@@ -1,18 +1,21 @@
 ---
+abstract: As part of the effort to recover from the crisis triggered by the
+  Covid-19 pandemic, cities can reduce the impact of future pandemics and become
+  more equitable, healthy and environmentally friendly," says a new UN-Habitat
+  report released in late March 2021
+featured: true
 published: true
-date: 2021-05-10T16:00:25Z
 title: Cities after the pandemic
 subtitle: With Bettina Laville, Patrick Le Galès and Patrick Braouezec.
-categories:
-- event
-featured: true
-image: "/danist-dqxiw7ncb9q-unsplashbd.jpg"
+background_color: ""
+date: 2021-05-10T16:00:25.000Z
+link: ""
 youtube_video_id: u75Wb5TKWtY
-background_color: ''
-file: ''
-link: ''
+file: ""
+image: /danist-dqxiw7ncb9q-unsplashbd.jpg
+categories:
+  - event
 edition: "2021"
-
 ---
 Webinar broadcast on May 10th, 2021.
 

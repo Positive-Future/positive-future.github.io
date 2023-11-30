@@ -1,15 +1,20 @@
 ---
+abstract: Dans le cadre des efforts pour se relever de la crise déclenchée par
+  la pandémie de Covid-19, les villes peuvent réduire l'impact des futures
+  pandémies et devenir plus équitables, plus saines et plus respectueuses de
+  l’environnement", estime un nouveau rapport d'ONU-Habitat publié fin mars
+  2021
+featured: true
 published: true
 title: Les villes après la pandémie
 subtitle: Par Bettina Laville, Patrick Le Galès et Patrick Braouezec.
-featured: true
-image: '/danist-dqxiw7ncb9q-unsplashbd.jpg'
+background_color: ""
+date: 2021-05-10T16:00:25.000Z
+link: ""
+edition: "2021"
 youtube_video_id: u75Wb5TKWtY
-background_color: ''
-file: ''
-link: ''
-edition: '2021'
-date: 2021-05-10T16:00:25Z
+file: ""
+image: /danist-dqxiw7ncb9q-unsplashbd.jpg
 ---
 
 **Webinaire diffusé le 10 mai 2021.**
