@@ -1,19 +1,25 @@
 ---
-published: true
-title: 'Drivers of Change and Lifestyle in 2050: A Decentralized and Autonomous Futurescape'
-subtitle: 'By Victor V. Motti, Director of the WFSF. '
-categories:
-- event
+abstract: "The art and science of futures studies help us obtain a better
+  understanding of the drivers of change by focusing on Long Term, Big Picture
+  and Radical Change: for example, Tech Revolutions (Biohacking plus Artificial
+  Intelligence), Social Upheavals (Massive Access to Free Education/Tools of
+  Production), Business Disruptions (End of Banking), Major Transformations
+  (Post Plastic Society). Drivers of change are factors causing change,
+  affecting or shaping the futures."
 featured: false
-image: "/ross-findon-mg28olyfghi-unsplash.jpg"
+published: true
+title: "Drivers of Change and Lifestyle in 2050: A Decentralized and Autonomous
+  Futurescape"
+subtitle: "By Victor V. Motti, Director of the WFSF. "
+background_color: ""
+date: 2021-04-27T16:00:25.000Z
+link: ""
 youtube_video_id: ocv7qL3g6EU
-background_color: ''
-file: "/presentation_victor-motti.pdf"
-link: ''
+file: /presentation_victor-motti.pdf
+image: /ross-findon-mg28olyfghi-unsplash.jpg
+categories:
+  - event
 edition: "2021"
-date: 2021-04-27T16:00:25Z
-abstract: "Work is constantly evolving. Companies and work organizations are constantly seeking new ways of working, new balances. In the face of so many challenges, what are the prospects for work in 2050?For this second edition, the Positive Future Competition aims to bring to light positive visions of work, i.e. scenarios that show how new issues can be tackled, and how solutions and forms of regulation can be identified.Participants are invited to reflect on tomorrow's challenges and build an original story around the theme of Work in 2050."
-
 ---
 **Webinar broadcast on April 27th, 2021.**
 
