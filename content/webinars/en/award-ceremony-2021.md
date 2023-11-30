@@ -1,4 +1,8 @@
 ---
+abstract: >
+  The Positive Future jury has reached the end of its deliberations! With over
+  300 entries, we are proud and grateful to have been able to generate so much
+  interest for the first edition of the competition.
 featured: true
 published: true
 order: 12
