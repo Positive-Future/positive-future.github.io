@@ -30,4 +30,10 @@ reviews:
       subtitle: "Positive Future : un Concours pour imaginer la ville de 2100"
       from: Actua BD
       link: https://www.actuabd.com/Positive-Future-un-concours-pour-imaginer-la-ville-de-2100
+  - review:
+      subtitle: Imaginer la ville de demain avec le concours Positive Future "La ville
+        en 2100"
+      from: L'ADN Business
+      link: https://www.ladn.eu/adn-business/news-business/actualites-annonceurs/concours-positive-future-ville-
+        2100/
 ---
