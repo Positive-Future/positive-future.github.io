@@ -22,4 +22,8 @@ reviews:
         de la ville agréable à vivre de demain !
       from: Celsa
       link: https://www.reseaudesjournalistesducelsa.fr/article/
+  - review:
+      subtitle: Positive Future
+      from: Fantasleria
+      link: https://www.fantasleria.fr/manifestations/positive-future
 ---
