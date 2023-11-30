@@ -1,13 +1,16 @@
 ---
+featured: true
 published: true
+order: 12
 title: Award Ceremony
 subtitle: On September 30, 2021 at 8pm CET
-featured: true
-image: '/30septcarouselsitepf_ENjpg.jpg'
-background_color: ''
-file: ''
-order: 12
-date: 2021-09-30T16:00:25Z
+url: https://www.youtube.com/watch?v=OKMuRJFlfU0&t=49s
+edition: "2021"
+youtube_video_id: OKMuRJFlfU0&t=49s
+background_color: ""
+file: ""
+image: /30septcarouselsitepf_ENjpg.jpg
+date: 2021-09-30T16:00:25.000Z
 ---
 
 The Positive Future jury has reached the end of its deliberations!
