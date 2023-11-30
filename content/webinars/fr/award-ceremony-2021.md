@@ -1,4 +1,7 @@
 ---
+abstract: Le jury de Positive Future est arrivé au bout de ses délibérations !
+  Avec plus de 300 œuvres proposées, nous sommes fiers et reconnaissants d'avoir
+  pu susciter autant d'intérêt pour une première édition.
 featured: true
 published: true
 order: 12

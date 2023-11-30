@@ -1,10 +1,14 @@
 ---
+abstract: >
+  The Positive Future jury has reached the end of its deliberations! With over
+  300 entries, we are proud and grateful to have been able to generate so much
+  interest for the first edition of the competition.
 featured: true
 published: true
 order: 12
 title: Award Ceremony
 subtitle: On September 30, 2021 at 8pm CET
-url: xxx
+url: ""
 edition: "2021"
 youtube_video_id: OKMuRJFlfU0&
 background_color: ""
