@@ -1,17 +1,25 @@
 ---
-published: true
+abstract: "L'art et la science des études prospectives nous aident à mieux
+  comprendre les moteurs du changement en se concentrant sur le long terme et
+  les changements radicaux : par exemple, les révolutions technologiques (le
+  biohacking et l'intelligence artificielle), les bouleversements sociaux
+  (l'accès massif à l'éducation gratuite et aux outils de production), les
+  perturbations commerciales (la fin de la banque), les transformations majeures
+  (la société post plastique)."
 en: []
 fr: []
-title: 'Drivers of Change and Lifestyle in 2050: A Decentralized and Autonomous Futurescape'
-subtitle: Par Victor V. Motti, Directeur de la WFSF.
 featured: false
-image: '/ross-findon-mg28olyfghi-unsplash.jpg'
+published: true
+title: "Drivers of Change and Lifestyle in 2050: A Decentralized and Autonomous
+  Futurescape"
+subtitle: Par Victor V. Motti, Directeur de la WFSF.
+background_color: ""
+date: 2021-05-04T16:00:25.000Z
+link: ""
+edition: "2021"
 youtube_video_id: ocv7qL3g6EU
-background_color: ''
-file: '/presentation_victor-motti.pdf'
-link: ''
-edition: '2021'
-date: 2021-05-04T16:00:25Z
+file: /presentation_victor-motti.pdf
+image: /ross-findon-mg28olyfghi-unsplash.jpg
 ---
 
 **Webinaire diffusé le 4 mai 2021.**
