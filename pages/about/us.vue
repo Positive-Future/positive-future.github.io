@@ -65,7 +65,7 @@
                   :flat="$vuetify.theme.isDark"
                   height="100%"
                   nuxt
-                  :to="localePath('/about/scientific_advisory_board')"
+                  :to="localePath('/contest/2024_edition')"
                 >
                   <v-icon color="black" x-large class="d-flex">
                     mdi-trophy</v-icon

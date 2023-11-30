@@ -35,9 +35,10 @@
           $t('navigation.organizers')
         }}</nuxt-link
         >&nbsp;-&nbsp;
-        <nuxt-link :to="localePath('/contest/current')" class="blue--text">{{
-          $t('navigation.contest')
-        }}</nuxt-link
+        <nuxt-link
+          :to="localePath('/contest/2024_edition')"
+          class="blue--text"
+          >{{ $t('navigation.contest') }}</nuxt-link
         >&nbsp;-&nbsp;
         <a
           class="blue--text"

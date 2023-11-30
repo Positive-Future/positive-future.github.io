@@ -30,7 +30,7 @@
             :style="
               'max-width: ' + ($vuetify.breakpoint.smAndUp ? '60%' : '100%')
             "
-            href="https://www.positive-future.org"
+            href="https://drive.google.com/drive/folders/1lNHAdIi9zsg9u2lsxvmuLvJeW-Zj94lq?usp=sharing"
           >
             <v-icon x-large class="rotate-24 mr-6">mdi-folder-download</v-icon>
             <div class="nuxt-content">
@@ -50,26 +50,12 @@
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-12">
           <v-card class="px-6 pb-0 mb-0" flat color="transparent">
-            <div id="dates" class="mb-4 headline">
-              {{ $t('key-dates') }}
-            </div>
-            <nuxt-content :document="dates" class="my-4" />
+            <nuxt-content :document="contest" class="my-4" />
           </v-card>
         </v-col>
       </v-row>
     </section>
-    <section>
-      <v-row justify="center" no-gutters>
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-12">
-          <v-card class="px-6 pb-0 mb-0" flat color="transparent">
-            <div id="prizes" class="mb-4 headline">
-              {{ $t('prizes-to-be-awarded') }}
-            </div>
-            <nuxt-content :document="prize" class="my-4" />
-          </v-card>
-        </v-col>
-      </v-row>
-    </section>
+
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-12">
@@ -95,9 +81,16 @@
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-12">
           <v-card class="px-6 mb-6" flat color="transparent">
-            <div id="dates" class="mb-4 headline">
+            <div id="dates" class="mb-0 headline">
               {{ $t('members-of-the-scientific-advisory-board') }}
             </div>
+            <nuxt-link
+              class="subtitle"
+              :to="localePath('/about/scientific_advisory_board')"
+              >{{
+                $t('learn-more-about-the-role-of-the-scientific-advisory-board')
+              }}</nuxt-link
+            >
             <v-row v-if="sab && sab.length > 0" justify="center" no-gutters>
               <people-block
                 v-for="(people, index) in sab"
@@ -167,7 +160,7 @@
             <div class="d-inline-flex justify-center align-center">
               <v-icon x-large color="black" class="mr-6">mdi-forum-plus</v-icon>
 
-              <nuxt-content :document="faq" class="mb-4 mt-2" />
+              <nuxt-content :document="faq" class="my-2" />
             </div>
           </v-card>
         </v-col>
@@ -183,8 +176,8 @@ export default {
       '/pages/' + app.i18n.locale + '/2024/intro2024'
     ).fetch()
 
-    const dates = await $content(
-      '/pages/' + app.i18n.locale + '/2024/dates'
+    const contest = await $content(
+      '/pages/' + app.i18n.locale + '/contest'
     ).fetch()
     const faq = await $content(
       '/pages/' + app.i18n.locale + '/2024/faq'
@@ -201,7 +194,7 @@ export default {
     return {
       intro,
       faq,
-      dates,
+      contest,
       prize,
       jury,
       sab,

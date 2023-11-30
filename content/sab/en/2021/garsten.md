@@ -1,6 +1,11 @@
 ---
-edition: '2021'
-firstname: 'Christina'
-lastname: 'Garsten'
-presentation: 'Christina Garsten is professor of Social Anthropology at Stockholm University and Principal and Permanent Fellow of the Swedish Collegium for Advanced Study. She works in organizational anthropology, with a special focus on globalization processes, sociocultural dynamics and forms of governance. She is particularly interested in the creation and use of future foresight activities and scenario creation as part of knowledge creation.'
+firstname: Christina
+lastname: Garsten
+presentation: Professor of Social Anthropology at Stockholm University and
+  Director and Permanent Resident of the Swedish Collegium for Advanced Studies
+  (SCAS). She works in the field of organizational anthropology, with a
+  particular focus on globalization processes, socio-cultural dynamics and forms
+  of governance. She is particularly interested in the creation and use of
+  foresight and scenario-building activities for knowledge creation.
+edition: "2021"
 ---

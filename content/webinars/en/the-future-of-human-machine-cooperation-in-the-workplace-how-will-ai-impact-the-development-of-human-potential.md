@@ -1,5 +1,5 @@
 ---
-edition: ''
+edition: '2024'
 published: true
 title: 'The Future of Human-Machine Cooperation in the Workplace: How Will AI Impact
   the Development of Human Potential?'

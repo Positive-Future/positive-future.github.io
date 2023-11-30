@@ -28,31 +28,6 @@
                   <div class="headline">
                     {{ dates.title }}
                   </div>
-                  <add-to-calendar-button
-                    name="[Reminder] Test the Add to Calendar Button"
-                    start-date="2023-10-23"
-                    start-time="10:15"
-                    end-time="23:30"
-                    time-zone="America/Los_Angeles"
-                    location="World Wide Web"
-                    description="Check out the maybe easiest way to include Add to Calendar Buttons to your web projects:[br]→ [url]https://add-to-calendar-button.com/"
-                    options="'Apple','Google','iCal','Outlook.com','Microsoft 365','Microsoft Teams','Yahoo'"
-                    light-mode="bodyScheme"
-                  ></add-to-calendar-button>
-                  <v-tooltip bottom>
-                    <template #activator="{ on, attrs }">
-                      <v-btn
-                        icon
-                        class="ml-auto"
-                        v-bind="attrs"
-                        v-on="on"
-                        @click="modal = true"
-                      >
-                        <v-icon>mdi-calendar-plus</v-icon></v-btn
-                      >
-                    </template>
-                    <span>{{ $t('add-the-key-dates-to-your-calendar') }}</span>
-                  </v-tooltip>
                 </v-card-title>
                 <v-card-text>
                   <nuxt-content :document="dates" class="my-4" />
@@ -132,14 +107,14 @@
                     contain
                     :src="anact.logo"
                     class="mt-6"
-                    max-width="150"
+                    :max-width="$vuetify.breakpoint.md ? '150px' : '200px'"
                     max-height="200px"
                   ></v-img>
                   <v-img
                     contain
                     :src="inrs.logo"
                     class="mt-6 ml-12"
-                    max-width="150"
+                    :max-width="$vuetify.breakpoint.md ? '150px' : '200px'"
                     max-height="200px"
                   ></v-img>
                 </div>

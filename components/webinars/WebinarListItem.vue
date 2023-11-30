@@ -23,7 +23,10 @@
     </v-avatar>
     <div class="d-flex flex-column flex-grow-1">
       <div class="d-flex flex-row pt-3 pr-3">
-        <v-card-title class="align-center pb-0 pr-0" style="max-width: 580px">
+        <v-card-title
+          class="align-center pb-0 pr-0 mr-3"
+          style="max-width: 580px"
+        >
           <!-- 
         I had to wrap the title in a paragraph node to avoid inconsistent line breaks with search highlights. 
         If your CSS foo is better than mine, the cleaner way is welcome. 
@@ -46,7 +49,6 @@
             <span v-html="highlight(item.title, search)"></span>
           </p>
         </v-card-title>
-        <v-spacer></v-spacer>
         <v-chip
           v-if="new Date(item.date) > Date.now()"
           label
@@ -56,7 +58,7 @@
           {{ $t('upcoming') }}</v-chip
         >
         <v-chip
-          v-else
+          v-else-if="item.youtube_video_id"
           label
           color="#00c2cb"
           text-color="white"
@@ -83,7 +85,7 @@
             })
           "
         ></p>
-        <p>{{ item.abstract }} &hellip;</p>
+        <p class="abstract">{{ item.abstract }} &hellip;</p>
         <!--     <div class="overline">{{ item.date }}</div> -->
         <small v-if="item.copyright" class="muted caption"
           >Image of &copy; {{ item.copyright }}</small
@@ -148,4 +150,11 @@ export default {
   },
 }
 </script>
-<style lang="scss"></style>
+<style lang="scss">
+.abstract {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+</style>

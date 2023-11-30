@@ -86,7 +86,7 @@
             <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="4">
               <v-img
                 :src="inrs.logo"
-                class="logo mt-16"
+                class="logo"
                 max-width="255"
                 max-height="200px"
               ></v-img>

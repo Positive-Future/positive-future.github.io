@@ -1,14 +1,14 @@
 ---
-title: 'Concours "Le Travail en 2050"'
+title: Concours "Le Travail en 2050"
 ---
-**20 novembre 2023**\
+**5 décembre 2023**\
 Lancement du concours  
 
-**22 mars 2024**\
+**26 mars 2024**\
 Ouverture de la plateforme de dépôt des œuvres
 
-**26 avril 2024**\
-Fermeture de la plateforme de dépôt des œuvres
+**22 avril 2024**\
+Date limite de participation
 
 **Juin 2024 (date à préciser)**\
 Cérémonie de remise des prix à Paris

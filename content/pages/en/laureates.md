@@ -1,5 +1,4 @@
 ---
 title: Laureates
-
 ---
-Six candidates were distinguished by the 2021 Jury. A seventh team received special recognition from the competition organizers. Each work can be read entirely in its original language.
+For each edition of the Contest, particular attention is paid to the participants' reflections on the given theme. The finalists' works provide a truly inspiring and fresh dimension of the future that stands out from the usual scenarios, while offering a concrete and realistic perspective.

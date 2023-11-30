@@ -8,6 +8,7 @@ background_color: ''
 file: ''
 order: 12
 date: 2021-09-30T16:00:25Z
+edition: '2024'
 ---
 
 The Positive Future jury has reached the end of its deliberations!

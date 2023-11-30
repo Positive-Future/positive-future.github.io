@@ -6,14 +6,11 @@ twitter: ""
 editions:
   - "2021"
 wikipedia: ""
-presentation: Antoine Buéno is a writer and advisor to the French Senate in
-  charge of monitoring the work of the Sustainable Development Commission and
-  the Foresight Delegation. He is also a specialist in utopia and science
-  fiction, which he taught at Sciences Po. He is the author of anticipation
-  novels and essays on subjects as varied as the sociology of smurfs, the
-  virtues of non-voting, and birth control. His latest book, Futur, notre avenir
-  de A à Z (Flammarion), has been presented in the media as the essential book
-  on foresight.
+presentation: Writer specializing in utopia and science fiction, he teaches at
+  Sciences Po and is an advisor to the French Senate, responsible for monitoring
+  the work of the Sustainable Development Commission and the Foresight
+  Delegation. His book, Futur, notre avenir de A à Z (ed. Flammarion) is a
+  must-read for all futurists.
 website: ""
 firstname: Antoine
 image: /jury/bueno.jpg

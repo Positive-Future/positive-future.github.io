@@ -74,7 +74,6 @@
   </v-dialog>
 </template>
 <script>
-import 'add-to-calendar-button-vue'
 export default {
   props: {
     dialog: {

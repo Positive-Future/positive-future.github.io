@@ -1,14 +1,16 @@
 ---
-firstname: Célia
 lastname: Blauel
-image: "/jury/blauel.jpg"
+title_and_institution: ""
 copyright: Joséphine Brueder / Ville de Paris
-title_and_institution: ''
-linkedin: ''
-twitter: ''
-wikipedia: ''
-website: ''
-editions: ['2021']
-
+twitter: ""
+editions:
+  - "2021"
+wikipedia: ""
+presentation: Deputy Mayor of Paris, initially in charge of Ecological
+  Transition, Climate and Water. Since 2020, she has been in charge of the
+  Seine, Prospective Paris 2030 and Resilience.
+website: ""
+firstname: Célia
+image: /jury/blauel.jpg
+linkedin: ""
 ---
-Célia Blauel has been Deputy Mayor of Paris since 2014. After a mandate in charge of the Ecological Transition, Climate and Water, Célia Blauel has been in charge of the Seine, Foresight Paris 2030 and Resilience since the June 2020 municipal elections.

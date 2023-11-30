@@ -407,7 +407,7 @@ collections:
           name: url,
           widget: string,
           default: '',
-          required: true,
+          required: false,
           i18n: true,
         },
         {
@@ -967,14 +967,26 @@ collections:
               label: 'Mediakit',
               name: 'mediakit',
               widget: 'object',
+              required: false,
               fields:
                 [
-                  { name: 'url', widget: 'string', label: 'URL' },
-                  { name: 'content', widget: 'string', label: 'Content' },
+                  {
+                    name: 'url',
+                    widget: 'string',
+                    label: 'URL',
+                    required: false,
+                  },
+                  {
+                    name: 'content',
+                    widget: 'string',
+                    label: 'Content',
+                    required: false,
+                  },
                   {
                     name: 'title',
                     widget: 'string',
                     label: 'Name of the media kit',
+                    required: false,
                   },
                 ],
             }
@@ -982,18 +994,26 @@ collections:
               label: 'Contact',
               name: 'contact',
               widget: 'object',
+              required: false,
               fields:
                 [
-                  { name: 'email', widget: 'string', label: 'Email' },
+                  {
+                    name: 'email',
+                    widget: 'string',
+                    label: 'Email',
+                    required: false,
+                  },
                   {
                     name: 'phone',
                     widget: 'string',
                     label: 'Telephone number',
+                    required: false,
                   },
                   {
                     name: 'name',
                     widget: 'string',
                     label: 'Name of press contact',
+                    required: false,
                   },
                 ],
             }
@@ -1001,15 +1021,31 @@ collections:
               label: 'Press releases',
               name: 'releases',
               widget: 'list',
+              required: false,
               field:
                 {
                   name: release,
                   widget: object,
                   fields:
                     [
-                      { label: Title, name: title, widget: string },
-                      { label: Date, name: date, widget: datetime },
-                      { label: File, name: file, widget: file },
+                      {
+                        label: Title,
+                        name: title,
+                        widget: string,
+                        required: false,
+                      },
+                      {
+                        label: Date,
+                        name: date,
+                        widget: datetime,
+                        required: false,
+                      },
+                      {
+                        label: File,
+                        name: file,
+                        widget: file,
+                        required: false,
+                      },
                     ],
                 },
             }
@@ -1023,10 +1059,33 @@ collections:
                   widget: object,
                   fields:
                     [
-                      { label: Subtitle, name: subtitle, widget: string },
-                      { label: From, name: from, widget: string },
-                      { label: Link, name: link, widget: string },
-                      { label: Date, name: date, widget: date },
+                      {
+                        label: Subtitle,
+                        name: subtitle,
+                        widget: string,
+                        required: false,
+                      },
+
+                      {
+                        label: From,
+                        name: from,
+                        widget: string,
+                        required: false,
+                      },
+
+                      {
+                        label: Link,
+                        name: link,
+                        widget: string,
+                        required: false,
+                      },
+
+                      {
+                        label: Date,
+                        name: date,
+                        widget: datetime,
+                        required: false,
+                      },
                     ],
                 },
             }
@@ -1177,7 +1236,14 @@ collections:
               },
             ],
         },
-        { label: 'Body', i18n: true, name: 'body', widget: 'markdown' },
+        {
+          label: 'Body',
+          i18n: true,
+          name: 'body',
+          widget: 'markdown',
+          required: false,
+          hint: used to store the bibliography,
+        },
       ]
   - name: 'organizers'
     label: 'Organizers'

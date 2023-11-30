@@ -1,6 +1,13 @@
 ---
-edition: '2021'
-firstname: 'Fabienne'
-lastname: 'Goux-Baudiment'
-presentation: 'Doctor in Human and Social Foresight (HSS), she founded proGective - a study, research and consultancy center in foresight in 1995, chaired the World Futures Studies Federation and the French Society for Foresight and held the chair of Foresight, Innovation and Intangible Capital at Polytech Angers as associate professor. An international speaker, her research, after the "Great Transition", is now focused on the X.0 development model.'
+firstname: Fabienne
+lastname: Goux-Baudiment
+presentation: >
+  Doctor of Social Sciences, founder of proGective - a center for foresight
+  study, research and consulting, she has chaired the World Futures Studies
+  Federation and the Société Française de Prospective, and held the chair of
+  Prospective, Innovation and Immaterial Capital at Polytech Angers as an
+  associate professor. As an international lecturer, her research work,
+  following on from the 'Great Transition', now focuses on the X.0 development
+  model.
+edition: "2021"
 ---

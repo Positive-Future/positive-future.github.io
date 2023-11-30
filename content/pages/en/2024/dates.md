@@ -1,14 +1,14 @@
 ---
 title: '"Work in 2050" contest'
 ---
-**20th November 2023**\
-Launch of the competition  
+**December 5th 2023**\
+Launch of the contest  
 
-**22nd March 2024**\
-Opening of the platform for depositing works
+**March 26th 2024**\
+Opening of the platform for submission
 
-**26th April 2024**\
-Closing of the work deposit platform
+**April 22nd 2024**\
+Dealine to submit
 
 **June 2024 (date to be specified)**\
-Prize-giving ceremony in Paris
+Award ceremony in Paris

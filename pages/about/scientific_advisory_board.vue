@@ -23,14 +23,15 @@
               )
             }}
           </div>
+          <div class="headline mt-12">
+            {{ $t('2024-edition') }}
+          </div>
           <template v-for="(item, index) in sabList">
-            <div :key="index" class="my-6">
-              <span class="name px-1">
-                {{ item.firstname + ' ' + item.lastname }}
-              </span>
-              <nuxt-content :document="item" />
-            </div>
+            <people-block :key="index" :item="item" :sab="true" />
           </template>
+          <div class="headline mt-12 mb-2">
+            {{ $t('2021-edition') }}
+          </div>
           <nuxt-link nuxt :to="localePath('/contest/2021_edition#sab')">{{
             $t('check-positive-future-2021-scientific-advisory-board-members')
           }}</nuxt-link>

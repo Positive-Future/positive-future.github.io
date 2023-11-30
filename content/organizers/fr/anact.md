@@ -1,5 +1,5 @@
 ---
-logo: "/who/anact-logo.svg"
+logo: "/who/anact-logo.png"
 title: Agence nationale pour l'amélioration des conditions de travail'
 url: https://www.anact.fr/
 
