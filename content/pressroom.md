@@ -17,4 +17,9 @@ reviews:
         2100"
       from: Amcsti
       link: https://www.amcsti.fr/fr/annonces/positive-future-concours-ouvert-a-imaginer-ville-de-2100/
+  - review:
+      subtitle: Positive Future - un concours pour imaginer, par la fiction, le visage
+        de la ville agréable à vivre de demain !
+      from: Celsa
+      link: https://www.reseaudesjournalistesducelsa.fr/article/
 ---
