@@ -1,21 +1,24 @@
 ---
-published: true
-title: Les villes dans le monde d’après – Les agences d’urbanisme explorent les futurs
-  (heureux)
-subtitle: Par Brigitte Bariol-Mathais et Karine Hurel
-categories:
-- event
-featured: false
-image: "/peerapon-chantharainthron-kavu6s_qtyo-unsplash.jpg"
-youtube_video_id: va_hcao0uRc
-background_color: ''
-file: ''
-link: ''
-edition: "2021"
+abstract: "La Fédération nationale des agences d’urbanisme (Fnau) a placé ses
+  rencontres 2020 sous le signe de la prospective. Les agences ont travaillé en
+  réseau sur les changements à l’horizon 2040 pour imaginer un « monde d’après »
+  qui aurait réussi à relever les défis des transitions. "
 en: []
 fr: []
-date: 2021-04-21T15:00:00Z
-
+featured: false
+published: true
+title: Les villes dans le monde d’après – Les agences d’urbanisme explorent les
+  futurs (heureux)
+subtitle: Par Brigitte Bariol-Mathais et Karine Hurel
+background_color: ""
+date: 2021-04-21T15:00:00.000Z
+link: ""
+youtube_video_id: va_hcao0uRc
+file: ""
+image: /peerapon-chantharainthron-kavu6s_qtyo-unsplash.jpg
+categories:
+  - event
+edition: "2021"
 ---
 La Fédération nationale des agences d’urbanisme (Fnau) a placé ses rencontres 2020 sous le signe de la prospective. **Les agences ont travaillé en réseau sur les changements à l’horizon 2040 pour imaginer un « monde d’après » qui aurait réussi à relever les défis des transitions**. Il s’agissait de questionner l’avenir par les notions de bonheur et de bien-être, de développement durable et de transition écologique réussie, de renouveau démocratique, afin de construire des perspectives de futurs souhaitables, mais aussi crédibles. Les visions prospectives proposées ont plusieurs facettes : certaines se fondent sur la résilience face à la crise de la Covid-19, d’autres s’appuient sur des imaginaires territoriaux ou des démarches ludiques **pour questionner les projets de territoire ou l’émergence de nouvelles politiques publiques, à l’horizon 2040.**
 
