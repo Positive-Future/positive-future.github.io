@@ -1,14 +1,19 @@
 ---
+lastname: "F. Øverland "
+title_and_institution: ""
+copyright: ""
+twitter: ""
+editions:
+  - "2021"
+wikipedia: ""
+presentation: President of the World Futures Studies Federation, WFSF, and
+  co-editor/co-founder of the European Journal of Futures Research, EJFR.
+  Visiting scholar at the Freie Universität Berlin and Senior Policy Advisor to
+  the Norwegian Minister of Education and Research. He is the author of several
+  books and scientific articles on future research, including CARPE FUTURUM. How
+  to manage the future, (ed. Cappelen 2010).
+website: ""
 firstname: Erik
-lastname: 'F. Øverland '
-image: "/jury/overland.jpg"
-copyright: ''
-title_and_institution: ''
-linkedin: ''
-twitter: ''
-wikipedia: ''
-website: ''
-editions: ['2021']
-
+image: /jury/overland.jpg
+linkedin: ""
 ---
-Erik F. Øverland is the President of The World Futures Studies Federation, WFSF and the Co-Editor-in-Chief and co-founder of the European Journal of Futures Research, EJFR. He holds a part time position as a guest researcher at the Freie Universität Berlin and is a senior policy advisor to the Norwegian Minister of Education and Research. He has represented Norway as official delegate to several working groups and committees in the EU and the Council of Europe. He has also conducted futures studies for agencies and business enterprises both in Norway and abroad. Dr. Øverland has published several books and scientific articles about futures studies, such as CARPE FUTURUM. How to manage the future (Cappelen Publishing, 2010).
