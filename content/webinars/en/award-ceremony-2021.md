@@ -4,9 +4,9 @@ published: true
 order: 12
 title: Award Ceremony
 subtitle: On September 30, 2021 at 8pm CET
-url: https://www.youtube.com/watch?v=OKMuRJFlfU0&t=49s
+url: xxx
 edition: "2021"
-youtube_video_id: OKMuRJFlfU0&t=49s
+youtube_video_id: OKMuRJFlfU0&
 background_color: ""
 file: ""
 image: /30septcarouselsitepf_ENjpg.jpg

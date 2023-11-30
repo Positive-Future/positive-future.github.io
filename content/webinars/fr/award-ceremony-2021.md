@@ -5,7 +5,7 @@ order: 12
 title: Cérémonie de Remise des Prix
 subtitle: Le 30 septembre à 20h
 edition: "2021"
-youtube_video_id: OKMuRJFlfU0&t=49s
+youtube_video_id: OKMuRJFlfU0&
 background_color: ""
 file: ""
 image: /30septcarouselsitepf_FR.jpg
