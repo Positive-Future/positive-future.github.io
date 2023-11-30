@@ -13,8 +13,8 @@
             <AddToCalendar
               :title="item.title"
               location="Online"
-              :start="new Date()"
-              :end="new Date(new Date().setDate(new Date().getDate() + 1))"
+              :start="new Date('2024-03-22T00:00:00')"
+              :end="new Date('2024-04-26T00:00:00')"
               inline-template
             >
               <google-calendar
@@ -30,8 +30,8 @@
             <AddToCalendar
               :title="item.title"
               location="Online"
-              :start="new Date()"
-              :end="new Date(new Date().setDate(new Date().getDate() + 1))"
+              :start="formatDate('2024-03-22T00:00:00')"
+              :end="formatDate('2024-04-26T00:00:00')"
               inline-template
             >
               <microsoft-calendar
@@ -47,8 +47,8 @@
             <AddToCalendar
               :title="item.title"
               location="Online"
-              :start="new Date()"
-              :end="new Date(new Date().setDate(new Date().getDate() + 1))"
+              :start="formatDate('2024-03-22T00:00:00')"
+              :end="formatDate('2024-04-26T00:00:00')"
               inline-template
             >
               <office365-calendar
@@ -74,11 +74,8 @@
   </v-dialog>
 </template>
 <script>
-import AddToCalendar from 'vue-add-to-calendar'
+import 'add-to-calendar-button-vue'
 export default {
-  components: {
-    AddToCalendar,
-  },
   props: {
     dialog: {
       type: Boolean,
@@ -94,7 +91,11 @@ export default {
   },
   computed: {},
   mounted() {},
-  methods: {},
+  methods: {
+    formatDate(date) {
+      return new Date(date)
+    },
+  },
 }
 </script>
 <style lang="scss"></style>

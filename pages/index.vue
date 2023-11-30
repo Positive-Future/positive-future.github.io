@@ -24,41 +24,32 @@
           <v-row>
             <v-col cols="12" md="6">
               <v-card class="pa-3 mr-6">
-                <v-card-title>
+                <v-card-title class="pr-0">
                   <div class="headline">
                     {{ dates.title }}
                   </div>
+                  <add-to-calendar-button
+                    name="[Reminder] Test the Add to Calendar Button"
+                    start-date="2023-10-23"
+                    start-time="10:15"
+                    end-time="23:30"
+                    time-zone="America/Los_Angeles"
+                    location="World Wide Web"
+                    description="Check out the maybe easiest way to include Add to Calendar Buttons to your web projects:[br]→ [url]https://add-to-calendar-button.com/"
+                    options="'Apple','Google','iCal','Outlook.com','Microsoft 365','Microsoft Teams','Yahoo'"
+                    light-mode="bodyScheme"
+                  ></add-to-calendar-button>
                   <v-tooltip bottom>
                     <template #activator="{ on, attrs }">
-                      <v-btn icon class="ml-auto" v-bind="attrs" v-on="on">
+                      <v-btn
+                        icon
+                        class="ml-auto"
+                        v-bind="attrs"
+                        v-on="on"
+                        @click="modal = true"
+                      >
                         <v-icon>mdi-calendar-plus</v-icon></v-btn
                       >
-                      <!--  <add-to-calendar
-                        title="VueConf"
-                        location="WROCŁAW, POLAND"
-                        :start="new Date()"
-                        :end="
-                          new Date(new Date().setDate(new Date().getDate() + 1))
-                        "
-                        details="The first Official Vue.js Conference in the world!"
-                        inline-template
-                      >
-                        <div>
-                          <google-calendar id="google-calendar">
-                            <i class="fa fa-google"></i> Add to Google calendar
-                          </google-calendar>
-
-                          <microsoft-calendar id="microsoft-calendar">
-                            <i class="fa fa-windows"></i> Add to Microsoft live
-                            calendar
-                          </microsoft-calendar>
-
-                          <office365-calendar id="office365-calendar">
-                            <i class="fa fa-windows"></i> Add to Office365
-                            outlook calendar
-                          </office365-calendar>
-                        </div>
-                      </add-to-calendar> -->
                     </template>
                     <span>{{ $t('add-the-key-dates-to-your-calendar') }}</span>
                   </v-tooltip>
@@ -194,6 +185,7 @@ export default {
     return {
       colors: ['indigo', 'red lighten-1', 'deep-purple accent-4'],
       slides: ['First', 'Second', 'Third'],
+      modal: false,
     }
   },
   computed: {},

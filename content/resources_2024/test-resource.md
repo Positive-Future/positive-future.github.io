@@ -8,8 +8,10 @@ perspectives:
 issues:
   - management_and_organisation
   - health_and_security
-category: face_our_challenges_today
-type: Book
+category: 
+  - face_our_challenges_today
+type: 
+  - Book
 description_fr: L’initiative Positive Future, portée par l’Institut d’études
   avancées de Paris et la Fondation 2100 vise à faire connaître largement les
   travaux de prospective, pour permettre à toutes et tous de penser un futur

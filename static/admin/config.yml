@@ -403,6 +403,14 @@ collections:
           i18n: true,
         },
         {
+          label: URL,
+          name: url,
+          widget: string,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+        {
           label: Abstract,
           name: abstract,
           widget: text,
@@ -660,6 +668,22 @@ collections:
           min: 1,
         },
         {
+          label: URL,
+          name: url,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: Author,
+          name: author,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
           label: French description,
           name: description_fr,
           widget: text,
@@ -819,7 +843,7 @@ collections:
           name: 'category',
           widget: 'select',
           default: [],
-          multiple: false,
+          multiple: true,
           options:
             [
               'stimulate_your_creativity',
@@ -834,9 +858,34 @@ collections:
           name: 'type',
           widget: 'select',
           default: [],
-          multiple: false,
-          options: ['Article', 'Book', 'Photo', 'Video', 'Drawing', 'Podcast'],
+          multiple: true,
+          options:
+            [
+              'Article',
+              'Book',
+              'Photo',
+              'Video',
+              'Drawing',
+              'Podcast',
+              'Report',
+            ],
           min: 1,
+        },
+        {
+          label: URL,
+          name: url,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: Author,
+          name: author,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
         },
         {
           label: French description,
