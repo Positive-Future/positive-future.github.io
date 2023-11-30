@@ -1,19 +1,18 @@
 ---
-edition: '2024'
+featured: false
 published: true
+order: "12"
 title: The Urgency of Prototyping Better Futures
 subtitle: Par Marcela Sabino, spécialiste de prospective stratégique
-date: 2022-06-21T16:00:00Z
+background_color: ""
+date: 2022-06-21T16:00:00.000Z
+link: ""
+youtube_video_id: rOyAnQADDI
+file: ""
+image: /imagem1.jpg
 categories:
-- event
-featured: false
-image: "/imagem1.jpg"
-youtube_video_id: ''
-background_color: ''
-file: ''
-link: ''
-order: "12"
-
+  - event
+edition: "2024"
 ---
 ![](/newimage-annonce-webinaire21062022fr.png)
 
