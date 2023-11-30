@@ -8,7 +8,7 @@ published: true
 order: 12
 title: Award Ceremony
 subtitle: On September 30, 2021 at 8pm CET
-url: xxx
+url: ""
 edition: "2021"
 youtube_video_id: OKMuRJFlfU0&
 background_color: ""
