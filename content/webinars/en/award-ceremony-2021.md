@@ -6,7 +6,7 @@ title: Award Ceremony
 subtitle: On September 30, 2021 at 8pm CET
 url: xxx
 edition: "2021"
-youtube_video_id: OKMuRJFlfU0&t
+youtube_video_id: OKMuRJFlfU0&
 background_color: ""
 file: ""
 image: /30septcarouselsitepf_ENjpg.jpg
