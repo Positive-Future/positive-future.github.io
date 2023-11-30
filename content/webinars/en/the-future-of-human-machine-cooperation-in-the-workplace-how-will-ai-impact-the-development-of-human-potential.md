@@ -1,21 +1,20 @@
 ---
-edition: '2024'
-published: true
-title: 'The Future of Human-Machine Cooperation in the Workplace: How Will AI Impact
-  the Development of Human Potential?'
-subtitle: By Karim Jebari (Institute for Futures Studies), Markus Furendal (Stockholm
-  University)
-date: 2022-04-20T16:00:00.000+00:00
-categories:
-- event
 featured: false
-image: "/thisisengineering-raeng-wjowazupass-unsplash-2.jpg"
-youtube_video_id: ''
-background_color: ''
-file: ''
-link: ''
+published: true
 order: "11"
-
+title: "The Future of Human-Machine Cooperation in the Workplace: How Will AI
+  Impact the Development of Human Potential?"
+subtitle: By Karim Jebari (Institute for Futures Studies), Markus Furendal
+  (Stockholm University)
+background_color: ""
+date: 2022-04-20T16:00:00.000+00:00
+link: ""
+youtube_video_id: AwxkhJp0P14
+file: ""
+image: /thisisengineering-raeng-wjowazupass-unsplash-2.jpg
+categories:
+  - event
+edition: "2024"
 ---
 #### Presentation
 
