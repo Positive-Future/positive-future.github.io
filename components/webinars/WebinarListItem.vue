@@ -49,6 +49,7 @@
             <span v-html="highlight(item.title, search)"></span>
           </p>
         </v-card-title>
+        <v-spacer></v-spacer>
         <v-chip
           v-if="new Date(item.date) > Date.now()"
           label

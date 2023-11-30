@@ -10,6 +10,7 @@ file: '/victor-garcia-ndk_3biaghc-unsplash-1.jpg'
 link: ''
 edition: '2021'
 date: 2021-05-25T16:00:25Z
+abstract: "L'art et la science des études prospectives nous aident à mieux comprendre les moteurs du changement en se concentrant sur le long terme et les changements radicaux : par exemple, les révolutions technologiques (le biohacking et l'intelligence artificielle), les bouleversements sociaux (l'accès massif à l'éducation gratuite et aux outils de production), les perturbations commerciales (la fin de la banque), les transformations majeures (la société post plastique)."
 ---
 
 **Webinaire diffusé le 25 mai 2021.**

@@ -6,8 +6,6 @@ abstract: "L'art et la science des études prospectives nous aident à mieux
   (l'accès massif à l'éducation gratuite et aux outils de production), les
   perturbations commerciales (la fin de la banque), les transformations majeures
   (la société post plastique)."
-en: []
-fr: []
 featured: false
 published: true
 title: "Drivers of Change and Lifestyle in 2050: A Decentralized and Autonomous

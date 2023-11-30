@@ -8,11 +8,12 @@ order: 12
 title: Cérémonie de Remise des Prix
 subtitle: Le 30 septembre à 20h
 edition: "2021"
-youtube_video_id: OKMuRJFlfU0&
+youtube_video_id: OKMuRJFlfU0
 background_color: ""
 file: ""
 image: /30septcarouselsitepf_FR.jpg
 date: 2021-09-30T16:00:25.000Z
+
 ---
 
 Le jury de Positive Future est arrivé au bout de ses délibérations !

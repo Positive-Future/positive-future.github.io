@@ -1,13 +1,14 @@
 ---
-firstname: ""
-lastname: ""
+firstname: Dominique
+lastname: Lhuilier
 presentation: "Professeure émérite en psychologie du travail au centre de
   recherche sur le travail et le développement (CNAM), co directrice de la
   collection Clinique du Travail, elle s’intéresse à la problématique santé et
   travail et aux situations d’activité empêchée (chômage, placardisation,
   absentéisme). Elle conduit des recherches-actions visant à la fois production
   de connaissances et transformations du travail. "
-edition: "2024"
+edition:
+  - "2024"
 title_and_institution: ""
 social_channels:
   website: ""

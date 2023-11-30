@@ -11,7 +11,15 @@ abstract: "The increase in computing power has, in the last decade, led to
   replacing workers with machines; and (2) using machines to improve worker
   productivity."
 youtube_video_id: AwxkhJp0P14
-date: ""
+featured: false
+published: true
+background_color: ""
+date: 2022-04-20T16:00:00.000+00:00
+link: ""
+image: /thisisengineering-raeng-wjowazupass-unsplash-2.jpg
+categories:
+  - event
+edition: "2024"
 ---
 #### Presentation
 

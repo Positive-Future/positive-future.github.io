@@ -60,6 +60,38 @@
           >
             {{ $t('the-media-are-talking-about-it') }}
           </div>
+          <v-slide-group class="my-4" show-arrows center-active>
+            <v-slide-item
+              v-for="(review, index) in content.reviews"
+              :key="index"
+            >
+              <v-card
+                max-width="200px"
+                class="d-flex justify-space-between flex-column"
+              >
+                <v-card-title class="text-body">{{
+                  review.review.subtitle
+                }}</v-card-title>
+                <v-card-subtitle
+                  >{{ review.review.from }} -
+                  {{
+                    new Date(review.review.date).toLocaleDateString(
+                      $i18n.locale,
+                      {
+                        timezone: 'UTC',
+                      }
+                    )
+                  }}</v-card-subtitle
+                >
+
+                <v-card-actions>
+                  <v-btn flat target="_blank" nuxt :href="review.review.link">{{
+                    $t('read-this-review')
+                  }}</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-slide-item>
+          </v-slide-group>
         </v-col></v-row
       >
     </section>
@@ -78,28 +110,18 @@
             :to="localePath('/about/us')"
             target="_blank"
           >
-            <div class="d-flex">
-              <v-avatar size="100" class="">
-                <OptimizedImage
-                  alt="Avatar"
-                  src="/jury/AntoineC.jpg"
-                  :ratio="1"
-                  contain
-                />
-              </v-avatar>
-              <div cols="8">
-                <div>{{ pressroom.contact.name }}</div>
-                <div>
-                  <a
-                    :href="'mailto:' + pressroom.contact.name"
-                    class="white--text"
-                  >
-                    {{ pressroom.contact.email }}</a
-                  >
-                </div>
-                <div>
-                  {{ pressroom.contact.phone }}
-                </div>
+            <div class="d-flex flex-column pb-6">
+              <div>{{ pressroom.contact.name }}</div>
+              <div>
+                <a
+                  :href="'mailto:' + pressroom.contact.name"
+                  class="white--text"
+                >
+                  {{ pressroom.contact.email }}</a
+                >
+              </div>
+              <div>
+                {{ pressroom.contact.phone }}
               </div>
             </div>
           </v-card>
@@ -133,8 +155,10 @@ export default {
     const pressroom = await $content(
       'pages/' + app.i18n.locale + '/pressroom'
     ).fetch()
+    const content = await $content('pressroom').fetch()
     return {
       pressroom,
+      content,
     }
   },
   data() {

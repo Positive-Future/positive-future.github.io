@@ -9,7 +9,13 @@ abstract: The current ecological crisis will transform the face and fate of
   difference. In order for neighbourhoods to really work, residents need to be
   engaged and the tactics should be embedded within a wider social policy, if we
   want thriving cities.
-date: ""
+featured: false
+published: true
+date: 2021-06-14T16:00:25.000Z
+edition: "2021"
+youtube_video_id: 9mP1f7JR_vE
+file: ""
+image: /2hannah-sibayan-kzhmbyzktng-unsplash-1.jpg
 ---
 **Webinar broadcast on June 14th, 2021.**
 

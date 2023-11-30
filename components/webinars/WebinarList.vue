@@ -55,12 +55,7 @@
                         <v-icon> mdi-sort</v-icon>
                       </v-btn>
                     </template>
-                    <span
-                      v-html="
-                        $t('sort-mode') +
-                        $t(currentSort.text || defaultSort.text)
-                      "
-                    ></span>
+                    <span v-html="$t('sort-modedate')"></span>
                   </v-tooltip>
                 </template>
                 <v-list>
