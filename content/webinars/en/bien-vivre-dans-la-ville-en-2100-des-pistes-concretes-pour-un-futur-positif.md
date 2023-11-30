@@ -1,19 +1,22 @@
 ---
+abstract: Living well in the city in 2100 is possible! Faced with the climatic,
+  demographic, economic and social challenges that are looming, technological
+  progress, "good" public policies and, above all, the creativity of the
+  greatest number of people offer solutions.
+featured: false
 published: true
 title: Living well in the city in 2100? Concrete paths to a positive future
-subtitle: By Saadi Lahlou, Director of the Paris IAS, and Jean-Eric Aubert, President
-  of the Fondation 2100.
-categories:
-- event
-featured: false
-image: "/will-truettner-lxlczkjc5ao-unsplash.jpg"
+subtitle: By Saadi Lahlou, Director of the Paris IAS, and Jean-Eric Aubert,
+  President of the Fondation 2100.
+background_color: ""
+date: 2021-04-08T16:00:25.000Z
+link: ""
 youtube_video_id: Qe6GUH_2ils
-background_color: ''
-file: ''
-link: ''
+file: ""
+image: /will-truettner-lxlczkjc5ao-unsplash.jpg
+categories:
+  - event
 edition: "2021"
-date: 2021-04-08T16:00:25Z
-
 ---
 **Webinar broadcast on April 8th, 2021.**
 
