@@ -1,18 +1,21 @@
 ---
+abstract: The Fédération nationale des agences d'urbanisme (Fnau) has placed its
+  2020 meetings under the sign of foresight. The agencies worked in a network on
+  the changes to 2040 to imagine a "world after" that would have succeeded in
+  meeting the challenges of transitions.
+featured: false
 published: true
 title: Cities in the post-world - Urban planning agencies explore the (happy) future
 subtitle: By Brigitte Bariol-Mathais and Karine Hurel.
-categories:
-- event
-featured: false
-image: "/peerapon-chantharainthron-kavu6s_qtyo-unsplash.jpg"
+background_color: ""
+date: 2021-04-21T16:00:25.000Z
+link: ""
 youtube_video_id: va_hcao0uRc
-background_color: ''
-file: ''
-link: ''
+file: ""
+image: /peerapon-chantharainthron-kavu6s_qtyo-unsplash.jpg
+categories:
+  - event
 edition: "2021"
-date: 2021-04-21T16:00:25Z
-
 ---
 **Webinar broadcast on April 21st, 2021.** 
 
