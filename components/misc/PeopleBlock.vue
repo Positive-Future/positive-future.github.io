@@ -29,10 +29,10 @@
         </v-avatar>
         <div class="flex-row justify-center">
           <div
-            v-if="$vuetify.breakpoint.smAndDown"
+            v-if="$vuetify.breakpoint.smAndDown && getSocials(item)"
             class="flex-row justify-center mb-6"
           >
-            <v-tooltip v-if="item.wikipedia" bottom>
+            <v-tooltip bottom>
               <template #activator="{ on, attrs }">
                 <v-btn
                   v-for="social in getSocials(item)"
@@ -40,7 +40,7 @@
                   icon
                   text
                   v-bind="attrs"
-                  :href="socail.link"
+                  :href="social.link"
                   target="_blank"
                   v-on="on"
                 >
@@ -54,17 +54,11 @@
       </v-col>
       <v-col :cols="sab ? '12' : '9'" class="px-3">
         <div :id="slugifyItem(item.lastname)" class="anchor"></div>
-        <div
-          class="font-weight-black"
-          v-html="item.firstname + ' ' + item.lastname"
-        ></div>
-        <div>
-          <i>{{ item.title_and_institution }}</i>
-        </div>
-        <div
-          v-if="$vuetify.breakpoint.smAndDown"
-          class="flex-row justify-center mb-6"
-        >
+        <div class="flex-row justify-center">
+          <span
+            class="font-weight-black"
+            v-html="item.firstname + ' ' + item.lastname"
+          ></span>
           <v-tooltip
             v-for="social in getSocials(item)"
             :key="social.link"
@@ -74,7 +68,6 @@
               <v-btn
                 text
                 icon
-                color="primary"
                 v-bind="attrs"
                 :href="social.link"
                 target="_blank"
@@ -86,6 +79,10 @@
             <span>{{ social.tooltip }} </span>
           </v-tooltip>
         </div>
+        <div>
+          <i>{{ item.title_and_institution }}</i>
+        </div>
+
         <template class="nuxt-content"
           ><p>{{ item.presentation }}</p></template
         >
@@ -157,30 +154,34 @@ export default {
     },
     getSocials(item) {
       const socials = []
-      if (item.website)
-        socials.push({
-          link: item.website,
-          icon: 'mdi-link-variant',
-          tooltip: this.$t('visit-website'),
-        })
-      if (item.wikipedia)
-        socials.push({
-          link: item.wikipedia,
-          icon: 'mdi-wikipedia',
-          tooltip: this.$t('check-the-wikipedia-page'),
-        })
-      if (item.linkedin)
-        socials.push({
-          link: item.linkedin,
-          icon: 'mdi-linkedin',
-          tooltip: this.$t('get-in-touch-on-linkedin'),
-        })
-      if (item.twitter)
-        socials.push({
-          link: item.twitter,
-          icon: 'mdi-twitter',
-          tooltip: this.$t('follow-on-twitter'),
-        })
+      if (item.social_channels) {
+        if (item.social_channels.website)
+          socials.push({
+            link: item.social_channels.website,
+            icon: 'mdi-link-variant',
+            tooltip: this.$t('visit-website'),
+          })
+        if (item.social_channels.wikipedia)
+          socials.push({
+            link: item.social_channels.wikipedia,
+            icon: 'mdi-wikipedia',
+            tooltip: this.$t('check-the-wikipedia-page'),
+          })
+        if (item.social_channels.linkedin)
+          socials.push({
+            link: item.social_channels.linkedin,
+            icon: 'mdi-linkedin',
+            tooltip: this.$t('get-in-touch-on-linkedin'),
+          })
+        if (item.social_channels.twitter)
+          socials.push({
+            link: item.social_channels.twitter,
+            icon: 'mdi-twitter',
+            tooltip: this.$t('follow-on-twitter'),
+          })
+
+        return socials?.length ? socials : false
+      }
     },
   },
 }
