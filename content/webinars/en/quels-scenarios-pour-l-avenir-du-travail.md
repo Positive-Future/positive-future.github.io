@@ -1,20 +1,19 @@
 ---
-edition: '2024'
-published: true
-title: 'Quels scénarios pour l''avenir du travail ? '
-subtitle: By Dominique Méda (Paris Dauphine University)
-date: 2022-03-21T17:00:00.000+00:00
-categories:
-- event
-featured: false
-image: "/ant-rozetsky-hxolltswrpm-unsplash.jpg"
-youtube_video_id: ''
-background_color: ''
-file: ''
-link: ''
 fr: content/en/webinars/quels-scenarios-pour-l-avenir-du-travail.md
+featured: false
+published: true
 order: "10"
-
+title: "Quels scénarios pour l'avenir du travail ? "
+subtitle: By Dominique Méda (Paris Dauphine University)
+background_color: ""
+date: 2022-03-21T17:00:00.000+00:00
+link: ""
+youtube_video_id: P8tZ9AEA61E
+file: ""
+image: /ant-rozetsky-hxolltswrpm-unsplash.jpg
+categories:
+  - event
+edition: "2024"
 ---
 #### Presentation
 
