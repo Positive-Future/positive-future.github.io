@@ -1,5 +1,4 @@
 ---
 title: Lauréats
-
 ---
-Six candidats ont été distingués par le jury 2021. Une septième équipe a, quant à elle, été particulièrement saluée par les organisateurs du concours. Chaque œuvre peut-être lue dans son intégralité dans sa langue d’origine.
+Pour chaque édition du Concours, une attention toute particulière est portée sur la réflexion des participants à propos du thème donné. Les oeuvres finalistes apportent une réelle dimension inspirante et nouvelle de l’avenir qui dénote avec les scénarios usuels, tout en offrant une perspective concrète et réaliste.
