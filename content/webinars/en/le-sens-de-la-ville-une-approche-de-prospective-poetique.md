@@ -1,18 +1,22 @@
 ---
+abstract: A city is not only a system. A technical, social, economic system. It
+  is not only a circulatory, metabolic, informational machine. It is not only a
+  "machine to live in", it is not only a social, physical and virtual network,
+  and it is not only a complex, natural and cultural ecosystem. It is all of
+  this at once, and above all, the human environment par excellence.
+featured: false
 published: true
 title: The meaning of cities - a poetic foresight approach
-subtitle: 'By Georges Amar, futurist and mobility consultant. '
-categories:
-- event
-featured: false
-image: "/trust-tru-katsande-wdjrbpl-q3q-unsplashbd.jpg"
+subtitle: "By Georges Amar, futurist and mobility consultant. "
+background_color: ""
+date: 2021-05-17T16:00:25.000Z
+link: ""
 youtube_video_id: vEZXLUgpcw0
-background_color: ''
-file: ''
-link: ''
+file: ""
+image: /trust-tru-katsande-wdjrbpl-q3q-unsplashbd.jpg
+categories:
+  - event
 edition: "2021"
-date: 2021-05-17T16:00:25Z
-
 ---
 Webinar broadcast on May 17th, 2021.
 
