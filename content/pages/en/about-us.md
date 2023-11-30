@@ -1,10 +1,9 @@
 ---
 title: Our initiative
-
 ---
-There are many representations of dystopian futures, depicting a frightening world and tending to discourage initiatives for change. Fortunately, there is also a lot of research and foresight work sketching positive and realistic alternatives for tomorrow's world.
+There are many representations of dystopian futures, depicting a frightening future that tends to discourage initiatives for change. Yet there is a lot of research and foresight work outlining positive, realistic alternatives for tomorrow's world.
 
-The Positive Future initiative was launched by the [Paris Institute for Advanced Study](https://www.paris-iea.fr/fr/) and the [Fondation 2100](https://2100.org/) in partnership with the [Institute for Futures Studies](https://www.iffs.se/en/) to make the work of foresight specialists widely known, with two objectives in mind:
+The Positive Future initiative was launched by the [Institut d'études avancées de Paris](https://www.paris-iea.fr/en/) and the [Fondation 2100](https://2100.org/) to make the work of futurists widely known, with two objectives in mind:
 
-* Helping to imagine a livable and desirable, yet realistic future
-* Sharing positive and inspiring visions of the future
+* To help us think about a future that is not only liveable and desirable, but also realistic.
+* To share positive and inspiring visions of the future.
