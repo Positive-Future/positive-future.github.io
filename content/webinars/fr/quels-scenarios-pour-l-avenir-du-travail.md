@@ -1,4 +1,9 @@
 ---
+abstract: Comment réfléchir sur l'avenir du travail ? La prise en considération
+  de l'histoire longue de celui-ci, le recul historique peuvent-ils nous
+  permettre d'y voir plus clair ? Quels sont les scénarios imaginables qui
+  peuvent nous aider à distinguer les futurs désirables et les voies pour y
+  parvenir ?
 featured: false
 published: true
 order: "10"
