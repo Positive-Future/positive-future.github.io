@@ -1,14 +1,16 @@
 ---
-firstname: Célia
 lastname: Blauel
-image: "/jury/blauel.jpg"
+title_and_institution: ""
 copyright: Joséphine Brueder / Ville de Paris
-title_and_institution: ''
-linkedin: ''
-twitter: ''
-wikipedia: ''
-website: ''
-editions: ['2021']
-
+twitter: ""
+editions:
+  - "2021"
+wikipedia: ""
+presentation: "Adjointe à la Mairie de Paris, initialement chargée des dossiers
+  de la Transition écologique, le Climat et l’Eau. Depuis 2020, elle est chargée
+  de la Seine, de la Prospective Paris 2030 et de la Résilience. "
+website: ""
+firstname: Célia
+image: /jury/blauel.jpg
+linkedin: ""
 ---
-Célia Blauel est adjointe à la Maire de Paris depuis 2014. Après un mandat durant lequel elle était chargée des dossiers concernant la Transition écologique, le Climat et l'Eau, Célia Blauel est depuis les élections municipales de juin 2020, chargée de la Seine, de la Prospective Paris 2030 et de la Résilience.
