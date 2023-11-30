@@ -1,17 +1,21 @@
 ---
-published: true
-created: 2021-03-03T17:00:25Z
+abstract: "La Ville est un objet fascinant, quel que soit l'angle sous lequel on
+  la regarde : un simple groupement humain (human settlement); une conurbation
+  tentaculaire; une foisonnante exposition architecturale; un lieu de vie, de
+  travail et d'éducation; un condensé d'Histoire; un sujet d'ethnographie
+  constamment renouvelé..."
+created: 2021-03-03T17:00:25.000Z
 fr: []
-title: La Ville, espèce dominante ? Nature et avenir du phénomène urbain
-subtitle:
-  par Fabienne Goux-Baudiment, docteure en sciences sociales et fondatrice
-  de proGective.
 featured: false
-image: '/darcey-beau-q8d7wzc40ea-unsplash.jpg'
-background_color: '#F8E71C'
-file: '/prezi_compressed.pdf'
+published: true
+title: La Ville, espèce dominante ? Nature et avenir du phénomène urbain
+subtitle: par Fabienne Goux-Baudiment, docteure en sciences sociales et
+  fondatrice de proGective.
+edition: "2021"
 youtube_video_id: vnWSDQFP_Xc
-edition: '2021'
+background_color: "#F8E71C"
+file: /prezi_compressed.pdf
+image: /darcey-beau-q8d7wzc40ea-unsplash.jpg
 date: 2021-03-03T17:00:25.000+00:00
 ---
 

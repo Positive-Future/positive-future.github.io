@@ -1,19 +1,22 @@
 ---
+abstract: "The city is a fascinating object, from any angle: a simple human
+  settlement; a sprawling conurbation; a teeming architectural exhibition; a
+  place of life, work and education; a compendium of history; an ethnographic
+  subject that is constantly being renewed?"
+featured: false
 published: true
 title: The City, the Dominant Species? Nature and Future of the urban phenomenon
-subtitle: by Fabienne Goux-Baudiment, doctorate in social sciences and founder of
-  proGective.
-categories:
-- event
-featured: false
-image: "/darcey-beau-q8d7wzc40ea-unsplash.jpg"
-background_color: ''
+subtitle: by Fabienne Goux-Baudiment, doctorate in social sciences and founder
+  of proGective.
+background_color: ""
+date: 2021-03-03T17:00:25.000Z
+link: ""
 youtube_video_id: vnWSDQFP_Xc
-file: "/prezi_compressed.pdf"
-link: ''
+file: /prezi_compressed.pdf
+image: /darcey-beau-q8d7wzc40ea-unsplash.jpg
+categories:
+  - event
 edition: "2021"
-date: 2021-03-03T17:00:25Z
-
 ---
 **Webinar broadcast on March 3rd, 2021.**
 
