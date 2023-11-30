@@ -1,18 +1,23 @@
 ---
+abstract: Une ville ce n’est pas seulement un système. Un système technique,
+  social, économique. Ce n’est pas seulement une machine circulatoire,
+  métabolique, informationnelle. Ce n’est pas seulement une « machine à habiter
+  », ce n’est pas seulement un réseau social, physique et virtuel, ce n’est pas
+  seulement un écosystème complexe, naturel et culturel. C’est tout cela à la
+  fois, et surtout le milieu humain par excellence.
+featured: true
 published: true
 title: Le sens de la ville - une approche de prospective poétique
 subtitle: Par Georges Amar, prospectiviste et consultant en mobilité.
-categories:
-- event
-featured: true
-image: "/trust-tru-katsande-wdjrbpl-q3q-unsplashbd.jpg"
-youtube_video_id: vEZXLUgpcw0
-background_color: ''
-file: ''
-link: ''
-edition: "2021"
+background_color: ""
 date: 2021-05-17T16:00:25.000+00:00
-
+link: ""
+youtube_video_id: vEZXLUgpcw0
+file: ""
+image: /trust-tru-katsande-wdjrbpl-q3q-unsplashbd.jpg
+categories:
+  - event
+edition: "2021"
 ---
 **Webinaire diffusé le 17 mai 2021.**
 
