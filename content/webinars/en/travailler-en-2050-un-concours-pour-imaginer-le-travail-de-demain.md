@@ -12,6 +12,7 @@ abstract: "Le monde du travail évolue en permanence. Les entreprises, les
 featured: false
 edition: "2024"
 background_color: "#ffffff"
+image: /static/visusel-webinar-17012024.png
 date: January 17, 2024 1:30 PM
 ---
 #### Présentation 
