@@ -1,4 +1,11 @@
 ---
+abstract: Si nous voulons parvenir à un monde plus inclusif, durable, diversifié
+  et équitable, nous avons besoin de toute urgence d'une diversité de
+  perspectives pour imaginer - et construire - de meilleurs avenirs. Les
+  problèmes auxquels nous sommes confrontés aujourd'hui sont si graves qu'il est
+  essentiel que des personnes de toutes disciplines, expériences, capacités et
+  perspectives se réunissent pour penser comme des futurologues, s'interroger
+  comme des artistes et agir comme des designers.
 featured: false
 published: true
 order: "12"
