@@ -1,7 +1,7 @@
 ---
 title: "Travailler en 2050 : un concours pour imaginer le travail de demain"
 subtitle: Avec Saadi Lahlou, Jean-Eric Aubert, Amandine Brugière, Marc Malenfer
-  et Solène de Bonis
+  et Solène de Bonis.
 url: ""
 abstract: "Le monde du travail évolue en permanence. Les entreprises, les
   organisations de travail, cherchent constamment de nouveaux fonctionnements,
@@ -15,7 +15,7 @@ background_color: "#ffffff"
 image: /visusel-webinar-17012024.png
 date: January 17, 2024 1:30 PM
 ---
-#### Presentation 
+### Presentation
 
 The world of work is constantly changing. Companies and work organisations are constantly seeking new ways of working and new balances. However, the factors of uncertainty and the risks of crises are particularly numerous, and are giving rise to colossal challenges: digitalisation, artificial intelligence, management of health and ecological crises, changes in individual aspirations, etc.
 
@@ -23,11 +23,11 @@ For its 2nd edition, the *Positive Future* competition aims to bring to light po
 
 This webinar is an opportunity to present the competition and the theme of its second edition, "Work in 2050". 
 
-#### Speakers 
+### Speakers
 
-**Jean-Eric AUBERT**, Chairman of Fondation 2100, and Saadi LAHLOU**, Director of IEA Paris. **Amandine BRUGIÈRE**, ANACT, and **Marc MALENFER**, INRS. **Solène de BONIS**, Project Manager for Positive Future. 
+**Jean-Eric AUBERT**, Chairman of Fondation 2100, and Saadi LAHLOU**, Director of IEA Paris.** Amandine BRUGIÈRE**, ANACT, and** Marc MALENFER**, INRS.** Solène de BONIS\*\*, Project Manager for Positive Future. 
 
-#### Practical information 
+### Practical information
 
 17 January 2024, from 1.30 pm to 2.15 pm. 
 
