@@ -12,25 +12,25 @@ abstract: "Le monde du travail évolue en permanence. Les entreprises, les
 featured: false
 edition: "2024"
 background_color: "#ffffff"
-image: /static/visusel-webinar-17012024.png
+image: /visusel-webinar-17012024.png
 date: January 17, 2024 1:30 PM
 ---
-#### Présentation 
+#### Presentation 
 
-Le monde du travail évolue en permanence. Les entreprises, les organisations de travail, cherchent constamment de nouveaux fonctionnements, de nouveaux équilibres. Toutefois, les facteurs d’incertitudes, les risques de crises sont particulièrement nombreux, et font émerger des défis colossaux : digitalisation, intelligence artificielle, gestion des crises sanitaires et écologiques, évolution des aspirations individuelles, etc.
+The world of work is constantly changing. Companies and work organisations are constantly seeking new ways of working and new balances. However, the factors of uncertainty and the risks of crises are particularly numerous, and are giving rise to colossal challenges: digitalisation, artificial intelligence, management of health and ecological crises, changes in individual aspirations, etc.
 
-Pour sa 2e édition, le concours *Positive Future* souhaite faire émerger des visions positives du travail. C’est-à-dire **des scénarios qui donneraient à voir la prise en charge des problématiques nouvelles, couplés à l’identification de solutions et de formes de régulation.** Il s’agit d’inciter à faire émerger un monde du travail source d’épanouissement et contribuant à la durabilité de nos sociétés. Ce qui n’interdit nullement de revisiter la notion même de travail, ce qu’elle recouvre et ne recouvre pas, son lien (ou non) avec l’emploi, les frontières entre travail et non-travail, l’image du travail dans la société, etc. !
+For its 2nd edition, the *Positive Future* competition aims to bring to light positive visions of work. The aim is to encourage the emergence of a world of work that is a source of fulfilment and contributes to the sustainability of our societies. This in no way precludes revisiting the very notion of work, what it does and does not cover, its link (or otherwise) with employment, the boundaries between work and non-work, the image of work in society, etc.!
 
-Ce webinaire est une occasion de vous présenter le concours et la thématique de sa deuxième édition "Le Travail en 2050". 
+This webinar is an opportunity to present the competition and the theme of its second edition, "Work in 2050". 
 
-#### Intervenants 
+#### Speakers 
 
-**Jean-Eric AUBERT**, président de la Fondation 2100, et **Saadi LAHLOU**, directeur de l'IEA de Paris. **Amandine BRUGIÈRE**, ANACT, et **Marc MALENFER**, INRS. **Solène de BONIS**, chargée de projet pour *Positive Future*. 
+**Jean-Eric AUBERT**, Chairman of Fondation 2100, and Saadi LAHLOU**, Director of IEA Paris. **Amandine BRUGIÈRE**, ANACT, and **Marc MALENFER**, INRS. **Solène de BONIS**, Project Manager for Positive Future. 
 
-#### Informations pratiques 
+#### Practical information 
 
-Le 17 janvier 2024, de 13h30 à 14h15. 
+17 January 2024, from 1.30 pm to 2.15 pm. 
 
-Le webinaire se tiendra sur la plateforme Webikeo (inscription obligatoire gratuite), il sera également retransmis en direct sur YouTube. 
+The webinar will be held on the Webikeo platform (free registration required) and will also be broadcast live on YouTube. 
 
-Suivre le webinaire sur webikeo : (*lien à venir*)
+Follow the webinar on webikeo: (*link coming soon*)

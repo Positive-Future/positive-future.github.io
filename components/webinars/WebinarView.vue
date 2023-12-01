@@ -58,8 +58,10 @@
     </v-card-actions>
     <template v-else-if="new Date(item.date) > Date.now()">
       <v-divider></v-divider>
-      <div class="ma-3">The webinar will be held on Zoom: {{ item.zoom }}</div>
-      <v-btn large text class="my-6" @click="calendar = true">
+      <div v-if="item.zoom" class="ma-3">
+        The webinar will be held on Zoom: {{ item.zoom }}
+      </div>
+      <!--      <v-btn large text class="my-6" @click="calendar = true">
         <v-icon x-large left color="black" class="mr-6 ml-3"
           >mdi-calendar-plus</v-icon
         >
@@ -69,7 +71,7 @@
         :dialog="calendar"
         :item="item"
         @close="calendar = false"
-      />
+      /> -->
       <v-row>
         <v-col xs="12" sm="11" md="8" class="ma-3">
           <v-card
@@ -103,11 +105,8 @@
   </v-card>
 </template>
 <script>
-import AddToCalendarModal from '../misc/AddToCalendarModal.vue'
 export default {
-  components: {
-    AddToCalendarModal,
-  },
+  components: {},
   props: {
     item: {
       type: Object,

@@ -403,6 +403,14 @@ collections:
           i18n: true,
         },
         {
+          label: Zoom link,
+          name: zoom,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
           label: URL,
           name: url,
           widget: string,
@@ -458,6 +466,7 @@ collections:
           required: false,
           media_library: { config: { multiple: false } },
           i18n: true,
+          media_folder: 'static',
         },
         {
           label: 'Image',
@@ -465,6 +474,7 @@ collections:
           widget: 'image',
           required: false,
           i18n: true,
+          media_folder: 'static',
         },
         {
           label: 'Picture Copyright',
@@ -491,6 +501,7 @@ collections:
     i18n: true
     identifier_field: carousel_title
     folder: 'content/carousel' # The path to the folder where the documents are stored
+    media_folder: 'static'
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
       [
@@ -517,6 +528,7 @@ collections:
           widget: 'image',
           required: false,
           i18n: true,
+          media_folder: 'static',
         },
         {
           label: 'Picture Copyright',
@@ -544,7 +556,13 @@ collections:
           required: false,
           i18n: true,
         },
-        { label: 'Body', i18n: true, name: 'body', widget: 'markdown' },
+        {
+          label: 'Body',
+          i18n: true,
+          name: 'body',
+          widget: 'markdown',
+          required: false,
+        },
       ]
   - name: 'Resources_2021'
     label: 'Resources 2021'
@@ -728,6 +746,7 @@ collections:
           name: 'image',
           widget: 'image',
           required: false,
+          media_folder: 'static',
           i18n: true,
         },
         {
@@ -932,6 +951,7 @@ collections:
           name: 'image',
           widget: 'image',
           required: false,
+          media_folder: 'static',
           i18n: true,
         },
         {
@@ -1152,6 +1172,7 @@ collections:
           widget: 'image',
           required: false,
           i18n: true,
+          media_folder: 'static/sab',
         },
         {
           label: 'Picture Copyright',
@@ -1276,6 +1297,7 @@ collections:
           widget: 'image',
           required: false,
           i18n: true,
+          media_folder: 'static/who',
         },
         {
           label: Presentation,
