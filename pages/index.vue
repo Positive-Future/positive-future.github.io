@@ -44,10 +44,7 @@
               </v-card>
             </v-col>
             <v-col cols="12" md="6">
-              <v-sheet
-                class="primary d-flex justify-center align-center fill-height"
-                >TEASER</v-sheet
-              >
+              <v-img src="Positive Future_affiche.jpg"></v-img>
             </v-col>
           </v-row>
         </v-col>

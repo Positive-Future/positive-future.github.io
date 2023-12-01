@@ -60,7 +60,12 @@
           >
             {{ $t('the-media-are-talking-about-it') }}
           </div>
-          <v-slide-group class="my-4" show-arrows center-active>
+          <v-slide-group
+            v-if="$vuetify.breakpoint.mdAndUp"
+            class="my-4"
+            show-arrows
+            center-active
+          >
             <v-slide-item
               v-for="(review, index) in content.reviews"
               :key="index"
@@ -68,11 +73,40 @@
               <v-card
                 max-width="200px"
                 class="d-flex justify-space-between flex-column"
+                target="_blank"
+                :href="review.review.link"
               >
-                <v-card-title class="text-body">{{
+                <div>
+                  <v-card-title class="">{{
+                    review.review.subtitle
+                  }}</v-card-title>
+                  <v-card-subtitle
+                    >{{ review.review.from }} -
+                    {{
+                      new Date(review.review.date).toLocaleDateString(
+                        $i18n.locale,
+                        {
+                          timezone: 'UTC',
+                        }
+                      )
+                    }}</v-card-subtitle
+                  >
+                </div>
+              </v-card>
+            </v-slide-item>
+          </v-slide-group>
+          <v-list v-else lines="two" class="ml-3">
+            <v-list-item
+              v-for="(review, index) in content.reviews"
+              :key="index"
+              target="_blank"
+              :href="review.review.link"
+            >
+              <v-list-item-content>
+                <v-list-item-title class="font-weight-black">{{
                   review.review.subtitle
-                }}</v-card-title>
-                <v-card-subtitle
+                }}</v-list-item-title>
+                <v-list-item-sub-title
                   >{{ review.review.from }} -
                   {{
                     new Date(review.review.date).toLocaleDateString(
@@ -81,17 +115,11 @@
                         timezone: 'UTC',
                       }
                     )
-                  }}</v-card-subtitle
+                  }}</v-list-item-sub-title
                 >
-
-                <v-card-actions>
-                  <v-btn flat target="_blank" nuxt :href="review.review.link">{{
-                    $t('read-this-review')
-                  }}</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-slide-item>
-          </v-slide-group>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
         </v-col></v-row
       >
     </section>
@@ -111,17 +139,14 @@
             target="_blank"
           >
             <div class="d-flex flex-column pb-6">
-              <div>{{ pressroom.contact.name }}</div>
+              <div>{{ content.contact.name }}</div>
               <div>
-                <a
-                  :href="'mailto:' + pressroom.contact.name"
-                  class="white--text"
-                >
-                  {{ pressroom.contact.email }}</a
+                <a :href="'mailto:' + content.contact.name" class="white--text">
+                  {{ content.contact.email }}</a
                 >
               </div>
               <div>
-                {{ pressroom.contact.phone }}
+                {{ content.contact.phone }}
               </div>
             </div>
           </v-card>
