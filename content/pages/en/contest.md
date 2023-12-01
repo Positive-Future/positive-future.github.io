@@ -17,11 +17,9 @@ criterions:
 ---
 ### Who?
 
-The contest is open to anyone aged 18 or over, regardless of nationality, place of residence or employment status.
+The contest is open to anyone **aged 18 or over**, regardless of nationality, place of residence or employment status.
 
 The contest is open to groups and individuals.
-
-
 
 ### What?
 
@@ -29,39 +27,31 @@ Participants are invited to think about what it would be like to work in 2050, a
 
 Stories can take the following form:
 
-* Comic book, graphic novel (15 pages maximum) or graphic poster (A3 format, 4 pages maximum).
-* Video or short film (5 minutes maximum). 
-* Audio or native podcast (10 minutes maximum). 
+* **Comic book, graphic novel** (15 pages maximum) or **graphic poster** (A3 format, 4 pages maximum).
+* **Video or short film** (5 minutes maximum). 
+* **Audio or native podcast** (10 minutes maximum). 
 
 Stories must be in French for this second edition.
-
-
 
 ### How?
 
 The Steering Committee and the Scientific Advisory Board for this second edition are providing participants with a database of resources: Matière à penser. Webinars are also being organized to address certain aspects of the theme in greater detail, as well as the formatting of stories.
 
-
-
 ### When?
 
-* Official contest launch: December 5, 2023
-* Opening of the platform for submissions: March 26, 2024
-* Deadline for submissions: April 22, 2024
-* Awards ceremony: June 2024 (date to be determined)
-
-
+* *Official contest launch*: December 5, 2023
+* *Opening of the platform for submissions*: March 26, 2024
+* *Deadline for submissions*: April 22, 2024
+* *Awards ceremony*: June 2024 (date to be determined)
 
 ### Where?
 
-Participants will be able to submit their work on our online platform (and accessible via the website), from March 26 until the entry deadline of April 22, 2024.
-
-
+Participants will be able to submit their work on our online platform (and accessible via the website), from **March 26** until the entry deadline of **April 22**, 2024.
 
 ### Prizes
 
-For this second edition, three prizes will be awarded according to format:
+For this second edition, three prizes will be awarded to the best works: 
 
-* A prize of 8,000 euros for the comics, graphic novel or graphic poster
-* A prize of 5,000 euros for video or short film
-* A prize of 3,000 euros for native audio or native podcast
+* 1st prize of 8,000 euros 
+* 2nd prize of 5,000 euros
+* 3rd prize of 3,000 euros
