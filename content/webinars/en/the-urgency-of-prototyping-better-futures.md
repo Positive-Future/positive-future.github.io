@@ -1,4 +1,10 @@
 ---
+abstract: "If we wish to achieve a more inclusive, sustainable, diverse and
+  equitable world, we urgently need a diversity of perspectives to imagine – and
+  to build – better futures. The problems we face today are so wicked that it is
+  critical that people from all disciplines, experiences, abilities and
+  perspectives come together to think like futurists, question like artists and
+  act like designers. "
 featured: false
 published: true
 order: "12"
