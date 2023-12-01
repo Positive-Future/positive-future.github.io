@@ -72,26 +72,6 @@
         :item="item"
         @close="calendar = false"
       /> -->
-      <v-row>
-        <v-col xs="12" sm="11" md="8" class="ma-3">
-          <v-card
-            color="#ffe2a0"
-            class="px-6 pt-6 pb-8"
-            flat
-            href="http://eepurl.com/hgbB6f"
-            target="_blank"
-          >
-            <div class="d-inline-flex justify-center align-center">
-              <v-icon x-large class="rotate-24 mr-6" color="black"
-                >mdi-email</v-icon
-              >
-              <div class="subtitle">
-                {{ $t('misc.ui.subscribe3') }}
-              </div>
-            </div>
-          </v-card>
-        </v-col>
-      </v-row>
     </template>
     <div class="headline mt-6 mb-3 ml-3">{{ $t('see-also') }}</div>
     <template v-for="(webinar, index) in webinars">

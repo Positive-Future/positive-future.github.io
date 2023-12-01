@@ -58,10 +58,15 @@ export default {
     }
   },
   async fetch() {
-    const items = await this.$content('carousel/' + this.$i18n.locale)
+    let items = await this.$content('carousel/' + this.$i18n.locale)
       .sortBy('date', 'desc')
       .limit(3)
       .fetch()
+    items = items.sort((a, b) => {
+      const first = new Date(a.date)
+      const second = new Date(b.date)
+      return first && second && first > second
+    })
     this.carousel = items.map((item) => {
       return {
         ...item,
