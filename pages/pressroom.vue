@@ -29,7 +29,7 @@
             :style="
               'max-width: ' + ($vuetify.breakpoint.smAndUp ? '66%' : '100%')
             "
-            href="/mediakit.zip"
+            href="https://drive.google.com/drive/folders/16McnFjCvszZPANfK0P61N7k2zLVnTN0e?usp=sharing"
           >
             <div class="d-inline-flex justify-center align-center">
               <v-icon
@@ -55,14 +55,14 @@
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
           <div
-            class="headline mt-6"
+            class="headline mt-9 mb-6"
             :class="{ 'mx-6': $vuetify.breakpoint.smAndDown }"
           >
             {{ $t('the-media-are-talking-about-it') }}
           </div>
           <v-slide-group
             v-if="$vuetify.breakpoint.mdAndUp"
-            class="my-4"
+            class="mt-4"
             show-arrows
             center-active
           >
@@ -71,27 +71,24 @@
               :key="index"
             >
               <v-card
-                max-width="200px"
-                class="d-flex justify-space-between flex-column"
+                max-width="300px"
+                class="d-flex justify-space-between flex-column ma-3"
                 target="_blank"
                 :href="review.review.link"
+                elevated
               >
-                <div>
-                  <v-card-title class="">{{
-                    review.review.subtitle
-                  }}</v-card-title>
-                  <v-card-subtitle
-                    >{{ review.review.from }} -
-                    {{
-                      new Date(review.review.date).toLocaleDateString(
-                        $i18n.locale,
-                        {
-                          timezone: 'UTC',
-                        }
-                      )
-                    }}</v-card-subtitle
-                  >
-                </div>
+                <div class="ma-2">{{ review.review.subtitle }}</div>
+                <v-card-subtitle
+                  ><b>{{ review.review.from }}</b> -
+                  {{
+                    new Date(review.review.date).toLocaleDateString(
+                      $i18n.locale,
+                      {
+                        timezone: 'UTC',
+                      }
+                    )
+                  }}</v-card-subtitle
+                >
               </v-card>
             </v-slide-item>
           </v-slide-group>
@@ -139,6 +136,7 @@
             target="_blank"
           >
             <div class="d-flex flex-column pb-6">
+              <div class=""><b> Press contact</b></div>
               <div>{{ content.contact.name }}</div>
               <div>
                 <a :href="'mailto:' + content.contact.name" class="white--text">
