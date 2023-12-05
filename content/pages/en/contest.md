@@ -28,8 +28,8 @@ Participants are invited to think about what it would be like to work in 2050, a
 Stories can take the following form:
 
 * **Comic book, graphic novel** (15 pages maximum) or **graphic poster** (A3 format, 4 pages maximum).
-* **Video or short film** (5 minutes maximum). 
-* **Audio or native podcast** (10 minutes maximum). 
+* **Video or short film** (5 minutes maximum).
+* **Audio or native podcast** (10 minutes maximum).
 
 Stories must be in French for this second edition.
 
@@ -50,8 +50,8 @@ Participants will be able to submit their work on our online platform (and acces
 
 ### Prizes
 
-For this second edition, three prizes will be awarded to the best works: 
+For this second edition, three prizes will be awarded to the best works:
 
-* 1st prize of 8,000 euros 
+* 1st prize of 8,000 euros
 * 2nd prize of 5,000 euros
 * 3rd prize of 3,000 euros
