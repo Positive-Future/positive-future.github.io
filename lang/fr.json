@@ -1,4 +1,7 @@
 {
+  "2021": "Édition 2021",
+  "2022": "Édition 2022",
+  "2024": "Édition 2024",
   "resources": {
     "noDataText": "Aucune ressource disponible",
     "noResultsText": "Aucune ressource ne correspond à votre recherche",
@@ -39,13 +42,14 @@
       "Drawing": "Dessins, peintures",
       "Photo": "Photos",
       "Video": "Vidéos et films",
-      "comic": "Bande dessinée et roman graphique",
+      "comic": "Illustrations",
       "article": "Articles",
       "book": "Livres",
       "drawing": "Dessins, peintures",
       "photo": "Photos",
       "novel": "Livres et nouvelles",
-      "video": "Vidéos et films"
+      "video": "Vidéos et films",
+      "report": "Rapport"
     },
     "perspectives": {
       "foresight_studies": "Travaux de prospective",
@@ -84,7 +88,26 @@
       "tourism": "Tourisme",
       "transport": "Transport",
       "urban_spatial_planning": "Urbanisme, territoire",
-      "work": "Emploi, travail"
+      "work": "Emploi, travail",
+      "general": "Généraliste",
+      "management_and_organisation": "Management et organisation",
+      "equality_and_diversity": "Egalité et diversité",
+      "social_dialog": "Dialogue social",
+      "health_and_security": "Santé et sécurité",
+      "Work_meaning_acknowledgment": "Sens du travail, reconnaissance",
+      "collectives_and_work_relations": "Collectifs et relations au travail",
+      "professional_carreers": "Carrières professionnelles",
+      "governance": "Gouvernance",
+      "skills_qualifications": "Compétences, qualifications",
+      "equipment_and_tools": "Équipements et outils",
+      "work_conditions": "Conditions d’emploi",
+      "ecology": "Ecologie",
+      "work_schedule": "Temps de travail",
+      "history_of_work": "Histoire du travail",
+      "workplaces": "Lieux de travail",
+      "economy_and_labor_worth": "Economie et valeur du travail",
+      "sactorial_approaches": "Approches sectorielles",
+      "artificial_intelligence": "Intelligence Artificelle"
     },
     "thisDocumentLangIs": "Cette ressource est en"
   },
@@ -109,9 +132,10 @@
       "format": {
         "title": "Type d'oeuvre",
         "article": "Article de journal",
-        "novel": "Scénario ou nouvelle",
+        "novel": "Scénario/nouvelle",
         "video": "Film/court-métrage",
-        "comic": "Bande dessinée/Roman graphique"
+        "comic": "Illustrations",
+        "audio": "Audio/podcast"
       },
       "dialog": {
         "title": "Confirmez votre candidature",
@@ -193,10 +217,10 @@
       "thisDocumentLangIs": "Ce document est en ",
       "back_to_categories": "Revenir à la vue par catégorie"
     },
-    "credits": "Une initiative créée par l'Institut d'Études Avancées de Paris et la Fondation 2100, avec le soutien de l'Institute for Future Studies."
+    "credits": "Une initiative créée par l'Institut d'Études Avancées de Paris et la Fondation 2100, avec le soutien de l'Agence nationale pour l'amélioration des conditions de travail et de l'Institut national de recherche et de sécurité."
   },
   "navigation": {
-    "about": "À propos de notre initiative",
+    "about": "À propos de nous",
     "contest": "Concours",
     "resources": "Matière à penser",
     "sab": "Conseil Scientifique",
@@ -246,7 +270,7 @@
   "the-city-in-2100": "La ville en 2100",
   "upcoming-webinars": "Webinaires à venir",
   "webinars": "Webinaires",
-  "work-in-2100": "Le travail en 2100",
+  "work-in-2100": "Le travail en 2050",
   "watch-the-award-ceremony": "Revoir la cérémonie de remise des prix",
   "laureates_title": "Lauréats",
   "laureates": {
@@ -268,5 +292,44 @@
   "find-resources-to-prepare-for-the-contest": "Retrouvez toutes les ressources pour préparer le concours",
   "many-of-you-participated-in-the-2021-edition-thank-you-very-much": "Vous avez été nombreux à participer à l’édition 2021 et nous vous en remercions.",
   "more-information-about-the-next-edition-is-coming-soon-stay-tuned": "Nous vous donnons rendez-vous prochainement pour vous en dire plus sur la prochaine édition !",
-  "the-contest": "Le concours"
+  "the-contest": "Le concours",
+  "key-dates": "Dates clés",
+  "discover-more-about-the-positive-future-initiative": "Découvrez-en davantage sur l’initiative Positive-Future !",
+  "add-the-key-dates-to-your-calendar": "Ajoutez les dates clés à votre calendrier",
+  "2024-edition": "Édition 2024",
+  "our-initiative": "Notre initiative",
+  "press": "Presse",
+  "prizes-to-be-awarded": "Prix à gagner",
+  "faq": "FAQ",
+  "telechargez-lappel-a-participation-et-le-reglement-du-concours-pour-avoir-toutes-les-cles-en-main": "Téléchargez l’appel à participation et le règlement du concours pour avoir toutes les clés en main.",
+  "frequently-asked-questions": "Foire aux questions",
+  "members-of-the-scientific-advisory-board": "Membres du conseil scientifique",
+  "take-a-look-at-the-resources-put-together-by-the-scientific-committee-to-give-you-food-for-thought": "Consultez les ressources rassemblées par le Comité Scientifique, pour alimenter votre réflexion.",
+  "download-the-positive-future-competition-media-kit-2024-edition-work-in-2050": "Téléchargez le kit média du Concours Positive Future. \nEdition 2024 “Le Travail en 2050”.",
+  "the-media-are-talking-about-it": "Les médias en parlent !",
+  "consult-the-webinars-produced-on-the-theme-of-the-city-in-2100": "Consultez les webinaires réalisés sur le thème de “La Ville en 2100”. ",
+  "the-tools-of-the-contest": "Les outils du concours",
+  "find-all-the-resources-on-the-theme-of-the-competition-proposed-by-the-scientific-committee": "Retrouvez l’ensemble des ressources sur le thème du concours, proposées par le Comité Scientifique.",
+  "check-positive-future-2021-scientific-advisory-board-members": "Consultez les membres du conseil scientifique de Positive Future 2021",
+  "check-the-wikipedia-page-0": "Consultez la page Wikipédia",
+  "check-this-person-personal-website": "Consultez le site Web personnel de cette personne",
+  "follow-this-person-on-twitter": "Suivez cette personne sur Twitter",
+  "edition": "Édition",
+  "format": "Format",
+  "from": "de",
+  "latest-first": "Plus récent d'abord",
+  "laureates-only": "Lauréat uniquement",
+  "no-laureates-found-matching-the-search-and-filter-criteria": "Aucun lauréat trouvé correspondant à la recherche",
+  "oldest-first": "Plus vieux d'abord",
+  "past-webinars-only": "Webinaires passés uniquement",
+  "the-jury-will-be-announced-soon": "Le jury sera annoncé prochainement.",
+  "we-will-soon-release-the-full-list-of-positive-future-scientific-advisory-board-members": "Nous publierons bientôt la liste complète des membres du conseil scientifique de Positive Future.",
+  "sort-webinars-by-date": "Classer les webinaires par date",
+  "selected": "Sélectionné",
+  "learn-more-about-the-role-of-the-scientific-advisory-board": "En savoir plus sur le rôle du conseil scientifique",
+  "the-scientific-advisory-board-will-be-announced-soon": "Le conseil scientifique sera annoncé prochainement",
+  "upcoming": "À venir",
+  "replay": "En replay",
+  "press-contact": "Contact presse",
+  "sort-modedate": "Classer par date"
 }

@@ -1,4 +1,7 @@
 {
+  "2021": "2021 Edition",
+  "2022": "2022 Edition",
+  "2024": "2024 Edition",
   "resources": {
     "noDataText": "No resource available",
     "noResultsText": "No resource match your search",
@@ -45,7 +48,8 @@
       "drawing": "Drawings, paintings",
       "photo": "Photos",
       "novel": "Books",
-      "video": "Videos and films"
+      "video": "Videos and films",
+      "report": "Report"
     },
     "perspectives": {
       "foresight_studies": "Foresight studies",
@@ -84,7 +88,26 @@
       "tourism": "Tourism",
       "transport": "Transport",
       "urban_spatial_planning": "Urban/spatial planning",
-      "work": "Work"
+      "work": "Work",
+      "general": "Generalist",
+      "management_and_organisation": "Management and organisation",
+      "equality_and_diversity": "Equality and diversity",
+      "social_dialog": "Social dialogue",
+      "health_and_security": "Health and security",
+      "Work_meaning_acknowledgment": "Meaning of work, recognition",
+      "collectives_and_work_relations": "Collectives and work relations",
+      "professional_carreers": "Professional careers",
+      "governance": "Governance",
+      "skills_qualifications": "Skills, qualifications",
+      "equipment_and_tools": "Equipment and tools",
+      "work_conditions": "Conditions of employment",
+      "ecology": "Ecology",
+      "work_schedule": "Working hours",
+      "history_of_work": "History of work",
+      "workplaces": "Workplaces",
+      "economy_and_labor_worth": "Economy and value of work",
+      "sactorial_approaches": "Sectoral approaches",
+      "artificial_intelligence": "Artificial Intelligence"
     },
     "thisDocumentLangIs": "This resource language is"
   },
@@ -111,7 +134,8 @@
         "article": "Newspaper article",
         "novel": "Short novel/Scenario",
         "video": "Video/Short film",
-        "comic": "Comics/Graphic novel"
+        "comic": "Comics/Graphic novel",
+        "audio": "Audio/podcast"
       },
       "dialog": {
         "title": "Confirm your application",
@@ -193,10 +217,10 @@
       "thisDocumentLangIs": "this document language is ",
       "back_to_categories": "Go back to category view"
     },
-    "credits": "An inititative from Paris Institute for Advanced Study and the 2100 Foundation, with the support of the Institute for Future Studies."
+    "credits": "An inititative from Paris Institute for Advanced Study and the 2100 Foundation, with the support of the Agence nationale pour l'amélioration des conditions de travail and the Institut national de recherche et de sécurité."
   },
   "navigation": {
-    "about": "About our initiative",
+    "about": "About us",
     "contest": "Contest",
     "resources": "Food for thought",
     "sab": "Scientific Advisory Board",
@@ -222,7 +246,7 @@
   "cancel-my-search": "Cancel my search",
   "open-the-webinar-page": "Open the webinar page",
   "the-city-in-2100": "The city in 2100",
-  "work-in-2100": "Work in 2100",
+  "work-in-2100": "Work in 2050",
   "jury-members": "Jury members",
   "2021-edition": "2021 Edition",
   "the-big-prize-winner": "The big prize winner",
@@ -268,5 +292,45 @@
   "many-of-you-participated-in-the-2021-edition-thank-you-very-much": "Many of you participated in the 2021 edition, thank you very much!",
   "more-information-about-the-next-edition-is-coming-soon-stay-tuned": "More information about the next edition is coming soon. Stay tuned!",
   "discover-the-laureates-of-the-2021-edition-on-the-city-in-2021": "Discover the laureates of the 2021 edition on “The city in 2021”",
-  "find-resources-to-prepare-for-the-contest": "Find resources to prepare for the contest"
+  "find-resources-to-prepare-for-the-contest": "Find resources to prepare for the contest",
+  "key-dates": "Key dates",
+  "discover-more-about-the-positive-future-initiative": "Discover more about the Positive-Future initiative!",
+  "add-the-key-dates-to-your-calendar": "Add the key dates to your calendar",
+  "2024-edition": "2024 Edition",
+  "our-initiative": "Our initiative",
+  "press": "Press",
+  "faq": "FAQ",
+  "prizes-to-be-awarded": "Prizes to be awarded",
+  "telechargez-lappel-a-participation-et-le-reglement-du-concours-pour-avoir-toutes-les-cles-en-main": "Download the call for entries and the competition rules to find out everything you need to know.",
+  "members-of-the-scientific-advisory-board": "Members of the Scientific Advisory Board",
+  "frequently-asked-questions": "Frequently Asked Questions",
+  "take-a-look-at-the-resources-put-together-by-the-scientific-committee-to-give-you-food-for-thought": "Take a look at the resources put together by the Scientific Committee, to give you food for thought.",
+  "download-the-positive-future-competition-media-kit-2024-edition-work-in-2050": "Download the Positive Future Competition media kit.  \n2024 edition \"Work in 2050\".",
+  "the-media-are-talking-about-it": "The media are talking about it!",
+  "the-tools-of-the-contest": "The tools of the contest",
+  "consult-the-webinars-produced-on-the-theme-of-the-city-in-2100": "Consult the webinars produced on the theme of \"The City in 2100\".",
+  "find-all-the-resources-on-the-theme-of-the-competition-proposed-by-the-scientific-committee": "Find all the resources on the theme of the competition, proposed by the Scientific Committee.",
+  "check-this-person-personal-website": "Check this person personal website",
+  "follow-this-person-on-twitter": "Follow this person on Twitter",
+  "check-the-wikipedia-page-0": "Check the Wikipedia page",
+  "from": "from",
+  "the-jury-will-be-announced-soon": "The jury will be announced soon.",
+  "the-scientific-advisory-board-will-be-announced-soon": "The Scientific advisory board will be announced soon",
+  "format": "Format",
+  "edition": "Edition",
+  "laureates-only": "Laureates only",
+  "no-laureates-found-matching-the-search-and-filter-criteria": "No laureates found matching the search & filter criteria.",
+  "past-webinars-only": "Past webinars only",
+  "oldest-first": "Oldest first",
+  "latest-first": "Latest first",
+  "sort-webinars-by-date": "Sort webinars by date",
+  "we-will-soon-release-the-full-list-of-positive-future-scientific-advisory-board-members": "We will soon release the full list of Positive Future scientific advisory board members",
+  "check-positive-future-2021-scientific-advisory-board-members": "Check Positive Future 2021 Scientific advisory board members",
+  "learn-more-about-the-role-of-the-scientific-advisory-board": "Learn more about the role of the scientific advisory board",
+  "selected": "Selected",
+  "upcoming": "Upcoming",
+  "replay": "Replay",
+  "press-contact": "Press contact",
+  "sort-modedate": "Sort by date",
+  "read-this-review": "Read this review"
 }

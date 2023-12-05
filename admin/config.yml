@@ -1,0 +1,1346 @@
+local_backend:
+  # when using a custom proxy server port
+  url: http://192.168.0.37:3000/api/v1
+  # when accessing the local site from
+backend:
+  name: github
+  branch: main
+  repo: Positive-Future/positive-future.2024
+  base_url: https://85o05b11ri.execute-api.eu-west-2.amazonaws.com/
+  auth_endpoint: '/dev/auth'
+  cms_label_prefix: 'IEA-Paris/'
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+  sanitize_replacement: '-'
+publish_mode: editorial_workflow
+media_folder: 'static'
+logo_url: https://www.positive-future.org/icon.png
+show_preview_links: false
+i18n:
+  structure: multiple_folders
+  locales: [en, fr]
+  default_locale: en
+collections:
+  - name: 'jury'
+    label: 'Jury'
+    label_singular: 'Jury member'
+    i18n: true
+    view_filters:
+      - label: '2021 Edition'
+        field: edition
+        pattern: '2021'
+      - label: '2024 Edition'
+        field: edition
+        pattern: '2024'
+    nested:
+      depth: 2
+      summary: '{{lastname}} {{firstname}}'
+    folder: 'content/jury' # The path to the folder where the documents are stored
+    create: true
+    summary: '{{lastname}} {{firstname}}'
+    slug: '{{lastname}}-{{firstname}}'
+    fields:
+      [
+        {
+          label: Firstname,
+          name: firstname,
+          widget: string,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+        {
+          label: 'Edition(s)',
+          name: 'editions',
+          widget: 'select',
+          default: ['2024'],
+          multiple: true,
+          options: ['2021', '2024'],
+          i18n: true,
+          min: 1,
+        },
+        {
+          label: Lastname,
+          name: lastname,
+          widget: string,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+        {
+          label: 'Body',
+          i18n: true,
+          name: 'body',
+          widget: 'markdown',
+          required: false,
+          hint: 'Use it to store the bibliography',
+        },
+
+        {
+          label: Title and institution,
+          name: title_and_institution,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: Presentation,
+          name: presentation,
+          widget: text,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+        {
+          label: 'Image',
+          name: 'image',
+          widget: 'image',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Picture Copyright',
+          name: 'copyright',
+          widget: 'string',
+          required: false,
+          i18n: true,
+        },
+        {
+          widget: 'object',
+          default: [],
+          collapsed: true,
+          label: 'Social channels',
+          name: 'social_channels',
+          i18n: true,
+          fields:
+            [
+              {
+                label: 'Website',
+                name: 'website',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+              {
+                label: 'Wikipedia',
+                name: 'wikipedia',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+              {
+                label: 'Orcid ID',
+                name: 'orcid',
+                hint: 'Add only the ORCID ID, not the URL: e.g. <strong>0000-0003-1715-2919</strong>',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+              {
+                label: 'Linkedin',
+                name: 'linkedin',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+              {
+                label: 'Twitter',
+                name: 'webstwitterite',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+              {
+                label: 'Google scholar',
+                name: 'google_scholar',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+              {
+                label: 'ResearchGate',
+                name: 'researchgate',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+              {
+                label: 'Mendeley',
+                name: 'mendeley',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+            ],
+        },
+      ]
+  - name: 'laureates'
+    label: 'Laureates'
+    label_singular: 'Laureate'
+    i18n: true
+    nested:
+      depth: 2
+      summary: '{{title}}'
+    folder: 'content/laureates' # The path to the folder where the documents are stored
+    create: true
+    slug: '{{title}}'
+    identifier_field: title
+    summary: '{{title}}'
+    fields:
+      [
+        {
+          label: Title,
+          name: title,
+          widget: string,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+        {
+          label: 'Edition',
+          name: 'edition',
+          widget: 'select',
+          default: ['2024'],
+          multiple: false,
+          options: ['2021', '2024'],
+          min: 1,
+        },
+        {
+          label: 'Award',
+          name: 'category',
+          widget: 'select',
+          required: false,
+          default: [''],
+          multiple: false,
+          options: ['crush', 'winner'],
+          min: 1,
+          hint: 'Crush = coup de coeur du jury; winner = gagnant',
+        },
+        {
+          label: 'Type',
+          name: 'type',
+          widget: 'select',
+          multiple: false,
+          options: ['comic', 'novel', 'video'],
+          min: 1,
+        },
+        {
+          label: Lastname,
+          name: lastname,
+          widget: string,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+        {
+          label: Title and institution,
+          name: title_and_institution,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: Presentation,
+          name: presentation,
+          widget: text,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+        {
+          label: Jury quote,
+          name: jury,
+          widget: text,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Youtube video ID',
+          name: 'youtube_video_id',
+          widget: 'string',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Laureate file',
+          name: 'file',
+          widget: 'file',
+          required: false,
+          media_library: { config: { multiple: false } },
+        },
+        {
+          label: 'Image',
+          name: 'image',
+          widget: 'image',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Picture Copyright',
+          name: 'copyright',
+          widget: 'string',
+          required: false,
+          i18n: true,
+        },
+        {
+          widget: 'object',
+          default: [],
+          collapsed: true,
+          label: 'Team',
+          name: 'team',
+          i18n: true,
+          fields:
+            [
+              {
+                label: Firstname,
+                name: firstname,
+                widget: string,
+                default: '',
+                required: true,
+                i18n: true,
+              },
+
+              {
+                label: Lastname,
+                name: lastname,
+                widget: string,
+                default: '',
+                required: true,
+                i18n: true,
+              },
+            ],
+        },
+        {
+          widget: 'object',
+          default: [],
+          collapsed: true,
+          label: 'Jury notes',
+          name: 'jury_notes',
+          i18n: true,
+          fields:
+            [
+              {
+                label: Firstname,
+                name: firstname,
+                widget: string,
+                default: '',
+                required: true,
+                i18n: true,
+              },
+
+              {
+                label: Lastname,
+                name: lastname,
+                widget: string,
+                default: '',
+                required: true,
+                i18n: true,
+              },
+              {
+                label: Text,
+                name: text,
+                widget: text,
+                default: '',
+                required: false,
+                i18n: true,
+              },
+            ],
+        },
+        { label: 'Body', i18n: true, name: 'body', widget: 'markdown' },
+      ]
+  - name: 'pages' # Used in routes, e.g., /admin/collections/blog
+    label: 'Pages' # Used in the UI
+    i18n: true
+    nested:
+      depth: 2
+      summary: '{{title}}'
+    folder: 'content/pages' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {
+          label: 'Page title',
+          i18n: true,
+          name: 'title',
+          widget: 'string',
+          required: true,
+          pattern:
+            ['^[^]{2,150}$', 'Minimum 2 characters, maximum 150 characters'],
+        }
+      - { label: 'Body', i18n: true, name: 'body', widget: 'markdown' }
+  - name: 'webinars'
+    label: 'Webinars'
+    label_singular: 'Webinar'
+    i18n: true
+    folder: 'content/webinars' # The path to the folder where the documents are stored
+    create: true
+    fields: [
+        {
+          label: Title,
+          name: title,
+          widget: string,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+        {
+          label: Subtitle,
+          name: subtitle,
+          widget: string,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+        {
+          label: Zoom link,
+          name: zoom,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: URL,
+          name: url,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: Abstract,
+          name: abstract,
+          widget: text,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: Featured,
+          name: featured,
+          widget: boolean,
+          default: false,
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Edition',
+          name: 'edition',
+          widget: 'select',
+          default: ['2024'],
+          multiple: false,
+          options: ['2021', '2024'],
+          min: 1,
+        },
+        {
+          label: 'Youtube video ID',
+          name: 'youtube_video_id',
+          widget: 'string',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Background color',
+          name: 'background_color',
+          widget: 'color',
+          default: '#ffffff',
+          required: false,
+          i18n: true,
+          allowInput: true,
+        },
+        {
+          label: 'Webinar file',
+          name: 'file',
+          widget: 'file',
+          required: false,
+          media_library: { config: { multiple: false } },
+          i18n: true,
+          media_folder: 'static',
+        },
+        {
+          label: 'Image',
+          name: 'image',
+          widget: 'image',
+          required: false,
+          i18n: true,
+          media_folder: 'static',
+        },
+        {
+          label: 'Picture Copyright',
+          name: 'copyright',
+          widget: 'string',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Date',
+          name: 'date',
+          widget: 'datetime',
+          default: '',
+          date_format: 'DD.MM.YYYY', # e.g. 24.12.2021,
+          time_format: 'HH:mm', # e.g. 21:07,
+          format: 'LLL',
+          picker_utc: false,
+          i18n: true,
+        },
+        { label: 'Body', i18n: true, name: 'body', widget: 'markdown' },
+      ]
+  - name: 'carousel' # Used in routes, e.g., /admin/collections/blog
+    label: 'Carousel' # Used in the UI
+    i18n: true
+    identifier_field: carousel_title
+    folder: 'content/carousel' # The path to the folder where the documents are stored
+    media_folder: 'static'
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      [
+        {
+          label: 'Title',
+          i18n: true,
+          name: 'carousel_title',
+          widget: 'string',
+          required: true,
+          pattern:
+            ['^[^]{2,150}$', 'Minimum 2 characters, maximum 150 characters'],
+        },
+        {
+          label: Open link in a new tab?,
+          name: new_tab_link,
+          widget: boolean,
+          default: false,
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Image',
+          name: 'picture',
+          widget: 'image',
+          required: false,
+          i18n: true,
+          media_folder: 'static',
+        },
+        {
+          label: 'Picture Copyright',
+          name: 'copyright',
+          widget: 'string',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Date',
+          name: 'date',
+          widget: 'datetime',
+          default: '',
+          date_format: 'DD.MM.YYYY', # e.g. 24.12.2021,
+          time_format: 'HH:mm', # e.g. 21:07,
+          format: 'LLL',
+          picker_utc: false,
+          i18n: true,
+        },
+        {
+          label: 'Link',
+          name: 'link',
+          hint: "relative link, e.G. '/webinars/the-future-of-human-machine-cooperation-in-the-workplace-how-will-ai-impact-the-development-of-human-potential'",
+          widget: 'string',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Body',
+          i18n: true,
+          name: 'body',
+          widget: 'markdown',
+          required: false,
+        },
+      ]
+  - name: 'Resources_2021'
+    label: 'Resources 2021'
+    label_singular: 'Resource'
+    i18n: false
+    folder: 'content/resources_2021' # The path to the folder where the documents are stored
+    create: true
+    identifier_field: name
+    fields: [
+        {
+          label: Name,
+          name: name,
+          widget: string,
+          default: '',
+          required: true,
+        },
+        {
+          label: Featured,
+          name: featured,
+          widget: boolean,
+          default: false,
+          required: false,
+        },
+        {
+          label: 'Language',
+          name: 'lang',
+          widget: 'select',
+          default: ['EN'],
+          multiple: false,
+          options: ['FR', 'EN', 'ES', 'DE'],
+          min: 1,
+        },
+        {
+          label: 'Edition',
+          name: 'edition',
+          widget: 'select',
+          default: ['2024'],
+          multiple: false,
+          options: ['2021', '2024'],
+          min: 1,
+        },
+        {
+          label: 'Perspectives',
+          name: 'perspectives',
+          widget: 'select',
+          default: [''],
+          multiple: true,
+          options:
+            [
+              'foresight_studies',
+              'case_studies',
+              'data_and_trends',
+              'magazine',
+              'opinions',
+              'policy',
+              'risk_management',
+              'science_fiction',
+            ],
+          min: 1,
+        },
+        {
+          label: 'Issues and Challenges',
+          name: 'issues',
+          widget: 'select',
+          default: ['2024'],
+          multiple: true,
+          options:
+            [
+              'agriculture_forestry_fishing',
+              'architecture',
+              'clothing',
+              'democracy_participation',
+              'culture',
+              'economy_trade',
+              'education',
+              'environment',
+              'food',
+              'energy',
+              'government_local_and_national',
+              'health',
+              'housing',
+              'imigration',
+              'information_communications',
+              'law_justice',
+              'leisure',
+              'public_administration',
+              'public_space',
+              'sciences_technologies',
+              'security_police',
+              'social_services',
+              'sport',
+              'tourism',
+              'transport',
+              'urban_spatial_planning',
+              'work',
+            ],
+          min: 1,
+        },
+        {
+          label: 'Category',
+          name: 'category',
+          widget: 'select',
+          default: [],
+          multiple: false,
+          options:
+            [
+              'stimulate_your_creativity',
+              'learn_from_the_past',
+              'face_our_challenges_today',
+              'think_about_the_future',
+            ],
+          min: 1,
+        },
+        {
+          label: 'Type',
+          name: 'type',
+          widget: 'select',
+          default: [],
+          multiple: false,
+          options: ['Article', 'Book', 'Photo', 'Video', 'Drawing', 'Podcast'],
+          min: 1,
+        },
+        {
+          label: URL,
+          name: url,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: Author,
+          name: author,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: French description,
+          name: description_fr,
+          widget: text,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: English description,
+          name: description_en,
+          widget: text,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Youtube video ID',
+          name: 'youtube_video_id',
+          widget: 'string',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Background color',
+          name: 'background_color',
+          widget: 'color',
+          default: '#ffffff',
+          required: false,
+          i18n: true,
+          allowInput: true,
+        },
+        {
+          label: 'Webinar file',
+          name: 'file',
+          widget: 'file',
+          required: false,
+          media_library: { config: { multiple: false } },
+          i18n: true,
+        },
+        {
+          label: 'Image',
+          name: 'image',
+          widget: 'image',
+          required: false,
+          media_folder: 'static',
+          i18n: true,
+        },
+        {
+          label: 'Picture Copyright',
+          name: 'copyright',
+          widget: 'string',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Date',
+          name: 'date',
+          widget: 'datetime',
+          default: '',
+          date_format: 'DD.MM.YYYY', # e.g. 24.12.2021,
+          time_format: 'HH:mm', # e.g. 21:07,
+          format: 'LLL',
+          picker_utc: false,
+          i18n: true,
+        },
+      ]
+  - name: 'Resources_2024'
+    label: 'Resources 2024'
+    label_singular: 'Resource'
+    i18n: false
+    folder: 'content/resources_2024' # The path to the folder where the documents are stored
+    create: true
+    identifier_field: name
+    fields: [
+        {
+          label: Name,
+          name: name,
+          widget: string,
+          default: '',
+          required: true,
+        },
+        {
+          label: Featured,
+          name: featured,
+          widget: boolean,
+          default: false,
+          required: false,
+        },
+        {
+          label: 'Language',
+          name: 'lang',
+          widget: 'select',
+          default: ['EN'],
+          multiple: false,
+          options: ['FR', 'EN', 'ES', 'DE'],
+          min: 1,
+        },
+        {
+          label: 'Edition',
+          name: 'edition',
+          widget: 'select',
+          default: ['2024'],
+          multiple: false,
+          options: ['2021', '2024'],
+          min: 1,
+        },
+        {
+          label: 'Perspectives',
+          name: 'perspectives',
+          widget: 'select',
+          default: [''],
+          multiple: true,
+          options:
+            [
+              'foresight_studies',
+              'case_studies',
+              'data_and_trends',
+              'magazine',
+              'opinions',
+              'policy',
+              'risk_management',
+              'science_fiction',
+            ],
+          min: 1,
+        },
+        {
+          label: 'Issues and Challenges',
+          name: 'issues',
+          widget: 'select',
+          default: ['2024'],
+          multiple: true,
+          options:
+            [
+              'general',
+              'management_and_organisation',
+              'equality_and_diversity',
+              'social_dialog',
+              'health_and_security',
+              'Work_meaning_acknowledgment',
+              'collectives_and_work_relations',
+              'professional_carreers',
+              'governance',
+              'skills_qualifications',
+              'equipment_and_tools',
+              'work_conditions',
+              'ecology',
+              'work_schedule',
+              'history_of_work',
+              'workplaces',
+              'economy_and_labor_worth',
+              'sactorial_approaches',
+              'artificial_intelligence',
+            ],
+          min: 1,
+        },
+        {
+          label: 'Category',
+          name: 'category',
+          widget: 'select',
+          default: [],
+          multiple: true,
+          options:
+            [
+              'stimulate_your_creativity',
+              'learn_from_the_past',
+              'face_our_challenges_today',
+              'think_about_the_future',
+            ],
+          min: 1,
+        },
+        {
+          label: 'Type',
+          name: 'type',
+          widget: 'select',
+          default: [],
+          multiple: true,
+          options:
+            [
+              'Article',
+              'Book',
+              'Photo',
+              'Video',
+              'Drawing',
+              'Podcast',
+              'Report',
+            ],
+          min: 1,
+        },
+        {
+          label: URL,
+          name: url,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: Author,
+          name: author,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: French description,
+          name: description_fr,
+          widget: text,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: English description,
+          name: description_en,
+          widget: text,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Youtube video ID',
+          name: 'youtube_video_id',
+          widget: 'string',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Background color',
+          name: 'background_color',
+          widget: 'color',
+          default: '#ffffff',
+          required: false,
+          i18n: true,
+          allowInput: true,
+        },
+        {
+          label: 'Webinar file',
+          name: 'file',
+          widget: 'file',
+          required: false,
+          media_library: { config: { multiple: false } },
+          i18n: true,
+        },
+        {
+          label: 'Image',
+          name: 'image',
+          widget: 'image',
+          required: false,
+          media_folder: 'static',
+          i18n: true,
+        },
+        {
+          label: 'Picture Copyright',
+          name: 'copyright',
+          widget: 'string',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Date',
+          name: 'date',
+          widget: 'datetime',
+          default: '',
+          date_format: 'DD.MM.YYYY', # e.g. 24.12.2021,
+          time_format: 'HH:mm', # e.g. 21:07,
+          format: 'LLL',
+          picker_utc: false,
+          i18n: true,
+        },
+      ]
+  - name: pressroom
+    label: Pressroom
+    media_folder: 'static/press_releases'
+    files:
+      - name: pressroom
+        label: Pressroom
+        file: content/pressroom.md
+        # Enable i18n for this file.
+        i18n: true
+        fields:
+          - {
+              label: 'Mediakit',
+              name: 'mediakit',
+              widget: 'object',
+              required: false,
+              fields:
+                [
+                  {
+                    name: 'url',
+                    widget: 'string',
+                    label: 'URL',
+                    required: false,
+                  },
+                  {
+                    name: 'content',
+                    widget: 'string',
+                    label: 'Content',
+                    required: false,
+                  },
+                  {
+                    name: 'title',
+                    widget: 'string',
+                    label: 'Name of the media kit',
+                    required: false,
+                  },
+                ],
+            }
+          - {
+              label: 'Contact',
+              name: 'contact',
+              widget: 'object',
+              required: false,
+              fields:
+                [
+                  {
+                    name: 'email',
+                    widget: 'string',
+                    label: 'Email',
+                    required: false,
+                  },
+                  {
+                    name: 'phone',
+                    widget: 'string',
+                    label: 'Telephone number',
+                    required: false,
+                  },
+                  {
+                    name: 'name',
+                    widget: 'string',
+                    label: 'Name of press contact',
+                    required: false,
+                  },
+                ],
+            }
+          - {
+              label: 'Press releases',
+              name: 'releases',
+              widget: 'list',
+              required: false,
+              field:
+                {
+                  name: release,
+                  widget: object,
+                  fields:
+                    [
+                      {
+                        label: Title,
+                        name: title,
+                        widget: string,
+                        required: false,
+                      },
+                      {
+                        label: Date,
+                        name: date,
+                        widget: datetime,
+                        required: false,
+                      },
+                      {
+                        label: File,
+                        name: file,
+                        widget: file,
+                        required: false,
+                      },
+                    ],
+                },
+            }
+          - {
+              label: 'Press reviews',
+              name: 'reviews',
+              widget: 'list',
+              field:
+                {
+                  name: review,
+                  widget: object,
+                  fields:
+                    [
+                      {
+                        label: Subtitle,
+                        name: subtitle,
+                        widget: string,
+                        required: false,
+                      },
+
+                      {
+                        label: From,
+                        name: from,
+                        widget: string,
+                        required: false,
+                      },
+
+                      {
+                        label: Link,
+                        name: link,
+                        widget: string,
+                        required: false,
+                      },
+
+                      {
+                        label: Date,
+                        name: date,
+                        widget: datetime,
+                        required: false,
+                      },
+                    ],
+                },
+            }
+  - name: 'sab'
+    label: 'Scientific Advisory Board'
+    label_singular: 'Board member'
+    i18n: true
+    nested:
+      depth: 2
+      summary: '{{lastname}} {{firstname}}'
+    folder: 'content/sab' # The path to the folder where the documents are stored
+    create: true
+    summary: '{{lastname}} {{firstname}}'
+    slug: '{{lastname}}-{{firstname}}'
+    identifier_field: lastname
+    fields:
+      [
+        {
+          label: Firstname,
+          name: firstname,
+          widget: string,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+
+        {
+          label: Lastname,
+          name: lastname,
+          widget: string,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+        {
+          label: Presentation,
+          name: presentation,
+          widget: text,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+        {
+          label: 'Edition',
+          name: 'edition',
+          widget: 'select',
+          default: '2024',
+          multiple: true,
+          options: ['2021', '2024'],
+          i18n: true,
+          min: 1,
+        },
+        {
+          label: Title and institution,
+          name: title_and_institution,
+          widget: string,
+          default: '',
+          required: false,
+          i18n: true,
+        },
+        {
+          label: 'Image',
+          name: 'image',
+          widget: 'image',
+          required: false,
+          i18n: true,
+          media_folder: 'static/sab',
+        },
+        {
+          label: 'Picture Copyright',
+          name: 'copyright',
+          widget: 'string',
+          required: false,
+          i18n: true,
+        },
+        {
+          widget: 'object',
+          default: [],
+          collapsed: true,
+          label: 'Social channels',
+          name: 'social_channels',
+          i18n: true,
+          fields:
+            [
+              {
+                label: 'Website',
+                name: 'website',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+              {
+                label: 'Wikipedia',
+                name: 'wikipedia',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+              {
+                label: 'Orcid ID',
+                name: 'orcid',
+                hint: 'Add only the ORCID ID, not the URL: e.g. <strong>0000-0003-1715-2919</strong>',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+              {
+                label: 'Linkedin',
+                name: 'linkedin',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+              {
+                label: 'Twitter',
+                name: 'webstwitterite',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+              {
+                label: 'Google scholar',
+                name: 'google_scholar',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+              {
+                label: 'ResearchGate',
+                name: 'researchgate',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+              {
+                label: 'Mendeley',
+                name: 'mendeley',
+                widget: 'string',
+                default: '',
+                required: false,
+                i18n: true,
+              },
+            ],
+        },
+        {
+          label: 'Body',
+          i18n: true,
+          name: 'body',
+          widget: 'markdown',
+          required: false,
+          hint: used to store the bibliography,
+        },
+      ]
+  - name: 'organizers'
+    label: 'Organizers'
+    label_singular: 'Organizer'
+    i18n: true
+    folder: 'content/organizers' # The path to the folder where the documents are stored
+    create: true
+    slug: '{{title}}'
+    summary: '{{title}}'
+    view_groups:
+      - label: 'Edition 2021'
+        field: edition
+        pattern: "'2021'"
+      - label: 'Edition 2024'
+        field: edition
+        pattern: "'2024'"
+    fields:
+      [
+        {
+          label: Title,
+          name: title,
+          widget: string,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+        {
+          label: 'Logo',
+          name: 'logo',
+          widget: 'image',
+          required: false,
+          i18n: true,
+          media_folder: 'static/who',
+        },
+        {
+          label: Presentation,
+          name: text,
+          widget: text,
+          default: '',
+          required: true,
+          i18n: true,
+        },
+        {
+          label: 'URL',
+          name: 'url',
+          widget: 'string',
+          required: false,
+          i18n: true,
+        },
+        { label: 'Body', i18n: true, name: 'body', widget: 'markdown' },
+      ]
+  - name: 'faq' # Used in routes, e.g., /admin/collections/blog
+    label: 'FAQ' # Used in the UI
+    i18n: true
+    folder: 'content/faq' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {
+          label: 'Question',
+          i18n: true,
+          name: 'title',
+          widget: 'string',
+          required: true,
+          pattern:
+            ['^[^]{2,150}$', 'Minimum 2 characters, maximum 150 characters'],
+        }
+      - { label: 'Body', i18n: true, name: 'body', widget: 'markdown' }
+      - {
+          label: 'Date',
+          name: 'date',
+          widget: 'datetime',
+          default: '',
+          date_format: 'DD.MM.YYYY', # e.g. 24.12.2021,
+          time_format: 'HH:mm', # e.g. 21:07,
+          format: 'LLL',
+          picker_utc: false,
+          i18n: true,
+          hint: used to sort the questions. Oldest are displayed last,
+        }
