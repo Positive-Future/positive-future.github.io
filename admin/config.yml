@@ -5,7 +5,7 @@ local_backend:
 backend:
   name: github
   branch: main
-  repo: Positive-Future/positive-future.2024
+  repo: Positive-Future/positive-future.github.io
   base_url: https://85o05b11ri.execute-api.eu-west-2.amazonaws.com/
   auth_endpoint: '/dev/auth'
   cms_label_prefix: 'IEA-Paris/'
@@ -385,6 +385,7 @@ collections:
     i18n: true
     folder: 'content/webinars' # The path to the folder where the documents are stored
     create: true
+    media_folder: 'static',
     fields: [
         {
           label: Title,
