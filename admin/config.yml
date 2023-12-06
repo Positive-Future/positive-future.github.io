@@ -1305,7 +1305,7 @@ collections:
           name: text,
           widget: text,
           default: "",
-          required: true,
+          required: false,
           i18n: true,
         },
         {
