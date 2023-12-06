@@ -385,7 +385,7 @@ collections:
     i18n: true
     folder: 'content/webinars' # The path to the folder where the documents are stored
     create: true
-    media_folder: 'static',
+    media_folder: 'static'
     fields: [
         {
           label: Title,
