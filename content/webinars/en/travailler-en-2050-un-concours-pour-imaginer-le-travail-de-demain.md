@@ -33,4 +33,4 @@ This webinar is an opportunity to present the competition and the theme of its s
 
 The webinar will be held on the Webikeo platform (free registration required) and will also be broadcast live on YouTube.
 
-Follow the webinar on webikeo: (*link coming soon*)
+Follow the webinar on webikeo: https://urlz.fr/oNv9

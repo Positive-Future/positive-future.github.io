@@ -33,4 +33,4 @@ Le 17 janvier 2024, de 13h30 à 14h15.
 
 Le webinaire se tiendra sur la plateforme Webikeo (inscription obligatoire gratuite), il sera également retransmis en direct sur YouTube.
 
-Suivre le webinaire sur webikeo : (*lien à venir*)
+Suivre le webinaire sur webikeo : https://urlz.fr/oNv9
