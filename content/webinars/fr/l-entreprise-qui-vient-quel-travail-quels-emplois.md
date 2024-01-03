@@ -6,6 +6,7 @@ url: ""
 abstract: ""
 featured: false
 background_color: "#ffffff"
+image: static/pexels-jane-doan-1024248.jpg
 date: January 30, 2024 6:30 PM
 ---
 Alors que les études prospectivistes se font de plus en plus nombreuses sur diverses dimensions du Travail, la thématique de l’entreprise reste relativement peu traitée. Face aux défis d’aujourd’hui, comment les entreprises pourraient-elles se transformer - qu'il s'agisse de leur statut, leur modèle économique, leur fonctionnement ? Quel rôle pourraient-elles jouer ? \
