@@ -3,7 +3,9 @@ title: "L’entreprise qui vient : quel travail ? Quels emplois ?"
 subtitle: "avec Daniel Kaplan et Jean-Eric Aubert. "
 zoom: ""
 url: ""
-abstract: ""
+abstract: "Face aux défis d’aujourd’hui, comment les entreprises
+  pourraient-elles se transformer - qu'il s'agisse de leur statut, leur modèle
+  économique, leur fonctionnement ? Quel rôle pourraient-elles jouer ? "
 featured: false
 edition:
   - "2024"
