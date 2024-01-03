@@ -1,5 +1,5 @@
 ---
-title: "L’entreprise qui vient : Quel travail ? Quels emplois ?"
+title: "L’entreprise qui vient : quel travail ? Quels emplois ?"
 subtitle: "avec Daniel Kaplan et Jean-Eric Aubert. "
 zoom: ""
 url: ""
