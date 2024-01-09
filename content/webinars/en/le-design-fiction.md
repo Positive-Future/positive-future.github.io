@@ -1,5 +1,5 @@
 ---
-title: Le Design-fiction
+title: "Le Design-fiction"
 subtitle: "Avec Pierre-Antoine Marti et Marc Malenfer. "
 zoom: ""
 url: ""
@@ -11,7 +11,7 @@ featured: false
 edition:
   - "2024"
 background_color: "#ffffff"
-image: static/pexels-mali-maeder-110818.jpg
+image: /pexels-mali-maeder-110818.jpg
 date: February 6, 2024 6:30 PM
 ---
 Proche de la méthode des scénarios - mobilisée en prospective - le Design-Fiction fait aujourd’hui l’objet d’usages multiples. Avec le caractère immersif des fictions, le principe est de préfigurer les futurs possibles à partir d’une analyse précise et stratégique du présent. De ce fait le Design-Fiction a pour objectif de mobiliser l’imaginaire pour rendre crédible des visions possibles du futur. 
