@@ -39,7 +39,14 @@
                         class="mx-1"
                         v-on="on"
                       >
-                        <v-icon color="white">mdi-{{ item.icon }} </v-icon>
+                        <v-icon v-if="item.icon !== 'twitter'" color="white"
+                          >mdi-{{ item.icon }}
+                        </v-icon>
+                        <v-img
+                          v-else
+                          width="24px"
+                          :src="item.icon + '.png'"
+                        ></v-img>
                       </v-btn>
                     </template>
                     <span>{{ item.text }}</span>

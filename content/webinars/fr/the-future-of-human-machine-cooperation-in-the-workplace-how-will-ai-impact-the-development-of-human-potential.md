@@ -26,7 +26,3 @@ By “human augmentation” we mean technology that improves productivity while 
 ***Karim Jebari*** *is a researcher at the Institute for Futures Studies. He defended his doctoral thesis in 2014 at the Royal Institute of Technology (KTH). The thesis dealt with applied ethics and in particular how we should relate to the risks and opportunities of technological innovation. Karim Jebari is interested in issues related to political philosophy, bioethics and the philosophy of science.*
 
 ***Markus Furendal*** *is a postdoctoral researcher in the Department of Political Science, Stockholm University, researching issues relating to politics, philosophy and economics. He currently works in a project concerning the global governance of artificial intelligence, and how the benefits and burdens created by increasingly capable AI ought to be distributed.*
-
-#### Watch the webinar
-
-<YoutubeEmbedded yt="AwxkhJp0P14" caption ="The Future of Human-Machine Cooperation in the Workplace"><YoutubeEmbedded>

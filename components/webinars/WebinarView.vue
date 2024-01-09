@@ -36,6 +36,7 @@
         :yt="item.youtube_video_id"
         class="mb-9"
       ></YoutubeEmbedded>
+      <v-img v-else-if="item.image" :src="item.image"></v-img>
       <nuxt-content :document="item" />
     </v-card-text>
     <v-card-actions
