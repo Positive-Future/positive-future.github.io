@@ -1,5 +1,5 @@
 ---
-title: "Le Design-fiction"
+title: Le Design-fiction
 subtitle: "Avec Pierre-Antoine Marti et Marc Malenfer. "
 zoom: ""
 url: ""
@@ -8,8 +8,7 @@ abstract: "Proche de la méthode des scénarios - mobilisée en prospective - le
   immersif des fictions, le principe est de préfigurer les futurs possibles à
   partir d’une analyse précise et stratégique du présent. "
 featured: false
-edition:
-  - "2024"
+edition: "2024"
 background_color: "#ffffff"
 image: /pexels-mali-maeder-110818.jpg
 date: February 6, 2024 6:30 PM
