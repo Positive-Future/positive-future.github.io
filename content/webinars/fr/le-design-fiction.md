@@ -20,5 +20,5 @@ Avec **Pierre-Antoine MARTI**, Directeur d’études de Prospective pour Futurib
 ### Informations pratiques
 
 Le webinaire se tiendra le mardi 6 février 2024 à 18h30. \
-Le lien de connexion pour suivre le webinaire sera envoyé aux participants par mail. \
-Inscription gratuite par ici : ..........................
+Le lien de connexion pour suivre le webinaire sera envoyé aux participants par mail (un jour avant). \
+Inscription gratuite par ici : <https://urlz.fr/pc22>
