@@ -51,9 +51,9 @@ export default {
       // TODO complete
       .sortBy('date', 'desc')
       .fetch()
-    const upcomingWebinars = webinars.filter(
-      (item) => new Date(item.date) > Date.now()
-    )
+    const upcomingWebinars = webinars
+      .filter((item) => new Date(item.date) > Date.now())
+      .reverse()
 
     return {
       webinarText,
