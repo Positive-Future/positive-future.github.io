@@ -440,9 +440,9 @@ collections:
           name: 'edition',
           widget: 'select',
           default: ['2024'],
+          i18n: true,
           multiple: false,
           options: ['2021', '2024'],
-          i18n: true,
           min: 1,
         },
         {
