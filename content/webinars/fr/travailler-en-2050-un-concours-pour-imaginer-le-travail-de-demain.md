@@ -13,7 +13,7 @@ featured: false
 edition: "2024"
 background_color: "#ffffff"
 image: /webinaire-lancement.png
-date: January 17, 2024 1:30 PM
+date: 2024-01-17T13:30:00.000Z
 ---
 ### Présentation
 
