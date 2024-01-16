@@ -11,7 +11,7 @@ featured: false
 edition: "2024"
 background_color: "#ffffff"
 image: /pexels-mali-maeder-110818.jpg
-date: 6AMT6TI16_01/06/2024OCAM01/06/2024
+date: 2o22nt.I8O_8601
 ---
 Proche de la méthode des scénarios - mobilisée en prospective - le Design-Fiction fait aujourd’hui l’objet d’usages multiples. Avec le caractère immersif des fictions, le principe est de préfigurer les futurs possibles à partir d’une analyse précise et stratégique du présent. De ce fait le Design-Fiction a pour objectif de mobiliser l’imaginaire pour rendre crédible des visions possibles du futur. 
 
