@@ -7,8 +7,7 @@ abstract: "Face aux défis d’aujourd’hui, comment les entreprises
   pourraient-elles se transformer - qu'il s'agisse de leur statut, leur modèle
   économique, leur fonctionnement ? Quel rôle pourraient-elles jouer ? "
 featured: false
-edition:
-  - "2024"
+edition: "2024"
 background_color: "#ffffff"
 image: /pexels-jane-doan-1024248.jpg
 date: January 30, 2024 6:30 PM
@@ -21,5 +20,5 @@ Avec **Daniel KAPLAN**, entrepreneur social et prospectiviste, cofondateur de la
 ### Informations pratiques
 
 Le webinaire se tiendra le mardi 30 janvier 2024 à 18h30.\
-Un lien de connexion sera envoyé aux participants par mail. \
-Inscription gratuite par ici : ................................................
+Un lien de connexion sera envoyé aux participants par mail (un jour avant). \
+Inscription gratuite par ici : [https://urlz.fr/pc1m](<https://urlz.fr/pc1m >)
