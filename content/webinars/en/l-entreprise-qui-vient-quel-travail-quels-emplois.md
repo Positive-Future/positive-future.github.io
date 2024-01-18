@@ -10,7 +10,7 @@ featured: false
 edition: "2024"
 background_color: "#ffffff"
 image: /webinaire-30-janvier.png
-date: 2024-01-30T18:30:00.000Z
+date: 2024-01-30T17:30:00.000Z
 ---
 
 
