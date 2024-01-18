@@ -32,6 +32,4 @@ Ce webinaire est une occasion de vous présenter le concours et la thématique d
 
 Le 17 janvier 2024, de 13h30 à 14h15.
 
-Le webinaire se tiendra sur la plateforme Webikeo (inscription obligatoire gratuite), il sera également retransmis en direct sur YouTube.
-
-Suivre le webinaire sur webikeo : <https://urlz.fr/oNFU>
+Le webinaire se tiendra sur la plateforme Webikeo (inscription obligatoire gratuite), il sera également retransmis en direct sur YouTube.[](https://urlz.fr/oNFU)

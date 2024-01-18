@@ -32,6 +32,4 @@ This webinar is an opportunity to present the competition and the theme of its s
 
 17 January 2024, from 1.30 pm to 2.15 pm.
 
-The webinar will be held on the Webikeo platform (free registration required) and will also be broadcast live on YouTube.
-
-Follow the webinar on webikeo: <https://urlz.fr/oNFU>
+The webinar will be held on the Webikeo platform (free registration required) and will also be broadcast live on YouTube.[](https://urlz.fr/oNFU)
