@@ -11,6 +11,7 @@ abstract: "Le monde du travail évolue en permanence. Les entreprises, les
   écologiques, évolution des aspirations individuelles, etc."
 featured: false
 edition: "2024"
+youtube_video_id: W4P2NlbHh0M
 background_color: "#ffffff"
 image: /webinaire-lancement.png
 date: 2024-01-17T13:30:00.000Z
@@ -31,6 +32,4 @@ Ce webinaire est une occasion de vous présenter le concours et la thématique d
 
 Le 17 janvier 2024, de 13h30 à 14h15.
 
-Le webinaire se tiendra sur la plateforme Webikeo (inscription obligatoire gratuite), il sera également retransmis en direct sur YouTube.
-
-Suivre le webinaire sur webikeo : <https://urlz.fr/oNFU>
+Le webinaire se tiendra sur la plateforme Webikeo (inscription obligatoire gratuite), il sera également retransmis en direct sur YouTube.[](https://urlz.fr/oNFU)

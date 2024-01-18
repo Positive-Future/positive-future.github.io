@@ -11,6 +11,7 @@ abstract: "Le monde du travail évolue en permanence. Les entreprises, les
   écologiques, évolution des aspirations individuelles, etc."
 featured: false
 edition: "2024"
+youtube_video_id: W4P2NlbHh0M
 background_color: "#ffffff"
 image: /webinaire-lancement.png
 date: 2024-01-17T13:30:00.000Z
@@ -31,6 +32,4 @@ This webinar is an opportunity to present the competition and the theme of its s
 
 17 January 2024, from 1.30 pm to 2.15 pm.
 
-The webinar will be held on the Webikeo platform (free registration required) and will also be broadcast live on YouTube.
-
-Follow the webinar on webikeo: <https://urlz.fr/oNFU>
+The webinar will be held on the Webikeo platform (free registration required) and will also be broadcast live on YouTube.[](https://urlz.fr/oNFU)
