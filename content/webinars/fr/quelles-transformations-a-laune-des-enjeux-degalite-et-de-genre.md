@@ -12,7 +12,8 @@ abstract: "Depuis plus d’un siècle, la part des femmes au travail s’accroî
 featured: false
 edition: "2024"
 background_color: "#ffffff"
-file: static/webinaire-8-fevrier.png
+file: ""
+image: /webinaire-8-fevrier.png
 date: 2024-02-08T13:00:00.000Z
 ---
 ### Présentation
