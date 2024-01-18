@@ -11,6 +11,7 @@ abstract: "Le monde du travail évolue en permanence. Les entreprises, les
   écologiques, évolution des aspirations individuelles, etc."
 featured: false
 edition: "2024"
+youtube_video_id: W4P2NlbHh0M
 background_color: "#ffffff"
 image: /webinaire-lancement.png
 date: 2024-01-17T13:30:00.000Z
