@@ -531,7 +531,8 @@ collections:
           widget: 'image',
           required: false,
           i18n: true,
-          media_folder: 'static',
+          media_folder: '/static',
+          public_folder: '/',
         },
         {
           label: 'Picture Copyright',
@@ -574,7 +575,8 @@ collections:
     folder: 'content/resources_2021' # The path to the folder where the documents are stored
     create: true
     identifier_field: name
-    fields: [
+    fields:
+      [
         {
           label: Name,
           name: name,
@@ -749,7 +751,8 @@ collections:
           name: 'image',
           widget: 'image',
           required: false,
-          media_folder: 'static',
+          media_folder: '/static',
+          public_folder: '/',
           i18n: true,
         },
         {
@@ -764,9 +767,6 @@ collections:
           name: 'date',
           widget: 'datetime',
           default: '',
-          date_format: 'DD.MM.YYYY', # e.g. 24.12.2021,
-          time_format: 'HH:mm', # e.g. 21:07,
-          format: 'LLL',
           picker_utc: false,
           i18n: true,
         },
@@ -778,7 +778,8 @@ collections:
     folder: 'content/resources_2024' # The path to the folder where the documents are stored
     create: true
     identifier_field: name
-    fields: [
+    fields:
+      [
         {
           label: Name,
           name: name,
@@ -954,7 +955,8 @@ collections:
           name: 'image',
           widget: 'image',
           required: false,
-          media_folder: 'static',
+          media_folder: '/static',
+          public_folder: '/',
           i18n: true,
         },
         {
@@ -969,9 +971,6 @@ collections:
           name: 'date',
           widget: 'datetime',
           default: '',
-          date_format: 'DD.MM.YYYY', # e.g. 24.12.2021,
-          time_format: 'HH:mm', # e.g. 21:07,
-          format: 'LLL',
           picker_utc: false,
           i18n: true,
         },
