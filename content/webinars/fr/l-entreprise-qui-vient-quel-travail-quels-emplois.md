@@ -9,7 +9,7 @@ abstract: "Face aux défis d’aujourd’hui, comment les entreprises
 featured: false
 edition: "2024"
 background_color: "#ffffff"
-image: static/webinaire-30-janvier.png
+image: /webinaire-30-janvier.png
 date: 2024-01-30T18:30:00.000Z
 ---
 

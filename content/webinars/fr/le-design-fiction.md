@@ -10,7 +10,7 @@ abstract: "Proche de la méthode des scénarios - mobilisée en prospective - le
 featured: false
 edition: "2024"
 background_color: "#ffffff"
-image: static/webinaire-6-fevrier.png
+image: /webinaire-6-fevrier.png
 date: 2024-02-06T18:30:00.000Z
 ---
 ### Présentation
