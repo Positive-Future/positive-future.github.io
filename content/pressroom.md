@@ -42,4 +42,9 @@ reviews:
       link: https://www.ladn.eu/adn-business/news-business/actualites-annonceurs/concours-positive-future-ville-
         2100/
       date: 2021-03-09T13:37:37.644Z
+  - review:
+      link: https://www.lemonde.fr/emploi/article/2024/01/24/quel-travail-desirable-a-l-horizon-2050_6212645_1698637.html?lmd_medium=al&lmd_campaign=envoye-par-appli&lmd_creation=ios&lmd_source=default
+      subtitle: "Quel travail désirable à l'horizon 2050 ? "
+      from: Anne RODIER - Le Monde
+      date: 2024-01-24T12:56:37.517Z
 ---
