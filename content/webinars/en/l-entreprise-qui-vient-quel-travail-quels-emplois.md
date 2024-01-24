@@ -12,8 +12,6 @@ background_color: "#ffffff"
 image: /webinaire-30-janvier.png
 date: 2024-01-30T17:30:00.000Z
 ---
-
-
 ### Présentation
 
 Alors que les études prospectivistes se font de plus en plus nombreuses sur diverses dimensions du Travail, la thématique de l’entreprise reste relativement peu traitée. Face aux défis d’aujourd’hui, comment les entreprises pourraient-elles se transformer - qu'il s'agisse de leur statut, leur modèle économique, leur fonctionnement ? Quel rôle pourraient-elles jouer ? \
@@ -25,4 +23,4 @@ Avec **Daniel KAPLAN**, entrepreneur social et prospectiviste, cofondateur de la
 
 Le webinaire se tiendra le mardi 30 janvier 2024 à 18h30.\
 Un lien de connexion sera envoyé aux participants par mail (un jour avant). \
-Inscription gratuite par ici : [https://urlz.fr/pc1m](<https://urlz.fr/pc1m >)
+[Inscription gratuite](https://positivefuture2024.wixsite.com/inscriptions/event-details/lentreprise-qui-vient-quel-travail-quels-emplois-1/form).
