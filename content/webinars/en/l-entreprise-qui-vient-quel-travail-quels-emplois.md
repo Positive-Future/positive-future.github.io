@@ -21,6 +21,4 @@ Avec **Daniel KAPLAN**, entrepreneur social et prospectiviste, cofondateur de la
 
 ### Informations pratiques
 
-Le webinaire se tiendra le mardi 30 janvier 2024 à 18h30.\
-Un lien de connexion sera envoyé aux participants par mail (un jour avant). \
-[Inscription gratuite](https://positivefuture2024.wixsite.com/inscriptions/event-details/lentreprise-qui-vient-quel-travail-quels-emplois-1/form).
+Le webinaire se tiendra le mardi 30 janvier 2024 à 18h30.
