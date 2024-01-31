@@ -10,7 +10,7 @@ featured: false
 edition: "2024"
 youtube_video_id: XNDUQc3coXY
 background_color: "#ffffff"
-image: ""
+image: /pexels-jane-doan-1024248.jpg
 date: 2024-01-30T17:30:00.000Z
 ---
 ### Présentation
