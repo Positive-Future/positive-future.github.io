@@ -10,7 +10,7 @@ featured: false
 edition: "2024"
 youtube_video_id: XNDUQc3coXY
 background_color: "#ffffff"
-image: ""
+image: /webinaire-30-janvier.png
 date: 2024-01-30T17:30:00.000Z
 ---
 ### Présentation
