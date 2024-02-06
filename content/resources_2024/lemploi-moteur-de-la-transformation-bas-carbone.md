@@ -11,7 +11,7 @@ category:
   - think_about_the_future
 type:
   - Report
-url: ""
+url: https://theshiftproject.org/article/emploi-moteur-transformation-bas-carbone-rapport-final-9-decembre/
 author: The Shift Project
 description_fr: Le Plan de transformation de l’économie française (PTEF) vise à
   proposer des voies pragmatiques pour décarboner l’économie, secteur par
