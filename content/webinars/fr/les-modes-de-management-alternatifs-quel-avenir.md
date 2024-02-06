@@ -13,7 +13,7 @@ featured: false
 edition: "2024"
 background_color: "#ffffff"
 image: /webinaire-29-fevrier.png
-date: 2024-02-27T17:30:00.000Z
+date: 2024-02-29T17:30:00.000Z
 ---
 ### Présentation
 
