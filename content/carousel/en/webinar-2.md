@@ -2,6 +2,6 @@
 carousel_title: Webinar
 new_tab_link: false
 picture: /carrousel-webinaire-30-janvier.png
-date: January 18, 2024 1:22 PM
+date: 2024-01-18T13:22:00.000Z
 link: /webinars/l-entreprise-qui-vient-quel-travail-quels-emplois
 ---
