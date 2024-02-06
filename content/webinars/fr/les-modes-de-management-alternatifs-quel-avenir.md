@@ -17,9 +17,9 @@ date: 2024-02-29T17:30:00.000Z
 ---
 ### Présentation
 
-Dans un monde du travail qui fait l’objet de nombreuses transformations, créant une instabilité de plus en plus importante, la coordination et l’efficience organisationnelle sont mises à rude épreuve. Comment organiser, piloter, contrôler, gérer les ressources quand l’environnement offre de moins en moins de stabilité et devient de plus en plus difficile à maîtriser ? 
+Dans un monde du travail qui fait l’objet de nombreuses transformations, créant une instabilité de plus en plus importante, la coordination et l’efficience organisationnelle sont mises à rude épreuve. Comment organiser, piloter, contrôler, gérer les ressources quand l’environnement offre de moins en moins de stabilité ?  De nouveaux modes d'organisation du travail voient le jour, se détachant des modèles hiérarchiques traditionnels. 
 
-Les méthodologies différentes et déjà existantes font l’objet d’études pour dépasser les limites des systèmes anciens. De nouveaux modes de gouvernance voient le jour se détachant des modèles hiérarchiques traditionnels. Quels sont ces nouveaux modes de management alternatifs ? Quels changements sont à l’origine et quels changements opèrent-ils dans le monde du travail d’aujourd’hui et de demain ? 
+Comment analyser ces modes de management alternatifs ? Quels en sont les apports, mais aussi les limites ? Comment modifient-ils le monde du travail d’aujourd’hui et de demain ?
 
 Avec **Thomas COUTROT**, statisticien, économiste et chercheur associé à l’IRES. Animé par **Jean-Eric AUBERT**, président de la Fondation 2100. 
 
