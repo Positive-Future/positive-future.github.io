@@ -3,12 +3,9 @@ title: "Les modes de management alternatifs : quel avenir ?"
 subtitle: Avec Thomas Coutrot et Jean-Eric Aubert.
 zoom: ""
 url: ""
-abstract: "Dans un monde du travail qui fait l’objet de nombreuses
+abstract: Dans un monde du travail qui fait l’objet de nombreuses
   transformations, créant une instabilité de plus en plus importante, la
   coordination et l’efficience organisationnelle sont mises à rude épreuve.
-  Comment organiser, piloter, contrôler, gérer les ressources quand
-  l’environnement offre de moins en moins de stabilité et devient de plus en
-  plus difficile à maîtriser ? "
 featured: false
 edition: "2024"
 background_color: "#ffffff"
