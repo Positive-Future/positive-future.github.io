@@ -20,6 +20,6 @@ Avec **Thomas COUTROT**, statisticien, économiste et chercheur associé à l’
 
 ### Informations pratiques
 
-Le webinaire se tiendra le jeudi 27 février 2024 à 18h30.\
+Le webinaire se tiendra le jeudi 29 février 2024 à 18h30.\
 Le lien de connexion pour suivre le webinaire sera envoyé aux participants par mail (un jour avant).\
-Inscription gratuite.
+[Inscription gratuite](https://positivefuture2024.wixsite.com/inscriptions/event-details/les-modes-de-management-alternatifs-quel-avenir/form).
