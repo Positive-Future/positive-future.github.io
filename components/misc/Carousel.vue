@@ -63,9 +63,7 @@ export default {
       .limit(3)
       .fetch()
     items = items.sort((a, b) => {
-      const first = new Date(a.date)
-      const second = new Date(b.date)
-      return first && second && first > second
+      return a && b && a > b
     })
     this.carousel = items.map((item) => {
       return {
