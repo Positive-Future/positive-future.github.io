@@ -3,7 +3,10 @@ title: Sens au travail
 subtitle: "Avec Coralie Perez, Anaïs Georgelin et Christine Afriat. "
 zoom: ""
 url: ""
-abstract: ""
+abstract: "La crise sanitaire comme la réforme des retraites ont été des
+  facteurs déclenchants de l’interrogation sur le rapport au travail et sa
+  signification dans la vie de toute personne. La question du sens au travail a
+  pris une nouvelle importance. "
 featured: false
 edition: "2024"
 background_color: "#ffffff"
