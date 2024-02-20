@@ -15,8 +15,6 @@ background_color: "#ffffff"
 image: /webinaire-8-fevrier.png
 date: 2024-02-08T13:00:00.000Z
 ---
-
-
 ### Présentation
 
 Depuis plus d’un siècle, la part des femmes au travail s’accroît et a considérablement transformé le profil des entreprises. La société est devenue de plus en plus sensible aux problématiques d’inégalités professionnelles entre les hommes et les femmes : inégale répartition homme-femme dans les emplois, inégalités salariales, inégalités de trajectoires de carrière (plafond de verre…).\
@@ -35,4 +33,4 @@ Avec **Marie Ségur**, Directrice d'études à Futuribles, et **Florence Chapper
 Le webinaire se tiendra le jeudi 8 février 2024 à 14h. \
 Organisé par l'ANACT, il se tiendra sur la plateforme Webikeo (inscription obligatoire gratuite). 
 
-Lien pour vous suivre le webinaire sur webikeo : <https://urlz.fr/pk4j>
+Retrouvez le replay sur la plateforme Webikeo : <https://urlz.fr/pk4j>
