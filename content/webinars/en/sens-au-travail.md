@@ -18,4 +18,4 @@ Dans ce webinaire consacré au problématique du sens au travail, nous nous atta
 
 Avec **Coralie PEREZ**, Economiste, ingénieur de recherche à l’Université de Paris 1, membre du centre d’économie de la Sorbonne, et **Anaïs GEORGELIN**, Fondatrice et CEO de Somanyways, entrepreneuse et experte des nouveaux rapports au travail
 
-Webinaire animé par Christine Afriat, Vice-présidente de la Société Française de Prospective.
+Webinaire animé par **Christine AFRIAT**, Vice-présidente de la Société Française de Prospective.
