@@ -5,10 +5,10 @@ zoom: ""
 url: ""
 abstract: ""
 featured: false
-edition:
-  - "2024"
+edition: "2024"
 background_color: "#ffffff"
-date: ""
+image: /pexels-fauxels-3184339.jpg
+date: 2024-03-12T17:30:00.000Z
 ---
 ### Présentation 
 
