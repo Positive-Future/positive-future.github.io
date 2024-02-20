@@ -30,7 +30,4 @@ Avec **Marie Ségur**, Directrice d'études à Futuribles, et **Florence Chapper
 
 ### Informations pratiques
 
-Le webinaire se tiendra le jeudi 8 février 2024 à 14h. \
-Organisé par l'ANACT, il se tiendra sur la plateforme Webikeo (inscription obligatoire gratuite). 
-
-Lien pour vous suivre le webinaire sur webikeo : <https://urlz.fr/pk4j>
+[](https://urlz.fr/pk4j)
