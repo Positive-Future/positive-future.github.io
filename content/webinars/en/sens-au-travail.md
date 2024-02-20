@@ -26,4 +26,4 @@ Webinaire animé par **Christine AFRIAT**, Vice-présidente de la Société Fran
 
 Le webinaire se tiendra le mardi 12 mars 2024 à 18h30. \
 Le lien de connexion pour suivre le webinaire sera envoyé aux inscrits par mail (un jour avant). \
-Inscription gratuite.
+[Inscription gratuite](https://positivefuture2024.wixsite.com/inscriptions/event-details/sens-au-travail/form).
