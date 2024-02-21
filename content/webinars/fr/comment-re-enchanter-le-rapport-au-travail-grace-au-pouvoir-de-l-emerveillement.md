@@ -8,9 +8,9 @@ abstract: Alors que tout semble opposer travail et émerveillement jusqu’à le
   sens étymologique, il convient à l’heure d’une crise de sens de plus en plus
   prégnante, de trouver comment les faire cohabiter.
 featured: false
-edition:
-  - "2024"
+edition: "2024"
 background_color: "#ffffff"
+image: /webinaire-7-mars.png
 date: 2024-03-07T17:30:00.000Z
 ---
 ### Présentation 
