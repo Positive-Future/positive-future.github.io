@@ -4,7 +4,9 @@ title: Comment ré-enchanter le rapport au travail grâce au pouvoir de
 subtitle: "Avec Marine Allamel. "
 zoom: ""
 url: ""
-abstract: ""
+abstract: Alors que tout semble opposer travail et émerveillement jusqu’à leur
+  sens étymologique, il convient à l’heure d’une crise de sens de plus en plus
+  prégnante, de trouver comment les faire cohabiter.
 featured: false
 edition:
   - "2024"
