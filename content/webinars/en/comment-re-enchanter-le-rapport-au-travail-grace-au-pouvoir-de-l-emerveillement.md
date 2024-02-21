@@ -23,4 +23,4 @@ Avec **Marine ALLAMEL**, Fondatrice de Nouvelle Epopée, Conférencière sur l'�
 
 Le webinaire se tiendra le jeudi 7 mars 2024 à 18h30. \
 Le lien de connexion pour suivre le webinaire sera envoyé aux inscrits par mail (un jour avant). \
-Inscription gratuite.
+[Inscription gratuite](https://positivefuture2024.wixsite.com/inscriptions/event-details/comment-re-enchanter-le-rapport-au-travail-grace-au-pouvoir-de-lemerveillement).
