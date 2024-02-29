@@ -8,6 +8,7 @@ abstract: Dans un monde du travail qui fait l’objet de nombreuses
   coordination et l’efficience organisationnelle sont mises à rude épreuve.
 featured: false
 edition: "2024"
+youtube_video_id: yRlnzu14Vpg
 background_color: "#ffffff"
 image: /webinaire-29-fevrier.png
 date: 2024-02-29T17:30:00.000Z
