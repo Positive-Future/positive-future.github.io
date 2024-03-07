@@ -9,6 +9,7 @@ abstract: Alors que tout semble opposer travail et émerveillement jusqu’à le
   prégnante, de trouver comment les faire cohabiter.
 featured: false
 edition: "2024"
+youtube_video_id: iGj11iGdl9o
 background_color: "#ffffff"
 image: /webinaire-7-mars.png
 date: 2024-03-07T17:30:00.000Z
