@@ -20,9 +20,3 @@ Alors que tout semble opposer travail et émerveillement jusqu’à leur sens é
 Comment ré-enchanter le monde du travail ? Quelles clés pour nourrir le terreau de l’émerveillement ? Comment se relier à notre pouvoir de transcendance ? Dans le cadre du concours Positive Future, nous aborderons également l’émerveillement comme outil d’un récit : comment faire vivre l'émerveillement dans ses productions ?
 
 Avec **Marine ALLAMEL**, Fondatrice de Nouvelle Epopée, Conférencière sur l'Émerveillement et consultante en Marketing Souhaitable.
-
-### Informations pratiques
-
-Le webinaire se tiendra le jeudi 7 mars 2024 à 18h30. \
-Le lien de connexion pour suivre le webinaire sera envoyé aux inscrits par mail (un jour avant). \
-[Inscription gratuite](https://positivefuture2024.wixsite.com/inscriptions/event-details/comment-re-enchanter-le-rapport-au-travail-grace-au-pouvoir-de-lemerveillement).
