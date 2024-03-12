@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a,b){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1710262322",layout:"default",error:a,state:{offsetTop:0,tab:"",scrolling:b,contactOnly:b,i18n:{routeParams:{}}},serverRendered:true,routePath:"\u002Fwebinars",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"d6705b37"}},__i18n:{langs:{}}}}(null,false));
