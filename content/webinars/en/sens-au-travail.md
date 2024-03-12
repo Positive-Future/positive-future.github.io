@@ -13,7 +13,7 @@ background_color: "#ffffff"
 image: /pexels-fauxels-3184339.jpg
 date: 2024-03-12T17:30:00.000Z
 ---
-### Présentation 
+### Présentation
 
 La crise sanitaire comme la réforme des retraites ont été des facteurs déclenchants de l’interrogation sur le rapport au travail et sa signification dans la vie de toute personne. La question du sens au travail a pris une nouvelle importance. L’arrêt de toutes activités ou les conditions d’exercice de son travail perturbé dans le cadre du premier confinement comme l’impératif d’allonger sa vie au travail de la réforme des retraites s’en sont trouvés interrogés.
 
@@ -24,9 +24,3 @@ Dans ce webinaire consacré au problématique du sens au travail, nous nous atta
 Avec **Coralie PEREZ**, économiste, ingénieur de recherche à l’Université de Paris 1, membre du centre d’économie de la Sorbonne, et **Anaïs GEORGELIN**, fondatrice et CEO de Somanyways, entrepreneuse et experte des nouveaux rapports au travail
 
 Webinaire animé par **Christine AFRIAT**, Vice-présidente de la Société Française de Prospective.
-
-### Informations pratiques 
-
-Le webinaire se tiendra le mardi 12 mars 2024 à 18h30. \
-Le lien de connexion pour suivre le webinaire sera envoyé aux inscrits par mail (un jour avant). \
-[Inscription gratuite](https://positivefuture2024.wixsite.com/inscriptions/event-details/sens-au-travail/form).
