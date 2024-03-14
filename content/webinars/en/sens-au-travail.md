@@ -9,6 +9,7 @@ abstract: "La crise sanitaire comme la réforme des retraites ont été des
   pris une nouvelle importance. "
 featured: false
 edition: "2024"
+youtube_video_id: KRFq46nMbmM
 background_color: "#ffffff"
 image: /pexels-fauxels-3184339.jpg
 date: 2024-03-12T17:30:00.000Z
