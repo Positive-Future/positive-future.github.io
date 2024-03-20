@@ -60,6 +60,23 @@
                   outlined
                 ></v-textarea>
               </v-col>
+              <!-- ARTIFICIAL INTELLIGENCE -->
+              <v-col cols="12">
+                <div class="overline">
+                  {{ $t('form.application.ia') }}
+                </div>
+                <v-expand-transition>
+                  <v-alert text border="left">
+                    <div>{{ $t('form.application.ia_alt') }}</div>
+                  </v-alert>
+                </v-expand-transition>
+                <v-textarea
+                  v-model="baseForm.ai"
+                  :rules="descriptionRules"
+                  :counter="1000"
+                  outlined
+                ></v-textarea>
+              </v-col>
               <!-- EMAIL -->
               <v-col cols="12">
                 <v-alert text border="left">
@@ -125,6 +142,8 @@
                   <v-text-field
                     ref="firstname"
                     v-model="baseForm.firstname"
+                    name="firstName"
+                    auto-complete="given-name"
                     :rules="firstnameRules"
                     :counter="45"
                     :label="$t('form.application.firstname')"
@@ -133,6 +152,9 @@
                   <v-text-field
                     ref="lastname"
                     v-model="baseForm.lastname"
+                    name="lastName"
+                    auto-complete="family-name"
+                    type="name"
                     :rules="nameRules"
                     :counter="45"
                     :label="$t('form.application.lastname')"
@@ -264,9 +286,7 @@
                       baseForm.type
                         ? $t(
                             'form.application.format.' +
-                              ['title', 'article', 'novel', 'video', 'comic'][
-                                baseForm.type
-                              ]
+                              ['comic', 'video', 'audio'][baseForm.type - 1]
                           )
                         : '',
                     ])
@@ -286,9 +306,7 @@
                     {{
                       $t(
                         'form.application.' +
-                          ['title', 'article', 'novel', 'video', 'comic'][
-                            baseForm.type
-                          ] +
+                          ['comic', 'video', 'audio'][baseForm.type - 1] +
                           '_hint'
                       )
                     }}
@@ -315,7 +333,6 @@
                     >
                   </div>
                 </template>
-
                 <template v-else>
                   <template v-if="urlMode">
                     <v-text-field
@@ -338,14 +355,32 @@
                     <v-file-input
                       ref="file"
                       v-model="baseForm.file"
-                      :accept="baseForm.type === 3 ? 'video/*' : '.pdf'"
+                      :accept="
+                        [
+                          '.pdf',
+                          [
+                            'video/x-msvideo',
+                            'video/mpeg',
+                            'video/quicktime',
+                            'video/x-ms-wmv',
+                            'video/x-flv',
+                            'video/webm',
+                          ],
+                          [
+                            'audio/mpeg',
+                            'audio/x-wav',
+                            'audio/webm',
+                            'audio/x-m4a',
+                          ],
+                        ][baseForm.type - 1]
+                      "
                       :label="$t('form.application.browse')"
                       :rules="fileRules"
                       outlined
                       :hint="
-                        baseForm.type === 3
-                          ? $t('form.application.videoHint')
-                          : $t('form.application.pdfHint')
+                        baseForm.type === 1
+                          ? $t('form.application.pdfHint')
+                          : $t('form.application.videoHint')
                       "
                     ></v-file-input>
                     <v-btn
@@ -365,12 +400,14 @@
                     <div>
                       {{ $t('form.application.agreed') }}
                       <a
-                        :href="'/rules_' + $i18n.locale + '.pdf'"
+                        href="https://drive.google.com/file/d/1l4TQhWHfG9q20La0c-jRlPRrtjf4NWCS/view?usp=drive_link"
                         target="_blank"
                         @click.stop
                         >{{ $t('form.application.agreed_link') }}</a
                       >
-                      <span v-html="$t('form.application.agreed_2')"></span>
+                      <span v-html="$t('form.application.agreed_2')"></span
+                      ><br />
+                      <span v-html="$t('form.application.agreed_3')"></span>
                       <v-tooltip bottom>
                         <template #activator="{ on }">
                           <v-icon small color="red" v-on="on">
@@ -403,6 +440,7 @@
   </div>
 </template>
 <script>
+import { Uploader } from '~/assets/upload'
 const url =
   // eslint-disable-next-line no-useless-escape
   /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/
@@ -412,7 +450,6 @@ const email =
 export default {
   beforeRouteLeave(to, from, next) {
     if (!this.hasChanged) return next()
-
     const answer = window.confirm(
       'Do you really want to leave? You have unsaved changes!'
     )
@@ -433,6 +470,7 @@ export default {
       email2: '',
       urlMode: false,
       choice: true,
+      percentage: undefined,
       baseForm: {
         firstname: '',
         lastname: '',
@@ -442,24 +480,20 @@ export default {
         team: [],
         type: null,
         file: null,
+        ai: '',
       },
-
       formats: [
         {
-          text: this.$t('form.application.format.article'),
+          text: this.$t('form.application.format.illustrations'),
           value: 1,
         },
         {
-          text: this.$t('form.application.format.novel'),
+          text: this.$t('form.application.format.video'),
           value: 2,
         },
         {
-          text: this.$t('form.application.format.video'),
+          text: this.$t('form.application.format.audio'),
           value: 3,
-        },
-        {
-          text: this.$t('form.application.format.comic'),
-          value: 4,
         },
       ],
       emailRules: [
@@ -530,6 +564,24 @@ export default {
           v.length === 0 ||
           this.$t('form.application.validation.lessThan', {
             0: this.$t('form.application.description').toLowerCase(),
+            1: '1000',
+          }),
+      ],
+      aiRules: [
+        (v) =>
+          (!!v && v.length <= 1000) ||
+          v.length === 0 ||
+          this.$t('form.application.validation.lessThan', {
+            0: this.$t('form.application.ia').toLowerCase(),
+            1: '1000',
+          }),
+      ],
+      creditsRules: [
+        (v) =>
+          (!!v && v.length <= 1000) ||
+          v.length === 0 ||
+          this.$t('form.application.validation.lessThan', {
+            0: this.$t('form.application.credits').toLowerCase(),
             1: '1000',
           }),
       ],
@@ -628,12 +680,36 @@ export default {
         })
         try {
           /* this.$axios.setHeader('content-type', 'multipart/form-data') */
-          await this.$axios.$post(this.action, data)
-          this.error = false
-          this.submitting = false
-          this.uploaded = true
-          this.$router.push({ path: this.localePath('/thank_you') })
-          this.form = {}
+          const uploaderOptions = {
+            file: this.formData.file,
+            baseURL: this.action,
+            /*  chunkSize: partsize, */
+            threadsQuantity: 4,
+            useTransferAcceleration: true,
+          }
+
+          const uploader = new Uploader(uploaderOptions)
+          uploader
+            .onProgress(({ percentage: newPercentage }) => {
+              // to avoid the same percentage to be logged twice
+              if (this.percentage === 100) {
+                this.uploaded = true
+                this.submitting = false
+                this.form = {}
+                this.error = false
+                this.$router.push({ path: this.localePath('/thank_you') })
+              }
+              /* if (newPercentage !== percentage) {
+                percentage = newPercentage
+                setPgvalue(percentage)
+              } */
+            })
+            .onError((error) => {
+              this.error = error
+            })
+
+          uploader.start()
+          /* await this.$axios.$post(this.action, data) */
         } catch (error) {
           console.log('error: ', error)
           this.error = true

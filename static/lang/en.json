@@ -135,7 +135,8 @@
         "novel": "Short novel/Scenario",
         "video": "Video/Short film",
         "comic": "Comics/Graphic novel",
-        "audio": "Audio/podcast"
+        "audio": "Audio/podcast",
+        "illustrations": "Illustrations"
       },
       "dialog": {
         "title": "Confirm your application",
@@ -147,8 +148,9 @@
       },
       "article_hint": "Remember! Maximum 10,000 characters (including spaces), with the possibility of including illustrations.",
       "novel_hint": "Remember! Maximum 20,000 characters (including spaces). ",
-      "video_hint": "Remember! It must be maximum 10 minute-long.",
+      "video_hint": "Remember! It must be maximum 5 minute-long.",
       "comic_hint": "Remember! It is maximum 15 page-long.",
+      "audio_hint": "Remember! Maximum 10 minute-long.",
       "agreed": "I certify that I have read the ",
       "agreed_link": "rules of the Positive Future contest",
       "agreed_2": ", that every team member is 18 years old or older and I agree to the terms and conditions of participation.",
@@ -170,13 +172,17 @@
       "choice2": "Provide an URL for your file",
       "fileInstead": "Provide a file directly instead",
       "urlInstead": "Provide your file URL instead",
-      "videoHint": "Video file of 25MB maximum",
+      "videoHint": "Video file of 1GB maximum",
       "pdfHint": "PDF file of 25MB maximum",
       "birthdayLabel": "Birthday date",
       "18orOlder": "18 or older",
       "18tooltip": "By ticking this box, I certify that this team member is 18 years old or older",
       "clickToMakeContact": "Click to make this team member the project contact person",
-      "contactPerson": "Project contact person"
+      "contactPerson": "Project contact person",
+      "credits": "Credits - Give details of your sources",
+      "ia": "Artificial Intelligence",
+      "ia_alt": "Indicate whether or not you used generative artificial intelligence tools. If not, state: \"I declare that I did not use generative artificial intelligence tools to create this work\". If yes, specify in what context, at what stage of creation, which tool was used.",
+      "agreed_3": "I accept that the data collected by Positive Future from this form will be processed by the administrative services of the Institut d'études avancées (IEA) de Paris and the Fondation 2100, founders of the competition. \n\nIt will be collected and processed as part of the Positive Future \"Work in 2050\" competition, the application campaign for which runs from 26 March 2024 to 22 April 2024. The data may be transmitted to Positive Future's institutional partners, third-party organisers of the competition and members of Positive Future's Scientific Council and Jury. \n\nThe data will not be kept for more than three years. Data collection is mandatory in order to participate in the Positive Future Competition. In accordance with the French Data Protection Act of 6 January 1978, as amended in 2004, and the General Data Protection Regulation, you may exercise your rights of access, rectification and opposition by contacting Positive Future - info@positive-future.org"
     },
     "application-closed-text": "The applications for the current edition of Positive Futures were closed on the 31th of May 2021.",
     "application-closed-text2": "You want to take part in the next Positive Future edition?",
