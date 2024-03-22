@@ -48,7 +48,7 @@ export class Uploader {
         name: fileName,
       }
       const initializeReponse = await api.request({
-        url: '/initialize',
+        url: '/multipartInit',
         method: 'POST',
         data: videoInitializationUploadInput,
         baseURL: this.baseURL,
@@ -69,9 +69,7 @@ export class Uploader {
       }
 
       const urlsResponse = await api.request({
-        url: this.useTransferAcceleration
-          ? '/getPreSignedTAUrls'
-          : '/getPreSignedUrls',
+        url: '/multipartPresignedUrls',
         method: 'POST',
         data: AWSMultipartFileDataInput,
         baseURL: this.baseURL,
@@ -163,7 +161,7 @@ export class Uploader {
       }
 
       await api.request({
-        url: '/finalize',
+        url: '/multipartFinalize',
         method: 'POST',
         data: videoFinalizationMultiPartInput,
         baseURL: this.baseURL,

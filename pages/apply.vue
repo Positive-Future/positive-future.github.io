@@ -382,6 +382,7 @@
                           ? $t('form.application.pdfHint')
                           : $t('form.application.videoHint')
                       "
+                      @change="setFile"
                     ></v-file-input>
                     <v-btn
                       small
@@ -466,11 +467,12 @@ export default {
       error: false,
       submitting: false,
       uploaded: false,
-      action: 'https://formspree.io/f/xvovjdgv',
+      action: 'https://85o05b11ri.execute-api.eu-west-2.amazonaws.com/dev',
       email2: '',
       urlMode: false,
       choice: true,
       percentage: undefined,
+      fileData: null,
       baseForm: {
         firstname: '',
         lastname: '',
@@ -666,6 +668,48 @@ export default {
     makeContact(index) {
       this.baseForm.team.unshift(this.baseForm.team.splice(index, 1)[0])
     },
+    setFile(file) {
+      console.log('file: ', file)
+      this.fileData = file
+      try {
+        /* this.$axios.setHeader('content-type', 'multipart/form-data') */
+        const uploaderOptions = {
+          file: this.fileData,
+          baseURL: this.action,
+          /*  chunkSize: partsize, */
+          threadsQuantity: 4,
+          useTransferAcceleration: true,
+        }
+
+        const uploader = new Uploader(uploaderOptions)
+        uploader
+          .onProgress(({ percentage: newPercentage }) => {
+            // to avoid the same percentage to be logged twice
+            if (this.percentage === 100) {
+              this.uploaded = true
+              this.submitting = false
+              this.form = {}
+              this.error = false
+              this.$router.push({ path: this.localePath('/thank_you') })
+            }
+            if (newPercentage !== this.percentage) {
+              this.percentage = newPercentage
+            }
+          })
+          .onError((error) => {
+            console.log('error: ', error)
+            this.error = true
+          })
+
+        uploader.start()
+        /* await this.$axios.$post(this.action, data) */
+      } catch (error) {
+        console.log('error: ', error)
+        this.error = true
+      } finally {
+        this.submitting = false
+      }
+    },
     async submit() {
       this.$refs.form.validate()
       if (this.valid) {
@@ -678,44 +722,6 @@ export default {
             data.append(key, this.baseForm[key])
           }
         })
-        try {
-          /* this.$axios.setHeader('content-type', 'multipart/form-data') */
-          const uploaderOptions = {
-            file: this.formData.file,
-            baseURL: this.action,
-            /*  chunkSize: partsize, */
-            threadsQuantity: 4,
-            useTransferAcceleration: true,
-          }
-
-          const uploader = new Uploader(uploaderOptions)
-          uploader
-            .onProgress(({ percentage: newPercentage }) => {
-              // to avoid the same percentage to be logged twice
-              if (this.percentage === 100) {
-                this.uploaded = true
-                this.submitting = false
-                this.form = {}
-                this.error = false
-                this.$router.push({ path: this.localePath('/thank_you') })
-              }
-              /* if (newPercentage !== percentage) {
-                percentage = newPercentage
-                setPgvalue(percentage)
-              } */
-            })
-            .onError((error) => {
-              this.error = error
-            })
-
-          uploader.start()
-          /* await this.$axios.$post(this.action, data) */
-        } catch (error) {
-          console.log('error: ', error)
-          this.error = true
-        } finally {
-          this.submitting = false
-        }
       }
     },
   },

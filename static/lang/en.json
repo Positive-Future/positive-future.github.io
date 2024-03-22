@@ -223,7 +223,7 @@
       "thisDocumentLangIs": "this document language is ",
       "back_to_categories": "Go back to category view"
     },
-    "credits": "An inititative from Paris Institute for Advanced Study and the 2100 Foundation, with the support of the Agence nationale pour l'amélioration des conditions de travail and the Institut national de recherche et de sécurité."
+    "credits": "An initiative from Paris Institute for Advanced Study and the 2100 Foundation, with the support of the Agence nationale pour l'amélioration des conditions de travail and the Institut national de recherche et de sécurité."
   },
   "navigation": {
     "about": "About us",
@@ -239,6 +239,7 @@
   },
   "or": "OR",
   "apply": "Apply",
+  "apply_alt": "Apply to the contest",
   "required": "Required",
   "the-applications-are-closed": "The applications are closed!",
   "positive-future-next-edition": "Next edition",

@@ -239,6 +239,7 @@
   },
   "or": "OU",
   "apply": "Participer",
+  "apply_alt": "Participer au concours",
   "required": "Requis",
   "the-applications-are-closed": "Le dépôt des candidatures est clos!",
   "positive-future-next-edition": "Nouvelle édition",
