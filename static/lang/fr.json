@@ -162,13 +162,13 @@
         "tos": "Vous devez accepter les termes et conditions d'usage pour continuer.",
         "url": "Une URL de fichier est nécessaire si vous ne fournissez pas le fichier directement.",
         "file": "Un fichier est requis si vous ne fournissez pas une URL de fichier.",
-        "fileSize": "La taille de fichiers maximale autorisée est 25Mo.",
+        "fileSize": "La taille de fichiers maximale autorisée est 1Go.",
         "dontmatch": "Vos E-mails ne sont pas identiques."
       },
       "add_team": "Ajouter un membre de l'équipe",
       "remove_team": "Retirer ce membre de l'équipe",
       "email2": "Confirmez votre E-mail",
-      "choice1": "Téléchargez votre fichier depuis votre ordinateur (25Mo max)",
+      "choice1": "Téléchargez votre fichier depuis votre ordinateur (1Go max)",
       "choice2": "Fournissez une URL pour votre fichier",
       "fileInstead": "Fournir un fichier plutôt qu'une URL",
       "urlInstead": "Founir une URL plutôt que le fichier",
@@ -338,5 +338,6 @@
   "upcoming": "À venir",
   "replay": "En replay",
   "press-contact": "Contact presse",
-  "sort-modedate": "Classer par date"
+  "sort-modedate": "Classer par date",
+  "upload-in-progress-percentage": "Upload en cours: {0}%"
 }

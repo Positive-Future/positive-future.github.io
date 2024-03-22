@@ -162,13 +162,13 @@
         "tos": "You must agree to the terms of use to proceed",
         "url": "A file URL is required if you do not provide a file directly",
         "file": "A file is required if you do not provide a file URL",
-        "fileSize": "The maximum size allowed for files is 25MB",
+        "fileSize": "The maximum size allowed for files is 1GB",
         "dontmatch": "Your emails don't match"
       },
       "add_team": "Add a team member",
       "remove_team": "Remove this team member",
       "email2": "Confirm your email",
-      "choice1": "Upload your file from your computer (25MB max)",
+      "choice1": "Upload your file from your computer (1GB max)",
       "choice2": "Provide an URL for your file",
       "fileInstead": "Provide a file directly instead",
       "urlInstead": "Provide your file URL instead",
@@ -339,5 +339,7 @@
   "replay": "Replay",
   "press-contact": "Press contact",
   "sort-modedate": "Sort by date",
-  "read-this-review": "Read this review"
+  "read-this-review": "Read this review",
+  "upload-in-progress-percentage": "Upload in progress : {0}%",
+  "upload-completed": "Upload Completed"
 }

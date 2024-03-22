@@ -354,7 +354,7 @@
                   <template v-else>
                     <v-file-input
                       ref="file"
-                      v-model="baseForm.file"
+                      v-model="fileData"
                       :accept="
                         [
                           '.pdf',
@@ -384,6 +384,43 @@
                       "
                       @change="setFile"
                     ></v-file-input>
+                    <template v-if="fileData">
+                      <template v-if="percentage !== 100">
+                        {{
+                          $t('upload-in-progress-percentage', [
+                            percentage === undefined ? 0 : percentage,
+                          ])
+                        }}
+                      </template>
+                      <template v-else> {{ $t('upload-completed') }} </template>
+                    </template>
+                    <div
+                      v-if="fileData"
+                      class="my-6 d-flex justify-center align-center"
+                    >
+                      <v-progress-linear
+                        :indeterminate="
+                          percentage === undefined || percentage === 0
+                        "
+                        :value="percentage"
+                        :color="percentage === 100 ? 'success' : '#00c2cb'"
+                      ></v-progress-linear>
+                      <v-tooltip bottom>
+                        <template #activator="{ on }">
+                          <v-btn
+                            v-if="percentage !== 100"
+                            icon
+                            small
+                            class="ma-3"
+                            @click="abort"
+                            v-on="on"
+                          >
+                            <v-icon>mdi-cancel</v-icon></v-btn
+                          >
+                        </template>
+                        {{ $t('form.application.dialog.cancel') }}
+                      </v-tooltip>
+                    </div>
                     <v-btn
                       small
                       class="mb-6 float-right"
@@ -473,6 +510,7 @@ export default {
       choice: true,
       percentage: undefined,
       fileData: null,
+      uploader: null,
       baseForm: {
         firstname: '',
         lastname: '',
@@ -548,7 +586,7 @@ export default {
         (v) => !!v || this.$t('form.application.validation.file'),
         (v) =>
           !v ||
-          v.size < 25000000 ||
+          v.size < 10000000000 ||
           this.$t('form.application.validation.fileSize'),
       ],
       urlRules: [
@@ -656,6 +694,9 @@ export default {
   },
   mounted() {},
   methods: {
+    abort() {
+      this.uploader.abort()
+    },
     addTeamMember() {
       this.baseForm.team.push({
         firstname: this.baseForm.firstname,
@@ -670,27 +711,23 @@ export default {
     },
     setFile(file) {
       console.log('file: ', file)
-      this.fileData = file
       try {
         /* this.$axios.setHeader('content-type', 'multipart/form-data') */
         const uploaderOptions = {
           file: this.fileData,
           baseURL: this.action,
-          /*  chunkSize: partsize, */
+          /*    chunkSize: partsize, */
           threadsQuantity: 4,
           useTransferAcceleration: true,
         }
 
-        const uploader = new Uploader(uploaderOptions)
-        uploader
+        this.uploader = new Uploader(uploaderOptions)
+        this.uploader
           .onProgress(({ percentage: newPercentage }) => {
             // to avoid the same percentage to be logged twice
             if (this.percentage === 100) {
               this.uploaded = true
-              this.submitting = false
-              this.form = {}
-              this.error = false
-              this.$router.push({ path: this.localePath('/thank_you') })
+              this.baseForm.file = this.uploader.fileId
             }
             if (newPercentage !== this.percentage) {
               this.percentage = newPercentage
@@ -700,8 +737,7 @@ export default {
             console.log('error: ', error)
             this.error = true
           })
-
-        uploader.start()
+        this.uploader.start()
         /* await this.$axios.$post(this.action, data) */
       } catch (error) {
         console.log('error: ', error)
@@ -722,6 +758,10 @@ export default {
             data.append(key, this.baseForm[key])
           }
         })
+        this.submitting = false
+        this.form = {}
+        this.error = false
+        this.$router.push({ path: this.localePath('/thank_you') })
       }
     },
   },
