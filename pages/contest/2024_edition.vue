@@ -48,14 +48,27 @@
     </section>
     <section>
       <v-row justify="center" no-gutters>
-        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-12">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-6">
           <v-card class="px-6 pb-0 mb-0" flat color="transparent">
             <nuxt-content :document="contest" class="my-4" />
           </v-card>
         </v-col>
       </v-row>
     </section>
-
+    <section>
+      <v-row justify="center" no-gutters>
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-12 ml-12">
+          <v-btn
+            style="text-transform: none"
+            x-large
+            class="pa-9 text-h6"
+            color="primary"
+            :to="localePath('/apply')"
+            >{{ $t('apply_alt') }}</v-btn
+          ></v-col
+        ></v-row
+      >
+    </section>
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-12">

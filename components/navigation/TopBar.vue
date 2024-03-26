@@ -62,8 +62,20 @@
                       optional
                       slider-size="5"
                       active-class="selected"
-                      class="mt-3"
+                      class="mt-3 d-flex align-center"
                     >
+                      <v-tab
+                        :to="localePath('/apply')"
+                        class="white--text"
+                        :class="{
+                          selected: ['apply___fr', 'apply___en'].includes(
+                            $route.name
+                          ),
+                        }"
+                        style="background-color: #00c2cb !important"
+                      >
+                        {{ $t('apply') }}
+                      </v-tab>
                       <v-menu left bottom offset-y>
                         <template #activator="{ on, attrs }">
                           <v-tab

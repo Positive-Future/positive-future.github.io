@@ -60,6 +60,31 @@
                   outlined
                 ></v-textarea>
               </v-col>
+              <!-- ARTIFICIAL INTELLIGENCE -->
+              <v-col cols="12">
+                <div class="overline">
+                  {{ $t('form.application.ia') }}
+                  <v-tooltip bottom>
+                    <template #activator="{ on }">
+                      <v-icon small color="red" v-on="on">
+                        mdi-asterisk
+                      </v-icon>
+                    </template>
+                    {{ $t('form.mandatory') }}
+                  </v-tooltip>
+                </div>
+                <v-expand-transition>
+                  <v-alert text border="left">
+                    <div>{{ $t('form.application.ia_alt') }}</div>
+                  </v-alert>
+                </v-expand-transition>
+                <v-textarea
+                  v-model="baseForm.ai"
+                  :rules="descriptionRules"
+                  :counter="1000"
+                  outlined
+                ></v-textarea>
+              </v-col>
               <!-- EMAIL -->
               <v-col cols="12">
                 <v-alert text border="left">
@@ -125,6 +150,8 @@
                   <v-text-field
                     ref="firstname"
                     v-model="baseForm.firstname"
+                    name="firstName"
+                    auto-complete="given-name"
                     :rules="firstnameRules"
                     :counter="45"
                     :label="$t('form.application.firstname')"
@@ -133,6 +160,9 @@
                   <v-text-field
                     ref="lastname"
                     v-model="baseForm.lastname"
+                    name="lastName"
+                    auto-complete="family-name"
+                    type="name"
                     :rules="nameRules"
                     :counter="45"
                     :label="$t('form.application.lastname')"
@@ -264,9 +294,7 @@
                       baseForm.type
                         ? $t(
                             'form.application.format.' +
-                              ['title', 'article', 'novel', 'video', 'comic'][
-                                baseForm.type
-                              ]
+                              ['comic', 'video', 'audio'][baseForm.type - 1]
                           )
                         : '',
                     ])
@@ -286,9 +314,7 @@
                     {{
                       $t(
                         'form.application.' +
-                          ['title', 'article', 'novel', 'video', 'comic'][
-                            baseForm.type
-                          ] +
+                          ['comic', 'video', 'audio'][baseForm.type - 1] +
                           '_hint'
                       )
                     }}
@@ -315,7 +341,6 @@
                     >
                   </div>
                 </template>
-
                 <template v-else>
                   <template v-if="urlMode">
                     <v-text-field
@@ -337,17 +362,73 @@
                   <template v-else>
                     <v-file-input
                       ref="file"
-                      v-model="baseForm.file"
-                      :accept="baseForm.type === 3 ? 'video/*' : '.pdf'"
+                      v-model="fileData"
+                      :accept="
+                        [
+                          '.pdf',
+                          [
+                            'video/x-msvideo',
+                            'video/mpeg',
+                            'video/quicktime',
+                            'video/x-ms-wmv',
+                            'video/x-flv',
+                            'video/webm',
+                          ],
+                          [
+                            'audio/mpeg',
+                            'audio/x-wav',
+                            'audio/webm',
+                            'audio/x-m4a',
+                          ],
+                        ][baseForm.type - 1]
+                      "
                       :label="$t('form.application.browse')"
                       :rules="fileRules"
                       outlined
                       :hint="
-                        baseForm.type === 3
-                          ? $t('form.application.videoHint')
-                          : $t('form.application.pdfHint')
+                        baseForm.type === 1
+                          ? $t('form.application.pdfHint')
+                          : $t('form.application.videoHint')
                       "
+                      @change="setFile"
                     ></v-file-input>
+                    <template v-if="fileData">
+                      <template v-if="percentage !== 100">
+                        {{
+                          $t('upload-in-progress-percentage', [
+                            percentage === undefined ? 0 : percentage,
+                          ])
+                        }}
+                      </template>
+                      <template v-else> {{ $t('upload-completed') }} </template>
+                    </template>
+                    <div
+                      v-if="fileData"
+                      class="my-6 d-flex justify-center align-center"
+                    >
+                      <v-progress-linear
+                        :indeterminate="
+                          percentage === undefined || percentage === 0
+                        "
+                        :value="percentage"
+                        :color="percentage === 100 ? 'success' : '#00c2cb'"
+                      ></v-progress-linear>
+                      <v-tooltip bottom>
+                        <template #activator="{ on }">
+                          <v-btn
+                            v-if="percentage !== 100"
+                            icon
+                            small
+                            class="ma-3"
+                            @click="abort"
+                            v-on="on"
+                          >
+                            <v-icon>mdi-cancel</v-icon></v-btn
+                          >
+                        </template>
+                        {{ $t('form.application.dialog.cancel') }}
+                      </v-tooltip>
+                    </div>
                     <v-btn
                       small
                       class="mb-6 float-right"
@@ -365,12 +446,14 @@
                     <div>
                       {{ $t('form.application.agreed') }}
                       <a
-                        :href="'/rules_' + $i18n.locale + '.pdf'"
+                        href="https://drive.google.com/file/d/1l4TQhWHfG9q20La0c-jRlPRrtjf4NWCS/view?usp=drive_link"
                         target="_blank"
                         @click.stop
                         >{{ $t('form.application.agreed_link') }}</a
                       >
-                      <span v-html="$t('form.application.agreed_2')"></span>
+                      <span v-html="$t('form.application.agreed_2')"></span
+                      ><br />
+                      <span v-html="$t('form.application.agreed_3')"></span>
                       <v-tooltip bottom>
                         <template #activator="{ on }">
                           <v-icon small color="red" v-on="on">
@@ -388,7 +471,7 @@
                 <Confirm
                   :error="error"
                   :submitting="submitting"
-                  :valid="valid"
+                  :valid="valid && baseForm.file !== null"
                   @submit="
                     submitting = true
                     submit()
@@ -403,6 +486,7 @@
   </div>
 </template>
 <script>
+import { Uploader } from '~/assets/upload'
 const url =
   // eslint-disable-next-line no-useless-escape
   /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/
@@ -412,7 +496,6 @@ const email =
 export default {
   beforeRouteLeave(to, from, next) {
     if (!this.hasChanged) return next()
-
     const answer = window.confirm(
       'Do you really want to leave? You have unsaved changes!'
     )
@@ -429,10 +512,15 @@ export default {
       error: false,
       submitting: false,
       uploaded: false,
-      action: 'https://formspree.io/f/xvovjdgv',
+      action: 'https://85o05b11ri.execute-api.eu-west-2.amazonaws.com/dev',
+      endpoint:
+        'https://85o05b11ri.execute-api.eu-west-2.amazonaws.com/dev/formToSpreadsheet',
       email2: '',
       urlMode: false,
       choice: true,
+      percentage: undefined,
+      fileData: null,
+      uploader: null,
       baseForm: {
         firstname: '',
         lastname: '',
@@ -442,24 +530,20 @@ export default {
         team: [],
         type: null,
         file: null,
+        ai: '',
       },
-
       formats: [
         {
-          text: this.$t('form.application.format.article'),
+          text: this.$t('form.application.format.illustrations'),
           value: 1,
         },
         {
-          text: this.$t('form.application.format.novel'),
+          text: this.$t('form.application.format.video'),
           value: 2,
         },
         {
-          text: this.$t('form.application.format.video'),
+          text: this.$t('form.application.format.audio'),
           value: 3,
-        },
-        {
-          text: this.$t('form.application.format.comic'),
-          value: 4,
         },
       ],
       emailRules: [
@@ -512,7 +596,7 @@ export default {
         (v) => !!v || this.$t('form.application.validation.file'),
         (v) =>
           !v ||
-          v.size < 25000000 ||
+          v.size < 10000000000 ||
           this.$t('form.application.validation.fileSize'),
       ],
       urlRules: [
@@ -530,6 +614,29 @@ export default {
           v.length === 0 ||
           this.$t('form.application.validation.lessThan', {
             0: this.$t('form.application.description').toLowerCase(),
+            1: '1000',
+          }),
+      ],
+      aiRules: [
+        (v) =>
+          !!v ||
+          this.$t('form.application.validation.required', {
+            0: this.$t('form.application.title').toLowerCase(),
+          }),
+        (v) =>
+          (!!v && v.length <= 1000) ||
+          v.length === 0 ||
+          this.$t('form.application.validation.lessThan', {
+            0: this.$t('form.application.ia').toLowerCase(),
+            1: '1000',
+          }),
+      ],
+      creditsRules: [
+        (v) =>
+          (!!v && v.length <= 1000) ||
+          v.length === 0 ||
+          this.$t('form.application.validation.lessThan', {
+            0: this.$t('form.application.credits').toLowerCase(),
             1: '1000',
           }),
       ],
@@ -602,6 +709,12 @@ export default {
   },
   mounted() {},
   methods: {
+    abort() {
+      this.uploader.abort()
+      this.baseForm.file = null
+      this.fileData = null
+      this.percentage = undefined
+    },
     addTeamMember() {
       this.baseForm.team.push({
         firstname: this.baseForm.firstname,
@@ -614,32 +727,65 @@ export default {
     makeContact(index) {
       this.baseForm.team.unshift(this.baseForm.team.splice(index, 1)[0])
     },
-    async submit() {
-      this.$refs.form.validate()
-      if (this.valid) {
-        this.submitting = true
-        const data = new FormData()
-        Object.keys(this.baseForm).forEach((key) => {
-          if (key === 'team') {
-            data.append(key, JSON.stringify(this.baseForm[key]))
-          } else {
-            data.append(key, this.baseForm[key])
-          }
-        })
-        try {
-          /* this.$axios.setHeader('content-type', 'multipart/form-data') */
-          await this.$axios.$post(this.action, data)
-          this.error = false
-          this.submitting = false
-          this.uploaded = true
-          this.$router.push({ path: this.localePath('/thank_you') })
-          this.form = {}
-        } catch (error) {
-          console.log('error: ', error)
-          this.error = true
-        } finally {
-          this.submitting = false
+    setFile(file) {
+      try {
+        /* this.$axios.setHeader('content-type', 'multipart/form-data') */
+        const uploaderOptions = {
+          file: this.fileData,
+          baseURL: this.action,
+          /*    chunkSize: partsize, */
+          threadsQuantity: 4,
+          useTransferAcceleration: true,
         }
+        this.uploader = new Uploader(uploaderOptions)
+        this.uploader
+          .onProgress(({ percentage: newPercentage }) => {
+            // to avoid the same percentage to be logged twice
+            if (this.percentage === 100) {
+              this.uploaded = true
+              console.log('this.uploader: ', this.uploader)
+
+              this.baseForm.file = this.uploader.fileKey
+            }
+            if (newPercentage !== this.percentage) {
+              this.percentage = newPercentage
+            }
+          })
+          .onError((error) => {
+            console.log('error: ', error)
+            this.error = true
+          })
+        this.uploader.start()
+        /* await this.$axios.$post(this.action, data) */
+      } catch (error) {
+        console.log('error: ', error)
+        this.error = true
+      } finally {
+        this.submitting = false
+      }
+    },
+    async submit() {
+      try {
+        this.$refs.form.validate()
+        if (this.valid) {
+          this.submitting = true
+          /*         const data = new FormData()
+          Object.keys(this.baseForm).forEach((key) => {
+            if (key === 'team') {
+              data.append(key, JSON.stringify(this.baseForm[key]))
+            } else {
+              data.append(key, this.baseForm[key])
+            }
+          })*/
+
+          await this.$axios.$post(this.endpoint, this.baseForm)
+          this.submitting = false
+          this.form = {}
+          this.error = false
+          this.$router.push({ path: this.localePath('/thank_you') })
+        }
+      } catch (error) {
+        console.log('error: ', error)
       }
     },
   },

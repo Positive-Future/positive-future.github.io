@@ -33,13 +33,14 @@
                   <nuxt-content :document="dates" class="my-4" />
                 </v-card-text>
                 <v-card-actions
-                  ><v-sheet
-                    style="background-color: #ffe2a0"
-                    class="ml-auto pa-6 mb-n12 mr-n9 text-h6 text-right"
-                    rounded
+                  ><v-btn
+                    style="background-color: #00c2cb; text-transform: none"
+                    class="ml-auto pa-9 mb-n12 mr-n9 text-h6 text-right white--text"
+                    :to="localePath('/apply')"
+                    x-large
                   >
-                    Jusqu'à <b>16 000€</b> à gagner
-                  </v-sheet></v-card-actions
+                    {{ $t('apply_alt') }}
+                  </v-btn></v-card-actions
                 >
               </v-card>
             </v-col>
@@ -50,12 +51,17 @@
         </v-col>
       </v-row>
     </section>
-
+    <section>
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
+          <YoutubeEmbedded yt="sXRblqHbVQI" class="my-9" /></v-col
+      ></v-row>
+    </section>
     <section class="mt-12">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
           <v-card
-            color="#4FD4C7"
+            color="#00c2cb"
             class="pa-6"
             :style="
               'margin-bottom: -60px; max-width: ' +
@@ -67,10 +73,10 @@
             target="_blank"
           >
             <div class="d-inline-flex justify-center align-center">
-              <v-icon x-large class="rotate-24 mr-6" color="black"
+              <v-icon x-large class="rotate-24 mr-6" color="white"
                 >mdi-lightbulb-on</v-icon
               >
-              <div class="subtitle">
+              <div class="subtitle white--text">
                 {{ $t('discover-more-about-the-positive-future-initiative') }}
               </div>
             </div>
@@ -132,6 +138,8 @@
 </template>
 
 <script>
+import YoutubeEmbedded from '../components/misc/YoutubeEmbedded.vue'
+
 export default {
   async asyncData({ app, $content }) {
     const index = await $content('pages/' + app.i18n.locale + '/index').fetch()
