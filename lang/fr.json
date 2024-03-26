@@ -135,7 +135,8 @@
         "novel": "Scénario/nouvelle",
         "video": "Film/court-métrage",
         "comic": "Illustrations",
-        "audio": "Audio/podcast"
+        "audio": "Audio/podcast",
+        "illustrations": "Illustrations"
       },
       "dialog": {
         "title": "Confirmez votre candidature",
@@ -147,9 +148,10 @@
       },
       "article_hint": "Pour rappel, votre article ne doit pas excéder 10,000 caractères (espaces compris), avec la possibilité d'inclure des illustrations.",
       "novel_hint": "Pour rappel, votre nouvelle ne doit pas excéder 20,000 caractères (espaces compris). ",
-      "video_hint": "Pour rappel, la durée ne doit pas excéder 10 minutes.",
+      "video_hint": "Pour rappel, la durée ne doit pas excéder 5 minutes.",
+      "audio_hint": "Pour rappel, la durée ne doit pas excéder 10 minutes.",
       "comic_hint": "Pour rappel, votre bande dessinée doit faire 15 pages maximum.",
-      "agreed": "- Je certifie avoir lu les ",
+      "agreed": "Je certifie avoir lu les ",
       "agreed_link": "règles du concours Positive Future",
       "agreed_2": "  et en accepte les termes et conditions de participation <br> - Je certifie que moi-même et, le cas échéant, les membres de mon groupe, sommes âgé-e-s de plus de 18 ans à la date de soumission du projet.",
       "validation": {
@@ -160,23 +162,27 @@
         "tos": "Vous devez accepter les termes et conditions d'usage pour continuer.",
         "url": "Une URL de fichier est nécessaire si vous ne fournissez pas le fichier directement.",
         "file": "Un fichier est requis si vous ne fournissez pas une URL de fichier.",
-        "fileSize": "La taille de fichiers maximale autorisée est 25Mo.",
+        "fileSize": "La taille de fichiers maximale autorisée est 1Go.",
         "dontmatch": "Vos E-mails ne sont pas identiques."
       },
       "add_team": "Ajouter un membre de l'équipe",
       "remove_team": "Retirer ce membre de l'équipe",
       "email2": "Confirmez votre E-mail",
-      "choice1": "Téléchargez votre fichier depuis votre ordinateur (25Mo max)",
+      "choice1": "Téléchargez votre fichier depuis votre ordinateur (1Go max)",
       "choice2": "Fournissez une URL pour votre fichier",
       "fileInstead": "Fournir un fichier plutôt qu'une URL",
       "urlInstead": "Founir une URL plutôt que le fichier",
-      "videoHint": "Fichier Vidéo de 25Mo maximum",
+      "videoHint": "Fichier Vidéo de 1Go maximum",
       "pdfHint": "Fichier PDF de 25 Mo maximum",
       "birthdayLabel": "Date d'anniversaire",
       "18orOlder": "18 ans ou +",
       "18tooltip": "En cochant cette case, je certifie que ce membre de l'équipe a 18 ans ou plus",
       "clickToMakeContact": "Cliquez pour désigner ce membre de l'équipe comme contact",
-      "contactPerson": "Contact du projet"
+      "contactPerson": "Contact du projet",
+      "credits": "Crédits - Précisez vos sources",
+      "ia": "Intelligence artificielle",
+      "ia_alt": "Indiquez si vous avez utilisé ou non des outils d'intelligence artificielle générative. Si non, indiquez : “Je déclare ne pas avoir utilisé d’outils d’intelligence artificielle générative pour concevoir cette œuvre”. Si oui, précisez dans quel contexte, à quelle étape de création, quel outil a été utilisé.",
+      "agreed_3": "J’accepte que les données recueillies par Positive Future à partir de ce formulaire fassent l’objet d’un traitement informatique destiné aux services administratifs de l’Institut d’études avancées (IEA) de Paris et de la Fondation 2100, fondateurs du concours. \n\nElles sont collectées et traitées dans le cadre du Concours Positive Future “Le Travail en 2050” dont la campagne de candidature s’étend du 26 mars 2024 au 22 avril 2024. Les données peuvent être transmises aux partenaires institutionnels de Positive Future, aux organisateurs tiers du Concours et aux membres du Conseil Scientifique et du Jury de Positive Future. \n\nLeur durée de conservation n’excède pas trois ans. La collecte des données est obligatoire pour pouvoir participer au Concours Positive Future. Conformément à la loi « informatique et libertés » du 6 janvier 1978, modifiée en 2004, et au Règlement général sur la protection des données, vous pouvez exercer vos droits d’accès, de rectification et d’opposition en vous adressant à : Positive Future - info@positive-future.org\n"
     },
     "application-closed-text": "La période de dépôt des candidatures s'est terminée le 31 mai 2021.",
     "application-closed-text2": "Vous souhaitez participer à la prochaine édition de Positive Future?",
@@ -233,6 +239,7 @@
   },
   "or": "OU",
   "apply": "Participer",
+  "apply_alt": "Participer au concours",
   "required": "Requis",
   "the-applications-are-closed": "Le dépôt des candidatures est clos!",
   "positive-future-next-edition": "Nouvelle édition",
@@ -331,5 +338,6 @@
   "upcoming": "À venir",
   "replay": "En replay",
   "press-contact": "Contact presse",
-  "sort-modedate": "Classer par date"
+  "sort-modedate": "Classer par date",
+  "upload-in-progress-percentage": "Upload en cours: {0}%"
 }
