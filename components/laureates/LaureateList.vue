@@ -122,7 +122,7 @@ export default {
           'team.$.lastname': { $regex: this.searchString },
         }),*/
       }
-      console.log('query: ', query)
+      /*    console.log('query: ', query) */
       if (this.searchString) {
         laureates = await this.$content('laureates/' + this.$i18n.locale, {
           deep: true,

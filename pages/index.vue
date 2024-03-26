@@ -51,7 +51,12 @@
         </v-col>
       </v-row>
     </section>
-
+    <section>
+      <v-row justify="center">
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
+          <YoutubeEmbedded yt="sXRblqHbVQI" class="my-9" /></v-col
+      ></v-row>
+    </section>
     <section class="mt-12">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
@@ -133,6 +138,8 @@
 </template>
 
 <script>
+import YoutubeEmbedded from '../components/misc/YoutubeEmbedded.vue'
+
 export default {
   async asyncData({ app, $content }) {
     const index = await $content('pages/' + app.i18n.locale + '/index').fetch()

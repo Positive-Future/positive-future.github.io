@@ -64,6 +64,14 @@
               <v-col cols="12">
                 <div class="overline">
                   {{ $t('form.application.ia') }}
+                  <v-tooltip bottom>
+                    <template #activator="{ on }">
+                      <v-icon small color="red" v-on="on">
+                        mdi-asterisk
+                      </v-icon>
+                    </template>
+                    {{ $t('form.mandatory') }}
+                  </v-tooltip>
                 </div>
                 <v-expand-transition>
                   <v-alert text border="left">
@@ -463,7 +471,7 @@
                 <Confirm
                   :error="error"
                   :submitting="submitting"
-                  :valid="valid"
+                  :valid="valid && baseForm.file !== null"
                   @submit="
                     submitting = true
                     submit()
@@ -505,6 +513,8 @@ export default {
       submitting: false,
       uploaded: false,
       action: 'https://85o05b11ri.execute-api.eu-west-2.amazonaws.com/dev',
+      endpoint:
+        'https://85o05b11ri.execute-api.eu-west-2.amazonaws.com/dev/formToSpreadsheet',
       email2: '',
       urlMode: false,
       choice: true,
@@ -609,6 +619,11 @@ export default {
       ],
       aiRules: [
         (v) =>
+          !!v ||
+          this.$t('form.application.validation.required', {
+            0: this.$t('form.application.title').toLowerCase(),
+          }),
+        (v) =>
           (!!v && v.length <= 1000) ||
           v.length === 0 ||
           this.$t('form.application.validation.lessThan', {
@@ -696,6 +711,9 @@ export default {
   methods: {
     abort() {
       this.uploader.abort()
+      this.baseForm.file = null
+      this.fileData = null
+      this.percentage = undefined
     },
     addTeamMember() {
       this.baseForm.team.push({
@@ -710,7 +728,6 @@ export default {
       this.baseForm.team.unshift(this.baseForm.team.splice(index, 1)[0])
     },
     setFile(file) {
-      console.log('file: ', file)
       try {
         /* this.$axios.setHeader('content-type', 'multipart/form-data') */
         const uploaderOptions = {
@@ -720,14 +737,15 @@ export default {
           threadsQuantity: 4,
           useTransferAcceleration: true,
         }
-
         this.uploader = new Uploader(uploaderOptions)
         this.uploader
           .onProgress(({ percentage: newPercentage }) => {
             // to avoid the same percentage to be logged twice
             if (this.percentage === 100) {
               this.uploaded = true
-              this.baseForm.file = this.uploader.fileId
+              console.log('this.uploader: ', this.uploader)
+
+              this.baseForm.file = this.uploader.fileKey
             }
             if (newPercentage !== this.percentage) {
               this.percentage = newPercentage
@@ -747,21 +765,27 @@ export default {
       }
     },
     async submit() {
-      this.$refs.form.validate()
-      if (this.valid) {
-        this.submitting = true
-        const data = new FormData()
-        Object.keys(this.baseForm).forEach((key) => {
-          if (key === 'team') {
-            data.append(key, JSON.stringify(this.baseForm[key]))
-          } else {
-            data.append(key, this.baseForm[key])
-          }
-        })
-        this.submitting = false
-        this.form = {}
-        this.error = false
-        this.$router.push({ path: this.localePath('/thank_you') })
+      try {
+        this.$refs.form.validate()
+        if (this.valid) {
+          this.submitting = true
+          /*         const data = new FormData()
+          Object.keys(this.baseForm).forEach((key) => {
+            if (key === 'team') {
+              data.append(key, JSON.stringify(this.baseForm[key]))
+            } else {
+              data.append(key, this.baseForm[key])
+            }
+          })*/
+
+          await this.$axios.$post(this.endpoint, this.baseForm)
+          this.submitting = false
+          this.form = {}
+          this.error = false
+          this.$router.push({ path: this.localePath('/thank_you') })
+        }
+      } catch (error) {
+        console.log('error: ', error)
       }
     },
   },

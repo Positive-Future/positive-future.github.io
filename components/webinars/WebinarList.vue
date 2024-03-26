@@ -184,7 +184,7 @@ export default {
       let query = {
         ...(this.edition && { edition: this.edition.toString() }),
       }
-      console.log('query: ', query)
+      /*    console.log('query: ', query) */
       if (this.searchString) {
         webinars = await this.$content('webinars/' + this.$i18n.locale, {
           deep: true,
