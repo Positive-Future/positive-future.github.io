@@ -20,9 +20,3 @@ Au cœur des transformations de notre société, l’intelligence artificielle s
 Quels sont les enjeux sociaux, éthiques, juridiques et économiques, et quelles perspectives pour le travail de demain ?
 
 Avec **Aída PONCE DEL CASTILLO**, chercheuse à l'ETUI, juriste spécialisée dans les sciences et les technologies. Animé par **Marc MALENFER**, Mission Veille et Prospective à l’INRS.
-
-### Informations pratiques
-
-Le webinaire aura lieu le mercredi 27 mars 2024 à 17h. \
-Un lien de connexion sera envoyé aux inscrits un jour avant par mail. \
-[Inscription gratuite](https://positivefuture2024.wixsite.com/inscriptions/event-details/lia-generative-et-les-transformations-du-monde-du-travail/form).
