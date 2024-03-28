@@ -9,6 +9,7 @@ abstract: Au cœur des transformations de notre société, l’intelligence
   l’IA générative n’est déjà pas une mince affaire
 featured: false
 edition: "2024"
+youtube_video_id: AOj-F0h-0xo
 background_color: "#ffffff"
 image: /webinaire-27-mars.png
 date: 2024-03-27T16:00:00.000Z
