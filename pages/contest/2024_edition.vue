@@ -76,13 +76,12 @@
             <div id="jury" class="mb-4 headline">
               {{ $t('jury-members') }}
             </div>
-            <template v-if="jury && jury.length > 0">
+            <v-row v-if="jury && jury.length > 0" no-gutters>
               <people-block
                 v-for="(people, index) in jury"
                 :key="index"
                 :item="people"
-              />
-            </template>
+            /></v-row>
             <template v-else>
               {{ $t('the-jury-will-be-announced-soon') }}
             </template>

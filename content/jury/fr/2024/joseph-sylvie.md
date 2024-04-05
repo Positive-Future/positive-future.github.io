@@ -11,7 +11,7 @@ presentation: >
   Directrice des programmes de transformation Digitale. Elle a parallèlement
   assumé les fonctions de Secrétaire fédérale à la Fédération communication
   conseil culture de la CFDT (Confédération française démocratique du travail). 
-image: /static/photo-joseph-1.jpg
+image: /photo-joseph-1.jpg
 social_channels:
   website: ""
   wikipedia: ""

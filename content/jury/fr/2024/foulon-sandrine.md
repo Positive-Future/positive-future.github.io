@@ -11,7 +11,7 @@ presentation: Spécialiste de l’emploi, des ressources humaines et du dialogue
   n’arrête pas l’éco (Seuil, 2022) et Dernier recours, le monde du travail
   devant les tribunaux (Seuil, 2012). Elle tient par ailleurs la chronique Ma
   vie au boulot dans l’émission On n’arrête pas l’éco depuis 2010.
-image: /static/photo-foulon.jpg
+image: /photo-foulon.jpg
 social_channels:
   website: ""
   wikipedia: ""
