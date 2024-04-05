@@ -2,7 +2,7 @@
 firstname: Morat
 editions:
   - "2024"
-lastname: AÏT-HABBOUCHE
+lastname: Aït-Habbouche
 title_and_institution: ""
 presentation: Grand reporter et reporter de guerre pour France Télévisions de
   1987 à 2000, Morad Ait-Habbouche produit et réalise aujourd’hui des
