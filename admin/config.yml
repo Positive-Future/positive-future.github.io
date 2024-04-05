@@ -98,6 +98,7 @@ collections:
           name: 'image',
           widget: 'image',
           required: false,
+          media_folder: '/static',
           i18n: true,
         },
         {
