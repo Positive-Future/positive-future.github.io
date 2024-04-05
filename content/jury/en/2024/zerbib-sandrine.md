@@ -12,7 +12,7 @@ presentation: "Avec près de trente ans d’expérience dans le secteur de la
   diriger dans l'incertitude (Dunod, 2022, avec Aldo Spaanjaars) dans lequel
   elle analyse les modèles d’organisation et de management dans les entreprises
   chinoises. "
-image: /photo-zerbib.jpg
+image:  /jury/ZERBIB.png
 social_channels:
   website: ""
   wikipedia: ""

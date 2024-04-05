@@ -10,7 +10,7 @@ presentation: Avec une carrière à la fois dans le monde universitaire, du
   questions de management et de la gestion des personnes dans un environnement
   en mutation, il est l’auteur de Travailler à l'ère post-digitale (2019) et A
   la Recherche du Lien Social Perdu (2022).
-image: /photo-turcq.jpeg
+image: /jury/TURCQ.png
 social_channels:
   website: ""
   wikipedia: ""

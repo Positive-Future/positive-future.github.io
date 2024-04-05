@@ -10,7 +10,7 @@ presentation: "Auteur et illustrateur spécialisé dans le dessin humoristique
   passion du dessin. Il est l’auteur entre autres de Chief Bullshit Officer
   (2022), Chief Bullshit Officer 2.0 (2023) et Petit dictionnaire illustré de
   l’entreprise (2019). "
-image: /photo-fix-1.jpg
+image: /jury/FIX.png
 social_channels:
   website: ""
   wikipedia: ""

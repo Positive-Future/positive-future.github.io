@@ -13,7 +13,7 @@ presentation: Passionnée d’innovation, Morgane Soulier a travaillé dix ans d
   leur activité à l’ère du numérique. Chroniqueuse, enseignante, administratrice
   de sociétés, elle vient également de publier Metaverse, comprendre le monde
   qui vient  (Grasset, Février 2024).
-image: /morgane-soulier.jpg
+image: /jury/SOULIER.png
 social_channels:
   website: ""
   wikipedia: ""
