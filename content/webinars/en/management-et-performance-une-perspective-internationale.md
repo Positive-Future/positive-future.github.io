@@ -11,6 +11,7 @@ abstract: "Si l’approche occidentale a été au départ une source d’inspira
   de se transformer. "
 featured: false
 edition: "2024"
+youtube_video_id: 2D8_0bPlxV4
 background_color: "#ffffff"
 image: /webinaire-5-avril.png
 date: 2024-04-05T09:00:00.000Z
