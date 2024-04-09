@@ -1,5 +1,5 @@
 ---
-firstname: Morat
+firstname: Morad
 editions:
   - "2024"
 lastname: Aït-Habbouche
