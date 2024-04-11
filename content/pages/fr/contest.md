@@ -24,7 +24,7 @@ Le Comité de Pilotage et le Comité scientifique de cette deuxième édition me
 
 * *Lancement du concours officiel* : le 5 décembre 2023
 * *Ouverture de la plateforme pour les participations* : le 26 mars 2024
-* *Date limite de participation* : le 22 avril 2024
+* *Date limite de participation* : le 1er mai 2024
 * *Remise des prix* : Juin 2024 (date à déterminer)
 
 ### Où ?
