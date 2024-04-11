@@ -29,7 +29,7 @@ Le Comité de Pilotage et le Comité scientifique de cette deuxième édition me
 
 ### Où ?
 
-Les participants pourront soumettre leur œuvre sur notre plateforme en ligne (et accessible via le site internet), à partir du **26 mars** et ce jusqu’au **22 avril** 2024 - date limite de participation.
+Les participants pourront soumettre leur œuvre sur notre plateforme en ligne (et accessible via le site internet), à partir du **26 mars** et ce jusqu’au **1er mai** 2024 - date limite de participation.
 
 ### Prix
 

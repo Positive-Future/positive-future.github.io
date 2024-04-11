@@ -46,7 +46,7 @@ The Steering Committee and the Scientific Advisory Board for this second edition
 
 ### Where?
 
-Participants will be able to submit their work on our online platform (and accessible via the website), from **March 26** until the entry deadline of **April 22**, 2024.
+Participants will be able to submit their work on our online platform (and accessible via the website), from **March 26** until the entry deadline of **May 1st**, 2024.
 
 ### Prizes
 
