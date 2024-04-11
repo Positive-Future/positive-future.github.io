@@ -10,6 +10,7 @@ abstract: "Parmi les formes de mise en récit du Concours Positive Future, nous
   perception du monde du travail. "
 featured: false
 edition: "2024"
+youtube_video_id: 5NR8BRXeo9w
 background_color: "#ffffff"
 image: /webinaire-10-avril.png
 date: 2024-04-10T17:00:00.000Z
