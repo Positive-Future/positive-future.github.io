@@ -7,7 +7,7 @@ Lancement du concours
 **26 mars 2024**\
 Ouverture de la plateforme de dépôt des œuvres
 
-**22 avril 2024**\
+**1er mai 2024**\
 Date limite de participation
 
 **Juin 2024 (date à préciser)**\
