@@ -341,5 +341,6 @@
   "sort-modedate": "Sort by date",
   "read-this-review": "Read this review",
   "upload-in-progress-percentage": "Upload in progress : {0}%",
-  "upload-completed": "Upload Completed"
+  "upload-completed": "Upload Completed",
+  "this-is-an-awesome-text": "This is an awesome text"
 }

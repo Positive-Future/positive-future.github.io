@@ -471,7 +471,7 @@
                 <Confirm
                   :error="error"
                   :submitting="submitting"
-                  :valid="valid && baseForm.file !== null"
+                  :valid="valid && (baseForm.file !== null || baseForm.url)"
                   @submit="
                     submitting = true
                     submit()
