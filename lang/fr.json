@@ -339,5 +339,8 @@
   "replay": "En replay",
   "press-contact": "Contact presse",
   "sort-modedate": "Classer par date",
-  "upload-in-progress-percentage": "Upload en cours: {0}%"
+  "upload-in-progress-percentage": "Upload en cours: {0}%",
+  "this-is-an-awesome-text": "C'est un texte génial",
+  "read-this-review": "Lire cette critique",
+  "upload-completed": "Téléchargement terminé"
 }
