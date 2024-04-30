@@ -342,5 +342,7 @@
   "upload-in-progress-percentage": "Upload en cours: {0}%",
   "this-is-an-awesome-text": "C'est un texte génial",
   "read-this-review": "Lire cette critique",
-  "upload-completed": "Téléchargement terminé"
+  "upload-completed": "Téléchargement terminé",
+  "apply-placeholder": "La période de candidature est terminée depuis le 6 mai 2024. Rendez-vous en Juin pour connaître les gagnants !",
+  "applications-are-closed": "Les candidatures sont closes !"
 }
