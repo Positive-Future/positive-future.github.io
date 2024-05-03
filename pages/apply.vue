@@ -768,6 +768,7 @@ export default {
       try {
         this.$refs.form.validate()
         if (this.valid) {
+          if (this.urlMode) this.baseForm.file = this.baseForm.url
           this.submitting = true
           /*         const data = new FormData()
           Object.keys(this.baseForm).forEach((key) => {
