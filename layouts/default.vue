@@ -38,14 +38,6 @@
         </div>
 
         <v-list>
-          <v-list-item
-            style="background-color: #00c2cb; text-transform: none"
-            class="white--text"
-            :to="localePath('/apply')"
-            x-large
-          >
-            {{ $t('apply_alt') }}
-          </v-list-item>
           <v-list-group>
             <template #activator>
               <v-list-item-content>

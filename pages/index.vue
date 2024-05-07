@@ -32,16 +32,6 @@
                 <v-card-text>
                   <nuxt-content :document="dates" class="my-4" />
                 </v-card-text>
-                <v-card-actions
-                  ><v-btn
-                    style="background-color: #00c2cb; text-transform: none"
-                    class="ml-auto pa-9 mb-n12 mr-n9 text-h6 text-right white--text"
-                    :to="localePath('/apply')"
-                    x-large
-                  >
-                    {{ $t('apply_alt') }}
-                  </v-btn></v-card-actions
-                >
               </v-card>
             </v-col>
             <v-col cols="12" md="6">
