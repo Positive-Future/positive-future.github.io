@@ -13,7 +13,7 @@
     <section :class="{ 'px-3': $vuetify.breakpoint.smAndDown }">
       <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6">
-          <v-sheet class="pa-6 text-body-1">
+          <v-sheet class="py-6 text-body-1">
             {{ $t('apply-placeholder') }}
           </v-sheet>
         </v-col>
