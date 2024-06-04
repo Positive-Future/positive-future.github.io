@@ -7,8 +7,8 @@ Launch of the contest
 **March 26th 2024**\
 Opening of the platform for submission
 
-**May 6 2024**\
+**May 6th 2024**\
 Dealine to submit
 
-**June 2024 (date to be specified)**\
-Award ceremony in Paris
+**June 18th and 21st 2024**\
+Announcement of winners and final webinar
