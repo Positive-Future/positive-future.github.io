@@ -13,7 +13,7 @@ abstract: "Le Concours Positive Future a pour objectif de stimuler
 featured: false
 edition: "2024"
 background_color: "#ffffff"
-image: /carrousel-remise-des-prix.png
+image: /carrousel-remise-des-prix-1-.png
 date: 2024-06-21T14:00:00.000Z
 ---
 ### Présentation 
