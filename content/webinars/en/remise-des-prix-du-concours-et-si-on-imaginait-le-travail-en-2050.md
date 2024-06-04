@@ -16,16 +16,18 @@ background_color: "#ffffff"
 image: /carrousel-remise-des-prix-1-.png
 date: 2024-06-21T14:00:00.000Z
 ---
-### Présentation 
+### Présentation
 
+\
 Le Concours Positive Future a pour objectif de stimuler l’imagination, de faire émerger des visions positives du futur et de partager des visions mobilisatrices d’un avenir désirable. Pour cette deuxième édition, les participants étaient invités à réfléchir au Travail en 2050 et à proposer des éléments de réponses face aux nombreux défis actuels et à venir, à travers une histoire sous forme de bande-dessinée, de vidéo ou de podcast. 
 
 Sur les 82 œuvres déposées, notre Jury a pour mission d’en sélectionner trois pour un 1er prix de 8 000 euros, un 2ème prix de 5 000 euros et un 3ème prix de 3 000 euros. Venez découvrir parmi les finalistes, quelles sont les œuvres gagnantes de cette deuxième édition du Concours Positive Future sur “Le travail en 2050”. 
 
 Le Concours Positive Future a été créé par l’IEA de Paris et la Fondation 2100. Cette deuxième édition a pu être réalisée grâce aux précieux partenariats avec l’ANACT et l’INRS. 
 
-### Informations pratiques 
+### Informations pratiques
 
+\
 La Remise des prix se tiendra en deux temps à l’occasion de la *Semaine pour la Qualité de Vie et Conditions au Travail* de l’ANACT, avec un premier événement en présentiel pour l’annonce des gagnants, un deuxième événement en ligne pour une conclusion à cette deuxième édition. 
 
 Remise des prix - Annonce des gagnants - *sur invitation uniquement !*\
