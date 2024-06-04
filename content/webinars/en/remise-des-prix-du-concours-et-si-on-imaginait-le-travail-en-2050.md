@@ -14,7 +14,7 @@ featured: false
 edition: "2024"
 background_color: "#ffffff"
 image: /carrousel-remise-des-prix-1-.png
-date: 2024-06-21T14:00:00.000Z
+date: 2024-06-21T12:00:00.000Z
 ---
 ### Présentation
 
