@@ -42,7 +42,7 @@ The Steering Committee and the Scientific Advisory Board for this second edition
 * *Official contest launch*: December 5, 2023
 * *Opening of the platform for submissions*: March 26, 2024
 * *Deadline for submissions*: May 6, 2024
-* *Awards ceremony*: June 2024 (date to be determined)
+* *Awards ceremony*: June 18 and 21, 2024
 
 ### Where?
 

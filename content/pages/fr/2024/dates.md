@@ -10,5 +10,5 @@ Ouverture de la plateforme de dépôt des œuvres
 **6 mai 2024**\
 Date limite de participation
 
-**Juin 2024 (date à préciser)**\
-Cérémonie de remise des prix à Paris
+**18 et 21 juin 2024**\
+Annonce des gagnants et webinaire de clôture
