@@ -16,6 +16,38 @@
         </v-col>
       </v-row>
     </section>
+    <!--     <section>
+      <v-row justify="center" no-gutters>
+        <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
+          <v-card class="mb-12" flat color="transparent"> -->
+    <!-- eslint-disable-next-line vuejs-accessibility/anchor-has-content -->
+    <!--   <a id="awards" class="anchor"></a>
+            <div id="laureates" class="headline mb-4 mx-6">
+              {{ $t('laureates_title') }}
+            </div>
+            <v-slide-group
+              v-if="$vuetify.breakpoint.smAndUp"
+              class="my-4"
+              show-arrows
+              center-active
+            >
+              <v-slide-item
+                v-for="(laureate, index) in laureates"
+                :key="index"
+                v-slot="{ active }"
+              >
+                <LaureateItem
+                  :item="laureate"
+                  :active="active"
+                  :index="index"
+                  :total="laureates.length"
+                />
+              </v-slide-item>
+            </v-slide-group>
+            <LaureateList v-else></LaureateList
+          ></v-card> </v-col
+      ></v-row>
+    </section> -->
     <section
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
       style="margin-top: -60px"
