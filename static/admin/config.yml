@@ -235,7 +235,7 @@ collections:
           i18n: true,
           widget: 'select',
           multiple: false,
-          options: ['comic', 'novel', 'video'],
+          options: ['comic', 'novel', 'video', 'audio'],
           min: 1,
         },
         {
