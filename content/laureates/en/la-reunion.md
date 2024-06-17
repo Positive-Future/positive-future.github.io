@@ -15,6 +15,7 @@ description: "En 2025, les réunions répétitives et interminables sont une per
   prit le virage de l'IA et utilise un nouveau logiciel qui permet un gain de
   temps et de charge mentale considérable à ses \"adhérents\". "
 jury: ""
+youtube_video_id: -0DGkofll18
 image: /la-re-union.png
 team:
   - firstname: Rocky
