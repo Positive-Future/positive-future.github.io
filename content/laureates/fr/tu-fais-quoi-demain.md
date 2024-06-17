@@ -12,6 +12,7 @@ description: "On découvre l'histoire de Max et Javier qui en 2050 cherchent à
   économie circulaire, sans se laisser happer par la tendance à se reposer
   excessivement sur les nouvelles machines et les nouvelles technologies. "
 jury: ""
+youtube_video_id: _l88IHTzymk
 image: /tu-fais-quoi-demain.png
 copyright: Pexels - Jonathan Petersson
 team:
