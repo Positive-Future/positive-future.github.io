@@ -13,6 +13,7 @@ description: "Pour la BBC World Service, le journaliste Antoine passe une
   administratives chronophages au profit d'une proximité avec les usagers. "
 jury: ""
 image: /justice-2050.png
+copyright: Pexels
 team:
   - firstname: Jessica
     lastname: VONDERSCHER
