@@ -12,6 +12,7 @@ description: "A l'occasion d'un référendum pour passer à 28h de travail par
   pour ses droits, continuer de réfléchir à l'avenir économique, politique et
   social de notre société. "
 jury: ""
+youtube_video_id: dIePZPFCdYk
 image: /a-main-leve-e.png
 team:
   - firstname: Joseph
