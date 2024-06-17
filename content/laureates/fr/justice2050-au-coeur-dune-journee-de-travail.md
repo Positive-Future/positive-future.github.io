@@ -12,6 +12,7 @@ description: "Pour la BBC World Service, le journaliste Antoine passe une
   le travail de la Justice, dégageant les professionnels des tâches
   administratives chronophages au profit d'une proximité avec les usagers. "
 jury: ""
+youtube_video_id: JO0uh8G6HkU
 image: /justice-2050.png
 copyright: Pexels
 team:
