@@ -12,6 +12,7 @@ description: "Faites un bond dans le temps et découvrez comment le monde du
   adoptent de nouveaux modes de fonctionnement pour favoriser une approche plus
   organique et collaborative. "
 jury: ""
+youtube_video_id: Ywcrc_qvYSM
 image: /histoire-de-temps.png
 team:
   - firstname: "Katia "
