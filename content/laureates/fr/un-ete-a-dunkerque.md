@@ -12,6 +12,7 @@ description: "Une future maman s'essaie à un tout nouveau concept en 2050 :
   dérèglement climatique est plus que jamais d'actualité mais l'espoir réside
   dans l'adaptation et le collectif. "
 jury: ""
+youtube_video_id: aelIGC4seqk
 image: /un-ete-a-dunkerque.png
 copyright: Pixabay - jfgalmiche
 team:
