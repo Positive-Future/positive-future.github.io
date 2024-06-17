@@ -9,6 +9,7 @@ description: "C’est l’histoire d’une tasse tout à fait lambda. Fabriquée
   la vie des salariés d’une entreprise, voit éclore leurs projets. Abîmée, elle
   a toujours une place. "
 jury: ""
+youtube_video_id: eCoAJju7GVE
 image: /germinations.png
 team:
   - firstname: Randja
