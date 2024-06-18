@@ -19,13 +19,17 @@
       <v-row>
         <v-col cols="12">
           <YoutubeEmbedded
-            v-if="item.video"
-            :yt="item.video"
+            v-if="item.youtube_video_id"
+            :yt="item.youtube_video_id"
             class="mb-9 ml-3"
           ></YoutubeEmbedded
         ></v-col>
       </v-row>
-      <OptimizedImage v-if="item.image" :src="item.image"> </OptimizedImage>
+      <OptimizedImage
+        v-if="item.image && !item.youtube_video_id"
+        :src="item.image"
+      >
+      </OptimizedImage>
       <small v-if="item.copyright" class="muted caption"
         >&copy; {{ item.copyright }}</small
       >
@@ -47,37 +51,41 @@
         {{ $t('description') }}
       </div>
       <nuxt-content :document="item" />
-      <v-btn
-        v-if="!$route.name.startsWith('contest-laureates-slug')"
-        color="default"
-        x-small
-        class="overline ml-n6"
-        text
-        style="color: rgba(0, 0, 0, 0.6)"
-        @click="show = !show"
-      >
-        <v-icon color="rgba(0, 0, 0, 0.6)">{{
-          show ? 'mdi-chevron-down' : 'mdi-chevron-right'
-        }}</v-icon
-        >{{ $t('from-the-jury') }}</v-btn
-      >
-      <div v-else class="overline">
-        {{ $t('from-the-jury') }}
-      </div>
-      <v-expand-transition>
-        <div v-show="show || $route.name.startsWith('contest-laureates-slug')">
-          <div
-            v-for="note in item.jury_notes"
-            :key="note.firstname + ' ' + note.lastname"
-            class="my-3"
-          >
-            <v-icon x-small>mdi-format-quote-open</v-icon>{{ note.text }}
-            <v-icon x-small>mdi-format-quote-close</v-icon>&nbsp;<b>{{
-              note.firstname + ' ' + note.lastname
-            }}</b>
-          </div>
+      <template v-if="item.jury_notes.length">
+        <v-btn
+          v-if="!$route.name.startsWith('contest-laureates-slug')"
+          color="default"
+          x-small
+          class="overline ml-n6"
+          text
+          style="color: rgba(0, 0, 0, 0.6)"
+          @click="show = !show"
+        >
+          <v-icon color="rgba(0, 0, 0, 0.6)">{{
+            show ? 'mdi-chevron-down' : 'mdi-chevron-right'
+          }}</v-icon
+          >{{ $t('from-the-jury') }}</v-btn
+        >
+        <div v-else class="overline">
+          {{ $t('from-the-jury') }}
         </div>
-      </v-expand-transition>
+        <v-expand-transition>
+          <div
+            v-show="show || $route.name.startsWith('contest-laureates-slug')"
+          >
+            <div
+              v-for="note in item.jury_notes"
+              :key="note.firstname + ' ' + note.lastname"
+              class="my-3"
+            >
+              <v-icon x-small>mdi-format-quote-open</v-icon>{{ note.text }}
+              <v-icon x-small>mdi-format-quote-close</v-icon>&nbsp;<b>{{
+                note.firstname + ' ' + note.lastname
+              }}</b>
+            </div>
+          </div>
+        </v-expand-transition>
+      </template>
     </v-card-text>
 
     <v-card-actions v-if="item.file">

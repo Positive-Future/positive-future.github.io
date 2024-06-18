@@ -52,7 +52,7 @@
           ></span
         >
       </div>
-      <nuxt-content class="d-inline" :document="{ body: item.excerpt }" />
+      <nuxt-content class="d-inline" :document="laureateDoc" />
     </v-card-text>
   </v-card>
 </template>
@@ -68,6 +68,7 @@ export default {
   data() {
     return {
       show: false,
+      laureateDoc: this.laureateDocMethod(),
     }
   },
   computed: {},
@@ -77,6 +78,16 @@ export default {
   methods: {
     truncateString(str = '') {
       return truncateString(str, 250)
+    },
+    laureateDocMethod() {
+      const hellip = {
+        type: 'text',
+        value: '...',
+      }
+      let doc = this.item.excerpt
+
+      doc?.children[0]?.children && doc?.children[0]?.children.push(hellip)
+      return { body: { ...doc } }
     },
   },
 }

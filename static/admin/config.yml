@@ -223,7 +223,7 @@ collections:
           widget: 'select',
           required: false,
           i18n: true,
-          default: [''],
+          default: '',
           multiple: false,
           options: ['crush', 'winner'],
           min: 1,

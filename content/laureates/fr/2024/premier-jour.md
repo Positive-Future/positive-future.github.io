@@ -1,8 +1,7 @@
 ---
 title: Premier jour
 edition: "2024"
-category:
-  - ""
+category: ""
 type: comic
 description: "Découvrir la ville, planifier ses vacances, organiser sa semaine,
   aller à un concert - voilà de quoi s'occuper en entrant dans la vie active.
@@ -23,4 +22,4 @@ team:
     lastname: THIBAUDEAU
 jury_notes: []
 ---
-Découvrir la ville, planifier ses vacances, organiser sa semaine, aller à un concert - voilà de quoi s'occuper en entrant dans la vie active. Dans un quart de siècle, cela veut aussi dire : mobilité douce, réduction du temps de travail, démocratie en entreprise, valorisation du travail non marchand, santé au travail et formation continue.
+Découvrir la ville, planifier ses vacances, organiser sa semaine, aller à un concert - voilà de quoi s'occuper en entrant dans la vie active. Dans un quart de siècle, cela veut aussi dire : mobilité douce, réduction du temps de travail,<!--more--> démocratie en entreprise, valorisation du travail non marchand, santé au travail et formation continue.
