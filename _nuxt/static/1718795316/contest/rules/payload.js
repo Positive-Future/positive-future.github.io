@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/contest/rules", {data:[{_img:{}}],fetch:{},mutations:[]});
