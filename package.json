@@ -54,13 +54,11 @@
     "eslint-plugin-vue": "^7.15.0",
     "eslint-plugin-vuejs-accessibility": "^0.7.1",
     "eslint-plugin-yaml": "^0.5.0",
-    "graphql-tag": "^2.10.3",
     "husky": "^4.2.5",
     "jest": "^26.1.0",
     "nuxt-jsonld": "^1.4.10",
     "prettier": "^2.3.2",
-    "vue-jest": "^3.0.4",
-    "webpack-graphql-loader": "^1.0.2"
+    "vue-jest": "^3.0.4"
   },
   "main": ".eslintrc.js",
   "directories": {
@@ -75,4 +73,4 @@
     "url": "https://github.com/IEA-Paris/Positive-Future/issues"
   },
   "homepage": "https://github.com/IEA-Paris/Positive-Future#readme"
-}
+
