@@ -151,7 +151,9 @@ export default {
     },
     sortLaureates(arr) {
       return [
-        ...arr.filter((item) => item.category === 'winner'),
+        ...arr
+          .filter((item) => item.category === 'winner')
+          .sort((a, b) => +a?.order > +b?.order),
         ...arr.filter((item) => item.category === 'crush'),
         ...arr.filter((item) => !['winner', 'crush'].includes(item.category)),
       ].sort((a, b) => +a.edition < +b.edition)
