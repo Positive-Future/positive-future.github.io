@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/thank_you", {data:[{_img:{}}],fetch:{},mutations:[]});
