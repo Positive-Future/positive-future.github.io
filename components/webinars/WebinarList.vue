@@ -177,7 +177,14 @@ export default {
       await this.updateSearch()
     },
   },
-  mounted() {},
+  mounted() {
+    if (this.$route.hash === '#2024') {
+      this.edition = 2024
+    }
+    if (this.$route.hash === '#2021') {
+      this.edition = 2021
+    }
+  },
   methods: {
     async updateSearch() {
       let webinars = []

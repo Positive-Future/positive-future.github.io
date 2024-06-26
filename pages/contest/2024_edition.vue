@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      style="background-color: #fff1d0; padding-bottom: 60px"
+      style="background-color: #fff1d0; padding-bottom: 160px"
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
     >
       <v-row justify="center">
@@ -16,39 +16,34 @@
         </v-col>
       </v-row>
     </section>
-    <!--     <section>
+    <v-row justify="center" no-gutters>
+      <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="ma-3">
+        <v-row no-gutters>
+          <v-col cols="12" sm="8">
+            <YoutubeEmbedded
+              style="margin-top: -160px"
+              yt="76KX3lBUZHo"
+              class="mb-9"
+            ></YoutubeEmbedded>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+    <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
-          <v-card class="mb-12" flat color="transparent"> -->
-    <!-- eslint-disable-next-line vuejs-accessibility/anchor-has-content -->
-    <!--   <a id="awards" class="anchor"></a>
+          <v-card class="mb-12" flat color="transparent">
+            <!-- eslint-disable-next-line vuejs-accessibility/anchor-has-content -->
+            <a id="awards" class="anchor"></a>
             <div id="laureates" class="headline mb-4 mx-6">
               {{ $t('laureates_title') }}
             </div>
-            <v-slide-group
-              v-if="$vuetify.breakpoint.smAndUp"
-              class="my-4"
-              show-arrows
-              center-active
-            >
-              <v-slide-item
-                v-for="(laureate, index) in laureates"
-                :key="index"
-                v-slot="{ active }"
-              >
-                <LaureateItem
-                  :item="laureate"
-                  :active="active"
-                  :index="index"
-                  :total="laureates.length"
-                />
-              </v-slide-item>
-            </v-slide-group>
-            <LaureateList v-else></LaureateList
+            <LaureateCarousel v-if="$vuetify.breakpoint.smAndUp" />
+            <LaureateList v-else edition-filter="2024"></LaureateList
           ></v-card> </v-col
       ></v-row>
-    </section> -->
-    <section
+    </section>
+    <!--  <section
       :class="{ 'px-3': $vuetify.breakpoint.smAndDown }"
       style="margin-top: -60px"
     >
@@ -77,7 +72,7 @@
           </v-card>
         </v-col>
       </v-row>
-    </section>
+    </section> 
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-6">
@@ -86,7 +81,7 @@
           </v-card>
         </v-col>
       </v-row>
-    </section>
+    </section>-->
     <section>
       <v-row justify="center" no-gutters>
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="mb-12">
@@ -156,41 +151,49 @@
       ></v-row>
     </section> -->
 
-    <section style="background-color: #c9f8f3" class="mt-8">
-      <v-row justify="center" no-gutters>
+    <section
+      style="background-color: #c9f8f3; padding-top: 60px; padding-bottom: 2rem"
+    >
+      <v-row justify="center">
         <v-col xs="12" sm="11" md="8" lg="7" xl="6" class="">
+          <div
+            class="headline my-6"
+            :class="$vuetify.breakpoint.smAndUp ? ' ml-12' : 'mx-6'"
+          >
+            {{ $t('the-tools-of-the-contest') }}
+          </div>
           <v-card
-            color="#4FD4C7"
-            class="px-6 pt-6 pb-8 mt-n12"
-            :style="
-              'margin-bottom: -80px; max-width: ' +
-              ($vuetify.breakpoint.smAndUp ? '70%' : '100%')
-            "
+            :class="$vuetify.breakpoint.smAndUp ? ' mx-6' : 'mx-2'"
             flat
             nuxt
-            :to="localePath('/resources')"
+            :href="localePath('/webinars#2024')"
+            color="transparent"
           >
             <div class="d-inline-flex justify-center align-center">
-              <v-icon x-large class="rotate-24 mr-6" color="black"
-                >mdi-text-box-multiple</v-icon
+              <v-icon x-large color="black" class="ma-6"
+                >mdi-television-play</v-icon
               >
-              <div class="subtitle">
-                {{
-                  $t(
-                    'take-a-look-at-the-resources-put-together-by-the-scientific-committee-to-give-you-food-for-thought'
-                  )
-                }}
-              </div>
+              {{
+                $t('consult-the-webinars-produced-on-the-theme-of-work-in-2050')
+              }}
             </div>
           </v-card>
-          <v-card class="pa-6 mt-12" flat color="transparent">
-            <div id="faq" class="headline mt-12">
-              {{ $t('frequently-asked-questions') }}
-            </div>
+          <v-card
+            flat
+            nuxt
+            :href="localePath('/resources')"
+            color="transparent"
+            :class="$vuetify.breakpoint.smAndUp ? 'mx-6' : 'mx-2 mt-6'"
+          >
             <div class="d-inline-flex justify-center align-center">
-              <v-icon x-large color="black" class="mr-6">mdi-forum-plus</v-icon>
-
-              <nuxt-content :document="faq" class="my-2" />
+              <v-icon x-large color="black" class="ma-6"
+                >mdi-note-multiple</v-icon
+              >
+              {{
+                $t(
+                  'find-all-the-resources-on-the-theme-of-the-competition-proposed-by-the-scientific-committee'
+                )
+              }}
             </div>
           </v-card>
         </v-col>
@@ -217,9 +220,6 @@ export default {
     const prize = await $content(
       '/pages/' + app.i18n.locale + '/2024/prize'
     ).fetch()
-    const laureates = await $content('/laureates/' + app.i18n.locale + '/2024')
-      .sortBy('order', 'asc')
-      .fetch()
 
     return {
       intro,
@@ -228,19 +228,17 @@ export default {
       prize,
       jury,
       sab,
-      laureates: [
-        ...laureates.filter((item) => item.category === 'winner'),
-        ...laureates.filter((item) => item.category === 'crush'),
-        ...laureates.filter(
-          (item) => !['winner', 'crush'].includes(item.category)
-        ),
-      ],
     }
   },
   data() {
-    return { openModal: false, selected: null }
+    return { openModal: false, selected: null, laureates: [] }
   },
-  computed: {},
+
+  computed: {
+    computedLaureates() {
+      return this.laureates
+    },
+  },
   mounted() {},
   methods: {},
 }

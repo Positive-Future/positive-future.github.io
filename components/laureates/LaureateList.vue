@@ -64,7 +64,7 @@
           {{ $t('no-laureates-found-matching-the-search-and-filter-criteria') }}
         </template>
         <template v-for="(item, index) in laureates">
-          <LaureateBlock :key="index" :item="item" :index="index" />
+          <LaureateBlock :key="item.title" :item="item" :index="index" />
         </template>
       </v-col>
     </v-row>
@@ -72,7 +72,12 @@
 </template>
 <script>
 export default {
-  props: {},
+  props: {
+    editionFilter: {
+      type: String,
+      default: null,
+    },
+  },
 
   data() {
     return {
@@ -114,6 +119,9 @@ export default {
     }
     if (this.$route.hash === '#2021') {
       this.edition = 2021
+    }
+    if (this.editionFilter) {
+      this.edition = this.editionFilter
     }
   },
 

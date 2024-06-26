@@ -155,7 +155,7 @@
             :class="$vuetify.breakpoint.smAndUp ? ' mx-6' : 'mx-2'"
             flat
             nuxt
-            :href="localePath('/webinars')"
+            :href="localePath('/webinars#2021')"
             color="transparent"
           >
             <div class="d-inline-flex justify-center align-center">
@@ -172,7 +172,7 @@
           <v-card
             flat
             nuxt
-            :href="localePath('/resources')"
+            :href="localePath('/resources_2021')"
             color="transparent"
             :class="$vuetify.breakpoint.smAndUp ? 'mx-6' : 'mx-2 mt-6'"
           >

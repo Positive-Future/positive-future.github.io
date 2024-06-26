@@ -12,9 +12,9 @@ abstract: "Le Concours Positive Future a pour objectif de stimuler
   une histoire sous forme de bande-dessinée, de vidéo ou de podcast. "
 featured: false
 edition: "2024"
-youtube_video_id: CtcBQg2KmFQ
+youtube_video_id: 76KX3lBUZHo
 background_color: "#ffffff"
-image: /carrousel-edition-24-remise-des-prix.png
+image: /CARROUSEL EDITION 24 REMISE DES PRIX.png
 date: 2024-06-21T12:00:00.000Z
 ---
 ### Présentation

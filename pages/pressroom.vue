@@ -29,7 +29,7 @@
             :style="
               'max-width: ' + ($vuetify.breakpoint.smAndUp ? '66%' : '100%')
             "
-            href="https://drive.google.com/drive/folders/16McnFjCvszZPANfK0P61N7k2zLVnTN0e?usp=sharing"
+            href="https://drive.google.com/drive/folders/1vBndip8uwCcpDq0OdOV10UKC025uOBOL?usp=sharing"
           >
             <div class="d-inline-flex justify-center align-center">
               <v-icon

@@ -72,5 +72,9 @@
   "bugs": {
     "url": "https://github.com/IEA-Paris/Positive-Future/issues"
   },
-  "homepage": "https://github.com/IEA-Paris/Positive-Future#readme"
+  "homepage": "https://github.com/IEA-Paris/Positive-Future#readme",
+  "resolutions": {
+    "prosemirror-model": "1.12.0",
+    "cssnano": "6.0.1"
+  }
 }
